@@ -1,0 +1,156 @@
+{
+  "name": "Clinical Clarity",
+  "brand": {
+    "productName": "MediCheck",
+    "tagline": "Nền tảng kiểm tra tương tác thuốc thông minh",
+    "stitchProjectId": "647866119666660647"
+  },
+  "theme": {
+    "colorMode": "LIGHT",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#005eb8",
+    "overridePrimaryColor": "#005eb8",
+    "overrideSecondaryColor": "#d52b1e",
+    "overrideTertiaryColor": "#ff8200",
+    "overrideNeutralColor": "#425563"
+  },
+  "colors": {
+    "background": "#f6faff",
+    "onBackground": "#091e2a",
+    "surface": "#f6faff",
+    "surfaceDim": "#c8ddee",
+    "surfaceBright": "#f6faff",
+    "surfaceContainerLowest": "#ffffff",
+    "surfaceContainerLow": "#eaf5ff",
+    "surfaceContainer": "#dff0ff",
+    "surfaceContainerHigh": "#d6ebfc",
+    "surfaceContainerHighest": "#d1e5f6",
+    "surfaceVariant": "#d1e5f6",
+    "onSurface": "#091e2a",
+    "onSurfaceVariant": "#424752",
+    "inverseSurface": "#1f333f",
+    "inverseOnSurface": "#e5f2ff",
+    "outline": "#727783",
+    "outlineVariant": "#c2c6d4",
+    "surfaceTint": "#005db6",
+    "primary": "#00478d",
+    "onPrimary": "#ffffff",
+    "primaryContainer": "#005eb8",
+    "onPrimaryContainer": "#c8daff",
+    "inversePrimary": "#a9c7ff",
+    "secondary": "#b8120b",
+    "onSecondary": "#ffffff",
+    "secondaryContainer": "#dd3123",
+    "onSecondaryContainer": "#fffbff",
+    "tertiary": "#733700",
+    "onTertiary": "#ffffff",
+    "tertiaryContainer": "#974a00",
+    "onTertiaryContainer": "#ffd1b3",
+    "error": "#ba1a1a",
+    "onError": "#ffffff",
+    "errorContainer": "#ffdad6",
+    "onErrorContainer": "#93000a",
+    "primaryFixed": "#d6e3ff",
+    "primaryFixedDim": "#a9c7ff",
+    "onPrimaryFixed": "#001b3d",
+    "onPrimaryFixedVariant": "#00468c",
+    "secondaryFixed": "#ffdad5",
+    "secondaryFixedDim": "#ffb4a8",
+    "onSecondaryFixed": "#410000",
+    "onSecondaryFixedVariant": "#930001",
+    "tertiaryFixed": "#ffdcc6",
+    "tertiaryFixedDim": "#ffb785",
+    "onTertiaryFixed": "#301400",
+    "onTertiaryFixedVariant": "#723700"
+  },
+  "semantic": {
+    "severe": "#d52b1e",
+    "severeContainer": "#ffdad5",
+    "warning": "#ff8200",
+    "warningContainer": "#ffdcc6",
+    "mild": "#974a00",
+    "mildContainer": "#ffd1b3",
+    "success": "#00478d",
+    "successContainer": "#d6e3ff",
+    "neutral": "#425563",
+    "neutralContainer": "#d1e5f6",
+    "borderSubtle": "#e2e8f0"
+  },
+  "typography": {
+    "headlineFont": "Hanken Grotesk",
+    "bodyFont": "Inter",
+    "labelFont": "Inter",
+    "headlineXl": {
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "40px"
+    },
+    "headlineLg": {
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "32px"
+    },
+    "headlineMd": {
+      "fontSize": "20px",
+      "fontWeight": "500",
+      "lineHeight": "28px"
+    },
+    "bodyLg": { "fontSize": "18px", "fontWeight": "400", "lineHeight": "28px" },
+    "bodyMd": { "fontSize": "16px", "fontWeight": "400", "lineHeight": "24px" },
+    "bodySm": { "fontSize": "15px", "fontWeight": "400", "lineHeight": "22px" },
+    "labelMd": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px"
+    },
+    "labelSm": { "fontSize": "13px", "fontWeight": "600", "lineHeight": "18px" }
+  },
+  "spacing": {
+    "unit": "8px",
+    "containerMargin": "24px",
+    "gutter": "16px",
+    "touchTargetMin": "48px"
+  },
+  "radius": {
+    "sm": "0.125rem",
+    "default": "0.25rem",
+    "md": "0.375rem",
+    "lg": "0.5rem",
+    "xl": "0.75rem",
+    "full": "9999px"
+  },
+  "elevation": {
+    "overlayShadow": "0px 4px 20px rgba(0, 0, 0, 0.05)",
+    "cardBorder": "1px solid #e2e8f0",
+    "alertBorderWidth": "4px"
+  },
+  "components": {
+    "alertCard": {
+      "severeBorderColor": "#d52b1e",
+      "warningBorderColor": "#ff8200",
+      "mildBorderColor": "#974a00"
+    },
+    "statusBadge": {
+      "confirmed": {
+        "background": "#d6e3ff",
+        "text": "#00478d",
+        "icon": "check_circle"
+      },
+      "warning": {
+        "background": "#ffdad5",
+        "text": "#b8120b",
+        "icon": "warning"
+      },
+      "unconfirmed": {
+        "background": "#d1e5f6",
+        "text": "#424752",
+        "icon": "help"
+      },
+      "urgent": { "background": "#ffdad5", "text": "#d52b1e", "icon": "bolt" }
+    },
+    "disclaimer": {
+      "text": "Thông tin này chỉ mang tính chuyên môn/hướng dẫn và không thay thế phán đoán lâm sàng hay tư vấn bác sĩ.",
+      "style": "labelSm"
+    }
+  }
+}

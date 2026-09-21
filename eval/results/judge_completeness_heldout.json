@@ -1,0 +1,483 @@
+{
+  "metric": "completeness",
+  "n": 36,
+  "n_parsed": 36,
+  "rows": [
+    {
+      "case_id": "ho-dd-nang-001",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Pazopanib × Cimetidine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đúng cơ chế tăng pH dạ dày làm pazopanib khó hòa tan và hậu quả giảm hấp thu, giảm nồng độ thuốc trong máu như nguồn mô tả."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-002",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Rubella virus vaccine × Hydrocortisone",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn diễn đạt được cơ chế vắc-xin sống nhân lên khi miễn dịch bị corticosteroid ức chế, cùng cả ba hậu quả nguồn nêu (nhiễm trùng lan tỏa, tăng phản ứng bất lợi, đáp ứng miễn dịch dưới mức tối ưu) và giữ điều kiện về các tác nhân gây suy giảm miễn dịch."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-003",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Buprenorphine × Ethanol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế cộng hưởng ức chế thần kinh trung ương và liệt kê đủ chuỗi hậu quả của nguồn: quá liều, suy hô hấp nặng, hôn mê, tử vong."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-004",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Potassium citrate × Benazepril",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giữ đúng cơ chế ức chế men chuyển làm giảm aldosterone gây giữ kali và hậu quả tăng kali máu theo nguồn."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-005",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Saquinavir",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn mô tả đúng cơ chế ức chế enzyme gan chuyển hóa ruxolitinib (diễn giải CYP3A4 cho bệnh nhân) và hậu quả tăng đáng kể nồng độ thuốc trong huyết tương."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-006",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Leflunomide × Deflazacort",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế cộng hưởng ức chế miễn dịch/ức chế tủy xương và hậu quả nhiễm trùng nghiêm trọng kèm các nhiễm trùng cơ hội cụ thể; phần Xử trí bị lược bỏ theo thiết kế nên không tính thiếu."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-013",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Omeprazole × Prasugrel",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giữ nguyên cơ chế tăng pH dạ dày làm chậm hòa tan prasugrel và hậu quả chỉ ảnh hưởng nhẹ dược động học mà không thay đổi tác dụng chống kết tập tiểu cầu."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-014",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Midazolam × Betamethasone",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế cảm ứng enzyme gan chuyển hóa benzodiazepin, hậu quả giảm nồng độ huyết tương, và giữ cả hai điều kiện quan trọng (phụ thuộc liều/thời gian corticosteroid, rõ hơn với đường uống)."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-015",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ascorbic acid × Ephedrine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế nước tiểu acid làm tăng thải trừ và rút ngắn thời gian bán thải ephedrin, hậu quả giảm hiệu quả điều trị, đồng thời giữ lưu ý ý nghĩa lâm sàng chưa rõ."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-016",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Emtricitabine × Eribulin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế ức chế protein vận chuyển ở gan cùng dữ kiện 70% liều thải qua mật và hậu quả tăng nồng độ eribulin, giữ đúng mức độ 'mới chỉ về lý thuyết, chưa có dữ liệu lâm sàng'."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-007",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Polyethylene glycol (3350) × Degarelix",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế mất điện giải (hạ kali, hạ magie) do làm sạch ruột/lạm dụng nhuận tràng trên nền thuốc kéo dài QT và hậu quả xoắn đỉnh đúng như nguồn."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-008",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Nateglinide × Tacrolimus",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế thuốc gây tăng đường huyết/không dung nạp glucose can thiệp kiểm soát đường huyết và hậu quả giảm hiệu quả thuốc hạ đường huyết, khởi phát mới hoặc làm nặng đái tháo đường."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-009",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Loperamide × Sorafenib",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế cộng hưởng kéo dài khoảng QT, đủ hậu quả tim mạch nặng (xoắn đỉnh, ngất, ngừng tim, đột tử) và giữ điều kiện then chốt 'chỉ khi loperamid dùng liều cao hơn khuyến cáo'."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-010",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Digoxin × Doxycycline",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế thay đổi hệ vi khuẩn đường ruột ảnh hưởng hấp thu digoxin, hậu quả tăng nồng độ digoxin, và giữ cả hai điều kiện (khoảng 10% dân số, nguy cơ thấp hơn với dạng dung dịch trong viên nang)."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-011",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Abemaciclib × Griseofulvin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đúng cơ chế cảm ứng enzyme gan (CYP3A4) làm thuốc bị chuyển hóa nhanh hơn và hậu quả giảm nồng độ abemaciclib cùng chất chuyển hóa có hoạt tính dẫn đến giảm hiệu quả điều trị."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-012",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ustekinumab × Alprazolam",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn diễn giải đúng cơ chế ức chế cytokine gây viêm làm phục hồi/tăng hoạt tính enzyme gan chuyển hóa thuốc, hậu quả giảm nồng độ alprazolam và giảm hiệu quả, đồng thời giữ được điều kiện bệnh viêm mạn tính."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-001",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Erlotinib × Lung Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Nguồn không nêu cơ chế phân tử cụ thể; đoạn tái hiện đầy đủ hậu quả độc tính phổi (ILD, viêm phổi kẽ, xơ phổi, có ca tử vong) và nhóm/tình huống nguy cơ, phần chỉ định ngừng thuốc vĩnh viễn bị lọc là đúng thiết kế."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-002",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Valproic acid × Liver Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Nguồn không mô tả cơ chế; đoạn giữ đủ hậu quả độc tính gan nghiêm trọng/có thể tử vong cùng các điều kiện then chốt (trẻ dưới 2 tuổi, đa trị liệu chống co giật, rối loạn chuyển hóa bẩm sinh, khởi phát trong 6 tháng đầu), riêng câu chống chỉ định bị lọc là hành vi an toàn đúng thiết kế."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-003",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Semaglutide × Thyroid Neoplasms",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "tiền sử cá nhân/gia đình ung thư biểu mô tuyến giáp thể tủy (MTC)",
+          "hội chứng đa u tuyến nội tiết type 2 (MEN 2)"
+        ],
+        "score": 1.0,
+        "rationale": "Hậu quả (nguy cơ khối u tuyến giáp, cần đánh giá thêm khi có nốt tuyến giáp hoặc calcitonin tăng, cần tư vấn triệu chứng) được nêu đủ, dù đoạn khái quát hóa MTC thành 'u tuyến giáp' và bỏ nhóm MEN 2; nguồn không có cơ chế."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-004",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Danazol × Metrorrhagia",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đủ hậu quả thay đổi kinh nguyệt (chu kỳ không đều, vô kinh, chảy máu giữa kỳ, rỉ máu) và yêu cầu loại trừ tổn thương tân sinh; nguồn không mô tả cơ chế, câu chống chỉ định bị lọc không tính là thiếu."
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-009",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Diiodohydroxyquinoline × Thyroid Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giữ đúng cơ chế tăng iod gắn protein huyết thanh và hậu quả gây nhiễu kết quả xét nghiệm chức năng tuyến giáp."
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-010",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Hydroxyurea × Nervous System Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Nguồn chỉ báo cáo triệu chứng mà không nêu cơ chế; đoạn nêu đủ hậu quả thần kinh (lú lẫn/mất phương hướng, ảo giác) và giữ đúng mức độ 'rất hiếm'."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-005",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Formoterol × Cardiovascular Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế kích thích thụ thể beta ở tim/mạch và mất tính chọn lọc beta-2 ở liều cao, kèm hậu quả nhịp nhanh, hồi hộp, thay đổi huyết áp, biến đổi điện tâm đồ và nguy cơ đau thắt ngực/thiếu máu cơ tim/loạn nhịp khi liều cao (chỉ bỏ vài chi tiết phụ như giãn mạch ngoại biên, dẹt sóng T)."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-006",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Loratadine × Liver Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giữ đủ cơ chế chuyển hóa qua gan thành chất chuyển hóa có hoạt tính và thải qua thận, cùng hậu quả tích lũy làm tăng nguy cơ tác dụng phụ ở bệnh nhân suy gan; phần khuyến cáo giảm nửa liều và tránh dạng phối hợp cố định là nội dung xử trí bị lọc, không tính là thiếu."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-007",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Hydroxyzine × Cardiovascular Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn tái hiện đầy đủ cơ chế (hoạt tính kháng cholinergic và gây tê tại chỗ giống quinidine), toàn bộ hậu quả tim mạch được liệt kê và giữ nguyên điều kiện 'không phổ biến, thường chỉ trong quá liều'."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-008",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Pantoprazole × Fractures, Bone",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Nguồn chỉ nêu liên quan quan sát mà không có cơ chế; đoạn giữ đủ hậu quả tăng nguy cơ gãy xương do loãng xương ở hông/cổ tay/cột sống cùng điều kiện liều cao và dùng kéo dài từ một năm trở lên."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-001",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Colchicine × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đúng cơ chế ức chế chuyển hóa qua CYP3A4 lần đầu và bơm thải P-glycoprotein ở ruột, kèm hậu quả tăng nồng độ colchicine và độc tính (bệnh cơ, bệnh thần kinh, suy đa tạng, giảm toàn thể huyết cầu); phần xử trí bị lược bỏ theo thiết kế."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-002",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acitretin × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn diễn giải đúng cơ chế rượu làm hình thành chất chuyển hóa (etretinate) có thời gian bán thải dài hơn nhiều và hậu quả dị tật nghiêm trọng ở thai nhi; phần xử trí/chống chỉ định rượu bị lược bỏ theo thiết kế."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-003",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acetaminophen × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đủ cơ chế cảm ứng enzyme gan làm tăng chất chuyển hóa độc và hậu quả tổn thương gan/viêm gan nặng, giữ được điều kiện 'uống rượu nhiều và kéo dài'."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-004",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aluminum hydroxide × citrus fruits",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đúng cơ chế citrat làm tăng hấp thu nhôm (có thể qua phức hợp nhôm-citrat hòa tan, cơ chế chưa rõ) và hậu quả tăng nồng độ nhôm gây độc tính."
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-009",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Zidovudine × high-fat foods",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": "n/a",
+        "key_qualifier_dropped": [
+          "Thức ăn có thể có các tác động KHÁC NHAU (biến thiên) đến sinh khả dụng đường uống của zidovudine"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn phản ánh đúng ý chính của phần Mô tả (thức ăn nhiều chất béo giảm tốc độ và mức độ hấp thu) kèm số liệu dược động học phù hợp audience dược sĩ, chỉ lược bớt sắc thái 'tác động khác nhau/biến thiên'."
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-010",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Desmopressin × food",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": "n/a",
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Phần Mô tả chỉ có một ý là thức ăn giảm tốc độ và mức độ hấp thu desmopressin, và đoạn đã nêu đầy đủ ý này (không có hậu quả lâm sàng nào trong Mô tả để bỏ sót)."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-005",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Cyclosporine × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu đủ cơ chế ức chế chuyển hóa qua thành ruột bởi hợp chất trong bưởi và hậu quả tăng nồng độ cyclosporine với mức biến thiên cao giữa các bệnh nhân (chỉ không gọi tên cụ thể CYP3A4/chuyển hóa lần đầu)."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-006",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Griseofulvin × alcohol",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Nguồn không mô tả cơ chế; đoạn nêu đủ hậu quả (phản ứng giống disulfiram, đỏ bừng mặt, nhịp tim nhanh, tăng tác dụng của rượu) và giữ điều kiện 'hiếm khi, dựa trên báo cáo ca lẻ'."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-007",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aripiprazole × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn nêu cơ chế cộng hợp tác dụng ức chế thần kinh trung ương và hậu quả suy giảm phán đoán, tư duy, kỹ năng tâm thần vận động đúng như nguồn."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-008",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Penicillamine × food",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": "n/a",
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Phần Mô tả chỉ nêu thức ăn cản trở hấp thu penicillamine qua đường tiêu hóa và đoạn đã truyền tải đúng ý này (phần tách liều/lúc đói thuộc Xử trí nên không tính thiếu)."
+      }
+    }
+  ],
+  "mean_score": 1.0,
+  "missing_mechanism": [],
+  "missing_consequence": []
+}

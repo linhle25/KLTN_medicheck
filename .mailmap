@@ -1,0 +1,10 @@
+# Gộp các danh tính git trùng người, để `git shortlog -sne` và WORKLOG.md
+# không đếm một thành viên thành nhiều người.
+Đàm Lê Minh Quân <23020416@vnu.edu.vn> MinhQuan231205 <23020416@vnu.edu.vn>
+Đàm Lê Minh Quân <23020416@vnu.edu.vn> Kaya <165777385+MinhQuan231205@users.noreply.github.com>
+Lê Thị Linh <linhph2905@gmail.com> le linh <linhph2905@gmail.com>
+Lê Thị Linh <linhph2905@gmail.com> Linh <linhph2905@gmail.com>
+Nguyễn Thị Tuyết Mai <nguyenmai2005hx@gmail.com> Nguyen Thi Tuyet Mai <nguyenmai2005hx@gmail.com>
+Nguyễn Thị Tuyết Mai <nguyenmai2005hx@gmail.com> unknown <nguyenmai2005hx@gmail.com>
+Hoàng Sỹ Toàn <toanhsy.hrt@gmail.com> Toàn <toanhsy.hrt@gmail.com>
+Hoàng Sỹ Toàn <toanhsy.hrt@gmail.com> HoangToan-nobi <toanhsy.hrt@gmail.com>

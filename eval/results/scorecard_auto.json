@@ -1,0 +1,238 @@
+{
+  "generated": "2026-09-01T05:56:39+00:00",
+  "runs": [
+    "20260901-042520__cold",
+    "20260901-043615__warm",
+    "20260901-044255__consistency"
+  ],
+  "m3_guardrail": {
+    "llm_narrative_banned_hits": 137,
+    "llm_narrative_banned_rate": 0.2514,
+    "slipped_past_filter": 6,
+    "fallback_nuke_count": 0,
+    "fallback_nuke_rate": 0.0,
+    "catch_rate": 0.9562,
+    "hit_examples": [
+      {
+        "case_id": "dd-nang-001",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung thuốc Ketoconazole 2% (dạng bôi ngoài da) với Loperamid (thuốc trị tiêu chảy) có thể làm tăng lượng Loperamid hấp thu vào máu và kéo dài tác dụng của nó, dẫn đến nguy cơ gặp nhiều tác dụng phụ hơn. Nguyên nhân"
+      },
+      {
+        "case_id": "dd-nang-002",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Saquin với Amcinol - Paste có thể làm tăng đáng kể nồng độ triamcinolone trong huyết tương, vì saquinavir là một chất ức chế mạnh CYP450 3A4, enzyme chuyển hóa chính của corticosteroid này. Hệ quả là làm tăng "
+      },
+      {
+        "case_id": "dd-nang-003",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Prednisone và Golimumab có thể làm tăng nguy cơ nhiễm trùng do cả hai thuốc đều có tác dụng ức chế miễn dịch. Nguy cơ này cao hơn ở người bệnh đang dùng thêm các thuốc ức chế miễn dịch hoặc ức chế tủy xương kh"
+      },
+      {
+        "case_id": "dd-nang-004",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung REMICADE và Campto có thể làm tăng nguy cơ nhiễm trùng, kể cả nhiễm trùng nghiêm trọng hoặc nhiễm trùng máu, thậm chí có thể dẫn đến tử vong. Nguyên nhân là vì cả hai loại thuốc này đều có tác dụng ức chế hệ m"
+      },
+      {
+        "case_id": "dd-nang-005",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung A.T Palonosetron Inj và Edxor có thể làm tăng nguy cơ mắc hội chứng serotonin – một tình trạng hiếm gặp nhưng nghiêm trọng, thậm chí nguy hiểm đến tính mạng, do cả hai thuốc đều làm tăng hoạt động của serotoni"
+      },
+      {
+        "case_id": "dd-nang-006",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Acid Nalidixic với Warfarin có thể làm tăng tác dụng chống đông của warfarin, dẫn đến nguy cơ chảy máu. Cơ chế chính xác chưa rõ, nhưng có thể liên quan đến việc ức chế chuyển hóa của thuốc chống đông coumarin"
+      },
+      {
+        "case_id": "dd-nang-007",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Jakavi và Olumiant có thể làm tăng nguy cơ nhiễm trùng, bao gồm cả những nhiễm trùng nghiêm trọng hoặc đe dọa tính mạng, cũng như nguy cơ phát triển ung thư hạch và các loại ung thư khác. Nguy cơ này xảy ra vì"
+      },
+      {
+        "case_id": "dd-nang-008",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Mekoquinin với Sirturo có thể dẫn đến tác dụng cộng hưởng trên khoảng QT, vì cả hai thuốc đều có khả năng kéo dài khoảng QT. Sự phối hợp này về mặt lý thuyết làm tăng nguy cơ rối loạn nhịp thất, bao gồm xoắn đ"
+      },
+      {
+        "case_id": "dd-nang-009",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Diatramine và Aronol có thể làm tăng nguy cơ mắc hội chứng serotonin – một tình trạng hiếm gặp nhưng nghiêm trọng, thậm chí có thể đe dọa tính mạng. Nguyên nhân là vì cả hai loại thuốc này đều ảnh hưởng đến ch"
+      },
+      {
+        "case_id": "dd-nang-010",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Erleada và Celenal có thể làm giảm đáng kể nồng độ và tác dụng dược lý của nimodipine trong Celenal, vì apalutamide trong Erleada là chất cảm ứng mạnh enzyme CYP450 3A4 – enzyme chuyển hóa nimodipine ở niêm mạ"
+      },
+      {
+        "case_id": "dd-nang-011",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Edxor (venlafaxine) và Acough (dextromethorphan) có thể làm tăng nguy cơ hội chứng serotonin, một tình trạng hiếm gặp nhưng nghiêm trọng và có khả năng gây tử vong do kích thích quá mức thụ thể 5-HT1A và 2A ở "
+      },
+      {
+        "case_id": "dd-nang-012",
+        "call_site": "product_edge",
+        "snippet": "Dùng chung Noxafil (posaconazole) với V.C.S (vincristine) có thể làm tăng đáng kể nồng độ vincristine trong huyết tương, vì posaconazole ức chế mạnh CYP450 3A4 và P-glycoprotein – hai con đường chính chuyển hóa và đào th"
+      }
+    ],
+    "slipped_examples": [
+      {
+        "case_id": "dd-nhe-036",
+        "path": "product_explanations",
+        "snippet": "Dùng chung AG-Ome và FENOBITAL có thể làm tăng nồng độ của FENOBITAL trong máu, vì AG-Ome có thể ức chế một enzyme gan (CYP450 2C19) vốn giúp phân hủy FENOBITAL. Tuy nhiên, điều này chỉ là về mặt lý thuyết và chưa có bằn"
+      },
+      {
+        "case_id": "rt-sokieu-009",
+        "path": "product_explanations",
+        "snippet": "Dùng chung Maravita (có chứa magie) với Betocom (thuốc chẹn beta dùng cho tim mạch) có thể làm giảm hấp thu của Betocom vào máu, khiến thuốc kém hiệu quả hơn. Nguyên nhân có thể là do magie trong Maravita liên kết với Be"
+      },
+      {
+        "case_id": "dd-nhe-036",
+        "path": "product_explanations",
+        "snippet": "Dùng chung AG-Ome và FENOBITAL có thể làm tăng nồng độ của FENOBITAL trong máu, vì AG-Ome có thể ức chế một enzyme gan (CYP450 2C19) vốn giúp phân hủy FENOBITAL. Tuy nhiên, điều này chỉ là về mặt lý thuyết và chưa có bằn"
+      },
+      {
+        "case_id": "rt-sokieu-009",
+        "path": "product_explanations",
+        "snippet": "Dùng chung Maravita (có chứa magie) với Betocom (thuốc chẹn beta dùng cho tim mạch) có thể làm giảm hấp thu của Betocom vào máu, khiến thuốc kém hiệu quả hơn. Nguyên nhân có thể là do magie trong Maravita liên kết với Be"
+      },
+      {
+        "case_id": "dd-trung_binh-017",
+        "path": "product_explanations",
+        "snippet": "Dùng chung APO-Erlotinib với Antifacid có thể làm giảm hấp thu erlotinib do Antifacid (famotidin) làm tăng pH dạ dày, trong khi độ hòa tan của erlotinib giảm khi pH vượt quá 5, dẫn đến nồng độ thuốc trong huyết tương thấ"
+      },
+      {
+        "case_id": "dis-trung_binh-011",
+        "path": "disease_interactions",
+        "snippet": "Esomeprazol, hoạt chất chính của thuốc, được chuyển hóa chủ yếu tại gan, do đó cần đánh giá chức năng gan khi sử dụng. Tuy nhiên, ở bệnh nhân suy gan nặng (Child Pugh C), nồng độ thuốc trong huyết tương tăng đáng kể, đòi"
+      }
+    ],
+    "_note": "llm_narrative_banned = phần văn xuôi (đã tách PART2 dịch) khớp regex TRƯỚC lọc. slipped = đoạn HIỂN THỊ còn khớp regex (lỗi thật). Regex FP/FN thật cần bộ câu gán nhãn — Pha sau."
+  },
+  "m7_latency": {
+    "end_to_end_by_phase": {
+      "cold": {
+        "n": 134,
+        "p50": 4.468,
+        "p90": 7.006,
+        "p95": 8.059,
+        "p99": 14.925,
+        "max": 19.776,
+        "mean": 4.631
+      },
+      "consistency": {
+        "n": 58,
+        "p50": 4.915,
+        "p90": 6.168,
+        "p95": 7.498,
+        "p99": 8.376,
+        "max": 8.909,
+        "mean": 5.057
+      },
+      "warm": {
+        "n": 134,
+        "p50": 2.671,
+        "p90": 3.905,
+        "p95": 5.962,
+        "p99": 11.187,
+        "max": 17.424,
+        "mean": 2.778
+      }
+    },
+    "end_to_end_latency_phase_cold_vs_warm": {},
+    "per_llm_call_by_call_site": {
+      "disease_edge": {
+        "n": 162,
+        "p50": 2.667,
+        "p90": 4.969,
+        "p95": 6.264,
+        "p99": 6.978,
+        "max": 7.513,
+        "mean": 3.081
+      },
+      "food_edge": {
+        "n": 58,
+        "p50": 2.075,
+        "p90": 2.747,
+        "p95": 2.788,
+        "p99": 2.838,
+        "max": 2.867,
+        "mean": 2.136
+      },
+      "literal_merge": {
+        "n": 217,
+        "p50": 2.471,
+        "p90": 4.113,
+        "p95": 4.908,
+        "p99": 7.018,
+        "max": 8.354,
+        "mean": 2.677
+      },
+      "overview": {
+        "n": 204,
+        "p50": 1.488,
+        "p90": 1.879,
+        "p95": 2.18,
+        "p99": 3.098,
+        "max": 3.64,
+        "mean": 1.555
+      },
+      "product_edge": {
+        "n": 121,
+        "p50": 3.697,
+        "p90": 5.034,
+        "p95": 5.815,
+        "p99": 6.26,
+        "max": 7.329,
+        "mean": 3.709
+      }
+    }
+  },
+  "m8_format": {
+    "narratives_checked": 953,
+    "marker_leak_count": 0,
+    "marker_leak_rate": 0.0,
+    "empty_mo_ta_dich_classified": 0,
+    "leak_examples": [],
+    "empty_dich_examples": []
+  },
+  "m9_overview": {
+    "overviews_checked": 326,
+    "count_mismatch": 0,
+    "highlight_stray": 0,
+    "pass_rate": 1.0,
+    "examples": []
+  },
+  "m10_cost": {
+    "cold": {
+      "llm_calls": 471,
+      "cases": 124,
+      "input_tokens": 544306,
+      "output_tokens": 113483,
+      "usd_total": 0.2718,
+      "usd_per_case": 0.00219,
+      "calls_per_case": 3.8,
+      "tokens_per_case": 5305
+    },
+    "warm": {
+      "llm_calls": 84,
+      "cases": 84,
+      "input_tokens": 83561,
+      "output_tokens": 12101,
+      "usd_total": 0.0359,
+      "usd_per_case": 0.00043,
+      "calls_per_case": 1.0,
+      "tokens_per_case": 1139
+    },
+    "consistency": {
+      "llm_calls": 207,
+      "cases": 20,
+      "input_tokens": 235565,
+      "output_tokens": 49490,
+      "usd_total": 0.118,
+      "usd_per_case": 0.0059,
+      "calls_per_case": 10.35,
+      "tokens_per_case": 14253
+    },
+    "_price_note": "deepseek-chat {'in': 0.27, 'out': 1.1} USD/1M — KIỂM LẠI platform.deepseek.com"
+  }
+}

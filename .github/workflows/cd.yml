@@ -1,0 +1,88 @@
+name: CD
+
+# Tat auto-deploy: workflow KHONG con chay khi push nua, chi chay khi bam tay
+# "Run workflow" trong tab Actions (workflow_dispatch). Muon bat lai auto-deploy
+# thi bo comment khoi "push" ben duoi.
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [feature/production]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint with ruff
+        run: ruff check src/ tests/
+
+      - name: Run tests
+        # Dùng SQLite riêng để test không ghi vào cơ sở dữ liệu production.
+        run: |
+          rm -f ci_test.db
+          pytest tests/ -v --tb=short
+        env:
+          APP_ENV: test
+          OPENAI_API_KEY: test-key
+          # get_llm() (src/services/llm.py) doc DEEPSEEK_API_KEY, khong phai
+          # OPENAI_API_KEY - thieu bien nay se loi "Missing credentials".
+          DEEPSEEK_API_KEY: test-key
+          DATABASE_URL: sqlite:///./ci_test.db
+          DATABASE_URL_FACTS: ""
+
+  deploy-backend:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push backend image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/p-005-backend:latest
+
+      - name: Trigger Render deploy
+        run: curl -f -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+
+  deploy-frontend:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Chay tu repo root (KHONG working-directory: frontend) - project Vercel da
+      # cau hinh san rootDirectory: "frontend", chay CLI tu trong frontend/ se bi
+      # cong don thanh frontend/frontend va khong tim thay package.json.
+      #
+      # Dung remote build (`vercel deploy --prod`) thay vi build local roi
+      # `--prebuilt` nhu truoc - NEXT_PUBLIC_API_URL duoc danh dau "Sensitive" tren
+      # Vercel nen CLI local/CI KHONG doc duoc gia tri that (build local se loi
+      # "Invalid rewrite found" vi rewrite destination rong). Bien Sensitive chi
+      # duoc resolve dung trong ha tang build cua chinh Vercel khi deploy remote.
+      - name: Deploy to Vercel
+        run: |
+          npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

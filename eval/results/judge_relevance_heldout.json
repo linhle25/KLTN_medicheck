@@ -1,0 +1,492 @@
+{
+  "metric": "relevance",
+  "n": 36,
+  "n_parsed": 36,
+  "rows": [
+    {
+      "case_id": "ho-dd-nang-001",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Pazopanib × Cimetidine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nói trực tiếp về đúng cặp Pazonib 200 × Acitidine với cơ chế riêng (tăng pH dạ dày làm giảm độ hòa tan và hấp thu pazopanib), không có câu chung chung."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-002",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Rubella virus vaccine × Hydrocortisone",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.25,
+        "rationale": "Bám đúng cặp MRVAC × A.T Hydrocortisone 250 với cơ chế riêng (ức chế miễn dịch làm vắc-xin sống nhân lên gây nhiễm trùng lan tỏa), nhưng câu cuối liệt kê hàng loạt nhóm thuốc/liệu pháp ức chế miễn dịch mang tính chung chung."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-003",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Buprenorphine × Ethanol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Nêu cụ thể cặp Norspan 10 mcg/h × rượu (Alcohol 70°) với cơ chế cộng hưởng ức chế thần kinh trung ương và hậu quả riêng (quá liều, suy hô hấp, hôn mê, tử vong)."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-004",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Potassium citrate × Benazepril",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Giải thích đúng cặp Klatu × Bena-5A 5mg với cơ chế đặc thù (giảm aldosterone gây giữ kali) và hậu quả tăng kali máu, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-005",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Saquinavir",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Tập trung đúng cặp Jakavi 10mg × Saquin với cơ chế riêng (ức chế enzyme gan chuyển hóa ruxolitinib làm tăng nồng độ trong máu), chỉ đơn giản hóa tên enzyme cho bệnh nhân."
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-006",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Leflunomide × Deflazacort",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "teriflunomide"
+        ],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Bám đúng cặp Arastad 20 × Aticosta 6 mg với cơ chế ức chế miễn dịch/tủy xương, nhưng nhắc hoạt chất teriflunomide không có trong danh sách thuốc yêu cầu và không thuộc cặp đang xét."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-013",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Omeprazole × Prasugrel",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Ngắn gọn nhưng nói đúng và riêng cho cặp AG-Ome × Altofel 10 với cơ chế tăng pH dạ dày làm chậm hòa tan prasugrel và kết luận không đổi tác dụng chống kết tập tiểu cầu."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-014",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Midazolam × Betamethasone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nói trực tiếp về cặp Belizolam 5mg/5ml × Agi - Beta với cơ chế cảm ứng enzyme gan và lưu ý phụ thuộc liều/đường uống, không có nội dung chung chung."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-015",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ascorbic acid × Ephedrine",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "pseudoephedrin"
+        ],
+        "generic_filler_ratio": 0.45,
+        "rationale": "Có nhắc đúng cặp Activline Vitamin C × Ephedrin 10mg nhưng mở đầu bằng phát biểu chung về nước tiểu acid mà không nối rõ vai trò acid ascorbic, gán nhầm việc giảm hiệu quả cho vitamin C, và nhắc thêm pseudoephedrin ngoài phạm vi."
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-016",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Emtricitabine × Eribulin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Giải thích riêng cho cặp Eclopex × Halaven với cơ chế ức chế protein vận chuyển ở gan, tỉ lệ thải trừ qua mật 70% và ghi chú đây mới là lo ngại lý thuyết."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-007",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Polyethylene glycol (3350) × Degarelix",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Nêu rõ vai trò từng thuốc trong cặp Akigol × Firmagon (mất điện giải do làm sạch ruột cộng với kéo dài QT) dẫn tới nguy cơ xoắn đỉnh, rất đặc thù cho cặp này."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-008",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Nateglinide × Tacrolimus",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Có nêu đúng cặp BINID 30 × Acezym XR 0,5mg và hướng tác động (giảm kiểm soát đường huyết), nhưng cơ chế chỉ ở mức chung chung kiểu 'gây tăng đường huyết' áp được cho nhiều thuốc khác."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-009",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Loperamide × Sorafenib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Nói cụ thể về cặp A.T Loperamid 2 mg × Nexavar với điều kiện xảy ra (liều loperamid cao hơn khuyến cáo), cơ chế cộng hưởng kéo dài QT và hậu quả loạn nhịp."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-010",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Digoxin × Doxycycline",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Bám sát cặp Andoxin × Asbidox-200 với cơ chế riêng (thay đổi hệ vi khuẩn ruột làm tăng hấp thu digoxin ở ~10% người dùng) và lưu ý dạng bào chế."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-011",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Abemaciclib × Griseofulvin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nói trực tiếp về đúng cặp Verzenio (abemaciclib) × Gifuldin 250 (griseofulvin) với cơ chế cảm ứng enzyme gan làm giảm nồng độ và giảm hiệu quả điều trị."
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-012",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ustekinumab × Alprazolam",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Giải thích đúng chiều tác động STELARA (ustekinumab) làm giảm nồng độ Frixitas (alprazolam) kèm cơ chế ức chế cytokine viêm phục hồi chuyển hóa ở gan, chỉ câu cuối mang tính khái quát."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-001",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Erlotinib × Lung Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Bám sát cặp APO-Erlotinib × bệnh phổi với độc tính phổi, ILD/xơ phổi và các triệu chứng hô hấp cần theo dõi, không có câu chung chung đáng kể."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-002",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Valproic acid × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nói cụ thể về Alpovic 250mg (valproat) trên nền bệnh gan với độc tính gan, nhóm nguy cơ, mốc thời gian 6 tháng và dấu hiệu nhận biết riêng của cặp này."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-003",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Semaglutide × Thyroid Neoplasms",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đúng cặp Ozempic (semaglutide) × u tuyến giáp với chi tiết đặc thù là nốt tuyến giáp và calcitonin tăng cao cần đánh giá thêm."
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-004",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Danazol × Metrorrhagia",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nội dung riêng cho Anargil 100mg (danazol) × rong kinh: thay đổi chu kỳ, chảy máu giữa kỳ và yêu cầu loại trừ tổn thương tân sinh vùng sinh dục."
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-009",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Diiodohydroxyquinoline × Thyroid Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Ngắn nhưng đặc hiệu cho Becoxiode (iodoquinol) × bệnh tuyến giáp: tăng i-ốt gắn protein gây nhiễu xét nghiệm chức năng tuyến giáp."
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-010",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Hydroxyurea × Nervous System Diseases",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đúng cặp Cytodrox (hydroxyurea) × bệnh thần kinh với triệu chứng lú lẫn/ảo giác, nhưng câu cuối là lời trấn an chung chung áp được cho cặp nào cũng được."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-005",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Formoterol × Cardiovascular Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Bám đúng cặp Atimos 12mcg (formoterol) × bệnh tim mạch với cơ chế kích thích thụ thể beta, biến đổi ECG và nguy cơ khi dùng liều cao."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-006",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Loratadine × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Đặc hiệu cho U-Chu Loratadine 10mg × bệnh gan: chuyển hóa tại gan thành chất chuyển hóa có hoạt tính và nguy cơ tích lũy gây tác dụng phụ."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-007",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Hydroxyzine × Cardiovascular Diseases",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "quinidine"
+        ],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Nói đúng và cụ thể về Atarax (hydroxyzine) × bệnh tim mạch, nhưng có nhắc tên hoạt chất quinidine ngoài danh sách (dù chỉ dùng để mô tả cơ chế \"giống quinidine\")."
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-008",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Pantoprazole × Fractures, Bone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đúng cặp A.T Pantoprazol × gãy xương với vị trí gãy đặc thù (hông, cổ tay, cột sống) và yếu tố liều cao/dùng kéo dài, chỉ câu cuối là khuyến cáo chung."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-001",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Colchicine × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Nói trực tiếp cặp Auschicin (colchicine) × nước ép bưởi kèm cơ chế ức chế chuyển hóa và bơm đẩy thuốc ở ruột cùng hậu quả ngộ độc đặc trưng."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-002",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acitretin × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đúng cặp Dorzox 10 (acitretin) × rượu: mô tả chất chuyển hóa có thời gian bán thải kéo dài và nguy cơ dị tật thai nhi, không nhắc thuốc ngoài phạm vi."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-003",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acetaminophen × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Nói trực tiếp về đúng cặp paracetamol (A.T Paracetamol inj) × rượu với cơ chế cảm ứng enzyme gan và hậu quả độc gan đặc thù, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "ho-food-nang-004",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aluminum hydroxide × citrus fruits",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Bám sát cặp Algelstad (nhôm hydroxid) × trái cây họ cam quýt, nêu rõ vai trò citrate và phức hợp nhôm-citrat làm tăng hấp thu nhôm."
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-009",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Zidovudine × high-fat foods",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Rất cụ thể cho cặp Becozido (zidovudine) × thức ăn nhiều chất béo với số liệu Cmax/Tmax, chỉ hơi lệch phạm vi ở câu cuối bàn về bữa ăn giàu protein."
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-010",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Desmopressin × food",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đúng cặp Des-Press (desmopressin) × thức ăn và có chi tiết riêng (dùng trước khi ngủ nên ít ý nghĩa lâm sàng), nhưng phần mô tả giảm hấp thu khá chung chung và thiếu điểm đặc thù dạng dưới lưỡi."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-005",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Cyclosporine × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Nói đúng cặp Arpimune ME (cyclosporine) × nước ép bưởi với cơ chế ức chế chuyển hóa tại ruột và xử trí riêng; rượu vang đỏ/nước ép nho tím là thực phẩm nên không tính leak thuốc."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-006",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Griseofulvin × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đúng cặp Gifuldin 250 (griseofulvin) × rượu với biểu hiện đặc thù (phản ứng giống disulfiram, đỏ mặt, nhịp nhanh); 'disulfiram' chỉ là tên hội chứng mô tả nên không tính entity_leak."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-007",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aripiprazole × alcohol",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.6,
+        "rationale": "Có nêu đúng cặp AREOLA-10 (aripiprazole) × rượu nhưng nội dung là mô tả ức chế thần kinh trung ương cộng thêm áp dụng được cho bất kỳ thuốc CNS nào, không có cơ chế riêng của aripiprazole."
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-008",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Penicillamine × food",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.75,
+        "rationale": "Nhắc đúng cặp Mifros (penicillamine) × thức ăn nhưng chỉ nói chung 'thức ăn cản trở hấp thu', thiếu chi tiết đặc thù như uống lúc đói/tách xa bữa ăn hay liên kết kim loại."
+      }
+    }
+  ],
+  "mean_score": 4.639,
+  "entity_leak": [
+    "ho-dd-nang-006",
+    "ho-dd-nhe-015",
+    "ho-dis-trung_binh-007"
+  ],
+  "below_4": [
+    "ho-dd-nhe-015",
+    "ho-food-trung_binh-007",
+    "ho-food-trung_binh-008"
+  ]
+}

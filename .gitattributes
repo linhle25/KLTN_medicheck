@@ -1,0 +1,6 @@
+# Bat buoc LF cho shell script bat ke dev checkout tren OS nao (Windows core.autocrlf
+# co the doi thanh CRLF, lam sh trong Docker/Modal build bao loi "Illegal option -"
+# vi \r lan vao dong "set -eu" - da gap that voi ocr-service/scripts/fetch_models.sh
+# khi deploy Modal, 2026-08-22).
+*.sh text eol=lf
+Dockerfile text eol=lf

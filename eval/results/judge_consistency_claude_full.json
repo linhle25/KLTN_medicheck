@@ -1,0 +1,198 @@
+{
+  "metric": "consistency",
+  "n": 19,
+  "n_parsed": 19,
+  "rows": [
+    {
+      "case_id": "dd-nang-001",
+      "verdict": {
+        "clinically_equivalent": false,
+        "claim_flips": [
+          "Bản 3 thêm tác dụng phụ 'rối loạn nhịp tim' do tăng nồng độ loperamid, không xuất hiện ở bản 1 và bản 2",
+          "Bản 3 thêm điều kiện nghi ngờ về việc ketoconazole dạng bôi có hấp thu đáng kể vào máu hay không, làm giảm mức chắc chắn của kết luận so với bản 1 và bản 2"
+        ],
+        "safety_property_changed": true,
+        "rationale": "Bản 3 đưa thêm lời khuyên 'tham khảo ý kiến bác sĩ hoặc dược sĩ' và một tác dụng phụ nghiêm trọng hơn (rối loạn nhịp tim) mà hai bản kia không có."
+      }
+    },
+    {
+      "case_id": "dd-nang-005",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản thống nhất về nguy cơ hội chứng serotonin và kéo dài QT/rối loạn nhịp, nhưng bản 1 và bản 3 có lời khuyên cân nhắc/theo dõi lâm sàng còn bản 2 thì không."
+      }
+    },
+    {
+      "case_id": "dd-nang-009",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cơ chế và nguy cơ hội chứng serotonin nhất quán ở cả ba bản (khác biệt danh sách triệu chứng chỉ là diễn đạt), nhưng bản 1 và bản 3 khuyên cân nhắc/theo dõi bởi bác sĩ còn bản 2 không có lời khuyên xử trí này."
+      }
+    },
+    {
+      "case_id": "dd-nang-013",
+      "verdict": {
+        "clinically_equivalent": false,
+        "claim_flips": [
+          "Bản 1 và bản 2 kết luận việc phối hợp hai thuốc là 'chống chỉ định', trong khi bản 3 không đưa ra kết luận mức độ nghiêm trọng này"
+        ],
+        "safety_property_changed": false,
+        "rationale": "Cơ chế QT kéo dài và tác dụng kháng cholinergic nhất quán, nhưng bản 3 thiếu kết luận 'chống chỉ định' khiến mức độ nghiêm túc truyền đạt khác với bản 1 và bản 2."
+      }
+    },
+    {
+      "case_id": "dd-nhe-033",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cơ chế corticoid làm tăng đường huyết và giảm hiệu quả thuốc tiểu đường nhất quán ở cả ba bản, nhưng bản 1 và bản 2 khuyên theo dõi đường huyết chặt chẽ còn bản 3 chỉ nêu lưu ý mà không đưa ra khuyến nghị theo dõi cụ thể."
+      }
+    },
+    {
+      "case_id": "dd-nhe-037",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đều thống nhất về cơ chế giảm hấp thu ciprofloxacin do hóa trị và đều nêu dữ liệu còn hạn chế, không có lời khuyên xử trí nào khác biệt."
+      }
+    },
+    {
+      "case_id": "dd-nhe-041",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản thống nhất về cơ chế và hướng giảm nồng độ ofloxacin do hóa trị, không có khác biệt về lời khuyên xử trí."
+      }
+    },
+    {
+      "case_id": "dd-nhe-045",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản thống nhất rằng nồng độ thuốc có thể tăng hoặc giảm với ảnh hưởng lâm sàng nhỏ, và đều khuyên theo dõi đáp ứng/dung nạp như nhau."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-017",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cơ chế giảm hấp thu erlotinib do famotidin tăng pH dạ dày nhất quán ở cả ba bản, nhưng bản 3 bổ sung lời khuyên xử trí cụ thể (tách thời điểm dùng thuốc, tránh cimetidin kéo dài) mà bản 1 và bản 2 không có."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-021",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cơ chế giảm sinh khả dụng mycophenolic acid qua chu trình gan-ruột và khuyến nghị theo dõi tác dụng ức chế miễn dịch nhất quán ở cả ba bản."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-025",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đều thống nhất về cơ chế (kháng histamin ức chế phản ứng da) và hệ quả (âm tính giả trong xét nghiệm lao) mà không có khuyến nghị xử trí khác biệt."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-029",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản mô tả cùng cơ chế cộng hưởng ức chế thần kinh trung ương giữa hai opioid dẫn đến suy hô hấp/giảm cung lượng tim, chỉ khác mức độ chi tiết."
+      }
+    },
+    {
+      "case_id": "dis-nang-003",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đồng nhất về cơ chế (lactate cản trở tạo bicarbonate) và kết luận thận trọng/không dùng để điều trị toan lactic, chỉ khác cách diễn đạt mức độ chắc chắn."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-011",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Bản 2 đưa thêm khuyến nghị xử trí cụ thể (đánh giá chức năng gan, theo dõi chặt chẽ, cân nhắc giảm liều) mà bản 1 và 3 chỉ nêu chung chung là cần thận trọng."
+      }
+    },
+    {
+      "case_id": "food-nang-003",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản thống nhất về số liệu dược động học (tăng 35% nồng độ đỉnh, 70% hấp thu) và hệ quả ức chế thần kinh trung ương cộng hưởng."
+      }
+    },
+    {
+      "case_id": "food-nang-007",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Bản 1 đưa ra khuyến nghị xử trí cụ thể (cân nhắc giảm liều statin và/hoặc hạn chế trà xanh) mà bản 2 và 3 không đề cập, dù cơ chế CYP3A4 và kết luận tăng nồng độ thuốc là nhất quán."
+      }
+    },
+    {
+      "case_id": "food-nhe-019",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản mô tả cùng cơ chế (chậm rỗng dạ dày, ức chế enzyme ruột) và cùng kết luận hấp thu thuốc tăng dù ngấm chậm hơn."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-011",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Bản 1 đưa thêm khuyến nghị xử trí phân tầng theo nhóm bệnh nhân (nên tránh rượu hoàn toàn với một số tình trạng, hạn chế tối đa với nhóm khác) mà bản 2 và 3 không có, dù cơ chế hạ đường huyết là nhất quán."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-015",
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản thống nhất về cơ chế cộng hưởng ức chế thần kinh trung ương và hệ quả buồn ngủ/chóng mặt/giảm phán đoán, chênh lệch chỉ ở việc nhắc thêm thận trọng khi lái xe (lời khuyên an toàn chung, không phải xử trí y khoa cụ thể)."
+      }
+    }
+  ],
+  "clinically_equivalent_rate": 0.8947,
+  "with_claim_flips": [
+    "dd-nang-001",
+    "dd-nang-013"
+  ],
+  "safety_property_changed": [
+    "dd-nang-001",
+    "dd-nang-005",
+    "dd-nang-009",
+    "dd-nhe-033",
+    "dd-trung_binh-017",
+    "dis-trung_binh-011",
+    "food-nang-007",
+    "food-trung_binh-011"
+  ]
+}

@@ -1,0 +1,1324 @@
+{
+  "metric": "faithfulness",
+  "n": 36,
+  "n_parsed": 36,
+  "rows": [
+    {
+      "case_id": "ho-dd-nang-001",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Pazopanib × Cimetidine",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Pazonib 200 với Acitidine có thể khiến cơ thể hấp thu Pazonib 200 kém hơn.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Việc này làm giảm lượng thuốc vào máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Việc này có thể ảnh hưởng đến hiệu quả điều trị.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là do Acitidine làm giảm độ chua trong dạ dày.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Độ chua dạ dày cần thiết để Pazonib 200 tan và hấp thu tốt.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi dạ dày bớt chua, thuốc khó tan hơn nên cơ thể không nhận đủ lượng thuốc cần thiết.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-002",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Rubella virus vaccine × Hydrocortisone",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Vắc-xin MRVAC là vắc-xin sống giúp cơ thể tạo miễn dịch chống lại bệnh sởi và rubella.",
+            "verdict": "supported"
+          },
+          {
+            "text": "A.T Hydrocortisone 250 là một loại corticosteroid và có thể làm suy giảm hệ miễn dịch của cơ thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nếu hệ miễn dịch đang yếu, vắc-xin sống có thể gây nhiễm trùng lan rộng thay vì chỉ kích thích tạo kháng thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cơ thể cũng có thể phản ứng phụ nhiều hơn và đáp ứng miễn dịch với vắc-xin kém hơn, không đạt hiệu quả bảo vệ như mong muốn.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Suy giảm miễn dịch có thể xảy ra nếu bệnh nhân đang hoặc vừa dùng thuốc ức chế miễn dịch, hóa trị, xạ trị, corticosteroid liều cao hoặc corticosteroid bôi/hít kéo dài.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 5,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-003",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Buprenorphine × Ethanol",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Norspan 10 mcg/h với rượu (Alcohol 70°) có thể rất nguy hiểm.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cả hai đều làm chậm hoạt động của hệ thần kinh trung ương (não bộ và tủy sống).",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi kết hợp, nguy cơ quá liều, suy hô hấp nặng, hôn mê và tử vong tăng lên đáng kể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Suy hô hấp nặng biểu hiện bằng khó thở, thở chậm hoặc ngừng thở.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Người dùng Norspan tuyệt đối không nên uống rượu trong thời gian điều trị.",
+            "verdict": "unsupported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 5,
+        "faithfulness": 0.8,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [
+          "Người dùng Norspan tuyệt đối không nên uống rượu trong thời gian điều trị để tránh những tai biến nguy hiểm đến tính mạng."
+        ],
+        "verdict": "fail"
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-004",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Potassium citrate × Benazepril",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Klatu và Bena-5A 5mg có thể làm tăng kali trong máu, gây tăng kali máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là do Bena-5A 5mg làm giảm hormone aldosterone.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Aldosterone là hormone giúp cơ thể đào thải bớt kali qua đường tiểu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi aldosterone giảm, kali từ Klatu bị giữ lại trong cơ thể nhiều hơn, dẫn đến nguy cơ tích tụ quá mức.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều này có thể gây rối loạn nhịp tim hoặc các vấn đề sức khỏe nghiêm trọng khác.",
+            "verdict": "unsupported"
+          },
+          {
+            "text": "Cần được bác sĩ theo dõi chặt chẽ.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 6,
+        "faithfulness": 0.83,
+        "hallucinated": [
+          "Điều này có thể gây rối loạn nhịp tim hoặc các vấn đề sức khỏe nghiêm trọng khác."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "warn"
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-005",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Saquinavir",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Jakavi 10mg với Saquin có thể làm tăng đáng kể lượng Jakavi 10mg trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Saquin làm chậm quá trình phân hủy Jakavi 10mg trong cơ thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Jakavi 10mg được gan xử lý và đào thải nhờ một loại enzyme chuyên biệt.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Saquin có tác dụng ức chế enzyme này.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi enzyme bị ức chế, thuốc không được phân hủy nhanh như bình thường nên nồng độ trong máu tăng cao hơn mức dự kiến.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều này có thể làm tăng nguy cơ gặp các tác dụng phụ của thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần được bác sĩ hoặc dược sĩ theo dõi và cân nhắc khi chỉ định phối hợp.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 7,
+        "n_total": 7,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-nang-006",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Leflunomide × Deflazacort",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Arastad 20 và Aticosta 6 mg có thể làm tăng nguy cơ nhiễm trùng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cả hai thuốc đều có tác dụng ức chế miễn dịch và ức chế tủy xương, đặc biệt khi dùng liều cao corticosteroid như Aticosta 6 mg.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguy cơ này cũng áp dụng cho teriflunomide, chất chuyển hóa chính của Arastad 20, vì nồng độ huyết tương ở liều khuyến cáo là tương đương.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Các nhiễm trùng nghiêm trọng đã ghi nhận gồm nhiễm trùng huyết và nhiễm trùng cơ hội như viêm phổi do Pneumocystis jiroveci, lao phổi và ngoài phổi, aspergillosis.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguy cơ cao hơn ở bệnh nhân đang dùng liệu pháp gây độc tế bào máu kèm theo.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 5,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-013",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Omeprazole × Prasugrel",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung AG-Ome với Altofel 10 có thể ảnh hưởng nhẹ đến dược động học của Altofel 10.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nhưng không làm thay đổi tác dụng chống kết tập tiểu cầu của thuốc này.",
+            "verdict": "contradicts"
+          },
+          {
+            "text": "Cơ chế được đề xuất là do AG-Ome làm tăng pH dạ dày.",
+            "verdict": "supported"
+          },
+          {
+            "text": "pH dạ dày tăng làm chậm quá trình hòa tan của Altofel 10.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [
+          "Nhưng không làm thay đổi tác dụng chống kết tập tiểu cầu của thuốc này (nguồn chỉ nói 'không có vẻ làm thay đổi' — đoạn đảo thành khẳng định chắc chắn)."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "fail"
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-014",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Midazolam × Betamethasone",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Belizolam 5mg/5ml với Agi - Beta có thể làm giảm nồng độ Belizolam trong huyết tương.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Agi - Beta có khả năng kích thích enzyme gan tham gia chuyển hóa thuốc an thần này.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Mức độ ảnh hưởng phụ thuộc vào liều và thời gian điều trị bằng Agi - Beta.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Ảnh hưởng có thể rõ rệt hơn khi dùng Belizolam qua đường uống.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-015",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ascorbic acid × Ephedrine",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Nước tiểu có tính acid làm tăng thải trừ ephedrin và pseudoephedrin.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều này rút ngắn thời gian bán thải của thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều này có thể làm giảm hiệu quả điều trị của Activline Vitamin C khi dùng chung với Ephedrin 10mg.",
+            "verdict": "contradicts"
+          },
+          {
+            "text": "Ý nghĩa lâm sàng của tương tác này chưa được xác định rõ.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [
+          "Điều này có thể làm giảm hiệu quả điều trị của Activline Vitamin C (sai đối tượng: nguồn nói tác dụng điều trị của ephedrin/pseudoephedrin bị giảm, không phải của vitamin C)."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "fail"
+      }
+    },
+    {
+      "case_id": "ho-dd-nhe-016",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Emtricitabine × Eribulin",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Eclopex với Halaven có thể làm tăng lượng Halaven trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Eclopex có khả năng ức chế một số protein vận chuyển ở gan.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Các protein vận chuyển này đóng vai trò đưa thuốc ra khỏi cơ thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Halaven được thải trừ chủ yếu qua đường mật, chiếm tới 70% liều dùng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nếu quá trình thải trừ bị cản trở, thuốc có thể tích tụ nhiều hơn và làm tăng nguy cơ tác dụng phụ.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Đây mới chỉ là lo ngại về mặt lý thuyết, chưa có báo cáo lâm sàng nào xác nhận.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-007",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Polyethylene glycol (3350) × Degarelix",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Akigol với Firmagon có thể làm tăng nguy cơ rối loạn nhịp thất kiểu xoắn đỉnh.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Akigol khi dùng làm sạch ruột hoặc bị lạm dụng có thể gây mất điện giải (hạ kali máu, hạ magie máu).",
+            "verdict": "supported"
+          },
+          {
+            "text": "Hạ kali máu và hạ magie máu là những yếu tố nguy cơ đã biết của xoắn đỉnh.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Firmagon có thể kéo dài khoảng QT.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần thận trọng khi dùng chung hai thuốc này.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần chú ý nếu xuất hiện các triệu chứng như chóng mặt, ngất, hồi hộp hay nhịp tim bất thường.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-008",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Nateglinide × Tacrolimus",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung BINID 30 (thuốc trị tiểu đường) với Acezym XR 0,5mg có thể làm giảm hiệu quả kiểm soát đường huyết của BINID 30.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Acezym XR có thể khiến lượng đường trong máu tăng cao hơn bình thường, gây khó dung nạp đường, làm khởi phát bệnh tiểu đường mới hoặc làm nặng thêm tiểu đường sẵn có.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc trị tiểu đường có thể không còn giữ được đường huyết ổn định như mong muốn khi dùng chung.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần theo dõi đường huyết thường xuyên và báo ngay cho bác sĩ nếu thấy dấu hiệu bất thường.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-009",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Loperamide × Sorafenib",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung A.T Loperamid 2 mg với Nexavar có thể làm tăng nguy cơ các vấn đề nghiêm trọng về tim, đặc biệt là rối loạn nhịp tim.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguy cơ này chỉ thực sự đáng lo khi loperamid được dùng ở liều cao hơn khuyến cáo, do lạm dụng hoặc dùng sai cách.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cả hai thuốc đều có thể kéo dài khoảng QT trên điện tim.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khoảng QT là một chỉ số liên quan đến nhịp đập của tim.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Hai thuốc cộng hưởng với nhau dẫn đến nguy cơ cao hơn về loạn nhịp nguy hiểm như xoắn đỉnh, ngất, ngừng tim hoặc đột tử.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nếu đang dùng Nexavar, cần hết sức thận trọng với việc dùng loperamid.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Không được tự ý tăng liều hay dùng quá mức chỉ định.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 7,
+        "n_total": 7,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-010",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Digoxin × Doxycycline",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Andoxin và Asbidox-200 có thể khiến lượng Andoxin trong máu tăng cao ở khoảng 10% số người dùng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là do Asbidox-200 làm thay đổi hệ vi khuẩn có lợi trong đường ruột.",
+            "verdict": "contradicts"
+          },
+          {
+            "text": "Sự thay đổi hệ vi khuẩn đường ruột ảnh hưởng đến cách cơ thể hấp thu Andoxin.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Tình trạng này có thể ít xảy ra hơn nếu Andoxin ở dạng dung dịch trong viên nang, vì thuốc được hấp thu ngay ở phần trên của ống tiêu hóa.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [
+          "Nguyên nhân là do Asbidox-200 làm thay đổi hệ vi khuẩn đường ruột (nguồn chỉ nói 'cơ chế có thể liên quan đến' — đoạn khẳng định chắc chắn cơ chế)."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "fail"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-011",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Abemaciclib × Griseofulvin",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung Verzenio với Gifuldin 250 có thể làm giảm lượng thuốc Verzenio có trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Việc giảm nồng độ khiến thuốc kém hiệu quả hơn trong việc kiểm soát bệnh.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Gifuldin 250 làm tăng hoạt động của một enzyme ở gan vốn có nhiệm vụ phân hủy Verzenio.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Do đó Verzenio bị đào thải nhanh hơn bình thường.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nồng độ Verzenio và các chất chuyển hóa có hoạt tính của nó đều bị hạ xuống.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Hệ quả là tác dụng điều trị mong muốn bị giảm.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dd-trung_binh-012",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ustekinumab × Alprazolam",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng chung STELARA và Frixitas có thể làm giảm nồng độ của Frixitas trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "STELARA hoạt động bằng cách ức chế một số chất gây viêm trong cơ thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi các chất gây viêm này giảm xuống, gan sẽ hoạt động mạnh hơn để phân giải thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Frixitas có thể bị gan xử lý nhanh hơn bình thường.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Hiệu quả điều trị của Frixitas có thể bị giảm đi.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Mức độ ảnh hưởng phụ thuộc vào tình trạng viêm nhiễm mạn tính của từng người bệnh.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-001",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Erlotinib × Lung Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Việc sử dụng APO-Erlotinib có liên quan đến độc tính trên phổi.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Bao gồm các trường hợp nghiêm trọng của bệnh phổi kẽ (ILD) có thể dẫn đến tử vong.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cũng như viêm phổi kẽ hoặc xơ phổi.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần thận trọng khi dùng thuốc cho bệnh nhân có tiền sử viêm phổi kẽ hoặc xơ phổi.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần thận trọng ở người đang có triệu chứng hô hấp mới xuất hiện hoặc nặng lên không rõ nguyên nhân như khó thở, ho và sốt, trong khi chờ đánh giá chẩn đoán.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 5,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-002",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Valproic acid × Liver Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Nếu có tiền sử hoặc đang mắc bệnh gan, việc dùng Alpovic 250mg cần được theo dõi rất sát sao.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có thể gây tổn thương gan nghiêm trọng, thậm chí đe dọa tính mạng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguy cơ cao nhất ở trẻ dưới 2 tuổi, đặc biệt trẻ dùng nhiều thuốc chống co giật, rối loạn chuyển hóa bẩm sinh, động kinh nặng kèm chậm phát triển trí tuệ, hoặc bệnh não thực thể.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Tổn thương gan thường xuất hiện trong 6 tháng đầu điều trị.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Có thể bắt đầu bằng các dấu hiệu mơ hồ như mệt mỏi, yếu sức, lờ đờ, phù mặt, chán ăn, buồn nôn, nôn hoặc cơn co giật mất kiểm soát.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần kiểm tra chức năng gan trước khi bắt đầu và định kỳ sau đó, đặc biệt trong nửa năm đầu, để phát hiện sớm bất thường.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 6,
+        "n_total": 6,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-003",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Semaglutide × Thyroid Neoplasms",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Người có tiền sử hoặc đang mắc u tuyến giáp cần cân nhắc kỹ khi dùng Ozempic.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có liên quan đến nguy cơ tiềm ẩn đối với khối u tuyến giáp.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khi phát hiện nốt tuyến giáp qua thăm khám hoặc hình ảnh vùng cổ, hoặc khi calcitonin tăng cao, cần được đánh giá thêm.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Bệnh nhân nên được tư vấn về nguy cơ này và nhận biết các triệu chứng của khối u tuyến giáp để theo dõi.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-nang-004",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Danazol × Metrorrhagia",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Người có tiền sử rong kinh cần cân nhắc kỹ khi dùng Anargil 100mg.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có thể làm thay đổi chu kỳ kinh nguyệt: kinh nguyệt không đều, mất kinh, chảy máu giữa chu kỳ hoặc ra máu lấm tấm.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Trước khi dùng thuốc nên được kiểm tra để chắc chắn không có tổn thương do khối u ở vùng sinh dục.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Những biến đổi kinh nguyệt này có thể che giấu các dấu hiệu bất thường khác.",
+            "verdict": "unsupported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [
+          "Những biến đổi kinh nguyệt này có thể che giấu các dấu hiệu bất thường khác."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "warn"
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-009",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Diiodohydroxyquinoline × Thyroid Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Ở người có tiền sử hoặc đang mắc bệnh tuyến giáp, việc dùng Becoxiode có thể làm tăng lượng i-ốt gắn với protein trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều này có thể gây nhiễu kết quả một số xét nghiệm chức năng tuyến giáp.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Kết quả xét nghiệm có thể không phản ánh đúng tình trạng thực tế.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-nhe-010",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Hydroxyurea × Nervous System Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Người có tiền sử hoặc đang mắc bệnh lý hệ thần kinh cần lưu ý khi dùng Cytodrox.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc rất hiếm khi có thể gây ra các triệu chứng thần kinh như lú lẫn hoặc ảo giác.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Trong một số trường hợp hiếm gặp, người bệnh có thể bị rối loạn nhận thức tạm thời trong quá trình điều trị.",
+            "verdict": "unsupported"
+          },
+          {
+            "text": "Đây chỉ là thông tin cảnh báo để theo dõi, không phải điều chắc chắn xảy ra với tất cả mọi người.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "warn"
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-005",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Formoterol × Cardiovascular Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Ở người có bệnh tim mạch, Atimos 12mcg có thể gây một số tác động không mong muốn lên tim.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có thể kích thích tim đập nhanh (hồi hộp, đánh trống ngực).",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có thể làm thay đổi huyết áp.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc có thể gây biến đổi trên điện tâm đồ như kéo dài khoảng QT hay trầm xuống đoạn ST.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là do thuốc tác động lên các thụ thể ở tim và mạch máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc chọn lọc hơn cho phổi nhưng tính chọn lọc không tuyệt đối và có thể mất đi khi dùng liều cao.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Với liều cao, thuốc có thể khởi phát hoặc làm nặng thêm cơn đau thắt ngực, thiếu máu cơ tim và rối loạn nhịp tim.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Vì vậy không nên dùng quá liều khuyến cáo.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 8,
+        "n_total": 8,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-006",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Loratadine × Liver Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Cần lưu ý khi dùng U-Chu Loratadine Tablet 10mg ở người có tiền sử hoặc đang mắc bệnh gan.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc được chuyển hóa chủ yếu tại gan thành chất chuyển hóa có hoạt tính.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cả thuốc gốc lẫn chất chuyển hóa đều được thải trừ qua thận.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Bệnh nhân suy giảm chức năng gan có nguy cơ cao hơn gặp tác dụng phụ do tích lũy thuốc và chất chuyển hóa.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-007",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Hydroxyzine × Cardiovascular Diseases",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Cần thận trọng khi dùng Atarax ở người có tiền sử hoặc đang mắc bệnh tim mạch.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thuốc kháng histamine đôi khi có thể gây tác dụng phụ trên tim mạch liên quan đến hoạt tính kháng cholinergic và gây tê tại chỗ (giống quinidine).",
+            "verdict": "supported"
+          },
+          {
+            "text": "Các biểu hiện đã ghi nhận gồm nhịp nhanh, hồi hộp, thay đổi điện tâm đồ, rối loạn nhịp, hạ huyết áp và tăng huyết áp.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Những tác dụng này không phổ biến và thường chỉ xảy ra trong trường hợp quá liều.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nhà sản xuất và một số chuyên gia lâm sàng khuyến cáo thận trọng ở bệnh nhân bệnh tim mạch, tăng huyết áp và/hoặc cường giáp.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 5,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-dis-trung_binh-008",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Pantoprazole × Fractures, Bone",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Ở người có tiền sử gãy xương hoặc nguy cơ loãng xương, dùng A.T Pantoprazol lâu dài có thể làm tăng nguy cơ gãy xương ở hông, cổ tay hoặc cột sống.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguy cơ rõ hơn khi dùng liều cao (nhiều lần mỗi ngày) và kéo dài từ một năm trở lên.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cần thận trọng và nên trao đổi với bác sĩ để được theo dõi, quản lý phù hợp theo hướng dẫn điều trị.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-nang-001",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Colchicine × grapefruit juice",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống Auschicin cùng nước ép bưởi có thể làm tăng lượng thuốc trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Kéo theo nguy cơ ngộ độc với các biểu hiện như đau cơ, tổn thương thần kinh, suy đa tạng và giảm tế bào máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là một số chất trong bưởi cản trở men chuyển hóa thuốc và cơ chế đẩy thuốc ra khỏi ruột.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Khiến thuốc bị giữ lại nhiều hơn trong cơ thể.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-nang-002",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acitretin × alcohol",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống Dorzox 10 cùng với rượu có thể khiến cơ thể tạo ra một chất chuyển hóa mới từ thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Chất chuyển hóa này tồn tại trong máu lâu hơn hẳn so với thuốc gốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Chất này và các dẫn xuất liên quan có liên quan đến dị tật nghiêm trọng ở thai nhi.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Uống rượu khi đang dùng thuốc có thể làm tăng nguy cơ gây hại cho thai nhi nếu có thai, do chất chuyển hóa kéo dài này tồn tại lâu trong cơ thể.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-nang-003",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Acetaminophen × alcohol",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống rượu nhiều và kéo dài có thể làm tăng nguy cơ tổn thương gan khi dùng paracetamol (A.T Paracetamol inj 1 g/6,67 ml).",
+            "verdict": "supported"
+          },
+          {
+            "text": "Đã có những ca viêm gan nặng hiếm gặp và suy gan phải ghép gan.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nguyên nhân là do rượu khiến gan sản xuất nhiều enzyme chuyển hóa thuốc hơn.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Điều đó làm thuốc phân hủy nhanh hơn và tạo ra nhiều chất chuyển hóa có hại cho gan.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-nang-004",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aluminum hydroxide × citrus fruits",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống Algelstad cùng trái cây họ cam quýt có thể khiến cơ thể hấp thu nhiều nhôm hơn bình thường, dẫn đến nguy cơ nhiễm độc nhôm.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Citrate có nhiều trong cam, quýt, chanh và các loại nước ép của chúng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Citrate làm tăng khả năng hấp thu nhôm qua đường tiêu hóa.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Cơ chế cụ thể chưa được biết rõ, có thể do citrate tạo phức hợp hòa tan với nhôm giúp nhôm dễ vào máu hơn.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 4,
+        "n_total": 4,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-009",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Zidovudine × high-fat foods",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Thực phẩm giàu chất béo có thể làm giảm tốc độ và mức độ hấp thu của Becozido (zidovudine) khi dùng đường uống.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nồng độ đỉnh trong huyết tương giảm tới 50% khi dùng cùng bữa ăn nhiều chất béo dạng lỏng so với lúc đói.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thời gian đạt nồng độ đỉnh kéo dài từ 0,68 giờ lên 1,95 giờ khi dùng cùng bữa ăn nhiều chất béo dạng lỏng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Bữa ăn giàu protein cũng có thể làm chậm hấp thu và giảm nồng độ đỉnh của thuốc, dù mức độ hấp thu toàn phần không bị ảnh hưởng đáng kể.",
+            "verdict": "unsupported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 4,
+        "faithfulness": 0.75,
+        "hallucinated": [
+          "Bữa ăn giàu protein cũng có thể làm chậm hấp thu và giảm nồng độ đỉnh của thuốc, dù mức độ hấp thu toàn phần không bị ảnh hưởng đáng kể."
+        ],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "warn"
+      }
+    },
+    {
+      "case_id": "ho-food-nhe-010",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Desmopressin × food",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Thức ăn có thể làm giảm tốc độ và mức độ hấp thu của Des-Press (desmopressin) khi dùng đường uống.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Tác động này thường ít ảnh hưởng trên lâm sàng ở hầu hết người bệnh.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Đặc biệt vì thuốc thường được dùng vào buổi tối trước khi đi ngủ.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-005",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Cyclosporine × grapefruit juice",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Dùng Arpimune ME 100mg (cyclosporine) cùng nước ép bưởi có thể làm tăng nồng độ thuốc trong máu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Một số hợp chất trong bưởi ức chế quá trình chuyển hóa qua đường ruột của thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Mức độ tăng dao động khá khác nhau giữa từng người bệnh.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Người dùng nên được tư vấn tránh bưởi và nước ép bưởi, hoặc tránh thay đổi lượng tiêu thụ đột ngột.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Nên hạn chế rượu vang đỏ và nước ép nho tím cho đến khi có thêm dữ liệu.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 5,
+        "n_total": 5,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-006",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Griseofulvin × alcohol",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống rượu trong thời gian dùng Gifuldin 250 (griseofulvin) hiếm khi có thể gây phản ứng giống disulfiram, đỏ bừng mặt, nhịp tim nhanh hoặc tăng tác dụng của rượu.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thông tin này dựa trên các báo cáo ca lẻ, nguy cơ chỉ xảy ra trong một số trường hợp nhất định.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Người dùng cần lưu ý khả năng xuất hiện các tác dụng không mong muốn này khi kết hợp đồng thời.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-007",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Aripiprazole × alcohol",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Uống AREOLA-10 (aripiprazole) cùng rượu có thể làm tăng thêm tác động của thuốc lên hệ thần kinh trung ương.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Kết hợp cả hai khiến người dùng dễ bị buồn ngủ.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Kết hợp cả hai làm suy giảm khả năng phán đoán, suy nghĩ và giảm sự khéo léo khi vận động.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    },
+    {
+      "case_id": "ho-food-trung_binh-008",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Penicillamine × food",
+      "verdict": {
+        "claims": [
+          {
+            "text": "Khi dùng Mifros (penicillamine) cùng thức ăn, khả năng hấp thu của thuốc qua đường tiêu hóa có thể bị ảnh hưởng.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Thức ăn có thể cản trở quá trình cơ thể hấp thụ thuốc.",
+            "verdict": "supported"
+          },
+          {
+            "text": "Do đó thuốc có thể không phát huy đầy đủ tác dụng như mong muốn.",
+            "verdict": "supported"
+          }
+        ],
+        "n_supported": 3,
+        "n_total": 3,
+        "faithfulness": 1.0,
+        "hallucinated": [],
+        "fabricated_numbers": [],
+        "management_leak": [],
+        "verdict": "pass"
+      }
+    }
+  ],
+  "mean_faithfulness": 0.9481,
+  "fail": [
+    "ho-dd-nang-003",
+    "ho-dd-nhe-013",
+    "ho-dd-nhe-015",
+    "ho-dd-trung_binh-010"
+  ],
+  "with_hallucination": [
+    "ho-dd-nang-004",
+    "ho-dd-nhe-013",
+    "ho-dd-nhe-015",
+    "ho-dd-trung_binh-010",
+    "ho-dis-nang-004",
+    "ho-food-nhe-009"
+  ],
+  "with_fabricated_numbers": [],
+  "with_management_leak": [
+    "ho-dd-nang-003"
+  ]
+}
