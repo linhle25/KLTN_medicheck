@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Viewport } from "next";
 import FrontendBootGate from "@/components/FrontendBootGate";
 import MediAlertProvider from "@/components/MediAlertProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "MediCheck",
@@ -57,6 +58,7 @@ export default function RootLayout({
           <FrontendBootGate />
           {children}
         </MediAlertProvider>
+        <Analytics />
       </body>
     </html>
   );
