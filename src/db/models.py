@@ -316,6 +316,23 @@ class InteractionCheck(Base):
     thoi_gian_kiem_tra = Column(DateTime, default=datetime.utcnow)
 
 
+class PharmacistLookup(Base):
+    """Lịch sử tra cứu nội bộ của dược sĩ (công cụ /pharmacist-lookup) - tách khỏi
+    InteractionCheck vì bảng đó gắn với patient_id và các join PharmacistReview/
+    trang_thai_xac_nhan chỉ có ý nghĩa cho check của bệnh nhân. ket_qua_json ở đây
+    LUÔN chứa các field chỉ-dành-cho-dược-sĩ (giai_thich_duoc_si, xu_tri...) vì
+    route tạo ra nó không strip như route của bệnh nhân/khách."""
+
+    __tablename__ = "pharmacist_lookups"
+    id = Column(String, primary_key=True, default=_uuid)
+    pharmacist_id = Column(String, ForeignKey("users.id"), index=True)
+    ket_qua_json = Column(JSON)
+    co_canh_bao_nang = Column(Boolean, default=False)
+    co_chua_phan_loai = Column(Boolean, default=False)
+    thuoc_da_kiem_tra = Column(JSON, nullable=True)
+    thoi_gian_kiem_tra = Column(DateTime, default=datetime.utcnow)
+
+
 class PharmacistReview(Base):
     __tablename__ = "pharmacist_reviews"
     id = Column(String, primary_key=True, default=_uuid)

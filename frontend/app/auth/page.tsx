@@ -6,7 +6,17 @@ import Script from "next/script";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import MaterialIcon from "@/components/MaterialIcon";
-import { ApiError, completeGoogleRegistration, googleLogin, linkGoogle, login, register, resendVerification, type AuthResponse, type GoogleAuthResult } from "@/lib/api";
+import {
+  ApiError,
+  completeGoogleRegistration,
+  googleLogin,
+  linkGoogle,
+  login,
+  register,
+  resendVerification,
+  type AuthResponse,
+  type GoogleAuthResult,
+} from "@/lib/api";
 import { saveSession, sessionFromAuth } from "@/lib/auth";
 import MediFox from "@/components/MediFox";
 import { useMediAlert } from "@/components/MediAlertProvider";
@@ -29,7 +39,10 @@ declare global {
           initTokenClient(config: {
             client_id: string;
             scope: string;
-            callback: (response: { access_token?: string; error?: string }) => void;
+            callback: (response: {
+              access_token?: string;
+              error?: string;
+            }) => void;
             error_callback?: (error: { type: string }) => void;
           }): { requestAccessToken(): void };
         };
@@ -58,10 +71,13 @@ export default function AuthPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [googleReady, setGoogleReady] = useState(false);
-  const googleTokenClientRef = useRef<{ requestAccessToken(): void } | null>(null);
+  const googleTokenClientRef = useRef<{ requestAccessToken(): void } | null>(
+    null,
+  );
 
   useEffect(() => {
-    const resetSucceeded = sessionStorage.getItem("medicheck-password-reset-success") === "1";
+    const resetSucceeded =
+      sessionStorage.getItem("medicheck-password-reset-success") === "1";
     // Remove credentials written by older builds without reading or restoring
     // the plaintext password they may contain.
     sessionStorage.removeItem("medicheck-reset-credentials");
@@ -93,17 +109,31 @@ export default function AuthPage() {
     saveSession(sessionFromAuth(auth));
     toast({
       title: wasRegistration ? "Đăng ký thành công" : "Đăng nhập thành công",
-      message: wasRegistration ? `Chào mừng ${auth.ho_ten} đến với MediCheck.` : `Chào mừng ${auth.ho_ten} quay lại MediCheck.`,
+      message: wasRegistration
+        ? `Chào mừng ${auth.ho_ten} đến với MediCheck.`
+        : `Chào mừng ${auth.ho_ten} quay lại MediCheck.`,
     });
     router.replace(
-      auth.vai_tro === "patient" ? "/dashboard" : auth.vai_tro === "admin" ? "/admin" : "/pharmacist-dashboard",
+      auth.vai_tro === "patient"
+        ? "/dashboard"
+        : auth.vai_tro === "admin"
+          ? "/admin"
+          : "/pharmacist-dashboard",
     );
   }
 
-  async function handleAuthResult(result: GoogleAuthResult, wasRegistration = false) {
+  async function handleAuthResult(
+    result: GoogleAuthResult,
+    wasRegistration = false,
+  ) {
     if ("user_id" in result) return finish(result, wasRegistration);
     setCanResend(result.code === "EMAIL_VERIFICATION_REQUIRED");
-    setNotice(result.message || (result.account_status === "pending_pharmacist" ? "Hồ sơ dược sĩ đang chờ quản trị viên duyệt." : "Tài khoản chưa sẵn sàng đăng nhập."));
+    setNotice(
+      result.message ||
+        (result.account_status === "pending_pharmacist"
+          ? "Hồ sơ dược sĩ đang chờ quản trị viên duyệt."
+          : "Tài khoản chưa sẵn sàng đăng nhập."),
+    );
   }
 
   async function demo(emailDemo: string) {
@@ -134,11 +164,26 @@ export default function AuthPage() {
       } else if (mode === "login") {
         await handleAuthResult(await login(email, matKhau));
       } else if (googleCredential) {
-        const result = await completeGoogleRegistration(googleCredential, role, soChungChi, noiCongTac);
+        const result = await completeGoogleRegistration(
+          googleCredential,
+          role,
+          soChungChi,
+          noiCongTac,
+        );
         if ("user_id" in result) await finish(result, true);
-        else setNotice(result.message || "Hồ sơ dược sĩ đang chờ quản trị viên duyệt.");
+        else
+          setNotice(
+            result.message || "Hồ sơ dược sĩ đang chờ quản trị viên duyệt.",
+          );
       } else {
-        const result = await register(hoTen, email, matKhau, role, soChungChi, noiCongTac);
+        const result = await register(
+          hoTen,
+          email,
+          matKhau,
+          role,
+          soChungChi,
+          noiCongTac,
+        );
         setNotice(result.message);
         setCanResend(true);
       }
@@ -154,23 +199,39 @@ export default function AuthPage() {
   }
 
   async function handleGoogleCredential(credential: string) {
-    setLoading(true); setError(null); setNotice(null);
+    setLoading(true);
+    setError(null);
+    setNotice(null);
     try {
       const result: GoogleAuthResult = await googleLogin(credential);
       if ("user_id" in result) return await finish(result);
       setGoogleCredential(credential);
       if (result.code === "ACCOUNT_LINK_REQUIRED") {
-        setLinkRequired(true); setNotice("Nhập mật khẩu hiện tại để liên kết tài khoản Google này.");
+        setLinkRequired(true);
+        setNotice("Nhập mật khẩu hiện tại để liên kết tài khoản Google này.");
       } else if (result.code === "REGISTRATION_REQUIRED") {
-        setMode("register"); setEmail(result.email || ""); setHoTen(result.ho_ten || "");
-        setNotice("Google đã xác minh email. Hãy chọn vai trò để hoàn tất đăng ký.");
+        setMode("register");
+        setEmail(result.email || "");
+        setHoTen(result.ho_ten || "");
+        setNotice(
+          "Google đã xác minh email. Hãy chọn vai trò để hoàn tất đăng ký.",
+        );
       } else setNotice(result.message || "Tài khoản đang chờ xử lý.");
     } catch (err) {
       if (err instanceof ApiError && err.code === "ACCOUNT_LINK_REQUIRED") {
-        setGoogleCredential(credential); setLinkRequired(true); setNotice("Nhập mật khẩu hiện tại để liên kết tài khoản Google này."); return;
+        setGoogleCredential(credential);
+        setLinkRequired(true);
+        setNotice("Nhập mật khẩu hiện tại để liên kết tài khoản Google này.");
+        return;
       }
-      setError(err instanceof ApiError ? err.message : "Không thể xác thực với Google.");
-    } finally { setLoading(false); }
+      setError(
+        err instanceof ApiError
+          ? err.message
+          : "Không thể xác thực với Google.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   // Không dùng google.accounts.id/renderButton nữa - widget đó luôn vẽ 1 viền
@@ -183,23 +244,24 @@ export default function AuthPage() {
   function initGoogleAuth() {
     const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
     if (!clientId || !window.google) return;
-    googleTokenClientRef.current = window.google.accounts.oauth2.initTokenClient({
-      client_id: clientId,
-      scope: "openid email profile",
-      callback: (response) => {
-        setLoading(false);
-        if (response.error || !response.access_token) {
-          setError("Không thể xác thực với Google.");
-          return;
-        }
-        void handleGoogleCredential(response.access_token);
-      },
-      error_callback: () => {
-        setLoading(false);
-        // Người dùng đóng popup hoặc trình duyệt chặn popup - không phải lỗi hệ
-        // thống, không cần báo alert đỏ, chỉ dừng loading lặng lẽ.
-      },
-    });
+    googleTokenClientRef.current =
+      window.google.accounts.oauth2.initTokenClient({
+        client_id: clientId,
+        scope: "openid email profile",
+        callback: (response) => {
+          setLoading(false);
+          if (response.error || !response.access_token) {
+            setError("Không thể xác thực với Google.");
+            return;
+          }
+          void handleGoogleCredential(response.access_token);
+        },
+        error_callback: () => {
+          setLoading(false);
+          // Người dùng đóng popup hoặc trình duyệt chặn popup - không phải lỗi hệ
+          // thống, không cần báo alert đỏ, chỉ dừng loading lặng lẽ.
+        },
+      });
     setGoogleReady(true);
   }
 
@@ -208,13 +270,18 @@ export default function AuthPage() {
       setError("Google Sign-In đang tải, vui lòng thử lại sau giây lát.");
       return;
     }
-    setLoading(true); setError(null);
+    setLoading(true);
+    setError(null);
     googleTokenClientRef.current.requestAccessToken();
   }
 
   return (
     <main className="mc-auth" data-mode={mode}>
-      <Script src="https://accounts.google.com/gsi/client" strategy="afterInteractive" onLoad={initGoogleAuth} />
+      <Script
+        src="https://accounts.google.com/gsi/client"
+        strategy="afterInteractive"
+        onLoad={initGoogleAuth}
+      />
       <style jsx global>{`
         .mc-auth {
           height: 100dvh;
@@ -418,8 +485,12 @@ export default function AuthPage() {
           font-size: 12px;
           font-weight: 700;
           box-shadow: 0 4px 12px transparent;
-          transition: transform 180ms ease, border-color 180ms ease,
-            background-color 180ms ease, box-shadow 180ms ease, color 180ms ease;
+          transition:
+            transform 180ms ease,
+            border-color 180ms ease,
+            background-color 180ms ease,
+            box-shadow 180ms ease,
+            color 180ms ease;
         }
         .mc-auth__demo button:hover:not(:disabled) {
           transform: translateY(-3px);
@@ -587,8 +658,12 @@ export default function AuthPage() {
           font-size: 13px;
           font-weight: 700;
           box-shadow: 0 4px 12px transparent;
-          transition: transform 180ms ease, border-color 180ms ease,
-            background-color 180ms ease, box-shadow 180ms ease, color 180ms ease;
+          transition:
+            transform 180ms ease,
+            border-color 180ms ease,
+            background-color 180ms ease,
+            box-shadow 180ms ease,
+            color 180ms ease;
         }
         /* Nút dự phòng này trước không có bản dark mode - luôn nền sáng #f7faff
            dù đang bật dark mode, nổi bật thành "khối trắng" trên nền tối trong
@@ -993,14 +1068,14 @@ export default function AuthPage() {
                   onClick={() => demo("demo-pharmacist@medguard.local")}
                   disabled={loading}
                 >
-                  Dược sĩ Demo
+                  Dược sĩ
                 </button>
                 <button
                   type="button"
                   onClick={() => demo("demo-patient@medguard.local")}
                   disabled={loading}
                 >
-                  Người dùng Demo
+                  Người dùng
                 </button>
               </div>
             )}
@@ -1022,7 +1097,11 @@ export default function AuthPage() {
                   </div>
                   <div className="mc-auth__field">
                     <label id="role-label">Vai trò</label>
-                    <div className="mc-auth__role-options" role="radiogroup" aria-labelledby="role-label">
+                    <div
+                      className="mc-auth__role-options"
+                      role="radiogroup"
+                      aria-labelledby="role-label"
+                    >
                       <button
                         type="button"
                         role="radio"
@@ -1047,66 +1126,125 @@ export default function AuthPage() {
                   </div>
                   {role === "pharmacist" && (
                     <>
-                      <div className="mc-auth__field"><label htmlFor="license">Số chứng chỉ hành nghề</label><div className="mc-auth__input icon-input-spacing"><MaterialIcon name="verified" size={20} /><input id="license" required value={soChungChi} onChange={(e) => setSoChungChi(e.target.value)} /></div></div>
-                      <div className="mc-auth__field"><label htmlFor="workplace">Nơi công tác</label><div className="mc-auth__input icon-input-spacing"><MaterialIcon name="local_hospital" size={20} /><input id="workplace" required value={noiCongTac} onChange={(e) => setNoiCongTac(e.target.value)} /></div></div>
+                      <div className="mc-auth__field">
+                        <label htmlFor="license">Số chứng chỉ hành nghề</label>
+                        <div className="mc-auth__input icon-input-spacing">
+                          <MaterialIcon name="verified" size={20} />
+                          <input
+                            id="license"
+                            required
+                            value={soChungChi}
+                            onChange={(e) => setSoChungChi(e.target.value)}
+                          />
+                        </div>
+                      </div>
+                      <div className="mc-auth__field">
+                        <label htmlFor="workplace">Nơi công tác</label>
+                        <div className="mc-auth__input icon-input-spacing">
+                          <MaterialIcon name="local_hospital" size={20} />
+                          <input
+                            id="workplace"
+                            required
+                            value={noiCongTac}
+                            onChange={(e) => setNoiCongTac(e.target.value)}
+                          />
+                        </div>
+                      </div>
                     </>
                   )}
                 </>
               )}
-              {!googleCredential && <div className="mc-auth__field">
-                <label htmlFor="email">Email</label>
-                <div className="mc-auth__input icon-input-spacing">
-                  <MaterialIcon name="mail" size={20} />
-                  <input
-                    id="email"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                    placeholder="ban@vidu.com"
-                  />
-                </div>
-              </div>}
-              {(!googleCredential || linkRequired) && <div className="mc-auth__field">
-                <div className="mc-auth__label-row">
-                  <label htmlFor="mat_khau">Mật khẩu</label>
-                  {mode === "login" && (
-                    <Link href="/auth/forgot-password">
-                      Quên mật khẩu?
-                    </Link>
-                  )}
-                </div>
-                <div className="mc-auth__input icon-input-spacing">
-                  <MaterialIcon name="lock" size={20} />
-                  <input
-                    id="mat_khau"
-                    type={showPassword ? "text" : "password"}
-                    required={!googleCredential || linkRequired}
-                    minLength={linkRequired || mode === "login" ? 1 : 8}
-                    value={matKhau}
-                    onChange={(event) => setMatKhau(event.target.value)}
-                    placeholder={linkRequired ? "Mật khẩu hiện tại" : "Tối thiểu 8 ký tự"}
-                  />
-                  <button
-                    type="button"
-                    className="mc-auth__icon"
-                    onClick={() => setShowPassword((value) => !value)}
-                    aria-label={showPassword ? "Ẩn mật khẩu" : "Hiện mật khẩu"}
-                  >
-                    <MaterialIcon
-                      name={showPassword ? "visibility_off" : "visibility"}
-                      size={20}
+              {!googleCredential && (
+                <div className="mc-auth__field">
+                  <label htmlFor="email">Email</label>
+                  <div className="mc-auth__input icon-input-spacing">
+                    <MaterialIcon name="mail" size={20} />
+                    <input
+                      id="email"
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(event) => setEmail(event.target.value)}
+                      placeholder="ban@vidu.com"
                     />
-                  </button>
+                  </div>
                 </div>
-              </div>}
+              )}
+              {(!googleCredential || linkRequired) && (
+                <div className="mc-auth__field">
+                  <div className="mc-auth__label-row">
+                    <label htmlFor="mat_khau">Mật khẩu</label>
+                    {mode === "login" && (
+                      <Link href="/auth/forgot-password">Quên mật khẩu?</Link>
+                    )}
+                  </div>
+                  <div className="mc-auth__input icon-input-spacing">
+                    <MaterialIcon name="lock" size={20} />
+                    <input
+                      id="mat_khau"
+                      type={showPassword ? "text" : "password"}
+                      required={!googleCredential || linkRequired}
+                      minLength={linkRequired || mode === "login" ? 1 : 8}
+                      value={matKhau}
+                      onChange={(event) => setMatKhau(event.target.value)}
+                      placeholder={
+                        linkRequired ? "Mật khẩu hiện tại" : "Tối thiểu 8 ký tự"
+                      }
+                    />
+                    <button
+                      type="button"
+                      className="mc-auth__icon"
+                      onClick={() => setShowPassword((value) => !value)}
+                      aria-label={
+                        showPassword ? "Ẩn mật khẩu" : "Hiện mật khẩu"
+                      }
+                    >
+                      <MaterialIcon
+                        name={showPassword ? "visibility_off" : "visibility"}
+                        size={20}
+                      />
+                    </button>
+                  </div>
+                </div>
+              )}
               {error && (
                 <p className="mc-auth__error" role="alert">
                   {error}
                 </p>
               )}
-              {notice && <p className="mc-auth__notice" role="status" aria-live="polite">{notice}</p>}
-              {canResend && email && <button type="button" className="mc-auth__tab" onClick={() => void resendVerification(email).then((result) => { if (result.code === "EMAIL_NOT_REGISTERED") { setNotice(null); setError(result.message); return; } setError(null); setNotice(result.message); }).catch((err) => { setNotice(null); setError(err instanceof ApiError ? err.message : "Không thể gửi lại email."); })}>Gửi lại email xác minh</button>}
+              {notice && (
+                <p className="mc-auth__notice" role="status" aria-live="polite">
+                  {notice}
+                </p>
+              )}
+              {canResend && email && (
+                <button
+                  type="button"
+                  className="mc-auth__tab"
+                  onClick={() =>
+                    void resendVerification(email)
+                      .then((result) => {
+                        if (result.code === "EMAIL_NOT_REGISTERED") {
+                          setNotice(null);
+                          setError(result.message);
+                          return;
+                        }
+                        setError(null);
+                        setNotice(result.message);
+                      })
+                      .catch((err) => {
+                        setNotice(null);
+                        setError(
+                          err instanceof ApiError
+                            ? err.message
+                            : "Không thể gửi lại email.",
+                        );
+                      })
+                  }
+                >
+                  Gửi lại email xác minh
+                </button>
+              )}
               <button
                 type="submit"
                 className="mc-auth__submit"
@@ -1119,7 +1257,13 @@ export default function AuthPage() {
                   </>
                 ) : (
                   <>
-                    {linkRequired ? "Liên kết và đăng nhập" : mode === "login" ? "Đăng nhập" : googleCredential ? "Hoàn tất đăng ký Google" : "Tạo tài khoản"}
+                    {linkRequired
+                      ? "Liên kết và đăng nhập"
+                      : mode === "login"
+                        ? "Đăng nhập"
+                        : googleCredential
+                          ? "Hoàn tất đăng ký Google"
+                          : "Tạo tài khoản"}
                     <MaterialIcon name="arrow_forward" size={20} />
                   </>
                 )}
@@ -1135,11 +1279,28 @@ export default function AuthPage() {
                 onClick={handleGoogleClick}
                 disabled={loading || !googleReady}
               >
-                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-                  <path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z" />
-                  <path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.81.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z" />
-                  <path fill="#FBBC05" d="M3.97 10.72A5.4 5.4 0 0 1 3.68 9c0-.6.1-1.18.29-1.72V4.95H.96A9 9 0 0 0 0 9c0 1.45.35 2.83.96 4.05l3.01-2.33z" />
-                  <path fill="#EA4335" d="M9 3.58c1.32 0 2.51.46 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z" />
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="#4285F4"
+                    d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.81.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"
+                  />
+                  <path
+                    fill="#FBBC05"
+                    d="M3.97 10.72A5.4 5.4 0 0 1 3.68 9c0-.6.1-1.18.29-1.72V4.95H.96A9 9 0 0 0 0 9c0 1.45.35 2.83.96 4.05l3.01-2.33z"
+                  />
+                  <path
+                    fill="#EA4335"
+                    d="M9 3.58c1.32 0 2.51.46 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"
+                  />
                 </svg>
                 Tiếp tục với Google
               </button>

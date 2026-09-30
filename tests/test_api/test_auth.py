@@ -3,43 +3,41 @@ from datetime import datetime
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import StaticPool
 
 from src.api.deps import get_db
 from src.db.models import AuthActionToken, AuthIdentity, Base, RefreshSession, User
 from src.main import app
 from src.services.auth import hash_password, issue_action_token
+from tests.conftest import isolated_postgres_engine
 
 
 @pytest_asyncio.fixture
 async def auth_env(monkeypatch):
-    engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
-    factory = sessionmaker(bind=engine, autocommit=False, autoflush=False)
-    Base.metadata.create_all(engine)
+    with isolated_postgres_engine() as engine:
+        factory = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+        Base.metadata.create_all(engine)
 
-    def override_db():
-        db = factory()
-        try:
-            yield db
-        finally:
-            db.close()
+        def override_db():
+            db = factory()
+            try:
+                yield db
+            finally:
+                db.close()
 
-    app.dependency_overrides[get_db] = override_db
+        app.dependency_overrides[get_db] = override_db
 
-    async def fake_google(credential: str):
-        if credential == "invalid-google-token-value":
-            raise ValueError("Google token không hợp lệ")
-        suffix = credential.rsplit("-", 1)[-1]
-        return {"sub": f"google-{suffix}", "email": f"google-{suffix}@gmail.com", "email_verified": True, "name": f"Google {suffix}", "aud": "test", "iss": "https://accounts.google.com"}
+        async def fake_google(credential: str):
+            if credential == "invalid-google-token-value":
+                raise ValueError("Google token không hợp lệ")
+            suffix = credential.rsplit("-", 1)[-1]
+            return {"sub": f"google-{suffix}", "email": f"google-{suffix}@gmail.com", "email_verified": True, "name": f"Google {suffix}", "aud": "test", "iss": "https://accounts.google.com"}
 
-    monkeypatch.setattr("src.api.auth_routes.verify_google_credential", fake_google)
-    transport = ASGITransport(app=app, client=("pytest-auth", 123))
-    async with AsyncClient(transport=transport, base_url="http://test") as client:
-        yield client, factory, transport
-    app.dependency_overrides.pop(get_db, None)
-    engine.dispose()
+        monkeypatch.setattr("src.api.auth_routes.verify_google_credential", fake_google)
+        transport = ASGITransport(app=app, client=("pytest-auth", 123))
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            yield client, factory, transport
+        app.dependency_overrides.pop(get_db, None)
 
 
 @pytest.mark.asyncio

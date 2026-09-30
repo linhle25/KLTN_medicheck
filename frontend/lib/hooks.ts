@@ -5,9 +5,11 @@ import {
   listPatientPrescriptions,
   listPatientChecks,
   listPatientNotifications,
+  listPharmacistLookups,
   type PatientPrescription,
   type InteractionCheckSummary,
   type NotificationItem,
+  type PharmacistLookupSummary,
 } from "@/lib/api";
 
 // Cache theo key ["patient-...", userId] - SWR giữ cache trong bộ nhớ trình duyệt
@@ -59,5 +61,24 @@ export function usePatientCacheMutators(userId: string | undefined) {
     revalidatePrescriptions: () => mutate(["patient-prescriptions", userId]),
     revalidateChecks: () => mutate(["patient-checks", userId]),
     revalidateNotifications: () => mutate(["patient-notifications", userId]),
+  };
+}
+
+export function usePharmacistLookups(
+  userId: string | undefined,
+  token: string | undefined,
+  config?: SWRConfiguration<PharmacistLookupSummary[]>
+) {
+  return useSWR<PharmacistLookupSummary[]>(
+    userId && token ? ["pharmacist-lookups", userId] : null,
+    () => listPharmacistLookups(token as string),
+    config
+  );
+}
+
+export function usePharmacistCacheMutators(userId: string | undefined) {
+  const { mutate } = useSWRConfig();
+  return {
+    revalidateLookups: () => mutate(["pharmacist-lookups", userId]),
   };
 }

@@ -1,27 +1,26 @@
 from unittest.mock import AsyncMock
 
 import pytest
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import StaticPool
 
 import src.services.explanation_cache as explanation_cache
 import src.services.rollup_explain as rollup_explain
 from src.db.models import Base, ProductExplanationCache
 from src.services.explanation_cache import lookup_cached, save_cached
+from tests.conftest import isolated_postgres_engine
 
 
 @pytest.fixture
 def cache_db(monkeypatch):
     """SessionLocal ở explanation_cache.py được import theo giá trị (không qua
-    Depends), nên phải monkeypatch trực tiếp module đó để trỏ vào SQLite in-memory
+    Depends), nên phải monkeypatch trực tiếp module đó để trỏ vào 1 schema Postgres
     riêng cho test - giống cách tests/conftest.py::client patch SessionLocal ở mọi
     module đã import nó."""
-    engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
-    Base.metadata.create_all(bind=engine)
-    testing_session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-    monkeypatch.setattr(explanation_cache, "SessionLocal", testing_session)
-    return testing_session
+    with isolated_postgres_engine() as engine:
+        Base.metadata.create_all(bind=engine)
+        testing_session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+        monkeypatch.setattr(explanation_cache, "SessionLocal", testing_session)
+        yield testing_session
 
 
 def test_lookup_cached_returns_none_on_miss(cache_db):

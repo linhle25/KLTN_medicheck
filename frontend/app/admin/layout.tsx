@@ -87,16 +87,17 @@ export default function AdminLayout({
           <span>Trung tâm quản trị</span>
         </div>
         <div className="patient-header__actions">
-          <ThemeModeToggle />
+          {/* <ThemeModeToggle /> */}
           <div
             className="patient-header__identity admin-header__identity"
             aria-label={`Quản trị viên ${fullName}`}
           >
+            <span className="patient-header__name">{fullName}</span>
             <span className="patient-header__avatar" aria-hidden="true">
               {avatarLetter}
             </span>
             <span className="patient-header__tooltip" role="tooltip">
-              {fullName}
+              {fullName} · {session.email}
             </span>
           </div>
           <button

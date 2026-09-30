@@ -12,6 +12,21 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: medicheck_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
     steps:
       - uses: actions/checkout@v4
 
@@ -28,17 +43,16 @@ jobs:
         run: ruff check src/ tests/
 
       - name: Run tests
-        # Dùng SQLite riêng để test không ghi vào cơ sở dữ liệu production.
-        run: |
-          rm -f ci_test.db
-          pytest tests/ -v --tb=short
+        # Dùng Postgres service container riêng (xem trên) để test không ghi vào
+        # cơ sở dữ liệu production.
+        run: pytest tests/ -v --tb=short
         env:
           APP_ENV: test
           OPENAI_API_KEY: test-key
           # get_llm() (src/services/llm.py) doc DEEPSEEK_API_KEY, khong phai
           # OPENAI_API_KEY - thieu bien nay se loi "Missing credentials".
           DEEPSEEK_API_KEY: test-key
-          DATABASE_URL: sqlite:///./ci_test.db
+          DATABASE_URL: postgresql+psycopg2://postgres:postgres@localhost:5432/medicheck_test
           DATABASE_URL_FACTS: ""
 
   deploy-backend:

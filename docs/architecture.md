@@ -138,7 +138,6 @@ trả cờ "không đủ dữ liệu" thay vì suy đoán.
 ETL: [`scripts/import_ddinter.py`](../scripts/import_ddinter.py),
 [`import_ddinter_dfi_ddsi.py`](../scripts/import_ddinter_dfi_ddsi.py),
 [`import_products.py`](../scripts/import_products.py).
-SQLite (`data/app.db`) vẫn dùng được cho dev offline khi để trống `DATABASE_URL_FACTS`.
 
 ## 5. Luồng một lần kiểm tra
 

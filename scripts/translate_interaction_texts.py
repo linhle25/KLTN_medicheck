@@ -38,9 +38,8 @@ _CLASSIFIED_LEVELS = ["nhe", "trung_binh", "nang"]
 _CONCURRENCY = 8
 
 # Dich + ghi DB theo tung dot nho (thay vi dich het ~3000 cap roi moi bat dau ghi) -
-# neu 1 lan ghi loi (vd tranh chap file SQLite khi backend Docker dang chay dong thoi
-# mount cung file data/app.db), chi mat toi da 1 dot dang xu ly thay vi mat toan bo
-# phan da dich nhung chua kip ghi cua ca lan chay.
+# neu 1 lan ghi loi (vd mat ket noi Postgres thoang qua), chi mat toi da 1 dot dang
+# xu ly thay vi mat toan bo phan da dich nhung chua kip ghi cua ca lan chay.
 _CHUNK_SIZE = 20
 _WRITE_RETRIES = 3
 _WRITE_RETRY_DELAY_SECONDS = 2.0
@@ -105,9 +104,8 @@ async def _translate_pair(
 
 
 def _write_pair(db, mo_ta: str, xu_tri: str | None, mo_ta_dich: str, xu_tri_dich: str | None) -> bool:
-    """Ghi + commit ngay 1 cap da dich, thu lai vai lan neu SQLite bao loi thoang qua
-    (vd tranh chap khoa file voi backend Docker dang chay dong thoi tren cung file
-    data/app.db qua bind-mount) truoc khi bo qua han cap nay."""
+    """Ghi + commit ngay 1 cap da dich, thu lai vai lan neu Postgres bao loi thoang
+    qua (vd mat ket noi/timeout) truoc khi bo qua han cap nay."""
     for attempt in range(1, _WRITE_RETRIES + 1):
         try:
             db.query(Interaction).filter(

@@ -70,7 +70,7 @@ function Header() {
         />
       </Link>
       <nav className="mc-nav" aria-label="Điều hướng chính">
-        <ThemeModeToggle />
+        {/* <ThemeModeToggle /> */}
         <a href="#features">Tính năng</a>
         <a href="#about">Về MediCheck</a>
         <Link href="/auth" className="mc-login">

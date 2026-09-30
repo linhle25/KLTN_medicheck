@@ -1,10 +1,11 @@
 import uuid
+from contextlib import contextmanager
 from unittest.mock import AsyncMock
 
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
-from sqlalchemy import delete, or_, select
+from sqlalchemy import create_engine, delete, or_, select, text
 
 from src.config import get_settings
 from src.db.models import (
@@ -28,15 +29,39 @@ from src.db.session import SessionLocal, SessionLocalFacts, init_db
 from src.main import app
 
 
+@contextmanager
+def isolated_postgres_engine():
+    """Tạo 1 schema Postgres riêng (tên random), cách ly hoàn toàn cho 1 test - thay
+    cho SQLite in-memory (StaticPool) trước đây, vì app giờ chỉ chạy Postgres, không
+    còn nhánh SQLite nào ở src/db/session.py. Vẫn dùng chung 1 server Postgres với
+    DATABASE_URL nhưng mỗi test có schema riêng (schema_translate_map) nên không
+    đụng dữ liệu thật/dữ liệu của test khác, và tự dọn (DROP SCHEMA ... CASCADE) khi
+    test xong - dùng cho các test cần 1 DB trắng hoàn toàn (không qua init_db())."""
+    schema = f"test_{uuid.uuid4().hex[:12]}"
+    base_engine = create_engine(get_settings().database_url)
+    with base_engine.connect() as conn:
+        conn.execute(text(f'CREATE SCHEMA "{schema}"'))
+        conn.commit()
+    engine = base_engine.execution_options(schema_translate_map={None: schema})
+    try:
+        yield engine
+    finally:
+        with base_engine.connect() as conn:
+            conn.execute(text(f'DROP SCHEMA "{schema}" CASCADE'))
+            conn.commit()
+        base_engine.dispose()
+
+
 @pytest.fixture(scope="session", autouse=True)
 def _ensure_test_db_schema():
-    """Tao bang truoc khi chay test - can cho DB trong (CI/local sqlite moi tinh).
+    """Tao bang truoc khi chay test - can cho DB Postgres test moi tinh (CI: service
+    rieng, xem ci.yml/cd.yml).
 
     client fixture dung ASGITransport, KHONG tu chay lifespan cua FastAPI (noi
-    goi init_db() luc app khoi dong that), nen tren mot SQLite hoan toan moi
-    (chua tung co bang nao) moi test se loi "no such table". Doi voi DB da co
-    san bang (Supabase that, hoac app.db da seed), create_all() la no-op an
-    toan (chi tao bang thieu, khong dong den bang co san)."""
+    goi init_db() luc app khoi dong that), nen tren 1 DB hoan toan moi (chua tung co
+    bang nao) moi test se loi "relation does not exist". Doi voi DB da co san bang
+    (Supabase that, hoac DB dev da seed), create_all() la no-op an toan (chi tao
+    bang thieu, khong dong den bang co san)."""
     init_db()
 
 
@@ -88,15 +113,17 @@ def _get_or_create_severe_interaction(db_facts, medication_a_id: str, medication
 @pytest.fixture(scope="session", autouse=True)
 def _seed_fixture_medications(_ensure_test_db_schema):
     """Seed toi thieu du lieu ma vai test API can (ten thuoc that, 1 canh bao
-    "nang") - tren SQLite moi tinh (CI/local) khong co gi de tra cuu.
+    "nang") - tren Postgres test moi tinh (CI: service rieng, xem ci.yml/cd.yml)
+    khong co gi de tra cuu.
 
-    Chi chay khi DATABASE_URL la sqlite - tren Supabase/CockroachDB that, Warfarin/
-    Acetylsalicylic acid/Ibuprofen/Paracetamol gan nhu chac chan da ton tai that
-    (idempotent, kiem tra truoc khi insert), nhung de tuyet doi khong bao gio ghi
-    them du lieu vao DB that dung chung cua team tu 1 lan chay pytest, bo qua han
-    khi khong phai sqlite."""
+    Chi chay khi APP_ENV=test - day la tin hieu duy nhat (khong con phan biet duoc
+    theo dialect URL vi ca test lan production deu la Postgres) de biet dang chay
+    tren 1 DB test co the ghi tuy y. TUYET DOI KHONG set APP_ENV=test khi
+    DATABASE_URL dang tro vao DB that dung chung cua team - seed nay se ghi them
+    Warfarin/Acetylsalicylic acid/Ibuprofen/Paracetamol + 1 canh bao "nang" fixture
+    vao do."""
     settings = get_settings()
-    if not settings.database_url.startswith("sqlite"):
+    if settings.app_env != "test":
         return
 
     with SessionLocal() as db:

@@ -23,9 +23,9 @@ function renumberDefaultPrescriptions(items: Prescription[]) {
 // (InteractionOverview, audience="pharmacist") với luồng "Tương tác" của bệnh
 // nhân - chỉ khác: không có "Nhập từ hồ sơ" (PrescriptionPanel không nhận
 // savedPrescriptions/onImportFrom ở đây), giọng điệu AI khoa học/chuyên nghiệp hơn
-// (xem InteractionOverview + build_overview_explanation audience="pharmacist"), và
-// không lưu draft vào sessionStorage - đúng tinh thần "công cụ tra cứu nội bộ,
-// không lưu lịch sử" đã có từ trước.
+// (xem InteractionOverview + build_overview_explanation audience="pharmacist").
+// Mỗi lần phân tích được lưu vào PharmacistLookup (xem check_products_as_pharmacist)
+// - xem lại ở trang /pharmacist-history.
 export default function PharmacistLookupPage() {
   const session = getSession();
   const [prescriptions, setPrescriptions] = useState<Prescription[]>(() => [createPrescription(1)]);
@@ -97,8 +97,12 @@ export default function PharmacistLookupPage() {
       <section className="greeting">
         <p className="eyebrow">SỔ TAY DƯỢC SĨ</p>
         <h1 className="greeting__title page-title-icon"><MaterialIcon name="analytics" size={25} />Tra cứu tương tác thuốc</h1>
-        <p className="greeting__subtitle">Công cụ tra cứu nội bộ — không lưu lịch sử, không gắn với bệnh nhân nào.</p>
       </section>
+
+      <div className="guest-mode-banner">
+        <MaterialIcon name="info" size={18} />
+        <span>Công cụ tra cứu nội bộ, không gắn với bệnh nhân nào — kết quả được lưu vào lịch sử tra cứu của bạn.</span>
+      </div>
 
       {error && <p className="error-text" role="alert">{error}</p>}
       {result && (result.unknown_products?.length ?? 0) > 0 && (

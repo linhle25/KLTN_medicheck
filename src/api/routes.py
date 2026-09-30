@@ -20,6 +20,7 @@ from src.db.models import (
     PatientMedication,
     PatientPrescription,
     PatientProfile,
+    PharmacistLookup,
     PharmacistReview,
     Product,
     ProductIngredient,
@@ -40,6 +41,7 @@ from src.models.schemas import (
     NotificationItem,
     PatientPrescriptionSummary,
     PatientProfileInfo,
+    PharmacistLookupSummary,
     PharmacistProfileInfo,
     PharmacistReviewRequest,
     PharmacistReviewResponse,
@@ -579,10 +581,24 @@ async def check_products_as_pharmacist(
     current_user: User = Depends(require_role("pharmacist")),
     db: Session = Depends(get_db),
 ) -> MedicationCheckResponse:
-    """Công cụ tra cứu độc lập cho dược sĩ - không lưu lịch sử, KHÔNG ẩn xu_tri/thay_the."""
+    """Công cụ tra cứu độc lập cho dược sĩ - KHÔNG ẩn xu_tri/thay_the (audience pharmacist)."""
     result, unknown, no_data = await _run_product_check(request.prescriptions, db, for_pharmacist=True)
+
+    lookup = PharmacistLookup(
+        pharmacist_id=current_user.id,
+        ket_qua_json=result,
+        co_canh_bao_nang=bool(
+            result.get("has_severe") or result.get("has_severe_disease_interaction")
+        ),
+        co_chua_phan_loai=bool(result.get("has_unclassified")),
+        thuoc_da_kiem_tra=_checked_drug_names(result),
+    )
+    db.add(lookup)
+    db.commit()
+    db.refresh(lookup)
+
     return MedicationCheckResponse(
-        interaction_check_id="pharmacist-lookup",
+        interaction_check_id=lookup.id,
         ranked_results=result.get("ranked_results", []),
         explanations=result.get("explanations", []),
         has_severe=result.get("has_severe", False),
@@ -861,9 +877,9 @@ async def search_diseases(
     if not term:
         raise HTTPException(status_code=422, detail="Từ khóa tìm kiếm bệnh không được để trống")
 
-    # Danh mục DDInter hiện có quy mô nhỏ. Xếp hạng trong application giúp kết
-    # quả nhất quán giữa PostgreSQL/SQLite mà không phụ thuộc unaccent/pg_trgm,
-    # đồng thời hỗ trợ tên không dấu, tiền tố, bí danh và typo nhẹ.
+    # Danh mục DDInter hiện có quy mô nhỏ. Xếp hạng trong application giúp không
+    # phụ thuộc extension Postgres (unaccent/pg_trgm), đồng thời hỗ trợ tên không
+    # dấu, tiền tố, bí danh và typo nhẹ.
     diseases = rank_disease_matches(db.query(Disease).all(), term, limit)
     return [_disease_info(disease) for disease in diseases]
 
@@ -1574,16 +1590,118 @@ async def mark_notification_read(
 async def check_medications_as_pharmacist(
     request: MedicationCheckRequest,
     current_user: User = Depends(require_role("pharmacist")),
+    db: Session = Depends(get_db),
 ) -> MedicationCheckResponse:
     """Công cụ tra cứu tương tác độc lập cho dược sĩ - không gắn bệnh nhân nào,
-    không lưu lịch sử, và KHÔNG ẩn xu_tri/thay_the (dược sĩ được xem đầy đủ)."""
+    KHÔNG ẩn xu_tri/thay_the (dược sĩ được xem đầy đủ)."""
     result = dict(await agent.ainvoke({"raw_medications": request.medications, "audience": "pharmacist"}))
     if result.get("error"):
         raise HTTPException(status_code=422, detail=result["error"])
+
+    lookup = PharmacistLookup(
+        pharmacist_id=current_user.id,
+        ket_qua_json=result,
+        co_canh_bao_nang=bool(result.get("has_severe")),
+        co_chua_phan_loai=bool(result.get("has_unclassified")),
+        thuoc_da_kiem_tra=list(request.medications),
+    )
+    db.add(lookup)
+    db.commit()
+    db.refresh(lookup)
+
     return MedicationCheckResponse(
-        interaction_check_id="pharmacist-lookup",
+        interaction_check_id=lookup.id,
         ranked_results=result.get("ranked_results", []),
         explanations=result.get("explanations", []),
         has_severe=result.get("has_severe", False),
         has_unclassified=result.get("has_unclassified", False),
     )
+
+
+@router.get("/pharmacist/lookups", response_model=list[PharmacistLookupSummary])
+async def list_pharmacist_lookups(
+    current_user: User = Depends(require_role("pharmacist")),
+    db: Session = Depends(get_db),
+) -> list[PharmacistLookupSummary]:
+    """Lịch sử tra cứu nội bộ của chính dược sĩ đang đăng nhập (công cụ
+    /pharmacist-lookup) - KHÔNG select ket_qua_json, xem lý do ở list_patient_checks."""
+    lookups = (
+        db.query(
+            PharmacistLookup.id,
+            PharmacistLookup.thoi_gian_kiem_tra,
+            PharmacistLookup.co_canh_bao_nang,
+            PharmacistLookup.co_chua_phan_loai,
+            PharmacistLookup.thuoc_da_kiem_tra,
+        )
+        .filter_by(pharmacist_id=current_user.id)
+        .order_by(PharmacistLookup.thoi_gian_kiem_tra.desc())
+        .all()
+    )
+    return [
+        PharmacistLookupSummary(
+            id=lookup.id,
+            thoi_gian_kiem_tra=lookup.thoi_gian_kiem_tra,
+            co_canh_bao_nang=lookup.co_canh_bao_nang,
+            co_chua_phan_loai=lookup.co_chua_phan_loai,
+            thuoc_da_kiem_tra=lookup.thuoc_da_kiem_tra or [],
+        )
+        for lookup in lookups
+    ]
+
+
+@router.get("/pharmacist/lookups/{lookup_id}", response_model=MedicationCheckResponse)
+async def get_pharmacist_lookup_detail(
+    lookup_id: str,
+    current_user: User = Depends(require_role("pharmacist")),
+    db: Session = Depends(get_db),
+) -> MedicationCheckResponse:
+    """Xem lại 1 lần tra cứu cũ của chính dược sĩ - không ẩn xu_tri/thay_the vì
+    ket_qua_json đã được tạo với audience=pharmacist từ đầu (xem check_products_as_pharmacist)."""
+    lookup = db.get(PharmacistLookup, lookup_id)
+    if lookup is None or lookup.pharmacist_id != current_user.id:
+        raise HTTPException(status_code=404, detail="Không tìm thấy lượt tra cứu")
+
+    result = lookup.ket_qua_json or {}
+    return MedicationCheckResponse(
+        interaction_check_id=lookup.id,
+        ranked_results=result.get("ranked_results", []),
+        explanations=result.get("explanations", []),
+        has_severe=result.get("has_severe", False),
+        has_severe_disease_interaction=result.get("has_severe_disease_interaction", False),
+        has_unclassified=result.get("has_unclassified", False),
+        unknown_products=result.get("unknown_products", []),
+        no_interaction_data_products=result.get("no_interaction_data_products", []),
+        checked_products=result.get("checked_products", []),
+        prescriptions=result.get("prescriptions", []),
+        product_explanations=result.get("product_explanations", []),
+        overview=result.get("overview"),
+        food_interactions=result.get("food_interactions", []),
+        disease_interactions=result.get("disease_interactions", []),
+        disease_interaction_scope=result.get("disease_interaction_scope", "general"),
+        patient_conditions_snapshot=result.get("patient_conditions_snapshot", []),
+        canh_bao_thuc_pham_benh_nen=result.get("canh_bao_thuc_pham_benh_nen"),
+    )
+
+
+@router.delete("/pharmacist/lookups", status_code=204)
+async def delete_all_pharmacist_lookups(
+    current_user: User = Depends(require_role("pharmacist")),
+    db: Session = Depends(get_db),
+) -> None:
+    """Xóa tất cả lịch sử tra cứu nội bộ của chính dược sĩ."""
+    db.query(PharmacistLookup).filter_by(pharmacist_id=current_user.id).delete(synchronize_session=False)
+    db.commit()
+
+
+@router.delete("/pharmacist/lookups/{lookup_id}", status_code=204)
+async def delete_pharmacist_lookup(
+    lookup_id: str,
+    current_user: User = Depends(require_role("pharmacist")),
+    db: Session = Depends(get_db),
+) -> None:
+    """Xóa 1 lượt tra cứu cụ thể của chính dược sĩ."""
+    lookup = db.get(PharmacistLookup, lookup_id)
+    if lookup is None or lookup.pharmacist_id != current_user.id:
+        raise HTTPException(status_code=404, detail="Không tìm thấy lượt tra cứu")
+    db.delete(lookup)
+    db.commit()

@@ -235,6 +235,14 @@ export type InteractionCheckSummary = {
   thuoc_da_kiem_tra: string[];
 };
 
+export type PharmacistLookupSummary = {
+  id: string;
+  thoi_gian_kiem_tra: string;
+  co_canh_bao_nang: boolean;
+  co_chua_phan_loai: boolean;
+  thuoc_da_kiem_tra: string[];
+};
+
 export type PharmacistReviewResponse = {
   id: string;
   interaction_check_id: string;
@@ -772,6 +780,25 @@ export async function checkProductsAsPharmacist(
     token,
     body: JSON.stringify({ prescriptions }),
   });
+}
+
+export async function listPharmacistLookups(token: string): Promise<PharmacistLookupSummary[]> {
+  return request<PharmacistLookupSummary[]>("/api/v1/pharmacist/lookups", { token });
+}
+
+export async function getPharmacistLookupDetail(
+  lookupId: string,
+  token: string
+): Promise<MedicationCheckResponse> {
+  return request<MedicationCheckResponse>(`/api/v1/pharmacist/lookups/${lookupId}`, { token });
+}
+
+export async function deleteAllPharmacistLookups(token: string): Promise<void> {
+  return request<void>("/api/v1/pharmacist/lookups", { method: "DELETE", token });
+}
+
+export async function deletePharmacistLookup(lookupId: string, token: string): Promise<void> {
+  return request<void>(`/api/v1/pharmacist/lookups/${lookupId}`, { method: "DELETE", token });
 }
 
 // ---- Hồ sơ cá nhân bệnh nhân ----

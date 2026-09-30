@@ -214,6 +214,7 @@ ul {
   position: relative;
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   color: var(--on-surface);
   text-decoration: none !important;
 }
@@ -239,14 +240,14 @@ ul {
   top: calc(100% + 9px);
   left: 50%;
   min-width: max-content;
-  padding: 7px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  background: #17243a;
+  padding: 5px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  background: var(--neutral);
   box-shadow: 0 7px 18px rgba(19, 33, 55, 0.22);
   color: #f7faff;
-  font-size: 12px;
-  font-weight: 650;
+  font-size: 11px;
+  font-weight: 600;
   line-height: 1.25;
   opacity: 0;
   pointer-events: none;
@@ -261,7 +262,7 @@ ul {
   left: 50%;
   width: 8px;
   height: 8px;
-  background: #17243a;
+  background: var(--neutral);
   content: "";
   transform: translate(-50%, 4px) rotate(45deg);
 }
@@ -2866,7 +2867,6 @@ body {
 .usage-guide,
 .side-effect-card,
 .med-history,
-.contact-list,
 .dashboard-notification,
 .mc-auth__card {
   background: rgba(255, 255, 255, 0.76);
@@ -2916,7 +2916,6 @@ html[data-theme="dark"] .med-detail-overview,
 html[data-theme="dark"] .usage-guide,
 html[data-theme="dark"] .side-effect-card,
 html[data-theme="dark"] .med-history,
-html[data-theme="dark"] .contact-list,
 html[data-theme="dark"] .dashboard-notification,
 html[data-theme="dark"] .mc-auth__card {
   border-color: rgba(65, 87, 119, 0.82);
@@ -3125,148 +3124,12 @@ html[data-theme="dark"] .bottom-nav.sidebar {
   color: #c85360;
   background: transparent;
 }
-.page-intro--emergency {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #c7d0df;
-  color: #ae2e2a;
-}
-.page-intro--emergency h1 {
-  color: #ad2b2b;
-}
-.emergency-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 30px 0;
-}
-.emergency-card {
-  padding: 24px;
-  border: 1px solid #c7d0df;
-  border-radius: 8px;
-}
-.emergency-card h2 {
-  font-size: 22px;
-  font-weight: 800;
-}
-.emergency-card p {
-  min-height: 42px;
-  margin: 10px 0 20px;
-  color: var(--on-surface-variant);
-}
-.emergency-card a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  min-height: 46px;
-  color: #fff;
-  border-radius: 10px;
-  font-weight: 700;
-}
-.emergency-card--red {
-  background: #fbe0dc;
-  border-color: #b83932;
-}
-.emergency-card--red a {
-  background: #ad3028;
-}
-.emergency-card--blue {
-  background: #e3efff;
-}
-.emergency-card--blue a {
-  background: #2c4d91;
-}
-.contact-list {
-  margin-top: 28px;
-}
-.contact-list > h2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-left: 12px;
-  border-left: 4px solid #3159a0;
-  font-size: 22px;
-}
-.contact-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 16px;
-  padding: 16px;
-  background: #fff;
-  border: 1px solid #c7d0df;
-  border-radius: 8px;
-}
-.contact-avatar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  flex: 0 0 auto;
-  color: #fff;
-  background: #3c64bd;
-  border-radius: 10px;
-}
-.contact-avatar--brown {
-  background: #9b5b1c;
-}
-.contact-row > div {
-  flex: 1;
-}
-.contact-row strong {
-  font-size: 17px;
-}
-.contact-row p {
-  margin-top: 3px;
-  color: var(--on-surface-variant);
-  font-size: 13px;
-}
-.contact-row__actions {
-  display: flex;
-  flex: 0 0 auto !important;
-  gap: 8px;
-}
-.contact-row a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 42px;
-  padding: 9px 16px;
-  color: #fff;
-  background: #2c4d91;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 700;
-}
-.contact-row a.contact-message {
-  color: #244c93;
-  background: #f7faff;
-  border: 1px solid #c5d2e4;
-}
 @media (max-width: 720px) {
-  .history-grid,
-  .emergency-cards {
+  .history-grid {
     grid-template-columns: 1fr;
   }
   .history-tile {
     min-height: 0;
-  }
-  .contact-row {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .contact-row__actions {
-    width: calc(100% - 60px);
-    margin-left: 60px;
-  }
-  .contact-row__actions a {
-    flex: 1;
-    justify-content: center;
   }
 }
 
@@ -6816,15 +6679,11 @@ textarea:focus {
 .pharmacist-mascot-loading {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
   width: min(760px, 100%);
   margin: 20px auto 0;
-  padding: 16px 22px;
-  border: 1px solid #cbdcf4;
-  border-radius: 16px;
-  background: linear-gradient(100deg, #ffffff, #f1f6ff);
   color: #476494;
-  box-shadow: var(--shadow-sm);
 }
 
 .pharmacist-mascot-loading__image {
@@ -8177,7 +8036,6 @@ body {
 .usage-guide,
 .side-effect-card,
 .med-history,
-.contact-list,
 .mc-feature-card,
 .mc-audience-card,
 .mc-auth__card {
@@ -8215,7 +8073,6 @@ body {
 .profile-details-card__title,
 .interaction-selection__header h2,
 .interaction-result__header h2,
-.contact-list > h2,
 .usage-guide > h2,
 .side-effect-card > h2,
 .med-schedule > h2 {
@@ -8390,7 +8247,6 @@ html[data-theme="dark"] .med-detail-overview,
 html[data-theme="dark"] .usage-guide,
 html[data-theme="dark"] .side-effect-card,
 html[data-theme="dark"] .med-history,
-html[data-theme="dark"] .contact-list,
 html[data-theme="dark"] .mc-feature-card,
 html[data-theme="dark"] .mc-audience-card,
 html[data-theme="dark"] .mc-auth__card {
@@ -9338,8 +9194,7 @@ html[data-theme="dark"] .bottom-nav.sidebar .bottom-nav__item--active {
   .profile-details-grid,
   .interaction-workspace,
   .dashboard-grid,
-  .history-grid,
-  .emergency-cards {
+  .history-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -9838,7 +9693,6 @@ body {
 .usage-guide,
 .side-effect-card,
 .med-history,
-.contact-list,
 .mc-auth__card {
   border: 1px solid #dce5f2;
   border-radius: 16px;
@@ -10040,7 +9894,6 @@ html[data-theme="dark"] .med-detail-overview,
 html[data-theme="dark"] .usage-guide,
 html[data-theme="dark"] .side-effect-card,
 html[data-theme="dark"] .med-history,
-html[data-theme="dark"] .contact-list,
 html[data-theme="dark"] .mc-auth__card {
   border-color: #34465f;
   background: #172235;
@@ -10993,7 +10846,6 @@ video {
   .prescription-panel,
   .interaction-result,
   .profile-details-card,
-  .contact-list,
   .med-detail-overview,
   .usage-guide,
   .side-effect-card,
@@ -11053,7 +10905,6 @@ video {
   .dashboard-grid,
   .profile-details-grid,
   .history-grid,
-  .emergency-cards,
   .med-detail-overview,
   .med-detail-content,
   .review-layout,
@@ -11194,22 +11045,6 @@ video {
     min-width: 0;
     overflow-wrap: anywhere;
     white-space: normal;
-  }
-
-  .contact-row {
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: start;
-  }
-
-  .contact-row__actions {
-    grid-column: 1 / -1;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .contact-row__actions a {
-    justify-content: center;
   }
 
   .med-detail-overview,
@@ -11359,8 +11194,7 @@ video {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .med-detail-actions,
-  .contact-row__actions {
+  .med-detail-actions {
     grid-template-columns: minmax(0, 1fr);
   }
 }

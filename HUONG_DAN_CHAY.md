@@ -4,7 +4,7 @@
 
 - Docker Desktop (Windows/macOS) hoặc Docker Engine + Compose (Linux).
 - Nếu chạy không dùng Docker: Python 3.11+, Node.js 20+ và npm.
-- Một cơ sở dữ liệu đã có dữ liệu thuốc. Cách đơn giản nhất để phát triển cục bộ là đặt file SQLite tại `data/app.db`.
+- Một Postgres (local hoặc hosted) đã có dữ liệu thuốc.
 
 ## Cấu hình
 
@@ -20,16 +20,11 @@ Trên PowerShell:
 Copy-Item .env.example .env
 ```
 
-Tối thiểu, đặt `DEEPSEEK_API_KEY` trong `.env`. Chọn một cấu hình cơ sở dữ liệu:
+Tối thiểu, đặt `DEEPSEEK_API_KEY` và `DATABASE_URL` trong `.env`:
 
 ```env
-# SQLite cục bộ
-DATABASE_URL=sqlite:///./data/app.db
+DATABASE_URL=postgresql+psycopg2://USER:PASSWORD@HOST:5432/medicheck
 DATABASE_URL_FACTS=
-
-# Hoặc PostgreSQL
-# DATABASE_URL=postgresql+psycopg://USER:PASSWORD@HOST:5432/medicheck
-# DATABASE_URL_FACTS=
 ```
 
 ## Chạy toàn bộ bằng Docker
@@ -86,4 +81,4 @@ Mặc định frontend gọi API tại `http://localhost:8000`. Có thể thay �
 curl http://localhost:8000/health
 ```
 
-Nếu API khởi động nhưng không trả dữ liệu tương tác, kiểm tra lại `DATABASE_URL` và dữ liệu thuốc tại `data/app.db` hoặc PostgreSQL.
+Nếu API khởi động nhưng không trả dữ liệu tương tác, kiểm tra lại `DATABASE_URL` và dữ liệu thuốc trong Postgres.

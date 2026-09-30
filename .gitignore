@@ -32,9 +32,9 @@ Thumbs.db
 # trần: dạng trần khớp MỌI thư mục tên "data" ở bất kỳ độ sâu nào.
 /data/
 *.db
-*.sqlite3
 
-# Raw DDInter source dumps + brand-name CSV (large, regenerate app.db via scripts/import_*.py)
+# Raw DDInter source dumps (SQLite - định dạng nguồn gốc của bộ dữ liệu, không phải
+# cách app lưu trữ) + brand-name CSV (large, nạp lại vào Postgres via scripts/import_*.py)
 data/raw/vmec12_ddinter_*.db
 data/raw/*.csv
 
@@ -73,3 +73,6 @@ out/
 # Không bao giờ được đưa lên git: đã push là nằm vĩnh viễn trong lịch sử.
 .cursor/
 *.zip
+
+.vercel
+.env*

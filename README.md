@@ -35,7 +35,7 @@ Xem cách cài đặt và khởi động hệ thống tại [Hướng dẫn ch�
 | Agent | LangGraph, 5 node tất định (chuẩn hóa → tra cứu → xếp hạng → gắn dữ liệu → guardrail) — không node nào gọi LLM, nên mọi cặp tương tác luôn đến từ CSDL |
 | LLM | DeepSeek-chat (`langchain-openai` trỏ base_url DeepSeek), chạy **sau** agent ở tầng service: giải thích cấp thuốc, tổng quan, thực phẩm & bệnh nền |
 | Backend | FastAPI + Uvicorn + SQLAlchemy |
-| Database | Postgres (DB chính); tuỳ chọn tách 3 bảng tra cứu sang 1 DB Postgres-compatible riêng khi cần, xem [`docs/database-split.md`](docs/database-split.md); SQLite `data/app.db` cho dev offline |
+| Database | Postgres (DB chính); tuỳ chọn tách 3 bảng tra cứu sang 1 DB Postgres-compatible riêng khi cần, xem [`docs/database-split.md`](docs/database-split.md) |
 | Dữ liệu tương tác | DDInter 2.0 thật (thuốc–thuốc, thuốc–thực phẩm, thuốc–bệnh nền), không phải mô phỏng |
 | Frontend | Next.js 14 (App Router) + TypeScript, 3 vai trò (bệnh nhân / dược sĩ / admin) |
 | Testing | pytest + pytest-asyncio + httpx (65 test) |
@@ -67,18 +67,13 @@ cd MediCheck
 
 ### 2. Chuẩn bị dữ liệu
 
-CSDL không nằm trong git. Chọn **một** trong hai cách:
-
-- **Dùng PostgreSQL** — điền `DATABASE_URL` và, nếu dùng cơ sở dữ liệu facts riêng,
-  `DATABASE_URL_FACTS` ở bước 3. Lý do tách 2 DB: [`docs/database-split.md`](docs/database-split.md).
-- **Dev offline bằng SQLite** — xin file `data/app.db` (~740MB, đã seed sẵn toàn bộ DDInter
-  2.0 + biệt dược Việt Nam) qua kênh riêng, copy vào đúng đường dẫn `data/app.db` (cùng cấp
-  với `Dockerfile`), rồi đặt `DATABASE_URL=sqlite:///./data/app.db` và **để trống**
-  `DATABASE_URL_FACTS`.
+CSDL không nằm trong git — cần 1 Postgres đã có dữ liệu (local hoặc hosted). Điền
+`DATABASE_URL` và, nếu dùng cơ sở dữ liệu facts riêng, `DATABASE_URL_FACTS` ở bước 3.
+Lý do tách 2 DB: [`docs/database-split.md`](docs/database-split.md).
 
 Không có dữ liệu, backend vẫn khởi động được nhưng mọi tra cứu thuốc sẽ trả "không có dữ liệu".
 
-Muốn dựng lại `data/app.db` từ dữ liệu gốc thay vì xin file: đặt các dump DDInter vào
+Muốn nạp dữ liệu từ nguồn gốc: đặt các dump DDInter vào
 `data/raw/` rồi chạy [`scripts/import_ddinter.py`](scripts/import_ddinter.py),
 [`scripts/import_ddinter_dfi_ddsi.py`](scripts/import_ddinter_dfi_ddsi.py),
 [`scripts/import_products.py`](scripts/import_products.py).
@@ -112,8 +107,6 @@ Chạy nền (không giữ terminal): thêm `-d`.
 docker compose down
 ```
 
-Không xóa `data/app.db` (được mount từ máy thật qua volume).
-
 ## Environment Variables
 
 Chỉ liệt kê tên biến — giá trị thật nằm trong `.env` (không commit vào git).
@@ -123,8 +116,8 @@ Chỉ liệt kê tên biến — giá trị thật nằm trong `.env` (không co
 | `DEEPSEEK_API_KEY` | ✅ | API key DeepSeek (free tại [platform.deepseek.com](https://platform.deepseek.com)). Không có key này, các cặp thuốc mức nhẹ/trung bình/nặng sẽ không sinh được giải thích (agent cần gọi LLM thật). |
 | `DEEPSEEK_BASE_URL` | — | Mặc định `https://api.deepseek.com`, không cần đổi. |
 | `MODEL_NAME` | — | Mặc định `deepseek-chat`. |
-| `DATABASE_URL` | ✅ | DB chính (users, products, lịch sử kiểm tra…). Mặc định `sqlite:///./data/app.db`. |
-| `DATABASE_URL_FACTS` | — | DB tra cứu (`interactions`, `food_interactions`, `disease_interactions`), tuỳ chọn tách riêng. Để trống → dùng chung `DATABASE_URL` (mặc định, đúng cho 1 Postgres/SQLite local duy nhất). Xem [`docs/database-split.md`](docs/database-split.md). |
+| `DATABASE_URL` | ✅ | DB chính (users, products, lịch sử kiểm tra…) - Postgres, không có giá trị mặc định. |
+| `DATABASE_URL_FACTS` | — | DB tra cứu (`interactions`, `food_interactions`, `disease_interactions`), tuỳ chọn tách riêng. Để trống → dùng chung `DATABASE_URL` (mặc định, đúng cho 1 Postgres local duy nhất). Xem [`docs/database-split.md`](docs/database-split.md). |
 | `SECRET_KEY` | ✅ (khi deploy thật) | Secret ký JWT (`src/services/auth.py`). Có giá trị dev mặc định, **phải đổi trước khi deploy public**. |
 | `APP_ENV` | — | `development` / `production` / `test`. |
 | `APP_PORT`, `APP_HOST` | — | Mặc định `8000` / `0.0.0.0`. |
@@ -196,8 +189,8 @@ curl "http://localhost:8000/api/v1/guest/products/search?q=aspirin"
 ## Kiểm thử
 
 ```bash
-# 65 test: agent core, API, services — dùng SQLite riêng, mock LLM, không gọi API thật
-APP_ENV=test DEEPSEEK_API_KEY=test-key DATABASE_URL=sqlite:///./ci_test.db   pytest tests/ -q
+# 65 test: agent core, API, services — dùng 1 Postgres test riêng, mock LLM, không gọi API thật
+APP_ENV=test DEEPSEEK_API_KEY=test-key DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/medicheck_test   pytest tests/ -q
 
 ruff check src/ tests/
 ```

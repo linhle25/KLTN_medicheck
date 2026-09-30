@@ -5,6 +5,7 @@ export type Session = {
   accessToken: "cookie";
   userId: string;
   hoTen: string;
+  email: string;
   vaiTro: Role;
 };
 
@@ -21,8 +22,8 @@ export function saveSession(session: Session): void {
   window.dispatchEvent(new Event(SESSION_UPDATED_EVENT));
 }
 
-export function sessionFromAuth(auth: { user_id: string; ho_ten: string; vai_tro: Role }): Session {
-  return { accessToken: "cookie", userId: auth.user_id, hoTen: auth.ho_ten, vaiTro: auth.vai_tro };
+export function sessionFromAuth(auth: { user_id: string; ho_ten: string; email: string; vai_tro: Role }): Session {
+  return { accessToken: "cookie", userId: auth.user_id, hoTen: auth.ho_ten, email: auth.email, vaiTro: auth.vai_tro };
 }
 
 export function onSessionUpdated(callback: () => void): () => void {
@@ -37,7 +38,7 @@ export function getSession(): Session | null {
   if (!raw) return null;
   try {
     const stored = JSON.parse(raw) as Omit<Session, "accessToken"> & { accessToken?: string };
-    const session: Session = { userId: stored.userId, hoTen: stored.hoTen, vaiTro: stored.vaiTro, accessToken: "cookie" };
+    const session: Session = { userId: stored.userId, hoTen: stored.hoTen, email: stored.email ?? "", vaiTro: stored.vaiTro, accessToken: "cookie" };
     // Rewrite old records once so legacy bearer credentials disappear from storage.
     if (stored.accessToken) saveSession(session);
     return session;

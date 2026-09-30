@@ -63,8 +63,8 @@ def build_medication_id_set(db) -> set[str]:
 def delete_stale_products(db, current_names: set[str]) -> int:
     """Xoa Product (+ ProductIngredient con) khong con trong file CSV moi.
 
-    Tinh phan bu o phia Python (khong dung IN/NOT IN voi ~44k gia tri - vuot gioi han
-    so bien cua SQLite), roi xoa theo id thanh tung batch nho.
+    Tinh phan bu o phia Python (khong dung IN/NOT IN voi ~44k gia tri - qua nang cho
+    query planner), roi xoa theo id thanh tung batch nho.
     """
     existing = db.query(Product.id, Product.ten_thuoc).all()
     stale_ids = [pid for pid, ten_thuoc in existing if ten_thuoc not in current_names]

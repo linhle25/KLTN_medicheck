@@ -59,7 +59,7 @@ export default function PatientLayout({ children }: { children: React.ReactNode 
     <div className={`app-shell app-shell--with-nav ${sidebarCollapsed ? "app-shell--sidebar-collapsed" : ""}`}>
       <header className="patient-header">
         <div className="patient-header__actions" style={{ marginLeft: "auto" }}>
-          <ThemeModeToggle />
+          {/* <ThemeModeToggle /> */}
           <NotificationBell patientId={session.userId} token={session.accessToken} />
           <Link
             className="patient-header__identity"
@@ -67,11 +67,12 @@ export default function PatientLayout({ children }: { children: React.ReactNode 
             aria-label={`Hồ sơ của ${fullName}`}
             aria-describedby="patient-header-name-tooltip"
           >
+            <span className="patient-header__name">{fullName}</span>
             <span className="patient-header__avatar" aria-hidden="true">
               {avatarLetter}
             </span>
             <span className="patient-header__tooltip" id="patient-header-name-tooltip" role="tooltip">
-              {fullName}
+              {fullName} · {session.email}
             </span>
           </Link>
           <button className="icon-btn" onClick={logout} aria-label="Đăng xuất" title="Đăng xuất">

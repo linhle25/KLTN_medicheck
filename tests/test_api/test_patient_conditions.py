@@ -3,54 +3,49 @@ import uuid
 import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import StaticPool
 
 from src.db.models import Base, Disease, User
 from src.db.session import get_db
 from src.main import app
+from tests.conftest import isolated_postgres_engine
 
 
 @pytest_asyncio.fixture
 async def conditions_client():
-    """API client dùng SQLite biệt lập, không đọc/ghi DATABASE_URL thật."""
-    engine = create_engine(
-        "sqlite://",
-        connect_args={"check_same_thread": False},
-        poolclass=StaticPool,
-    )
-    testing_session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-    Base.metadata.create_all(bind=engine)
+    """API client dùng 1 schema Postgres biệt lập, không đọc/ghi DATABASE_URL
+    ngoài phạm vi schema đó."""
+    with isolated_postgres_engine() as engine:
+        testing_session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+        Base.metadata.create_all(bind=engine)
 
-    with testing_session() as db:
-        db.add_all(
-            [
-                Disease(id=1, ten_benh="Hypertension", ten_benh_vi="Tăng huyết áp"),
-                Disease(id=2, ten_benh="Diabetes mellitus", ten_benh_vi="Đái tháo đường"),
-                Disease(id=3, ten_benh="Asthma", ten_benh_vi="Hen phế quản"),
-            ]
-        )
-        db.commit()
+        with testing_session() as db:
+            db.add_all(
+                [
+                    Disease(id=1, ten_benh="Hypertension", ten_benh_vi="Tăng huyết áp"),
+                    Disease(id=2, ten_benh="Diabetes mellitus", ten_benh_vi="Đái tháo đường"),
+                    Disease(id=3, ten_benh="Asthma", ten_benh_vi="Hen phế quản"),
+                ]
+            )
+            db.commit()
 
-    def override_get_db():
-        db = testing_session()
+        def override_get_db():
+            db = testing_session()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app.dependency_overrides[get_db] = override_get_db
         try:
-            yield db
+            async with AsyncClient(
+                transport=ASGITransport(app=app, client=(f"pytest-{uuid.uuid4().hex}", 123)),
+                base_url="http://test",
+            ) as client:
+                client.testing_session = testing_session
+                yield client
         finally:
-            db.close()
-
-    app.dependency_overrides[get_db] = override_get_db
-    try:
-        async with AsyncClient(
-            transport=ASGITransport(app=app, client=(f"pytest-{uuid.uuid4().hex}", 123)),
-            base_url="http://test",
-        ) as client:
-            client.testing_session = testing_session
-            yield client
-    finally:
-        app.dependency_overrides.pop(get_db, None)
-        engine.dispose()
+            app.dependency_overrides.pop(get_db, None)
 
 
 async def _register_patient(client: AsyncClient) -> dict:

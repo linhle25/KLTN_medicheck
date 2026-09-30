@@ -36,8 +36,8 @@ Danh sách bảng thuộc facts DB nằm ở hằng `FACTS_TABLE_NAMES` trong
 [`src/db/session.py`](../src/db/session.py).
 
 **Để trống `DATABASE_URL_FACTS`** → code tự fallback dùng chung `DATABASE_URL` cho cả ba
-bảng (`SessionLocalFacts = SessionLocal`). Đây là chế độ cho dev/test/CI với một file
-SQLite duy nhất. **Không dùng fallback này khi `DATABASE_URL` trỏ Supabase** — bản ba
+bảng (`SessionLocalFacts = SessionLocal`). Đây là chế độ cho dev/test/CI với một
+Postgres duy nhất. **Không dùng fallback này khi `DATABASE_URL` trỏ Supabase** — bản ba
 bảng còn sót trong Supabase là dữ liệu cũ đã tách đi.
 
 Driver: `sqlalchemy-cockroachdb` (đã có trong [`requirements.txt`](../requirements.txt)),
@@ -57,7 +57,5 @@ URL dạng `cockroachdb://…?sslmode=require`.
 
 | Script | Việc |
 |---|---|
-| [`scripts/import_ddinter.py`](../scripts/import_ddinter.py) | ETL `medications` + `interactions` từ `data/raw/vmec12_ddinter_*.db` |
+| [`scripts/import_ddinter.py`](../scripts/import_ddinter.py) | ETL `medications` + `interactions` từ `data/raw/vmec12_ddinter_*.db` (file SQLite - định dạng nguồn gốc DDInter, không liên quan cách app lưu trữ) |
 | [`scripts/import_ddinter_dfi_ddsi.py`](../scripts/import_ddinter_dfi_ddsi.py) | ETL `food_interactions` + `disease_interactions` |
-| [`scripts/migrate_sqlite_to_postgres.py`](../scripts/migrate_sqlite_to_postgres.py) | Copy dữ liệu từ SQLite local lên Postgres khi deploy |
-| [`scripts/migrate_postgres_to_sqlite.py`](../scripts/migrate_postgres_to_sqlite.py) | Chiều ngược lại — dựng lại `data/app.db` để dev offline (đọc đúng facts từ CockroachDB) |

@@ -35,8 +35,9 @@ class Settings(BaseSettings):
     # nhưng giảm mạnh biên độ "phăng" ra ngoài nguồn.
     llm_temperature: float = Field(default=0.3, ge=0.0, le=2.0)
 
-    # Database
-    database_url: str = "sqlite:///./data/app.db"
+    # Database - Postgres bắt buộc, không còn fallback SQLite (đã xoá hẳn hỗ trợ
+    # SQLite khỏi src/db/session.py) - phải set qua .env/biến môi trường thật.
+    database_url: str
     # DB "facts" (interactions/food_interactions/disease_interactions) - tuỳ chọn
     # tách sang 1 DB Postgres-compatible riêng khi hạ tầng chính có giới hạn dung
     # lượng (3 bảng này chiếm >95% dung lượng). Rỗng -> fallback dùng database_url

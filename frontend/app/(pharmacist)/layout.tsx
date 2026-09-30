@@ -54,18 +54,19 @@ export default function PharmacistLayout({ children }: { children: React.ReactNo
     <div className={`app-shell app-shell--with-nav ${sidebarCollapsed ? "app-shell--sidebar-collapsed" : ""}`}>
       <header className="patient-header">
         <div className="patient-header__actions" style={{ marginLeft: "auto" }}>
-          <ThemeModeToggle />
+          {/* <ThemeModeToggle /> */}
           <Link
             className="patient-header__identity"
             href="/pharmacist-profile"
             aria-label={`Hồ sơ của ${fullName}`}
             aria-describedby="pharmacist-header-name-tooltip"
           >
+            <span className="patient-header__name">{fullName}</span>
             <span className="patient-header__avatar" aria-hidden="true">
               {avatarLetter}
             </span>
             <span className="patient-header__tooltip" id="pharmacist-header-name-tooltip" role="tooltip">
-              {fullName}
+              {fullName} · {session.email}
             </span>
           </Link>
           <button className="icon-btn" onClick={handleLogout} aria-label="Đăng xuất" title="Đăng xuất">
@@ -113,6 +114,10 @@ export default function PharmacistLayout({ children }: { children: React.ReactNo
         <Link href="/pharmacist-lookup" className={`bottom-nav__item ${pathname === "/pharmacist-lookup" ? "bottom-nav__item--active" : ""}`}>
           <MaterialIcon name="analytics" size={22} filled={pathname === "/pharmacist-lookup"} />
           <span>Tra cứu tương tác</span>
+        </Link>
+        <Link href="/pharmacist-history" className={`bottom-nav__item ${pathname === "/pharmacist-history" ? "bottom-nav__item--active" : ""}`}>
+          <MaterialIcon name="history" size={22} filled={pathname === "/pharmacist-history"} />
+          <span>Lịch sử tra cứu</span>
         </Link>
         <Link href="/pharmacist-profile" className={`bottom-nav__item ${pathname === "/pharmacist-profile" ? "bottom-nav__item--active" : ""}`}>
           <MaterialIcon name="person" size={22} filled={pathname === "/pharmacist-profile"} />

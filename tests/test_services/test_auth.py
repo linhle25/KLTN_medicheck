@@ -2,11 +2,11 @@ from datetime import datetime, timedelta
 from types import SimpleNamespace
 
 import pytest
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from src.db.models import AuthActionToken, Base, RefreshSession, User
 from src.services import auth
+from tests.conftest import isolated_postgres_engine
 
 
 def test_argon2_and_legacy_password_verification():
@@ -82,62 +82,62 @@ async def test_google_claim_validation(monkeypatch):
         await auth.verify_google_credential("access-token")
 
 
-def test_action_and_refresh_tokens_reject_stale_concurrent_claims(tmp_path):
-    engine = create_engine(f"sqlite:///{tmp_path / 'atomic-auth.db'}")
-    factory = sessionmaker(bind=engine, autocommit=False, autoflush=False)
-    Base.metadata.create_all(engine)
-    action_raw = "action-token-value-that-is-long-enough"
-    refresh_raw = "refresh-token-value-that-is-long-enough"
+def test_action_and_refresh_tokens_reject_stale_concurrent_claims():
+    with isolated_postgres_engine() as engine:
+        factory = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+        Base.metadata.create_all(engine)
+        action_raw = "action-token-value-that-is-long-enough"
+        refresh_raw = "refresh-token-value-that-is-long-enough"
 
-    with factory() as db:
-        user = User(
-            ho_ten="Atomic User",
-            email="atomic@example.com",
-            email_normalized="atomic@example.com",
-            email_verified_at=datetime.utcnow(),
-            mat_khau_hash=auth.hash_password("atomic-password"),
-            vai_tro="patient",
-            account_status="active",
-        )
-        db.add(user)
-        db.flush()
-        db.add(AuthActionToken(
-            user_id=user.id,
-            purpose="verify_email",
-            token_hash=auth.hash_token(action_raw),
-            expires_at=datetime.utcnow() + timedelta(minutes=30),
-        ))
-        db.add(RefreshSession(
-            user_id=user.id,
-            token_hash=auth.hash_token(refresh_raw),
-            expires_at=datetime.utcnow() + timedelta(days=1),
-        ))
-        db.commit()
+        with factory() as db:
+            user = User(
+                ho_ten="Atomic User",
+                email="atomic@example.com",
+                email_normalized="atomic@example.com",
+                email_verified_at=datetime.utcnow(),
+                mat_khau_hash=auth.hash_password("atomic-password"),
+                vai_tro="patient",
+                account_status="active",
+            )
+            db.add(user)
+            db.flush()
+            db.add(AuthActionToken(
+                user_id=user.id,
+                purpose="verify_email",
+                token_hash=auth.hash_token(action_raw),
+                expires_at=datetime.utcnow() + timedelta(minutes=30),
+            ))
+            db.add(RefreshSession(
+                user_id=user.id,
+                token_hash=auth.hash_token(refresh_raw),
+                expires_at=datetime.utcnow() + timedelta(days=1),
+            ))
+            db.commit()
 
-    first = factory()
-    stale = factory()
-    try:
-        # Load the same rows into both identity maps before the first claim.
-        first.query(AuthActionToken).one()
-        stale.query(AuthActionToken).one()
-        first.query(RefreshSession).one()
-        stale.query(RefreshSession).one()
+        first = factory()
+        stale = factory()
+        try:
+            # Load the same rows into both identity maps before the first claim.
+            first.query(AuthActionToken).one()
+            stale.query(AuthActionToken).one()
+            first.query(RefreshSession).one()
+            stale.query(RefreshSession).one()
 
-        assert auth.consume_action_token(first, action_raw, "verify_email") is not None
-        first.commit()
-        assert auth.consume_action_token(stale, action_raw, "verify_email") is None
+            assert auth.consume_action_token(first, action_raw, "verify_email") is not None
+            first.commit()
+            assert auth.consume_action_token(stale, action_raw, "verify_email") is None
 
-        assert auth.rotate_refresh_session(first, refresh_raw) is not None
-        assert auth.rotate_refresh_session(stale, refresh_raw) is None
-    finally:
-        first.close()
-        stale.close()
+            assert auth.rotate_refresh_session(first, refresh_raw) is not None
+            assert auth.rotate_refresh_session(stale, refresh_raw) is None
+        finally:
+            first.close()
+            stale.close()
 
-    with factory() as db:
-        action = db.query(AuthActionToken).one()
-        old_refresh = db.query(RefreshSession).filter_by(token_hash=auth.hash_token(refresh_raw)).one()
-        assert action.used_at is not None
-        assert old_refresh.revoked_at is not None
+        with factory() as db:
+            action = db.query(AuthActionToken).one()
+            old_refresh = db.query(RefreshSession).filter_by(token_hash=auth.hash_token(refresh_raw)).one()
+            assert action.used_at is not None
+            assert old_refresh.revoked_at is not None
         assert old_refresh.replaced_by_id is not None
         assert db.query(RefreshSession).count() == 2
     engine.dispose()

@@ -342,6 +342,14 @@ class PharmacistSummary(BaseModel):
     mo_ta_ngan: str | None = None
 
 
+class PharmacistLookupSummary(BaseModel):
+    id: str
+    thoi_gian_kiem_tra: datetime
+    co_canh_bao_nang: bool
+    co_chua_phan_loai: bool
+    thuoc_da_kiem_tra: list[str] = Field(default_factory=list)
+
+
 class ReviewRequestSummary(BaseModel):
     check_id: str
     patient_id: str
