@@ -149,6 +149,79 @@ class AdminDrugDataResponse(BaseModel):
     total_pages: int
 
 
+class AdminInteractionRow(BaseModel):
+    """1 dòng tương tác của hoạt chất (thuốc-thuốc / thực phẩm / bệnh nền) - chỉ đọc."""
+
+    id: str
+    doi_tuong: str  # tên thuốc khác / thực phẩm / bệnh nền
+    doi_tuong_vi: str | None = None
+    muc_do: str | None = None
+    mo_ta: str | None = None
+    mo_ta_dich: str | None = None
+    xu_tri: str | None = None
+    xu_tri_dich: str | None = None
+    nguon_trich_dan: str | None = None
+    thay_the: str | None = None
+
+
+class AdminAliasInfo(BaseModel):
+    id: str
+    alias: str
+
+
+class AdminLinkedProduct(BaseModel):
+    id: str
+    ten_thuoc: str
+    loai: str | None = None
+
+
+class AdminIngredientInfo(BaseModel):
+    id: str
+    ten_hoat_chat_raw: str | None = None
+    ten_hoat_chat_clean: str | None = None
+    medication_id: str | None = None
+    medication_name: str | None = None
+
+
+class AdminDrugDetail(BaseModel):
+    kind: Literal["medication", "product"]
+    id: str
+    # Medication: ten_chuan_hoa / ten_biet_duoc / hoat_chat / mo_ta
+    # Product: ten_thuoc (-> name) / is_duoc_lieu / loai
+    name: str
+    ten_biet_duoc: str | None = None
+    hoat_chat: str | None = None
+    mo_ta: str | None = None
+    is_duoc_lieu: bool | None = None
+    loai: str | None = None
+    nguon_du_lieu: str | None = None
+    # --- chỉ hoạt chất ---
+    aliases: list[AdminAliasInfo] = []
+    products: list[AdminLinkedProduct] = []
+    products_total: int = 0
+    drug_interactions: list[AdminInteractionRow] = []
+    drug_interactions_total: int = 0
+    food_interactions: list[AdminInteractionRow] = []
+    food_interactions_total: int = 0
+    disease_interactions: list[AdminInteractionRow] = []
+    disease_interactions_total: int = 0
+    # --- chỉ biệt dược ---
+    ingredients: list[AdminIngredientInfo] = []
+
+
+class AdminDrugUpdateRequest(BaseModel):
+    """Chỉ các trường được gửi lên mới được cập nhật (exclude_unset)."""
+
+    name: str | None = Field(default=None, min_length=1, max_length=500)
+    ten_biet_duoc: str | None = Field(default=None, max_length=255)
+    hoat_chat: str | None = Field(default=None, max_length=255)
+    mo_ta: str | None = Field(default=None, max_length=20000)
+    is_duoc_lieu: bool | None = None
+    loai: Literal["ke_don", "khong_ke_don", ""] | None = None
+    nguon_du_lieu: str | None = Field(default=None, max_length=100)
+    aliases: list[str] | None = Field(default=None, max_length=100)
+
+
 class FeedbackCreateRequest(BaseModel):
     category: Literal["wrong_result", "technical", "account", "other"] = "other"
     title: str = Field(..., min_length=3, max_length=255)

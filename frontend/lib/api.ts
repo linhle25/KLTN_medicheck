@@ -266,6 +266,10 @@ async function request<T>(
   options: RequestInit & { token?: string; skipRefresh?: boolean } = {},
   retried = false,
 ): Promise<T> {
+  // token: giữ tham số cho tương thích ngược (mọi lệnh gọi API cũ đều truyền vào)
+  // nhưng auth giờ dùng cookie, không dùng Bearer token - loại nó khỏi `rest`
+  // trước khi spread vào fetch() chứ không đọc giá trị.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { token: _legacyToken, skipRefresh, headers, ...rest } = options;
   const method = (rest.method || "GET").toUpperCase();
   let csrfToken: string | undefined;
@@ -419,6 +423,55 @@ export type AdminDrugDataResponse = {
   page_size: number;
   total_pages: number;
 };
+export type AdminInteractionRow = {
+  id: string;
+  doi_tuong: string;
+  doi_tuong_vi: string | null;
+  muc_do: string | null;
+  mo_ta: string | null;
+  mo_ta_dich: string | null;
+  xu_tri: string | null;
+  xu_tri_dich: string | null;
+  nguon_trich_dan: string | null;
+  thay_the: string | null;
+};
+export type AdminDrugDetail = {
+  kind: "medication" | "product";
+  id: string;
+  name: string;
+  ten_biet_duoc: string | null;
+  hoat_chat: string | null;
+  mo_ta: string | null;
+  is_duoc_lieu: boolean | null;
+  loai: string | null;
+  nguon_du_lieu: string | null;
+  aliases: { id: string; alias: string }[];
+  products: { id: string; ten_thuoc: string; loai: string | null }[];
+  products_total: number;
+  drug_interactions: AdminInteractionRow[];
+  drug_interactions_total: number;
+  food_interactions: AdminInteractionRow[];
+  food_interactions_total: number;
+  disease_interactions: AdminInteractionRow[];
+  disease_interactions_total: number;
+  ingredients: {
+    id: string;
+    ten_hoat_chat_raw: string | null;
+    ten_hoat_chat_clean: string | null;
+    medication_id: string | null;
+    medication_name: string | null;
+  }[];
+};
+export type AdminDrugUpdate = Partial<{
+  name: string;
+  ten_biet_duoc: string;
+  hoat_chat: string;
+  mo_ta: string;
+  is_duoc_lieu: boolean;
+  loai: "ke_don" | "khong_ke_don" | "";
+  nguon_du_lieu: string;
+  aliases: string[];
+}>;
 export type AdminFeedback = {
   id: string;
   user_id: string;
@@ -450,6 +503,13 @@ export const listAdminDrugData = (q = "", kind: "medication" | "product" = "medi
   const query = new URLSearchParams({ q, kind, page: String(page), page_size: String(pageSize) });
   return request<AdminDrugDataResponse>(`/api/v1/admin/drug-data?${query}`);
 };
+export const getAdminDrugDetail = (kind: "medication" | "product", id: string) =>
+  request<AdminDrugDetail>(`/api/v1/admin/drug-data/${kind}/${encodeURIComponent(id)}`);
+export const updateAdminDrug = (kind: "medication" | "product", id: string, body: AdminDrugUpdate) =>
+  request<AdminDrugDetail>(`/api/v1/admin/drug-data/${kind}/${encodeURIComponent(id)}`, {
+    method: "PATCH",
+    body: JSON.stringify(body),
+  });
 export const listAdminFeedback = (status = "") =>
   request<AdminFeedback[]>(`/api/v1/admin/feedback${status ? `?status=${encodeURIComponent(status)}` : ""}`);
 export const updateAdminFeedback = (

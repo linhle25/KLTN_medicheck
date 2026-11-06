@@ -17,15 +17,23 @@ from src.db.models import (
     FoodInteraction,
     Interaction,
     Medication,
+    MedicationAlias,
     Product,
+    ProductIngredient,
     RefreshSession,
     User,
 )
-from src.db.session import get_db, get_db_facts
+from src.db.session import get_db
 from src.models.schemas import (
     AdminAccountStatusRequest,
+    AdminAliasInfo,
     AdminDrugDataResponse,
+    AdminDrugDetail,
     AdminDrugItem,
+    AdminDrugUpdateRequest,
+    AdminIngredientInfo,
+    AdminInteractionRow,
+    AdminLinkedProduct,
     AdminOverview,
     AdminUserInfo,
     AdminUsersResponse,
@@ -440,7 +448,6 @@ async def reject_pharmacist(user_id: str, payload: RejectPharmacistRequest, back
 async def admin_overview(
     _: User = Depends(require_role("admin")),
     db: Session = Depends(get_db),
-    db_facts: Session = Depends(get_db_facts),
 ) -> AdminOverview:
     global _admin_overview_cache
     now = monotonic()
@@ -465,15 +472,12 @@ async def admin_overview(
     )
     stats = db.execute(statement).mappings().one()
 
-    # interactions/food_interactions/disease_interactions nam tren CockroachDB (facts
-    # DB) - khac engine voi cac bang tren, khong the gop chung 1 statement/subquery
-    # nhu truoc (xem docs/database-split.md).
     facts_statement = select(
         select(func.count(Interaction.id)).scalar_subquery().label("drug_interactions"),
         select(func.count(FoodInteraction.id)).scalar_subquery().label("food_interactions"),
         select(func.count(DiseaseInteraction.id)).scalar_subquery().label("disease_interactions"),
     )
-    facts_stats = db_facts.execute(facts_statement).mappings().one()
+    facts_stats = db.execute(facts_statement).mappings().one()
 
     overview = AdminOverview(
         total_users=stats["total_users"] or 0,
@@ -579,7 +583,7 @@ async def admin_drug_data(
             query = query.filter(or_(Medication.ten_chuan_hoa.ilike(pattern), Medication.hoat_chat.ilike(pattern)))
         total = query.count()
         rows = query.order_by(Medication.ten_chuan_hoa).offset((page - 1) * page_size).limit(page_size).all()
-        items = [AdminDrugItem(id=row.id, name=row.ten_chuan_hoa, detail=row.hoat_chat, source=row.nguon_du_lieu) for row in rows]
+        items = [AdminDrugItem(id=row.id, name=row.ten_chuan_hoa, detail=row.hoat_chat or _clean_placeholder(row.mo_ta), source=row.nguon_du_lieu) for row in rows]
     return AdminDrugDataResponse(
         items=items,
         total=total,
@@ -587,6 +591,250 @@ async def admin_drug_data(
         page_size=page_size,
         total_pages=(total + page_size - 1) // page_size,
     )
+
+
+_DETAIL_LIST_LIMIT = 50
+
+
+def _severity_rank(column):
+    return case(
+        (column == "nang", 0),
+        (column == "trung_binh", 1),
+        (column == "nhe", 2),
+        else_=3,
+    )
+
+
+def _clean_placeholder(value: str | None) -> str | None:
+    # Nguồn DDInter có sẵn chuỗi 'None'/'N/A' thay cho ô trống - không hiển thị như dữ liệu thật.
+    value = _blank_to_none(value)
+    return None if value is None or value.lower() in {"none", "n/a", "nan"} else value
+
+
+def _blank_to_none(value: str | None) -> str | None:
+    if value is None:
+        return None
+    value = value.strip()
+    return value or None
+
+
+def _build_medication_detail(db: Session, med: Medication) -> AdminDrugDetail:
+    aliases = (
+        db.query(MedicationAlias).filter(MedicationAlias.medication_id == med.id).order_by(MedicationAlias.alias).all()
+    )
+
+    product_query = (
+        db.query(Product)
+        .join(ProductIngredient, ProductIngredient.product_id == Product.id)
+        .filter(ProductIngredient.medication_id == med.id)
+        .distinct()
+    )
+    products_total = product_query.count()
+    products = product_query.order_by(Product.ten_thuoc).limit(_DETAIL_LIST_LIMIT).all()
+
+    pair_filter = or_(Interaction.medication_a_id == med.id, Interaction.medication_b_id == med.id)
+    drug_total = db.query(Interaction).filter(pair_filter).count()
+    drug_rows = (
+        db.query(Interaction)
+        .filter(pair_filter)
+        .order_by(_severity_rank(Interaction.muc_do))
+        .limit(_DETAIL_LIST_LIMIT)
+        .all()
+    )
+    other_ids = {r.medication_b_id if r.medication_a_id == med.id else r.medication_a_id for r in drug_rows}
+    other_names = (
+        {m.id: m.ten_chuan_hoa for m in db.query(Medication).filter(Medication.id.in_(other_ids)).all()}
+        if other_ids
+        else {}
+    )
+    drug_items = []
+    for r in drug_rows:
+        other_id = r.medication_b_id if r.medication_a_id == med.id else r.medication_a_id
+        alt = r.thay_the_a if r.medication_a_id == med.id else r.thay_the_b
+        drug_items.append(
+            AdminInteractionRow(
+                id=r.id,
+                doi_tuong=other_names.get(other_id, other_id),
+                muc_do=r.muc_do,
+                mo_ta=r.mo_ta,
+                mo_ta_dich=r.mo_ta_dich,
+                xu_tri=r.xu_tri,
+                xu_tri_dich=r.xu_tri_dich,
+                nguon_trich_dan=r.nguon_trich_dan,
+                thay_the=alt,
+            )
+        )
+
+    food_q = db.query(FoodInteraction).filter(FoodInteraction.medication_id == med.id)
+    food_total = food_q.count()
+    food_rows = (
+        food_q.order_by(_severity_rank(FoodInteraction.muc_do), FoodInteraction.thuc_pham)
+        .limit(_DETAIL_LIST_LIMIT)
+        .all()
+    )
+
+    dis_q = db.query(DiseaseInteraction).filter(DiseaseInteraction.medication_id == med.id)
+    dis_total = dis_q.count()
+    dis_rows = (
+        dis_q.order_by(_severity_rank(DiseaseInteraction.muc_do), DiseaseInteraction.ten_benh)
+        .limit(_DETAIL_LIST_LIMIT)
+        .all()
+    )
+
+    return AdminDrugDetail(
+        kind="medication",
+        id=med.id,
+        name=med.ten_chuan_hoa,
+        ten_biet_duoc=med.ten_biet_duoc,
+        hoat_chat=med.hoat_chat,
+        mo_ta=_clean_placeholder(med.mo_ta),
+        nguon_du_lieu=med.nguon_du_lieu,
+        aliases=[AdminAliasInfo(id=a.id, alias=a.alias) for a in aliases],
+        products=[AdminLinkedProduct(id=p.id, ten_thuoc=p.ten_thuoc, loai=p.loai) for p in products],
+        products_total=products_total,
+        drug_interactions=drug_items,
+        drug_interactions_total=drug_total,
+        food_interactions=[
+            AdminInteractionRow(
+                id=r.id,
+                doi_tuong=r.thuc_pham,
+                doi_tuong_vi=r.thuc_pham_vi,
+                muc_do=r.muc_do,
+                mo_ta=r.mo_ta,
+                mo_ta_dich=r.mo_ta_dich,
+                xu_tri=r.xu_tri,
+                xu_tri_dich=r.xu_tri_dich,
+                nguon_trich_dan=r.nguon_trich_dan,
+            )
+            for r in food_rows
+        ],
+        food_interactions_total=food_total,
+        disease_interactions=[
+            AdminInteractionRow(
+                id=r.id,
+                doi_tuong=r.ten_benh,
+                doi_tuong_vi=r.ten_benh_vi,
+                muc_do=r.muc_do,
+                mo_ta=r.mo_ta,
+                mo_ta_dich=r.mo_ta_dich,
+                nguon_trich_dan=r.nguon_trich_dan,
+            )
+            for r in dis_rows
+        ],
+        disease_interactions_total=dis_total,
+    )
+
+
+def _build_product_detail(db: Session, product: Product) -> AdminDrugDetail:
+    rows = (
+        db.query(ProductIngredient, Medication)
+        .outerjoin(Medication, Medication.id == ProductIngredient.medication_id)
+        .filter(ProductIngredient.product_id == product.id)
+        .all()
+    )
+    return AdminDrugDetail(
+        kind="product",
+        id=product.id,
+        name=product.ten_thuoc,
+        is_duoc_lieu=bool(product.is_duoc_lieu),
+        loai=product.loai,
+        nguon_du_lieu=product.nguon_du_lieu,
+        ingredients=[
+            AdminIngredientInfo(
+                id=ing.id,
+                ten_hoat_chat_raw=ing.ten_hoat_chat_raw,
+                ten_hoat_chat_clean=ing.ten_hoat_chat_clean,
+                medication_id=ing.medication_id,
+                medication_name=med.ten_chuan_hoa if med else None,
+            )
+            for ing, med in rows
+        ],
+    )
+
+
+def _get_drug_or_404(db: Session, kind: str, drug_id: str):
+    if kind == "medication":
+        row = db.get(Medication, drug_id)
+    elif kind == "product":
+        row = db.get(Product, drug_id)
+    else:
+        raise HTTPException(status_code=404, detail="Loại dữ liệu không hợp lệ")
+    if row is None:
+        raise HTTPException(status_code=404, detail="Không tìm thấy thuốc")
+    return row
+
+
+def _drug_detail(db: Session, kind: str, row) -> AdminDrugDetail:
+    return _build_medication_detail(db, row) if kind == "medication" else _build_product_detail(db, row)
+
+
+@admin_router.get("/drug-data/{kind}/{drug_id}", response_model=AdminDrugDetail)
+async def admin_drug_detail(
+    kind: str,
+    drug_id: str,
+    _: User = Depends(require_role("admin")),
+    db: Session = Depends(get_db),
+) -> AdminDrugDetail:
+    return _drug_detail(db, kind, _get_drug_or_404(db, kind, drug_id))
+
+
+@admin_router.patch("/drug-data/{kind}/{drug_id}", response_model=AdminDrugDetail)
+async def admin_update_drug(
+    kind: str,
+    drug_id: str,
+    payload: AdminDrugUpdateRequest,
+    _: User = Depends(require_role("admin")),
+    db: Session = Depends(get_db),
+) -> AdminDrugDetail:
+    row = _get_drug_or_404(db, kind, drug_id)
+    data = payload.model_dump(exclude_unset=True)
+
+    if "name" in data:
+        name = _blank_to_none(data["name"])
+        if name is None:
+            raise HTTPException(status_code=422, detail="Tên thuốc không được để trống")
+        if kind == "medication":
+            row.ten_chuan_hoa = name
+        else:
+            row.ten_thuoc = name
+    if "nguon_du_lieu" in data:
+        row.nguon_du_lieu = _blank_to_none(data["nguon_du_lieu"])
+
+    if kind == "medication":
+        for field in ("ten_biet_duoc", "hoat_chat", "mo_ta"):
+            if field in data:
+                setattr(row, field, _blank_to_none(data[field]))
+        if data.get("aliases") is not None:
+            # Lưu chữ thường: drug_normalizer_tool tra alias theo ten.strip().lower().
+            wanted = {raw.strip().lower() for raw in data["aliases"] if raw.strip()}
+            taken = (
+                db.query(MedicationAlias)
+                .filter(MedicationAlias.alias.in_(wanted), MedicationAlias.medication_id != row.id)
+                .first()
+                if wanted
+                else None
+            )
+            if taken is not None:
+                raise HTTPException(
+                    status_code=409, detail=f"Tên gọi khác '{taken.alias}' đang thuộc hoạt chất khác"
+                )
+            kept: set[str] = set()
+            for alias in db.query(MedicationAlias).filter(MedicationAlias.medication_id == row.id).all():
+                if alias.alias in wanted:
+                    kept.add(alias.alias)
+                else:
+                    db.delete(alias)
+            for key in wanted - kept:
+                db.add(MedicationAlias(alias=key, medication_id=row.id))
+    else:
+        if data.get("is_duoc_lieu") is not None:
+            row.is_duoc_lieu = data["is_duoc_lieu"]
+        if "loai" in data:
+            row.loai = _blank_to_none(data["loai"])
+
+    db.commit()
+    db.refresh(row)
+    return _drug_detail(db, kind, row)
 
 
 @admin_router.get("/feedback", response_model=list[FeedbackInfo])

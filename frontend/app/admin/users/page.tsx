@@ -1,19 +1,21 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { AdminEmptyState, AdminPageHeader, AdminStatusBadge } from "@/components/AdminUI";
 import MaterialIcon from "@/components/MaterialIcon";
 import SelectField from "@/components/SelectField";
 import { useMediAlert } from "@/components/MediAlertProvider";
 import { ApiError, listAdminUsers, updateAdminUserStatus, type AdminUser } from "@/lib/api";
 
-export default function AdminUsersPage() {
+function AdminUsersContent() {
   const { toast } = useMediAlert();
+  const params = useSearchParams();
   const [items, setItems] = useState<AdminUser[]>([]);
   const [total, setTotal] = useState(0);
   const [query, setQuery] = useState("");
-  const [role, setRole] = useState("");
-  const [status, setStatus] = useState("");
+  const [role, setRole] = useState(["patient", "pharmacist"].includes(params.get("role") ?? "") ? params.get("role")! : "");
+  const [status, setStatus] = useState(params.get("status") ?? "");
   const [loading, setLoading] = useState(true);
   const [busyId, setBusyId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -63,4 +65,8 @@ export default function AdminUsersPage() {
       )}
     </main>
   );
+}
+
+export default function AdminUsersPage() {
+  return <Suspense fallback={<main className="admin-page"><div className="admin-loading"><span className="spinner" />Đang tải...</div></main>}><AdminUsersContent /></Suspense>;
 }

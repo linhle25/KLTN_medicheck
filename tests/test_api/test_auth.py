@@ -248,3 +248,63 @@ async def test_register_and_reset_password_require_eight_characters(auth_env):
     reset = await client.post("/api/v1/auth/reset-password", json={"token": reset_token, "mat_khau_moi": "87654321"})
     assert reset.status_code == 200
     assert reset.json()["email"] == "eight-characters@example.com"
+
+
+@pytest.mark.asyncio
+async def test_admin_drug_detail_and_update(auth_env):
+    from src.db.models import FoodInteraction, Interaction, Medication, MedicationAlias, Product, ProductIngredient
+
+    client, factory, transport = auth_env
+    with factory() as db:
+        email = "admin@example.com"
+        db.add(User(ho_ten="Admin", email=email, email_normalized=email, email_verified_at=datetime.utcnow(), mat_khau_hash=hash_password("admin-password-123"), vai_tro="admin", account_status="active"))
+        a = Medication(ten_chuan_hoa="Aspirin", hoat_chat="acetylsalicylic acid", nguon_du_lieu="DDInter")
+        b = Medication(ten_chuan_hoa="Warfarin")
+        other = Medication(ten_chuan_hoa="Ibuprofen")
+        db.add_all([a, b, other])
+        db.flush()
+        x, y = sorted([a.id, b.id])
+        db.add(Interaction(medication_a_id=x, medication_b_id=y, muc_do="nang", mo_ta="Tăng nguy cơ chảy máu"))
+        db.add(FoodInteraction(medication_id=a.id, thuc_pham="Alcohol", muc_do="trung_binh"))
+        db.add(MedicationAlias(alias="asa", medication_id=a.id))
+        db.add(MedicationAlias(alias="brufen", medication_id=other.id))
+        product = Product(ten_thuoc="Aspirin 81", loai="ke_don")
+        db.add(product)
+        db.flush()
+        db.add(ProductIngredient(product_id=product.id, ten_hoat_chat_raw="Aspirin 81mg", ten_hoat_chat_clean="aspirin", medication_id=a.id))
+        db.commit()
+        med_id, product_id = a.id, product.id
+
+    async with AsyncClient(transport=transport, base_url="http://test") as admin:
+        await admin.get("/api/v1/auth/csrf")
+        assert (await admin.post("/api/v1/auth/login", json={"email": "admin@example.com", "mat_khau": "admin-password-123"})).status_code == 200
+        csrf = {"X-CSRF-Token": admin.cookies.get("medguard_csrf")}
+
+        detail = (await admin.get(f"/api/v1/admin/drug-data/medication/{med_id}")).json()
+        assert detail["name"] == "Aspirin"
+        assert [i["doi_tuong"] for i in detail["drug_interactions"]] == ["Warfarin"]
+        assert detail["food_interactions_total"] == 1
+        assert [p["ten_thuoc"] for p in detail["products"]] == ["Aspirin 81"]
+        assert [al["alias"] for al in detail["aliases"]] == ["asa"]
+
+        updated = await admin.patch(
+            f"/api/v1/admin/drug-data/medication/{med_id}",
+            headers=csrf,
+            json={"mo_ta": "  Thuốc giảm đau  ", "ten_biet_duoc": "", "aliases": ["ASA", "Aspirine"]},
+        )
+        assert updated.status_code == 200
+        body = updated.json()
+        assert body["mo_ta"] == "Thuốc giảm đau"
+        assert body["ten_biet_duoc"] is None
+        assert body["hoat_chat"] == "acetylsalicylic acid"  # không gửi -> giữ nguyên
+        assert [al["alias"] for al in body["aliases"]] == ["aspirine", "asa"] or sorted(al["alias"] for al in body["aliases"]) == ["asa", "aspirine"]
+
+        clash = await admin.patch(f"/api/v1/admin/drug-data/medication/{med_id}", headers=csrf, json={"aliases": ["brufen"]})
+        assert clash.status_code == 409
+        assert (await admin.patch(f"/api/v1/admin/drug-data/medication/{med_id}", headers=csrf, json={"name": "  "})).status_code == 422
+
+        prod = await admin.patch(f"/api/v1/admin/drug-data/product/{product_id}", headers=csrf, json={"is_duoc_lieu": True, "loai": "khong_ke_don"})
+        assert prod.status_code == 200
+        assert prod.json()["is_duoc_lieu"] is True and prod.json()["loai"] == "khong_ke_don"
+        assert prod.json()["ingredients"][0]["medication_name"] == "Aspirin"
+        assert (await admin.get("/api/v1/admin/drug-data/medication/does-not-exist")).status_code == 404

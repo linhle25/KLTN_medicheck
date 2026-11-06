@@ -27,39 +27,38 @@ export default function AdminDashboardPage() {
   const cards = [
     {
       label: "Tổng người dùng",
+      href: "/admin/users",
       value: data?.total_users,
       icon: "group",
       tone: "blue",
     },
     {
       label: "Bệnh nhân",
+      href: "/admin/users?role=patient",
       value: data?.patients,
       icon: "personal_injury",
       tone: "cyan",
     },
     {
       label: "Dược sĩ",
+      href: "/admin/users?role=pharmacist",
       value: data?.pharmacists,
       icon: "local_pharmacy",
       tone: "violet",
     },
     {
       label: "Chờ duyệt",
+      href: "/admin/pharmacists",
       value: data?.pending_pharmacists,
       icon: "pending_actions",
       tone: "amber",
     },
     {
       label: "Tài khoản khóa",
+      href: "/admin/users?status=locked",
       value: data?.locked_users,
       icon: "lock",
       tone: "rose",
-    },
-    {
-      label: "Phản hồi mở",
-      value: data?.open_feedback,
-      icon: "feedback",
-      tone: "green",
     },
   ];
 
@@ -79,8 +78,10 @@ export default function AdminDashboardPage() {
       )}
       <section className="admin-stat-grid" aria-label="Thống kê hệ thống">
         {cards.map((card) => (
-          <article
-            className={`admin-stat-card admin-stat-card--${card.tone}`}
+          <Link
+            href={card.href}
+            className={`admin-stat-card admin-stat-card--link admin-stat-card--${card.tone}`}
+            aria-label={`${card.label}: xem chi tiết`}
             key={card.label}
           >
             <span className="admin-stat-card__icon">
@@ -90,7 +91,8 @@ export default function AdminDashboardPage() {
               <p>{card.label}</p>
               <strong>{data ? number.format(card.value || 0) : "—"}</strong>
             </div>
-          </article>
+            <MaterialIcon name="chevron_right" size={20} />
+          </Link>
         ))}
       </section>
 
@@ -156,7 +158,7 @@ export default function AdminDashboardPage() {
               <MaterialIcon name="manage_accounts" size={21} />
             </span>
             <div>
-              <strong>Quản lý tài khoản</strong>
+              <strong>Quản lý người dùng</strong>
               <p>Khóa hoặc mở lại tài khoản</p>
             </div>
             <MaterialIcon name="chevron_right" size={22} />
