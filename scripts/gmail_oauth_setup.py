@@ -3,7 +3,7 @@
 
 Chi chay 1 LAN DUY NHAT, tren may local, dang nhap dung tai khoan Gmail dung
 de gui mail (vi du medichecksupport@gmail.com). Xem huong dan day du kem theo
-script nay (docs/gmail-api-setup.md) truoc khi chay.
+script nay (docs/04_KyThuat/gmail-api-setup.md) truoc khi chay.
 
 Usage:
   python scripts/gmail_oauth_setup.py --client-id XXX --client-secret YYY

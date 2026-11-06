@@ -37,9 +37,8 @@ flowchart TB
         NORM["normalize"] --> LOOK["lookup"] --> RANK["rank"] --> EXP["explain"] --> GUARD["guardrail"]
     end
 
-    subgraph DATA["Dữ liệu — SQLAlchemy, 2 engine"]
-        MAIN[("Supabase Postgres<br/>users, products, lịch sử, review")]
-        FACTS[("CockroachDB — facts<br/>interactions, food, disease")]
+    subgraph DATA["Dữ liệu — SQLAlchemy"]
+        MAIN[("Supabase Postgres<br/>users, products, lịch sử, review, tương tác")]
     end
 
     subgraph EXT["Dịch vụ ngoài"]
@@ -55,9 +54,9 @@ flowchart TB
     RESOLVER --> MAIN
     RESOLVER --> NORM
     NORM --> MAIN
-    LOOK --> FACTS
+    LOOK --> MAIN
     ROLLUP --> LLM
-    FOODDIS --> FACTS
+    FOODDIS --> MAIN
     FOODDIS --> LLM
     GUARD --> ROLLUP
     ROLLUP --> MAIN
@@ -68,13 +67,13 @@ flowchart TB
 
 | Thành phần | Công nghệ | Vai trò | Vị trí |
 |---|---|---|---|
-| Frontend | Next.js 14 App Router + TypeScript | 3 vai trò (bệnh nhân / dược sĩ / admin), session bằng cookie HttpOnly | [`frontend/`](../frontend/) |
-| Backend API | FastAPI + Uvicorn + Pydantic | REST `/api/v1`, xác thực, phân quyền, điều phối agent | [`src/api/routes.py`](../src/api/routes.py) |
-| AI Agent | LangGraph + LangChain | Pipeline 5 node cho tương tác thuốc–thuốc | [`src/agents/graph.py`](../src/agents/graph.py) |
-| Agent tools | Python + SQLAlchemy | `drug_normalizer`, `interaction_lookup`, `severity_ranker` | [`src/agents/tools/`](../src/agents/tools/) |
-| Thuốc–thực phẩm / thuốc–bệnh nền | SQL thuần, chạy ngoài agent | Tra theo từng hoạt chất; lọc theo bệnh nền đã khai của bệnh nhân | [`src/services/food_disease_lookup.py`](../src/services/food_disease_lookup.py) |
-| LLM | DeepSeek-chat qua `langchain-openai` | Chỉ **diễn giải** dữ liệu đã tra được, không tự sinh dữ liệu tương tác | [`src/services/llm.py`](../src/services/llm.py) |
-| Database | Supabase Postgres + CockroachDB | 22 bảng, xem §4 | [`src/db/`](../src/db/) |
+| Frontend | Next.js 14 App Router + TypeScript | 3 vai trò (bệnh nhân / dược sĩ / admin), session bằng cookie HttpOnly | [`frontend/`](../../frontend/) |
+| Backend API | FastAPI + Uvicorn + Pydantic | REST `/api/v1`, xác thực, phân quyền, điều phối agent | [`src/api/routes.py`](../../src/api/routes.py) |
+| AI Agent | LangGraph + LangChain | Pipeline 5 node cho tương tác thuốc–thuốc | [`src/agents/graph.py`](../../src/agents/graph.py) |
+| Agent tools | Python + SQLAlchemy | `drug_normalizer`, `interaction_lookup`, `severity_ranker` | [`src/agents/tools/`](../../src/agents/tools/) |
+| Thuốc–thực phẩm / thuốc–bệnh nền | SQL thuần, chạy ngoài agent | Tra theo từng hoạt chất; lọc theo bệnh nền đã khai của bệnh nhân | [`src/services/food_disease_lookup.py`](../../src/services/food_disease_lookup.py) |
+| LLM | DeepSeek-chat qua `langchain-openai` | Chỉ **diễn giải** dữ liệu đã tra được, không tự sinh dữ liệu tương tác | [`src/services/llm.py`](../../src/services/llm.py) |
+| Database | Supabase Postgres | xem §4 | [`src/db/`](../../src/db/) |
 
 ## 3. Pipeline AI Agent
 
@@ -93,7 +92,7 @@ flowchart LR
     G -. error .-> ERR
 ```
 
-Mỗi node ghi kết quả vào `MedCheckState` ([`src/agents/state.py`](../src/agents/state.py)).
+Mỗi node ghi kết quả vào `MedCheckState` ([`src/agents/state.py`](../../src/agents/state.py)).
 Node nào set `error` thì graph dừng sớm — agent **không bịa** tương tác khi thiếu dữ liệu
 mà trả cờ báo thiếu.
 
@@ -105,20 +104,18 @@ tốn một lượt gọi LLM cho **mỗi cặp** hoạt chất.
 
 Guardrail chặn đoạn giải thích không có `nguon_trich_dan` và lọc ngôn ngữ khuyên tự ý
 đổi/ngừng/chỉnh liều. Hàm lọc `filter_banned_language()` định nghĩa trong `guardrail_node`
-nhưng được [`rollup_explain.py`](../src/services/rollup_explain.py) và
-[`food_disease_explain.py`](../src/services/food_disease_explain.py) import dùng lại cho
+nhưng được [`rollup_explain.py`](../../src/services/rollup_explain.py) và
+[`food_disease_explain.py`](../../src/services/food_disease_explain.py) import dùng lại cho
 văn bản do LLM sinh ở tầng service — nên guardrail vẫn phủ đúng chỗ AI thực sự viết chữ.
 Lọc theo từng câu, chỉ thay cả đoạn bằng câu trung lập khi mọi câu đều vi phạm.
 
 ## 4. Dữ liệu
 
-Hai engine SQLAlchemy, tách vì 3 bảng tra cứu chiếm >95% dung lượng và vượt quota 0.5 GB
-của Supabase free tier — chi tiết ở [`database-split.md`](database-split.md).
-
-| Engine | Biến môi trường | Nội dung |
-|---|---|---|
-| Chính | `DATABASE_URL` — Supabase Postgres | `users`, `patient_profiles`, `patient_conditions`, `products`, `medications`, `patient_prescriptions`, `interaction_checks`, `pharmacist_reviews`, `notifications`, cache giải thích, `feedback_reports`… |
-| Facts | `DATABASE_URL_FACTS` — CockroachDB | `interactions`, `food_interactions`, `disease_interactions` |
+Một engine SQLAlchemy duy nhất (`DATABASE_URL`) trỏ tới Supabase Postgres, chứa toàn bộ
+bảng: `users`, `patient_profiles`, `patient_conditions`, `products`, `medications`,
+`interactions`, `food_interactions`, `disease_interactions`, `patient_prescriptions`,
+`interaction_checks`, `pharmacist_reviews`, `notifications`, cache giải thích,
+`feedback_reports`…
 
 Số liệu production (01/09/2026):
 
@@ -135,9 +132,9 @@ còn lại (thuốc nhỏ mắt, vaccine, chất chẩn đoán như `Sulfur hexa
 nào ở cả ba bảng — DDInter không xây dữ liệu tương tác toàn thân cho nhóm này, nên agent
 trả cờ "không đủ dữ liệu" thay vì suy đoán.
 
-ETL: [`scripts/import_ddinter.py`](../scripts/import_ddinter.py),
-[`import_ddinter_dfi_ddsi.py`](../scripts/import_ddinter_dfi_ddsi.py),
-[`import_products.py`](../scripts/import_products.py).
+ETL: [`scripts/import_ddinter.py`](../../scripts/import_ddinter.py),
+[`import_ddinter_dfi_ddsi.py`](../../scripts/import_ddinter_dfi_ddsi.py),
+[`import_products.py`](../../scripts/import_products.py).
 
 ## 5. Luồng một lần kiểm tra
 
@@ -158,7 +155,6 @@ flowchart LR
     USER(["Người dùng"]) -->|HTTPS| VERCEL["Frontend — Vercel"]
     VERCEL -->|"rewrite /api/:path*"| API["Backend — Render (Docker)"]
     API --> SUPA[("Supabase Postgres")]
-    API --> CRDB[("CockroachDB")]
     API --> DS[["DeepSeek Chat API"]]
     API --> MAIL[["Gmail API — email xác minh"]]
 ```
@@ -168,9 +164,9 @@ flowchart LR
 - Backend chạy free tier → **request đầu sau thời gian nghỉ mất 30–60 giây** (cold start),
   các request sau dưới 1 giây.
 - CI: mọi push/PR chạy ruff + pytest trên self-hosted runner của BTC
-  ([`.github/workflows/ci.yml`](../.github/workflows/ci.yml)).
+  ([`.github/workflows/ci.yml`](../../.github/workflows/ci.yml)).
 - CD: build image lên GHCR + deploy hook Render + `vercel deploy --prod`
-  ([`.github/workflows/cd.yml`](../.github/workflows/cd.yml)). Auto-deploy theo push
+  ([`.github/workflows/cd.yml`](../../.github/workflows/cd.yml)). Auto-deploy theo push
   **đang tắt** — chạy tay bằng "Run workflow" trong tab Actions để tránh deploy ngoài ý muốn.
 - Local: `docker compose up --build` chạy `frontend` (:3000) và `backend` (:8000).
 
@@ -193,17 +189,15 @@ flowchart LR
 | Backend | FastAPI | Async, Swagger tự sinh, hợp với Pydantic |
 | Agent | LangGraph | State rõ ràng, dừng sớm khi thiếu dữ liệu |
 | LLM | DeepSeek qua API tương thích OpenAI | Giải thích tiếng Việt, chi phí thấp; `temperature=0.3` sau kết quả eval |
-| Database | Supabase + CockroachDB | Dùng chung cho cả team; tách bảng tra cứu vì quota free tier |
+| Database | Supabase Postgres | Dùng chung cho cả team, free tier |
 | Deploy | Vercel + Render | Live URL public; pipeline deploy chạy tay từ nhánh `feature/production` |
 | An toàn | Human-in-the-loop | Cảnh báo chỉ đáng tin sau khi dược sĩ xác nhận |
 
 ## 9. Giới hạn hiện tại
 
-- Hai DB tách rời nên không JOIN chéo được; phần ghép tên hoạt chất cho tương tác thực
-  phẩm/bệnh nền phải làm trong Python.
 - Chưa dùng framework migration (chỉ `create_all` + vá cột thủ công trong `session.py`).
 - Bệnh nhân tự chọn dược sĩ; chưa có phân công/hàng đợi tự động.
 - Guardrail kết thúc bằng success/error, chưa có vòng lặp rewrite tự động trong LangGraph.
 - ChromaDB có sẵn service module nhưng chưa dùng trong luồng kiểm tra chính.
 - Faithfulness và Safety trên tập held-out chưa đạt ngưỡng đề ra — xem
-  [`evaluation.md`](evaluation.md).
+  [`evaluation.md`](../evaluation.md).

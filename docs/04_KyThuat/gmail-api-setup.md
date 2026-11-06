@@ -1,13 +1,13 @@
 # Gửi email qua Gmail API (thay SMTP)
 
 > Tài liệu này thay cho `docs/GMAIL_API_SETUP.md` cũ (đã xoá ở commit `96c695d`) mà
-> [`.env.example`](../.env.example) và [`scripts/gmail_oauth_setup.py`](../scripts/gmail_oauth_setup.py)
+> [`.env.example`](../../.env.example) và [`scripts/gmail_oauth_setup.py`](../../scripts/gmail_oauth_setup.py)
 > còn trỏ tới.
 
 ## Vì sao cần
 
 Backend gửi 2 loại email giao dịch: xác minh email khi đăng ký và đặt lại mật khẩu
-([`src/services/email.py`](../src/services/email.py)). Render chặn kết nối SMTP ra ngoài ở
+([`src/services/email.py`](../../src/services/email.py)). Render chặn kết nối SMTP ra ngoài ở
 tầng mạng, nên trên production không dùng `smtplib` được. Khi
 `GMAIL_OAUTH_REFRESH_TOKEN` có giá trị, `email.py` gửi qua **Gmail API bằng HTTPS** thay
 vì SMTP; các biến `SMTP_*` khi đó không cần thiết.
@@ -49,4 +49,4 @@ GMAIL_OAUTH_REFRESH_TOKEN=
 
 Đăng ký một tài khoản mới trên môi trường tương ứng và xác nhận nhận được email xác minh.
 Thiếu cấu hình email hợp lệ thì `validate_production_auth_settings()` trong
-[`src/config.py`](../src/config.py) sẽ chặn backend khởi động ở chế độ `APP_ENV=production`.
+[`src/config.py`](../../src/config.py) sẽ chặn backend khởi động ở chế độ `APP_ENV=production`.
