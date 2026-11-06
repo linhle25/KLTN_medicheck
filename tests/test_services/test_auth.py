@@ -138,6 +138,6 @@ def test_action_and_refresh_tokens_reject_stale_concurrent_claims():
             old_refresh = db.query(RefreshSession).filter_by(token_hash=auth.hash_token(refresh_raw)).one()
             assert action.used_at is not None
             assert old_refresh.revoked_at is not None
-        assert old_refresh.replaced_by_id is not None
-        assert db.query(RefreshSession).count() == 2
+            assert old_refresh.replaced_by_id is not None
+            assert db.query(RefreshSession).count() == 2
     engine.dispose()
