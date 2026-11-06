@@ -154,15 +154,6 @@ don_thuoc_mau/   # hai đơn thuốc mẫu dùng cho demo
 docs/            # tài liệu, chia 4 nhóm bên dưới
 ```
 
-## Tài liệu
-
-| Nhóm | Nội dung |
-| --- | --- |
-| [docs/01_BaoCao_KhoaLuan](docs/01_BaoCao_KhoaLuan) | Các chương báo cáo khóa luận (.docx) |
-| [docs/02_BaoVe_ThuyetTrinh](docs/02_BaoVe_ThuyetTrinh) | Kịch bản bảo vệ, thuyết trình luồng hệ thống, bộ câu hỏi hội đồng, slide |
-| [docs/03_KiemThu_Demo](docs/03_KiemThu_Demo) | Kịch bản kiểm thử và demo API |
-| [docs/04_KyThuat](docs/04_KyThuat) | [Kiến trúc](docs/04_KyThuat/architecture.md), [cấu hình và API](docs/04_KyThuat/cau-hinh-va-van-hanh.md), [thiết lập Gmail API](docs/04_KyThuat/gmail-api-setup.md), ERD |
-
 ## License
 
 MIT (mã nguồn). Dữ liệu DDInter 2.0 dùng cho mục đích học thuật và giáo dục.
