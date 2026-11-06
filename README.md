@@ -18,6 +18,12 @@ Hệ thống kiểm tra **3 loại tương tác**, số liệu CSDL production (
 
 Xem cách cài đặt và khởi động hệ thống tại [Hướng dẫn chạy](HUONG_DAN_CHAY.md).
 
+## Tác giả
+
+Khóa luận tốt nghiệp **do một mình Lê Thị Linh thực hiện** (lớp Công nghệ thông tin 65B, Trường Công nghệ, Đại học Kinh tế Quốc dân), dưới sự hướng dẫn của TS. Tống Thị Hảo Tâm.
+
+- Mã nguồn: [github.com/linhle25/KLTN_medicheck](https://github.com/linhle25/KLTN_medicheck)
+
 ## Screenshot
 
 | Landing page | Dashboard bệnh nhân |
