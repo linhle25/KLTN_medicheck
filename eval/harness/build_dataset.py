@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dựng gold set đánh giá LLM — lấy mẫu phân tầng từ CSDL facts, quy mỗi hoạt chất
+"""Dựng gold set đánh giá LLM — lấy mẫu phân tầng từ CSDL tương tác, quy mỗi hoạt chất
 về 1 tên thuốc (biệt dược) để đưa vào luồng /products/check.
 
 Vì sao phải qua tên thuốc: sau khi explain_node bỏ gọi LLM ở cấp hoạt chất, TẤT CẢ
@@ -34,7 +34,7 @@ from src.db.models import (
     Product,
     ProductIngredient,
 )
-from src.db.session import SessionLocal, SessionLocalFacts
+from src.db.session import SessionLocal
 
 SEED = 20260828
 OUT_DIR = Path(__file__).resolve().parent.parent / "datasets"
@@ -444,7 +444,7 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     rng = random.Random(SEED)
     # Đọc hết phần DB chính (Supabase) TRƯỚC rồi đóng - pooler tự ngắt connection
-    # idle, không giữ session này sống suốt các query facts (CockroachDB) dài phía sau.
+    # idle, không giữ session này sống suốt các query tương tác dài phía sau.
     m = SessionLocal()
     try:
         print("Nạp map hoạt chất -> tên thuốc (DB chính)...")
@@ -455,7 +455,7 @@ def main() -> None:
     finally:
         m.close()
 
-    f = SessionLocalFacts()
+    f = SessionLocal()
     try:
         dd = build_drug_drug(f, prods, names, rng)
         _dump("drug_drug", dd)

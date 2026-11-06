@@ -1,0 +1,143 @@
+{
+  "case_id": "rt-xutri-001",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 3.8679,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Triamcinolone",
+      "Etanercept"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Triamcinolone",
+        "ten_chuan": "Triamcinolone",
+        "medication_id": "DDInter1855",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Etanercept",
+        "ten_chuan": "Etanercept",
+        "medication_id": "DDInter687",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Triamcinolone",
+        "thuoc_b": "Etanercept",
+        "medication_a_id": "DDInter1855",
+        "medication_b_id": "DDInter687",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Ciclesonide, Mupirocin",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Amcinol - Paste (hoạt chất: Triamcinolone)",
+        "thuoc_b": "Enbrel (hoạt chất: Etanercept)",
+        "medication_a_id": "DDInter1855",
+        "medication_b_id": "DDInter687",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Ciclesonide, Mupirocin",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Triamcinolone",
+        "hoat_chat_b": "Etanercept",
+        "san_pham_a": [
+          "Amcinol - Paste"
+        ],
+        "san_pham_b": [
+          "Enbrel"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Amcinol - Paste (hoạt chất: Triamcinolone)",
+        "thuoc_b": "Enbrel (hoạt chất: Etanercept)",
+        "medication_a_id": "DDInter1855",
+        "medication_b_id": "DDInter687",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Ciclesonide, Mupirocin",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "hoat_chat_a": "Triamcinolone",
+        "hoat_chat_b": "Etanercept",
+        "san_pham_a": [
+          "Amcinol - Paste"
+        ],
+        "san_pham_b": [
+          "Enbrel"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Amcinol - Paste",
+        "thuoc_b": "Enbrel",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Amcinol - Paste chung với Enbrel có thể làm tăng nguy cơ nhiễm trùng, vì cả hai đều tác động lên hệ miễn dịch theo hướng ức chế. Enbrel là thuốc chặn yếu tố hoại tử khối u (TNF), một chất tham gia vào phản ứng viêm và chống nhiễm trùng của cơ thể; khi dùng cùng các thuốc ức chế miễn dịch hoặc ức chế tủy xương khác, nguy cơ nhiễm trùng và nhiễm khuẩn huyết tăng lên, và đã có báo cáo các trường hợp nhiễm trùng nặng, kể cả tử vong, đặc biệt ở người đang dùng đồng thời thuốc ức chế miễn dịch. Corticosteroid dùng liều cao, hoặc dùng tại chỗ/đường hít kéo dài, nằm trong nhóm các tác nhân có thể ức chế tủy hoặc ức chế miễn dịch đáng kể, cùng với thuốc chống ung thư, xạ trị, zidovudine, linezolid, một số thuốc chống thấp khớp và các chất giống adrenocorticotropin. Ngoài ra, phối hợp thuốc chặn TNF với các thuốc ức chế miễn dịch khác còn có thể làm tăng nguy cơ một loại ung thư tế bào bạch cầu hiếm gặp và thường gây tử vong là u lympho tế bào T ở gan-lách.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Việc sử dụng thuốc chặn yếu tố hoại tử khối u (TNF) cùng với các thuốc ức chế miễn dịch hoặc ức chế tủy xương khác có thể làm tăng nguy cơ nhiễm trùng. Nhiễm trùng nặng và nhiễm khuẩn huyết, bao gồm cả tử vong, đã được báo cáo khi sử dụng thuốc chặn TNF, đặc biệt ở bệnh nhân đang điều trị ức chế miễn dịch đồng thời. Các tác nhân có thể ức chế tủy hoặc ức chế miễn dịch đáng kể bao gồm thuốc chống ung thư, xạ trị, zidovudine, linezolid, một số thuốc chống thấp khớp, corticosteroid liều cao hoặc các chất adrenocorticotropin, và corticosteroid dùng tại chỗ hoặc đường hít kéo dài. Sử dụng đồng thời thuốc chặn TNF với các thuốc ức chế miễn dịch khác như azathioprine hoặc mercaptopurine cũng có thể làm tăng nguy cơ một loại ung thư tế bào bạch cầu hiếm gặp và thường gây tử vong được gọi là u lympho tế bào T ở gan-lách (HS...).",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác thuốc-thuốc, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là Amcinol - Paste và Enbrel ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Amcinol - Paste và Enbrel",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Amcinol - Paste",
+      "Enbrel"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Amcinol - Paste",
+          "Enbrel"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

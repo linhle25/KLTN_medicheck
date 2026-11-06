@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nang-005",
+  "phase": "consistency",
+  "rep": 3,
+  "audience": "patient",
+  "wall_s": 3.7379,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Palonosetron",
+      "Venlafaxine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Palonosetron",
+        "ten_chuan": "Palonosetron",
+        "medication_id": "DDInter1382",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Venlafaxine",
+        "ten_chuan": "Venlafaxine",
+        "medication_id": "DDInter1927",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Palonosetron",
+        "thuoc_b": "Venlafaxine",
+        "medication_a_id": "DDInter1382",
+        "medication_b_id": "DDInter1927",
+        "mo_ta": "Concomitant use of 5-HT3 receptor antagonists with agents that possess or enhance serotonergic activity such as antidepressants and lithium may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors. Treatment with 5-HT3 receptor antagonists has been associated with dose-dependent prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval including certain antidepressants and lithium may result in additive effects and increased risk of ventricular arrhythmias such as torsade de pointes and sudden death.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Anzemet (dolasetron).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Sancuso (granisetron).\" ProStrakan Group, Bedminster, NJ., [4] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [5] \"Product Information. Akynzeo (netupitant-palonosetron).\" Eisai Inc, Woodcliff Lake, NJ., [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] \"Product Information. Aloxi (palonosetron).\" MGI Pharma Inc, Minnetonka, MN.",
+        "xu_tri": "Caution is advised if 5-HT3 receptor antagonists are prescribed with other agents that affect the serotonergic neurotransmitter system. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is warranted when initiating or increasing the dosages of these agents. In addition, the potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures. Due to the potential for additive effects on the QT interval, ECG monitoring may also be appropriate when 5-HT3 receptor antagonists are used with certain antidepressants or lithium. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A04A, Rolapitant",
+        "thay_the_b": "N06A, Viloxazine, Esketamine",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T Palonosetron Inj (hoạt chất: Palonosetron)",
+        "thuoc_b": "Edxor (hoạt chất: Venlafaxine)",
+        "medication_a_id": "DDInter1382",
+        "medication_b_id": "DDInter1927",
+        "mo_ta": "Concomitant use of 5-HT3 receptor antagonists with agents that possess or enhance serotonergic activity such as antidepressants and lithium may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors. Treatment with 5-HT3 receptor antagonists has been associated with dose-dependent prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval including certain antidepressants and lithium may result in additive effects and increased risk of ventricular arrhythmias such as torsade de pointes and sudden death.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Anzemet (dolasetron).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Sancuso (granisetron).\" ProStrakan Group, Bedminster, NJ., [4] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [5] \"Product Information. Akynzeo (netupitant-palonosetron).\" Eisai Inc, Woodcliff Lake, NJ., [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] \"Product Information. Aloxi (palonosetron).\" MGI Pharma Inc, Minnetonka, MN.",
+        "xu_tri": "Caution is advised if 5-HT3 receptor antagonists are prescribed with other agents that affect the serotonergic neurotransmitter system. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is warranted when initiating or increasing the dosages of these agents. In addition, the potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures. Due to the potential for additive effects on the QT interval, ECG monitoring may also be appropriate when 5-HT3 receptor antagonists are used with certain antidepressants or lithium. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A04A, Rolapitant",
+        "thay_the_b": "N06A, Viloxazine, Esketamine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Palonosetron",
+        "hoat_chat_b": "Venlafaxine",
+        "san_pham_a": [
+          "A.T Palonosetron Inj"
+        ],
+        "san_pham_b": [
+          "Edxor"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T Palonosetron Inj (hoạt chất: Palonosetron)",
+        "thuoc_b": "Edxor (hoạt chất: Venlafaxine)",
+        "medication_a_id": "DDInter1382",
+        "medication_b_id": "DDInter1927",
+        "xu_tri": "Caution is advised if 5-HT3 receptor antagonists are prescribed with other agents that affect the serotonergic neurotransmitter system. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is warranted when initiating or increasing the dosages of these agents. In addition, the potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures. Due to the potential for additive effects on the QT interval, ECG monitoring may also be appropriate when 5-HT3 receptor antagonists are used with certain antidepressants or lithium. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "thay_the_a": "A04A, Rolapitant",
+        "thay_the_b": "N06A, Viloxazine, Esketamine",
+        "mo_ta": "Concomitant use of 5-HT3 receptor antagonists with agents that possess or enhance serotonergic activity such as antidepressants and lithium may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors. Treatment with 5-HT3 receptor antagonists has been associated with dose-dependent prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval including certain antidepressants and lithium may result in additive effects and increased risk of ventricular arrhythmias such as torsade de pointes and sudden death.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Anzemet (dolasetron).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Sancuso (granisetron).\" ProStrakan Group, Bedminster, NJ., [4] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [5] \"Product Information. Akynzeo (netupitant-palonosetron).\" Eisai Inc, Woodcliff Lake, NJ., [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] \"Product Information. Aloxi (palonosetron).\" MGI Pharma Inc, Minnetonka, MN.",
+        "hoat_chat_a": "Palonosetron",
+        "hoat_chat_b": "Venlafaxine",
+        "san_pham_a": [
+          "A.T Palonosetron Inj"
+        ],
+        "san_pham_b": [
+          "Edxor"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T Palonosetron Inj",
+        "thuoc_b": "Edxor",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung A.T Palonosetron Inj và Edxor có thể làm tăng nguy cơ hội chứng serotonin - một tình trạng hiếm gặp nhưng nghiêm trọng và có thể đe dọa tính mạng, được cho là do kích thích quá mức các thụ thể 5-HT1A và 2A ở thân não. Ngoài ra, A.T Palonosetron Inj khi dùng cùng các thuốc khác cũng có khả năng kéo dài khoảng QT trên điện tâm đồ, và về mặt lý thuyết sự cộng gộp tác dụng này có thể làm tăng nguy cơ loạn nhịp thất như xoắn đỉnh và đột tử. [ẢNH] Người bệnh thân mến, khi dùng chung A.T Palonosetron Inj với Edxor, cơ thể có thể gặp hai rủi ro đáng lưu ý. Thứ nhất là hội chứng serotonin - tình trạng hiếm nhưng nguy hiểm, xảy ra khi não bị kích thích quá mức bởi các chất liên quan đến serotonin. Thứ hai là nhịp tim có thể bị rối loạn theo kiểu kéo dài khoảng QT, và sự cộng gộp này về mặt lý thuyết có thể dẫn tới loạn nhịp thất như xoắn đỉnh hay đột tử. Vì vậy, hãy báo ngay cho bác sĩ nếu bạn thấy bất thường, và để bác sĩ quyết định cách dùng thuốc phù hợp cho bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời thuốc đối kháng thụ thể 5-HT3 với các thuốc có hoạt tính serotonergic hoặc làm tăng hoạt tính serotonergic như thuốc chống trầm cảm và lithium có thể làm tăng nguy cơ hội chứng serotonin, một tình trạng hiếm gặp nhưng nghiêm trọng và có thể gây tử vong, được cho là do kích thích quá mức các thụ thể 5-HT1A và 2A ở thân não. Điều trị bằng thuốc đối kháng thụ thể 5-HT3 có liên quan đến việc kéo dài khoảng QT phụ thuộc liều. Về mặt lý thuyết, dùng đồng thời với các thuốc khác có thể kéo dài khoảng QT bao gồm một số thuốc chống trầm cảm và lithium có thể dẫn đến tác dụng cộng gộp và tăng nguy cơ loạn nhịp thất như xoắn đỉnh và đột tử.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp tương tác thuốc-thuốc, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là A.T Palonosetron Inj và Edxor ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "A.T Palonosetron Inj và Edxor",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "A.T Palonosetron Inj",
+      "Edxor"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Palonosetron Inj",
+          "Edxor"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

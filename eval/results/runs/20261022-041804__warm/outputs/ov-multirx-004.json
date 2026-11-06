@@ -1,0 +1,443 @@
+{
+  "case_id": "ov-multirx-004",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.3514,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Clarithromycin",
+      "Posaconazole",
+      "Abacavir",
+      "Lamivudine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Clarithromycin",
+        "ten_chuan": "Clarithromycin",
+        "medication_id": "DDInter393",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Posaconazole",
+        "ten_chuan": "Posaconazole",
+        "medication_id": "DDInter1494",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Abacavir",
+        "ten_chuan": "Abacavir",
+        "medication_id": "DDInter1",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Lamivudine",
+        "ten_chuan": "Lamivudine",
+        "medication_id": "DDInter1019",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Posaconazole",
+        "thuoc_b": "Clarithromycin",
+        "medication_a_id": "DDInter1494",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "xu_tri": "Caution and clinical monitoring are recommended. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J02A, Flucytosine, Anidulafungin, Micafungin, Oteseconazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Vonoprazan, Amoxicillin, J01F, Lincomycin, Troleandomycin, Dirithromycin",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Clarithromycin",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan, Levofloxacin, J01F, Telithromycin",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Lamivudine",
+        "thuoc_b": "Clarithromycin",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan, Levofloxacin, J01F, Telithromycin, Lincomycin, Troleandomycin, Dirithromycin",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Posaconazole",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1494",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lamivudine",
+        "thuoc_b": "Posaconazole",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter1494",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Lamivudine",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1019",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Noxafil (hoạt chất: Posaconazole)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1494",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "xu_tri": "Caution and clinical monitoring are recommended. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J02A, Flucytosine, Anidulafungin, Micafungin, Oteseconazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Vonoprazan, Amoxicillin, J01F, Lincomycin, Troleandomycin, Dirithromycin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Posaconazole",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Noxafil"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan, Levofloxacin, J01F, Telithromycin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan, Levofloxacin, J01F, Telithromycin, Lincomycin, Troleandomycin, Dirithromycin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Lamivudine",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Noxafil (hoạt chất: Posaconazole)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1494",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Posaconazole",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Noxafil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "thuoc_b": "Noxafil (hoạt chất: Posaconazole)",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter1494",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lamivudine",
+        "hoat_chat_b": "Posaconazole",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Noxafil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1019",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lamivudine",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Noxafil (hoạt chất: Posaconazole)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1494",
+        "medication_b_id": "DDInter393",
+        "xu_tri": "Caution and clinical monitoring are recommended. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "thay_the_a": "J02A, Flucytosine, Anidulafungin, Micafungin, Oteseconazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Vonoprazan, Amoxicillin, J01F, Lincomycin, Troleandomycin, Dirithromycin",
+        "mo_ta": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [2] Witchel HJ, Hancox JC, Nutt DJ \"Psychotropic drugs, cardiac arrhythmia, and sudden death.\" J Clin Psychopharmacol 23 (2003): 58-77, [3] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [4] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [8] Honig PK, Wortham DC, Zamani K, et al \"Terfenadine-ketoconazole interaction: pharmacokinetic and electrocardiographic consequences.\" JAMA 269 (1993): 1513-8, [9] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [10] Pohjola-Sintonen S, Viitasalo M, Toivonene L, Neuvonen P \"Torsades de pointes after terfenadine-itraconazole interaction.\" BMJ 306 (1993): 186, [11] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [12] Mathews DR, McNutt B, Okerholm R, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 266 (1991): 2375-6, [13] Benton RE, Honig PK, Zamani K, Cantilena LR, Woosley RL \"Grapefruit juice alters terfenadine pharmacokinetics resulting in prolongation of repolarization on the electrocardiogram.\" Clin Pharmacol Ther 59 (1996): 383-8, [14] Zechnich AD, Haxby DG \"Drug interactions associated with terfenadine and related nonsedating antihistamines.\" West J Med 164 (1996): 68-9, [15] Hsieh MH, Chen SA, Chiang CE, et al. \"Drug-induced torsades de pointes in one patient with congenital long QT syndrome.\" Int J Cardiol 54 (1996): 85-8, [16] Woosley RL \"Cardiac actions of antihistamines.\" Annu Rev Pharmacol Toxicol 36 (1996): 233-52, [17] Paris DG, Parente TF, Bruschetta HR, Guzman E, Niarchos AP \"Torsades-de-pointes induced by erythromycin and terfenadine.\" Am J Emerg Med 12 (1994): 636-8, [18] Zimmermann M, Duruz H, Guinand O, et al \"Torsades de Pointes after treatment with terfenadine and ketoconazole.\" Eur Heart J 13 (1992): 1002-3, [19] Rau SE, Bend JR, Arnold JMO, Tran LT, Spence JD, Bailey DG \"Grapefruit juice terfenadine single-dose interaction: Magnitude, mechanism, and relevance.\" Clin Pharmacol Ther 61 (1997): 401-9, [20] Honig PK, Wortham DC, Lazarev A, Cantilena LR \"Grapefruit juice alters the systemic bioavailability and cardiac repolarization of terfenadine in poor metabolizers of terfenadine.\" J Clin Pharmacol 36 (1996): 345-51, [21] Honig PK, Woosley RL, Zamani K, Conner DP, Cantilena LR Jr \"Changes in the pharmacokinetics and electrocardiographic pharmacodynamics of terfenadine with concomitant administration of erythromycin.\" Clin Pharmacol Ther 52 (1992): 231-8, [22] Monahan BP, Ferguson CL, Killeavy ES, et al \"Torsades de pointes occurring in association with terfenadine use.\" JAMA 264 (1990): 2788-90, [23] Clifford CP, Adams DA, Murray S, Taylor GW, Wilkins MR, Boobis AR, Davies DS \"Pharmacokinetic and cardiac effects of terfenadine after inhibition of its metabolism by grapefruit juice.\" Br J Clin Pharmacol 42 (1996): p662, [24] Cortese LM, Bjornson DC \"Potential interaction between terfenadine and macrolide antibiotics.\" Clin Pharm 11 (1992): 675",
+        "hoat_chat_a": "Posaconazole",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Noxafil"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter393",
+        "xu_tri": "-",
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan, Levofloxacin, J01F, Telithromycin",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter393",
+        "xu_tri": "-",
+        "thay_the_a": "J05A, Glecaprevir, Tenofovir alafenamide, Cabotegravir, Lenacapavir, Velpatasvir, Voxilaprevir, Maribavir, Pibrentasvir, Rimantadine, Elvitegravir, Valganciclovir",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan, Levofloxacin, J01F, Telithromycin, Lincomycin, Troleandomycin, Dirithromycin",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Lamivudine",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Noxafil (hoạt chất: Posaconazole)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1494",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Posaconazole",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Noxafil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "thuoc_b": "Noxafil (hoạt chất: Posaconazole)",
+        "medication_a_id": "DDInter1019",
+        "medication_b_id": "DDInter1494",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lamivudine",
+        "hoat_chat_b": "Posaconazole",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Noxafil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg (hoạt chất: Lamivudine)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1019",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lamivudine",
+        "san_pham_a": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ],
+        "san_pham_b": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Noxafil",
+        "thuoc_b": "Agiclari 125",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Noxafil và Agiclari 125 có thể làm tăng nguy cơ rối loạn nhịp tim, cụ thể là kéo dài khoảng QT trên điện tâm đồ - tức là khoảng thời gian tim cần để \"nạp và xả\" điện mỗi nhịp bị kéo dài bất thường, dễ dẫn đến các nhịp tim nguy hiểm. Cả hai thuốc đều có khả năng gây tác động này, và khi dùng cùng nhau thì tác động cộng gộp lại. Ngoài ra, Agiclari 125 còn có thể làm thay đổi cách cơ thể xử lý Noxafil, khiến nồng độ Noxafil trong máu tăng lên, từ đó càng làm nặng thêm ảnh hưởng lên tim. [ẢNH HƯỞNG TIM MẠCH] Bạn đang dùng chung Noxafil và Agiclari 125 - cả hai thuốc này đều có thể làm nhịp tim đập không đều, và khi dùng cùng lúc thì nguy cơ đó tăng lên. Agiclari 125 còn có thể khiến cơ thể giữ Noxafil lại lâu hơn, làm nồng độ thuốc trong máu cao hơn bình thường, nên ảnh hưởng lên tim càng rõ hơn. Vì vậy bạn cần để ý các dấu hiệu như tim đập nhanh, hồi hộp, chóng mặt hay ngất, và báo ngay cho bác sĩ nếu gặp phải. Đừng tự ý ngừng hay đổi thuốc - hãy để bác sĩ hoặc dược sĩ quyết định cách dùng phù hợp cho bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời posaconazole và clarithromycin có thể làm tăng nguy cơ kéo dài khoảng QT và các rối loạn nhịp tim liên quan (bao gồm xoắn đỉnh), do tác động cộng gộp lên khoảng QT; clarithromycin cũng có thể làm tăng nồng độ posaconazole trong huyết tương thông qua ức chế chuyển hóa, làm tăng thêm nguy cơ độc tính trên tim.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg",
+        "thuoc_b": "Agiclari 125",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg và Agiclari 125 có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 2 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 3 đơn thuốc khác nhau, mình thấy có 2 cặp thuốc-thuốc có tương tác, trong đó 1 cặp ở mức trung bình và 1 cặp chưa phân loại. Đáng chú ý nhất là Noxafil và Agiclari 125 cùng với Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg và Agiclari 125. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Noxafil và Agiclari 125",
+          "muc_do": "trung_binh"
+        },
+        {
+          "text": "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg và Agiclari 125",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 2
+    },
+    "checked_products": [
+      "Agiclari 125",
+      "Noxafil",
+      "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Agiclari 125"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Noxafil"
+        ]
+      },
+      {
+        "label": "Đơn 3",
+        "products": [
+          "Abacavir Sulfate and Lamivudine Dispersible Tablets 60 mg/ 30 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

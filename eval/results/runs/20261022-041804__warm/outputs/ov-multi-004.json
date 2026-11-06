@@ -1,0 +1,689 @@
+{
+  "case_id": "ov-multi-004",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.6289,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Prednisone",
+      "Levofloxacin",
+      "Amitriptyline",
+      "Durvalumab",
+      "Etravirine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Prednisone",
+        "ten_chuan": "Prednisone",
+        "medication_id": "DDInter1515",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Levofloxacin",
+        "ten_chuan": "Levofloxacin",
+        "medication_id": "DDInter1055",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Amitriptyline",
+        "ten_chuan": "Amitriptyline",
+        "medication_id": "DDInter78",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Durvalumab",
+        "ten_chuan": "Durvalumab",
+        "medication_id": "DDInter610",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Etravirine",
+        "ten_chuan": "Etravirine",
+        "medication_id": "DDInter703",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Levofloxacin",
+        "thuoc_b": "Prednisone",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter1515",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Dexlansoprazole, Bismuth subcitrate potassium, Esomeprazole, Vonoprazan, J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Oxytetracycline",
+        "thay_the_b": "A07E, Budesonide, Cromoglicic acid, Olsalazine, Sulfasalazine, Beclomethasone dipropionate, Mesalazine, H02A",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Prednisone",
+        "thuoc_b": "Amitriptyline",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter78",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Balsalazide, Betamethasone, Beclomethasone dipropionate, H02A, Cortisone, Fludrocortisone, Betamethasone, Deflazacort",
+        "thay_the_b": "N06A, Desipramine, Tranylcypromine, Vilazodone, Trimipramine, Desvenlafaxine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan, Viloxazine, Milnacipran",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Prednisone",
+        "thuoc_b": "Durvalumab",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter610",
+        "mo_ta": "INTERVAL: Corticosteroids may affect the pharmacodynamic effects and efficacy of immune checkpoint inhibitors (ICI) such as programmed cell death-1 (PD-1) or programmed death ligand-1 inhibitors (PD-L1). The mechanism of this interaction is unknown; however, it has been theorized that the immunosuppressive properties of corticosteroids and the potential effect on T-cell function may decrease the efficacy of ICIs.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Jove M, Vilarino N, Nadal E \"Impact of baseline steroids on efficacy of programmed cell death-1 (PD-1) and programmed death-ligand 1 (PD-L1) blockade in patients with advanced non-small cell lung cancer.\" Transl Lung Cancer Res 8 (2019): S364-8, [2] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Arbour KC, Mezquita L, Long N, et al. \"Impact of Baseline Steroids on Efficacy of Programmed Cell Death-1 and Programmed Death-Ligand 1 Blockade in Patients With Non-Small-Cell Lung Cancer.\" J Clin Oncol 36 (2018): 2872-2878, [5] Horvat TZ, Adel NG, Dand TO, et.al \"Immune-related adverse events, need for systemic immunosuppression, and effects on survival and time to treatment failure in patients with melanoma treated with ipilimumab at Memorial Sloan Kettering Cancer Center.\" J Clin Oncol 33 (2015): 3193-8, [6] Fuca G, Galli G, Poggi M, et.al \"Modulation of peripheral blood immune cells by early use of steroids and its association with clinical outcomes in patients with metastatic non-small cell lung cancer treated with immune checkpoint inhibitors.\" ESMO Open 4 (2019): e000457, [7] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [8] Scott SC, Pennell NA \"Early use of systemic corticosteroids in patients with advanced NSCLC treated with nivolumab.\" J Thorac Oncol 13 (2018): 1771-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "xu_tri": "The manufacturers' product labeling should be consulted for specific recommendations. If clinically possible, the use of systemic corticosteroids should be avoided at the time of or within 30 days of starting therapy with an ICI, e.g., durvalumab, nivolumab, pembrolizumab, ipilimumab, cemiplimab, or atezolizumab. Corticosteroids may be used for the treatment of immune-mediated reactions after starting an ICI. Some manufacturers advise that corticosteroids may be used as premedication, when the ICI is used in combination with chemotherapy, as antiemetic prophylaxis, and/or to alleviate chemotherapy-related adverse effects.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A, Fludrocortisone",
+        "thay_the_b": "L01F, Pertuzumab, Cetuximab, Avelumab, Panitumumab, Obinutuzumab, Bevacizumab, Necitumumab, Dostarlimab, Ramucirumab, Amivantamab, Rituximab",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Prednisone",
+        "thuoc_b": "Etravirine",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter703",
+        "mo_ta": "Coadministration with etravirine may decrease the plasma concentrations of drugs that are substrates of the CYP450 3A4 isoenzyme. The mechanism is accelerated clearance due to induction of CYP450 3A4 activity by etravirine.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ., [2] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ.",
+        "xu_tri": "Caution is advised if etravirine must be used concomitantly with medications that undergo metabolism by CYP450 3A4, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring may be appropriate for some drugs whenever etravirine is added to or withdrawn from therapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Levofloxacin",
+        "thuoc_b": "Amitriptyline",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter78",
+        "mo_ta": "Certain quinolones, including levofloxacin, norfloxacin, and ofloxacin, may cause dose-related prolongation of the QT interval in some patients. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [4] Oliphant CM, Green GM \"Quinolones: a comprehensive review.\" Am Fam Physician 65 (2002): 455-64, [5] Stahlmann R \"Clinical toxicological aspects of fluoroquinolones.\" Toxicol Lett 127 (2002): 269-77, [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] Falagas ME, Rafailidis PI, Rosmarakis ES \"Arrhythmias associated with fluoroquinolone therapy.\" Int J Antimicrob Agents 29 (2007): 374-9, [8] Samaha FF \"QTC interval prolongation and polymorphic ventricular tachycardia in association with levofloxacin.\" Am J Med 107 (1999): 528-9, [9] Noel GJ, Natarajan J, Chien S, Hunt TL, Goodman DB, Abels R \"Effects of three fluoroquinolones on QT interval in healthy adults after single doses.\" Clin Pharmacol Ther 73 (2003): 292-303, [10] Kahn JB \"Latest industry information on the safety profile of levofloxacin in the US.\" Chemotherapy 47 Suppl 3 (2001): 32-7, [11] Iannini PB, Doddamani S, Byazrova E, Curciumaru I, Kramer H \"Risk of torsades de pointes with non-cardiac drugs. Prolongation of QT interval is probably a class effect of fluoroquinolones.\" Br Med J 322 (2001): 46-7, [12] \"Product Information. Floxin (ofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [13] Makaryus AN, Byrns K, Makaryus MN, Natarajan U, Singer C, Goldner B \"Effect of ciprofloxacin and levofloxacin on the QT interval: is this a significant \"clinical\" event?\" South Med J 99 (2006): 52-6, [14] Frothingham R \"Rates of torsades de pointes associated with ciprofloxacin, ofloxacin, levofloxacin, gatifloxacin, and moxifloxacin.\" Pharmacotherapy 21 (2001): 1468-72, [15] Nykamp DL, Blackmon CL, Schmidt PE, Roberson AG \"QTc prolongation associated with combination therapy of levofloxacin, imipramine, and fluoxetine.\" Ann Pharmacother 39 (2005): 543-6, [16] Owens RC \"QT Prolongation with Antimicrobial Agents : Understanding the Significance.\" Drugs 64 (2004): 1091-124, [17] Thomas M, Maconochie JG, Fletcher E \"The dilemma of the prolonged QT interval in early drug studies.\" Br J Clin Pharmacol 41 (1996): 77-81, [18] Kang J, Wang L, Chen XL, Triggle DJ, Rampe D \"Interactions of a series of fluoroquinolone antibacterial drugs with the human cardiac K+ channel HERG.\" Mol Pharmacol 59 (2001): 122-6, [19] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [20] Owens RC \"Risk assessment for antimicrobial agent-induced QTc interval prolongation and torsades de pointes.\" Pharmacotherapy 21 (2001): 301-19, [21] Katritsis D, Camm AJ \"Quinolones: cardioprotective or cardiotoxic.\" Pacing Clin Electrophysiol 26 (2003): 2317-20, [22] Ball P \"Quinolone-induced QT interval prolongation: a not-so-unexpected class effect.\" J Antimicrob Chemother 45 (2000): 557-9, [23] Owens RC Jr, Ambrose PG \"Torsades de pointes associated with fluoroquinolones.\" Pharmacotherapy 22 (2002): 663-8; discussion 668-72, [24] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [25] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "Although the risk of a serious interaction is probably low, caution is recommended if levofloxacin, norfloxacin, or ofloxacin is used in combination with other drugs that can prolong the QT interval. Since the magnitude of QTc prolongation increases with increasing plasma concentrations of the quinolone, recommended dosages and intravenous infusion rates should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01M, Enoxacin, Nalidixic acid, Cinoxacin, Trovafloxacin, Delafloxacin, A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Rifabutin",
+        "thay_the_b": "N06A, Phenelzine, Duloxetine, Tranylcypromine, Paroxetine, Desvenlafaxine, St. John's Wort, Nefazodone, Isocarboxazid, Oxitriptan, Viloxazine, Vortioxetine",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Levofloxacin",
+        "thuoc_b": "Durvalumab",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter610",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Levofloxacin",
+        "thuoc_b": "Etravirine",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter703",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Durvalumab",
+        "thuoc_b": "Amitriptyline",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter78",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Etravirine",
+        "thuoc_b": "Amitriptyline",
+        "medication_a_id": "DDInter703",
+        "medication_b_id": "DDInter78",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Durvalumab",
+        "thuoc_b": "Etravirine",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter703",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter1515",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Dexlansoprazole, Bismuth subcitrate potassium, Esomeprazole, Vonoprazan, J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Oxytetracycline",
+        "thay_the_b": "A07E, Budesonide, Cromoglicic acid, Olsalazine, Sulfasalazine, Beclomethasone dipropionate, Mesalazine, H02A",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Prednisone",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Brown Burk Prednison 5mg"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Imfinzi (hoạt chất: Durvalumab)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter610",
+        "mo_ta": "INTERVAL: Corticosteroids may affect the pharmacodynamic effects and efficacy of immune checkpoint inhibitors (ICI) such as programmed cell death-1 (PD-1) or programmed death ligand-1 inhibitors (PD-L1). The mechanism of this interaction is unknown; however, it has been theorized that the immunosuppressive properties of corticosteroids and the potential effect on T-cell function may decrease the efficacy of ICIs.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Jove M, Vilarino N, Nadal E \"Impact of baseline steroids on efficacy of programmed cell death-1 (PD-1) and programmed death-ligand 1 (PD-L1) blockade in patients with advanced non-small cell lung cancer.\" Transl Lung Cancer Res 8 (2019): S364-8, [2] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Arbour KC, Mezquita L, Long N, et al. \"Impact of Baseline Steroids on Efficacy of Programmed Cell Death-1 and Programmed Death-Ligand 1 Blockade in Patients With Non-Small-Cell Lung Cancer.\" J Clin Oncol 36 (2018): 2872-2878, [5] Horvat TZ, Adel NG, Dand TO, et.al \"Immune-related adverse events, need for systemic immunosuppression, and effects on survival and time to treatment failure in patients with melanoma treated with ipilimumab at Memorial Sloan Kettering Cancer Center.\" J Clin Oncol 33 (2015): 3193-8, [6] Fuca G, Galli G, Poggi M, et.al \"Modulation of peripheral blood immune cells by early use of steroids and its association with clinical outcomes in patients with metastatic non-small cell lung cancer treated with immune checkpoint inhibitors.\" ESMO Open 4 (2019): e000457, [7] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [8] Scott SC, Pennell NA \"Early use of systemic corticosteroids in patients with advanced NSCLC treated with nivolumab.\" J Thorac Oncol 13 (2018): 1771-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "xu_tri": "The manufacturers' product labeling should be consulted for specific recommendations. If clinically possible, the use of systemic corticosteroids should be avoided at the time of or within 30 days of starting therapy with an ICI, e.g., durvalumab, nivolumab, pembrolizumab, ipilimumab, cemiplimab, or atezolizumab. Corticosteroids may be used for the treatment of immune-mediated reactions after starting an ICI. Some manufacturers advise that corticosteroids may be used as premedication, when the ICI is used in combination with chemotherapy, as antiemetic prophylaxis, and/or to alleviate chemotherapy-related adverse effects.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A, Fludrocortisone",
+        "thay_the_b": "L01F, Pertuzumab, Cetuximab, Avelumab, Panitumumab, Obinutuzumab, Bevacizumab, Necitumumab, Dostarlimab, Ramucirumab, Amivantamab, Rituximab",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Durvalumab",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Imfinzi"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter703",
+        "mo_ta": "Coadministration with etravirine may decrease the plasma concentrations of drugs that are substrates of the CYP450 3A4 isoenzyme. The mechanism is accelerated clearance due to induction of CYP450 3A4 activity by etravirine.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ., [2] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ.",
+        "xu_tri": "Caution is advised if etravirine must be used concomitantly with medications that undergo metabolism by CYP450 3A4, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring may be appropriate for some drugs whenever etravirine is added to or withdrawn from therapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter78",
+        "mo_ta": "Certain quinolones, including levofloxacin, norfloxacin, and ofloxacin, may cause dose-related prolongation of the QT interval in some patients. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [4] Oliphant CM, Green GM \"Quinolones: a comprehensive review.\" Am Fam Physician 65 (2002): 455-64, [5] Stahlmann R \"Clinical toxicological aspects of fluoroquinolones.\" Toxicol Lett 127 (2002): 269-77, [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] Falagas ME, Rafailidis PI, Rosmarakis ES \"Arrhythmias associated with fluoroquinolone therapy.\" Int J Antimicrob Agents 29 (2007): 374-9, [8] Samaha FF \"QTC interval prolongation and polymorphic ventricular tachycardia in association with levofloxacin.\" Am J Med 107 (1999): 528-9, [9] Noel GJ, Natarajan J, Chien S, Hunt TL, Goodman DB, Abels R \"Effects of three fluoroquinolones on QT interval in healthy adults after single doses.\" Clin Pharmacol Ther 73 (2003): 292-303, [10] Kahn JB \"Latest industry information on the safety profile of levofloxacin in the US.\" Chemotherapy 47 Suppl 3 (2001): 32-7, [11] Iannini PB, Doddamani S, Byazrova E, Curciumaru I, Kramer H \"Risk of torsades de pointes with non-cardiac drugs. Prolongation of QT interval is probably a class effect of fluoroquinolones.\" Br Med J 322 (2001): 46-7, [12] \"Product Information. Floxin (ofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [13] Makaryus AN, Byrns K, Makaryus MN, Natarajan U, Singer C, Goldner B \"Effect of ciprofloxacin and levofloxacin on the QT interval: is this a significant \"clinical\" event?\" South Med J 99 (2006): 52-6, [14] Frothingham R \"Rates of torsades de pointes associated with ciprofloxacin, ofloxacin, levofloxacin, gatifloxacin, and moxifloxacin.\" Pharmacotherapy 21 (2001): 1468-72, [15] Nykamp DL, Blackmon CL, Schmidt PE, Roberson AG \"QTc prolongation associated with combination therapy of levofloxacin, imipramine, and fluoxetine.\" Ann Pharmacother 39 (2005): 543-6, [16] Owens RC \"QT Prolongation with Antimicrobial Agents : Understanding the Significance.\" Drugs 64 (2004): 1091-124, [17] Thomas M, Maconochie JG, Fletcher E \"The dilemma of the prolonged QT interval in early drug studies.\" Br J Clin Pharmacol 41 (1996): 77-81, [18] Kang J, Wang L, Chen XL, Triggle DJ, Rampe D \"Interactions of a series of fluoroquinolone antibacterial drugs with the human cardiac K+ channel HERG.\" Mol Pharmacol 59 (2001): 122-6, [19] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [20] Owens RC \"Risk assessment for antimicrobial agent-induced QTc interval prolongation and torsades de pointes.\" Pharmacotherapy 21 (2001): 301-19, [21] Katritsis D, Camm AJ \"Quinolones: cardioprotective or cardiotoxic.\" Pacing Clin Electrophysiol 26 (2003): 2317-20, [22] Ball P \"Quinolone-induced QT interval prolongation: a not-so-unexpected class effect.\" J Antimicrob Chemother 45 (2000): 557-9, [23] Owens RC Jr, Ambrose PG \"Torsades de pointes associated with fluoroquinolones.\" Pharmacotherapy 22 (2002): 663-8; discussion 668-72, [24] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [25] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "Although the risk of a serious interaction is probably low, caution is recommended if levofloxacin, norfloxacin, or ofloxacin is used in combination with other drugs that can prolong the QT interval. Since the magnitude of QTc prolongation increases with increasing plasma concentrations of the quinolone, recommended dosages and intravenous infusion rates should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01M, Enoxacin, Nalidixic acid, Cinoxacin, Trovafloxacin, Delafloxacin, A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Rifabutin",
+        "thay_the_b": "N06A, Phenelzine, Duloxetine, Tranylcypromine, Paroxetine, Desvenlafaxine, St. John's Wort, Nefazodone, Isocarboxazid, Oxitriptan, Viloxazine, Vortioxetine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter78",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Balsalazide, Betamethasone, Beclomethasone dipropionate, H02A, Cortisone, Fludrocortisone, Betamethasone, Deflazacort",
+        "thay_the_b": "N06A, Desipramine, Tranylcypromine, Vilazodone, Trimipramine, Desvenlafaxine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan, Viloxazine, Milnacipran",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Imfinzi (hoạt chất: Durvalumab)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter610",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Durvalumab",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Imfinzi"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter703",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      },
+      {
+        "thuoc_a": "Imfinzi (hoạt chất: Durvalumab)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter78",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Durvalumab",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Imfinzi"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Intelence (hoạt chất: Etravirine)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter703",
+        "medication_b_id": "DDInter78",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Etravirine",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Intelence"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Imfinzi (hoạt chất: Durvalumab)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter703",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Durvalumab",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "Imfinzi"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter1515",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "thay_the_a": "A02B, Tinidazole, Dexlansoprazole, Bismuth subcitrate potassium, Esomeprazole, Vonoprazan, J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Oxytetracycline",
+        "thay_the_b": "A07E, Budesonide, Cromoglicic acid, Olsalazine, Sulfasalazine, Beclomethasone dipropionate, Mesalazine, H02A",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Prednisone",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Brown Burk Prednison 5mg"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Imfinzi (hoạt chất: Durvalumab)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter610",
+        "xu_tri": "The manufacturers' product labeling should be consulted for specific recommendations. If clinically possible, the use of systemic corticosteroids should be avoided at the time of or within 30 days of starting therapy with an ICI, e.g., durvalumab, nivolumab, pembrolizumab, ipilimumab, cemiplimab, or atezolizumab. Corticosteroids may be used for the treatment of immune-mediated reactions after starting an ICI. Some manufacturers advise that corticosteroids may be used as premedication, when the ICI is used in combination with chemotherapy, as antiemetic prophylaxis, and/or to alleviate chemotherapy-related adverse effects.",
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A, Fludrocortisone",
+        "thay_the_b": "L01F, Pertuzumab, Cetuximab, Avelumab, Panitumumab, Obinutuzumab, Bevacizumab, Necitumumab, Dostarlimab, Ramucirumab, Amivantamab, Rituximab",
+        "mo_ta": "INTERVAL: Corticosteroids may affect the pharmacodynamic effects and efficacy of immune checkpoint inhibitors (ICI) such as programmed cell death-1 (PD-1) or programmed death ligand-1 inhibitors (PD-L1). The mechanism of this interaction is unknown; however, it has been theorized that the immunosuppressive properties of corticosteroids and the potential effect on T-cell function may decrease the efficacy of ICIs.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Jove M, Vilarino N, Nadal E \"Impact of baseline steroids on efficacy of programmed cell death-1 (PD-1) and programmed death-ligand 1 (PD-L1) blockade in patients with advanced non-small cell lung cancer.\" Transl Lung Cancer Res 8 (2019): S364-8, [2] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Arbour KC, Mezquita L, Long N, et al. \"Impact of Baseline Steroids on Efficacy of Programmed Cell Death-1 and Programmed Death-Ligand 1 Blockade in Patients With Non-Small-Cell Lung Cancer.\" J Clin Oncol 36 (2018): 2872-2878, [5] Horvat TZ, Adel NG, Dand TO, et.al \"Immune-related adverse events, need for systemic immunosuppression, and effects on survival and time to treatment failure in patients with melanoma treated with ipilimumab at Memorial Sloan Kettering Cancer Center.\" J Clin Oncol 33 (2015): 3193-8, [6] Fuca G, Galli G, Poggi M, et.al \"Modulation of peripheral blood immune cells by early use of steroids and its association with clinical outcomes in patients with metastatic non-small cell lung cancer treated with immune checkpoint inhibitors.\" ESMO Open 4 (2019): e000457, [7] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [8] Scott SC, Pennell NA \"Early use of systemic corticosteroids in patients with advanced NSCLC treated with nivolumab.\" J Thorac Oncol 13 (2018): 1771-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Durvalumab",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Imfinzi"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter703",
+        "xu_tri": "Caution is advised if etravirine must be used concomitantly with medications that undergo metabolism by CYP450 3A4, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring may be appropriate for some drugs whenever etravirine is added to or withdrawn from therapy.",
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "mo_ta": "Coadministration with etravirine may decrease the plasma concentrations of drugs that are substrates of the CYP450 3A4 isoenzyme. The mechanism is accelerated clearance due to induction of CYP450 3A4 activity by etravirine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ., [2] \"Product Information. Intelence (etravirine).\" Ortho Biotech Inc, Bridgewater, NJ.",
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter78",
+        "xu_tri": "Although the risk of a serious interaction is probably low, caution is recommended if levofloxacin, norfloxacin, or ofloxacin is used in combination with other drugs that can prolong the QT interval. Since the magnitude of QTc prolongation increases with increasing plasma concentrations of the quinolone, recommended dosages and intravenous infusion rates should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "thay_the_a": "J01M, Enoxacin, Nalidixic acid, Cinoxacin, Trovafloxacin, Delafloxacin, A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Rifabutin",
+        "thay_the_b": "N06A, Phenelzine, Duloxetine, Tranylcypromine, Paroxetine, Desvenlafaxine, St. John's Wort, Nefazodone, Isocarboxazid, Oxitriptan, Viloxazine, Vortioxetine",
+        "mo_ta": "Certain quinolones, including levofloxacin, norfloxacin, and ofloxacin, may cause dose-related prolongation of the QT interval in some patients. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Iannini PB \"Cardiotoxicity of macrolides, ketolides and fluoroquinolones that prolong the QTc interval.\" Expert Opin Drug Saf 1 (2002): 121-8, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [4] Oliphant CM, Green GM \"Quinolones: a comprehensive review.\" Am Fam Physician 65 (2002): 455-64, [5] Stahlmann R \"Clinical toxicological aspects of fluoroquinolones.\" Toxicol Lett 127 (2002): 269-77, [6] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [7] Falagas ME, Rafailidis PI, Rosmarakis ES \"Arrhythmias associated with fluoroquinolone therapy.\" Int J Antimicrob Agents 29 (2007): 374-9, [8] Samaha FF \"QTC interval prolongation and polymorphic ventricular tachycardia in association with levofloxacin.\" Am J Med 107 (1999): 528-9, [9] Noel GJ, Natarajan J, Chien S, Hunt TL, Goodman DB, Abels R \"Effects of three fluoroquinolones on QT interval in healthy adults after single doses.\" Clin Pharmacol Ther 73 (2003): 292-303, [10] Kahn JB \"Latest industry information on the safety profile of levofloxacin in the US.\" Chemotherapy 47 Suppl 3 (2001): 32-7, [11] Iannini PB, Doddamani S, Byazrova E, Curciumaru I, Kramer H \"Risk of torsades de pointes with non-cardiac drugs. Prolongation of QT interval is probably a class effect of fluoroquinolones.\" Br Med J 322 (2001): 46-7, [12] \"Product Information. Floxin (ofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [13] Makaryus AN, Byrns K, Makaryus MN, Natarajan U, Singer C, Goldner B \"Effect of ciprofloxacin and levofloxacin on the QT interval: is this a significant \"clinical\" event?\" South Med J 99 (2006): 52-6, [14] Frothingham R \"Rates of torsades de pointes associated with ciprofloxacin, ofloxacin, levofloxacin, gatifloxacin, and moxifloxacin.\" Pharmacotherapy 21 (2001): 1468-72, [15] Nykamp DL, Blackmon CL, Schmidt PE, Roberson AG \"QTc prolongation associated with combination therapy of levofloxacin, imipramine, and fluoxetine.\" Ann Pharmacother 39 (2005): 543-6, [16] Owens RC \"QT Prolongation with Antimicrobial Agents : Understanding the Significance.\" Drugs 64 (2004): 1091-124, [17] Thomas M, Maconochie JG, Fletcher E \"The dilemma of the prolonged QT interval in early drug studies.\" Br J Clin Pharmacol 41 (1996): 77-81, [18] Kang J, Wang L, Chen XL, Triggle DJ, Rampe D \"Interactions of a series of fluoroquinolone antibacterial drugs with the human cardiac K+ channel HERG.\" Mol Pharmacol 59 (2001): 122-6, [19] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [20] Owens RC \"Risk assessment for antimicrobial agent-induced QTc interval prolongation and torsades de pointes.\" Pharmacotherapy 21 (2001): 301-19, [21] Katritsis D, Camm AJ \"Quinolones: cardioprotective or cardiotoxic.\" Pacing Clin Electrophysiol 26 (2003): 2317-20, [22] Ball P \"Quinolone-induced QT interval prolongation: a not-so-unexpected class effect.\" J Antimicrob Chemother 45 (2000): 557-9, [23] Owens RC Jr, Ambrose PG \"Torsades de pointes associated with fluoroquinolones.\" Pharmacotherapy 22 (2002): 663-8; discussion 668-72, [24] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [25] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter78",
+        "xu_tri": "-",
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Balsalazide, Betamethasone, Beclomethasone dipropionate, H02A, Cortisone, Fludrocortisone, Betamethasone, Deflazacort",
+        "thay_the_b": "N06A, Desipramine, Tranylcypromine, Vilazodone, Trimipramine, Desvenlafaxine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan, Viloxazine, Milnacipran",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Imfinzi (hoạt chất: Durvalumab)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter610",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Durvalumab",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Imfinzi"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj (hoạt chất: Levofloxacin)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter1055",
+        "medication_b_id": "DDInter703",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Levofloxacin",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "A.T Levofloxacin 500 inj"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      },
+      {
+        "thuoc_a": "Imfinzi (hoạt chất: Durvalumab)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter78",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Durvalumab",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Imfinzi"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Intelence (hoạt chất: Etravirine)",
+        "thuoc_b": "Amilavil 10 mg (hoạt chất: Amitriptyline)",
+        "medication_a_id": "DDInter703",
+        "medication_b_id": "DDInter78",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Etravirine",
+        "hoat_chat_b": "Amitriptyline",
+        "san_pham_a": [
+          "Intelence"
+        ],
+        "san_pham_b": [
+          "Amilavil 10 mg"
+        ]
+      },
+      {
+        "thuoc_a": "Imfinzi (hoạt chất: Durvalumab)",
+        "thuoc_b": "Intelence (hoạt chất: Etravirine)",
+        "medication_a_id": "DDInter610",
+        "medication_b_id": "DDInter703",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Durvalumab",
+        "hoat_chat_b": "Etravirine",
+        "san_pham_a": [
+          "Imfinzi"
+        ],
+        "san_pham_b": [
+          "Intelence"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj",
+        "thuoc_b": "Brown Burk Prednison 5mg",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung A.T Levofloxacin 500 inj với Brown Burk Prednison 5mg làm tăng nguy cơ viêm gân và đứt gân liên quan đến điều trị bằng A.T Levofloxacin 500 inj, cơ chế của tương tác này hiện chưa được biết rõ. Tình trạng viêm gân và đứt gân thường gặp nhất ở gân Achilles, dù các trường hợp liên quan đến gân chóp xoay (ở vai), bàn tay, gân nhị đầu và ngón tay cái cũng đã được ghi nhận; một số trường hợp cần phẫu thuật sửa chữa hoặc dẫn đến tàn tật kéo dài. Đứt gân có thể xảy ra trong khi dùng hoặc cho đến vài tháng sau khi kết thúc điều trị bằng A.T Levofloxacin 500 inj. Khi bạn dùng chung A.T Levofloxacin 500 inj với Brown Burk Prednison 5mg, nguy cơ bị viêm gân và đứt gân sẽ cao hơn so với chỉ dùng A.T Levofloxacin 500 inj. Chỗ dễ bị nhất là gân Achilles ở gót chân, nhưng cũng có thể xảy ra ở vai, bàn tay, gân nhị đầu và ngón tay cái. Có trường hợp phải mổ để sửa gân và bị yếu, khó vận động lâu dài. Tình trạng này có thể xuất hiện ngay trong lúc dùng thuốc hoặc vài tháng sau khi đã ngừng A.T Levofloxacin 500 inj, nên nếu thấy đau hay sưng ở gân, bạn nên báo cho bác sĩ biết.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời corticosteroid có thể làm tăng nguy cơ viêm gân và đứt gân liên quan đến điều trị bằng fluoroquinolone. Cơ chế chưa được biết. Viêm gân và đứt gân thường gặp nhất ở gân Achilles, mặc dù các trường hợp liên quan đến gân chóp xoay (vai), bàn tay, gân nhị đầu và ngón tay cái cũng đã được báo cáo. Một số trường hợp cần phẫu thuật sửa chữa hoặc dẫn đến tàn tật kéo dài. Đứt gân có thể xảy ra trong khi dùng hoặc cho đến vài tháng sau khi kết thúc điều trị bằng fluoroquinolone.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg",
+        "thuoc_b": "Imfinzi",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Brown Burk Prednison 5mg với Imfinzi có thể làm giảm hiệu quả của Imfinzi. Cơ chế của tương tác này chưa được biết rõ, nhưng có giả thuyết cho rằng đặc tính ức chế miễn dịch của corticosteroid và tác động tiềm tàng lên chức năng tế bào T có thể làm giảm hiệu quả của thuốc ức chế điểm kiểm soát miễn dịch. Người bệnh thân mến, Brown Burk Prednison 5mg là thuốc nhóm corticosteroid, còn Imfinzi là thuốc dùng trong điều trị ung thư thuộc nhóm ức chế điểm kiểm soát miễn dịch. Khi dùng chung, Brown Burk Prednison 5mg có thể làm yếu đi tác dụng của Imfinzi. Lý do là thuốc Brown Burk Prednison 5mg có khả năng ức chế miễn dịch, và điều này có thể ảnh hưởng đến hoạt động của tế bào T - một loại tế bào miễn dịch mà Imfinzi cần đến để phát huy hiệu quả chống lại tế bào ung thư. Tuy nhiên, cơ chế chính xác của tương tác này vẫn chưa được biết rõ và mới chỉ là giả thuyết.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "KHOẢNG CÁCH: Corticosteroid có thể ảnh hưởng đến tác dụng dược lực học và hiệu quả của thuốc ức chế điểm kiểm soát miễn dịch (ICI) như thuốc ức chế thụ thể chết theo chương trình-1 (PD-1) hoặc thuốc ức chế phối tử chết theo chương trình-1 (PD-L1). Cơ chế của tương tác này chưa được biết rõ; tuy nhiên, có giả thuyết cho rằng đặc tính ức chế miễn dịch của corticosteroid và tác động tiềm tàng lên chức năng tế bào T có thể làm giảm hiệu quả của ICI.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg",
+        "thuoc_b": "Intelence",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng Brown Burk Prednison 5mg cùng Intelence có thể làm giảm nồng độ của Brown Burk Prednison 5mg trong máu, vì Intelence làm tăng hoạt động của một loại enzyme trong gan tên là CYP450 3A4 - enzyme này chịu trách nhiệm phân hủy nhiều loại thuốc. Khi hoạt động của enzyme này tăng lên, thuốc Brown Burk Prednison 5mg bị đào thải nhanh hơn khỏi cơ thể, khiến lượng thuốc còn lại trong máu ít đi so với bình thường. [ẢN_DỊCH]\nmô tả: Dùng chung với etravirine có thể làm giảm nồng độ trong huyết tương của các thuốc là cơ chất của isoenzyme CYP450 3A4. Cơ chế là do etravirine cảm ứng hoạt động của CYP450 3A4, làm tăng tốc độ thanh thải. xử trí:",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "A.T Levofloxacin 500 inj",
+        "thuoc_b": "Amilavil 10 mg",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung A.T Levofloxacin 500 inj và Amilavil 10 mg có thể làm tăng nguy cơ loạn nhịp tim, vì A.T Levofloxacin 500 inj thuộc nhóm kháng sinh quinolone có thể gây kéo dài khoảng QT (một chỉ số trên điện tâm đồ phản ánh thời gian tim đập và hồi phục) theo liều ở một số bệnh nhân, còn Amilavil 10 mg cũng là thuốc có khả năng kéo dài khoảng QT. Khi hai thuốc này dùng cùng nhau, tác động lên khoảng QT có thể cộng dồn và làm tăng nguy cơ rối loạn nhịp thất, bao gồm xoắn đỉnh và đột tử.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Một số quinolone, bao gồm levofloxacin, norfloxacin và ofloxacin, có thể gây kéo dài khoảng QT liên quan đến liều ở một số bệnh nhân. Về mặt lý thuyết, việc dùng đồng thời với các thuốc khác có thể kéo dài khoảng QT có thể dẫn đến tác dụng cộng dồn và tăng nguy cơ loạn nhịp thất bao gồm xoắn đỉnh và đột tử.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg",
+        "thuoc_b": "Amilavil 10 mg",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Brown Burk Prednison 5mg và Amilavil 10 mg có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 5 cặp tương tác: 1 cặp ở mức nghiêm trọng, 3 cặp ở mức trung bình và 1 cặp chưa phân loại. Đáng chú ý nhất là A.T Levofloxacin 500 inj và Brown Burk Prednison 5mg ở mức nghiêm trọng, cùng với Brown Burk Prednison 5mg và Imfinzi và Brown Burk Prednison 5mg và Intelence ở mức trung bình. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "A.T Levofloxacin 500 inj và Brown Burk Prednison 5mg",
+          "muc_do": "nang"
+        },
+        {
+          "text": "Brown Burk Prednison 5mg và Imfinzi",
+          "muc_do": "trung_binh"
+        },
+        {
+          "text": "Brown Burk Prednison 5mg và Intelence",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 3,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 5
+    },
+    "checked_products": [
+      "Brown Burk Prednison 5mg",
+      "A.T Levofloxacin 500 inj",
+      "Amilavil 10 mg",
+      "Imfinzi",
+      "Intelence"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Brown Burk Prednison 5mg",
+          "A.T Levofloxacin 500 inj",
+          "Amilavil 10 mg",
+          "Imfinzi",
+          "Intelence"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

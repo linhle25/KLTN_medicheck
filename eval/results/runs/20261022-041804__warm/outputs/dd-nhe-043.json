@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nhe-043",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.5162,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Liraglutide",
+      "Acetaminophen"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Liraglutide",
+        "ten_chuan": "Liraglutide",
+        "medication_id": "DDInter1077",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Acetaminophen",
+        "ten_chuan": "Acetaminophen",
+        "medication_id": "DDInter14",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Liraglutide",
+        "thuoc_b": "Acetaminophen",
+        "medication_a_id": "DDInter1077",
+        "medication_b_id": "DDInter14",
+        "mo_ta": "Liraglutide delays gastric emptying, which may impact the absorption of concomitantly administered oral medications.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [2] Ray K, Dorman S, Watson R \"Severe hyperkalaemia due to the concomitant use of salt substitutes and ACE inhibitors in hypertension: a potentially life threatening interaction.\" J Hum Hypertens 13 (1999): 717-20, [3] \"Product Information. Vasotec (enalapril).\" Merck & Co, Inc, West Point, PA., [4] Good CB, McDermott L \"Diet and serum potassium in patients on ACE inhibitors.\" JAMA 274 (1995): 538, [5] \"Product Information. Ozempic (1 mg dose) (semaglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [6] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [7] \"Product Information. Trulicity (dulaglutide).\" Eli Lilly and Company, Indianapolis, IN., [8] \"Product Information. Byetta (exenatide).\" Amylin Pharmaceuticals Inc, San Diego, CA., [9] \"Product Information. Tanzeum (albiglutide).\" GlaxoSmithKline, Research Triangle Park, NC., [10] \"Product Information. Adlyxin (lixisenatide).\" sanofi-aventis, Bridgewater, NJ.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10A, Insulin lispro, Insulin degludec, Lixisenatide, Insulin detemir, Insulin human, Insulin glargine, Insulin glulisine, A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin",
+        "thay_the_b": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, Acetylsalicylic acid, N02A, Naltrexone, Oxymorphone, Oxycodone, Methadone",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "VICTOZA (hoạt chất: Liraglutide)",
+        "thuoc_b": "A.T Paracetamol inj 1 g/6,67 ml (hoạt chất: Acetaminophen)",
+        "medication_a_id": "DDInter1077",
+        "medication_b_id": "DDInter14",
+        "mo_ta": "Liraglutide delays gastric emptying, which may impact the absorption of concomitantly administered oral medications.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [2] Ray K, Dorman S, Watson R \"Severe hyperkalaemia due to the concomitant use of salt substitutes and ACE inhibitors in hypertension: a potentially life threatening interaction.\" J Hum Hypertens 13 (1999): 717-20, [3] \"Product Information. Vasotec (enalapril).\" Merck & Co, Inc, West Point, PA., [4] Good CB, McDermott L \"Diet and serum potassium in patients on ACE inhibitors.\" JAMA 274 (1995): 538, [5] \"Product Information. Ozempic (1 mg dose) (semaglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [6] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [7] \"Product Information. Trulicity (dulaglutide).\" Eli Lilly and Company, Indianapolis, IN., [8] \"Product Information. Byetta (exenatide).\" Amylin Pharmaceuticals Inc, San Diego, CA., [9] \"Product Information. Tanzeum (albiglutide).\" GlaxoSmithKline, Research Triangle Park, NC., [10] \"Product Information. Adlyxin (lixisenatide).\" sanofi-aventis, Bridgewater, NJ.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10A, Insulin lispro, Insulin degludec, Lixisenatide, Insulin detemir, Insulin human, Insulin glargine, Insulin glulisine, A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin",
+        "thay_the_b": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, Acetylsalicylic acid, N02A, Naltrexone, Oxymorphone, Oxycodone, Methadone",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Liraglutide",
+        "hoat_chat_b": "Acetaminophen",
+        "san_pham_a": [
+          "VICTOZA"
+        ],
+        "san_pham_b": [
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "VICTOZA (hoạt chất: Liraglutide)",
+        "thuoc_b": "A.T Paracetamol inj 1 g/6,67 ml (hoạt chất: Acetaminophen)",
+        "medication_a_id": "DDInter1077",
+        "medication_b_id": "DDInter14",
+        "xu_tri": "-",
+        "thay_the_a": "A10A, Insulin lispro, Insulin degludec, Lixisenatide, Insulin detemir, Insulin human, Insulin glargine, Insulin glulisine, A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin",
+        "thay_the_b": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, Acetylsalicylic acid, N02A, Naltrexone, Oxymorphone, Oxycodone, Methadone",
+        "mo_ta": "Liraglutide delays gastric emptying, which may impact the absorption of concomitantly administered oral medications.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [2] Ray K, Dorman S, Watson R \"Severe hyperkalaemia due to the concomitant use of salt substitutes and ACE inhibitors in hypertension: a potentially life threatening interaction.\" J Hum Hypertens 13 (1999): 717-20, [3] \"Product Information. Vasotec (enalapril).\" Merck & Co, Inc, West Point, PA., [4] Good CB, McDermott L \"Diet and serum potassium in patients on ACE inhibitors.\" JAMA 274 (1995): 538, [5] \"Product Information. Ozempic (1 mg dose) (semaglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [6] \"Product Information. Victoza (liraglutide).\" Novo Nordisk Pharmaceuticals Inc, Princeton, NJ., [7] \"Product Information. Trulicity (dulaglutide).\" Eli Lilly and Company, Indianapolis, IN., [8] \"Product Information. Byetta (exenatide).\" Amylin Pharmaceuticals Inc, San Diego, CA., [9] \"Product Information. Tanzeum (albiglutide).\" GlaxoSmithKline, Research Triangle Park, NC., [10] \"Product Information. Adlyxin (lixisenatide).\" sanofi-aventis, Bridgewater, NJ.",
+        "hoat_chat_a": "Liraglutide",
+        "hoat_chat_b": "Acetaminophen",
+        "san_pham_a": [
+          "VICTOZA"
+        ],
+        "san_pham_b": [
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "VICTOZA",
+        "thuoc_b": "A.T Paracetamol inj 1 g/6,67 ml",
+        "muc_do": "nhe",
+        "giai_thich": "Việc dùng chung VICTOZA và A.T Paracetamol inj 1 g/6,67 ml được ghi nhận ở mức nhẹ, do VICTOZA làm chậm quá trình làm rỗng dạ dày nên có thể ảnh hưởng đến khả năng hấp thu của các thuốc dùng đường uống khi dùng đồng thời. Với A.T Paracetamol inj 1 g/6,67 ml, đây là dạng thuốc tiêm nên đường hấp thu qua đường tiêu hóa không phải là yếu tố chính; dữ liệu nguồn không nêu biện pháp xử trí cụ thể nào cho cặp này.",
+        "giai_thich_duoc_si": "Việc dùng chung VICTOZA và A.T Paracetamol inj 1 g/6,67 ml được ghi nhận ở mức nhẹ, do VICTOZA làm chậm quá trình làm rỗng dạ dày nên có thể ảnh hưởng đến khả năng hấp thu của các thuốc dùng đường uống khi dùng đồng thời. Với A.T Paracetamol inj 1 g/6,67 ml, đây là dạng thuốc tiêm nên đường hấp thu qua đường tiêu hóa không phải là yếu tố chính; dữ liệu nguồn không nêu biện pháp xử trí cụ thể nào cho cặp này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Liraglutide làm chậm quá trình làm rỗng dạ dày, điều này có thể ảnh hưởng đến sự hấp thu của các thuốc dùng đường uống được dùng đồng thời.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ ở mức nhẹ. Cặp đáng chú ý là VICTOZA và A.T Paracetamol inj 1 g/6,67 ml. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "VICTOZA và A.T Paracetamol inj 1 g/6,67 ml",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "VICTOZA",
+      "A.T Paracetamol inj 1 g/6,67 ml"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "VICTOZA",
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

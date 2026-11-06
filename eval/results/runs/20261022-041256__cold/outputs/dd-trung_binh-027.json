@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-trung_binh-027",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.0856,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Linagliptin",
+      "Insulin glulisine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Linagliptin",
+        "ten_chuan": "Linagliptin",
+        "medication_id": "DDInter1070",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Insulin glulisine",
+        "ten_chuan": "Insulin glulisine",
+        "medication_id": "DDInter933",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Linagliptin",
+        "thuoc_b": "Insulin glulisine",
+        "medication_a_id": "DDInter1070",
+        "medication_b_id": "DDInter933",
+        "mo_ta": "Coadministration of a dipeptidyl peptidase-4 inhibitor with an insulin secretagogue (e.g., sulfonylurea, meglitinide) or insulin may potentiate the risk of hypoglycemia.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Januvia (sitagliptin).\" Merck & Company Inc, West Point, PA., [2] \"Product Information. Tradjenta (linagliptin).\" Boehringer Ingelheim, Ridgefield, CT., [3] \"Product Information. Onglyza (saxagliptin).\" Bristol-Myers Squibb, Princeton, NJ., [4] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [5] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [6] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [7] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [8] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [9] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [10] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [11] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [12] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [13] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [14] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [15] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [16] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [17] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [18] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [19] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [20] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [21] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [22] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [23] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42",
+        "xu_tri": "A lower dosage of the insulin secretagogue or insulin may be required when used in combination with a dipeptidyl peptidase-4 inhibitor.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acarbose, Simvastatin, Nateglinide, Rosuvastatin, Repaglinide",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T LINAGLIPTIN 5 mg (hoạt chất: Linagliptin)",
+        "thuoc_b": "Apidra (hoạt chất: Insulin glulisine)",
+        "medication_a_id": "DDInter1070",
+        "medication_b_id": "DDInter933",
+        "mo_ta": "Coadministration of a dipeptidyl peptidase-4 inhibitor with an insulin secretagogue (e.g., sulfonylurea, meglitinide) or insulin may potentiate the risk of hypoglycemia.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Januvia (sitagliptin).\" Merck & Company Inc, West Point, PA., [2] \"Product Information. Tradjenta (linagliptin).\" Boehringer Ingelheim, Ridgefield, CT., [3] \"Product Information. Onglyza (saxagliptin).\" Bristol-Myers Squibb, Princeton, NJ., [4] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [5] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [6] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [7] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [8] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [9] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [10] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [11] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [12] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [13] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [14] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [15] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [16] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [17] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [18] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [19] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [20] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [21] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [22] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [23] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42",
+        "xu_tri": "A lower dosage of the insulin secretagogue or insulin may be required when used in combination with a dipeptidyl peptidase-4 inhibitor.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acarbose, Simvastatin, Nateglinide, Rosuvastatin, Repaglinide",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Linagliptin",
+        "hoat_chat_b": "Insulin glulisine",
+        "san_pham_a": [
+          "A.T LINAGLIPTIN 5 mg"
+        ],
+        "san_pham_b": [
+          "Apidra"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T LINAGLIPTIN 5 mg (hoạt chất: Linagliptin)",
+        "thuoc_b": "Apidra (hoạt chất: Insulin glulisine)",
+        "medication_a_id": "DDInter1070",
+        "medication_b_id": "DDInter933",
+        "xu_tri": "A lower dosage of the insulin secretagogue or insulin may be required when used in combination with a dipeptidyl peptidase-4 inhibitor.",
+        "thay_the_a": "A10B, Acarbose, Simvastatin, Nateglinide, Rosuvastatin, Repaglinide",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "mo_ta": "Coadministration of a dipeptidyl peptidase-4 inhibitor with an insulin secretagogue (e.g., sulfonylurea, meglitinide) or insulin may potentiate the risk of hypoglycemia.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Januvia (sitagliptin).\" Merck & Company Inc, West Point, PA., [2] \"Product Information. Tradjenta (linagliptin).\" Boehringer Ingelheim, Ridgefield, CT., [3] \"Product Information. Onglyza (saxagliptin).\" Bristol-Myers Squibb, Princeton, NJ., [4] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [5] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [6] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [7] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [8] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [9] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [10] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [11] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [12] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [13] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [14] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [15] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [16] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [17] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [18] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [19] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [20] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [21] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [22] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [23] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42",
+        "hoat_chat_a": "Linagliptin",
+        "hoat_chat_b": "Insulin glulisine",
+        "san_pham_a": [
+          "A.T LINAGLIPTIN 5 mg"
+        ],
+        "san_pham_b": [
+          "Apidra"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T LINAGLIPTIN 5 mg",
+        "thuoc_b": "Apidra",
+        "muc_do": "trung_binh",
+        "giai_thich": "Việc phối hợp A.T LINAGLIPTIN 5 mg với Apidra có thể làm tăng nguy cơ hạ đường huyết, do A.T LINAGLIPTIN 5 mg thuộc nhóm ức chế dipeptidyl peptidase-4 và Apidra là một insulin. Khi dùng chung, tác dụng hạ đường huyết của hai thuốc có thể cộng gộp lại, nên người bệnh cần được theo dõi đường huyết và mức độ kiểm soát đường huyết phù hợp dưới sự đánh giá của bác sĩ điều trị.",
+        "giai_thich_duoc_si": "Việc phối hợp A.T LINAGLIPTIN 5 mg với Apidra có thể làm tăng nguy cơ hạ đường huyết, do A.T LINAGLIPTIN 5 mg thuộc nhóm ức chế dipeptidyl peptidase-4 và Apidra là một insulin. Khi dùng chung, tác dụng hạ đường huyết của hai thuốc có thể cộng gộp lại, nên người bệnh cần được theo dõi đường huyết và mức độ kiểm soát đường huyết phù hợp dưới sự đánh giá của bác sĩ điều trị.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời một thuốc ức chế dipeptidyl peptidase-4 với một thuốc kích thích tiết insulin (ví dụ sulfonylurea, meglitinide) hoặc insulin có thể làm tăng nguy cơ hạ đường huyết.",
+        "xu_tri_dich": "Có thể cần dùng liều thấp hơn của thuốc kích thích tiết insulin hoặc insulin khi phối hợp với một thuốc ức chế dipeptidyl peptidase-4."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức trung bình. Cặp đáng chú ý là A.T LINAGLIPTIN 5 mg và Apidra. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "A.T LINAGLIPTIN 5 mg và Apidra",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "A.T LINAGLIPTIN 5 mg",
+      "Apidra"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T LINAGLIPTIN 5 mg",
+          "Apidra"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

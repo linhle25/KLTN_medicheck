@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-trung_binh-022",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.2364,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Belladonna",
+      "Cyproheptadine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Belladonna",
+        "ten_chuan": "Belladonna",
+        "medication_id": "DDInter175",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Cyproheptadine",
+        "ten_chuan": "Cyproheptadine",
+        "medication_id": "DDInter459",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Belladonna",
+        "thuoc_b": "Cyproheptadine",
+        "medication_a_id": "DDInter175",
+        "medication_b_id": "DDInter459",
+        "mo_ta": "Agents with anticholinergic properties (e.g., sedating antihistamines; antispasmodics; neuroleptics; phenothiazines; skeletal muscle relaxants; tricyclic antidepressants; disopyramide) may have additive effects when used in combination. Excessive parasympatholytic effects may result in paralytic ileus, hyperthermia, heat stroke, and the anticholinergic intoxication syndrome. Peripheral symptoms of intoxication commonly include mydriasis, blurred vision, flushed face, fever, dry skin and mucous membranes, tachycardia, urinary retention, and constipation. Central symptoms may include memory loss, disorientation, incoherence, hallucinations, psychosis, delirium, hyperactivity, twitching or jerking movements, stereotypy, and seizures. Central nervous system-depressant effects may also be additively or synergistically increased when these agents are combined, especially in elderly or debilitated patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Kulik AV, Wilbur R \"Delirium and stereotypy from anticholinergic antiparkinson drugs.\" Prog Neuropsychopharmacol Biol Psychiatry 6 (1982): 75-82, [2] Mann SC, Boger WP \"Psychotropic drugs, summer heat and humidity, and hyperplexia: a danger restated.\" Am J Psychiatry 135 (1978): 1097-100, [3] Warnes H, Lehmann HE, Ban TA \"Adynamic ileus during psychoactive medication: a report of three fatal and five severe cases.\" Can Med Assoc J 96 (1967): 1112-3, [4] Sarnquist F, Larson CP Jr \"Drug-induced heat stroke.\" Anesthesiology 39 (1973): 348-50, [5] Gershon S, Neubauer H, Sundland DM \"Interaction between some anticholinergic agents and phenothiazines.\" Clin Pharmacol Ther 6 (1965): 749-56, [6] Lee BS \"Possibility of hyperpyrexia with antipsychotic and anticholinergic drugs.\" J Clin Psychiatry 47 (1986): 571, [7] Zelman S, Guillan R \"Heat stroke in phenothiazine-treated patients: a report of three fatalities.\" Am J Psychiatry 126 (1970): 1787-90, [8] Cohen MA, Alfonso CA, Mosquera M \"Development of urinary retention during treatment with clozapine and meclizine [published erratum appears in Am J Psychiatry 1994 Jun;151(6):952].\" Am J Psychiatry 151 (1994): 619-20, [9] au A, Jones BD, Banno V \"Chronic central anticholinergic toxicity in manic depressive illness mimicking dementia.\" Can J Psychiatry 31 (1986): 339-41, [10] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [11] Hvizdos AJ, Bennett JA, Wells BG, Rappaport KB, Mendel SA \"Anticholinergic psychosis in a patient receiving usual doses of haloperidol.\" Clin Pharm 2 (1983): 174-8, [12] Stadnyk AN, Glezos JD \"Drug-induced heat stroke.\" Can Med Assoc J 128 (1983): 957-9, [13] \"Product Information. Cogentin (benztropine).\" Merck & Co, Inc, West Point, PA., [14] Johnson AL, Hollister LE, Berger PA \"The anticholinergic intoxication syndrome: diagnosis and treatment.\" J Clin Psychiatry 42 (1981): 313-7, [15] Forester D \"Fatal drug-induced heat stroke.\" JACEP 7 (1978): 243-4, [16] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [17] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [18] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [19] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "Caution is advised when agents with anticholinergic properties are combined, particularly in the elderly and those with underlying organic brain disease, who tend to be more sensitive to the central anticholinergic effects of these drugs and in whom toxicity symptoms may be easily overlooked. Patients should be advised to notify their physician promptly if they experience potential symptoms of anticholinergic intoxication such as abdominal pain, fever, heat intolerance, blurred vision, confusion, and/or hallucinations.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "R06A, Ketotifen, Levocetirizine, Cetirizine, Fexofenadine, Loratadine, Trimethobenzamide, Desloratadine, Azelastine, Terfenadine, Astemizole",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Bình vị Medifiz (hoạt chất: Belladonna)",
+        "thuoc_b": "Ciplactin (hoạt chất: Cyproheptadine)",
+        "medication_a_id": "DDInter175",
+        "medication_b_id": "DDInter459",
+        "mo_ta": "Agents with anticholinergic properties (e.g., sedating antihistamines; antispasmodics; neuroleptics; phenothiazines; skeletal muscle relaxants; tricyclic antidepressants; disopyramide) may have additive effects when used in combination. Excessive parasympatholytic effects may result in paralytic ileus, hyperthermia, heat stroke, and the anticholinergic intoxication syndrome. Peripheral symptoms of intoxication commonly include mydriasis, blurred vision, flushed face, fever, dry skin and mucous membranes, tachycardia, urinary retention, and constipation. Central symptoms may include memory loss, disorientation, incoherence, hallucinations, psychosis, delirium, hyperactivity, twitching or jerking movements, stereotypy, and seizures. Central nervous system-depressant effects may also be additively or synergistically increased when these agents are combined, especially in elderly or debilitated patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Kulik AV, Wilbur R \"Delirium and stereotypy from anticholinergic antiparkinson drugs.\" Prog Neuropsychopharmacol Biol Psychiatry 6 (1982): 75-82, [2] Mann SC, Boger WP \"Psychotropic drugs, summer heat and humidity, and hyperplexia: a danger restated.\" Am J Psychiatry 135 (1978): 1097-100, [3] Warnes H, Lehmann HE, Ban TA \"Adynamic ileus during psychoactive medication: a report of three fatal and five severe cases.\" Can Med Assoc J 96 (1967): 1112-3, [4] Sarnquist F, Larson CP Jr \"Drug-induced heat stroke.\" Anesthesiology 39 (1973): 348-50, [5] Gershon S, Neubauer H, Sundland DM \"Interaction between some anticholinergic agents and phenothiazines.\" Clin Pharmacol Ther 6 (1965): 749-56, [6] Lee BS \"Possibility of hyperpyrexia with antipsychotic and anticholinergic drugs.\" J Clin Psychiatry 47 (1986): 571, [7] Zelman S, Guillan R \"Heat stroke in phenothiazine-treated patients: a report of three fatalities.\" Am J Psychiatry 126 (1970): 1787-90, [8] Cohen MA, Alfonso CA, Mosquera M \"Development of urinary retention during treatment with clozapine and meclizine [published erratum appears in Am J Psychiatry 1994 Jun;151(6):952].\" Am J Psychiatry 151 (1994): 619-20, [9] au A, Jones BD, Banno V \"Chronic central anticholinergic toxicity in manic depressive illness mimicking dementia.\" Can J Psychiatry 31 (1986): 339-41, [10] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [11] Hvizdos AJ, Bennett JA, Wells BG, Rappaport KB, Mendel SA \"Anticholinergic psychosis in a patient receiving usual doses of haloperidol.\" Clin Pharm 2 (1983): 174-8, [12] Stadnyk AN, Glezos JD \"Drug-induced heat stroke.\" Can Med Assoc J 128 (1983): 957-9, [13] \"Product Information. Cogentin (benztropine).\" Merck & Co, Inc, West Point, PA., [14] Johnson AL, Hollister LE, Berger PA \"The anticholinergic intoxication syndrome: diagnosis and treatment.\" J Clin Psychiatry 42 (1981): 313-7, [15] Forester D \"Fatal drug-induced heat stroke.\" JACEP 7 (1978): 243-4, [16] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [17] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [18] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [19] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "Caution is advised when agents with anticholinergic properties are combined, particularly in the elderly and those with underlying organic brain disease, who tend to be more sensitive to the central anticholinergic effects of these drugs and in whom toxicity symptoms may be easily overlooked. Patients should be advised to notify their physician promptly if they experience potential symptoms of anticholinergic intoxication such as abdominal pain, fever, heat intolerance, blurred vision, confusion, and/or hallucinations.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "R06A, Ketotifen, Levocetirizine, Cetirizine, Fexofenadine, Loratadine, Trimethobenzamide, Desloratadine, Azelastine, Terfenadine, Astemizole",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Belladonna",
+        "hoat_chat_b": "Cyproheptadine",
+        "san_pham_a": [
+          "Bình vị Medifiz"
+        ],
+        "san_pham_b": [
+          "Ciplactin"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Bình vị Medifiz (hoạt chất: Belladonna)",
+        "thuoc_b": "Ciplactin (hoạt chất: Cyproheptadine)",
+        "medication_a_id": "DDInter175",
+        "medication_b_id": "DDInter459",
+        "xu_tri": "Caution is advised when agents with anticholinergic properties are combined, particularly in the elderly and those with underlying organic brain disease, who tend to be more sensitive to the central anticholinergic effects of these drugs and in whom toxicity symptoms may be easily overlooked. Patients should be advised to notify their physician promptly if they experience potential symptoms of anticholinergic intoxication such as abdominal pain, fever, heat intolerance, blurred vision, confusion, and/or hallucinations.",
+        "thay_the_a": "-",
+        "thay_the_b": "R06A, Ketotifen, Levocetirizine, Cetirizine, Fexofenadine, Loratadine, Trimethobenzamide, Desloratadine, Azelastine, Terfenadine, Astemizole",
+        "mo_ta": "Agents with anticholinergic properties (e.g., sedating antihistamines; antispasmodics; neuroleptics; phenothiazines; skeletal muscle relaxants; tricyclic antidepressants; disopyramide) may have additive effects when used in combination. Excessive parasympatholytic effects may result in paralytic ileus, hyperthermia, heat stroke, and the anticholinergic intoxication syndrome. Peripheral symptoms of intoxication commonly include mydriasis, blurred vision, flushed face, fever, dry skin and mucous membranes, tachycardia, urinary retention, and constipation. Central symptoms may include memory loss, disorientation, incoherence, hallucinations, psychosis, delirium, hyperactivity, twitching or jerking movements, stereotypy, and seizures. Central nervous system-depressant effects may also be additively or synergistically increased when these agents are combined, especially in elderly or debilitated patients.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Kulik AV, Wilbur R \"Delirium and stereotypy from anticholinergic antiparkinson drugs.\" Prog Neuropsychopharmacol Biol Psychiatry 6 (1982): 75-82, [2] Mann SC, Boger WP \"Psychotropic drugs, summer heat and humidity, and hyperplexia: a danger restated.\" Am J Psychiatry 135 (1978): 1097-100, [3] Warnes H, Lehmann HE, Ban TA \"Adynamic ileus during psychoactive medication: a report of three fatal and five severe cases.\" Can Med Assoc J 96 (1967): 1112-3, [4] Sarnquist F, Larson CP Jr \"Drug-induced heat stroke.\" Anesthesiology 39 (1973): 348-50, [5] Gershon S, Neubauer H, Sundland DM \"Interaction between some anticholinergic agents and phenothiazines.\" Clin Pharmacol Ther 6 (1965): 749-56, [6] Lee BS \"Possibility of hyperpyrexia with antipsychotic and anticholinergic drugs.\" J Clin Psychiatry 47 (1986): 571, [7] Zelman S, Guillan R \"Heat stroke in phenothiazine-treated patients: a report of three fatalities.\" Am J Psychiatry 126 (1970): 1787-90, [8] Cohen MA, Alfonso CA, Mosquera M \"Development of urinary retention during treatment with clozapine and meclizine [published erratum appears in Am J Psychiatry 1994 Jun;151(6):952].\" Am J Psychiatry 151 (1994): 619-20, [9] au A, Jones BD, Banno V \"Chronic central anticholinergic toxicity in manic depressive illness mimicking dementia.\" Can J Psychiatry 31 (1986): 339-41, [10] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [11] Hvizdos AJ, Bennett JA, Wells BG, Rappaport KB, Mendel SA \"Anticholinergic psychosis in a patient receiving usual doses of haloperidol.\" Clin Pharm 2 (1983): 174-8, [12] Stadnyk AN, Glezos JD \"Drug-induced heat stroke.\" Can Med Assoc J 128 (1983): 957-9, [13] \"Product Information. Cogentin (benztropine).\" Merck & Co, Inc, West Point, PA., [14] Johnson AL, Hollister LE, Berger PA \"The anticholinergic intoxication syndrome: diagnosis and treatment.\" J Clin Psychiatry 42 (1981): 313-7, [15] Forester D \"Fatal drug-induced heat stroke.\" JACEP 7 (1978): 243-4, [16] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [17] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [18] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [19] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "hoat_chat_a": "Belladonna",
+        "hoat_chat_b": "Cyproheptadine",
+        "san_pham_a": [
+          "Bình vị Medifiz"
+        ],
+        "san_pham_b": [
+          "Ciplactin"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Bình vị Medifiz",
+        "thuoc_b": "Ciplactin",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Bình vị Medifiz và Ciplactin có thể làm các tác dụng kháng cholinergic của hai thuốc cộng dồn lại với nhau, vì cả hai đều mang tính chất kháng cholinergic. Sự cộng dồn quá mức này có thể dẫn tới liệt ruột, tăng thân nhiệt, sốc nhiệt và hội chứng ngộ độc kháng cholinergic. Các biểu hiện ngoại vi thường gặp của tình trạng ngộ độc gồm giãn đồng tử, nhìn mờ, mặt đỏ bừng, sốt, da và niêm mạc khô, tim đập nhanh, bí tiểu và táo bón. Các biểu hiện ở thần kinh trung ương có thể gồm mất trí nhớ, mất định hướng, nói năng không mạch lạc, ảo giác, loạn thần, mê sảng, kích động quá mức, co giật cơ hoặc giật rung, các động tác lặp đi lặp lại và co giật; ngoài ra còn có thể có tác dụng ức chế thần kinh trung ương cộng dồn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Các thuốc có đặc tính kháng cholinergic (ví dụ thuốc kháng histamin gây buồn ngủ; thuốc chống co thắt; thuốc an thần kinh; phenothiazin; thuốc giãn cơ xương; thuốc chống trầm cảm ba vòng; disopyramide) có thể có tác dụng cộng dồn khi dùng phối hợp. Tác dụng ức chế phó giao cảm quá mức có thể dẫn đến liệt ruột, tăng thân nhiệt, sốc nhiệt và hội chứng ngộ độc kháng cholinergic. Các triệu chứng ngoại vi của ngộ độc thường gồm giãn đồng tử, nhìn mờ, mặt đỏ bừng, sốt, da và niêm mạc khô, nhịp tim nhanh, bí tiểu và táo bón. Các triệu chứng trung ương có thể gồm mất trí nhớ, mất định hướng, nói năng không mạch lạc, ảo giác, loạn thần, mê sảng, kích động quá mức, các động tác co giật hoặc giật rung, động tác rập khuôn và co giật. Tác dụng ức chế hệ thần kinh trung ương cũng có thể cộng dồn...",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức trung bình. Cặp đáng chú ý nhất là Bình vị Medifiz và Ciplactin. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Bình vị Medifiz và Ciplactin",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Bình vị Medifiz",
+      "Ciplactin"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Bình vị Medifiz",
+          "Ciplactin"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

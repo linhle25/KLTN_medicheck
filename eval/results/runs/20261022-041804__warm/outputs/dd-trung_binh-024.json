@@ -1,0 +1,149 @@
+{
+  "case_id": "dd-trung_binh-024",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.3493,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Escitalopram",
+      "Glycerin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Escitalopram",
+        "ten_chuan": "Escitalopram",
+        "medication_id": "DDInter672",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Glycerin",
+        "ten_chuan": "Glycerin",
+        "medication_id": "DDInter832",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Escitalopram",
+        "thuoc_b": "Glycerin",
+        "medication_a_id": "DDInter672",
+        "medication_b_id": "DDInter832",
+        "mo_ta": "Bowel cleansing as well as overuse of certain laxatives may cause electrolyte loss and increase the risk of torsade de pointes ventricular arrhythmia in patients treated with drugs that prolong the QT interval. Electrolyte disturbances including hypokalemia and hypomagnesemia have been reported with laxative abuse and are known risk factors for torsade de pointes associated with QT interval prolongation.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Schaefer DC, Cheskin LJ \"Constipation in the elderly.\" Am Fam Physician 58 (1998): 907-14, [4] Muller-Lissner SA \"Adverse effects of laxatives: fact and fiction.\" Pharmacology 47 (1993): 138-45, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Chin RL \"Laxative-induced hypokalemia.\" Ann Emerg Med 32 (1998): 517-8",
+        "xu_tri": "Patients treated with drugs that prolong the QT interval should exercise caution when self-medicating with laxatives. The recommended dosage and duration of use should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N06A, Maprotiline, St. John's Wort, Milnacipran, Vortioxetine, Levomilnacipran, Doxepin, Duloxetine, Isocarboxazid, Viloxazine, Amoxapine, Imipramine",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Magnesium sulfate, Methylnaltrexone, Tegaserod, Magnesium oxide, Naloxegol, Plecanatide, Lubiprostone, Methylcellulose, Naldemedine",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Ciramplex 10 (hoạt chất: Escitalopram)",
+        "thuoc_b": "Babysky gel (hoạt chất: Glycerin)",
+        "medication_a_id": "DDInter672",
+        "medication_b_id": "DDInter832",
+        "mo_ta": "Bowel cleansing as well as overuse of certain laxatives may cause electrolyte loss and increase the risk of torsade de pointes ventricular arrhythmia in patients treated with drugs that prolong the QT interval. Electrolyte disturbances including hypokalemia and hypomagnesemia have been reported with laxative abuse and are known risk factors for torsade de pointes associated with QT interval prolongation.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Schaefer DC, Cheskin LJ \"Constipation in the elderly.\" Am Fam Physician 58 (1998): 907-14, [4] Muller-Lissner SA \"Adverse effects of laxatives: fact and fiction.\" Pharmacology 47 (1993): 138-45, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Chin RL \"Laxative-induced hypokalemia.\" Ann Emerg Med 32 (1998): 517-8",
+        "xu_tri": "Patients treated with drugs that prolong the QT interval should exercise caution when self-medicating with laxatives. The recommended dosage and duration of use should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N06A, Maprotiline, St. John's Wort, Milnacipran, Vortioxetine, Levomilnacipran, Doxepin, Duloxetine, Isocarboxazid, Viloxazine, Amoxapine, Imipramine",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Magnesium sulfate, Methylnaltrexone, Tegaserod, Magnesium oxide, Naloxegol, Plecanatide, Lubiprostone, Methylcellulose, Naldemedine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Escitalopram",
+        "hoat_chat_b": "Glycerin",
+        "san_pham_a": [
+          "Ciramplex 10"
+        ],
+        "san_pham_b": [
+          "Babysky gel"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Ciramplex 10 (hoạt chất: Escitalopram)",
+        "thuoc_b": "Babysky gel (hoạt chất: Glycerin)",
+        "medication_a_id": "DDInter672",
+        "medication_b_id": "DDInter832",
+        "xu_tri": "Patients treated with drugs that prolong the QT interval should exercise caution when self-medicating with laxatives. The recommended dosage and duration of use should not be exceeded. Patients should be advised to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope.",
+        "thay_the_a": "N06A, Maprotiline, St. John's Wort, Milnacipran, Vortioxetine, Levomilnacipran, Doxepin, Duloxetine, Isocarboxazid, Viloxazine, Amoxapine, Imipramine",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Magnesium sulfate, Methylnaltrexone, Tegaserod, Magnesium oxide, Naloxegol, Plecanatide, Lubiprostone, Methylcellulose, Naldemedine",
+        "mo_ta": "Bowel cleansing as well as overuse of certain laxatives may cause electrolyte loss and increase the risk of torsade de pointes ventricular arrhythmia in patients treated with drugs that prolong the QT interval. Electrolyte disturbances including hypokalemia and hypomagnesemia have been reported with laxative abuse and are known risk factors for torsade de pointes associated with QT interval prolongation.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Schaefer DC, Cheskin LJ \"Constipation in the elderly.\" Am Fam Physician 58 (1998): 907-14, [4] Muller-Lissner SA \"Adverse effects of laxatives: fact and fiction.\" Pharmacology 47 (1993): 138-45, [5] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [6] Chin RL \"Laxative-induced hypokalemia.\" Ann Emerg Med 32 (1998): 517-8",
+        "hoat_chat_a": "Escitalopram",
+        "hoat_chat_b": "Glycerin",
+        "san_pham_a": [
+          "Ciramplex 10"
+        ],
+        "san_pham_b": [
+          "Babysky gel"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Ciramplex 10",
+        "thuoc_b": "Babysky gel",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng Ciramplex 10 chung với Babysky gel cần lưu ý vì việc làm sạch ruột hoặc lạm dụng một số loại thuốc nhuận tràng có thể gây mất chất điện giải, từ đó làm tăng nguy cơ loạn nhịp tim xoắn đỉnh ở người đang dùng thuốc kéo dài khoảng QT. Rối loạn chất điện giải gồm hạ kali máu và hạ magie máu đã được ghi nhận khi lạm dụng thuốc nhuận tràng, và đây là những yếu tố nguy cơ đã biết của xoắn đỉnh gắn với kéo dài khoảng QT.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Làm sạch ruột cũng như lạm dụng một số loại thuốc nhuận tràng có thể gây mất chất điện giải và làm tăng nguy cơ loạn nhịp thất xoắn đỉnh ở bệnh nhân đang điều trị bằng các thuốc kéo dài khoảng QT. Rối loạn chất điện giải bao gồm hạ kali máu và hạ magie máu đã được báo cáo khi lạm dụng thuốc nhuận tràng và là những yếu tố nguy cơ đã biết của xoắn đỉnh liên quan đến kéo dài khoảng QT.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau của bạn, mình thấy có 1 cặp thuốc-thuốc có tương tác, và cặp này ở mức trung bình. Cặp đáng chú ý nhất là Ciramplex 10 và Babysky gel. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Ciramplex 10 và Babysky gel",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Ciramplex 10",
+      "Babysky gel"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Ciramplex 10"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Babysky gel"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

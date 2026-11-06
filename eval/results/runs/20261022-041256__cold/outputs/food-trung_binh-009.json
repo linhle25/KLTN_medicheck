@@ -1,0 +1,72 @@
+{
+  "case_id": "food-trung_binh-009",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.9568,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Fluvastatin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Fluvastatin",
+        "ten_chuan": "Fluvastatin",
+        "medication_id": "DDInter769",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Autifan 20"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Autifan 20"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Autifan 20"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Autifan 20 dùng chung với rượu, nhất là khi uống nhiều, có thể làm tăng nguy cơ tổn thương gan. Nguyên nhân là vì men gan (transaminase) có thể tăng tạm thời khi dùng thuốc, và mức tăng này thường tự giảm hoặc cải thiện khi tiếp tục điều trị hoặc tạm ngưng thuốc một thời gian ngắn. Tuy vậy, hiếm gặp vẫn có báo cáo sau lưu hành về suy gan, cả tử vong lẫn không tử vong, ở người dùng thuốc. Những ai uống nhiều rượu và/hoặc có tiền sử bệnh gan có thể đối diện nguy cơ tổn thương gan cao hơn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Pravachol (pravastatin).\" Bristol-Myers Squibb  (2001):|\"Product Information. Zocor (simvastatin).\" Merck & Co., Inc  (2001):|\"Product Information. Lescol (fluvastatin).\" Novartis Pharmaceuticals  (2001):|\"Product Information. Lipitor (atorvastatin).\" Parke-Davis  (2001):|\"Product Information. Altocor (lovastatin).\" Andrx Pharmaceuticals  (2002):|\"Product Information. Crestor (rosuvastatin).\" AstraZeneca Pharma Inc  (2003):|Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Cerner Multum, Inc. \"Australian Product Information.\" O 0|\"Product Information. Livalo (pitavastatin).\" Kowa Pharmaceuticals America (formerly ProEthic)  (2010):",
+        "mo_ta_dich": "Sử dụng đồng thời thuốc statin với một lượng lớn rượu có thể làm tăng nguy cơ tổn thương gan. Đã có báo cáo về tình trạng tăng thoáng qua transaminase huyết thanh khi sử dụng statin, và mặc dù những tăng này thường tự hết hoặc cải thiện khi tiếp tục điều trị hoặc tạm ngừng điều trị ngắn, đã có các báo cáo hậu mại hiếm gặp về suy gan tử vong và không tử vong ở bệnh nhân dùng statin. Bệnh nhân tiêu thụ một lượng lớn rượu và/hoặc có tiền sử bệnh gan có thể có nguy cơ tổn thương gan tăng lên.",
+        "xu_tri_dich": "Bệnh nhân nên được tư vấn tránh sử dụng một lượng lớn rượu kết hợp với thuốc statin và bác sĩ lâm sàng nên nhận thức được nguy cơ tăng độc tính gan ở những bệnh nhân này."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

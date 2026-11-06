@@ -1,0 +1,148 @@
+{
+  "case_id": "dd-nhe-036",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.3141,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Omeprazole",
+      "Phenobarbital"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Omeprazole",
+        "ten_chuan": "Omeprazole",
+        "medication_id": "DDInter1340",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Phenobarbital",
+        "ten_chuan": "Phenobarbital",
+        "medication_id": "DDInter1442",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Omeprazole",
+        "thuoc_b": "Phenobarbital",
+        "medication_a_id": "DDInter1340",
+        "medication_b_id": "DDInter1442",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C19 may theoretically increase the plasma concentrations of phenobarbital, which is a substrate of the isoenzyme. No precautions appear to be necessary during coadministration of phenobarbital with CYP450 2C19 inhibitors. However, dosage adjustments may be necessary if an interaction is suspected.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Klotz U \"The role of pharmacogenetics in the metabolism of antiepileptic drugs: pharmacokinetic and therapeutic implications.\" Clin Pharmacokinet 46 (2007): 271-9, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Self TH, Chrisman CR, Baciewicz AM, Bronze MS \"Isoniazid drug and food interactions.\" Am J Med Sci 317 (1999): 304-11, [4] Uragoda CG, Kottegoda SR \"Adverse reactions to isoniazid on ingestion of fish with a high histamine content.\" Tubercle 58 (1977): 83-9, [5] \"Product Information. INH (isoniazid).\" Ciba Pharmaceuticals, Summit, NJ., [6] Smith CK, Durack DT \"Isoniazid and reaction to cheese.\" Ann Intern Med 88 (1978): 520-1, [7] Dimartini A \"Isoniazid, tricyclics and the ''cheese reaction''.\" Int Clin Psychopharmacol 10 (1995): 197-8",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Pantoprazole, Levofloxacin, Tetracycline, Rabeprazole, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Famotidine, Rifabutin, Nizatidine",
+        "thay_the_b": "N05C, Suvorexant, Methohexital, Methylphenobarbital, Pentobarbital, Dichloralphenazone, Valerian, Butabarbital, Secobarbital, Chloral hydrate, Paraldehyde, Ramelteon",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "AG-Ome (hoạt chất: Omeprazole)",
+        "thuoc_b": "FENOBITAL (hoạt chất: Phenobarbital)",
+        "medication_a_id": "DDInter1340",
+        "medication_b_id": "DDInter1442",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C19 may theoretically increase the plasma concentrations of phenobarbital, which is a substrate of the isoenzyme. No precautions appear to be necessary during coadministration of phenobarbital with CYP450 2C19 inhibitors. However, dosage adjustments may be necessary if an interaction is suspected.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Klotz U \"The role of pharmacogenetics in the metabolism of antiepileptic drugs: pharmacokinetic and therapeutic implications.\" Clin Pharmacokinet 46 (2007): 271-9, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Self TH, Chrisman CR, Baciewicz AM, Bronze MS \"Isoniazid drug and food interactions.\" Am J Med Sci 317 (1999): 304-11, [4] Uragoda CG, Kottegoda SR \"Adverse reactions to isoniazid on ingestion of fish with a high histamine content.\" Tubercle 58 (1977): 83-9, [5] \"Product Information. INH (isoniazid).\" Ciba Pharmaceuticals, Summit, NJ., [6] Smith CK, Durack DT \"Isoniazid and reaction to cheese.\" Ann Intern Med 88 (1978): 520-1, [7] Dimartini A \"Isoniazid, tricyclics and the ''cheese reaction''.\" Int Clin Psychopharmacol 10 (1995): 197-8",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Pantoprazole, Levofloxacin, Tetracycline, Rabeprazole, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Famotidine, Rifabutin, Nizatidine",
+        "thay_the_b": "N05C, Suvorexant, Methohexital, Methylphenobarbital, Pentobarbital, Dichloralphenazone, Valerian, Butabarbital, Secobarbital, Chloral hydrate, Paraldehyde, Ramelteon",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Omeprazole",
+        "hoat_chat_b": "Phenobarbital",
+        "san_pham_a": [
+          "AG-Ome"
+        ],
+        "san_pham_b": [
+          "FENOBITAL"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "AG-Ome (hoạt chất: Omeprazole)",
+        "thuoc_b": "FENOBITAL (hoạt chất: Phenobarbital)",
+        "medication_a_id": "DDInter1340",
+        "medication_b_id": "DDInter1442",
+        "xu_tri": "-",
+        "thay_the_a": "A02B, Pantoprazole, Levofloxacin, Tetracycline, Rabeprazole, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Famotidine, Rifabutin, Nizatidine",
+        "thay_the_b": "N05C, Suvorexant, Methohexital, Methylphenobarbital, Pentobarbital, Dichloralphenazone, Valerian, Butabarbital, Secobarbital, Chloral hydrate, Paraldehyde, Ramelteon",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C19 may theoretically increase the plasma concentrations of phenobarbital, which is a substrate of the isoenzyme. No precautions appear to be necessary during coadministration of phenobarbital with CYP450 2C19 inhibitors. However, dosage adjustments may be necessary if an interaction is suspected.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Klotz U \"The role of pharmacogenetics in the metabolism of antiepileptic drugs: pharmacokinetic and therapeutic implications.\" Clin Pharmacokinet 46 (2007): 271-9, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Self TH, Chrisman CR, Baciewicz AM, Bronze MS \"Isoniazid drug and food interactions.\" Am J Med Sci 317 (1999): 304-11, [4] Uragoda CG, Kottegoda SR \"Adverse reactions to isoniazid on ingestion of fish with a high histamine content.\" Tubercle 58 (1977): 83-9, [5] \"Product Information. INH (isoniazid).\" Ciba Pharmaceuticals, Summit, NJ., [6] Smith CK, Durack DT \"Isoniazid and reaction to cheese.\" Ann Intern Med 88 (1978): 520-1, [7] Dimartini A \"Isoniazid, tricyclics and the ''cheese reaction''.\" Int Clin Psychopharmacol 10 (1995): 197-8",
+        "hoat_chat_a": "Omeprazole",
+        "hoat_chat_b": "Phenobarbital",
+        "san_pham_a": [
+          "AG-Ome"
+        ],
+        "san_pham_b": [
+          "FENOBITAL"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "AG-Ome",
+        "thuoc_b": "FENOBITAL",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung AG-Ome và FENOBITAL, về lý thuyết AG-Ome có thể làm tăng nồng độ FENOBITAL trong máu, vì FENOBITAL được chuyển hóa bởi một enzym trong gan gọi là CYP450 2C19, và AG-Ome có khả năng ức chế enzym này.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời với các chất ức chế CYP450 2C19 về mặt lý thuyết có thể làm tăng nồng độ phenobarbital trong huyết tương, do phenobarbital là cơ chất của isoenzym này. Không có biện pháp phòng ngừa nào tỏ ra cần thiết khi dùng đồng thời phenobarbital với các chất ức chế CYP450 2C19. Tuy nhiên, có thể cần điều chỉnh liều nếu nghi ngờ có tương tác.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau của bạn, mình thấy có 1 cặp thuốc có tương tác, và cả 1 cặp này đều ở mức nhẹ. Cặp đáng chú ý là AG-Ome + FENOBITAL. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "AG-Ome + FENOBITAL",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "AG-Ome",
+      "FENOBITAL"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "AG-Ome"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "FENOBITAL"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

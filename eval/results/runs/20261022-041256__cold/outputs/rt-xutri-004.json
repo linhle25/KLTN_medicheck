@@ -1,0 +1,143 @@
+{
+  "case_id": "rt-xutri-004",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.9099,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Typhoid vaccine (live)",
+      "Everolimus"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Typhoid vaccine (live)",
+        "ten_chuan": "Typhoid vaccine (live)",
+        "medication_id": "DDInter1894",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Everolimus",
+        "ten_chuan": "Everolimus",
+        "medication_id": "DDInter704",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Typhoid vaccine (live)",
+        "thuoc_b": "Everolimus",
+        "medication_a_id": "DDInter1894",
+        "medication_b_id": "DDInter704",
+        "mo_ta": "The administration of live, attenuated viral or bacterial vaccines during immunosuppressant or intense antineoplastic therapy may be associated with a risk of disseminated infection due to enhanced replication of vaccine virus or bacteria in the presence of diminished immune competence. Patients may be immunosuppressed if they have recently received or are receiving alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids. These patients may also have increased adverse reactions and decreased or suboptimal immunologic response to vaccines.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Fauci AS, Braunwald E, Isselbacher KJ, Wilson JD, Martin JB, Kasper DL, Hauser SL, Longo DL, eds. \"Harrison's Principles of Internal Medicine. 14th ed.\" New York, NY: McGraw-Hill Health Professionals Division (1998):, [2] \"Product Information. YF-Vax (yellow fever vaccine).\" sanofi pasteur, Swiftwater, PA., [3] \"Product Information. Attenuvax (measles virus vaccine, live, attenuated).\" Merck & Co, Inc, West Point, PA., [4] Kriner P, Lopez K, Leung J, Harpaz R, Bialek SR \"Notes from the field: varicella-associated death of a vaccinated child with leukemia - California, 2012.\" MMWR Morb Mortal Wkly Rep 63 (2014): 161, [5] \"Product Information. M-M-R II (measles/mumps/rubella virus vaccine).\" Merck & Company Inc, West Point, PA., [6] Charkoudian LD, Kaiser GM, Steinmetz RL, Srivastava SK \"Acute retinal necrosis after herpes zoster vaccination.\" Arch Ophthalmol 129 (2011): 1495-7, [7] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [8] \"Product Information. Meruvax II (rubella virus vaccine, live).\" Merck & Co, Inc, West Point, PA., [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0",
+        "xu_tri": "In general, live attenuated vaccines should not be used in patients receiving immunosuppressive therapy or cancer chemotherapy. Vaccination should be deferred until after such therapy is discontinued and immune function has been restored, usually 4 to 12 weeks after stopping immunosuppressive therapy. A longer waiting period may be necessary following treatment with agents that have a prolonged elimination half-life (e.g., leflunomide, teriflunomide). Current local immunization guidelines should be consulted for recommendations.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Vivotif (hoạt chất: Typhoid vaccine (live))",
+        "thuoc_b": "Afinitor 10mg (hoạt chất: Everolimus)",
+        "medication_a_id": "DDInter1894",
+        "medication_b_id": "DDInter704",
+        "mo_ta": "The administration of live, attenuated viral or bacterial vaccines during immunosuppressant or intense antineoplastic therapy may be associated with a risk of disseminated infection due to enhanced replication of vaccine virus or bacteria in the presence of diminished immune competence. Patients may be immunosuppressed if they have recently received or are receiving alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids. These patients may also have increased adverse reactions and decreased or suboptimal immunologic response to vaccines.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Fauci AS, Braunwald E, Isselbacher KJ, Wilson JD, Martin JB, Kasper DL, Hauser SL, Longo DL, eds. \"Harrison's Principles of Internal Medicine. 14th ed.\" New York, NY: McGraw-Hill Health Professionals Division (1998):, [2] \"Product Information. YF-Vax (yellow fever vaccine).\" sanofi pasteur, Swiftwater, PA., [3] \"Product Information. Attenuvax (measles virus vaccine, live, attenuated).\" Merck & Co, Inc, West Point, PA., [4] Kriner P, Lopez K, Leung J, Harpaz R, Bialek SR \"Notes from the field: varicella-associated death of a vaccinated child with leukemia - California, 2012.\" MMWR Morb Mortal Wkly Rep 63 (2014): 161, [5] \"Product Information. M-M-R II (measles/mumps/rubella virus vaccine).\" Merck & Company Inc, West Point, PA., [6] Charkoudian LD, Kaiser GM, Steinmetz RL, Srivastava SK \"Acute retinal necrosis after herpes zoster vaccination.\" Arch Ophthalmol 129 (2011): 1495-7, [7] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [8] \"Product Information. Meruvax II (rubella virus vaccine, live).\" Merck & Co, Inc, West Point, PA., [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0",
+        "xu_tri": "In general, live attenuated vaccines should not be used in patients receiving immunosuppressive therapy or cancer chemotherapy. Vaccination should be deferred until after such therapy is discontinued and immune function has been restored, usually 4 to 12 weeks after stopping immunosuppressive therapy. A longer waiting period may be necessary following treatment with agents that have a prolonged elimination half-life (e.g., leflunomide, teriflunomide). Current local immunization guidelines should be consulted for recommendations.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Typhoid vaccine (live)",
+        "hoat_chat_b": "Everolimus",
+        "san_pham_a": [
+          "Vivotif"
+        ],
+        "san_pham_b": [
+          "Afinitor 10mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Vivotif (hoạt chất: Typhoid vaccine (live))",
+        "thuoc_b": "Afinitor 10mg (hoạt chất: Everolimus)",
+        "medication_a_id": "DDInter1894",
+        "medication_b_id": "DDInter704",
+        "xu_tri": "In general, live attenuated vaccines should not be used in patients receiving immunosuppressive therapy or cancer chemotherapy. Vaccination should be deferred until after such therapy is discontinued and immune function has been restored, usually 4 to 12 weeks after stopping immunosuppressive therapy. A longer waiting period may be necessary following treatment with agents that have a prolonged elimination half-life (e.g., leflunomide, teriflunomide). Current local immunization guidelines should be consulted for recommendations.",
+        "thay_the_a": "-",
+        "thay_the_b": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib",
+        "mo_ta": "The administration of live, attenuated viral or bacterial vaccines during immunosuppressant or intense antineoplastic therapy may be associated with a risk of disseminated infection due to enhanced replication of vaccine virus or bacteria in the presence of diminished immune competence. Patients may be immunosuppressed if they have recently received or are receiving alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids. These patients may also have increased adverse reactions and decreased or suboptimal immunologic response to vaccines.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Fauci AS, Braunwald E, Isselbacher KJ, Wilson JD, Martin JB, Kasper DL, Hauser SL, Longo DL, eds. \"Harrison's Principles of Internal Medicine. 14th ed.\" New York, NY: McGraw-Hill Health Professionals Division (1998):, [2] \"Product Information. YF-Vax (yellow fever vaccine).\" sanofi pasteur, Swiftwater, PA., [3] \"Product Information. Attenuvax (measles virus vaccine, live, attenuated).\" Merck & Co, Inc, West Point, PA., [4] Kriner P, Lopez K, Leung J, Harpaz R, Bialek SR \"Notes from the field: varicella-associated death of a vaccinated child with leukemia - California, 2012.\" MMWR Morb Mortal Wkly Rep 63 (2014): 161, [5] \"Product Information. M-M-R II (measles/mumps/rubella virus vaccine).\" Merck & Company Inc, West Point, PA., [6] Charkoudian LD, Kaiser GM, Steinmetz RL, Srivastava SK \"Acute retinal necrosis after herpes zoster vaccination.\" Arch Ophthalmol 129 (2011): 1495-7, [7] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [8] \"Product Information. Meruvax II (rubella virus vaccine, live).\" Merck & Co, Inc, West Point, PA., [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0",
+        "hoat_chat_a": "Typhoid vaccine (live)",
+        "hoat_chat_b": "Everolimus",
+        "san_pham_a": [
+          "Vivotif"
+        ],
+        "san_pham_b": [
+          "Afinitor 10mg"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Vivotif",
+        "thuoc_b": "Afinitor 10mg",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Vivotif cùng với Afinitor 10mg có thể làm tăng nguy cơ nhiễm trùng lan tỏa, vì Vivotif là vắc-xin sống giảm độc lực còn Afinitor 10mg có thể làm suy giảm miễn dịch, khiến vi khuẩn trong vắc-xin nhân lên mạnh hơn trong cơ thể. Người đang dùng Afinitor 10mg cũng có thể gặp nhiều phản ứng bất lợi hơn và đáp ứng miễn dịch với vắc-xin kém hơn hoặc không đạt tối ưu. [ẢN_DỊCH]\nmô tả: Việc sử dụng vắc-xin sống, giảm độc lực (vi-rút hoặc vi khuẩn) trong khi đang điều trị bằng thuốc ức chế miễn dịch hoặc trị liệu chống ung thư mạnh có thể liên quan đến nguy cơ nhiễm trùng lan tỏa do sự nhân lên tăng cường của vi-rút hoặc vi khuẩn trong vắc-xin khi khả năng miễn dịch bị suy giảm. Bệnh nhân có thể bị suy giảm miễn dịch nếu họ mới nhận hoặc đang nhận các tác nhân alkyl hóa, thuốc chống chuyển hóa, xạ trị, một số tác nhân chống thấp khớp, liều cao corticosteroid hoặc tác nhân adrenocorticotropic, hoặc corticosteroid dùng tại chỗ hoặc dạng hít trong thời gian dài. Những bệnh nhân này cũng có thể có nhiều phản ứng bất lợi hơn và đáp ứng miễn dịch giảm hoặc dưới mức tối ưu với vắc-xin. xử trí:",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là Vivotif và Afinitor 10mg. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Vivotif và Afinitor 10mg",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Vivotif",
+      "Afinitor 10mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Vivotif",
+          "Afinitor 10mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

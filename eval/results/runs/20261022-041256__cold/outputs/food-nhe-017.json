@@ -1,0 +1,72 @@
+{
+  "case_id": "food-nhe-017",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.6032,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Doxycycline"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Doxycycline",
+        "ten_chuan": "Doxycycline",
+        "medication_id": "DDInter598",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Asbidox-200 Tablets"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Asbidox-200 Tablets"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Asbidox-200 Tablets"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nhe",
+        "giai_thich": "Uống Asbidox-200 Tablets cùng rượu, nhất là khi uống rượu thường xuyên, có thể làm thuốc bị đào thải khỏi cơ thể nhanh hơn. Lý do là rượu kích thích các enzyme trong gan (những chất giúp chuyển hóa và phân hủy thuốc), khiến Asbidox-200 Tablets bị phân hủy và thải ra ngoài sớm hơn. Vì vậy thuốc có thể không còn đủ thời gian phát huy tác dụng như mong muốn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Neuvonen PJ, Penttila O, Roos M, Tirkkonen J \"Effect of long-term alcohol consumption on the half-life of tetracycline and doxycycline in man.\" Int J Clin Pharmacol Biopharm 14 (1976):  303-7",
+        "mo_ta_dich": "Uống rượu mạn tính có thể làm tăng thải trừ doxycycline. Cơ chế là do rượu cảm ứng các enzym microsom ở gan.",
+        "xu_tri_dich": "Các nhà nghiên cứu đề xuất rằng có thể chỉ định dùng thuốc hai lần mỗi ngày ở những bệnh nhân này, đặc biệt nếu sử dụng thêm các thuốc cảm ứng enzym khác. Việc thải trừ các tetracycline khác có lẽ không bị ảnh hưởng bởi việc uống rượu."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

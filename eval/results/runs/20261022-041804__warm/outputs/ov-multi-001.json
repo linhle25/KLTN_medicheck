@@ -1,0 +1,796 @@
+{
+  "case_id": "ov-multi-001",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.4584,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Dexamethasone",
+      "Lovastatin",
+      "Erlotinib",
+      "Bedaquiline",
+      "Metronidazole"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Dexamethasone",
+        "ten_chuan": "Dexamethasone",
+        "medication_id": "DDInter513",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Lovastatin",
+        "ten_chuan": "Lovastatin",
+        "medication_id": "DDInter1098",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Erlotinib",
+        "ten_chuan": "Erlotinib",
+        "medication_id": "DDInter667",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Bedaquiline",
+        "ten_chuan": "Bedaquiline",
+        "medication_id": "DDInter170",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Metronidazole",
+        "ten_chuan": "Metronidazole",
+        "medication_id": "DDInter1202",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Lovastatin",
+        "thuoc_b": "Dexamethasone",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Fenofibric acid, Mipomersen, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Clofibrate, Cerivastatin, Lomitapide, Alirocumab, C10B",
+        "thay_the_b": "R01A, Mupirocin, Ciclesonide, Mometasone furoate, Mometasone, Vitamin A, Ephedrine, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Dexamethasone",
+        "thuoc_b": "Erlotinib",
+        "medication_a_id": "DDInter513",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "Coadministration with inducers of CYP450 3A4 may decrease the plasma concentrations of erlotinib, which is primarily metabolized by the isoenzyme.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [2] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [3] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [6] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [7] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [8] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [9] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [10] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [14] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "xu_tri": "Alternative treatment lacking CYP450 3A4-inducing activity is recommended in patients receiving erlotinib. If alternative treatment is unavailable and a potent inducer (e.g., carbamazepine, enzalutamide, lumacaftor, mitotane, phenobarbital, phenytoin, primidone (partially metabolized to phenobarbital), rifamycins, St. John&#x27;s wort) is to be used for more than a few days, an increase in the dosage of erlotinib should be considered as tolerated at 2-week intervals. Close clinical and laboratory monitoring for altered efficacy and safety, including renal and liver functions and serum electrolytes, is recommended.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Hydrocortisone, Olopatadine, Vitamin A, Ipratropium",
+        "thay_the_b": "L01E, Lenvatinib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Bedaquiline",
+        "thuoc_b": "Dexamethasone",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "Coadministration with potent or moderate inducers of CYP450 3A4 may decrease the plasma concentrations of bedaquiline, which is primarily metabolized by CYP450 3A4 to the major N-monodesmethyl metabolite, M2. Because M2 is 4- to 6-fold less active than the parent drug in terms of antimycobacterial potency, the interaction may diminish the therapeutic effect of bedaquiline.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] Patel S, Robinson R, Burk M \"Hypertensive crisis associated with St. John's Wort.\" Am J Med 112 (2002): 507-8, [4] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "xu_tri": "The concomitant use of bedaquiline with potent or moderate CYP450 3A4 inducers should generally be avoided.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J04A, Rifamycin, Sulfamethoxazole, Streptomycin, Cycloserine, Pyridoxine, Ethionamide, Aminosalicylic acid",
+        "thay_the_b": "R01A, Flunisolide, Betamethasone, Phenylephrine, Triamcinolone, Azelastine, Ciclesonide, Mupirocin, Hydrocortisone, Ipratropium, Cromoglicic acid, Prednisolone",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Metronidazole",
+        "thuoc_b": "Dexamethasone",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Bismuth subcitrate potassium, Dexlansoprazole, Esomeprazole, P01A, Tinidazole, Quinacrine, Secnidazole, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Mafenide",
+        "thay_the_b": "R01A, Ciclesonide, Mometasone furoate, Mometasone, Flunisolide, Ephedrine, Vitamin A, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Lovastatin",
+        "thuoc_b": "Erlotinib",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Cerivastatin, Colestipol",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Bosutinib, Vemurafenib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Ibrutinib",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Lovastatin",
+        "thuoc_b": "Bedaquiline",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter170",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lovastatin",
+        "thuoc_b": "Metronidazole",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter1202",
+        "mo_ta": "The risk of peripheral neuropathy may be increased during concurrent use of two or more agents that are associated with this adverse effect. Patient risk factors include diabetes and age older than 60 years.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [2] Pharmaceutical Society of Australia \"APPGuide online. Australian prescription products guide online. Available from: URL: http://www.appco.com.au/appguide/default.asp.\" ([2006]):, [3] Carrion C, Espinosa E, Herrero A, Garcia B \"Possible vincristine-isoniazid interaction.\" Ann Pharmacother 29 (1995): 201, [4] Argov Z, Mastaglia FL \"Drug-induced peripheral neuropathies.\" Br Med J 1 (1979): 663-6",
+        "xu_tri": "Patients should be monitored closely for symptoms of neuropathy such as burning, tingling, pain, or numbness in the hands and feet. Since the development of peripheral neuropathy may be dose-related for many drugs, the recommended dosages should generally not be exceeded. Consideration should be given to dosage reduction or immediate discontinuation of these medications in patients who develop peripheral neuropathy to limit further damage.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Mipomersen, Evinacumab, Evolocumab, Dextrothyroxine, Clofibrate, Lomitapide, Colestipol, Bempedoic acid, Colesevelam",
+        "thay_the_b": "A02B, Levofloxacin, Bismuth subcitrate potassium, Dexlansoprazole, Rifabutin, P01A, Quinacrine, Atovaquone, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Sulfamethizole, Mafenide",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Bedaquiline",
+        "thuoc_b": "Erlotinib",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "Coadministration of bedaquiline with other agents known to induce hepatotoxicity may potentiate the risk of liver injury.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] \"Product Information. Hivid (zalcitabine).\" Roche Laboratories, Nutley, NJ.",
+        "xu_tri": "The use of bedaquiline with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; other antituberculous agents; azole antifungal agents; ACE inhibitors; disulfiram; endothelin receptor antagonists; ketolide and macrolide antibiotics; interferons; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice), especially in patients with diminished hepatic reserve. Patients treated with bedaquiline should have serum ALT, AST, alkaline phosphatase, and bilirubin monitored at baseline and monthly during treatment, or as often as needed. An increase of serum aminotransferases to greater than 3 times ULN should be followed by repeat testing within 48 hours. Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Discontinue bedaquiline if aminotransferase elevations are accompanied by total bilirubin elevation greater than 2 times ULN, aminotransferase elevations are greater than 8 times ULN, or aminotransferase elevations persist beyond 2 weeks.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Sulfamethoxazole, Streptomycin, Trimethoprim, Cycloserine, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Avapritinib, Selumetinib, Ibrutinib, Tivozanib, Zanubrutinib, Brigatinib, Ripretinib, Alpelisib, Ruxolitinib",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Metronidazole",
+        "thuoc_b": "Erlotinib",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin, P01A, Tinidazole, Quinacrine, Secnidazole, Atovaquone, Furazolidone",
+        "thay_the_b": "L01E, Dabrafenib, Acalabrutinib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Selumetinib, Cobimetinib, Capmatinib",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Metronidazole",
+        "thuoc_b": "Bedaquiline",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter170",
+        "mo_ta": "Limited data suggest that metronidazole may rarely prolong the QT interval of the electrocardiogram. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. There have been isolated reports of QT prolongation and ventricular arrhythmias occurring in patients treated with metronidazole.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Kounas SP, Letsas KP, Sideris A, Efraimidis M, Kardaras F \"QT interval prolongation and torsades de pointes due to a coadministration of metronidazole and amiodarone.\" Pacing Clin Electrophysiol 28 (2005): 472-3, [2] Giannini AJ, DeFrance DT \"Metronidazole and alcohol: potential for combinative abuse.\" J Toxicol Clin Toxicol 20 (1983): 509-15, [3] \"Product Information. Benznidazole (benznidazole).\" Everett Laboratories Inc, West Orange, NJ., [4] Williams CS, Woodcock KR \"Do ethanol and metronidazole interact to produce a disulfiram-like reaction?.\" Ann Pharmacother 34 (2000): 255-7, [5] Krulewitch CJ \"An unexpected adverse drug effect.\" J Midwifery Womens Health 48 (2003): 67-8, [6] Alexander I \"Alcohol-antabuse syndrome in patients receiving metronidazole during gynaecological treatment.\" Br J Clin Pract 39 (1985): 292-3, [7] \"Product Information. Flagyl (metronidazole).\" Searle, Skokie, IL., [8] Harries DP, Teale KF, Sunderland G \"Metronidazole and alcohol: potential problems.\" Scott Med J 35 (1990): 179-80, [9] Visapaa JP, Tillonen JS, Kaihovaara PS, Salaspuro MP \"Lack of disulfiram-like reaction with metronidazole and ethanol.\" Ann Pharmacother 36 (2002): 971-4, [10] Edwards DL, Fink PC, Van Dyke PO \"Disulfiram-like reaction associated with intravenous trimethoprim-sulfamethoxazole and metronidazole.\" Clin Pharm 5 (1986): 999-1000, [11] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [12] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [13] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [14] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Cimetidine, Esomeprazole, Ranitidine, Nizatidine",
+        "thay_the_b": "J04A, Capreomycin, Rifamycin, Streptomycin, Cycloserine, Pyridoxine, Pretomanid, Aminosalicylic acid",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Sirturo (hoạt chất: Bedaquiline)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "Coadministration with potent or moderate inducers of CYP450 3A4 may decrease the plasma concentrations of bedaquiline, which is primarily metabolized by CYP450 3A4 to the major N-monodesmethyl metabolite, M2. Because M2 is 4- to 6-fold less active than the parent drug in terms of antimycobacterial potency, the interaction may diminish the therapeutic effect of bedaquiline.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] Patel S, Robinson R, Burk M \"Hypertensive crisis associated with St. John's Wort.\" Am J Med 112 (2002): 507-8, [4] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "xu_tri": "The concomitant use of bedaquiline with potent or moderate CYP450 3A4 inducers should generally be avoided.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J04A, Rifamycin, Sulfamethoxazole, Streptomycin, Cycloserine, Pyridoxine, Ethionamide, Aminosalicylic acid",
+        "thay_the_b": "R01A, Flunisolide, Betamethasone, Phenylephrine, Triamcinolone, Azelastine, Ciclesonide, Mupirocin, Hydrocortisone, Ipratropium, Cromoglicic acid, Prednisolone",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Bedaquiline",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Sirturo"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Agiect (hoạt chất: Dexamethasone)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter513",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "Coadministration with inducers of CYP450 3A4 may decrease the plasma concentrations of erlotinib, which is primarily metabolized by the isoenzyme.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [2] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [3] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [6] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [7] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [8] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [9] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [10] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [14] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "xu_tri": "Alternative treatment lacking CYP450 3A4-inducing activity is recommended in patients receiving erlotinib. If alternative treatment is unavailable and a potent inducer (e.g., carbamazepine, enzalutamide, lumacaftor, mitotane, phenobarbital, phenytoin, primidone (partially metabolized to phenobarbital), rifamycins, St. John&#x27;s wort) is to be used for more than a few days, an increase in the dosage of erlotinib should be considered as tolerated at 2-week intervals. Close clinical and laboratory monitoring for altered efficacy and safety, including renal and liver functions and serum electrolytes, is recommended.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Hydrocortisone, Olopatadine, Vitamin A, Ipratropium",
+        "thay_the_b": "L01E, Lenvatinib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Dexamethasone",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Agiect"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter1202",
+        "mo_ta": "The risk of peripheral neuropathy may be increased during concurrent use of two or more agents that are associated with this adverse effect. Patient risk factors include diabetes and age older than 60 years.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [2] Pharmaceutical Society of Australia \"APPGuide online. Australian prescription products guide online. Available from: URL: http://www.appco.com.au/appguide/default.asp.\" ([2006]):, [3] Carrion C, Espinosa E, Herrero A, Garcia B \"Possible vincristine-isoniazid interaction.\" Ann Pharmacother 29 (1995): 201, [4] Argov Z, Mastaglia FL \"Drug-induced peripheral neuropathies.\" Br Med J 1 (1979): 663-6",
+        "xu_tri": "Patients should be monitored closely for symptoms of neuropathy such as burning, tingling, pain, or numbness in the hands and feet. Since the development of peripheral neuropathy may be dose-related for many drugs, the recommended dosages should generally not be exceeded. Consideration should be given to dosage reduction or immediate discontinuation of these medications in patients who develop peripheral neuropathy to limit further damage.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Mipomersen, Evinacumab, Evolocumab, Dextrothyroxine, Clofibrate, Lomitapide, Colestipol, Bempedoic acid, Colesevelam",
+        "thay_the_b": "A02B, Levofloxacin, Bismuth subcitrate potassium, Dexlansoprazole, Rifabutin, P01A, Quinacrine, Atovaquone, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Sulfamethizole, Mafenide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Metronidazole",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Aldezil injection isotonic"
+        ]
+      },
+      {
+        "thuoc_a": "Sirturo (hoạt chất: Bedaquiline)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "Coadministration of bedaquiline with other agents known to induce hepatotoxicity may potentiate the risk of liver injury.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] \"Product Information. Hivid (zalcitabine).\" Roche Laboratories, Nutley, NJ.",
+        "xu_tri": "The use of bedaquiline with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; other antituberculous agents; azole antifungal agents; ACE inhibitors; disulfiram; endothelin receptor antagonists; ketolide and macrolide antibiotics; interferons; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice), especially in patients with diminished hepatic reserve. Patients treated with bedaquiline should have serum ALT, AST, alkaline phosphatase, and bilirubin monitored at baseline and monthly during treatment, or as often as needed. An increase of serum aminotransferases to greater than 3 times ULN should be followed by repeat testing within 48 hours. Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Discontinue bedaquiline if aminotransferase elevations are accompanied by total bilirubin elevation greater than 2 times ULN, aminotransferase elevations are greater than 8 times ULN, or aminotransferase elevations persist beyond 2 weeks.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Sulfamethoxazole, Streptomycin, Trimethoprim, Cycloserine, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Avapritinib, Selumetinib, Ibrutinib, Tivozanib, Zanubrutinib, Brigatinib, Ripretinib, Alpelisib, Ruxolitinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Bedaquiline",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Sirturo"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter170",
+        "mo_ta": "Limited data suggest that metronidazole may rarely prolong the QT interval of the electrocardiogram. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. There have been isolated reports of QT prolongation and ventricular arrhythmias occurring in patients treated with metronidazole.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Kounas SP, Letsas KP, Sideris A, Efraimidis M, Kardaras F \"QT interval prolongation and torsades de pointes due to a coadministration of metronidazole and amiodarone.\" Pacing Clin Electrophysiol 28 (2005): 472-3, [2] Giannini AJ, DeFrance DT \"Metronidazole and alcohol: potential for combinative abuse.\" J Toxicol Clin Toxicol 20 (1983): 509-15, [3] \"Product Information. Benznidazole (benznidazole).\" Everett Laboratories Inc, West Orange, NJ., [4] Williams CS, Woodcock KR \"Do ethanol and metronidazole interact to produce a disulfiram-like reaction?.\" Ann Pharmacother 34 (2000): 255-7, [5] Krulewitch CJ \"An unexpected adverse drug effect.\" J Midwifery Womens Health 48 (2003): 67-8, [6] Alexander I \"Alcohol-antabuse syndrome in patients receiving metronidazole during gynaecological treatment.\" Br J Clin Pract 39 (1985): 292-3, [7] \"Product Information. Flagyl (metronidazole).\" Searle, Skokie, IL., [8] Harries DP, Teale KF, Sunderland G \"Metronidazole and alcohol: potential problems.\" Scott Med J 35 (1990): 179-80, [9] Visapaa JP, Tillonen JS, Kaihovaara PS, Salaspuro MP \"Lack of disulfiram-like reaction with metronidazole and ethanol.\" Ann Pharmacother 36 (2002): 971-4, [10] Edwards DL, Fink PC, Van Dyke PO \"Disulfiram-like reaction associated with intravenous trimethoprim-sulfamethoxazole and metronidazole.\" Clin Pharm 5 (1986): 999-1000, [11] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [12] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [13] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [14] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Cimetidine, Esomeprazole, Ranitidine, Nizatidine",
+        "thay_the_b": "J04A, Capreomycin, Rifamycin, Streptomycin, Cycloserine, Pyridoxine, Pretomanid, Aminosalicylic acid",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Fenofibric acid, Mipomersen, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Clofibrate, Cerivastatin, Lomitapide, Alirocumab, C10B",
+        "thay_the_b": "R01A, Mupirocin, Ciclesonide, Mometasone furoate, Mometasone, Vitamin A, Ephedrine, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Bismuth subcitrate potassium, Dexlansoprazole, Esomeprazole, P01A, Tinidazole, Quinacrine, Secnidazole, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Mafenide",
+        "thay_the_b": "R01A, Ciclesonide, Mometasone furoate, Mometasone, Flunisolide, Ephedrine, Vitamin A, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Cerivastatin, Colestipol",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Bosutinib, Vemurafenib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Ibrutinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter170",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter667",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin, P01A, Tinidazole, Quinacrine, Secnidazole, Atovaquone, Furazolidone",
+        "thay_the_b": "L01E, Dabrafenib, Acalabrutinib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Selumetinib, Cobimetinib, Capmatinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Sirturo (hoạt chất: Bedaquiline)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter513",
+        "xu_tri": "The concomitant use of bedaquiline with potent or moderate CYP450 3A4 inducers should generally be avoided.",
+        "thay_the_a": "J04A, Rifamycin, Sulfamethoxazole, Streptomycin, Cycloserine, Pyridoxine, Ethionamide, Aminosalicylic acid",
+        "thay_the_b": "R01A, Flunisolide, Betamethasone, Phenylephrine, Triamcinolone, Azelastine, Ciclesonide, Mupirocin, Hydrocortisone, Ipratropium, Cromoglicic acid, Prednisolone",
+        "mo_ta": "Coadministration with potent or moderate inducers of CYP450 3A4 may decrease the plasma concentrations of bedaquiline, which is primarily metabolized by CYP450 3A4 to the major N-monodesmethyl metabolite, M2. Because M2 is 4- to 6-fold less active than the parent drug in terms of antimycobacterial potency, the interaction may diminish the therapeutic effect of bedaquiline.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] Patel S, Robinson R, Burk M \"Hypertensive crisis associated with St. John's Wort.\" Am J Med 112 (2002): 507-8, [4] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "hoat_chat_a": "Bedaquiline",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Sirturo"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Agiect (hoạt chất: Dexamethasone)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter513",
+        "medication_b_id": "DDInter667",
+        "xu_tri": "Alternative treatment lacking CYP450 3A4-inducing activity is recommended in patients receiving erlotinib. If alternative treatment is unavailable and a potent inducer (e.g., carbamazepine, enzalutamide, lumacaftor, mitotane, phenobarbital, phenytoin, primidone (partially metabolized to phenobarbital), rifamycins, St. John&#x27;s wort) is to be used for more than a few days, an increase in the dosage of erlotinib should be considered as tolerated at 2-week intervals. Close clinical and laboratory monitoring for altered efficacy and safety, including renal and liver functions and serum electrolytes, is recommended.",
+        "thay_the_a": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Hydrocortisone, Olopatadine, Vitamin A, Ipratropium",
+        "thay_the_b": "L01E, Lenvatinib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "mo_ta": "Coadministration with inducers of CYP450 3A4 may decrease the plasma concentrations of erlotinib, which is primarily metabolized by the isoenzyme.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [2] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [3] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [6] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [7] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [8] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6, [9] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [10] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [14] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "hoat_chat_a": "Dexamethasone",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Agiect"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter1202",
+        "xu_tri": "Patients should be monitored closely for symptoms of neuropathy such as burning, tingling, pain, or numbness in the hands and feet. Since the development of peripheral neuropathy may be dose-related for many drugs, the recommended dosages should generally not be exceeded. Consideration should be given to dosage reduction or immediate discontinuation of these medications in patients who develop peripheral neuropathy to limit further damage.",
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Mipomersen, Evinacumab, Evolocumab, Dextrothyroxine, Clofibrate, Lomitapide, Colestipol, Bempedoic acid, Colesevelam",
+        "thay_the_b": "A02B, Levofloxacin, Bismuth subcitrate potassium, Dexlansoprazole, Rifabutin, P01A, Quinacrine, Atovaquone, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Sulfamethizole, Mafenide",
+        "mo_ta": "The risk of peripheral neuropathy may be increased during concurrent use of two or more agents that are associated with this adverse effect. Patient risk factors include diabetes and age older than 60 years.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [2] Pharmaceutical Society of Australia \"APPGuide online. Australian prescription products guide online. Available from: URL: http://www.appco.com.au/appguide/default.asp.\" ([2006]):, [3] Carrion C, Espinosa E, Herrero A, Garcia B \"Possible vincristine-isoniazid interaction.\" Ann Pharmacother 29 (1995): 201, [4] Argov Z, Mastaglia FL \"Drug-induced peripheral neuropathies.\" Br Med J 1 (1979): 663-6",
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Metronidazole",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Aldezil injection isotonic"
+        ]
+      },
+      {
+        "thuoc_a": "Sirturo (hoạt chất: Bedaquiline)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter170",
+        "medication_b_id": "DDInter667",
+        "xu_tri": "The use of bedaquiline with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; other antituberculous agents; azole antifungal agents; ACE inhibitors; disulfiram; endothelin receptor antagonists; ketolide and macrolide antibiotics; interferons; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice), especially in patients with diminished hepatic reserve. Patients treated with bedaquiline should have serum ALT, AST, alkaline phosphatase, and bilirubin monitored at baseline and monthly during treatment, or as often as needed. An increase of serum aminotransferases to greater than 3 times ULN should be followed by repeat testing within 48 hours. Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Discontinue bedaquiline if aminotransferase elevations are accompanied by total bilirubin elevation greater than 2 times ULN, aminotransferase elevations are greater than 8 times ULN, or aminotransferase elevations persist beyond 2 weeks.",
+        "thay_the_a": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Sulfamethoxazole, Streptomycin, Trimethoprim, Cycloserine, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Avapritinib, Selumetinib, Ibrutinib, Tivozanib, Zanubrutinib, Brigatinib, Ripretinib, Alpelisib, Ruxolitinib",
+        "mo_ta": "Coadministration of bedaquiline with other agents known to induce hepatotoxicity may potentiate the risk of liver injury.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [3] \"Product Information. Hivid (zalcitabine).\" Roche Laboratories, Nutley, NJ.",
+        "hoat_chat_a": "Bedaquiline",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Sirturo"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter170",
+        "xu_tri": "-",
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Cimetidine, Esomeprazole, Ranitidine, Nizatidine",
+        "thay_the_b": "J04A, Capreomycin, Rifamycin, Streptomycin, Cycloserine, Pyridoxine, Pretomanid, Aminosalicylic acid",
+        "mo_ta": "Limited data suggest that metronidazole may rarely prolong the QT interval of the electrocardiogram. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. There have been isolated reports of QT prolongation and ventricular arrhythmias occurring in patients treated with metronidazole.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Kounas SP, Letsas KP, Sideris A, Efraimidis M, Kardaras F \"QT interval prolongation and torsades de pointes due to a coadministration of metronidazole and amiodarone.\" Pacing Clin Electrophysiol 28 (2005): 472-3, [2] Giannini AJ, DeFrance DT \"Metronidazole and alcohol: potential for combinative abuse.\" J Toxicol Clin Toxicol 20 (1983): 509-15, [3] \"Product Information. Benznidazole (benznidazole).\" Everett Laboratories Inc, West Orange, NJ., [4] Williams CS, Woodcock KR \"Do ethanol and metronidazole interact to produce a disulfiram-like reaction?.\" Ann Pharmacother 34 (2000): 255-7, [5] Krulewitch CJ \"An unexpected adverse drug effect.\" J Midwifery Womens Health 48 (2003): 67-8, [6] Alexander I \"Alcohol-antabuse syndrome in patients receiving metronidazole during gynaecological treatment.\" Br J Clin Pract 39 (1985): 292-3, [7] \"Product Information. Flagyl (metronidazole).\" Searle, Skokie, IL., [8] Harries DP, Teale KF, Sunderland G \"Metronidazole and alcohol: potential problems.\" Scott Med J 35 (1990): 179-80, [9] Visapaa JP, Tillonen JS, Kaihovaara PS, Salaspuro MP \"Lack of disulfiram-like reaction with metronidazole and ethanol.\" Ann Pharmacother 36 (2002): 971-4, [10] Edwards DL, Fink PC, Van Dyke PO \"Disulfiram-like reaction associated with intravenous trimethoprim-sulfamethoxazole and metronidazole.\" Clin Pharm 5 (1986): 999-1000, [11] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [12] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [13] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [14] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter513",
+        "xu_tri": "-",
+        "thay_the_a": "C10A, Fenofibric acid, Mipomersen, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Clofibrate, Cerivastatin, Lomitapide, Alirocumab, C10B",
+        "thay_the_b": "R01A, Mupirocin, Ciclesonide, Mometasone furoate, Mometasone, Vitamin A, Ephedrine, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter513",
+        "xu_tri": "-",
+        "thay_the_a": "A02B, Tinidazole, Bismuth subcitrate potassium, Dexlansoprazole, Esomeprazole, P01A, Tinidazole, Quinacrine, Secnidazole, Furazolidone, Nitazoxanide, Trimetrexate, D06B, Mafenide",
+        "thay_the_b": "R01A, Ciclesonide, Mometasone furoate, Mometasone, Flunisolide, Ephedrine, Vitamin A, Ipratropium, Cromoglicic acid, Hyaluronic acid, Betamethasone, Nedocromil",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter667",
+        "xu_tri": "-",
+        "thay_the_a": "C10A, Gemfibrozil, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Cerivastatin, Colestipol",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Bosutinib, Vemurafenib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Ibrutinib",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      },
+      {
+        "thuoc_a": "Basaterol (hoạt chất: Lovastatin)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1098",
+        "medication_b_id": "DDInter170",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lovastatin",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Basaterol"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic (hoạt chất: Metronidazole)",
+        "thuoc_b": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "medication_a_id": "DDInter1202",
+        "medication_b_id": "DDInter667",
+        "xu_tri": "-",
+        "thay_the_a": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin, P01A, Tinidazole, Quinacrine, Secnidazole, Atovaquone, Furazolidone",
+        "thay_the_b": "L01E, Dabrafenib, Acalabrutinib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Selumetinib, Cobimetinib, Capmatinib",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Metronidazole",
+        "hoat_chat_b": "Erlotinib",
+        "san_pham_a": [
+          "Aldezil injection isotonic"
+        ],
+        "san_pham_b": [
+          "APO-Erlotinib"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Sirturo",
+        "thuoc_b": "Agiect",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Sirturo chung với Agiect có thể làm giảm nồng độ Sirturo trong máu, vì Agiect được xem là chất có khả năng cảm ứng enzym CYP450 3A4 - tức là làm tăng hoạt động của một loại enzym trong gan chuyên phân hủy nhiều loại thuốc. Sirturo chủ yếu bị phân hủy bởi chính enzym này thành chất chuyển hóa M2, và chất M2 chỉ còn hoạt tính kháng khuẩn yếu hơn nhiều so với thuốc gốc (kém 4-6 lần). Do đó, khi dùng chung, lượng Sirturo trong cơ thể có thể bị giảm và hiệu quả điều trị của thuốc có thể bị suy giảm.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng chung với các chất cảm ứng mạnh hoặc trung bình của CYP450 3A4 có thể làm giảm nồng độ bedaquiline trong huyết tương, vì bedaquiline chủ yếu được chuyển hóa bởi CYP450 3A4 thành chất chuyển hóa chính N-monodesmethyl, M2. Do M2 có hoạt tính kháng mycobacteria kém hơn 4-6 lần so với thuốc gốc, tương tác này có thể làm giảm tác dụng điều trị của bedaquiline.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Agiect",
+        "thuoc_b": "APO-Erlotinib",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Agiect và APO-Erlotinib có thể làm giảm nồng độ APO-Erlotinib trong máu, vì Agiect có khả năng kích thích một loại enzyme trong gan (CYP450 3A4) - enzyme này chính là con đường chính để cơ thể phân hủy APO-Erlotinib. Khi enzyme này hoạt động mạnh hơn, APO-Erlotinib bị đào thải nhanh hơn, khiến lượng thuốc còn lại trong máu ít đi so với mong muốn. Agiect có thể làm gan \"tăng tốc\" phân hủy APO-Erlotinib, nên lượng thuốc này trong máu có thể bị giảm xuống. Điều đó có nghĩa là APO-Erlotinib có thể không còn đủ nồng độ để phát huy tác dụng như mong đợi. Nếu bạn đang dùng cả hai loại này, hãy cho bác sĩ hoặc dược sĩ biết để được theo dõi phù hợp, và đừng tự ý thay đổi cách dùng thuốc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời với các chất gây cảm ứng CYP450 3A4 có thể làm giảm nồng độ erlotinib trong huyết tương, do erlotinib chủ yếu được chuyển hóa bởi isoenzyme này.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Basaterol",
+        "thuoc_b": "Aldezil injection isotonic",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Basaterol và Aldezil injection isotonic có thể làm tăng nguy cơ tổn thương dây thần kinh ngoại biên (tình trạng tê, rát, yếu ở tay chân), vì cả hai thuốc đều có liên quan đến tác dụng phụ này và khi kết hợp thì nguy cơ cộng dồn lại. Những người có bệnh đái tháo đường hoặc trên 60 tuổi là nhóm dễ gặp rủi ro này hơn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Nguy cơ bị tổn thương dây thần kinh ngoại biên có thể tăng lên khi dùng đồng thời từ hai loại thuốc trở lên có liên quan đến tác dụng phụ này. Các yếu tố nguy cơ của bệnh nhân bao gồm đái tháo đường và tuổi trên 60.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Sirturo",
+        "thuoc_b": "APO-Erlotinib",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Sirturo và APO-Erlotinib có thể làm tăng nguy cơ tổn thương gan, vì cả hai đều là những thuốc có khả năng gây độc cho gan và khi kết hợp với nhau thì tác động này có thể cộng dồn lại. Đây là lý do cần thận trọng khi hai thuốc này được dùng cùng lúc, và việc theo dõi chức năng gan trong quá trình điều trị là điều đáng lưu tâm. [ẢNH_placeholder]\n\nKhi phải uống cả Sirturo lẫn APO-Erlotinib, bạn nên biết rằng cả hai thuốc này đều có thể gây hại cho gan, và dùng chung thì nguy cơ tổn thương gan có thể tăng lên. Vì vậy đừng tự ý ngừng hay đổi thuốc, mà hãy báo ngay cho bác sĩ nếu bạn thấy mệt mỏi bất thường, vàng da, vàng mắt, nước tiểu sẫm màu hay đau vùng bụng trên bên phải. Bác sĩ sẽ là người quyết định cách theo dõi và xử trí phù hợp cho bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng chung bedaquiline với các thuốc khác được biết là gây độc cho gan có thể làm tăng nguy cơ tổn thương gan.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic",
+        "thuoc_b": "Sirturo",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Aldezil injection isotonic và Sirturo có thể làm tăng nguy cơ ảnh hưởng đến nhịp tim, vì dữ liệu hạn chế cho thấy Aldezil injection isotonic hiếm khi kéo dài khoảng QT trên điện tâm đồ, và khi phối hợp với thuốc khác cũng có khả năng kéo dài khoảng QT thì tác động có thể cộng gộp, làm tăng nguy cơ loạn nhịp thất gồm xoắn đỉnh và đột tử; đã có báo cáo riêng lẻ về kéo dài QT và loạn nhịp thất ở người dùng Aldezil injection isotonic. Người bệnh thân mến, khi dùng chung Aldezil injection isotonic với Sirturo, nhịp tim của bạn có thể bị ảnh hưởng theo hướng xấu đi. Lý do là Aldezil injection isotonic hiếm khi làm khoảng QT trên điện tâm đồ dài ra, và nếu gặp thêm một thuốc cũng có khả năng gây tác động tương tự thì hai cái cộng lại có thể làm tăng nguy cơ loạn nhịp tim nguy hiểm kiểu xoắn đỉnh, thậm chí đột tử. Đã từng có báo cáo lẻ tẻ ghi nhận chuyện kéo dài khoảng QT và loạn nhịp thất ở người dùng Aldezil injection isotonic. Vì vậy hãy để bác sĩ hoặc dược sĩ theo dõi khi bạn dùng hai thuốc này cùng lúc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dữ liệu hạn chế cho thấy metronidazole hiếm khi kéo dài khoảng QT của điện tâm đồ. Về mặt lý thuyết, dùng chung với các thuốc khác có thể kéo dài khoảng QT có thể dẫn đến tác dụng cộng gộp và tăng nguy cơ loạn nhịp thất bao gồm xoắn đỉnh và đột tử. Đã có các báo cáo riêng lẻ về kéo dài QT và loạn nhịp thất xảy ra ở bệnh nhân được điều trị bằng metronidazole.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Basaterol",
+        "thuoc_b": "Agiect",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Basaterol và Agiect có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic",
+        "thuoc_b": "Agiect",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Aldezil injection isotonic và Agiect có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Basaterol",
+        "thuoc_b": "APO-Erlotinib",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Basaterol và APO-Erlotinib có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Aldezil injection isotonic",
+        "thuoc_b": "APO-Erlotinib",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Aldezil injection isotonic và APO-Erlotinib có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong cùng một đơn thuốc của bạn và thấy có 9 cặp tương tác: 1 cặp mức nghiêm trọng, 3 cặp mức trung bình, 1 cặp mức nhẹ và 4 cặp chưa phân loại. Đáng chú ý nhất là Sirturo và Agiect ở mức nghiêm trọng, cùng với Agiect và APO-Erlotinib và Basaterol và Aldezil injection isotonic ở mức trung bình. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Sirturo và Agiect",
+          "muc_do": "nang"
+        },
+        {
+          "text": "Agiect và APO-Erlotinib",
+          "muc_do": "trung_binh"
+        },
+        {
+          "text": "Basaterol và Aldezil injection isotonic",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 3,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 4,
+      "tong_so_cap": 9
+    },
+    "checked_products": [
+      "Agiect",
+      "Basaterol",
+      "APO-Erlotinib",
+      "Sirturo",
+      "Aldezil injection isotonic"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Agiect",
+          "Basaterol",
+          "APO-Erlotinib",
+          "Sirturo",
+          "Aldezil injection isotonic"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

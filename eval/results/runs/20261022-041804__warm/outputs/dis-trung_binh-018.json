@@ -1,0 +1,143 @@
+{
+  "case_id": "dis-trung_binh-018",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0565,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Itraconazole"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Itraconazole",
+        "ten_chuan": "Itraconazole",
+        "medication_id": "DDInter995",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Apicozol 100"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Apicozol 100"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Giảm toan dịch vị",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với Apicozol 100, nếu bạn đang có tình trạng giảm toan dịch vị (dạ dày tiết ít axit hơn bình thường) thì khả năng hấp thu thuốc khi uống lúc đói có thể bị giảm đi. Lý do là thành phần itraconazole trong viên nang 100 mg cần môi trường axit ở dạ dày để tan và hấp thu tốt, nên khi lượng axit dạ dày ít hơn thì việc hấp thu cũng kém hơn. Các nghiên cứu trên bệnh nhân AIDS bị giảm hoặc mất hẳn axit dạ dày cho thấy uống viên nang 100 mg cùng một lượng nước ngọt có ga loại không ăn kiêng (khoảng 8 ounce) giúp tăng hấp thu itraconazole khi uống lúc đói. Tuy nhiên, mức tăng này so với khi uống cùng một bữa ăn đầy đủ thì chưa được xác định rõ.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):",
+        "mo_ta_dich": "Viên nang itraconazol 100 mg nên được dùng sau một bữa ăn đầy đủ. Trong điều kiện đói, hấp thu itraconazol từ dạng viên nang 100 mg bị giảm khi độ acid dạ dày giảm. Các nghiên cứu thực hiện trong điều kiện đói cho thấy dùng dạng viên nang 100 mg cùng 8 ounce đồ uống cola không ăn kiêng giúp tăng hấp thu itraconazol ở bệnh nhân AIDS bị vô toan dịch vị tương đối hoặc tuyệt đối; mức tăng này so với tác động của một bữa ăn đầy đủ là chưa rõ."
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Suy tim",
+        "muc_do": "nang",
+        "giai_thich": "Apicozol 100 có thể làm giảm nhẹ khả năng co bóp của tim theo kiểu phụ thuộc vào liều dùng. Ở người tình nguyện khỏe mạnh, khi truyền thuốc vào tĩnh mạch đã thấy chức năng bơm máu của tim (gọi là phân suất tống máu thất trái) giảm tạm thời mà không gây triệu chứng, và chỉ số này trở lại bình thường trước lần truyền kế tiếp. Ngoài ra, trong quá trình lưu hành thuốc đã có báo cáo về suy tim sung huyết, phù ngoại vi và phù phổi ở những người được điều trị nấm móng và/hoặc nhiễm nấm toàn thân. Vì vậy, nếu bạn có tiền sử hoặc đang mắc suy tim, hoặc có các yếu tố làm tăng nguy cơ suy tim như bệnh tim (ví dụ bệnh mạch vành, bệnh van tim), bệnh phổi nặng (ví dụ bệnh phổi tắc nghẽn mạn tính), suy thận và các tình trạng phù khác, thì việc dùng Apicozol 100 cần được cân nhắc kỹ giữa lợi ích và nguy cơ, đồng thời theo dõi các dấu hiệu của suy tim trong suốt thời gian dùng thuốc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):|\"Product Information. Tolsura (itraconazole).\" Mayne Pharma Inc  (2021):",
+        "mo_ta_dich": "Itraconazol có thể có tác dụng inotropic âm tính liên quan đến liều. Đã quan sát thấy sự giảm thoáng qua, không triệu chứng của phân suất tống máu thất trái khi dùng đường tĩnh mạch ở người tình nguyện khỏe mạnh; những tình trạng này hết trước lần truyền tiếp theo. Ngoài ra, các trường hợp suy tim sung huyết (CHF), phù ngoại vi và phù phổi đã được báo cáo trong kinh nghiệm hậu tiếp thị ở bệnh nhân được điều trị nấm móng và/hoặc nhiễm nấm toàn thân. Không nên dùng itraconazol để điều trị nấm móng ở bệnh nhân có bằng chứng rối loạn chức năng thất như CHF hoặc tiền sử CHF; không nên dùng itraconazol cho các chỉ định khác ở những bệnh nhân này trừ khi lợi ích rõ ràng vượt trội nguy cơ. Cần xem xét cẩn thận nguy cơ và lợi ích của liệu pháp itraconazol ở bệnh nhân... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc bệnh thận, dùng Apicozol 100 cần được cân nhắc thận trọng vì hiện có rất ít dữ liệu về việc dùng thuốc này ở người bị suy giảm chức năng thận. Ở một số người bệnh thận, lượng thuốc hấp thu vào cơ thể có thể thấp hơn bình thường, nên bác sĩ có thể cần theo dõi sát và điều chỉnh liều cho phù hợp. Với dạng thuốc dùng đường uống, người bị bệnh thận cũng cần được theo dõi cẩn thận khi dùng. Vì vậy, nếu bạn đang có vấn đề về thận, hãy cho bác sĩ hoặc dược sĩ biết trước khi dùng Apicozol 100 để được đánh giá đúng tình trạng của mình.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):|\"Product Information. Tolsura (itraconazole).\" Mayne Pharma Inc  (2021):",
+        "mo_ta_dich": "Dữ liệu hạn chế về việc sử dụng itraconazol đường uống ở bệnh nhân suy thận; phơi nhiễm itraconazol có thể thấp hơn ở một số bệnh nhân này. Cần thận trọng khi sử dụng itraconazol ở bệnh nhân suy thận và có thể cần điều chỉnh liều. Bệnh nhân suy thận cần được theo dõi cẩn thận khi sử dụng dạng nang 65 mg."
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "nang",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh gan, dùng Apicozol 100 cần hết sức thận trọng vì dữ liệu về việc dùng thuốc ở nhóm bệnh nhân này còn hạn chế, và bản thân thuốc từng ghi nhận một số ít trường hợp gây độc gan nghiêm trọng, kể cả suy gan và tử vong. Thuốc cũng được khuyến cáo rất hạn chế dùng cho người có men gan tăng hoặc bất thường, người đang có bệnh gan hoạt động, hoặc từng bị độc gan khi dùng thuốc khác, trừ khi tình huống thật sự nghiêm trọng hay đe dọa tính mạng và lợi ích mang lại vượt trội nguy cơ. Vì vậy, nếu có bệnh gan từ trước hoặc từng bị độc gan do thuốc khác, người bệnh cần được theo dõi chức năng gan cẩn thận trong suốt quá trình dùng Apicozol 100.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):|\"Product Information. Tolsura (itraconazole).\" Mayne Pharma Inc  (2021):",
+        "mo_ta_dich": "Dữ liệu hạn chế về việc sử dụng itraconazol đường uống ở bệnh nhân suy giảm chức năng gan. Itraconazol đã được ghi nhận liên quan đến các trường hợp hiếm gặp gây độc gan nghiêm trọng (bao gồm suy gan và tử vong). Khuyến cáo thận trọng khi sử dụng thuốc này ở bệnh nhân suy giảm chức năng gan; những bệnh nhân này cần được theo dõi cẩn thận trong quá trình điều trị. Việc điều trị bằng itraconazol được khuyến cáo mạnh mẽ không nên thực hiện ở bệnh nhân có men gan tăng cao hoặc bất thường, có bệnh gan đang hoạt động, hoặc đã từng bị độc gan với các thuốc khác trừ khi tình huống nghiêm trọng hoặc đe dọa tính mạng và lợi ích mong đợi vượt quá nguy cơ. Khuyến cáo theo dõi chức năng gan đối với bệnh nhân có bất thường chức năng gan từ trước hoặc những người đã từng bị độc gan với các thuốc khác."
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Hội chứng QT dài",
+        "muc_do": "trung_binh",
+        "giai_thich": "Apicozol 100 thuộc nhóm thuốc chống nấm có thể làm kéo dài khoảng QT trên điện tâm đồ – tức khoảng thời gian đo nhịp tim đập, và đã có báo cáo hiếm gặp về tình trạng này cùng một kiểu loạn nhịp tim nguy hiểm sau khi thuốc được lưu hành. Những báo cáo đó thường liên quan đến người bệnh đang bị bệnh nặng, có nhiều yếu tố nguy cơ cùng lúc như bệnh lý tim thực thể, rối loạn điện giải và việc dùng chung với các thuốc khác. Vì vậy, nếu bạn có tiền sử hoặc đang mắc hội chứng QT dài, việc dùng Apicozol 100 cần được bác sĩ/dược sĩ cân nhắc kỹ dựa trên tình trạng cụ thể của bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Nizoral (ketoconazole).\" Janssen Pharmaceuticals  (2001):|\"Product Information. Diflucan (fluconazole).\" Roerig Division  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):|\"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals  (2002):|\"Product Information. Noxafil (posaconazole).\" Schering-Plough Corporation  (2006):|\"Product Information. Tolsura (itraconazole).\" Mayne Pharma Inc  (2021):",
+        "mo_ta_dich": "Một số thuốc kháng nấm nhóm azole có liên quan đến kéo dài khoảng QT trên điện tâm đồ. Các trường hợp hiếm gặp kéo dài QT và xoắn đỉnh đã được báo cáo trong kinh nghiệm hậu tiếp thị; các báo cáo như vậy thường liên quan đến bệnh nhân bệnh nặng với nhiều yếu tố nguy cơ gây nhiễu, như bệnh tim cấu trúc, bất thường điện giải và thuốc dùng đồng thời. Các thuốc này nên được dùng thận trọng cho bệnh nhân có tình trạng có khả năng gây loạn nhịp tim. Nên tránh dùng đồng thời với các thuốc khác có khả năng làm tăng nguy cơ độc tính trên tim."
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Bệnh suy giảm miễn dịch",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người có tiền sử hoặc đang bị suy giảm miễn dịch, dùng Apicozol 100 có thể khiến thuốc được hấp thu vào cơ thể kém hơn bình thường. Điều này đã được ghi nhận ở một số nhóm bệnh nhân suy giảm miễn dịch như người bị giảm bạch cầu trung tính, người mắc AIDS và người đã ghép tạng. Ở người nhiễm HIV, tình trạng giảm axit trong dạ dày cũng được báo cáo và có thể làm giảm thêm khả năng hấp thu thuốc. Vì vậy, nếu bạn đang có bệnh nền thuộc nhóm này, nên cho bác sĩ hoặc dược sĩ biết để được theo dõi phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):",
+        "mo_ta_dich": "Sinh khả dụng đường uống của itraconazol 100-mg dạng nang có thể bị giảm ở một số bệnh nhân suy giảm miễn dịch (ví dụ: bệnh nhân giảm bạch cầu trung tính, bệnh nhân AIDS, người nhận ghép tạng); ngoài ra, do tình trạng giảm axit clohydric đã được báo cáo ở bệnh nhân nhiễm HIV, sự hấp thu itraconazol có thể bị giảm ở những bệnh nhân này. Liều itraconazol 100-mg dạng nang nên được điều chỉnh dựa trên đáp ứng lâm sàng của những bệnh nhân này. Dung dịch uống itraconazol không được khuyến cáo cho điều trị ban đầu ở bệnh nhân giảm bạch cầu trung tính nặng có nguy cơ tức thời mắc bệnh nấm candida toàn thân."
+      },
+      {
+        "san_pham": [
+          "Apicozol 100"
+        ],
+        "ten_benh": "Xơ nang",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh xơ nang, dùng Apicozol 100 có thể cho kết quả không ổn định: một nghiên cứu trên bệnh nhân xơ nang dùng dạng dung dịch uống của hoạt chất trong thuốc này cho thấy nồng độ thuốc trong máu thay đổi thất thường và ở một số người còn không đạt được mức điều trị mong muốn. Điều này có nghĩa là hiệu quả của Apicozol 100 ở nhóm người bệnh này có thể không được như kỳ vọng, nên nếu bạn có bệnh nền xơ nang thì nên cho bác sĩ hoặc dược sĩ biết để được theo dõi phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2002):|\"Product Information. Sporanox (itraconazole).\" Janssen Pharmaceuticals  (2022):",
+        "mo_ta_dich": "Trong một nghiên cứu sử dụng dung dịch uống itraconazole ở bệnh nhân xơ nang, nồng độ thuốc điều trị thay đổi và không đạt được ở một số bệnh nhân. Nên cân nhắc liệu pháp thay thế cho những bệnh nhân không đáp ứng với dung dịch uống itraconazole hoặc viên nang itraconazole 100 mg."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh gan, Bệnh suy giảm miễn dịch, Bệnh thận, Giảm toan dịch vị, Hội chứng QT dài, Suy tim, Xơ nang.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nhe-039",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.8078,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Tamsulosin",
+      "Warfarin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Tamsulosin",
+        "ten_chuan": "Tamsulosin",
+        "medication_id": "DDInter1745",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Warfarin",
+        "ten_chuan": "Warfarin",
+        "medication_id": "DDInter1951",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Tamsulosin",
+        "thuoc_b": "Warfarin",
+        "medication_a_id": "DDInter1745",
+        "medication_b_id": "DDInter1951",
+        "mo_ta": "Studies evaluating a potential drug interaction between warfarin and tamsulosin have provided inconclusive results. The manufacturer recommends caution if these agents are used together. Clinical and INR/PT monitoring is recommended. Patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [2] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [3] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3, [4] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36, [5] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30, [6] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1, [7] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70, [8] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3, [9] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4, [10] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6, [11] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55, [12] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362, [13] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7, [14] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [15] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174, [16] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557, [17] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1, [18] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):, [19] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50, [20] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6, [21] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7, [22] O'Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1, [23] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6, [24] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70, [25] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6, [26] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5, [27] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4, [28] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454, [29] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9, [30] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131, [31] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90, [32] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20, [33] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800, [34] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83, [35] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [36] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7, [37] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17, [38] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70, [39] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G04C, Silodosin, Solifenacin, G01A, Methazolamide, Diazoxide, Econazole, Diclofenamide, Mafenide, Tioconazole, Furazolidone, Lactic acid, Povidone-iodine, Diiodohydroxyquinoline",
+        "thay_the_b": "B01A, Ticagrelor, Betrixaban, Apixaban, Cilostazol, Rivaroxaban, Lepirudin, Acenocoumarol, Urokinase, Cangrelor, Caplacizumab, Argatroban",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Contiflo OD 0,4mg (hoạt chất: Tamsulosin)",
+        "thuoc_b": "A.T Warfarin 1 mg (hoạt chất: Warfarin)",
+        "medication_a_id": "DDInter1745",
+        "medication_b_id": "DDInter1951",
+        "mo_ta": "Studies evaluating a potential drug interaction between warfarin and tamsulosin have provided inconclusive results. The manufacturer recommends caution if these agents are used together. Clinical and INR/PT monitoring is recommended. Patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [2] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [3] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3, [4] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36, [5] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30, [6] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1, [7] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70, [8] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3, [9] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4, [10] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6, [11] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55, [12] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362, [13] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7, [14] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [15] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174, [16] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557, [17] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1, [18] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):, [19] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50, [20] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6, [21] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7, [22] O'Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1, [23] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6, [24] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70, [25] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6, [26] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5, [27] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4, [28] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454, [29] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9, [30] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131, [31] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90, [32] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20, [33] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800, [34] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83, [35] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [36] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7, [37] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17, [38] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70, [39] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G04C, Silodosin, Solifenacin, G01A, Methazolamide, Diazoxide, Econazole, Diclofenamide, Mafenide, Tioconazole, Furazolidone, Lactic acid, Povidone-iodine, Diiodohydroxyquinoline",
+        "thay_the_b": "B01A, Ticagrelor, Betrixaban, Apixaban, Cilostazol, Rivaroxaban, Lepirudin, Acenocoumarol, Urokinase, Cangrelor, Caplacizumab, Argatroban",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Tamsulosin",
+        "hoat_chat_b": "Warfarin",
+        "san_pham_a": [
+          "Contiflo OD 0,4mg"
+        ],
+        "san_pham_b": [
+          "A.T Warfarin 1 mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Contiflo OD 0,4mg (hoạt chất: Tamsulosin)",
+        "thuoc_b": "A.T Warfarin 1 mg (hoạt chất: Warfarin)",
+        "medication_a_id": "DDInter1745",
+        "medication_b_id": "DDInter1951",
+        "xu_tri": "-",
+        "thay_the_a": "G04C, Silodosin, Solifenacin, G01A, Methazolamide, Diazoxide, Econazole, Diclofenamide, Mafenide, Tioconazole, Furazolidone, Lactic acid, Povidone-iodine, Diiodohydroxyquinoline",
+        "thay_the_b": "B01A, Ticagrelor, Betrixaban, Apixaban, Cilostazol, Rivaroxaban, Lepirudin, Acenocoumarol, Urokinase, Cangrelor, Caplacizumab, Argatroban",
+        "mo_ta": "Studies evaluating a potential drug interaction between warfarin and tamsulosin have provided inconclusive results. The manufacturer recommends caution if these agents are used together. Clinical and INR/PT monitoring is recommended. Patients should be advised to promptly report any signs of bleeding to their physician, including pain, swelling, headache, dizziness, weakness, prolonged bleeding from cuts, increased menstrual flow, vaginal bleeding, nosebleeds, bleeding of gums from brushing, unusual bleeding or bruising, red or brown urine, or red or black stools.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [2] \"Product Information. Flomax (tamsulosin).\" Boehringer-Ingelheim, Ridgefield, CT., [3] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3, [4] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36, [5] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30, [6] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1, [7] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70, [8] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3, [9] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4, [10] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6, [11] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55, [12] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362, [13] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7, [14] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [15] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174, [16] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557, [17] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1, [18] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):, [19] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50, [20] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6, [21] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7, [22] O'Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1, [23] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6, [24] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70, [25] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6, [26] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5, [27] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4, [28] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454, [29] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9, [30] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131, [31] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90, [32] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20, [33] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800, [34] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83, [35] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [36] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7, [37] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17, [38] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70, [39] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+        "hoat_chat_a": "Tamsulosin",
+        "hoat_chat_b": "Warfarin",
+        "san_pham_a": [
+          "Contiflo OD 0,4mg"
+        ],
+        "san_pham_b": [
+          "A.T Warfarin 1 mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Contiflo OD 0,4mg",
+        "thuoc_b": "A.T Warfarin 1 mg",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Contiflo OD 0,4mg và A.T Warfarin 1 mg cần được theo dõi cẩn thận, vì các nghiên cứu về tương tác giữa hai thuốc này cho kết quả chưa rõ ràng, và nhà sản xuất khuyến cáo thận trọng khi dùng cùng nhau. Để đảm bảo an toàn, nên theo dõi các chỉ số đông máu như INR/PT. Người bệnh cần báo ngay cho bác sĩ nếu thấy bất kỳ dấu hiệu chảy máu nào, bao gồm đau, sưng, đau đầu, chóng mặt, yếu sức, chảy máu lâu khi bị vết cắt, kinh nguyệt ra nhiều hơn, chảy máu âm đạo, chảy máu cam, chảy máu chân răng khi đánh răng, bầm tím hoặc chảy máu bất thường, nước tiểu đỏ hoặc nâu, hoặc phân đỏ hoặc đen.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Các nghiên cứu đánh giá tương tác thuốc tiềm tàng giữa warfarin và tamsulosin đã đưa ra kết quả chưa rõ ràng. Nhà sản xuất khuyến cáo thận trọng nếu các thuốc này được dùng cùng nhau. Khuyến cáo theo dõi lâm sàng và INR/PT. Người bệnh nên được khuyên báo ngay cho bác sĩ nếu có bất kỳ dấu hiệu chảy máu nào, bao gồm đau, sưng, đau đầu, chóng mặt, yếu sức, chảy máu lâu khi bị vết cắt, kinh nguyệt ra nhiều hơn, chảy máu âm đạo, chảy máu cam, chảy máu chân răng khi đánh răng, chảy máu hoặc bầm tím bất thường, nước tiểu đỏ hoặc nâu, hoặc phân đỏ hoặc đen.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức nhẹ. Cặp đáng chú ý là Contiflo OD 0,4mg + A.T Warfarin 1 mg. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Contiflo OD 0,4mg + A.T Warfarin 1 mg",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Contiflo OD 0,4mg",
+      "A.T Warfarin 1 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Contiflo OD 0,4mg",
+          "A.T Warfarin 1 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

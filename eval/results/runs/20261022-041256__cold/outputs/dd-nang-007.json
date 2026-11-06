@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nang-007",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 4.2822,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ruxolitinib",
+      "Baricitinib"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ruxolitinib",
+        "ten_chuan": "Ruxolitinib",
+        "medication_id": "DDInter1628",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Baricitinib",
+        "ten_chuan": "Baricitinib",
+        "medication_id": "DDInter165",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ruxolitinib",
+        "thuoc_b": "Baricitinib",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter165",
+        "mo_ta": "Coadministration of baricitinib with other immunosuppressive agents may potentiate the risk of infections as well as lymphoma and other malignancies. Serious and sometimes fatal infections due to bacterial, mycobacterial, invasive fungal, viral, or other opportunistic pathogens have been reported in patients receiving baricitinib, most of whom were taking concomitant immunosuppressants such as methotrexate or corticosteroids. The most common serious infections reported with baricitinib treatment include pneumonia, herpes zoster, and urinary tract infection. Opportunistic infections include tuberculosis, multidermatomal herpes zoster, esophageal candidiasis, pneumocystosis, acute histoplasmosis, cryptococcosis, cytomegalovirus, and BK virus. Lymphoma and other malignancies, including melanoma and non-melanoma skin cancers, have also been observed with the use of baricitinib and other Janus kinase inhibitors.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Olumiant (baricitinib).\" Lilly, Eli and Company, Indianapolis, IN., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "xu_tri": "Concomitant use of baricitinib with other Janus kinase (JAK) inhibitors, biologic disease-modifying antirheumatic drugs (DMARDs), or potent immunosuppressants (e.g., azathioprine, cyclosporine) is not recommended. Patients receiving baricitinib should be closely monitored for the development of signs and symptoms of infection during and after treatment, including the possible development of tuberculosis in patients who tested negative for latent tuberculosis infection prior to initiating therapy. If a serious infection, an opportunistic infection, or sepsis develops, baricitinib should be interrupted until the infection is controlled.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib, Lapatinib, Vandetanib",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Tacrolimus, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Olumiant (hoạt chất: Baricitinib)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter165",
+        "mo_ta": "Coadministration of baricitinib with other immunosuppressive agents may potentiate the risk of infections as well as lymphoma and other malignancies. Serious and sometimes fatal infections due to bacterial, mycobacterial, invasive fungal, viral, or other opportunistic pathogens have been reported in patients receiving baricitinib, most of whom were taking concomitant immunosuppressants such as methotrexate or corticosteroids. The most common serious infections reported with baricitinib treatment include pneumonia, herpes zoster, and urinary tract infection. Opportunistic infections include tuberculosis, multidermatomal herpes zoster, esophageal candidiasis, pneumocystosis, acute histoplasmosis, cryptococcosis, cytomegalovirus, and BK virus. Lymphoma and other malignancies, including melanoma and non-melanoma skin cancers, have also been observed with the use of baricitinib and other Janus kinase inhibitors.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Olumiant (baricitinib).\" Lilly, Eli and Company, Indianapolis, IN., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "xu_tri": "Concomitant use of baricitinib with other Janus kinase (JAK) inhibitors, biologic disease-modifying antirheumatic drugs (DMARDs), or potent immunosuppressants (e.g., azathioprine, cyclosporine) is not recommended. Patients receiving baricitinib should be closely monitored for the development of signs and symptoms of infection during and after treatment, including the possible development of tuberculosis in patients who tested negative for latent tuberculosis infection prior to initiating therapy. If a serious infection, an opportunistic infection, or sepsis develops, baricitinib should be interrupted until the infection is controlled.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib, Lapatinib, Vandetanib",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Tacrolimus, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Baricitinib",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Olumiant"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Olumiant (hoạt chất: Baricitinib)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter165",
+        "xu_tri": "Concomitant use of baricitinib with other Janus kinase (JAK) inhibitors, biologic disease-modifying antirheumatic drugs (DMARDs), or potent immunosuppressants (e.g., azathioprine, cyclosporine) is not recommended. Patients receiving baricitinib should be closely monitored for the development of signs and symptoms of infection during and after treatment, including the possible development of tuberculosis in patients who tested negative for latent tuberculosis infection prior to initiating therapy. If a serious infection, an opportunistic infection, or sepsis develops, baricitinib should be interrupted until the infection is controlled.",
+        "thay_the_a": "L01E, Entrectinib, Pralsetinib, Dabrafenib, Dacomitinib, Pexidartinib, Tepotinib, Fedratinib, Larotrectinib, Vemurafenib, Lapatinib, Vandetanib",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Tacrolimus, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "mo_ta": "Coadministration of baricitinib with other immunosuppressive agents may potentiate the risk of infections as well as lymphoma and other malignancies. Serious and sometimes fatal infections due to bacterial, mycobacterial, invasive fungal, viral, or other opportunistic pathogens have been reported in patients receiving baricitinib, most of whom were taking concomitant immunosuppressants such as methotrexate or corticosteroids. The most common serious infections reported with baricitinib treatment include pneumonia, herpes zoster, and urinary tract infection. Opportunistic infections include tuberculosis, multidermatomal herpes zoster, esophageal candidiasis, pneumocystosis, acute histoplasmosis, cryptococcosis, cytomegalovirus, and BK virus. Lymphoma and other malignancies, including melanoma and non-melanoma skin cancers, have also been observed with the use of baricitinib and other Janus kinase inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Olumiant (baricitinib).\" Lilly, Eli and Company, Indianapolis, IN., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0",
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Baricitinib",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Olumiant"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg",
+        "thuoc_b": "Olumiant",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Jakavi 10mg cùng Olumiant có thể làm tăng nguy cơ nhiễm trùng, bao gồm cả lymphoma và các bệnh ác tính khác, do cả hai đều có tác dụng ức chế miễn dịch. Các nhiễm trùng nặng, đôi khi gây tử vong, do vi khuẩn, mycobacteria, nấm xâm lấn, virus hoặc các tác nhân cơ hội khác đã được báo cáo ở bệnh nhân dùng Olumiant, phần lớn trong số đó đang dùng đồng thời các thuốc ức chế miễn dịch khác. Các nhiễm trùng nặng thường gặp nhất khi điều trị bằng Olumiant gồm viêm phổi, herpes zoster và nhiễm trùng đường tiết niệu; các nhiễm trùng cơ hội gồm lao, herpes zoster nhiều khoanh, nấm candida thực quản, pneumocystosis, histoplasmosis cấp, cryptococcosis, cytomegalovirus và virus BK. Lymphoma và các bệnh ác tính khác, bao gồm melanoma, cũng đã được ghi nhận. Khi dùng chung Jakavi 10mg và Olumiant, cả hai thuốc đều làm suy yếu hệ miễn dịch nên cơ thể dễ bị nhiễm trùng hơn, thậm chí là những nhiễm trùng nặng hoặc nguy hiểm đến tính mạng. Các nhiễm trùng thường gặp nhất khi dùng Olumiant là viêm phổi, herpes zoster (zona) và nhiễm trùng đường tiết niệu. Ngoài ra còn có thể gặp các nhiễm trùng cơ hội như lao, zona lan rộng nhiều khoanh, nấm thực quản, pneumocystosis, histoplasmosis cấp, cryptococcosis, cytomegalovirus và virus BK. Nguy cơ ung thư hạch (lymphoma) và các bệnh ác tính khác, bao gồm melanoma, cũng tăng lên khi dùng chung hai thuốc này.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời baricitinib với các thuốc ức chế miễn dịch khác có thể làm tăng nguy cơ nhiễm trùng cũng như lymphoma và các bệnh ác tính khác. Các nhiễm trùng nặng và đôi khi gây tử vong do vi khuẩn, mycobacteria, nấm xâm lấn, virus hoặc các tác nhân cơ hội khác đã được báo cáo ở bệnh nhân dùng baricitinib, phần lớn trong số họ đang dùng đồng thời các thuốc ức chế miễn dịch như methotrexate hoặc corticosteroid. Các nhiễm trùng nặng thường gặp nhất được báo cáo khi điều trị bằng baricitinib bao gồm viêm phổi, herpes zoster và nhiễm trùng đường tiết niệu. Các nhiễm trùng cơ hội bao gồm lao, herpes zoster nhiều khoanh, nấm candida thực quản, pneumocystosis, histoplasmosis cấp, cryptococcosis, cytomegalovirus và virus BK. Lymphoma và các bệnh ác tính khác, bao gồm melanoma...",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác thuốc-thuốc, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là Jakavi 10mg và Olumiant ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Jakavi 10mg và Olumiant",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Jakavi 10mg",
+      "Olumiant"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Jakavi 10mg",
+          "Olumiant"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

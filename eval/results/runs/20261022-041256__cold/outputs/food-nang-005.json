@@ -1,0 +1,126 @@
+{
+  "case_id": "food-nang-005",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 3.0182,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Acetaminophen",
+      "Dextropropoxyphene"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Acetaminophen",
+        "ten_chuan": "Acetaminophen",
+        "medication_id": "DDInter14",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Dextropropoxyphene",
+        "ten_chuan": "Dextropropoxyphene",
+        "medication_id": "DDInter528",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Acetaminophen",
+        "thuoc_b": "Dextropropoxyphene",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter528",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Sotraphar Notalzin (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Sotraphar Notalzin (hoạt chất: Dextropropoxyphene)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter528",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Dextropropoxyphene",
+        "san_pham_a": [
+          "Sotraphar Notalzin"
+        ],
+        "san_pham_b": [
+          "Sotraphar Notalzin"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Sotraphar Notalzin (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Sotraphar Notalzin (hoạt chất: Dextropropoxyphene)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter528",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Dextropropoxyphene",
+        "san_pham_a": [
+          "Sotraphar Notalzin"
+        ],
+        "san_pham_b": [
+          "Sotraphar Notalzin"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Sotraphar Notalzin"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Sotraphar Notalzin"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Sotraphar Notalzin"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nang",
+        "giai_thich": "Sotraphar Notalzin chứa dextropropoxyphen, hoạt chất mà khi dùng cùng rượu có thể gây tác dụng cộng gộp ức chế thần kinh trung ương và/hoặc ức chế hô hấp; việc lạm dụng thuốc này, dù đơn độc hay phối hợp với các chất ức chế thần kinh trung ương khác, từng là nguyên nhân chính gây tử vong liên quan đến thuốc, đặc biệt ở người có tiền sử rối loạn cảm xúc, ý tưởng tự sát hoặc lạm dụng rượu và ma túy. Ngoài ra, Sotraphar Notalzin còn chứa acetaminophen, và uống rượu mạn tính, quá mức có thể làm tăng nguy cơ tổn thương gan do acetaminophen, bao gồm các trường hợp hiếm gặp viêm gan gây tử vong và suy gan thực sự cần ghép gan, theo cơ chế cảm ứng enzym microsom gan do rượu mạn tính làm tăng tốc chuyển hóa acetaminophen và sinh thêm các chất chuyển hóa có khả năng gây độc gan.",
+        "giai_thich_duoc_si": "Sotraphar Notalzin chứa dextropropoxyphen, hoạt chất mà khi dùng cùng rượu có thể gây tác dụng cộng gộp ức chế thần kinh trung ương và/hoặc ức chế hô hấp; việc lạm dụng thuốc này, dù đơn độc hay phối hợp với các chất ức chế thần kinh trung ương khác, từng là nguyên nhân chính gây tử vong liên quan đến thuốc, đặc biệt ở người có tiền sử rối loạn cảm xúc, ý tưởng tự sát hoặc lạm dụng rượu và ma túy. Ngoài ra, Sotraphar Notalzin còn chứa acetaminophen, và uống rượu mạn tính, quá mức có thể làm tăng nguy cơ tổn thương gan do acetaminophen, bao gồm các trường hợp hiếm gặp viêm gan gây tử vong và suy gan thực sự cần ghép gan, theo cơ chế cảm ứng enzym microsom gan do rượu mạn tính làm tăng tốc chuyển hóa acetaminophen và sinh thêm các chất chuyển hóa có khả năng gây độc gan.",
+        "nguon_trich_dan": "Tổng hợp từ 2 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Darvon (propoxyphene).\" Lilly, Eli and Company  (2001):|Kaysen GA, Pond SM, Roper MH, Menke DJ, Marrama MA \"Combined hepatic and renal injury in alcoholics during therapeutic use of acetaminophen.\" Arch Intern Med 145 (1985):  2019-23|O'Dell JR, Zetterman RK, Burnett DA \"Centrilobular hepatic fibrosis following acetaminophen-induced hepatic necrosis in an alcoholic.\" JAMA 255 (1986):  2636-7|Seeff LB, Cuccherini BA, Zimmerman HJ, Adler E, Benjamin SB \"Acetaminophen hepatotoxicity in alcoholics.\" Ann Intern Med 104 (1986):  399-404|Thummel KE, Slattery JT, Nelson SD \"Mechanism by which ethanol diminishes the hepatotoxicity of acetaminophen.\" J Pharmacol Exp Ther 245 (1988):  129-36|McClain CJ, Kromhout JP, Peterson FJ, Holtzman JL \"Potentiation of acetaminophen hepatotoxicity by alcohol.\" JAMA 244 (1980):  251-3|Kartsonis A, Reddy KR, Schiff ER \"Alcohol, acetaminophen, and hepatic necrosis.\" Ann Intern Med 105 (1986):  138-9|Prescott LF, Critchley JA \"Drug interactions affecting analgesic toxicity.\" Am J Med 75 (1983):  113-6|\"Product Information. Tylenol (acetaminophen).\" McNeil Pharmaceutical  (2002):|Whitcomb DC, Block GD \"Association of acetaminopphen hepatotoxicity with fasting and ethanol use.\" JAMA 272 (1994):  1845-50|Bonkovsky HL \"Acetaminophen hepatotoxicity, fasting, and ethanol.\" JAMA 274 (1995):  301|Nelson EB, Temple AR \"Acetaminophen hepatotoxicity, fasting, and ethanol.\" JAMA 274 (1995):  301|Zimmerman HJ, Maddrey WC \"Acetaminophen (paracetamol) hepatotoxicity with regular intake of alcohol: analysis of instances of therapeutic misadventure.\" Hepatology 22 (1995):  767-73",
+        "mo_ta_dich": "Rượu có thể có tác dụng cộng gộp ức chế thần kinh trung ương và/hoặc ức chế hô hấp với propoxyphene. Lạm dụng propoxyphene, dù đơn độc hay phối hợp với các thuốc ức chế thần kinh trung ương khác, đã là nguyên nhân chính gây tử vong liên quan đến thuốc, đặc biệt ở bệnh nhân có tiền sử rối loạn cảm xúc, ý tưởng tự sát, hoặc lạm dụng rượu và ma túy. Tiêu thụ rượu mạn tính, quá mức có thể làm tăng nguy cơ gây độc gan do acetaminophen, bao gồm các trường hợp hiếm gặp viêm gan gây tử vong và suy gan thực sự cần ghép gan. Cơ chế được đề xuất là cảm ứng enzym microsom gan trong quá trình sử dụng rượu mạn tính, có thể dẫn đến tăng tốc chuyển hóa acetaminophen và tăng sản xuất các chất chuyển hóa có khả năng gây độc gan.",
+        "xu_tri_dich": "Nên tránh sử dụng rượu trong khi điều trị bằng propoxyphene. Bệnh nhân nên được cảnh báo không vượt quá liều khuyến cáo của propoxyphene và tránh các hoạt động đòi hỏi sự tỉnh táo tinh thần cho đến khi họ biết các thuốc này ảnh hưởng đến họ như thế nào. Nói chung, người nghiện rượu mạn tính nên tránh sử dụng acetaminophen thường xuyên hoặc quá mức. Liệu pháp giảm đau/hạ sốt thay thế có thể phù hợp ở bệnh nhân tiêu thụ từ ba đồ uống có cồn trở lên mỗi ngày. Tuy nhiên, nếu sử dụng acetaminophen, những bệnh nhân này nên được cảnh báo không vượt quá liều khuyến cáo (tối đa 4 g/ngày ở người lớn và trẻ em từ 12 tuổi trở lên)."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: rượu."
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nhe-045",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.2089,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Mefenamic acid",
+      "Cimetidine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Mefenamic acid",
+        "ten_chuan": "Mefenamic acid",
+        "medication_id": "DDInter1139",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Cimetidine",
+        "ten_chuan": "Cimetidine",
+        "medication_id": "DDInter380",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Mefenamic acid",
+        "thuoc_b": "Cimetidine",
+        "medication_a_id": "DDInter1139",
+        "medication_b_id": "DDInter380",
+        "mo_ta": "H2 antagonists may alter the disposition of nonsteroidal anti-inflammatory drugs (NSAIDs), resulting in increased or decreased plasma concentrations. Data are varied, even for the same NSAID. The mechanism may be related to inhibition of metabolism, changes in gastric pH that decrease absorption, and/or reduced urinary elimination. Statistically significant changes have been small and of limited clinical significance. Clinical monitoring of patient response and tolerance is recommended.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Said SA, Foda AM \"Influence of cimetidine on the pharmacokinetics of piroxicam in rat and man.\" Arzneimittelforschung 39 (1989): 790-2, [2] \"Product Information. Daypro (oxaprozin).\" Searle, Skokie, IL., [3] Scavone JM, Greenblatt DJ, Matlis R, Harmatz JS \"Interaction of oxaprozin with acetaminophen, cimetidine, and ranitidine.\" Eur J Clin Pharmacol 31 (1986): 371-4",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M01A, Phenylbutazone, Misoprostol, Chondroitin sulfate, Glucosamine, Esomeprazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aginamic (hoạt chất: Mefenamic acid)",
+        "thuoc_b": "Acitidine (hoạt chất: Cimetidine)",
+        "medication_a_id": "DDInter1139",
+        "medication_b_id": "DDInter380",
+        "mo_ta": "H2 antagonists may alter the disposition of nonsteroidal anti-inflammatory drugs (NSAIDs), resulting in increased or decreased plasma concentrations. Data are varied, even for the same NSAID. The mechanism may be related to inhibition of metabolism, changes in gastric pH that decrease absorption, and/or reduced urinary elimination. Statistically significant changes have been small and of limited clinical significance. Clinical monitoring of patient response and tolerance is recommended.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Said SA, Foda AM \"Influence of cimetidine on the pharmacokinetics of piroxicam in rat and man.\" Arzneimittelforschung 39 (1989): 790-2, [2] \"Product Information. Daypro (oxaprozin).\" Searle, Skokie, IL., [3] Scavone JM, Greenblatt DJ, Matlis R, Harmatz JS \"Interaction of oxaprozin with acetaminophen, cimetidine, and ranitidine.\" Eur J Clin Pharmacol 31 (1986): 371-4",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M01A, Phenylbutazone, Misoprostol, Chondroitin sulfate, Glucosamine, Esomeprazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Mefenamic acid",
+        "hoat_chat_b": "Cimetidine",
+        "san_pham_a": [
+          "Aginamic"
+        ],
+        "san_pham_b": [
+          "Acitidine"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aginamic (hoạt chất: Mefenamic acid)",
+        "thuoc_b": "Acitidine (hoạt chất: Cimetidine)",
+        "medication_a_id": "DDInter1139",
+        "medication_b_id": "DDInter380",
+        "xu_tri": "-",
+        "thay_the_a": "M01A, Phenylbutazone, Misoprostol, Chondroitin sulfate, Glucosamine, Esomeprazole",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Sucralfate, Misoprostol, Bismuth subcitrate potassium, Rifabutin, Esomeprazole, Vonoprazan",
+        "mo_ta": "H2 antagonists may alter the disposition of nonsteroidal anti-inflammatory drugs (NSAIDs), resulting in increased or decreased plasma concentrations. Data are varied, even for the same NSAID. The mechanism may be related to inhibition of metabolism, changes in gastric pH that decrease absorption, and/or reduced urinary elimination. Statistically significant changes have been small and of limited clinical significance. Clinical monitoring of patient response and tolerance is recommended.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Said SA, Foda AM \"Influence of cimetidine on the pharmacokinetics of piroxicam in rat and man.\" Arzneimittelforschung 39 (1989): 790-2, [2] \"Product Information. Daypro (oxaprozin).\" Searle, Skokie, IL., [3] Scavone JM, Greenblatt DJ, Matlis R, Harmatz JS \"Interaction of oxaprozin with acetaminophen, cimetidine, and ranitidine.\" Eur J Clin Pharmacol 31 (1986): 371-4",
+        "hoat_chat_a": "Mefenamic acid",
+        "hoat_chat_b": "Cimetidine",
+        "san_pham_a": [
+          "Aginamic"
+        ],
+        "san_pham_b": [
+          "Acitidine"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Aginamic",
+        "thuoc_b": "Acitidine",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Aginamic và Acitidine có thể làm thay đổi nồng độ của Aginamic trong máu, khiến nó tăng lên hoặc giảm xuống. Nguyên nhân có thể do Acitidine làm chậm quá trình chuyển hóa thuốc, làm thay đổi độ axit trong dạ dày khiến thuốc hấp thu kém hơn, và/hoặc làm giảm việc thải thuốc qua nước tiểu. Tuy vậy, các thay đổi đo được thường nhỏ và ít có ý nghĩa trên thực tế điều trị, và dữ liệu cũng không đồng nhất, ngay cả với cùng một loại thuốc kháng viêm không steroid. Vì vậy nên theo dõi đáp ứng và mức dung nạp của người bệnh.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Thuốc đối kháng thụ thể H2 có thể làm thay đổi số phận của thuốc kháng viêm không steroid (NSAID) trong cơ thể, dẫn đến nồng độ trong huyết tương tăng hoặc giảm. Dữ liệu không đồng nhất, ngay cả với cùng một NSAID. Cơ chế có thể liên quan đến ức chế chuyển hóa, thay đổi pH dạ dày làm giảm hấp thu, và/hoặc giảm thải trừ qua nước tiểu. Các thay đổi có ý nghĩa thống kê đều nhỏ và ít có ý nghĩa lâm sàng. Khuyến nghị theo dõi lâm sàng đáp ứng và dung nạp của người bệnh.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc này và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức nhẹ. Cặp đáng chú ý là Aginamic + Acitidine. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Aginamic + Acitidine",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Aginamic",
+      "Acitidine"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Aginamic",
+          "Acitidine"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

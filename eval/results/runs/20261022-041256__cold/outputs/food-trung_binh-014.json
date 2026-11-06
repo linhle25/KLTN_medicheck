@@ -1,0 +1,165 @@
+{
+  "case_id": "food-trung_binh-014",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.6747,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Calcium citrate",
+      "Cholecalciferol"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Calcium citrate",
+        "ten_chuan": "Calcium citrate",
+        "medication_id": "DDInter273",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Cholecalciferol",
+        "ten_chuan": "Cholecalciferol",
+        "medication_id": "DDInter367",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Calcium citrate",
+        "thuoc_b": "Cholecalciferol",
+        "medication_a_id": "DDInter273",
+        "medication_b_id": "DDInter367",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Alvethicone tab. (hoạt chất: Calcium citrate)",
+        "thuoc_b": "Alvethicone tab. (hoạt chất: Cholecalciferol)",
+        "medication_a_id": "DDInter273",
+        "medication_b_id": "DDInter367",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Calcium citrate",
+        "hoat_chat_b": "Cholecalciferol",
+        "san_pham_a": [
+          "Alvethicone tab."
+        ],
+        "san_pham_b": [
+          "Alvethicone tab."
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Alvethicone tab. (hoạt chất: Calcium citrate)",
+        "thuoc_b": "Alvethicone tab. (hoạt chất: Cholecalciferol)",
+        "medication_a_id": "DDInter273",
+        "medication_b_id": "DDInter367",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Calcium citrate",
+        "hoat_chat_b": "Cholecalciferol",
+        "san_pham_a": [
+          "Alvethicone tab."
+        ],
+        "san_pham_b": [
+          "Alvethicone tab."
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Alvethicone tab."
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Alvethicone tab."
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Alvethicone tab."
+        ],
+        "thuc_pham": "đại hoàng",
+        "muc_do": "trung_binh",
+        "giai_thich": "Alvethicone chứa calcium citrate, mà việc dùng cùng thức ăn nói chung có thể làm tăng hấp thu canxi. Tuy nhiên, đại hoàng là thực phẩm giàu acid oxalic, và nhóm thực phẩm giàu acid oxalic (như rau chân vịt hay đại hoàng) hoặc giàu acid phytic (như cám và ngũ cốc nguyên hạt) lại có thể làm giảm hấp thu canxi từ Alvethicone.",
+        "giai_thich_duoc_si": "Alvethicone chứa calcium citrate, mà việc dùng cùng thức ăn nói chung có thể làm tăng hấp thu canxi. Tuy nhiên, đại hoàng là thực phẩm giàu acid oxalic, và nhóm thực phẩm giàu acid oxalic (như rau chân vịt hay đại hoàng) hoặc giàu acid phytic (như cám và ngũ cốc nguyên hạt) lại có thể làm giảm hấp thu canxi từ Alvethicone.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Canadian Pharmacists Association \"e-CPS.  http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink\"   (2006):|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Agencia Espa?ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci��n online de medicamentos de la AEMPS - CIMA.  https://cima.aemps.es/cima/publico/home.html\"   (2008):|Mangels AR \"Bone nutrients for vegetarians.\" Am J Clin Nutr 100 (2014):  epub|Davies NT \"Anti-nutrient factors affecting mineral utilization.\" Proc Nutr Soc 38 (1979):  121-8",
+        "mo_ta_dich": "Dùng cùng thức ăn có thể làm tăng hấp thu canxi. Tuy nhiên, thức ăn giàu acid oxalic (rau chân vịt hoặc đại hoàng) hoặc acid phytic (cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu canxi.",
+        "xu_tri_dich": "Có thể dùng canxi cùng thức ăn để tăng hấp thu. Cân nhắc ngừng dùng canxi ít nhất 2 giờ trước hoặc sau khi dùng thức ăn giàu acid oxalic hoặc acid phytic."
+      },
+      {
+        "san_pham": [
+          "Alvethicone tab."
+        ],
+        "thuc_pham": "rau bina",
+        "muc_do": "trung_binh",
+        "giai_thich": "Alvethicone chứa calci citrate, mà việc dùng cùng thức ăn nói chung có thể làm tăng hấp thu calci. Tuy nhiên, rau bina là thực phẩm giàu acid oxalic, và acid oxalic cùng acid phytic (có trong cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu calci của thuốc.",
+        "giai_thich_duoc_si": "Alvethicone chứa calci citrate, mà việc dùng cùng thức ăn nói chung có thể làm tăng hấp thu calci. Tuy nhiên, rau bina là thực phẩm giàu acid oxalic, và acid oxalic cùng acid phytic (có trong cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu calci của thuốc.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Canadian Pharmacists Association \"e-CPS.  http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink\"   (2006):|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Agencia Espa?ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci��n online de medicamentos de la AEMPS - CIMA.  https://cima.aemps.es/cima/publico/home.html\"   (2008):|Mangels AR \"Bone nutrients for vegetarians.\" Am J Clin Nutr 100 (2014):  epub|Davies NT \"Anti-nutrient factors affecting mineral utilization.\" Proc Nutr Soc 38 (1979):  121-8",
+        "mo_ta_dich": "Dùng cùng thức ăn có thể làm tăng hấp thu canxi. Tuy nhiên, thức ăn giàu acid oxalic (rau chân vịt hoặc đại hoàng) hoặc acid phytic (cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu canxi.",
+        "xu_tri_dich": "Có thể dùng canxi cùng thức ăn để tăng hấp thu. Cân nhắc ngừng dùng canxi ít nhất 2 giờ trước hoặc sau khi dùng thức ăn giàu acid oxalic hoặc acid phytic."
+      },
+      {
+        "san_pham": [
+          "Alvethicone tab."
+        ],
+        "thuc_pham": "ngũ cốc",
+        "muc_do": "trung_binh",
+        "giai_thich": "Alvethicone dùng cùng thức ăn có thể làm tăng hấp thu calci, nhưng ngũ cốc nguyên cám và cám chứa nhiều acid phytic lại có thể làm giảm hấp thu calci. Vì vậy, khi dùng Alvethicone cùng ngũ cốc, cần lưu ý tới khả năng hấp thu calci bị ảnh hưởng theo chiều hướng ngược nhau này.",
+        "giai_thich_duoc_si": "Alvethicone dùng cùng thức ăn có thể làm tăng hấp thu calci, nhưng ngũ cốc nguyên cám và cám chứa nhiều acid phytic lại có thể làm giảm hấp thu calci. Vì vậy, khi dùng Alvethicone cùng ngũ cốc, cần lưu ý tới khả năng hấp thu calci bị ảnh hưởng theo chiều hướng ngược nhau này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Canadian Pharmacists Association \"e-CPS.  http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink\"   (2006):|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Agencia Espa?ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci��n online de medicamentos de la AEMPS - CIMA.  https://cima.aemps.es/cima/publico/home.html\"   (2008):|Mangels AR \"Bone nutrients for vegetarians.\" Am J Clin Nutr 100 (2014):  epub|Davies NT \"Anti-nutrient factors affecting mineral utilization.\" Proc Nutr Soc 38 (1979):  121-8",
+        "mo_ta_dich": "Dùng cùng thức ăn có thể làm tăng hấp thu canxi. Tuy nhiên, thức ăn giàu acid oxalic (rau chân vịt hoặc đại hoàng) hoặc acid phytic (cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu canxi.",
+        "xu_tri_dich": "Có thể dùng canxi cùng thức ăn để tăng hấp thu. Cân nhắc ngừng dùng canxi ít nhất 2 giờ trước hoặc sau khi dùng thức ăn giàu acid oxalic hoặc acid phytic."
+      },
+      {
+        "san_pham": [
+          "Alvethicone tab."
+        ],
+        "thuc_pham": "cám",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng Alvethicone tab cùng thức ăn có thể làm tăng hấp thu canxi trong thuốc, nhưng cám và các loại ngũ cốc nguyên hạt lại chứa nhiều acid phytic - hợp chất có thể làm giảm hấp thu canxi này. Vì vậy, khi dùng Alvethicone tab cùng lúc với cám, lượng canxi được hấp thu vào cơ thể có thể bị giảm đi đáng kể.",
+        "giai_thich_duoc_si": "Dùng Alvethicone tab cùng thức ăn có thể làm tăng hấp thu canxi trong thuốc, nhưng cám và các loại ngũ cốc nguyên hạt lại chứa nhiều acid phytic - hợp chất có thể làm giảm hấp thu canxi này. Vì vậy, khi dùng Alvethicone tab cùng lúc với cám, lượng canxi được hấp thu vào cơ thể có thể bị giảm đi đáng kể.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Canadian Pharmacists Association \"e-CPS.  http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink\"   (2006):|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Agencia Espa?ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci��n online de medicamentos de la AEMPS - CIMA.  https://cima.aemps.es/cima/publico/home.html\"   (2008):|Mangels AR \"Bone nutrients for vegetarians.\" Am J Clin Nutr 100 (2014):  epub|Davies NT \"Anti-nutrient factors affecting mineral utilization.\" Proc Nutr Soc 38 (1979):  121-8",
+        "mo_ta_dich": "Dùng cùng thức ăn có thể làm tăng hấp thu canxi. Tuy nhiên, thức ăn giàu acid oxalic (rau chân vịt hoặc đại hoàng) hoặc acid phytic (cám và ngũ cốc nguyên hạt) có thể làm giảm hấp thu canxi.",
+        "xu_tri_dich": "Có thể dùng canxi cùng thức ăn để tăng hấp thu. Cân nhắc ngừng dùng canxi ít nhất 2 giờ trước hoặc sau khi dùng thức ăn giàu acid oxalic hoặc acid phytic."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: cám, ngũ cốc, rau bina, đại hoàng."
+    ]
+  }
+}

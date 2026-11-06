@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-060",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.4666,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Tacrolimus",
+      "Calcitriol"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Tacrolimus",
+        "ten_chuan": "Tacrolimus",
+        "medication_id": "DDInter1735",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Calcitriol",
+        "ten_chuan": "Calcitriol",
+        "medication_id": "DDInter268",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Tacrolimus",
+        "thuoc_b": "Calcitriol",
+        "medication_a_id": "DDInter1735",
+        "medication_b_id": "DDInter268",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D11A, Deoxycholic acid, Pimecrolimus, Calcium gluconate, Glycopyrronium, Aminobenzoic acid, Ivermectin, Caffeine, Cromoglicic acid, Abrocitinib, Dupilumab, Tralokinumab",
+        "thay_the_b": "D05A, Methoxsalen, Trioxsalen, A11C, Ergocalciferol, Beta carotene, Vitamin A, Cholecalciferol, Dihydrotachysterol, Calcifediol",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Acezym XR 0,5mg (hoạt chất: Tacrolimus)",
+        "thuoc_b": "Ajuroxcal (hoạt chất: Calcitriol)",
+        "medication_a_id": "DDInter1735",
+        "medication_b_id": "DDInter268",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D11A, Deoxycholic acid, Pimecrolimus, Calcium gluconate, Glycopyrronium, Aminobenzoic acid, Ivermectin, Caffeine, Cromoglicic acid, Abrocitinib, Dupilumab, Tralokinumab",
+        "thay_the_b": "D05A, Methoxsalen, Trioxsalen, A11C, Ergocalciferol, Beta carotene, Vitamin A, Cholecalciferol, Dihydrotachysterol, Calcifediol",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Tacrolimus",
+        "hoat_chat_b": "Calcitriol",
+        "san_pham_a": [
+          "Acezym XR 0,5mg"
+        ],
+        "san_pham_b": [
+          "Ajuroxcal"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Acezym XR 0,5mg (hoạt chất: Tacrolimus)",
+        "thuoc_b": "Ajuroxcal (hoạt chất: Calcitriol)",
+        "medication_a_id": "DDInter1735",
+        "medication_b_id": "DDInter268",
+        "xu_tri": "-",
+        "thay_the_a": "D11A, Deoxycholic acid, Pimecrolimus, Calcium gluconate, Glycopyrronium, Aminobenzoic acid, Ivermectin, Caffeine, Cromoglicic acid, Abrocitinib, Dupilumab, Tralokinumab",
+        "thay_the_b": "D05A, Methoxsalen, Trioxsalen, A11C, Ergocalciferol, Beta carotene, Vitamin A, Cholecalciferol, Dihydrotachysterol, Calcifediol",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Tacrolimus",
+        "hoat_chat_b": "Calcitriol",
+        "san_pham_a": [
+          "Acezym XR 0,5mg"
+        ],
+        "san_pham_b": [
+          "Ajuroxcal"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Acezym XR 0,5mg",
+        "thuoc_b": "Ajuroxcal",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Acezym XR 0,5mg và Ajuroxcal có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, hiện ở mức chưa phân loại. Cặp đáng chú ý là Acezym XR 0,5mg và Ajuroxcal. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Acezym XR 0,5mg và Ajuroxcal",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Acezym XR 0,5mg",
+      "Ajuroxcal"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Acezym XR 0,5mg",
+          "Ajuroxcal"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "case_id": "dis-trung_binh-015",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 3.3905,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Valproic acid"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Valproic acid",
+        "ten_chuan": "Valproic acid",
+        "medication_id": "DDInter1913",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Alpovic 250mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Alpovic 250mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Nhiễm HIV",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người đang nhiễm HIV, khi dùng Alpovic 250mg cần lưu ý một số thử nghiệm trong phòng thí nghiệm gợi ý rằng thuốc này có thể kích thích virus HIV và cả virus CMV nhân lên trong những điều kiện thí nghiệm nhất định. Tuy nhiên, hậu quả trên thực tế lâm sàng thì chưa rõ, và ý nghĩa của những phát hiện này cũng chưa chắc chắn đối với những người đang dùng phác đồ kháng virus đạt hiệu quả ức chế tối đa. Dù vậy, điều này vẫn nên được ghi nhớ khi đọc kết quả theo dõi tải lượng virus định kỳ ở người nhiễm HIV dùng Alpovic 250mg, hoặc khi theo dõi lâm sàng ở người nhiễm CMV.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Một số nghiên cứu in vitro cho thấy valproat kích thích sự nhân lên của virus HIV và CMV trong một số điều kiện thực nghiệm nhất định. Hậu quả lâm sàng chưa được biết rõ, và mức độ liên quan của các phát hiện này là không chắc chắn đối với bệnh nhân đang được điều trị kháng retrovirus ức chế tối đa. Tuy nhiên, điều này cần được lưu ý khi diễn giải kết quả theo dõi thường quy tải lượng virus ở bệnh nhân nhiễm HIV đang dùng valproat hoặc khi theo dõi lâm sàng bệnh nhân nhiễm CMV."
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "nang",
+        "giai_thich": "Với người đã có tiền sử hoặc đang mắc bệnh gan, dùng Alpovic 250mg cần hết sức thận trọng vì đã có ghi nhận tổn thương gan nghiêm trọng, thậm chí có thể gây tử vong ở người dùng thuốc này. Nguy cơ này được cho là cao nhất ở trẻ dưới 2 tuổi, đặc biệt là trẻ dùng nhiều thuốc chống co giật cùng lúc, trẻ có rối loạn chuyển hóa bẩm sinh, động kinh nặng kèm chậm phát triển trí tuệ, hoặc có bệnh não thực thể, và giảm dần ở các nhóm tuổi lớn hơn. Các ca ghi nhận thường khởi phát trong 6 tháng đầu điều trị, có thể báo trước bằng những triệu chứng mơ hồ như mệt mỏi, yếu sức, lờ đờ, phù mặt, chán ăn, buồn nôn, nôn và mất kiểm soát cơn co giật. Vì vậy người có bệnh gan dùng Alpovic 250mg cần được theo dõi sát các triệu chứng này, còn việc xét nghiệm chức năng gan trước khi bắt đầu và định kỳ trong quá trình dùng thuốc, nhất là 6 tháng đầu, sẽ do bác sĩ quyết định.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Bach N, Thung S, Schaffner F, Tobias H \"Exaggerated cholestasis and hepatic fibrosis following simultaneous administration of chlorpromazine and sodium valproate.\" Dig Dis Sci 34 (1989):  1303-7|Itoh S, Yamaba Y, Matsuo S, et al. \"Sodium valproate-induced liver injury.\" Am J Gastroenterol 77 (1982):  875-9|Zaret BS, Backner RR, Marini AM, et al. \"Sodium valproate-induced hyperammonemia without clinical hepatic dysfunction.\" Neurology 32 (1982):  206-8|Powell-Jackson PR, Tredger JM, Williams R \"Hepatotoxicity to sodium valproate: a review.\" Gut 25 (1984):  673-81|Tennison MB, Miles MV, Pollack GM, et al. \"Valproate metabolites and hepatotoxicity in an epileptic population.\" Epilepsia 29 (1988):  543-7|Anderson GD, Acheampong AA, Wilensky AJ, Levy RH \"Effect of valproate dose on formation of hepatotoxic metabolites.\" Epilepsia 33 (1992):  736-42|Kondo T, Kaneko S, Otani K, et al. \"Associations between risk factors for valproate hepatotoxicity and altered valproate metabolism.\" Epilepsia 33 (1992):  172-7|Palm R, Silseth C, Alvan G \"Phenytoin intoxication as the first symptom of fatal liver damage induced by sodium valproate.\" Br J Clin Pharmacol 17 (1984):  597-9|Marini AM, Zaret BS, Beckner RR \"Hepatic and renal contributions to valproic acid-induced hyperammonemia.\" Neurology 38 (1988):  365-71|\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|Kulick SK, Kramer DA \"Hyperammonemia secondary to valproic acid as a cause of lethargy in a postictal patient.\" Ann Emerg Med 22 (1993):  610-2|Caparros-Lefebvre D, Lecomte-Houcke M, Pruvot FR, Declerck N, Paris JC, Petit H \"Unusual electronmicroscopic changes in valproate-associated liver failure.\" Lancet 341 (1993):  1604|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):|American Medical Association, Division of Drugs and Toxicology \"Drug evaluations annual 1994.\" Chicago, IL: American Medical Association;  (1994):",
+        "mo_ta_dich": "Việc sử dụng các dẫn xuất valproat là chống chỉ định ở bệnh nhân mắc bệnh gan hoặc rối loạn chức năng gan đáng kể. Đã có báo cáo về độc tính gan nghiêm trọng và có khả năng gây tử vong ở bệnh nhân được điều trị bằng các thuốc này. Nguy cơ dường như cao nhất ở trẻ em dưới 2 tuổi — đặc biệt là những trẻ dùng nhiều thuốc chống co giật và những trẻ mắc rối loạn chuyển hóa bẩm sinh, rối loạn co giật nặng kèm theo khuyết tật trí tuệ, hoặc bệnh não thực thể — và giảm đáng kể ở các nhóm bệnh nhân lớn tuổi hơn. Liệu pháp bằng các sản phẩm valproat nên được sử dụng hết sức thận trọng và như một thuốc đơn trị ở bệnh nhân có các yếu tố nguy cơ độc tính gan liên quan đến valproat. Trong các ca được báo cáo, khởi phát thường trong vòng 6 tháng đầu điều trị... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Bệnh tuyến giáp",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc bệnh tuyến giáp, khi dùng Alpovic 250mg cần lưu ý rằng nhà sản xuất cho biết đã có báo cáo về việc thay đổi kết quả xét nghiệm chức năng tuyến giáp ở những người dùng sản phẩm chứa valproate, dù thông tin cụ thể về mức độ thay đổi không được nêu rõ.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Nhà sản xuất cho biết đã có báo cáo về thay đổi xét nghiệm chức năng tuyến giáp liên quan đến việc sử dụng valproate. Tuy nhiên, không có thông tin cụ thể nào được đưa ra. Bác sĩ lâm sàng nên nhận thức được tác dụng tiềm ẩn này khi kê đơn hoặc sử dụng các sản phẩm valproate cho bệnh nhân mắc bệnh tuyến giáp."
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Đái tháo đường",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc đái tháo đường và dùng Alpovic 250mg, cần biết rằng một phần thuốc được thải qua nước tiểu dưới dạng chất chuyển hóa có chứa ceton. Chính chất này có thể khiến kết quả xét nghiệm ceton trong nước tiểu bị hiểu sai, dù thực tế đường huyết của bạn không hề tăng ceton. Vì vậy, khi bác sĩ kê hoặc cho dùng Alpovic 250mg cho người bệnh đái tháo đường, họ cần lưu ý đến khả năng này để tránh nhầm lẫn khi đọc kết quả xét nghiệm.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):|American Medical Association, Division of Drugs and Toxicology \"Drug evaluations annual 1994.\" Chicago, IL: American Medical Association;  (1994):",
+        "mo_ta_dich": "Valproat được thải trừ một phần qua nước tiểu dưới dạng chất chuyển hóa chứa ceton, có thể dẫn đến giải thích sai kết quả xét nghiệm ceton trong nước tiểu. Bác sĩ lâm sàng cần nhận biết tương tác này khi kê đơn hoặc sử dụng các sản phẩm valproat cho bệnh nhân đái tháo đường."
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Giảm tiểu cầu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Alpovic 250mg có thể làm giảm số lượng tiểu cầu theo kiểu phụ thuộc vào liều dùng, nên nếu bạn đang có tiền sử hoặc đang bị giảm tiểu cầu thì cần hết sức lưu tâm khi dùng thuốc này. Tỷ lệ gặp tình trạng này nhìn chung thấp, nhưng một nghiên cứu dùng liều cao đã ghi nhận con số lên tới 27%, và trong nghiên cứu đó số lượng tiểu cầu của tất cả bệnh nhân đều trở về bình thường, có người vẫn tiếp tục điều trị. Thuốc cũng có thể ức chế giai đoạn thứ hai của quá trình kết dính tiểu cầu, tuy tác động này ít có ý nghĩa trên lâm sàng trừ khi dùng chung với các thuốc khác ảnh hưởng đến đông máu. Hiếm gặp hơn, đã có báo cáo về thay đổi thời gian chảy máu, vết bầm tím, chấm xuất huyết, tụ máu, chảy máu cam và chảy máu rõ rệt, cùng với tình trạng giảm fibrinogen trong máu.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Smith FR, Boots M \"Sodium valproate and bone marrow suppression.\" Ann Neurol 8 (1980):  197-9|Morris N, Barr Rd, Pai KR, Kelton JG \"Valproic acid and thrombocytopenia.\" Can Med Assoc J 125 (1981):  63-4|\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|Brichard B, Vermylen C, Scheiff JM, Ninane J, Cornu G \"Haematological disturbances during long-term valproate therapy.\" Eur J Pediatr 153 (1994):  378-80|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):|American Medical Association, Division of Drugs and Toxicology \"Drug evaluations annual 1994.\" Chicago, IL: American Medical Association;  (1994):",
+        "mo_ta_dich": "Việc sử dụng các dẫn xuất valproat có thể liên quan đến giảm tiểu cầu phụ thuộc liều, tỷ lệ này nhìn chung thấp nhưng đã được báo cáo lên tới 27% trong một nghiên cứu sử dụng liều cao (khoảng 50 mg/kg/ngày axit valproic). Trong nghiên cứu đó, số lượng tiểu cầu trở về bình thường ở tất cả bệnh nhân, một số bất chấp việc tiếp tục điều trị. Valproat cũng có thể ức chế pha thứ cấp của ngưng tập tiểu cầu, mặc dù tác dụng này khó có ý nghĩa lâm sàng trừ khi dùng đồng thời với các thuốc khác ảnh hưởng đến đông máu. Tuy nhiên, thời gian chảy máu thay đổi, xuất huyết dưới da, chấm xuất huyết, vết bầm tím, hình thành khối máu tụ, chảy máu cam và xuất huyết rõ rệt đã hiếm khi được báo cáo. Giảm fibrinogen máu cũng đã được quan sát thấy. Điều trị bằng các sản phẩm valproat, đặc biệt ở liều cao... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Rối loạn trầm cảm",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn đang có tiền sử hoặc đang mắc rối loạn trầm cảm, dùng Alpovic 250mg có thể làm trầm cảm nặng lên, đồng thời làm xuất hiện hoặc tăng lên các suy nghĩ và hành vi tự sát. Vì vậy cần theo dõi sát xem các triệu chứng trầm cảm, suy nghĩ tự sát hay những thay đổi bất thường về tâm trạng, hành vi có mới xuất hiện hay nặng thêm không. Người nhà và người chăm sóc cũng nên để ý những dấu hiệu này, và báo ngay cho nhân viên y tế khi thấy bất kỳ biểu hiện đáng lo nào.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Tegretol (carbamazepine).\" Novartis Pharmaceuticals  (2002):|\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):|\"Product Information. Lamictal (lamotrigine).\" Glaxo Wellcome  (2001):|\"Product Information. Magnesium Sulfate (magnesium sulfate).\" Abbott Pharmaceutical  (2001):|\"Product Information. Trileptal (oxcarbazepine).\" Novartis Pharmaceuticals  (2001):|\"Product Information. Vimpat (lacosamide).\" UCB Pharma Inc  (2008):|\"Product Information. Banzel (rufinamide).\" Eisai Inc  (2008):|\"Product Information. Aptiom (eslicarbazepine).\" Sunovion Pharmaceuticals Inc  (2013):",
+        "mo_ta_dich": "Thuốc chống động kinh có thể làm tăng trầm cảm và ý nghĩ hoặc hành vi tự sát ở bệnh nhân dùng các thuốc này cho bất kỳ chỉ định nào. Bệnh nhân cần được theo dõi về sự xuất hiện hoặc nặng lên của trầm cảm, ý nghĩ tự sát và những thay đổi bất thường về tâm trạng hoặc hành vi. Người chăm sóc và gia đình cần cảnh giác với sự xuất hiện hoặc nặng lên của các triệu chứng. Các hành vi đáng lo ngại cần được báo ngay cho nhà cung cấp dịch vụ chăm sóc sức khỏe."
+      },
+      {
+        "san_pham": [
+          "Alpovic 250mg"
+        ],
+        "ten_benh": "Rối loạn chu trình urê bẩm sinh",
+        "muc_do": "nang",
+        "giai_thich": "Với Alpovic 250mg, nếu bạn có tiền sử hoặc đang mắc rối loạn chu trình urê bẩm sinh thì cần hết sức lưu tâm, vì thuốc có thể gây ra tình trạng não bị ảnh hưởng do amoniac tăng cao trong máu. Trước khi bắt đầu dùng thuốc, việc tầm soát rối loạn chu trình urê nên được cân nhắc nếu bạn từng bị não bị ảnh hưởng mà không rõ nguyên nhân hoặc hôn mê, não bị ảnh hưởng liên quan đến việc ăn nhiều đạm, não bị ảnh hưởng khi mang thai hoặc sau sinh, chậm phát triển trí tuệ không rõ lý do, hoặc từng có nồng độ amoniac hay glutamine trong máu tăng cao. Những người có người thân trong gia đình mắc rối loạn chu trình urê hoặc có người thân tử vong ở tuổi nhỏ mà không rõ nguyên nhân cũng thuộc nhóm cần được đánh giá trước khi dùng. Nếu trong lúc dùng Alpovic 250mg mà xuất hiện các triệu chứng của tình trạng não bị ảnh hưởng do amoniac tăng cao, cần được xử lý kịp thời, bao gồm việc ngừng thuốc và kiểm tra xem có bệnh lý rối loạn chu trình urê tiềm ẩn hay không.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Depakene (valproic acid).\" Abbott Pharmaceutical  (2001):|\"Product Information. Depakote (divalproex sodium).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Acid valproic và các sản phẩm dẫn xuất bị chống chỉ định ở bệnh nhân có rối loạn chu trình urê (UCD) đã biết, vì bệnh não do tăng amoniac huyết, đôi khi gây tử vong, đã được báo cáo ở những bệnh nhân này sau khi bắt đầu điều trị. Trước khi bắt đầu điều trị, cần xem xét đánh giá UCD ở bệnh nhân có tiền sử bệnh não hoặc hôn mê không rõ nguyên nhân, bệnh não liên quan đến tải protein, bệnh não liên quan đến thai kỳ hoặc sau sinh, thiểu năng trí tuệ không rõ nguyên nhân, hoặc tiền sử tăng amoniac hoặc glutamine huyết tương. Ngoài ra, những người có tiền sử gia đình mắc UCD hoặc tiền sử gia đình có trẻ tử vong không rõ nguyên nhân. Bệnh nhân phát triển các triệu chứng bệnh não do tăng amoniac huyết trong khi đang điều trị valproat nên được điều trị kịp thời bao gồm điều trị... (đã rút gọn)"
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh gan, Bệnh tuyến giáp, Giảm tiểu cầu, Nhiễm HIV, Rối loạn chu trình urê bẩm sinh, Rối loạn trầm cảm, Đái tháo đường.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

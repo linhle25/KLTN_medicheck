@@ -1,0 +1,149 @@
+{
+  "case_id": "dd-nhe-040",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.3567,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ruxolitinib",
+      "Imatinib"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ruxolitinib",
+        "ten_chuan": "Ruxolitinib",
+        "medication_id": "DDInter1628",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Imatinib",
+        "ten_chuan": "Imatinib",
+        "medication_id": "DDInter909",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ruxolitinib",
+        "thuoc_b": "Imatinib",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter909",
+        "mo_ta": "Coadministration with mild or moderate inhibitors of CYP450 3A4 may modestly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme. No dosage adjustment is recommended when ruxolitinib is coadministered with mild or moderate CYP450 3A4 inhibitors.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Sunitinib, Regorafenib, Imatinib, Lenvatinib, Erlotinib, Trametinib, Nintedanib, Vandetanib, Afatinib, Alectinib, Dacomitinib",
+        "thay_the_b": "L01E, Dacomitinib, Tepotinib, Bosutinib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Afatinib, Tivozanib, Brigatinib, Encorafenib",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Alvotinib 100mg (hoạt chất: Imatinib)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter909",
+        "mo_ta": "Coadministration with mild or moderate inhibitors of CYP450 3A4 may modestly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme. No dosage adjustment is recommended when ruxolitinib is coadministered with mild or moderate CYP450 3A4 inhibitors.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Sunitinib, Regorafenib, Imatinib, Lenvatinib, Erlotinib, Trametinib, Nintedanib, Vandetanib, Afatinib, Alectinib, Dacomitinib",
+        "thay_the_b": "L01E, Dacomitinib, Tepotinib, Bosutinib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Afatinib, Tivozanib, Brigatinib, Encorafenib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Imatinib",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Alvotinib 100mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Alvotinib 100mg (hoạt chất: Imatinib)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter909",
+        "xu_tri": "-",
+        "thay_the_a": "L01E, Sunitinib, Regorafenib, Imatinib, Lenvatinib, Erlotinib, Trametinib, Nintedanib, Vandetanib, Afatinib, Alectinib, Dacomitinib",
+        "thay_the_b": "L01E, Dacomitinib, Tepotinib, Bosutinib, Selumetinib, Vandetanib, Cobimetinib, Capmatinib, Afatinib, Tivozanib, Brigatinib, Encorafenib",
+        "mo_ta": "Coadministration with mild or moderate inhibitors of CYP450 3A4 may modestly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme. No dosage adjustment is recommended when ruxolitinib is coadministered with mild or moderate CYP450 3A4 inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Imatinib",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Alvotinib 100mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg",
+        "thuoc_b": "Alvotinib 100mg",
+        "muc_do": "nhe",
+        "giai_thich": "Việc dùng chung Jakavi 10mg và Alvotinib 100mg được ghi nhận ở mức nhẹ, liên quan đến khả năng ức chế enzym CYP450 3A4 ở mức nhẹ hoặc trung bình làm tăng khiêm tốn nồng độ Jakavi 10mg trong huyết tương, do thuốc này chủ yếu được chuyển hóa qua isoenzym đó. Dù vậy, nguồn dữ liệu không đề xuất điều chỉnh liều khi Jakavi 10mg được dùng cùng các chất ức chế CYP450 3A4 mức nhẹ hoặc trung bình.",
+        "giai_thich_duoc_si": "Việc dùng chung Jakavi 10mg và Alvotinib 100mg được ghi nhận ở mức nhẹ, liên quan đến khả năng ức chế enzym CYP450 3A4 ở mức nhẹ hoặc trung bình làm tăng khiêm tốn nồng độ Jakavi 10mg trong huyết tương, do thuốc này chủ yếu được chuyển hóa qua isoenzym đó. Dù vậy, nguồn dữ liệu không đề xuất điều chỉnh liều khi Jakavi 10mg được dùng cùng các chất ức chế CYP450 3A4 mức nhẹ hoặc trung bình.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời với các chất ức chế CYP450 3A4 mức nhẹ hoặc trung bình có thể làm tăng khiêm tốn nồng độ ruxolitinib trong huyết tương, do thuốc này chủ yếu được chuyển hóa bởi isoenzym này. Không đề xuất điều chỉnh liều khi ruxolitinib được dùng đồng thời với các chất ức chế CYP450 3A4 mức nhẹ hoặc trung bình.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh tương tác giữa hai đơn thuốc khác nhau, kết quả ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ đều ở mức nhẹ. Cặp đáng chú ý trong danh sách là Jakavi 10mg và Alvotinib 100mg. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Jakavi 10mg và Alvotinib 100mg",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Jakavi 10mg",
+      "Alvotinib 100mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Jakavi 10mg"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Alvotinib 100mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

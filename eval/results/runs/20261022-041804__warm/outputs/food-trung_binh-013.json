@@ -1,0 +1,85 @@
+{
+  "case_id": "food-trung_binh-013",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0463,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Nicardipine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Nicardipine",
+        "ten_chuan": "Nicardipine",
+        "medication_id": "DDInter1287",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "A.T Nicardipine 0,2 mg/ ml"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Nicardipine 0,2 mg/ ml"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "A.T Nicardipine 0,2 mg/ ml"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "A.T Nicardipine 0,2 mg/ml là thuốc hạ huyết áp, nên khi dùng chung với rượu có thể khiến huyết áp tụt thấp hơn nữa do tác dụng cộng dồn lên huyết áp. Rượu cũng gây tác dụng an thần, an dịu lên hệ thần kinh trung ương, và sự kết hợp này dễ dẫn đến tình trạng hạ huyết áp tư thế - tức là bị chóng mặt, choáng váng khi đứng lên. Nguy cơ này đặc biệt rõ khi mới bắt đầu dùng thuốc hoặc khi tăng liều.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Sternbach H \"Fluoxetine-associated potentiation of calcium-channel blockers.\" J Clin Psychopharmacol 11 (1991):  390-1|Shook TL, Kirshenbaum JM, Hundley RF, Shorey JM, Lamas GA \"Ethanol intoxication complicating intravenous nitroglycerin therapy.\" Ann Intern Med 101 (1984):  498-9|Feder R \"Bradycardia and syncope induced by fluoxetine.\" J Clin Psychiatry 52 (1991):  139|Ellison JM, Milofsky JE, Ely E \"Fluoxetine-induced bradycardia and syncope in two patients.\" J Clin Psychiatry 51 (1990):  385-6|Rodriguez de la Torre B, Dreher J, Malevany I, et al. \"Serum levels and cardiovascular effects of tricyclic antidepressants and selective serotonin reuptake inhibitors in depressed patients.\" Ther Drug Monit 23 (2001):  435-40|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Pacher P, Kecskemeti V \"Cardiovascular side effects of new antidepressants and antipsychotics: new drugs, old concerns?\" Curr Pharm Des 10 (2004):  2463-75|Andrews C, Pinner G \"Postural hypotension induced by paroxetine.\" BMJ 316 (1998):  595",
+        "mo_ta_dich": "Nhiều tác nhân tâm lý trị liệu và tác nhân hoạt động trên hệ thần kinh trung ương (ví dụ: thuốc giải lo âu, thuốc an thần, thuốc gây ngủ, thuốc chống trầm cảm, thuốc chống loạn thần, opioid, rượu, thuốc giãn cơ) thể hiện tác dụng hạ huyết áp, đặc biệt trong giai đoạn khởi đầu điều trị và tăng liều. Dùng đồng thời với thuốc hạ huyết áp và các tác nhân hạ huyết áp khác, đặc biệt là thuốc giãn mạch và thuốc chẹn alpha, có thể dẫn đến tác dụng cộng gộp trên huyết áp và hạ huyết áp tư thế.",
+        "xu_tri_dich": "Khuyến cáo thận trọng và theo dõi chặt chẽ sự phát triển của hạ huyết áp trong quá trình dùng đồng thời các tác nhân này. Một số cơ quan chức trách khuyến cáo tránh rượu ở bệnh nhân đang dùng thuốc hạ huyết áp giãn mạch. Bệnh nhân nên được khuyên tránh đứng dậy đột ngột từ tư thế ngồi hoặc nằm và thông báo cho bác sĩ nếu họ gặp chóng mặt, choáng váng, ngất, hạ huyết áp tư thế hoặc nhịp tim nhanh."
+      },
+      {
+        "san_pham": [
+          "A.T Nicardipine 0,2 mg/ ml"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "trung_binh",
+        "giai_thich": "Uống A.T Nicardipine cùng nước ép bưởi có thể làm nồng độ thuốc trong máu tăng lên đáng kể, vì nước ép bưởi ức chế một loại enzyme trong thành ruột (CYP450 3A4) – enzyme này thường giúp phân hủy bớt thuốc trước khi thuốc vào được máu. Tương tác kiểu này đã được ghi nhận với nhóm thuốc chẹn kênh canxi loại dihydropyridine, và mức độ ảnh hưởng khác nhau khá nhiều giữa từng người. Đáng chú ý, với một số thuốc trong nhóm này, nước ép bưởi làm diện tích dưới đường cong nồng độ thuốc trong máu (AUC – chỉ số phản ánh tổng lượng thuốc cơ thể hấp thu) tăng hơn gấp đôi. Vì vậy, nếu bạn đang dùng A.T Nicardipine, nên hỏi bác sĩ hoặc dược sĩ về việc uống nước ép bưởi.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992):  313-7|\"Product Information. Plendil (felodipine).\" Merck & Co., Inc  (2002):|\"Product Information. Procardia (nifedipine).\" Pfizer U.S. Pharmaceuticals  (2002):|Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993):  637-42|Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994):  91-8|Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993):  589-94|Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995):  376-84|\"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995):  73-4|\"Product Information. Sular (nisoldipine).\" Astra-Zeneca Pharmaceuticals  (2001):|Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996):  189-93|Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998):  101-10|Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998):  248-56|Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998):  126-32|Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000):  41|Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000):  49-58|Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000):  468-77|Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000):  693-8|Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002):  45-53|Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0",
+        "mo_ta_dich": "Việc tiêu thụ nước ép bưởi có thể liên quan đến sự gia tăng đáng kể nồng độ trong huyết tương của một số thuốc chẹn kênh calci (CCB) khi được dùng đường uống. Cơ chế được đề xuất là ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột bởi một số hợp chất có trong bưởi. Tương tác đã được báo cáo với các CCB dihydropyridine (theo thứ tự độ lớn giảm dần) felodipine, nisoldipine, nifedipine và nimodipine, thường với mức độ biến thiên giữa các cá thể cao. Nước ép bưởi gây tăng hơn hai lần AUC của felodipine, nifedipine và nisoldipine.",
+        "xu_tri_dich": "Nhà sản xuất nifedipine và nisoldipine khuyến cáo tránh dùng nước ép bưởi. Bệnh nhân được điều trị đường uống bằng các thuốc chẹn kênh calci khác nên được khuyên tránh tiêu thụ một lượng lớn bưởi và nước ép bưởi để phòng ngừa bất kỳ dao động quá mức nào của nồng độ thuốc trong huyết thanh. Tác dụng tăng lên trên huyết áp có thể kéo dài đến 4 ngày sau khi tiêu thụ nước ép bưởi. Khuyến cáo theo dõi các tác dụng không mong muốn của thuốc chẹn kênh calci (ví dụ: đau đầu, hạ huyết áp, ngất, nhịp tim nhanh, phù)."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: nước ép bưởi, rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

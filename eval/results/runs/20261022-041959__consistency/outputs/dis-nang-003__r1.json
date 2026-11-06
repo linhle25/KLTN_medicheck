@@ -1,0 +1,150 @@
+{
+  "case_id": "dis-nang-003",
+  "phase": "consistency",
+  "rep": 1,
+  "audience": "patient",
+  "wall_s": 2.5669,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Salicylic acid (topical)",
+      "Lactic acid"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Salicylic acid (topical)",
+        "ten_chuan": "Salicylic acid (topical)",
+        "medication_id": "DDInter1634",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Lactic acid",
+        "ten_chuan": "Lactic acid",
+        "medication_id": "DDInter1015",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Lactic acid",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Duofilm"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Duofilm"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Duofilm"
+        ],
+        "ten_benh": "Rối loạn nước – điện giải",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn đang có tiền sử hoặc đang mắc rối loạn nước – điện giải mà dùng Duofilm, cần lưu ý rằng thuốc có chứa lactic acid, và các sản phẩm chứa chất kiềm có natri đi kèm có thể gây giữ natri và nước, dẫn đến tăng natri máu, hạ kali máu, tăng độ thẩm thấu máu, phù và làm nặng thêm tình trạng suy tim sung huyết. Chính vì vậy, việc theo dõi cân bằng acid/base và điện giải trước, trong và sau khi dùng các sản phẩm chứa chất kiềm là điều được khuyến nghị.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sodium Bicarbonate (sodium bicarbonate).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Sodium Lactate (sodium lactate).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Các tác nhân kiềm hóa chứa natri có thể gây giữ natri và nước và dẫn đến tăng natri máu, hạ kali máu, tăng áp lực thẩm thấu, phù và làm nặng thêm suy tim sung huyết. Không nên sử dụng liệu pháp với các tác nhân kiềm hóa chứa natri ở bệnh nhân tăng natri máu hoặc giữ nước. Khuyến nghị theo dõi lâm sàng cân bằng acid/base và điện giải trước, trong và sau khi hoàn thành liệu pháp với các tác nhân kiềm hóa."
+      },
+      {
+        "san_pham": [
+          "Duofilm"
+        ],
+        "ten_benh": "Rối loạn cân bằng acid-base",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng Duofilm cho người có tiền sử hoặc đang mắc rối loạn cân bằng acid-base, cần lưu ý vì thuốc có chứa lactic acid, một chất có thể góp phần làm thay đổi cân bằng acid-base trong cơ thể. Ở người bị suy giảm chức năng thận, việc đào thải bicarbonate bị giảm có thể dẫn đến tình trạng kiềm chuyển hóa (máu bị kiềm hóa quá mức), gây ra các biểu hiện như dễ bị kích thích quá mức hoặc co giật cơ (tetany), loạn nhịp tim, và/hoặc co giật, do pH thay đổi làm ảnh hưởng đến canxi trong máu; ngoài ra còn có thể gây nhiễm toan lactic do việc giải phóng oxy bị suy giảm. Vì vậy, với người có bệnh nền này, việc theo dõi chức năng thận, cân bằng acid-base và các chất điện giải được khuyến nghị để đảm bảo an toàn khi dùng thuốc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Urocit-K (potassium citrate).\" Mission Pharmacal Company|\"Product Information. Tham (tromethamine).\" Abbott Pharmaceutical  (2001):|\"Product Information. Sodium Lactate (sodium lactate).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Các tác nhân kiềm hóa hoạt động như chất nhận proton và/hoặc phân ly để cung cấp ion bicarbonate. Việc thải trừ bicarbonate bị giảm ở bệnh nhân suy thận và có thể dẫn đến nhiễm kiềm chuyển hóa. Các triệu chứng của nhiễm kiềm chuyển hóa bao gồm tăng kích thích hoặc co giật cơ (tetany), loạn nhịp tim, và/hoặc co giật (pH thay đổi = calci thay đổi), hoặc nhiễm toan lactic do suy giảm giải phóng oxy. Liệu pháp với các tác nhân kiềm hóa nên được thực hiện với sự thận trọng tối đa ở bệnh nhân suy giảm chức năng thận. Khuyến nghị theo dõi lâm sàng chức năng thận, cân bằng acid/base và điện giải."
+      },
+      {
+        "san_pham": [
+          "Duofilm"
+        ],
+        "ten_benh": "Nhiễm toan lactic",
+        "muc_do": "nang",
+        "giai_thich": "Duofilm có chứa thành phần khi vào cơ thể sẽ được chuyển hóa thành bicarbonate, một chất giúp trung hòa axit trong máu. Tuy nhiên, ở người có tiền sử hoặc đang mắc nhiễm toan lactic, quá trình tạo bicarbonate này bị suy giảm, đặc biệt khi chức năng gan yếu và/hoặc có các rối loạn làm giảm tưới máu mô và tăng tình trạng thiếu oxy. Vì vậy, dùng Duofilm ở người có bệnh nền này không được xem là biện pháp để xử lý tình trạng nhiễm toan lactic, và cần hết sức thận trọng.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sodium Lactate (sodium lactate).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Chuyển hóa lactate tạo ra bicarbonate. Việc tạo bicarbonate bị suy giảm ở bệnh nhân có chức năng gan suy giảm và/hoặc các rối loạn làm giảm tưới máu mô và tăng tình trạng thiếu oxy. Không nên dùng liệu pháp natri lactate trong các tình trạng mà nồng độ lactate tăng (ví dụ: sốc, suy tim sung huyết, nhiễm kiềm hô hấp) hoặc trong các tình trạng mà việc sử dụng lactate bị giảm (ví dụ: thiếu oxy, beriberi). Natri lactate không dùng để điều trị nhiễm toan lactic."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Nhiễm toan lactic, Rối loạn cân bằng acid-base, Rối loạn nước – điện giải.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

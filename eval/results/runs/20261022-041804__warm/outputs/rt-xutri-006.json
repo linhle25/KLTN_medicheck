@@ -1,0 +1,144 @@
+{
+  "case_id": "rt-xutri-006",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.2824,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Levodopa",
+      "Ferrous gluconate"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Levodopa",
+        "ten_chuan": "Levodopa",
+        "medication_id": "DDInter1054",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ferrous gluconate",
+        "ten_chuan": "Ferrous gluconate",
+        "medication_id": "DDInter726",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Levodopa",
+        "thuoc_b": "Ferrous gluconate",
+        "medication_a_id": "DDInter1054",
+        "medication_b_id": "DDInter726",
+        "mo_ta": "INTERVAL: The oral bioavailability and pharmacologic effects of levodopa and carbidopa may be decreased during concurrent administration with iron-containing products. The proposed mechanism is chelation of levodopa and carbidopa by the iron cation, forming an insoluble complex that is poorly absorbed from the gastrointestinal tract.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Campbell NR, Hasinoff B \"Ferrous sulfate reduces levodopa bioavailability: chelation as a possible mechanism.\" Clin Pharmacol Ther 45 (1989): 220-5, [2] Campbell NR, Hasinoff BB \"Iron supplements: a common cause of drug interactions.\" Br J Clin Pharmacol 31 (1991): 251-5, [3] Campbell NR, Rankine D, Goodridge AE, Hasinoff BB, Kara M \"Sinemet-ferrous sulphate interaction in patients with Parkinson's disease.\" Br J Clin Pharmacol 30 (1990): 599-605, [4] Greene RJ, Hall AD, Hider RC \"The interaction of orally administered iron with levodopa and methyldopa therapy.\" J Pharm Pharmacol 42 (1990): 502-4, [5] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+        "xu_tri": "Until more information is available, patients receiving levodopa and/or carbidopa in combination with iron-containing products should be advised to separate the times of administration by as much as possible. Patients should be monitored for reduced efficacy of levodopa, and the dosage adjusted as necessary.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N04B, Apomorphine, Ropinirole, Opicapone, Cabergoline, Amantadine, Rasagiline, Tolcapone, Selegiline, Rotigotine, Bromocriptine, Pergolide",
+        "thay_the_b": "B03A, Iron sucrose, Cyanocobalamin, Folic acid",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Carbidopa Levodopa 12.5/50 mg Tablets (hoạt chất: Levodopa)",
+        "thuoc_b": "Dactus (hoạt chất: Ferrous gluconate)",
+        "medication_a_id": "DDInter1054",
+        "medication_b_id": "DDInter726",
+        "mo_ta": "INTERVAL: The oral bioavailability and pharmacologic effects of levodopa and carbidopa may be decreased during concurrent administration with iron-containing products. The proposed mechanism is chelation of levodopa and carbidopa by the iron cation, forming an insoluble complex that is poorly absorbed from the gastrointestinal tract.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Campbell NR, Hasinoff B \"Ferrous sulfate reduces levodopa bioavailability: chelation as a possible mechanism.\" Clin Pharmacol Ther 45 (1989): 220-5, [2] Campbell NR, Hasinoff BB \"Iron supplements: a common cause of drug interactions.\" Br J Clin Pharmacol 31 (1991): 251-5, [3] Campbell NR, Rankine D, Goodridge AE, Hasinoff BB, Kara M \"Sinemet-ferrous sulphate interaction in patients with Parkinson's disease.\" Br J Clin Pharmacol 30 (1990): 599-605, [4] Greene RJ, Hall AD, Hider RC \"The interaction of orally administered iron with levodopa and methyldopa therapy.\" J Pharm Pharmacol 42 (1990): 502-4, [5] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+        "xu_tri": "Until more information is available, patients receiving levodopa and/or carbidopa in combination with iron-containing products should be advised to separate the times of administration by as much as possible. Patients should be monitored for reduced efficacy of levodopa, and the dosage adjusted as necessary.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N04B, Apomorphine, Ropinirole, Opicapone, Cabergoline, Amantadine, Rasagiline, Tolcapone, Selegiline, Rotigotine, Bromocriptine, Pergolide",
+        "thay_the_b": "B03A, Iron sucrose, Cyanocobalamin, Folic acid",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Levodopa",
+        "hoat_chat_b": "Ferrous gluconate",
+        "san_pham_a": [
+          "Carbidopa Levodopa 12.5/50 mg Tablets"
+        ],
+        "san_pham_b": [
+          "Dactus"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Carbidopa Levodopa 12.5/50 mg Tablets (hoạt chất: Levodopa)",
+        "thuoc_b": "Dactus (hoạt chất: Ferrous gluconate)",
+        "medication_a_id": "DDInter1054",
+        "medication_b_id": "DDInter726",
+        "xu_tri": "Until more information is available, patients receiving levodopa and/or carbidopa in combination with iron-containing products should be advised to separate the times of administration by as much as possible. Patients should be monitored for reduced efficacy of levodopa, and the dosage adjusted as necessary.",
+        "thay_the_a": "N04B, Apomorphine, Ropinirole, Opicapone, Cabergoline, Amantadine, Rasagiline, Tolcapone, Selegiline, Rotigotine, Bromocriptine, Pergolide",
+        "thay_the_b": "B03A, Iron sucrose, Cyanocobalamin, Folic acid",
+        "mo_ta": "INTERVAL: The oral bioavailability and pharmacologic effects of levodopa and carbidopa may be decreased during concurrent administration with iron-containing products. The proposed mechanism is chelation of levodopa and carbidopa by the iron cation, forming an insoluble complex that is poorly absorbed from the gastrointestinal tract.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Campbell NR, Hasinoff B \"Ferrous sulfate reduces levodopa bioavailability: chelation as a possible mechanism.\" Clin Pharmacol Ther 45 (1989): 220-5, [2] Campbell NR, Hasinoff BB \"Iron supplements: a common cause of drug interactions.\" Br J Clin Pharmacol 31 (1991): 251-5, [3] Campbell NR, Rankine D, Goodridge AE, Hasinoff BB, Kara M \"Sinemet-ferrous sulphate interaction in patients with Parkinson's disease.\" Br J Clin Pharmacol 30 (1990): 599-605, [4] Greene RJ, Hall AD, Hider RC \"The interaction of orally administered iron with levodopa and methyldopa therapy.\" J Pharm Pharmacol 42 (1990): 502-4, [5] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+        "hoat_chat_a": "Levodopa",
+        "hoat_chat_b": "Ferrous gluconate",
+        "san_pham_a": [
+          "Carbidopa Levodopa 12.5/50 mg Tablets"
+        ],
+        "san_pham_b": [
+          "Dactus"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Carbidopa Levodopa 12.5/50 mg Tablets",
+        "thuoc_b": "Dactus",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Carbidopa Levodopa 12.5/50 mg Tablets với Dactus có thể làm giảm lượng thuốc Carbidopa Levodopa 12.5/50 mg Tablets được hấp thu vào cơ thể và giảm tác dụng điều trị của thuốc này. Nguyên nhân được cho là sắt trong Dactus gắn kết với thành phần của Carbidopa Levodopa 12.5/50 mg Tablets tạo thành một phức hợp không tan, khó được hấp thu qua đường tiêu hóa. [ẢNH] Người bệnh lưu ý: khi uống chung Carbidopa Levodopa 12.5/50 mg Tablets với Dactus, cơ thể có thể hấp thu ít thuốc Carbidopa Levodopa 12.5/50 mg Tablets hơn nên thuốc có thể kém hiệu quả hơn. Lý do là sắt trong Dactus gắn chặt với thuốc Carbidopa Levodopa 12.5/50 mg Tablets tạo thành một chất không tan, khiến ruột khó hấp thu được thuốc. Vì vậy đừng tự ý thay đổi cách dùng hai thuốc này, mà hãy hỏi bác sĩ hoặc dược sĩ để được hướng dẫn phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "KHOẢNG CÁCH: Sinh khả dụng đường uống và tác dụng dược lý của levodopa và carbidopa có thể bị giảm khi dùng đồng thời với các sản phẩm chứa sắt. Cơ chế được đề xuất là sắt cation tạo phức chelat với levodopa và carbidopa, hình thành một phức hợp không tan, khó được hấp thu từ đường tiêu hóa.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác thuốc-thuốc, ở mức trung bình. Cặp đáng chú ý nhất là Carbidopa Levodopa 12.5/50 mg Tablets và Dactus. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Carbidopa Levodopa 12.5/50 mg Tablets và Dactus",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Carbidopa Levodopa 12.5/50 mg Tablets",
+      "Dactus"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Carbidopa Levodopa 12.5/50 mg Tablets",
+          "Dactus"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

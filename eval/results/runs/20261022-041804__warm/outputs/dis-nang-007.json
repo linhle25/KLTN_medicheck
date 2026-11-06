@@ -1,0 +1,142 @@
+{
+  "case_id": "dis-nang-007",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.0639,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Isosorbide dinitrate"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Isosorbide dinitrate",
+        "ten_chuan": "Isosorbide dinitrate",
+        "medication_id": "DDInter989",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Biresort 10"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Biresort 10"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Tăng áp lực nội sọ",
+        "muc_do": "nang",
+        "giai_thich": "Biresort 10 có chứa hoạt chất thuộc nhóm nitrat hữu cơ, và nhóm này có thể làm tăng áp lực dịch não tủy. Vì vậy, khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc tăng áp lực nội sọ, cần hết sức thận trọng do nguy cơ làm trầm trọng thêm tình trạng tăng áp lực nội sọ.",
+        "giai_thich_duoc_si": "Biresort 10 có chứa hoạt chất thuộc nhóm nitrat hữu cơ, và nhóm này có thể làm tăng áp lực dịch não tủy. Vì vậy, khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc tăng áp lực nội sọ, cần hết sức thận trọng do nguy cơ làm trầm trọng thêm tình trạng tăng áp lực nội sọ.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Ahmad S \"Nitroglycerin and intracranial hypertension .\" Am Heart J 121 (1991):  1850-1|Gagnon RL, Marsh ML, Smith RW, Shapiro HM \"Intracranial hypertension caused by nitroglycerin.\" Anesthesiology 51 (1979):  86-7|Boggild M \"Intracerebral haemorrhage after dermal nitrate application.\" BMJ 305 (1992):  1000|Hannerz J, Greitz D \"Cerebrospinal fluid pressure and venous pressure in \"dynamite headache\" and cluster headache attacks.\" Headache 32 (1992):  436-8|\"Product Information. Tridil (nitroglycerin).\" DuPont Pharmaceuticals  (2002):|\"Product Information. Nitrostat (nitroglycerin).\" Parke-Davis  (2002):",
+        "mo_ta_dich": "Nitrat hữu cơ và nitrit có thể làm tăng áp lực dịch não tủy. Liệu pháp với các tác nhân này nên được sử dụng thận trọng, nếu có sử dụng, ở bệnh nhân bị hoặc có nguy cơ tăng áp lực nội sọ, bao gồm những người bị xuất huyết não, tổn thương nội sọ, hoặc chấn thương đầu gần đây."
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Glôcôm",
+        "muc_do": "nhe",
+        "giai_thich": "Khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc glôcôm, một số tài liệu y khoa cho rằng nhóm nitrat hữu cơ và nitrit có thể làm tăng nhãn áp nên cần thận trọng ở những bệnh nhân này. Tuy vậy, ảnh hưởng lên nhãn áp là thay đổi và ngắn, và chưa có bằng chứng cho thấy các thuốc này khởi phát glôcôm góc hẹp; tác dụng phụ trên mắt của nitroglycerin cũng hiếm gặp và nitroglycerin đường uống dường như ít hoặc không có tác dụng phụ đáng kể trên mắt.",
+        "giai_thich_duoc_si": "Khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc glôcôm, một số tài liệu y khoa cho rằng nhóm nitrat hữu cơ và nitrit có thể làm tăng nhãn áp nên cần thận trọng ở những bệnh nhân này. Tuy vậy, ảnh hưởng lên nhãn áp là thay đổi và ngắn, và chưa có bằng chứng cho thấy các thuốc này khởi phát glôcôm góc hẹp; tác dụng phụ trên mắt của nitroglycerin cũng hiếm gặp và nitroglycerin đường uống dường như ít hoặc không có tác dụng phụ đáng kể trên mắt.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Fraunfelder FT, Fraunfelder FW; Randall JA \"Drug-Induced Ocular Side Effects\" Boston, MA: Butterworth-Heinemann  (2001):",
+        "mo_ta_dich": "Một số tài liệu y khoa nêu rằng nitrat hữu cơ và nitrit có thể làm tăng nhãn áp và nên dùng thận trọng ở bệnh nhân glaucoma. Tuy nhiên, ảnh hưởng lên nhãn áp là thay đổi và ngắn, và không có bằng chứng rằng các thuốc này khởi phát glaucoma góc hẹp. Amyl nitrat thường có thể gây tăng nhẹ 3+ mm trong vài giây, sau đó là giảm nhãn áp trong 10 đến 20 phút, hậu quả sau là do giảm huyết áp. Nitroglycerin hiếm khi gây tác dụng phụ ở mắt, và nitroglycerin đường uống dường như có ít đến không có tác dụng phụ đáng kể ở mắt."
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Hạ huyết áp",
+        "muc_do": "nang",
+        "giai_thich": "Khi dùng Biresort 10 ở người có tiền sử hạ huyết áp, cần lưu ý thuốc có thể gây tụt huyết áp nghiêm trọng, ngất và sốc ngay cả với liều nhỏ. Tình trạng tụt huyết áp do thuốc gây ra có thể kèm theo nhịp tim chậm nghịch lý và làm tăng cơn đau thắt ngực. Người bệnh nên ở tư thế ngồi hoặc nằm trong và ngay sau khi dùng thuốc, đồng thời cần được theo dõi các dấu hiệu tụt huyết áp nghiêm trọng như buồn nôn, nôn, yếu sức, da nhợt nhạt, vã mồ hôi và ngất.",
+        "giai_thich_duoc_si": "Khi dùng Biresort 10 ở người có tiền sử hạ huyết áp, cần lưu ý thuốc có thể gây tụt huyết áp nghiêm trọng, ngất và sốc ngay cả với liều nhỏ. Tình trạng tụt huyết áp do thuốc gây ra có thể kèm theo nhịp tim chậm nghịch lý và làm tăng cơn đau thắt ngực. Người bệnh nên ở tư thế ngồi hoặc nằm trong và ngay sau khi dùng thuốc, đồng thời cần được theo dõi các dấu hiệu tụt huyết áp nghiêm trọng như buồn nôn, nôn, yếu sức, da nhợt nhạt, vã mồ hôi và ngất.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Purvin VA, Dunn DW \"Nitrate-induced transient ischemic attacks.\" South Med J 74 (1981):  1130-1|Buckley R, Roberts R \"Symptomatic bradycardia following the administration of sublingual nitroglycerin.\" Am J Emerg Med 11 (1993):  253-5|von Arnim T, Autenrieth G, Bolte HD \"Acute myocardial infarction during continuous electrocardiographic ST segment recording. Possible role of bradycardia and hypotension induced by glyceryl trinitrate.\" Br Heart J 51 (1984):  575-7|Lancaster L, Fenster PE \"Complete heart block after sublingual nitroglycerin.\" Chest 84 (1983):  111-2|Ong EA, Bass S \"Nitroglycerin-induced bradycardia and hypotension in acute myocardial infarction.\" Chest 77 (1980):  244|Cunningham J \"Hypotension following administration of sublingual nitroglycerin .\" Heart Lung 8 (1979):  364|Nemerovski M, Shah PK \"Syndrome of severe bradycardia and hypotension following sublingual nitroglycerin administration.\" Cardiology 67 (1981):  180-9|Brandes W, Santiago T, Limacher M \"Nitroglycerin-induced hypotension, bradycardia, and asystole: report of a case and review of the literature.\" Clin Cardiol 13 (1990):  741-4|\"Product Information. Isordil (isosorbide dinitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. ISMO (isosorbide mononitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Tridil (nitroglycerin).\" DuPont Pharmaceuticals  (2002):|\"Product Information. Nitrostat (nitroglycerin).\" Parke-Davis  (2002):",
+        "mo_ta_dich": "Nitrat hữu cơ và nitrit có thể gây hạ huyết áp nghiêm trọng, ngất và sốc, ngay cả với liều nhỏ. Hạ huyết áp do các tác nhân này gây ra có thể kèm theo nhịp tim chậm nghịch lý và tăng cơn đau thắt ngực. Liệu pháp nitrat và nitrit nên được dùng thận trọng ở bệnh nhân giảm thể tích hoặc hạ huyết áp (ví dụ, huyết áp tâm thu <90 mm Hg) hoặc những người, do tuần hoàn não hoặc các cơ quan quan trọng khác không đủ, sẽ bị ảnh hưởng bất thường bởi tình trạng hạ huyết áp quá mức. Bệnh nhân nên ở tư thế ngồi hoặc nằm trong và ngay sau khi dùng thuốc, và được theo dõi các triệu chứng hạ huyết áp nghiêm trọng như buồn nôn, nôn, yếu, da nhợt nhạt, vã mồ hôi và ngất. Liệu pháp nitrat hoặc nitrit được coi là chống chỉ định ở bệnh nhân... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Thiếu máu",
+        "muc_do": "nang",
+        "giai_thich": "Khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc thiếu máu, cần lưu ý rằng một số nhà sản xuất và tài liệu y khoa xem việc dùng nitrat/nitrit là chống chỉ định ở bệnh nhân thiếu máu nặng. Nitrat và nitrit có thể gây methemoglobinemia, chủ yếu khi dùng đường tĩnh mạch liều cao hoặc ngộ độc cấp, và ở người thiếu hụt NADH reductase, tuy nhiên tình trạng tăng methemoglobin cũng có thể xuất hiện với liều thường dùng. Mức tăng này có thể không có ý nghĩa lâm sàng thường quy nhưng lại quan trọng ở một số nhóm bệnh nhân nhất định, bao gồm người suy mạch vành hoặc thiếu máu.",
+        "giai_thich_duoc_si": "Khi dùng Biresort 10 ở người có tiền sử hoặc đang mắc thiếu máu, cần lưu ý rằng một số nhà sản xuất và tài liệu y khoa xem việc dùng nitrat/nitrit là chống chỉ định ở bệnh nhân thiếu máu nặng. Nitrat và nitrit có thể gây methemoglobinemia, chủ yếu khi dùng đường tĩnh mạch liều cao hoặc ngộ độc cấp, và ở người thiếu hụt NADH reductase, tuy nhiên tình trạng tăng methemoglobin cũng có thể xuất hiện với liều thường dùng. Mức tăng này có thể không có ý nghĩa lâm sàng thường quy nhưng lại quan trọng ở một số nhóm bệnh nhân nhất định, bao gồm người suy mạch vành hoặc thiếu máu.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Fibuch EE, Cecil WT, Reed WA \"Methemoglobinemia associated with organic nitrate therapy.\" Anesth Analg 58 (1979):  521-3|Arsura E, Lichstein E, Guadagnino V, Nicchi V, Sanders M, Hollander G, Greengart A \"Methemoglobin levels produced by organic nitrates in patients with coronary artery disease.\" J Clin Pharmacol 24 (1984):  160-4|Curry SC, Arnold-Capell P \"Toxic effects of drugs used in the ICU. Nitroprusside, nitroglycerin, and angiotensin-converting enzyme inhibitors.\" Crit Care Clin 7 (1991):  555-81|Kaplan K, Davison R \"Nitroglycerin and methemoglobinemia.\" Am J Cardiol 57 (1986):  1004|Saxon SA, Silverman ME \"Effects of continuous infusion of intravenous nitroglycerin on methemoglobin levels.\" Am J Cardiol 56 (1985):  461-4|Gibson GR, Hunter JB, Raabe DS, Jr  Manjoney DL, Ittleman FP \"Methemoglobinemia produced by high-dose intravenous nitroglycerin.\" Ann Intern Med 96 (1982):  615-6|Robicsek F \"Acute methemoglobinemia during cardiopulmonary bypass caused by intravenous nitroglycerin infusion.\" J Thorac Cardiovasc Surg 90 (1985):  931-4|\"Product Information. Nitrostat (nitroglycerin).\" Parke-Davis  (2002):|Forsyth RJ, Moulden A \"Methaemoglobinaemia after ingestion of amyl nitrite.\" Arch Dis Child 66 (1991):  152|Pierce JM, Nielsen MS \"Acute acquired methaemoglobinaemia after amyl nitrite poisoning.\" BMJ 298 (1989):  1566|Sutton M, Jeffrey B \"Acquired methemoglobinemia from amyl nitrate inhalation.\" J Emerg Nurs 18 (1992):  8-9|Sobey RJ, Campbell CM \"A 37-year-old with amyl nitrite-induced methemoglobinemia.\" J Emerg Nurs 18 (1992):  11-3|Edwards RJ, Ujma J \"Extreme methaemoglobinaemia secondary to recreational use of amyl nitrite.\" J Accid Emerg Med 12 (1995):  138-42|Machabert R, Testud F, Descotes J \"Methaemoglobinaemia due to amyl nitrite inhalation: a case report.\" Hum Exp Toxicol 13 (1994):  313-4",
+        "mo_ta_dich": "Một số nhà sản xuất và tài liệu y khoa coi việc sử dụng nitrat và nitrit là chống chỉ định ở bệnh nhân thiếu máu nặng. Nitrat và nitrit có thể gây methemoglobinemia, chủ yếu trong liệu pháp tiêm tĩnh mạch liều cao hoặc ngộ độc cấp tính và ở bệnh nhân thiếu hụt NADH reductase. Tuy nhiên, sự gia tăng methemoglobin cũng có thể xảy ra với các liều lượng thường dùng. Mặc dù có lẽ không có ý nghĩa lâm sàng thường quy, sự gia tăng này có thể quan trọng ở một số nhóm bệnh nhân nhất định như những người suy mạch vành hoặc thiếu máu."
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Bệnh cần lọc máu",
+        "muc_do": "nang",
+        "giai_thich": "Ở người bệnh đang phải lọc máu, việc dùng Biresort 10 có thể dẫn đến tụt huyết áp nặng do tác động cộng gộp giữa nitrat hữu cơ trong thuốc với thủ thuật lọc máu – vốn thường làm hạ huyết áp. Biresort 10 chỉ bị thải trừ ở mức trung bình qua lọc máu, nên tình trạng huyết động cần được xác lập ổn định trước khi dùng lại thuốc sau mỗi lần lọc máu.",
+        "giai_thich_duoc_si": "Ở người bệnh đang phải lọc máu, việc dùng Biresort 10 có thể dẫn đến tụt huyết áp nặng do tác động cộng gộp giữa nitrat hữu cơ trong thuốc với thủ thuật lọc máu – vốn thường làm hạ huyết áp. Biresort 10 chỉ bị thải trừ ở mức trung bình qua lọc máu, nên tình trạng huyết động cần được xác lập ổn định trước khi dùng lại thuốc sau mỗi lần lọc máu.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Imamura T, Tamura K, Taguchi T, Minoda M, Seita M \"Reduction of nitroglycerin and isosorbide dinitrate by hemodialysis in refractory angina pectoris after acute myocardial infarction.\" Am J Cardiol 61 (1988):  954-5|Dunetz PS \"Dialysis patients and nitrates.\" Nursing 22 (1992):  4",
+        "mo_ta_dich": "Tác dụng kết hợp của nitrat hữu cơ hoặc nitrit với thẩm phân máu, vốn thường làm hạ huyết áp, có thể gây tụt huyết áp đe dọa tính mạng. Cần thận trọng khi dùng các thuốc này ở bệnh nhân cần thẩm phân máu. Nên tạm ngừng thuốc trước khi thẩm phân, và cần đảm bảo ổn định huyết động trước khi dùng lại thuốc sau thẩm phân. Nitroglycerin và isosorbide dinitrat được thẩm phân ở mức trung bình."
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Nhồi máu cơ tim",
+        "muc_do": "nang",
+        "giai_thich": "Với người có tiền sử nhồi máu cơ tim, lợi ích của Biresort 10 chưa được xác lập và việc dùng thuốc trong bối cảnh này không được khuyến cáo. Nếu vẫn được sử dụng, cần theo dõi lâm sàng và huyết động cẩn thận nhằm tránh tụt huyết áp toàn thân và nhịp tim nhanh, những yếu tố có thể làm nặng thêm tình trạng thiếu máu cơ tim. Ở người nghi ngờ nhồi máu cơ tim cấp kèm nhịp tim chậm hoặc nhanh rõ rệt, cần đặc biệt thận trọng, nhất là khi có nhồi máu thất phải hoặc thành dưới, do các đối tượng này phụ thuộc vào tiền tải thất phải và có thể tụt huyết áp sâu khi dùng thuốc.",
+        "giai_thich_duoc_si": "Với người có tiền sử nhồi máu cơ tim, lợi ích của Biresort 10 chưa được xác lập và việc dùng thuốc trong bối cảnh này không được khuyến cáo. Nếu vẫn được sử dụng, cần theo dõi lâm sàng và huyết động cẩn thận nhằm tránh tụt huyết áp toàn thân và nhịp tim nhanh, những yếu tố có thể làm nặng thêm tình trạng thiếu máu cơ tim. Ở người nghi ngờ nhồi máu cơ tim cấp kèm nhịp tim chậm hoặc nhanh rõ rệt, cần đặc biệt thận trọng, nhất là khi có nhồi máu thất phải hoặc thành dưới, do các đối tượng này phụ thuộc vào tiền tải thất phải và có thể tụt huyết áp sâu khi dùng thuốc.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Scardi S, Zingone B, Pandullo C \"Myocardial infarction following sublingual administration of isosorbide dinitrate.\" Int J Cardiol 26 (1990):  378-9|Berisso MZ, Cavallini A, Iannetti M \"Sudden death during continuous Holter monitoring out of hospital after nitroglycerin consumption.\" Am J Cardiol 54 (1984):  677-9|Buckley R, Roberts R \"Symptomatic bradycardia following the administration of sublingual nitroglycerin.\" Am J Emerg Med 11 (1993):  253-5|Ong EA, Canlas C, Smith W \"Nitroglycerin-induced asystole .\" Arch Intern Med 145 (1985):  954|von Arnim T, Autenrieth G, Bolte HD \"Acute myocardial infarction during continuous electrocardiographic ST segment recording. Possible role of bradycardia and hypotension induced by glyceryl trinitrate.\" Br Heart J 51 (1984):  575-7|Lancaster L, Fenster PE \"Complete heart block after sublingual nitroglycerin.\" Chest 84 (1983):  111-2|Brandes W, Santiago T, Limacher M \"Nitroglycerin-induced hypotension, bradycardia, and asystole: report of a case and review of the literature.\" Clin Cardiol 13 (1990):  741-4|\"Product Information. Isordil (isosorbide dinitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. ISMO (isosorbide mononitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Tridil (nitroglycerin).\" DuPont Pharmaceuticals  (2002):|\"Product Information. Nitrostat (nitroglycerin).\" Parke-Davis  (2002):",
+        "mo_ta_dich": "Lợi ích của nitrat hữu cơ và nitrit ở bệnh nhân nhồi máu cơ tim cấp (AMI) hoặc suy tim sung huyết chưa được xác lập và không khuyến cáo sử dụng trong các tình huống này. Nếu sử dụng, cần theo dõi lâm sàng và huyết động cẩn thận để tránh các nguy cơ hạ huyết áp toàn thân và nhịp tim nhanh, mà ở AMI có thể làm trầm trọng thêm thiếu máu cơ tim. Nói chung, không nên dùng các dạng bào chế uống hoặc tác dụng kéo dài của các thuốc này trong xử trí ban đầu AMI vì khó kiểm soát chính xác và nhanh chóng chấm dứt tác dụng huyết động của chúng nếu xảy ra phản ứng bất lợi. Thường nên tránh dùng nitrat hoặc nitrit dạng ngậm dưới lưỡi và các dạng khởi phát tức thì khác trong trường hợp nghi ngờ AMI có nhịp chậm hoặc nhịp nhanh rõ rệt, và nên sử dụng... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Biresort 10"
+        ],
+        "ten_benh": "Bệnh cơ tim phì đại",
+        "muc_do": "trung_binh",
+        "giai_thich": "Biresort 10 có chứa isosorbide dinitrate, hoạt chất này cần được thận trọng khi dùng ở người có tiền sử hoặc đang mắc bệnh cơ tim phì đại. Đây là tương tác thuốc – bệnh nền ở mức trung bình, nên việc dùng Biresort 10 trong bối cảnh bệnh cơ tim phì đại cần được cân nhắc kỹ bởi bác sĩ điều trị.",
+        "giai_thich_duoc_si": "Biresort 10 có chứa isosorbide dinitrate, hoạt chất này cần được thận trọng khi dùng ở người có tiền sử hoặc đang mắc bệnh cơ tim phì đại. Đây là tương tác thuốc – bệnh nền ở mức trung bình, nên việc dùng Biresort 10 trong bối cảnh bệnh cơ tim phì đại cần được cân nhắc kỹ bởi bác sĩ điều trị.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Isordil (isosorbide dinitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. ISMO (isosorbide mononitrate).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Tridil (nitroglycerin).\" DuPont Pharmaceuticals  (2002):|\"Product Information. Nitrostat (nitroglycerin).\" Parke-Davis  (2002):",
+        "mo_ta_dich": "Nitrat hữu cơ và nitrit có thể làm nặng thêm cơn đau thắt ngực liên quan đến bệnh cơ tim phì đại và nên được dùng thận trọng ở bệnh nhân mắc tình trạng này."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh cơ tim phì đại, Bệnh cần lọc máu, Glôcôm, Hạ huyết áp, Nhồi máu cơ tim, Thiếu máu, Tăng áp lực nội sọ."
+    ]
+  }
+}

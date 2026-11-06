@@ -1,0 +1,106 @@
+{
+  "case_id": "dis-nang-004",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.0466,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cyanocobalamin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cyanocobalamin",
+        "ten_chuan": "Cyanocobalamin",
+        "medication_id": "DDInter451",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "B12 Ankermann"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "B12 Ankermann"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "B12 Ankermann"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh thận, dùng B12 Ankermann cần thận trọng vì sản phẩm chứa nhôm có thể gây độc và tích lũy đến mức độc hại khi dùng đường tiêm kéo dài nếu chức năng thận suy giảm. Trẻ sơ sinh non tháng đặc biệt dễ bị ảnh hưởng do thận chưa trưởng thành và nhu cầu canxi cùng các dung dịch khác cũng chứa nhôm cao. Nghiên cứu cho thấy người suy giảm chức năng thận, bao gồm trẻ sơ sinh non tháng, nhận nhôm qua đường tiêm trên 4-5 mcg/kg/ngày sẽ tích lũy nhôm ở mức liên quan đến độc tính trên hệ thần kinh trung ương và xương, do đó cần thận trọng và theo dõi.",
+        "giai_thich_duoc_si": "Với người có tiền sử hoặc đang mắc bệnh thận, dùng B12 Ankermann cần thận trọng vì sản phẩm chứa nhôm có thể gây độc và tích lũy đến mức độc hại khi dùng đường tiêm kéo dài nếu chức năng thận suy giảm. Trẻ sơ sinh non tháng đặc biệt dễ bị ảnh hưởng do thận chưa trưởng thành và nhu cầu canxi cùng các dung dịch khác cũng chứa nhôm cao. Nghiên cứu cho thấy người suy giảm chức năng thận, bao gồm trẻ sơ sinh non tháng, nhận nhôm qua đường tiêm trên 4-5 mcg/kg/ngày sẽ tích lũy nhôm ở mức liên quan đến độc tính trên hệ thần kinh trung ương và xương, do đó cần thận trọng và theo dõi.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Nascobol (cyanocobalamin nasal).\" Schwarz Pharma, Mequon, WI.|\"Product Information. Hydro-Cobex (hydroxocobalamin).\" Major Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Các sản phẩm cyanocobalamin chứa nhôm có thể gây độc và có thể đạt nồng độ độc khi dùng đường tiêm kéo dài nếu chức năng thận suy giảm. Trẻ sơ sinh non tháng đặc biệt có nguy cơ vì thận chưa trưởng thành và các em cần lượng lớn calci và các dung dịch khác cũng chứa nhôm. Nghiên cứu cho thấy bệnh nhân suy giảm chức năng thận, bao gồm trẻ sơ sinh non tháng, nhận nhôm đường tiêm lớn hơn 4-5 mcg/kg/ngày sẽ tích lũy nhôm ở mức liên quan đến độc tính trên hệ thần kinh trung ương và xương. Khuyến cáo thận trọng và theo dõi."
+      },
+      {
+        "san_pham": [
+          "B12 Ankermann"
+        ],
+        "ten_benh": "Teo thị giác di truyền Leber",
+        "muc_do": "nang",
+        "giai_thich": "Ở người có tiền sử hoặc đang mắc bệnh teo thị giác di truyền Leber, dùng B12 Ankermann đã được ghi nhận gây teo dây thần kinh thị giác nặng và tiến triển nhanh, đặc biệt ở giai đoạn sớm của bệnh. Do đó, cần hết sức thận trọng khi dùng B12 Ankermann ở nhóm bệnh nhân này và việc quyết định dùng thuốc phải do bác sĩ đánh giá.",
+        "giai_thich_duoc_si": "Ở người có tiền sử hoặc đang mắc bệnh teo thị giác di truyền Leber, dùng B12 Ankermann đã được ghi nhận gây teo dây thần kinh thị giác nặng và tiến triển nhanh, đặc biệt ở giai đoạn sớm của bệnh. Do đó, cần hết sức thận trọng khi dùng B12 Ankermann ở nhóm bệnh nhân này và việc quyết định dùng thuốc phải do bác sĩ đánh giá.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Nascobol (cyanocobalamin nasal).\" Schwarz Pharma, Mequon, WI.|\"Product Information. Hydro-Cobex (hydroxocobalamin).\" Major Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Việc sử dụng cyanocobalamin bị chống chỉ định ở bệnh nhân mắc bệnh Leber (teo dây thần kinh thị giác di truyền). Cyanocobalamin đã gây teo dây thần kinh thị giác nghiêm trọng và nhanh chóng ở bệnh nhân mắc bệnh Leber giai đoạn sớm."
+      },
+      {
+        "san_pham": [
+          "B12 Ankermann"
+        ],
+        "ten_benh": "Hạ kali máu",
+        "muc_do": "nang",
+        "giai_thich": "Khi dùng B12 Ankermann ở người có tiền sử hoặc đang bị hạ kali máu, cần lưu ý rằng tình trạng hạ kali máu (dẫn đến tử vong) đã được ghi nhận trong quá trình điều trị bằng vitamin B12 do nhu cầu tăng lên đối với hồng cầu trong quá trình tạo máu. Vì vậy, việc theo dõi lâm sàng và điều chỉnh nồng độ kali trước và trong khi dùng B12 Ankermann là cần thiết.",
+        "giai_thich_duoc_si": "Khi dùng B12 Ankermann ở người có tiền sử hoặc đang bị hạ kali máu, cần lưu ý rằng tình trạng hạ kali máu (dẫn đến tử vong) đã được ghi nhận trong quá trình điều trị bằng vitamin B12 do nhu cầu tăng lên đối với hồng cầu trong quá trình tạo máu. Vì vậy, việc theo dõi lâm sàng và điều chỉnh nồng độ kali trước và trong khi dùng B12 Ankermann là cần thiết.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Nascobol (cyanocobalamin nasal).\" Schwarz Pharma, Mequon, WI.|\"Product Information. Hydro-Cobex (hydroxocobalamin).\" Major Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Hạ kali máu (dẫn đến tử vong) đã xảy ra trong quá trình điều trị bằng vitamin B12 do nhu cầu tăng lên về hồng cầu trong quá trình tạo máu. Cần theo dõi lâm sàng và điều chỉnh nồng độ kali trước và trong khi điều trị bằng vitamin B12."
+      },
+      {
+        "san_pham": [
+          "B12 Ankermann"
+        ],
+        "ten_benh": "Hội chứng kém hấp thu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng B12 Ankermann ở người có tiền sử hoặc đang mắc hội chứng kém hấp thu, khả năng hấp thu vitamin B12 bị giảm sút, tương tự như trong thiếu máu ác tính nếu không dùng kèm yếu tố nội tại (IF). B12 Ankermann được hấp thu nhanh khi tiêm bắp hoặc tiêm dưới da, và dạng hydroxocobalamin (một chất tương tự cyanocobalamin) tuy có chức năng tương tự nhưng lại có thể gây hình thành kháng thể với phức hợp hydroxocobalamin-transcobalamin II. Do đó, cyanocobalamin có thể là lựa chọn được ưu tiên ở những người mắc các tình trạng này.",
+        "giai_thich_duoc_si": "Khi dùng B12 Ankermann ở người có tiền sử hoặc đang mắc hội chứng kém hấp thu, khả năng hấp thu vitamin B12 bị giảm sút, tương tự như trong thiếu máu ác tính nếu không dùng kèm yếu tố nội tại (IF). B12 Ankermann được hấp thu nhanh khi tiêm bắp hoặc tiêm dưới da, và dạng hydroxocobalamin (một chất tương tự cyanocobalamin) tuy có chức năng tương tự nhưng lại có thể gây hình thành kháng thể với phức hợp hydroxocobalamin-transcobalamin II. Do đó, cyanocobalamin có thể là lựa chọn được ưu tiên ở những người mắc các tình trạng này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Hydro-Cobex (hydroxocobalamin).\" Major Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Hấp thu vitamin B12 giảm trong các hội chứng kém hấp thu và trong thiếu máu ác tính nếu không dùng đồng thời yếu tố nội tại (IF). Cyanocobalamin được hấp thu nhanh sau tiêm bắp hoặc tiêm dưới da. Hydroxocobalamin (chất tương tự cyanocobalamin) có chức năng giống cyanocobalamin, nhưng đã gây hình thành kháng thể đối với phức hợp hydroxocobalamin-transcobalamin II. Việc sử dụng cyanocobalamin có thể được ưu tiên ở những bệnh nhân có các tình trạng này."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh thận, Hạ kali máu, Hội chứng kém hấp thu, Teo thị giác di truyền Leber."
+    ]
+  }
+}

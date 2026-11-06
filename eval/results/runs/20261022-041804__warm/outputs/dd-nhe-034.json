@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nhe-034",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.3592,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Magaldrate",
+      "Prednisolone"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Magaldrate",
+        "ten_chuan": "Magaldrate",
+        "medication_id": "DDInter1112",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Prednisolone",
+        "ten_chuan": "Prednisolone",
+        "medication_id": "DDInter1513",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Magaldrate",
+        "thuoc_b": "Prednisolone",
+        "medication_a_id": "DDInter1112",
+        "medication_b_id": "DDInter1513",
+        "mo_ta": "Antacids and agents with acid-neutralizing effects may impair the absorption of dexamethasone, prednisolone, prednisone, and other corticosteroids, although data from published studies are somewhat conflicting. The mechanism of interaction and clinical significance are unknown. No particular intervention is necessary during concomitant therapy with these agents, but clinicians should be aware of the potential for interaction.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Naggar VF, Khalil SA, Gouda MW \"Effect of concomitant administration of magnesium trisilicate on GI absorption of dexamethasone in humans.\" J Pharm Sci 67 (1978): 1029-30, [2] Tanner AR, Caffin JA, Halliday JW, Powell LW \"Concurrent administration of antacids and prednisone: effect on serum levels of prednisolone.\" Br J Clin Pharmacol 7 (1979): 397-400, [3] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02A, Magnesium carbonate",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Budesonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, S01C, Fluorometholone",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Ampetox (hoạt chất: Magaldrate)",
+        "thuoc_b": "Adelone (hoạt chất: Prednisolone)",
+        "medication_a_id": "DDInter1112",
+        "medication_b_id": "DDInter1513",
+        "mo_ta": "Antacids and agents with acid-neutralizing effects may impair the absorption of dexamethasone, prednisolone, prednisone, and other corticosteroids, although data from published studies are somewhat conflicting. The mechanism of interaction and clinical significance are unknown. No particular intervention is necessary during concomitant therapy with these agents, but clinicians should be aware of the potential for interaction.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Naggar VF, Khalil SA, Gouda MW \"Effect of concomitant administration of magnesium trisilicate on GI absorption of dexamethasone in humans.\" J Pharm Sci 67 (1978): 1029-30, [2] Tanner AR, Caffin JA, Halliday JW, Powell LW \"Concurrent administration of antacids and prednisone: effect on serum levels of prednisolone.\" Br J Clin Pharmacol 7 (1979): 397-400, [3] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02A, Magnesium carbonate",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Budesonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, S01C, Fluorometholone",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Magaldrate",
+        "hoat_chat_b": "Prednisolone",
+        "san_pham_a": [
+          "Ampetox"
+        ],
+        "san_pham_b": [
+          "Adelone"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Ampetox (hoạt chất: Magaldrate)",
+        "thuoc_b": "Adelone (hoạt chất: Prednisolone)",
+        "medication_a_id": "DDInter1112",
+        "medication_b_id": "DDInter1513",
+        "xu_tri": "-",
+        "thay_the_a": "A02A, Magnesium carbonate",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Budesonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluticasone, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, S01C, Fluorometholone",
+        "mo_ta": "Antacids and agents with acid-neutralizing effects may impair the absorption of dexamethasone, prednisolone, prednisone, and other corticosteroids, although data from published studies are somewhat conflicting. The mechanism of interaction and clinical significance are unknown. No particular intervention is necessary during concomitant therapy with these agents, but clinicians should be aware of the potential for interaction.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Naggar VF, Khalil SA, Gouda MW \"Effect of concomitant administration of magnesium trisilicate on GI absorption of dexamethasone in humans.\" J Pharm Sci 67 (1978): 1029-30, [2] Tanner AR, Caffin JA, Halliday JW, Powell LW \"Concurrent administration of antacids and prednisone: effect on serum levels of prednisolone.\" Br J Clin Pharmacol 7 (1979): 397-400, [3] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "hoat_chat_a": "Magaldrate",
+        "hoat_chat_b": "Prednisolone",
+        "san_pham_a": [
+          "Ampetox"
+        ],
+        "san_pham_b": [
+          "Adelone"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Ampetox",
+        "thuoc_b": "Adelone",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Ampetox và Adelone có thể làm giảm khả năng hấp thu Adelone vào cơ thể, vì Ampetox là thuốc trung hòa axit dạ dày và làm thay đổi môi trường dạ dày nơi Adelone được hấp thu; tuy vậy dữ liệu từ các nghiên cứu đã công bố về vấn đề này còn khá mâu thuẫn và cơ chế tương tác cũng như ý nghĩa lâm sàng vẫn chưa được xác định rõ. Nhìn chung không cần can thiệp đặc biệt nào khi dùng đồng thời hai thuốc này, nhưng bác sĩ và dược sĩ nên lưu ý khả năng xảy ra tương tác.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Thuốc kháng axit và các tác nhân có tác dụng trung hòa axit có thể làm giảm hấp thu dexamethasone, prednisolone, prednisone và các corticosteroid khác, mặc dù dữ liệu từ các nghiên cứu đã công bố có phần mâu thuẫn. Cơ chế tương tác và ý nghĩa lâm sàng chưa được biết rõ.",
+        "xu_tri_dich": "Không cần can thiệp đặc biệt nào trong quá trình điều trị đồng thời với các tác nhân này, nhưng bác sĩ lâm sàng nên nhận thức được khả năng xảy ra tương tác."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức nhẹ. Cặp đáng chú ý là Ampetox + Adelone. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Ampetox + Adelone",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Ampetox",
+      "Adelone"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Ampetox",
+          "Adelone"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

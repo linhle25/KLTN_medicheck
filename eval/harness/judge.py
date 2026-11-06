@@ -6,7 +6,7 @@ bằng DeepSeek-reasoner, đối chiếu output của 1 run với nguồn DDInte
     python -m eval.harness.judge --consistency <consistency_run_dir>      # metric 6
     python -m eval.harness.judge --calibrate <human_labels.csv>           # Cohen's κ
 
-Judge = deepseek-reasoner, temperature 0. CÙNG nhà cung cấp với model đang chấm →
+Judge = deepseek-reasoner (mặc định; dùng --provider openai --model <tên> để chấm bằng OpenAI), temperature 0. CÙNG nhà cung cấp với model đang chấm →
 thiên vị giảm chứ không loại bỏ → BẮT BUỘC đối chiếu --calibrate với người trước khi
 tin số.
 
@@ -43,9 +43,9 @@ def _display_name_for_pair(nhom: str, med_id: str | None, doi_tuong_en: str | No
     name: str | None = None
     try:
         from src.db.models import DiseaseInteraction, FoodInteraction
-        from src.db.session import SessionLocalFacts
+        from src.db.session import SessionLocal
 
-        with SessionLocalFacts() as s:
+        with SessionLocal() as s:
             if nhom == "disease":
                 row = (
                     s.query(DiseaseInteraction)
@@ -85,6 +85,7 @@ _SEM = asyncio.Semaphore(3)
 _CALL_TIMEOUT = 210
 _MAX_ATTEMPTS = 2
 _MODEL = "deepseek-reasoner"
+_PROVIDER = "deepseek"  # deepseek | openai (--provider)
 _DONE = [0]
 
 
@@ -95,6 +96,20 @@ def _tick(err: bool = False) -> None:
 
 def _judge_llm() -> ChatOpenAI:
     s = get_settings()
+    if _PROVIDER == "openai":
+        if not s.openai_api_key:
+            raise SystemExit("Thiếu OPENAI_API_KEY trong .env - cần cho --provider openai")
+        kwargs: dict = {}
+        # Model suy luận của OpenAI (o1/o3/o4..., gpt-5...) không nhận temperature=0.
+        if not re.match(r"^(o\d|gpt-5)", _MODEL):
+            kwargs["temperature"] = 0
+        return ChatOpenAI(
+            model=_MODEL,
+            api_key=s.openai_api_key,
+            max_retries=1,
+            timeout=_CALL_TIMEOUT,
+            **kwargs,
+        )
     return ChatOpenAI(
         model=_MODEL,
         api_key=s.deepseek_api_key,
@@ -308,12 +323,34 @@ _USER_TMPL = {
 }
 
 
+def _drop_listed_entities(verdict: dict, case: dict, pair: str) -> None:
+    """entity_leak chỉ có nghĩa với tên thuốc NGOÀI yêu cầu. Giám khảo LLM đôi khi bỏ qua
+    danh sách thuốc được cấp (đã gặp: gpt-4o gắn nhãn 'rò' cho chính biệt dược trong đơn
+    dù chấm 5/5) - lọc lại bằng so khớp tất định, giữ bản gốc ở entity_leak_raw."""
+    leaks = verdict.get("entity_leak")
+    if not isinstance(leaks, list) or not leaks:
+        return
+    allowed = {n.lower() for n in _input_product_names(case)}
+    allowed |= {x.strip().lower() for x in pair.split("×") if x.strip()}
+
+    def _listed(e: str) -> bool:
+        e = e.strip().lower()
+        return any(e == a or e in a or a in e for a in allowed if a)
+
+    kept = [e for e in leaks if isinstance(e, str) and not _listed(e)]
+    if len(kept) != len(leaks):
+        verdict["entity_leak_raw"] = leaks
+        verdict["entity_leak"] = kept
+
+
 async def _score_one(llm, rubric: str, metric: str, case: dict, narrative: str, source: str, pair: str) -> dict:
     user = _USER_TMPL[metric].format(
         source=source, narrative=narrative, pair=pair, audience=case.get("audience", "patient"),
         drugs=", ".join(sorted(_input_product_names(case))),
     )
     verdict = await _ask(llm, rubric, user)
+    if metric == "relevance":
+        _drop_listed_entities(verdict, case, pair)
     return {"case_id": case["id"], "nhom": case["nhom"], "audience": case.get("audience"),
             "pair": pair, "verdict": verdict}
 
@@ -457,7 +494,7 @@ def _summary_md(results: list[dict]) -> str:
 
 
 async def _amain() -> None:
-    global _MODEL
+    global _MODEL, _PROVIDER
     ap = argparse.ArgumentParser()
     ap.add_argument("run_dir", nargs="?", type=Path)
     ap.add_argument("--metric", default="all",
@@ -466,9 +503,20 @@ async def _amain() -> None:
     ap.add_argument("--consistency", type=Path)
     ap.add_argument("--calibrate", type=Path)
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--model", default=_MODEL, help="deepseek-reasoner (mặc định) | deepseek-chat (nhanh)")
+    ap.add_argument("--model", default=None,
+                    help="deepseek: deepseek-reasoner (mặc định) | deepseek-chat (nhanh); "
+                         "openai: BẮT BUỘC chỉ định (tên model bạn có quyền dùng)")
+    ap.add_argument("--provider", choices=["deepseek", "openai"], default="deepseek",
+                    help="nhà cung cấp giám khảo; openai dùng OPENAI_API_KEY trong .env")
+    ap.add_argument("--tag", default="",
+                    help="hậu tố tên file kết quả (vd 'openai' -> judge_faithfulness_openai.json) "
+                         "để không ghi đè kết quả của giám khảo khác")
     args = ap.parse_args()
-    _MODEL = args.model
+    _PROVIDER = args.provider
+    if args.provider == "openai" and not args.model:
+        raise SystemExit("--provider openai cần --model <tên model OpenAI>")
+    _MODEL = args.model or _MODEL
+    sfx = f"_{args.tag}" if args.tag else ""
     RESULTS.mkdir(parents=True, exist_ok=True)
 
     if args.calibrate:
@@ -480,18 +528,18 @@ async def _amain() -> None:
     def _persist(agg: dict) -> None:
         """Ghi 1 metric ra file NGAY khi chấm xong (job dài ~20 phút - nếu crash giữa
         chừng vẫn giữ được metric đã xong), kể cả consistency (trước đây bị bỏ sót)."""
-        (RESULTS / f"judge_{agg['metric']}.json").write_text(
+        (RESULTS / f"judge_{agg['metric']}{sfx}.json").write_text(
             json.dumps(agg, ensure_ascii=False, indent=2), encoding="utf-8"
         )
         # Dựng lại judge_summary.md từ MỌI file judge_*.json trên đĩa -> chạy lẻ 1 metric
         # (hoặc --consistency riêng) không xoá tóm tắt của metric khác.
         order = ["faithfulness", "relevance", "completeness", "consistency"]
         on_disk = [
-            json.loads((RESULTS / f"judge_{m}.json").read_text(encoding="utf-8"))
+            json.loads((RESULTS / f"judge_{m}{sfx}.json").read_text(encoding="utf-8"))
             for m in order
-            if (RESULTS / f"judge_{m}.json").exists()
+            if (RESULTS / f"judge_{m}{sfx}.json").exists()
         ]
-        (RESULTS / "judge_summary.md").write_text(_summary_md(on_disk), encoding="utf-8")
+        (RESULTS / f"judge_summary{sfx}.md").write_text(_summary_md(on_disk), encoding="utf-8")
 
     if args.run_dir:
         _ALL = ["faithfulness", "relevance", "completeness"]
@@ -508,8 +556,8 @@ async def _amain() -> None:
     if not args.run_dir and not args.consistency:
         raise SystemExit("Cần <run_dir> (metric 1/4/5), --consistency (metric 6), hoặc --calibrate")
 
-    print("\n" + (RESULTS / "judge_summary.md").read_text(encoding="utf-8"))
-    print(f"-> {RESULTS / 'judge_summary.md'}")
+    print("\n" + (RESULTS / f"judge_summary{sfx}.md").read_text(encoding="utf-8"))
+    print(f"-> {RESULTS / f'judge_summary{sfx}.md'}")
 
 
 if __name__ == "__main__":

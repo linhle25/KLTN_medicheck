@@ -1,202 +1,212 @@
 {
-  "generated": "2026-09-01T05:56:39+00:00",
+  "generated": "2026-10-22T04:23:16+00:00",
   "runs": [
-    "20260901-042520__cold",
-    "20260901-043615__warm",
-    "20260901-044255__consistency"
+    "20261022-041256__cold",
+    "20261022-041804__warm",
+    "20261022-041959__consistency"
   ],
   "m3_guardrail": {
-    "llm_narrative_banned_hits": 137,
-    "llm_narrative_banned_rate": 0.2514,
-    "slipped_past_filter": 6,
+    "llm_narrative_banned_hits": 131,
+    "llm_narrative_banned_rate": 0.2467,
+    "slipped_past_filter": 0,
     "fallback_nuke_count": 0,
     "fallback_nuke_rate": 0.0,
-    "catch_rate": 0.9562,
+    "catch_rate": 1.0,
     "hit_examples": [
       {
         "case_id": "dd-nang-001",
         "call_site": "product_edge",
-        "snippet": "Dùng chung thuốc Ketoconazole 2% (dạng bôi ngoài da) với Loperamid (thuốc trị tiêu chảy) có thể làm tăng lượng Loperamid hấp thu vào máu và kéo dài tác dụng của nó, dẫn đến nguy cơ gặp nhiều tác dụng phụ hơn. Nguyên nhân"
+        "snippet": "Dùng chung A.T Ketoconazole 2% và A.T Loperamid 2 mg có thể làm tăng nồng độ của A.T Loperamid 2 mg trong máu, do A.T Ketoconazole 2% thuộc nhóm thuốc ức chế mạnh hệ enzyme CYP450 3A4 hoặc 2C8 - là hệ enzyme tham gia phâ"
       },
       {
         "case_id": "dd-nang-002",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Saquin với Amcinol - Paste có thể làm tăng đáng kể nồng độ triamcinolone trong huyết tương, vì saquinavir là một chất ức chế mạnh CYP450 3A4, enzyme chuyển hóa chính của corticosteroid này. Hệ quả là làm tăng "
+        "snippet": "Dùng chung Saquin và Amcinol - Paste có thể làm nồng độ Amcinol - Paste trong máu tăng lên đáng kể, do Saquin ức chế mạnh enzym CYP450 3A4 tham gia chuyển hóa Amcinol - Paste. Hệ quả là các tác dụng của corticosteroid có"
       },
       {
         "case_id": "dd-nang-003",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Prednisone và Golimumab có thể làm tăng nguy cơ nhiễm trùng do cả hai thuốc đều có tác dụng ức chế miễn dịch. Nguy cơ này cao hơn ở người bệnh đang dùng thêm các thuốc ức chế miễn dịch hoặc ức chế tủy xương kh"
+        "snippet": "Việc phối hợp Brown Burk Prednison 5mg với SIMPONI đặt người bệnh vào tình huống tăng nguy cơ nhiễm trùng, do cả hai đều mang tính ức chế miễn dịch và ức chế tủy xương ở các mức khác nhau. Các nhiễm trùng nặng và nhiễm k"
       },
       {
         "case_id": "dd-nang-004",
         "call_site": "product_edge",
-        "snippet": "Dùng chung REMICADE và Campto có thể làm tăng nguy cơ nhiễm trùng, kể cả nhiễm trùng nghiêm trọng hoặc nhiễm trùng máu, thậm chí có thể dẫn đến tử vong. Nguyên nhân là vì cả hai loại thuốc này đều có tác dụng ức chế hệ m"
+        "snippet": "Dùng REMICADE chung với Campto có thể làm tăng nguy cơ nhiễm trùng, vì cả hai đều tác động lên hệ miễn dịch và tủy xương. Campto thuộc nhóm thuốc chống ung thư, có thể ức chế mạnh tủy xương và hệ miễn dịch, nên khi kết h"
       },
       {
         "case_id": "dd-nang-005",
         "call_site": "product_edge",
-        "snippet": "Dùng chung A.T Palonosetron Inj và Edxor có thể làm tăng nguy cơ mắc hội chứng serotonin – một tình trạng hiếm gặp nhưng nghiêm trọng, thậm chí nguy hiểm đến tính mạng, do cả hai thuốc đều làm tăng hoạt động của serotoni"
+        "snippet": "Dùng chung A.T Palonosetron Inj và Edxor có thể làm tăng nguy cơ hội chứng serotonin - một tình trạng hiếm nhưng nghiêm trọng và có thể gây tử vong, được cho là do kích thích quá mức các thụ thể 5-HT1A và 2A ở não, vì A."
       },
       {
         "case_id": "dd-nang-006",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Acid Nalidixic với Warfarin có thể làm tăng tác dụng chống đông của warfarin, dẫn đến nguy cơ chảy máu. Cơ chế chính xác chưa rõ, nhưng có thể liên quan đến việc ức chế chuyển hóa của thuốc chống đông coumarin"
+        "snippet": "Một số kháng sinh nhóm quinolone đã được ghi nhận làm tăng tác dụng giảm prothrombin của A.T Warfarin 1 mg và các thuốc chống đông coumarin khác; cơ chế chính xác chưa rõ nhưng có thể liên quan đến ức chế chuyển hóa coum"
       },
       {
         "case_id": "dd-nang-007",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Jakavi và Olumiant có thể làm tăng nguy cơ nhiễm trùng, bao gồm cả những nhiễm trùng nghiêm trọng hoặc đe dọa tính mạng, cũng như nguy cơ phát triển ung thư hạch và các loại ung thư khác. Nguy cơ này xảy ra vì"
+        "snippet": "Dùng Jakavi 10mg cùng Olumiant có thể làm tăng nguy cơ nhiễm trùng, bao gồm cả lymphoma và các bệnh ác tính khác, do cả hai đều có tác dụng ức chế miễn dịch. Các nhiễm trùng nặng, đôi khi gây tử vong, do vi khuẩn, mycoba"
       },
       {
         "case_id": "dd-nang-008",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Mekoquinin với Sirturo có thể dẫn đến tác dụng cộng hưởng trên khoảng QT, vì cả hai thuốc đều có khả năng kéo dài khoảng QT. Sự phối hợp này về mặt lý thuyết làm tăng nguy cơ rối loạn nhịp thất, bao gồm xoắn đ"
+        "snippet": "Dùng chung Mekoquinin và Sirturo có thể làm tăng thêm tác động kéo dài khoảng QT trên điện tâm đồ, từ đó làm tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử. Nguy cơ này mang tính lý thuyết, dựa trên khả năng gâ"
       },
       {
         "case_id": "dd-nang-009",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Diatramine và Aronol có thể làm tăng nguy cơ mắc hội chứng serotonin – một tình trạng hiếm gặp nhưng nghiêm trọng, thậm chí có thể đe dọa tính mạng. Nguyên nhân là vì cả hai loại thuốc này đều ảnh hưởng đến ch"
+        "snippet": "Dùng chung Diatramine Capsule 11.30mg và Aronol có thể làm tăng nguy cơ hội chứng serotonin - một tình trạng hiếm gặp nhưng nghiêm trọng và có thể đe dọa tính mạng, được cho là do kích thích quá mức các thụ thể 5-HT1A và"
       },
       {
         "case_id": "dd-nang-010",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Erleada và Celenal có thể làm giảm đáng kể nồng độ và tác dụng dược lý của nimodipine trong Celenal, vì apalutamide trong Erleada là chất cảm ứng mạnh enzyme CYP450 3A4 – enzyme chuyển hóa nimodipine ở niêm mạ"
+        "snippet": "Erleada khi dùng chung với Celenal có thể làm giảm đáng kể nồng độ của Celenal trong cơ thể, do Erleada là một chất cảm ứng mạnh enzym CYP450 3A4. Một số cơ quan quản lý dược phẩm xem việc phối hợp Celenal đường uống với"
       },
       {
         "case_id": "dd-nang-011",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Edxor (venlafaxine) và Acough (dextromethorphan) có thể làm tăng nguy cơ hội chứng serotonin, một tình trạng hiếm gặp nhưng nghiêm trọng và có khả năng gây tử vong do kích thích quá mức thụ thể 5-HT1A và 2A ở "
+        "snippet": "Edxor kết hợp với Acough tạo thành sự phối hợp của hai tác nhân có hoạt tính serotonergic, làm tăng nguy cơ hội chứng serotonin. Nguy cơ này cần được cân nhắc ngay cả khi hai thuốc được dùng nối tiếp nhau, vì một số tác "
       },
       {
         "case_id": "dd-nang-012",
         "call_site": "product_edge",
-        "snippet": "Dùng chung Noxafil (posaconazole) với V.C.S (vincristine) có thể làm tăng đáng kể nồng độ vincristine trong huyết tương, vì posaconazole ức chế mạnh CYP450 3A4 và P-glycoprotein – hai con đường chính chuyển hóa và đào th"
+        "snippet": "Dùng chung Noxafil và V.C.S 1mg/1ml có thể làm nồng độ V.C.S 1mg/1ml trong máu tăng đáng kể, vì Noxafil ức chế mạnh cả CYP450 3A4 lẫn P-glycoprotein — hai con đường mà V.C.S 1mg/1ml phụ thuộc vào để được chuyển hóa và th"
       }
     ],
-    "slipped_examples": [
-      {
-        "case_id": "dd-nhe-036",
-        "path": "product_explanations",
-        "snippet": "Dùng chung AG-Ome và FENOBITAL có thể làm tăng nồng độ của FENOBITAL trong máu, vì AG-Ome có thể ức chế một enzyme gan (CYP450 2C19) vốn giúp phân hủy FENOBITAL. Tuy nhiên, điều này chỉ là về mặt lý thuyết và chưa có bằn"
-      },
-      {
-        "case_id": "rt-sokieu-009",
-        "path": "product_explanations",
-        "snippet": "Dùng chung Maravita (có chứa magie) với Betocom (thuốc chẹn beta dùng cho tim mạch) có thể làm giảm hấp thu của Betocom vào máu, khiến thuốc kém hiệu quả hơn. Nguyên nhân có thể là do magie trong Maravita liên kết với Be"
-      },
-      {
-        "case_id": "dd-nhe-036",
-        "path": "product_explanations",
-        "snippet": "Dùng chung AG-Ome và FENOBITAL có thể làm tăng nồng độ của FENOBITAL trong máu, vì AG-Ome có thể ức chế một enzyme gan (CYP450 2C19) vốn giúp phân hủy FENOBITAL. Tuy nhiên, điều này chỉ là về mặt lý thuyết và chưa có bằn"
-      },
-      {
-        "case_id": "rt-sokieu-009",
-        "path": "product_explanations",
-        "snippet": "Dùng chung Maravita (có chứa magie) với Betocom (thuốc chẹn beta dùng cho tim mạch) có thể làm giảm hấp thu của Betocom vào máu, khiến thuốc kém hiệu quả hơn. Nguyên nhân có thể là do magie trong Maravita liên kết với Be"
-      },
-      {
-        "case_id": "dd-trung_binh-017",
-        "path": "product_explanations",
-        "snippet": "Dùng chung APO-Erlotinib với Antifacid có thể làm giảm hấp thu erlotinib do Antifacid (famotidin) làm tăng pH dạ dày, trong khi độ hòa tan của erlotinib giảm khi pH vượt quá 5, dẫn đến nồng độ thuốc trong huyết tương thấ"
-      },
-      {
-        "case_id": "dis-trung_binh-011",
-        "path": "disease_interactions",
-        "snippet": "Esomeprazol, hoạt chất chính của thuốc, được chuyển hóa chủ yếu tại gan, do đó cần đánh giá chức năng gan khi sử dụng. Tuy nhiên, ở bệnh nhân suy gan nặng (Child Pugh C), nồng độ thuốc trong huyết tương tăng đáng kể, đòi"
-      }
-    ],
+    "slipped_examples": [],
     "_note": "llm_narrative_banned = phần văn xuôi (đã tách PART2 dịch) khớp regex TRƯỚC lọc. slipped = đoạn HIỂN THỊ còn khớp regex (lỗi thật). Regex FP/FN thật cần bộ câu gán nhãn — Pha sau."
   },
   "m7_latency": {
     "end_to_end_by_phase": {
       "cold": {
         "n": 134,
-        "p50": 4.468,
-        "p90": 7.006,
-        "p95": 8.059,
-        "p99": 14.925,
-        "max": 19.776,
-        "mean": 4.631
+        "p50": 2.321,
+        "p90": 3.637,
+        "p95": 3.967,
+        "p99": 4.391,
+        "max": 4.433,
+        "mean": 2.255
       },
       "consistency": {
-        "n": 58,
-        "p50": 4.915,
-        "p90": 6.168,
-        "p95": 7.498,
-        "p99": 8.376,
-        "max": 8.909,
-        "mean": 5.057
+        "n": 60,
+        "p50": 2.518,
+        "p90": 3.257,
+        "p95": 3.676,
+        "p99": 3.811,
+        "max": 4.936,
+        "mean": 2.556
       },
       "warm": {
         "n": 134,
-        "p50": 2.671,
-        "p90": 3.905,
-        "p95": 5.962,
-        "p99": 11.187,
-        "max": 17.424,
-        "mean": 2.778
+        "p50": 1.113,
+        "p90": 1.401,
+        "p95": 1.458,
+        "p99": 1.744,
+        "max": 2.589,
+        "mean": 0.804
       }
     },
     "end_to_end_latency_phase_cold_vs_warm": {},
     "per_llm_call_by_call_site": {
       "disease_edge": {
-        "n": 162,
-        "p50": 2.667,
-        "p90": 4.969,
-        "p95": 6.264,
-        "p99": 6.978,
-        "max": 7.513,
-        "mean": 3.081
+        "n": 151,
+        "p50": 1.898,
+        "p90": 2.468,
+        "p95": 2.567,
+        "p99": 2.758,
+        "max": 3.323,
+        "mean": 1.926
       },
       "food_edge": {
         "n": 58,
-        "p50": 2.075,
-        "p90": 2.747,
-        "p95": 2.788,
-        "p99": 2.838,
-        "max": 2.867,
-        "mean": 2.136
+        "p50": 1.661,
+        "p90": 1.987,
+        "p95": 2.108,
+        "p99": 2.174,
+        "max": 2.201,
+        "mean": 1.681
       },
       "literal_merge": {
-        "n": 217,
-        "p50": 2.471,
-        "p90": 4.113,
-        "p95": 4.908,
-        "p99": 7.018,
-        "max": 8.354,
-        "mean": 2.677
+        "n": 209,
+        "p50": 1.825,
+        "p90": 2.442,
+        "p95": 2.601,
+        "p99": 3.006,
+        "max": 3.958,
+        "mean": 1.866
       },
       "overview": {
-        "n": 204,
-        "p50": 1.488,
-        "p90": 1.879,
-        "p95": 2.18,
-        "p99": 3.098,
-        "max": 3.64,
-        "mean": 1.555
+        "n": 202,
+        "p50": 1.139,
+        "p90": 1.346,
+        "p95": 1.417,
+        "p99": 1.546,
+        "max": 1.584,
+        "mean": 1.146
       },
       "product_edge": {
-        "n": 121,
-        "p50": 3.697,
-        "p90": 5.034,
-        "p95": 5.815,
-        "p99": 6.26,
-        "max": 7.329,
-        "mean": 3.709
+        "n": 120,
+        "p50": 2.612,
+        "p90": 3.641,
+        "p95": 3.796,
+        "p99": 4.237,
+        "max": 4.301,
+        "mean": 2.654
       }
     }
   },
   "m8_format": {
-    "narratives_checked": 953,
+    "narratives_checked": 945,
     "marker_leak_count": 0,
     "marker_leak_rate": 0.0,
-    "empty_mo_ta_dich_classified": 0,
+    "empty_mo_ta_dich_classified": 17,
     "leak_examples": [],
-    "empty_dich_examples": []
+    "empty_dich_examples": [
+      {
+        "case_id": "dd-nang-001",
+        "pair": "A.T Ketoconazole 2% + A.T Loperamid 2 mg"
+      },
+      {
+        "case_id": "dd-nang-004",
+        "pair": "REMICADE + Campto"
+      },
+      {
+        "case_id": "dd-nang-009",
+        "pair": "Diatramine Capsule 11.30mg + Aronol"
+      },
+      {
+        "case_id": "dd-trung_binh-020",
+        "pair": "Antacil + MS Contin 10mg"
+      },
+      {
+        "case_id": "edge-long-001",
+        "pair": "Aradine + Acular"
+      },
+      {
+        "case_id": "ov-multi-002",
+        "pair": "Acid Nalidixic + Acezym XR 0,5mg"
+      },
+      {
+        "case_id": "ov-multi-004",
+        "pair": "Brown Burk Prednison 5mg + Intelence"
+      },
+      {
+        "case_id": "rt-label-010",
+        "pair": "Acezym XR 0,5mg + Dexilant 30 mg delayed release capsules"
+      },
+      {
+        "case_id": "rt-xutri-004",
+        "pair": "Vivotif + Afinitor 10mg"
+      },
+      {
+        "case_id": "dd-nang-004",
+        "pair": "REMICADE + Campto"
+      }
+    ]
   },
   "m9_overview": {
-    "overviews_checked": 326,
+    "overviews_checked": 328,
     "count_mismatch": 0,
     "highlight_stray": 0,
     "pass_rate": 1.0,
@@ -204,34 +214,34 @@
   },
   "m10_cost": {
     "cold": {
-      "llm_calls": 471,
-      "cases": 124,
-      "input_tokens": 544306,
-      "output_tokens": 113483,
-      "usd_total": 0.2718,
-      "usd_per_case": 0.00219,
-      "calls_per_case": 3.8,
-      "tokens_per_case": 5305
+      "llm_calls": 447,
+      "cases": 123,
+      "input_tokens": 613840,
+      "output_tokens": 109331,
+      "usd_total": 0.286,
+      "usd_per_case": 0.00233,
+      "calls_per_case": 3.63,
+      "tokens_per_case": 5879
     },
     "warm": {
-      "llm_calls": 84,
-      "cases": 84,
-      "input_tokens": 83561,
-      "output_tokens": 12101,
-      "usd_total": 0.0359,
-      "usd_per_case": 0.00043,
+      "llm_calls": 83,
+      "cases": 83,
+      "input_tokens": 82661,
+      "output_tokens": 10021,
+      "usd_total": 0.0333,
+      "usd_per_case": 0.0004,
       "calls_per_case": 1.0,
-      "tokens_per_case": 1139
+      "tokens_per_case": 1117
     },
     "consistency": {
-      "llm_calls": 207,
+      "llm_calls": 210,
       "cases": 20,
-      "input_tokens": 235565,
-      "output_tokens": 49490,
-      "usd_total": 0.118,
-      "usd_per_case": 0.0059,
-      "calls_per_case": 10.35,
-      "tokens_per_case": 14253
+      "input_tokens": 280503,
+      "output_tokens": 49246,
+      "usd_total": 0.1299,
+      "usd_per_case": 0.0065,
+      "calls_per_case": 10.5,
+      "tokens_per_case": 16487
     },
     "_price_note": "deepseek-chat {'in': 0.27, 'out': 1.1} USD/1M — KIỂM LẠI platform.deepseek.com"
   }

@@ -1,0 +1,240 @@
+{
+  "case_id": "dd-trung_binh-029",
+  "phase": "consistency",
+  "rep": 1,
+  "audience": "patient",
+  "wall_s": 3.0032,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Acetaminophen",
+      "Codeine",
+      "Alfentanil"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Acetaminophen",
+        "ten_chuan": "Acetaminophen",
+        "medication_id": "DDInter14",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Codeine",
+        "ten_chuan": "Codeine",
+        "medication_id": "DDInter429",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Alfentanil",
+        "ten_chuan": "Alfentanil",
+        "medication_id": "DDInter43",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Acetaminophen",
+        "thuoc_b": "Codeine",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter429",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Acetaminophen",
+        "thuoc_b": "Alfentanil",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter43",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Codeine",
+        "thuoc_b": "Alfentanil",
+        "medication_a_id": "DDInter429",
+        "medication_b_id": "DDInter43",
+        "mo_ta": "Potent narcotics, when used as an adjuvant in patients receiving alfentanil, remifentanil, or sufentanil for anesthesia or conscious sedation, may further decrease cardiac output and respiratory drive.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):",
+        "xu_tri": "The dosage of alfentanil, remifentanil, or sufentanil may need to be decreased in patients who have received large doses of narcotics.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02A, Ibuprofen, Celecoxib, R05D, Benzonatate",
+        "thay_the_b": "N01A, Etomidate",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Codeine)",
+        "thuoc_b": "Alfentanil-hameln 0,5mg/ml (hoạt chất: Alfentanil)",
+        "medication_a_id": "DDInter429",
+        "medication_b_id": "DDInter43",
+        "mo_ta": "Potent narcotics, when used as an adjuvant in patients receiving alfentanil, remifentanil, or sufentanil for anesthesia or conscious sedation, may further decrease cardiac output and respiratory drive.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):",
+        "xu_tri": "The dosage of alfentanil, remifentanil, or sufentanil may need to be decreased in patients who have received large doses of narcotics.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02A, Ibuprofen, Celecoxib, R05D, Benzonatate",
+        "thay_the_b": "N01A, Etomidate",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Codeine",
+        "hoat_chat_b": "Alfentanil",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Alfentanil-hameln 0,5mg/ml"
+        ]
+      },
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Acefalgan Codein (hoạt chất: Codeine)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter429",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Codeine",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Acefalgan Codein"
+        ]
+      },
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Alfentanil-hameln 0,5mg/ml (hoạt chất: Alfentanil)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter43",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Alfentanil",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Alfentanil-hameln 0,5mg/ml"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Codeine)",
+        "thuoc_b": "Alfentanil-hameln 0,5mg/ml (hoạt chất: Alfentanil)",
+        "medication_a_id": "DDInter429",
+        "medication_b_id": "DDInter43",
+        "xu_tri": "The dosage of alfentanil, remifentanil, or sufentanil may need to be decreased in patients who have received large doses of narcotics.",
+        "thay_the_a": "N02A, Ibuprofen, Celecoxib, R05D, Benzonatate",
+        "thay_the_b": "N01A, Etomidate",
+        "mo_ta": "Potent narcotics, when used as an adjuvant in patients receiving alfentanil, remifentanil, or sufentanil for anesthesia or conscious sedation, may further decrease cardiac output and respiratory drive.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):",
+        "hoat_chat_a": "Codeine",
+        "hoat_chat_b": "Alfentanil",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Alfentanil-hameln 0,5mg/ml"
+        ]
+      },
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Acefalgan Codein (hoạt chất: Codeine)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter429",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Codeine",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Acefalgan Codein"
+        ]
+      },
+      {
+        "thuoc_a": "Acefalgan Codein (hoạt chất: Acetaminophen)",
+        "thuoc_b": "Alfentanil-hameln 0,5mg/ml (hoạt chất: Alfentanil)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter43",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Alfentanil",
+        "san_pham_a": [
+          "Acefalgan Codein"
+        ],
+        "san_pham_b": [
+          "Alfentanil-hameln 0,5mg/ml"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Acefalgan Codein",
+        "thuoc_b": "Alfentanil-hameln 0,5mg/ml",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Acefalgan Codein và Alfentanil-hameln 0,5mg/ml có thể làm giảm thêm khả năng bơm máu của tim và làm suy giảm nhịp thở. Hai thuốc này đều thuộc nhóm thuốc giảm đau gây nghiện mạnh, và khi Acefalgan Codein được dùng như thuốc hỗ trợ ở người đang nhận Alfentanil-hameln 0,5mg/ml để gây mê hoặc an thần có ý thức, tác động ức chế lên tim và hô hấp của hai thuốc có thể cộng gộp lại. [ẢNH HƯỞNG] Bạn đang dùng chung Acefalgan Codein với Alfentanil-hameln 0,5mg/ml, cả hai đều là thuốc giảm đau nhóm gây nghiện mạnh. Khi dùng cùng nhau, đặc biệt lúc Acefalgan Codein được dùng như thuốc hỗ trợ trong khi bạn đang được gây mê hoặc an thần bằng Alfentanil-hameln 0,5mg/ml, tim có thể bơm máu yếu hơn và hơi thở có thể bị ức chế nhiều hơn. Đây là lý do bạn cần được theo dõi sát khi dùng hai thuốc này cùng lúc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Các thuốc giảm đau gây nghiện mạnh, khi được dùng như thuốc hỗ trợ ở bệnh nhân đang nhận alfentanil, remifentanil hoặc sufentanil để gây mê hoặc an thần có ý thức, có thể làm giảm thêm cung lượng tim và khả năng thúc đẩy hô hấp.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức trung bình. Cặp đáng chú ý là Acefalgan Codein và Alfentanil-hameln 0,5mg/ml. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Acefalgan Codein và Alfentanil-hameln 0,5mg/ml",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Acefalgan Codein",
+      "Alfentanil-hameln 0,5mg/ml"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Acefalgan Codein",
+          "Alfentanil-hameln 0,5mg/ml"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

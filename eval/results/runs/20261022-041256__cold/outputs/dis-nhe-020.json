@@ -1,0 +1,131 @@
+{
+  "case_id": "dis-nhe-020",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.4874,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cetuximab"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cetuximab",
+        "ten_chuan": "Cetuximab",
+        "medication_id": "DDInter344",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "ERBITUX"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "ERBITUX"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Bệnh phổi",
+        "muc_do": "nang",
+        "giai_thich": "Erbitux có thể gây độc cho phổi, nên nếu bạn có tiền sử hoặc đang mắc bệnh phổi thì cần hết sức lưu tâm khi dùng thuốc này. Thuốc thuộc nhóm có liên quan đến các phản ứng phổi nguy hiểm, bao gồm bệnh phổi kẽ (tình trạng viêm và tổn thương mô phổi), viêm phổi kẽ và xơ phổi, thậm chí đã có ghi nhận các ca tử vong. Vì vậy, nếu bạn từng bị viêm phổi kẽ hoặc xơ phổi, hoặc đang xuất hiện các triệu chứng mới hay nặng dần mà chưa rõ nguyên nhân như khó thở, ho, sốt, thì việc dùng Erbitux cần được cân nhắc thận trọng và theo dõi chặt chẽ.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Iressa (gefitinib).\" Astra-Zeneca Pharmaceuticals  (2003):|\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):|\"Product Information. Tarceva (erlotinib).\" Genentech  (2004):|\"Product Information. Vectibix (panitumumab).\" Amgen USA  (2006):|\"Product Information. Tykerb (lapatinib).\" Novartis Pharmaceuticals  (2007):|\"Product Information. Tagrisso (osimertinib).\" Astra-Zeneca Pharmaceuticals  (2015):",
+        "mo_ta_dich": "Việc sử dụng một số thuốc ức chế EGFR nhất định có liên quan đến độc tính trên phổi. Đã có báo cáo về các trường hợp nghiêm trọng của bệnh phổi kẽ (ILD), bao gồm các trường hợp tử vong và viêm phổi kẽ hoặc xơ phổi. Khuyến cáo thận trọng khi sử dụng các thuốc này ở bệnh nhân có tiền sử viêm phổi kẽ hoặc xơ phổi hoặc ở những bệnh nhân khởi phát cấp tính các triệu chứng phổi mới hoặc tiến triển không rõ nguyên nhân như khó thở, ho và sốt trong khi chờ đánh giá chẩn đoán. Nếu xác nhận ILD, ngừng vĩnh viễn các thuốc này và áp dụng các biện pháp thích hợp."
+      },
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Hội chứng QT dài",
+        "muc_do": "nang",
+        "giai_thich": "Với người có tiền sử hội chứng QT dài, dùng ERBITUX cần được cân nhắc kỹ vì tình trạng kéo dài khoảng QT (một chỉ số điện tim phản ánh nhịp tim) đã được ghi nhận ở những bệnh nhân điều trị bằng một số thuốc ức chế EGFR. Trước khi bắt đầu dùng ERBITUX, các chất điện giải trong máu cần được điều chỉnh về mức bình thường. Trong quá trình dùng thuốc, nên theo dõi định kỳ điện tâm đồ và các chất điện giải. Nếu xuất hiện tình trạng khoảng QT kéo dài kèm dấu hiệu hoặc triệu chứng của loạn nhịp tim nguy hiểm đến tính mạng, việc dùng ERBITUX sẽ được xem xét ngừng vĩnh viễn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):|\"Product Information. Tykerb (lapatinib).\" Novartis Pharmaceuticals  (2007):|\"Product Information. Tagrisso (osimertinib).\" Astra-Zeneca Pharmaceuticals  (2015):",
+        "mo_ta_dich": "Kéo dài QT đã được quan sát thấy ở bệnh nhân điều trị bằng một số thuốc ức chế EGFR nhất định. Các thuốc này nên được dùng thận trọng ở bệnh nhân có hội chứng QT dài bẩm sinh, suy tim sung huyết, bất thường điện giải, hoặc những người đang dùng thuốc được biết là kéo dài khoảng QTc. Điện giải huyết thanh nên được điều chỉnh trước khi bắt đầu điều trị bằng các thuốc này. Theo dõi định kỳ ECG và điện giải được khuyến nghị ở những bệnh nhân này. Ngừng vĩnh viễn việc sử dụng các thuốc này ở bệnh nhân phát triển kéo dài khoảng QTc kèm dấu hiệu/triệu chứng loạn nhịp tim đe dọa tính mạng."
+      },
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Rối loạn nước – điện giải",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn đang có tiền sử hoặc đang mắc rối loạn nước – điện giải, dùng ERBITUX cần được cân nhắc thận trọng. Thuốc này có thể làm giảm dần lượng magiê trong máu, dẫn tới hạ magiê máu và kéo theo các rối loạn điện giải khác như hạ canxi máu và hạ kali máu. Những thay đổi này có thể xuất hiện từ vài ngày đến vài tháng sau khi bắt đầu dùng thuốc, nên người có sẵn rối loạn điện giải hoặc có tiền sử bệnh mạch vành, suy tim sung huyết hay loạn nhịp tim là nhóm cần đặc biệt lưu ý. Trong quá trình dùng và ít nhất 8 tuần sau khi kết thúc điều trị, việc theo dõi định kỳ magiê, canxi và kali máu là cần thiết, và các chất điện giải sẽ được bổ sung khi thấy phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):|\"Product Information. Vectibix (panitumumab).\" Amgen USA  (2006):|\"Product Information. Portrazza (necitumumab).\" Eli Lilly and Company  (2015):",
+        "mo_ta_dich": "Việc sử dụng một số thuốc ức chế EGFR nhất định có liên quan đến sự giảm dần nồng độ magiê huyết thanh dẫn đến các trường hợp hạ magiê máu nghiêm trọng và kèm theo các bất thường điện giải, bao gồm hạ canxi máu và hạ kali máu. Khởi phát hạ magiê máu và các bất thường điện giải kèm theo xảy ra từ vài ngày đến vài tháng sau khi bắt đầu dùng các thuốc này. Theo dõi định kỳ bệnh nhân về hạ magiê máu, hạ canxi máu và hạ kali máu trong và ít nhất 8 tuần sau khi hoàn thành liệu pháp. Khuyến cáo thận trọng khi sử dụng các thuốc này ở bệnh nhân có khuynh hướng mất cân bằng điện giải và những người có tiền sử bệnh động mạch vành, suy tim sung huyết hoặc loạn nhịp tim. Bổ sung magiê và các chất điện giải khác khi thích hợp."
+      },
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Hội chứng Stevens-Johnson",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn có tiền sử hội chứng Stevens-Johnson, việc dùng Erbitux cần được bác sĩ theo dõi sát vì thuốc này có thể gây phản ứng trên da, có trường hợp nặng. Những phản ứng da hoặc mô mềm xuất hiện trong lúc dùng Erbitux cần được để ý vì có thể tiến triển thành tình trạng viêm hoặc nhiễm trùng kèm theo. Khi gặp các biến chứng viêm hay nhiễm trùng nặng hoặc đe dọa tính mạng liên quan đến độc tính trên da hoặc mô mềm, bác sĩ có thể cân nhắc tạm ngừng điều trị và áp dụng biện pháp phù hợp, hoặc ngừng hẳn việc dùng thuốc. Trong thời gian dùng Erbitux, bạn nên thoa kem chống nắng, đội mũ và hạn chế ra nắng vì ánh nắng mặt trời có thể làm độc tính trên da nặng thêm.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Iressa (gefitinib).\" Astra-Zeneca Pharmaceuticals  (2003):|\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):|\"Product Information. Tarceva (erlotinib).\" Genentech  (2004):|\"Product Information. Vectibix (panitumumab).\" Amgen USA  (2006):|\"Product Information. Tykerb (lapatinib).\" Novartis Pharmaceuticals  (2007):|\"Product Information. Tagrisso (osimertinib).\" Astra-Zeneca Pharmaceuticals  (2015):|\"Product Information. Portrazza (necitumumab).\" Eli Lilly and Company  (2015):",
+        "mo_ta_dich": "Đã có báo cáo về các phản ứng da, trong một số trường hợp nghiêm trọng, khi sử dụng thuốc ức chế EGFR. Cần theo dõi bệnh nhân phát triển độc tính da hoặc mô mềm trong khi dùng các thuốc này để phát hiện di chứng viêm hoặc nhiễm trùng. Khuyến cáo tạm ngừng điều trị, và áp dụng các biện pháp thích hợp hoặc ngừng sử dụng các thuốc này đối với độc tính da hoặc mô mềm liên quan đến biến chứng viêm hoặc nhiễm trùng nghiêm trọng hoặc đe dọa tính mạng. Khuyên bệnh nhân đội mũ và thoa kem chống nắng và hạn chế tiếp xúc với ánh nắng trong khi điều trị bằng các thuốc này vì tiếp xúc với ánh nắng có thể làm trầm trọng thêm độc tính da."
+      },
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "nhe",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc bệnh thận mà dùng ERBITUX, nên biết rằng trong các nghiên cứu lâm sàng, tình trạng suy thận đã xảy ra ở 1% bệnh nhân ung thư đại trực tràng được điều trị bằng thuốc này. Vì vậy, với người đã có vấn đề về thận từ trước, việc theo dõi sát chức năng thận trong quá trình dùng ERBITUX được khuyến nghị để kịp thời phát hiện những thay đổi bất thường.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):",
+        "mo_ta_dich": "Trong các nghiên cứu lâm sàng, suy thận xảy ra ở 1% bệnh nhân ung thư đại trực tràng được điều trị bằng cetuximab. Khuyến cáo theo dõi chặt chẽ ở những bệnh nhân này."
+      },
+      {
+        "san_pham": [
+          "ERBITUX"
+        ],
+        "ten_benh": "Bệnh mắt",
+        "muc_do": "nang",
+        "giai_thich": "Với người đang có bệnh về mắt, dùng ERBITUX cần hết sức lưu tâm vì thuốc có thể khiến tình trạng mắt trở nặng hoặc bùng phát cấp tính. Khi đó, việc tạm ngừng hay dừng hẳn ERBITUX là điều được khuyến cáo, và quyết định này thuộc về bác sĩ điều trị của bạn. Vì vậy, nếu mắt có biểu hiện bất thường trong thời gian dùng thuốc, bạn nên báo ngay cho bác sĩ để được xem xét kịp thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Iressa (gefitinib).\" Astra-Zeneca Pharmaceuticals  (2003):|\"Product Information. Erbitux (cetuximab).\" Bristol-Myers Squibb  (2004):|\"Product Information. Tarceva (erlotinib).\" Genentech  (2004):|\"Product Information. Vectibix (panitumumab).\" Amgen USA  (2006):|\"Product Information. Tykerb (lapatinib).\" Novartis Pharmaceuticals  (2007):|\"Product Information. Tagrisso (osimertinib).\" Astra-Zeneca Pharmaceuticals  (2015):",
+        "mo_ta_dich": "Một số thuốc ức chế thụ thể yếu tố tăng trưởng biểu bì (EGFR) nên được dùng thận trọng ở bệnh nhân có rối loạn mắt như viêm giác mạc nguyên phát, viêm giác mạc loét hoặc viêm kết mạc. Khuyến cáo tạm ngừng hoặc ngừng điều trị với các thuốc này nếu bệnh nhân xuất hiện rối loạn mắt cấp tính hoặc nặng lên."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh mắt, Bệnh phổi, Bệnh thận, Hội chứng QT dài, Hội chứng Stevens-Johnson, Rối loạn nước – điện giải.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

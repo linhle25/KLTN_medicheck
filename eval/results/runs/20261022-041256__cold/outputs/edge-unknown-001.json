@@ -1,0 +1,51 @@
+{
+  "case_id": "edge-unknown-001",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0305,
+  "unknown_products": [
+    "Khôngcóthuốcnày XYZ",
+    "Thuốclạ 123"
+  ],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [],
+    "audience": "patient",
+    "normalized_medications": [],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Khôngcóthuốcnày XYZ",
+      "Thuốclạ 123"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Khôngcóthuốcnày XYZ",
+          "Thuốclạ 123"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "case_id": "dis-nang-006",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.0595,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Stavudine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Stavudine",
+        "ten_chuan": "Stavudine",
+        "medication_id": "DDInter1710",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Stag-15"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Stag-15"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Stag-15"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "nang",
+        "giai_thich": "Stag-15 có chứa stavudine, một nucleoside reverse transcriptase inhibitor, và nhóm thuốc này khi dùng đơn độc hoặc phối hợp với các thuốc kháng retrovirus khác đã được ghi nhận liên quan đến độc tính trên gan. Các biểu hiện độc tính gan được báo cáo bao gồm nhiễm toan lactic, gan to nặng kèm thoái hóa mỡ, viêm gan tối cấp và suy gan. Vì vậy, khi dùng Stag-15 ở người có tiền sử hoặc đang mắc bệnh gan, cần đặc biệt lưu tâm đến các nguy cơ này.",
+        "giai_thich_duoc_si": "Stag-15 có chứa stavudine, một nucleoside reverse transcriptase inhibitor, và nhóm thuốc này khi dùng đơn độc hoặc phối hợp với các thuốc kháng retrovirus khác đã được ghi nhận liên quan đến độc tính trên gan. Các biểu hiện độc tính gan được báo cáo bao gồm nhiễm toan lactic, gan to nặng kèm thoái hóa mỡ, viêm gan tối cấp và suy gan. Vì vậy, khi dùng Stag-15 ở người có tiền sử hoặc đang mắc bệnh gan, cần đặc biệt lưu tâm đến các nguy cơ này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Yarchoan R, Mitsuya H, Pluda JM, et al. \"The National Cancer Institute phase I study of 2',3'-dideoxyinosine administration in adults with AIDS-related complex: analysis of activity and toxicity profiles.\" Rev Infect Dis 12 (1990):  s522-33|Dolin R, Lambert JS, Morse GD, et al. \"2',3'-dideoxyinosine in patients with AIDS or AIDS-related complex.\" Rev Infect Dis 12 (1990):  s540-51|Lai KK, Gang DL, Zawacki JK, Cooley TP \"Fulminant hepatic failure associated with 2',3'-dideoxyinosine (ddI).\" Ann Intern Med 115 (1991):  283-4|Dubin G, Braffman MN \"Zidovudine-induced hepatotoxicity.\" Ann Intern Med 110 (1989):  85-6|Shriner K, Goetz MB \"Severe hepatoxicity in a patient receiving both acetaminophen and zidovudine.\" Am J Med 93 (1992):  94-6|Gradon JD, Chapnick EK, Sepkowitz DV \"Zidovudine-induced hepatitis.\" J Intern Med 231 (1992):  317-8|Chen SC, Barker SM, Mitchell DH, et al. \"Concurrent zidovudine-induced myopathy and hepatoxicity in patients treated for human immunodeficiency virus (HIV) infection.\" Pathology 24 (1992):  109-11|\"Product Information. Videx (didanosine).\" Bristol-Myers Squibb  (2002):|\"Product Information. HIVID (zalcitabine).\" Roche Laboratories  (2001):|\"Product Information. Retrovir (zidovudine).\" Glaxo Wellcome  (2001):|Pike IM, Nicaise C \"The didanosine Expanded Access Program: safety analysis.\" Clin Infect Dis 16 (1993):  S63-8|Shintaku M, Nasu K, Shimizu T \"Fulminant hepatic failure in an AIDS patient: possible zidovudine- induced hepatotoxicity.\" Am J Gastroenterol 88 (1993):  464-6|Montaner JSG, Rachlis A, Beaulieu R, Gill J, Schlech W, Phillips P, Auclair C, Boulerice F, Schindzielorz A, Smaldone L, Wainber \"Safety profile of didanosine among patients with advanced HIV disease who are intolerant to or deteriorate despite zidovudine therapy: results of the canadian open ddi treatment program.\" J Acquir Immune Defic Syndr 7 (1994):  924-30|\"Product Information. Epivir (lamivudine).\" Glaxo Wellcome  (2001):|\"Product Information. Ziagen (abacavir).\" Glaxo Wellcome  (2001):|Miller KD, Cameron M, Wood LV, Dalakas MC, Kovacs JA \"Lactic acidosis and hepatic steatosis associated with use of stavudine: report of four cases.\" Ann Intern Med 133 (2000):  192-6|Lhouri S, Cushing H \"Lactic acidosis secondary to nucleoside analog antiretroviral therapy.\" Infect Med 17 (2000):  547-54|Pai VB, Koranyi K, Nahata MC \"Acute hepatitis and bleeding possibly induced by zidovudine and ritonavir in an infant with HIV infection.\" Pharmacotherapy 20 (2000):  1135-40|Lonergan JT, Behling C, Pfander H, Hassanein TI, Mathews WC \"Hyperlactatemia and hepatic abnormalities in 10 human immunodeficiency virus-infected patients receiving nucleoside analogue combination regimens.\" Clin Infect Dis 31 (2000):  162-6|Kronenberg A, Riehle HM, Gunthard HF \"Liver failure after long-term nucleoside antiretroviral therapy.\" Lancet 358 (2001):  759-601|Boubaker K, Flepp M, Sudre P, et al. \"Hyperlactatemia and Antiretroviral Therapy: The Swiss HIV Cohort Study.\" Clin Infect Dis 33 (2001):  1931-7|Coghlan ME, Sommadossi JP, Jhala NC, Many WJ, Saag MS, Johnson VA \"Symptomatic lactic acidosis in hospitalized antiretroviral-treated patients with human immunodeficiency virus infection: a report of 12 cases.\" Clin Infect Dis 33 (2001):  1914-21|\"Product Information. Viread (tenofovir).\" Gilead Sciences  (2001):|\"Product Information. Baraclude (entecavir).\" Bristol-Myers Squibb  (2005):",
+        "mo_ta_dich": "Độc tính gan bao gồm nhiễm toan lactic, gan to nặng kèm thoái hóa mỡ, viêm gan tối cấp và suy gan đã được ghi nhận liên quan đến việc sử dụng một số thuốc ức chế men sao chép ngược nucleoside (NRTI) đơn lẻ hoặc phối hợp với các thuốc kháng retrovirus khác. Điều trị bằng NRTI nên được thực hiện thận trọng ở bệnh nhân có bệnh gan từ trước, có tiền sử lạm dụng rượu hoặc viêm gan. Nên tạm ngừng điều trị nếu xuất hiện các phát hiện lâm sàng hoặc xét nghiệm gợi ý nhiễm toan lactic hoặc độc tính gan rõ rệt. Sử dụng abacavir chống chỉ định ở bệnh nhân suy gan trung bình đến nặng vì tính an toàn và hiệu quả chưa được xác lập trên những bệnh nhân này."
+      },
+      {
+        "san_pham": [
+          "Stag-15"
+        ],
+        "ten_benh": "Suy tủy xương",
+        "muc_do": "nang",
+        "giai_thich": "Stag-15 có thể hiếm khi gây ức chế tủy xương ở liều khuyến cáo, với các biểu hiện được báo cáo gồm thiếu máu, giảm bạch cầu, giảm tiểu cầu và giảm bạch cầu trung tính. Vì vậy, khi dùng thuốc này ở người có tiền sử hoặc đang mắc suy tủy xương, nguy cơ trên càng đáng lưu tâm và việc theo dõi công thức máu định kỳ được khuyến nghị.",
+        "giai_thich_duoc_si": "Stag-15 có thể hiếm khi gây ức chế tủy xương ở liều khuyến cáo, với các biểu hiện được báo cáo gồm thiếu máu, giảm bạch cầu, giảm tiểu cầu và giảm bạch cầu trung tính. Vì vậy, khi dùng thuốc này ở người có tiền sử hoặc đang mắc suy tủy xương, nguy cơ trên càng đáng lưu tâm và việc theo dõi công thức máu định kỳ được khuyến nghị.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Videx (didanosine).\" Bristol-Myers Squibb  (2002):|\"Product Information. HIVID (zalcitabine).\" Roche Laboratories  (2001):|\"Product Information. Zerit (stavudine).\" Bristol-Myers Squibb  (2001):",
+        "mo_ta_dich": "Các thuốc ức chế men sao chép ngược nucleoside, didanosine (ddI), zalcitabine (ddC) và stavudine (d4T), có thể ít khi gây ức chế tủy xương ở liều khuyến cáo. Đã có báo cáo về thiếu máu, giảm bạch cầu, giảm tiểu cầu và giảm bạch cầu trung tính. Nên thận trọng khi dùng các thuốc này ở bệnh nhân có ức chế tủy xương từ trước hoặc rối loạn sinh máu. Khuyến cáo xét nghiệm công thức máu định kỳ."
+      },
+      {
+        "san_pham": [
+          "Stag-15"
+        ],
+        "ten_benh": "Bệnh hệ thần kinh ngoại biên",
+        "muc_do": "nang",
+        "giai_thich": "Stag-15 có thể gây ra bệnh lý thần kinh ngoại biên liên quan đến liều dùng, đặc biệt ở người bệnh HIV giai đoạn tiến triển. Tình trạng này thường lui dần chậm sau khi ngừng thuốc kịp thời nhưng vẫn có thể không hồi phục hoàn toàn.",
+        "giai_thich_duoc_si": "Stag-15 có thể gây ra bệnh lý thần kinh ngoại biên liên quan đến liều dùng, đặc biệt ở người bệnh HIV giai đoạn tiến triển. Tình trạng này thường lui dần chậm sau khi ngừng thuốc kịp thời nhưng vẫn có thể không hồi phục hoàn toàn.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "LeLacheur SF, Simon GL \"Exacerbation of dideoxycytidine-induced neuropathy with dideoxyinosine.\" J Acquir Immune Defic Syndr 4 (1991):  538-9|Broder S, Yarchoan R \"Dideoxycytidine: current clinical experience and future prospects.\" Am J Med 88 (1990):  s31-3|Dubinsky RM, Yarchoan R, Dalakas M, Broder S \"Reversible axonal neuropathy from the treatment of AIDS and related disorders with 2',3'-dideoxycytidine (ddC).\" Muscle Nerve 12 (1989):  856-60|Dubinsky RM, Dalakas M, Yarchoan R, Broder S \"Follow-up of neuropathy from 2'3'-dideoxycytidine.\" Lancet 1 (1988):  832|Whittington R, Brogden RN \"Zalcitabine: a review of its pharmacology and clinical potential in acquired immunodeficiency syndrome (AIDS).\" Drugs 44 (1992):  656-83|Matthews SJ, Cersosimo RJ, Spivack ML \"Zidovudine and other reverse transcriptase inhibitors in the management of human immunodeficiency virus-related disease.\" Pharmacotherapy 11 (1991):  419-49|\"Product Information. Videx (didanosine).\" Bristol-Myers Squibb  (2002):|\"Product Information. HIVID (zalcitabine).\" Roche Laboratories  (2001):|Martinez OP, French MA \"Acoustic neuropathy associated with zalcitabine-induced peripheral neuropathy.\" AIDS 7 (1993):  901-2|\"Product Information. Zerit (stavudine).\" Bristol-Myers Squibb  (2001):|Fichtenbaum CJ, Clifford DB, Powderly WG \"Risk factors for dideoxynucleoside-induced toxic neuropathy in patients with the human immunodeficiency virus infection.\" J Acquir Immune Defic Syndr Hum Retrovirol 10 (1995):  169-74|Moore RD, Fortgang I, Keruly J, Chaisson RE \"Adverse events from drug therapy for human immunodeficiency virus disease.\" Am J Med 101 (1996):  34-40",
+        "mo_ta_dich": "Các thuốc ức chế men sao chép ngược nucleoside, didanosine (ddI), zalcitabine (ddC), và stavudine (d4T), có thể thường gây bệnh thần kinh ngoại biên liên quan đến liều, đặc biệt ở bệnh nhân mắc bệnh HIV giai đoạn tiến triển. Thông thường, bệnh thần kinh ngoại biên sẽ thuyên giảm chậm sau khi ngừng liệu pháp kịp thời, nhưng có thể không hồi phục. Các thuốc này nên được dùng thận trọng ở bệnh nhân có tiền sử bệnh thần kinh ngoại biên và tránh dùng ở bệnh nhân có bệnh đa dây thần kinh ngoại biên hiện có. Liệu pháp có thể được khởi động lại sau khi các triệu chứng thuyên giảm ở những bệnh nhân trước đây đã từng bị bệnh thần kinh ngoại biên với các thuốc này, nhưng khuyến cáo giảm liều."
+      },
+      {
+        "san_pham": [
+          "Stag-15"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "nang",
+        "giai_thich": "Ở người có suy giảm chức năng thận có ý nghĩa trên lâm sàng, việc dùng Stag-15 có thể làm tăng nguy cơ độc tính và tác dụng không mong muốn do thuốc bị giảm thải trừ. Những người này cần được theo dõi sát trong quá trình điều trị bằng Stag-15, và liều dùng có thể cần được điều chỉnh.",
+        "giai_thich_duoc_si": "Ở người có suy giảm chức năng thận có ý nghĩa trên lâm sàng, việc dùng Stag-15 có thể làm tăng nguy cơ độc tính và tác dụng không mong muốn do thuốc bị giảm thải trừ. Những người này cần được theo dõi sát trong quá trình điều trị bằng Stag-15, và liều dùng có thể cần được điều chỉnh.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. HIVID (zalcitabine).\" Roche Laboratories  (2001):|\"Product Information. Retrovir (zidovudine).\" Glaxo Wellcome  (2001):|\"Product Information. Zerit (stavudine).\" Bristol-Myers Squibb  (2001):|\"Product Information. Epivir (lamivudine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Bệnh nhân suy thận có ý nghĩa lâm sàng có thể có nguy cơ cao hơn về độc tính và tác dụng bất lợi từ các thuốc ức chế men sao chép ngược nucleoside (NRTI) do giảm thanh thải thuốc. Khuyến cáo điều chỉnh liều. Ngoài ra, những bệnh nhân này cần được theo dõi chặt chẽ trong quá trình điều trị bằng NRTI, và điều chỉnh liều thêm nếu cần."
+      },
+      {
+        "san_pham": [
+          "Stag-15"
+        ],
+        "ten_benh": "Viêm tụy",
+        "muc_do": "nang",
+        "giai_thich": "Stag-15 có thể gây viêm tụy, và nguy cơ này đáng lưu tâm hơn ở người đã có tiền sử hoặc đang mắc viêm tụy. Những yếu tố làm tăng nguy cơ như lạm dụng rượu hay tăng triglycerid máu cũng cần được tính đến khi dùng thuốc ở nhóm bệnh nhân này. Tỷ lệ viêm tụy do các thuốc ức chế reverse transcriptase nói chung thường thấp, nhưng có thể lên tới khoảng 7% với didanosine và tới 15% ở bệnh nhi dùng lamivudine.",
+        "giai_thich_duoc_si": "Stag-15 có thể gây viêm tụy, và nguy cơ này đáng lưu tâm hơn ở người đã có tiền sử hoặc đang mắc viêm tụy. Những yếu tố làm tăng nguy cơ như lạm dụng rượu hay tăng triglycerid máu cũng cần được tính đến khi dùng thuốc ở nhóm bệnh nhân này. Tỷ lệ viêm tụy do các thuốc ức chế reverse transcriptase nói chung thường thấp, nhưng có thể lên tới khoảng 7% với didanosine và tới 15% ở bệnh nhi dùng lamivudine.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Shelton MJ, O'Donnell AM, Morse GD \"Didanosine.\" Ann Pharmacother 26 (1992):  660-70|Yarchoan R, Mitsuya H, Pluda JM, et al. \"The National Cancer Institute phase I study of 2',3'-dideoxyinosine administration in adults with AIDS-related complex: analysis of activity and toxicity profiles.\" Rev Infect Dis 12 (1990):  s522-33|Dolin R, Lambert JS, Morse GD, et al. \"2',3'-dideoxyinosine in patients with AIDS or AIDS-related complex.\" Rev Infect Dis 12 (1990):  s540-51|Bouvet E, Casalino E, Prevost MH, Vachon F \"Fatal case of 2',3'-dideoxyinosine-associated pancreatitis.\" Lancet 336 (1990):  1515|Maxson CJ, Greenfield SM, Turner JL \"Acute pancreatitis as a common complication of 2',3'-dideoxyinosine therapy in the acquired immunodeficiency syndrome.\" Am J Gastroenterol 87 (1992):  708-13|Whittington R, Brogden RN \"Zalcitabine: a review of its pharmacology and clinical potential in acquired immunodeficiency syndrome (AIDS).\" Drugs 44 (1992):  656-83|Matthews SJ, Cersosimo RJ, Spivack ML \"Zidovudine and other reverse transcriptase inhibitors in the management of human immunodeficiency virus-related disease.\" Pharmacotherapy 11 (1991):  419-49|\"Product Information. Videx (didanosine).\" Bristol-Myers Squibb  (2002):|\"Product Information. HIVID (zalcitabine).\" Roche Laboratories  (2001):|Pike IM, Nicaise C \"The didanosine Expanded Access Program: safety analysis.\" Clin Infect Dis 16 (1993):  S63-8|Grasela TH, Walawander CA, Beltangady M, Knupp CA, Martin RR, Dunkle LM, Barbhaiya RH, Pittman KA, Dolin R, Valentine FT, \"Analysis of potential risk factors associated with the development of pancreatitis in phase i patients with AIDS or AIDS-related complex receiving didanosine.\" J Infect Dis 169 (1994):  1250-5|\"Product Information. Zerit (stavudine).\" Bristol-Myers Squibb  (2001):|Montaner JSG, Rachlis A, Beaulieu R, Gill J, Schlech W, Phillips P, Auclair C, Boulerice F, Schindzielorz A, Smaldone L, Wainber \"Safety profile of didanosine among patients with advanced HIV disease who are intolerant to or deteriorate despite zidovudine therapy: results of the canadian open ddi treatment program.\" J Acquir Immune Defic Syndr 7 (1994):  924-30|Schindzielorz A, Pike I, Daniels M, Pacelli L, Smaldone L \"Rates and risk factors for adverse events associated with didanosine in the expanded access program.\" Clin Infect Dis 19 (1994):  1076-83|van Leeuwen R, Lange JM, Hussey EK, Donn KH, Hall ST, Harker AJ, Jonker P, Danner SA \"The safety and pharmacokinetics of a reverse transcriptase inhibitor, 3TC, in patients with HIV infection: a phase I study.\" AIDS 6 (1992):  1471-5|van Leeuwen R, Katlama C, Kitchen V, Boucher CA, Tubiana R, McBride M, Ingrand D, Weber J, Hill A, McDade H, et al. \"Evaluation of safety and efficacy of 3TC (lamivudine) in patients with asymptomatic or mildly symptomatic human immunodeficiency virus infection: a phase I/II study.\" J Infect Dis 171 (1995):  1166-71|\"Product Information. Epivir (lamivudine).\" Glaxo Wellcome  (2001):|Moore RD, Fortgang I, Keruly J, Chaisson RE \"Adverse events from drug therapy for human immunodeficiency virus disease.\" Am J Med 101 (1996):  34-40",
+        "mo_ta_dich": "Các thuốc ức chế reverse transcriptase, didanosine (ddI), zalcitabine (ddC), stavudine (d4T) và lamivudine (3TC), có thể gây viêm tụy. Tỷ lệ mắc nói chung thấp nhưng khoảng 7% với ddI, và lên đến 15% ở bệnh nhi dùng 3TC. Bệnh nhân có tiền sử hoặc yếu tố nguy cơ đã biết của viêm tụy, như lạm dụng rượu hoặc tăng triglycerid máu, cần được theo dõi chặt chẽ trong khi điều trị bằng các thuốc này. Cần ngừng điều trị khi có dấu hiệu hoặc triệu chứng đầu tiên gợi ý viêm tụy (ví dụ: buồn nôn, nôn, đau bụng, tăng amylase máu kèm rối loạn đường huyết, tăng triglycerid, giảm calci huyết thanh), và tốt nhất là ngừng vĩnh viễn nếu viêm tụy lâm sàng phát triển."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh gan, Bệnh hệ thần kinh ngoại biên, Bệnh thận, Suy tủy xương, Viêm tụy."
+    ]
+  }
+}

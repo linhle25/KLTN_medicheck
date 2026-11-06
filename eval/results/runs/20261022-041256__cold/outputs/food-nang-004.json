@@ -1,0 +1,71 @@
+{
+  "case_id": "food-nang-004",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.9186,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cycloserine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cycloserine",
+        "ten_chuan": "Cycloserine",
+        "medication_id": "DDInter457",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Boyata"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Boyata"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Boyata"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Boyata cùng rượu có thể làm tăng cường một số tác dụng phụ trên hệ thần kinh trung ương của thuốc, bao gồm chóng mặt, buồn ngủ, trầm cảm, lo âu, rối loạn tâm thần, suy giảm trí nhớ, lú lẫn và co giật. Những ảnh hưởng này liên quan đến việc rượu có thể khuếch đại tác động lên thần kinh trung ương của thành phần hoạt chất trong Boyata.",
+        "giai_thich_duoc_si": "Dùng Boyata cùng rượu có thể làm tăng cường một số tác dụng phụ trên hệ thần kinh trung ương của thuốc, bao gồm chóng mặt, buồn ngủ, trầm cảm, lo âu, rối loạn tâm thần, suy giảm trí nhớ, lú lẫn và co giật. Những ảnh hưởng này liên quan đến việc rượu có thể khuếch đại tác động lên thần kinh trung ương của thành phần hoạt chất trong Boyata.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Seromycin (cycloserine).\" Dura Pharmaceuticals  (2001):|Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0",
+        "mo_ta_dich": "Dùng đồng thời với rượu có thể làm tăng một số tác dụng phụ trên hệ thần kinh trung ương của cycloserine và tiền chất terizidone. Các tác dụng này có thể bao gồm chóng mặt, buồn ngủ, trầm cảm, lo âu, loạn thần, suy giảm trí nhớ, lú lẫn và co giật.",
+        "xu_tri_dich": "Cần thận trọng khi dùng cycloserine hoặc terizidone với caffeine. Nên tránh tiêu thụ một số đồ uống hoặc chất kích thích có hàm lượng caffeine rất cao như một biện pháp phòng ngừa."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: rượu."
+    ]
+  }
+}

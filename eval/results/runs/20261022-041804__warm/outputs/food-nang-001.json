@@ -1,0 +1,72 @@
+{
+  "case_id": "food-nang-001",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0471,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Hydromorphone"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Hydromorphone",
+        "ten_chuan": "Hydromorphone",
+        "medication_id": "DDInter890",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Jurnista"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Jurnista"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Jurnista"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nang",
+        "giai_thich": "Jurnista là thuốc giảm đau nhóm opioid, và rượu có thể làm tăng mạnh tác dụng ức chế hệ thần kinh trung ương của thuốc này. Khi dùng chung, hai thứ cộng dồn lại khiến bạn dễ bị suy giảm khả năng phán đoán, suy nghĩ và phối hợp vận động. Nặng hơn, có thể xảy ra tụt huyết áp, suy giảm hô hấp, an thần quá mức, hôn mê, thậm chí tử vong.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Levine B, Saady J, Fierro M, Valentour J \"A hydromorphone and ethanol fatality.\" J Forensic Sci 29 (1984):  655-9|\"Product Information. Dilaudid (hydromorphone).\" Knoll Pharmaceutical Company  (2001):|FDA. U.S. Food and Drug Administration \"Healthcare Professional Sheet. FDA Alert [07/2005]: alcohol-palladone interaction.  http://www.fda.gov/medwatch/SAFETY/2005/safety05.htm#Palladone\"   (2005):",
+        "mo_ta_dich": "Rượu có thể làm tăng tác dụng ức chế hệ thần kinh trung ương (CNS) của các thuốc giảm đau opioid bao gồm hydromorphone. Sử dụng đồng thời có thể dẫn đến ức chế CNS cộng gộp và suy giảm khả năng phán đoán, tư duy và kỹ năng tâm thần vận động. Trong các trường hợp nặng hơn, có thể xảy ra hạ huyết áp, ức chế hô hấp, an thần sâu, hôn mê hoặc thậm chí tử vong.",
+        "xu_tri_dich": "Bệnh nhân dùng các dạng bào chế giải phóng kéo dài của hydromorphone không nên uống rượu hoặc sử dụng các thuốc có chứa rượu vào những ngày dùng hydromorphone. Nói chung, các thuốc gây nghiện mạnh như hydromorphone không nên kết hợp với rượu."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

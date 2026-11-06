@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-trung_binh-023",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.9761,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Sulfasalazine",
+      "Ceritinib"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Sulfasalazine",
+        "ten_chuan": "Sulfasalazine",
+        "medication_id": "DDInter1725",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ceritinib",
+        "ten_chuan": "Ceritinib",
+        "medication_id": "DDInter340",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Sulfasalazine",
+        "thuoc_b": "Ceritinib",
+        "medication_a_id": "DDInter1725",
+        "medication_b_id": "DDInter340",
+        "mo_ta": "Coadministration with ceritinib may increase the plasma concentrations and the risk of adverse effects of orally administered drugs that are substrates of the intestinal P-glycoprotein (P-gp) and/or breast cancer resistance protein (BCRP) transporters, such as dabigatran, rosuvastatin, sulfasalazine, and topotecan. The proposed mechanism, based on in vitro data, is decreased clearance due to ceritinib-mediated inhibition of intestinal P-gp and/or BCRP efflux transport proteins.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Zykadia (ceritinib).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "xu_tri": "Caution is advised if ceritinib is used concomitantly with drugs that are substrates of the intestinal P-gp and/or BCRP transport proteins, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring should be considered whenever ceritinib is added to or withdrawn from therapy with these drugs. Patients should be monitored for the development of adverse effects.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Methazolamide, Amphotericin B, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "L01E, Imatinib, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Bosutinib, Lapatinib",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Dicsep (hoạt chất: Sulfasalazine)",
+        "thuoc_b": "Spexib 150mg (hoạt chất: Ceritinib)",
+        "medication_a_id": "DDInter1725",
+        "medication_b_id": "DDInter340",
+        "mo_ta": "Coadministration with ceritinib may increase the plasma concentrations and the risk of adverse effects of orally administered drugs that are substrates of the intestinal P-glycoprotein (P-gp) and/or breast cancer resistance protein (BCRP) transporters, such as dabigatran, rosuvastatin, sulfasalazine, and topotecan. The proposed mechanism, based on in vitro data, is decreased clearance due to ceritinib-mediated inhibition of intestinal P-gp and/or BCRP efflux transport proteins.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Zykadia (ceritinib).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "xu_tri": "Caution is advised if ceritinib is used concomitantly with drugs that are substrates of the intestinal P-gp and/or BCRP transport proteins, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring should be considered whenever ceritinib is added to or withdrawn from therapy with these drugs. Patients should be monitored for the development of adverse effects.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Methazolamide, Amphotericin B, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "L01E, Imatinib, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Bosutinib, Lapatinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Sulfasalazine",
+        "hoat_chat_b": "Ceritinib",
+        "san_pham_a": [
+          "Dicsep"
+        ],
+        "san_pham_b": [
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Dicsep (hoạt chất: Sulfasalazine)",
+        "thuoc_b": "Spexib 150mg (hoạt chất: Ceritinib)",
+        "medication_a_id": "DDInter1725",
+        "medication_b_id": "DDInter340",
+        "xu_tri": "Caution is advised if ceritinib is used concomitantly with drugs that are substrates of the intestinal P-gp and/or BCRP transport proteins, particularly those with a narrow therapeutic range. Dosage adjustments as well as clinical and laboratory monitoring should be considered whenever ceritinib is added to or withdrawn from therapy with these drugs. Patients should be monitored for the development of adverse effects.",
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Methazolamide, Amphotericin B, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "L01E, Imatinib, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Tepotinib, Fedratinib, Avapritinib, Larotrectinib, Bosutinib, Lapatinib",
+        "mo_ta": "Coadministration with ceritinib may increase the plasma concentrations and the risk of adverse effects of orally administered drugs that are substrates of the intestinal P-glycoprotein (P-gp) and/or breast cancer resistance protein (BCRP) transporters, such as dabigatran, rosuvastatin, sulfasalazine, and topotecan. The proposed mechanism, based on in vitro data, is decreased clearance due to ceritinib-mediated inhibition of intestinal P-gp and/or BCRP efflux transport proteins.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] \"Product Information. Zykadia (ceritinib).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "hoat_chat_a": "Sulfasalazine",
+        "hoat_chat_b": "Ceritinib",
+        "san_pham_a": [
+          "Dicsep"
+        ],
+        "san_pham_b": [
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Dicsep",
+        "thuoc_b": "Spexib 150mg",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Dicsep với Spexib 150mg có thể làm tăng nồng độ Dicsep trong huyết tương và gia tăng nguy cơ gặp tác dụng không mong muốn, do Spexib 150mg ức chế các protein vận chuyển P-gp và/hoặc BCRP ở ruột khiến việc thải trừ Dicsep qua đường này bị giảm. Cơ chế này được đề xuất dựa trên dữ liệu in vitro, và mức độ ảnh hưởng có thể khác nhau tùy từng người bệnh.",
+        "giai_thich_duoc_si": "Dùng chung Dicsep với Spexib 150mg có thể làm tăng nồng độ Dicsep trong huyết tương và gia tăng nguy cơ gặp tác dụng không mong muốn, do Spexib 150mg ức chế các protein vận chuyển P-gp và/hoặc BCRP ở ruột khiến việc thải trừ Dicsep qua đường này bị giảm. Cơ chế này được đề xuất dựa trên dữ liệu in vitro, và mức độ ảnh hưởng có thể khác nhau tùy từng người bệnh.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời với ceritinib có thể làm tăng nồng độ trong huyết tương và nguy cơ tác dụng không mong muốn của các thuốc dùng đường uống là cơ chất của các protein vận chuyển P-glycoprotein (P-gp) và/hoặc breast cancer resistance protein (BCRP) ở ruột, như dabigatran, rosuvastatin, sulfasalazine và topotecan. Cơ chế được đề xuất, dựa trên dữ liệu in vitro, là giảm độ thanh thải do ceritinib ức chế các protein vận chuyển thải P-gp và/hoặc BCRP ở ruột.",
+        "xu_tri_dich": "Cần thận trọng nếu ceritinib được dùng đồng thời với các thuốc là cơ chất của các protein vận chuyển P-gp và/hoặc BCRP ở ruột, đặc biệt những thuốc có khoảng điều trị hẹp. Cần cân nhắc điều chỉnh liều cũng như theo dõi lâm sàng và xét nghiệm mỗi khi ceritinib được thêm vào hoặc ngừng khỏi phác đồ dùng các thuốc này. Cần theo dõi người bệnh để phát hiện sự xuất hiện của các tác dụng không mong muốn."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức trung bình. Cặp đáng chú ý nhất là Dicsep + Spexib 150mg. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Dicsep + Spexib 150mg",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Dicsep",
+      "Spexib 150mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Dicsep",
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

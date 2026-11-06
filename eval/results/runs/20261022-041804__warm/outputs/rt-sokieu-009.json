@@ -1,0 +1,241 @@
+{
+  "case_id": "rt-sokieu-009",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.1162,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Vitamin E",
+      "Magnesium oxide",
+      "Betaxolol"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Vitamin E",
+        "ten_chuan": "Vitamin E",
+        "medication_id": "DDInter1943",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Magnesium oxide",
+        "ten_chuan": "Magnesium oxide",
+        "medication_id": "DDInter1119",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Betaxolol",
+        "ten_chuan": "Betaxolol",
+        "medication_id": "DDInter197",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Magnesium oxide",
+        "thuoc_b": "Vitamin E",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter1943",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Vitamin E",
+        "thuoc_b": "Betaxolol",
+        "medication_a_id": "DDInter1943",
+        "medication_b_id": "DDInter197",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Magnesium oxide",
+        "thuoc_b": "Betaxolol",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter197",
+        "mo_ta": "Concurrent administration with aluminum and magnesium antacids has been shown to decrease the oral bioavailability of certain beta-blockers, although data are conflicting. The exact mechanism of interaction is unknown but may involve cation binding of beta-blockers or a reduction in the dissolution rate due to increased gastric pH. Based on available data, the clinical significance of this potential interaction is difficult to determine. As a precaution, patients may want to consider separating the administration times of beta-blockers and antacids or other aluminum- or magnesium-containing products by at least 2 hours.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] D'Arcy PF, McElnay JC \"Drug-antacid interactions: assessment of clinical importance.\" Drug Intell Clin Pharm 21 (1987): 607-17, [2] Regardh CG, Lundborg P, Persson BA \"The effect of antacid, metoclopramide, and propantheline on the bioavailability of metoprolol and atenolol.\" Biopharm Drug Dispos 2 (1981): 79-87, [3] Hong CY, Hu SC, Lin SJ, Chiang BN \"Lack of influence of aluminum hydroxide on the bioavailability and beta-adrenoceptor blocking activity of propranolol.\" Int J Clin Pharmacol Ther Toxicol 23 (1985): 244-6, [4] Kirch W, Schafer-Korting M, Axthelm T, Kohler H, Mutschler E \"Interaction of atenolol with furosemide and calcium and aluminum salts.\" Clin Pharmacol Ther 30 (1981): 429-35, [5] Laer S, Neumann J, Scholz H \"Interaction between sotalol and an antacid preparation.\" Br J Clin Pharmacol 43 (1997): 269-72, [6] Gugler R, Allgayer H \"Effects of antacids on the clinical pharmacokinetics of drugs. An update.\" Clin Pharmacokinet 18 (1990): 210-9, [7] Dobbs JH, Skoutakis VA, Acchiardo SR, Dobbs BR \"Effects of aluminum hydroxide on the absorption of propranolol.\" Curr Ther Res Clin Exp 21 (1977): 887-92",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A12C, Magnesium gluconate, Sodium sulfate, Zinc sulfate, Magnesium sulfate, Magnesium aspartate, Magnesium lactate, Magnesium citrate, Sodium chloride, Zinc gluconate, Magnesium chloride, A06A, Alvimopan",
+        "thay_the_b": "S01E, Latanoprost, Apraclonidine, Methazolamide, Neostigmine, Pilocarpine, Clonidine, Physostigmine, Acetylcholine, Diclofenamide, Bimatoprost, Travoprost",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Maravita (hoạt chất: Magnesium oxide)",
+        "thuoc_b": "Betocom (hoạt chất: Betaxolol)",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter197",
+        "mo_ta": "Concurrent administration with aluminum and magnesium antacids has been shown to decrease the oral bioavailability of certain beta-blockers, although data are conflicting. The exact mechanism of interaction is unknown but may involve cation binding of beta-blockers or a reduction in the dissolution rate due to increased gastric pH. Based on available data, the clinical significance of this potential interaction is difficult to determine. As a precaution, patients may want to consider separating the administration times of beta-blockers and antacids or other aluminum- or magnesium-containing products by at least 2 hours.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] D'Arcy PF, McElnay JC \"Drug-antacid interactions: assessment of clinical importance.\" Drug Intell Clin Pharm 21 (1987): 607-17, [2] Regardh CG, Lundborg P, Persson BA \"The effect of antacid, metoclopramide, and propantheline on the bioavailability of metoprolol and atenolol.\" Biopharm Drug Dispos 2 (1981): 79-87, [3] Hong CY, Hu SC, Lin SJ, Chiang BN \"Lack of influence of aluminum hydroxide on the bioavailability and beta-adrenoceptor blocking activity of propranolol.\" Int J Clin Pharmacol Ther Toxicol 23 (1985): 244-6, [4] Kirch W, Schafer-Korting M, Axthelm T, Kohler H, Mutschler E \"Interaction of atenolol with furosemide and calcium and aluminum salts.\" Clin Pharmacol Ther 30 (1981): 429-35, [5] Laer S, Neumann J, Scholz H \"Interaction between sotalol and an antacid preparation.\" Br J Clin Pharmacol 43 (1997): 269-72, [6] Gugler R, Allgayer H \"Effects of antacids on the clinical pharmacokinetics of drugs. An update.\" Clin Pharmacokinet 18 (1990): 210-9, [7] Dobbs JH, Skoutakis VA, Acchiardo SR, Dobbs BR \"Effects of aluminum hydroxide on the absorption of propranolol.\" Curr Ther Res Clin Exp 21 (1977): 887-92",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A12C, Magnesium gluconate, Sodium sulfate, Zinc sulfate, Magnesium sulfate, Magnesium aspartate, Magnesium lactate, Magnesium citrate, Sodium chloride, Zinc gluconate, Magnesium chloride, A06A, Alvimopan",
+        "thay_the_b": "S01E, Latanoprost, Apraclonidine, Methazolamide, Neostigmine, Pilocarpine, Clonidine, Physostigmine, Acetylcholine, Diclofenamide, Bimatoprost, Travoprost",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Magnesium oxide",
+        "hoat_chat_b": "Betaxolol",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Betocom"
+        ]
+      },
+      {
+        "thuoc_a": "Maravita (hoạt chất: Magnesium oxide)",
+        "thuoc_b": "Maravita (hoạt chất: Vitamin E)",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter1943",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Magnesium oxide",
+        "hoat_chat_b": "Vitamin E",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Maravita"
+        ]
+      },
+      {
+        "thuoc_a": "Maravita (hoạt chất: Vitamin E)",
+        "thuoc_b": "Betocom (hoạt chất: Betaxolol)",
+        "medication_a_id": "DDInter1943",
+        "medication_b_id": "DDInter197",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Vitamin E",
+        "hoat_chat_b": "Betaxolol",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Betocom"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Maravita (hoạt chất: Magnesium oxide)",
+        "thuoc_b": "Betocom (hoạt chất: Betaxolol)",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter197",
+        "xu_tri": "-",
+        "thay_the_a": "A12C, Magnesium gluconate, Sodium sulfate, Zinc sulfate, Magnesium sulfate, Magnesium aspartate, Magnesium lactate, Magnesium citrate, Sodium chloride, Zinc gluconate, Magnesium chloride, A06A, Alvimopan",
+        "thay_the_b": "S01E, Latanoprost, Apraclonidine, Methazolamide, Neostigmine, Pilocarpine, Clonidine, Physostigmine, Acetylcholine, Diclofenamide, Bimatoprost, Travoprost",
+        "mo_ta": "Concurrent administration with aluminum and magnesium antacids has been shown to decrease the oral bioavailability of certain beta-blockers, although data are conflicting. The exact mechanism of interaction is unknown but may involve cation binding of beta-blockers or a reduction in the dissolution rate due to increased gastric pH. Based on available data, the clinical significance of this potential interaction is difficult to determine. As a precaution, patients may want to consider separating the administration times of beta-blockers and antacids or other aluminum- or magnesium-containing products by at least 2 hours.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] D'Arcy PF, McElnay JC \"Drug-antacid interactions: assessment of clinical importance.\" Drug Intell Clin Pharm 21 (1987): 607-17, [2] Regardh CG, Lundborg P, Persson BA \"The effect of antacid, metoclopramide, and propantheline on the bioavailability of metoprolol and atenolol.\" Biopharm Drug Dispos 2 (1981): 79-87, [3] Hong CY, Hu SC, Lin SJ, Chiang BN \"Lack of influence of aluminum hydroxide on the bioavailability and beta-adrenoceptor blocking activity of propranolol.\" Int J Clin Pharmacol Ther Toxicol 23 (1985): 244-6, [4] Kirch W, Schafer-Korting M, Axthelm T, Kohler H, Mutschler E \"Interaction of atenolol with furosemide and calcium and aluminum salts.\" Clin Pharmacol Ther 30 (1981): 429-35, [5] Laer S, Neumann J, Scholz H \"Interaction between sotalol and an antacid preparation.\" Br J Clin Pharmacol 43 (1997): 269-72, [6] Gugler R, Allgayer H \"Effects of antacids on the clinical pharmacokinetics of drugs. An update.\" Clin Pharmacokinet 18 (1990): 210-9, [7] Dobbs JH, Skoutakis VA, Acchiardo SR, Dobbs BR \"Effects of aluminum hydroxide on the absorption of propranolol.\" Curr Ther Res Clin Exp 21 (1977): 887-92",
+        "hoat_chat_a": "Magnesium oxide",
+        "hoat_chat_b": "Betaxolol",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Betocom"
+        ]
+      },
+      {
+        "thuoc_a": "Maravita (hoạt chất: Magnesium oxide)",
+        "thuoc_b": "Maravita (hoạt chất: Vitamin E)",
+        "medication_a_id": "DDInter1119",
+        "medication_b_id": "DDInter1943",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Magnesium oxide",
+        "hoat_chat_b": "Vitamin E",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Maravita"
+        ]
+      },
+      {
+        "thuoc_a": "Maravita (hoạt chất: Vitamin E)",
+        "thuoc_b": "Betocom (hoạt chất: Betaxolol)",
+        "medication_a_id": "DDInter1943",
+        "medication_b_id": "DDInter197",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Vitamin E",
+        "hoat_chat_b": "Betaxolol",
+        "san_pham_a": [
+          "Maravita"
+        ],
+        "san_pham_b": [
+          "Betocom"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Maravita",
+        "thuoc_b": "Betocom",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Maravita và Betocom có thể làm giảm lượng Betocom được hấp thu vào cơ thể, dù dữ liệu về vấn đề này chưa thống nhất. Cơ chế chính xác chưa rõ, nhưng có thể do thành phần trong Maravita gắn kết với Betocom, hoặc do độ pH trong dạ dày tăng lên làm giảm tốc độ tan của Betocom. Ý nghĩa lâm sàng của tương tác này khó xác định rõ ràng.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời với thuốc kháng acid chứa nhôm và magiê đã được chứng minh là làm giảm sinh khả dụng đường uống của một số thuốc chẹn beta nhất định, mặc dù dữ liệu còn mâu thuẫn. Cơ chế chính xác của tương tác chưa được biết rõ nhưng có thể liên quan đến việc các cation gắn kết với thuốc chẹn beta hoặc làm giảm tốc độ hòa tan do độ pH dạ dày tăng lên. Dựa trên dữ liệu hiện có, ý nghĩa lâm sàng của tương tác tiềm tàng này rất khó xác định. Để thận trọng, bệnh nhân có thể cân nhắc tách thời điểm dùng thuốc chẹn beta và thuốc kháng acid hoặc các sản phẩm khác chứa nhôm hoặc magiê ra ít nhất 2 giờ.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác thuốc-thuốc, ở mức nhẹ. Cặp đáng chú ý là Maravita và Betocom. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Maravita và Betocom",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Maravita",
+      "Betocom"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Maravita",
+          "Betocom"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

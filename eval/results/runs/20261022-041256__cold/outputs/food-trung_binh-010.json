@@ -1,0 +1,71 @@
+{
+  "case_id": "food-trung_binh-010",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.1452,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Pregabalin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Pregabalin",
+        "ten_chuan": "Pregabalin",
+        "medication_id": "DDInter1516",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "ANTIVIC 150"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "ANTIVIC 150"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "ANTIVIC 150"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Rượu có thể làm tăng cường một số tác dụng dược lý của ANTIVIC 150, khiến việc dùng chung dẫn đến ức chế hệ thần kinh trung ương cộng gộp và/hoặc suy giảm khả năng phán đoán, tư duy và kỹ năng tâm thần vận động. Vì vậy, người dùng ANTIVIC 150 cần được cảnh báo về tương tác này và lưu ý hạn chế rượu, đồng thời tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo và phối hợp vận động hoàn toàn cho đến khi biết rõ thuốc ảnh hưởng đến mình ra sao. Nếu xuất hiện các tác dụng trên thần kinh trung ương quá mức hoặc kéo dài, gây trở ngại cho sinh hoạt thường ngày, cần thông báo cho bác sĩ.",
+        "giai_thich_duoc_si": "Rượu có thể làm tăng cường một số tác dụng dược lý của ANTIVIC 150, khiến việc dùng chung dẫn đến ức chế hệ thần kinh trung ương cộng gộp và/hoặc suy giảm khả năng phán đoán, tư duy và kỹ năng tâm thần vận động. Vì vậy, người dùng ANTIVIC 150 cần được cảnh báo về tương tác này và lưu ý hạn chế rượu, đồng thời tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo và phối hợp vận động hoàn toàn cho đến khi biết rõ thuốc ảnh hưởng đến mình ra sao. Nếu xuất hiện các tác dụng trên thần kinh trung ương quá mức hoặc kéo dài, gây trở ngại cho sinh hoạt thường ngày, cần thông báo cho bác sĩ.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986):  31-7|Gilman AG, eds., Nies AS, Rall TW, Taylor P \"Goodman and Gilman's the Pharmacological Basis of Therapeutics.\" New York, NY: Pergamon Press Inc.  (1990):|\"Product Information. Fycompa (perampanel).\" Eisai Inc  (2012):|\"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc  (2015):",
+        "mo_ta_dich": "Rượu có thể làm tăng một số tác dụng dược lý của các thuốc tác động lên thần kinh trung ương. Sử dụng kết hợp có thể dẫn đến ức chế thần kinh trung ương cộng gộp và/hoặc suy giảm khả năng phán đoán, tư duy và kỹ năng tâm thần vận động.",
+        "xu_tri_dich": "Bệnh nhân dùng thuốc tác động lên thần kinh trung ương cần được cảnh báo về tương tác này và khuyên tránh hoặc hạn chế uống rượu. Bệnh nhân ngoại trú cần được tư vấn tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo tinh thần hoàn toàn và phối hợp vận động cho đến khi biết các thuốc này ảnh hưởng đến họ như thế nào, và thông báo cho bác sĩ nếu họ gặp các tác dụng thần kinh trung ương quá mức hoặc kéo dài gây trở ngại cho các hoạt động bình thường."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: rượu."
+    ]
+  }
+}

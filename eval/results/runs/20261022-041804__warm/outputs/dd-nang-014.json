@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nang-014",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.353,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Norfloxacin",
+      "Dexamethasone"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Norfloxacin",
+        "ten_chuan": "Norfloxacin",
+        "medication_id": "DDInter1313",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Dexamethasone",
+        "ten_chuan": "Dexamethasone",
+        "medication_id": "DDInter513",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Norfloxacin",
+        "thuoc_b": "Dexamethasone",
+        "medication_a_id": "DDInter1313",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole, Povidone-iodine, J01M",
+        "thay_the_b": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Olopatadine, Fluticasone, Vitamin A, Ipratropium",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Gyrablock (hoạt chất: Norfloxacin)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1313",
+        "medication_b_id": "DDInter513",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole, Povidone-iodine, J01M",
+        "thay_the_b": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Olopatadine, Fluticasone, Vitamin A, Ipratropium",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Norfloxacin",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Gyrablock"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Gyrablock (hoạt chất: Norfloxacin)",
+        "thuoc_b": "Agiect (hoạt chất: Dexamethasone)",
+        "medication_a_id": "DDInter1313",
+        "medication_b_id": "DDInter513",
+        "xu_tri": "Caution is recommended if fluoroquinolones are prescribed in combination with corticosteroids, particularly in patients with other concomitant risk factors (e.g., age over 60 years; recipient of kidney, heart, and/or lung transplant). Patients should be advised to stop taking the fluoroquinolone, avoid exercise and use of the affected area, and promptly contact their physician if they experience pain, swelling, or inflammation of a tendon.",
+        "thay_the_a": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole, Povidone-iodine, J01M",
+        "thay_the_b": "R01A, Ciclesonide, Mupirocin, Mometasone furoate, Mometasone, Epinephrine, Flunisolide, Ephedrine, Olopatadine, Fluticasone, Vitamin A, Ipratropium",
+        "mo_ta": "Concomitant administration of corticosteroids may potentiate the risk of tendinitis and tendon rupture associated with fluoroquinolone treatment. The mechanism is unknown. Tendinitis and tendon rupture have most frequently involved the Achilles tendon, although cases involving the rotator cuff (the shoulder), the hand, the biceps, and the thumb have also been reported. Some have required surgical repair or resulted in prolonged disability. Tendon rupture can occur during or up to several months after completion of fluoroquinolone therapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Khaliq Y, Zhanel GG \"Fluoroquinolone-Associated Tendinopathy: A Critical Review of the Literature.\" Clin Infect Dis 36 (2003): 1404-1410, [2] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT., [3] van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH \"Increased risk of achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids.\" Arch Intern Med 163 (2003): 1801-7, [4] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ., [5] \"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Lincolnshire, IL., [6] FDA. U.S. Food and Drug Administration \"Information for Healthcare Professionals. Fluoroquinolone Antimicrobial Drugs. FDA Alert [7/8/2008]. Available from: URL: http://www.fda.gov/cder/drug/InfoSheets/HCP/fluoroquinolonesHCP.htm.\" ([7/8/2008]):, [7] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+        "hoat_chat_a": "Norfloxacin",
+        "hoat_chat_b": "Dexamethasone",
+        "san_pham_a": [
+          "Gyrablock"
+        ],
+        "san_pham_b": [
+          "Agiect"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Gyrablock",
+        "thuoc_b": "Agiect",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Gyrablock chung với Agiect có thể làm tăng nguy cơ viêm gân và đứt gân vốn đã gắn với nhóm kháng sinh trong Gyrablock, dù cơ chế của sự tương tác này hiện chưa được biết rõ. Tình trạng viêm và đứt gân thường gặp nhất ở gân Achilles, nhưng cũng đã được ghi nhận ở gân vùng vai (chóp xoay), bàn tay, gân nhị đầu và ngón cái. Một số trường hợp phải phẫu thuật sửa chữa hoặc dẫn đến tàn tật kéo dài, và đứt gân có thể xảy ra trong lúc dùng thuốc hoặc kéo dài tới vài tháng sau khi đã dùng xong Gyrablock.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời corticosteroid có thể làm tăng nguy cơ viêm gân và đứt gân liên quan đến điều trị bằng fluoroquinolone. Cơ chế chưa được biết. Viêm gân và đứt gân thường gặp nhất ở gân Achilles, mặc dù các trường hợp liên quan đến chóp xoay (vai), bàn tay, gân nhị đầu và ngón cái cũng đã được báo cáo. Một số trường hợp cần phẫu thuật sửa chữa hoặc dẫn đến tàn tật kéo dài. Đứt gân có thể xảy ra trong khi dùng hoặc tới vài tháng sau khi hoàn tất điều trị fluoroquinolone.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là Gyrablock và Agiect ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Gyrablock và Agiect",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Gyrablock",
+      "Agiect"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Gyrablock",
+          "Agiect"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

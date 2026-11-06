@@ -1,0 +1,71 @@
+{
+  "case_id": "food-nang-008",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.1528,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Selumetinib"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Selumetinib",
+        "ten_chuan": "Selumetinib",
+        "medication_id": "DDInter1659",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Koselugo"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Koselugo"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Koselugo"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "nang",
+        "giai_thich": "Nước ép bưởi có thể làm tăng nồng độ Koselugo trong huyết tương, do Koselugo chủ yếu được chuyển hóa qua CYP450 3A4 và ở mức thấp hơn qua CYP450 2C19, 1A2, 2C9, 2E1, 3A5 cùng quá trình glucuronid hóa bởi UGT1A1 và UGT1A3. Cơ chế được đề xuất là một số hợp chất trong bưởi ức chế chuyển hóa lần đầu qua CYP450 3A4 tại thành ruột, và ức chế CYP450 3A4 ở gan cũng có thể góp phần. Trong thời gian dùng Koselugo, cần tránh tiêu thụ bưởi, nước ép bưởi hoặc thực phẩm bổ sung có chứa bưởi.",
+        "giai_thich_duoc_si": "Nước ép bưởi có thể làm tăng nồng độ Koselugo trong huyết tương, do Koselugo chủ yếu được chuyển hóa qua CYP450 3A4 và ở mức thấp hơn qua CYP450 2C19, 1A2, 2C9, 2E1, 3A5 cùng quá trình glucuronid hóa bởi UGT1A1 và UGT1A3. Cơ chế được đề xuất là một số hợp chất trong bưởi ức chế chuyển hóa lần đầu qua CYP450 3A4 tại thành ruột, và ức chế CYP450 3A4 ở gan cũng có thể góp phần. Trong thời gian dùng Koselugo, cần tránh tiêu thụ bưởi, nước ép bưởi hoặc thực phẩm bổ sung có chứa bưởi.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Koselugo (selumetinib).\" Astra-Zeneca Pharmaceuticals  (2020):",
+        "mo_ta_dich": "Nước ép bưởi có thể làm tăng nồng độ selumetinib trong huyết tương; selumetinib được chuyển hóa chủ yếu qua CYP450 3A4 và ở mức độ thấp hơn qua CYP450 2C19, 1A2, 2C9, 2E1 và 3A5, cũng như qua glucuronid hóa bởi UGT1A1 và UGT1A3. Cơ chế được đề xuất là ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột bởi một số hợp chất có trong bưởi. Ức chế CYP450 3A4 ở gan cũng có thể góp phần.",
+        "xu_tri_dich": "Selumetinib nên được dùng khi đói, ít nhất 1 giờ trước hoặc 2 giờ sau bữa ăn. Bệnh nhân nên tránh tiêu thụ bưởi, nước ép bưởi hoặc thực phẩm bổ sung có chứa bưởi trong quá trình điều trị bằng selumetinib."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: nước ép bưởi."
+    ]
+  }
+}

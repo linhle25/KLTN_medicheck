@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nhe-041",
+  "phase": "consistency",
+  "rep": 2,
+  "audience": "pharmacist",
+  "wall_s": 2.1472,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ofloxacin",
+      "Irinotecan"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ofloxacin",
+        "ten_chuan": "Ofloxacin",
+        "medication_id": "DDInter1325",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Irinotecan",
+        "ten_chuan": "Irinotecan",
+        "medication_id": "DDInter973",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ofloxacin",
+        "thuoc_b": "Irinotecan",
+        "medication_a_id": "DDInter1325",
+        "medication_b_id": "DDInter973",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01R, Tinidazole, Tetracycline, Cefuroxime, Secnidazole, Cefixime, Azithromycin, Amikacin, S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin",
+        "thay_the_b": "L01C, Trabectedin, Cabazitaxel",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T Ofloxacin 200 mg/40 ml (hoạt chất: Ofloxacin)",
+        "thuoc_b": "Campto (hoạt chất: Irinotecan)",
+        "medication_a_id": "DDInter1325",
+        "medication_b_id": "DDInter973",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01R, Tinidazole, Tetracycline, Cefuroxime, Secnidazole, Cefixime, Azithromycin, Amikacin, S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin",
+        "thay_the_b": "L01C, Trabectedin, Cabazitaxel",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ofloxacin",
+        "hoat_chat_b": "Irinotecan",
+        "san_pham_a": [
+          "A.T Ofloxacin 200 mg/40 ml"
+        ],
+        "san_pham_b": [
+          "Campto"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T Ofloxacin 200 mg/40 ml (hoạt chất: Ofloxacin)",
+        "thuoc_b": "Campto (hoạt chất: Irinotecan)",
+        "medication_a_id": "DDInter1325",
+        "medication_b_id": "DDInter973",
+        "xu_tri": "-",
+        "thay_the_a": "J01R, Tinidazole, Tetracycline, Cefuroxime, Secnidazole, Cefixime, Azithromycin, Amikacin, S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin",
+        "thay_the_b": "L01C, Trabectedin, Cabazitaxel",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "hoat_chat_a": "Ofloxacin",
+        "hoat_chat_b": "Irinotecan",
+        "san_pham_a": [
+          "A.T Ofloxacin 200 mg/40 ml"
+        ],
+        "san_pham_b": [
+          "Campto"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T Ofloxacin 200 mg/40 ml",
+        "thuoc_b": "Campto",
+        "muc_do": "nhe",
+        "giai_thich": "Dữ liệu hiện có còn hạn chế khi đề cập việc dùng chung A.T Ofloxacin 200 mg/40 ml với Campto: hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống, và cơ chế được đề xuất là giảm hấp thu quinolone do niêm mạc ruột bị biến đổi bởi hóa trị ung thư. Đây là thông tin mang tính gợi ý chứ chưa được xác nhận chắc chắn riêng cho cặp thuốc này, nên khi dùng A.T Ofloxacin 200 mg/40 ml cùng Campto cần lưu ý khả năng giảm hiệu quả của kháng sinh đường uống.",
+        "giai_thich_duoc_si": "Dữ liệu hiện có còn hạn chế khi đề cập việc dùng chung A.T Ofloxacin 200 mg/40 ml với Campto: hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống, và cơ chế được đề xuất là giảm hấp thu quinolone do niêm mạc ruột bị biến đổi bởi hóa trị ung thư. Đây là thông tin mang tính gợi ý chứ chưa được xác nhận chắc chắn riêng cho cặp thuốc này, nên khi dùng A.T Ofloxacin 200 mg/40 ml cùng Campto cần lưu ý khả năng giảm hiệu quả của kháng sinh đường uống.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dữ liệu hạn chế gợi ý rằng hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống. Cơ chế được đề xuất là giảm hấp thu quinolone thứ phát sau biến đổi niêm mạc ruột do hóa trị ung thư.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức nhẹ. Cặp đáng chú ý là A.T Ofloxacin 200 mg/40 ml và Campto. Chi tiết từng cặp được trình bày ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "A.T Ofloxacin 200 mg/40 ml và Campto",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "A.T Ofloxacin 200 mg/40 ml",
+      "Campto"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Ofloxacin 200 mg/40 ml",
+          "Campto"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

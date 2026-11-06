@@ -1,0 +1,85 @@
+{
+  "case_id": "food-nhe-019",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0495,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Scopolamine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Scopolamine",
+        "ten_chuan": "Scopolamine",
+        "medication_id": "DDInter1647",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Ariel Tdds"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Ariel Tdds"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Ariel Tdds"
+        ],
+        "thuc_pham": "thức ăn",
+        "muc_do": "nhe",
+        "giai_thich": "Nếu bạn đang dùng Ariel Tdds mà uống kèm nước ép bưởi thì có thể làm chậm quá trình hấp thu thuốc và khiến lượng thuốc vào cơ thể tăng lên. Lý do là nước ép bưởi làm chậm việc dạ dày đẩy thức ăn xuống ruột, đồng thời ức chế một loại enzyme trong thành ruột (CYP450 3A4) vốn có nhiệm vụ phân hủy bớt thuốc trước khi nó vào máu. Vì vậy, một số chất có trong bưởi khiến thuốc không bị \"gọt bớt\" như bình thường và tích lại nhiều hơn trong cơ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Ebert U, Oertel R, Kirch W \"Influence of grapefruit juice on scopolamine pharmacokinetics and pharmacodynamics in healthy male and female subjects.\" Int J Clin Pharm Therapeutics 38 (2000):  523-31",
+        "mo_ta_dich": "Việc dùng đồng thời với nước ép bưởi có thể làm chậm hấp thu và tăng sinh khả dụng của scopolamine đường uống. Cơ chế được đề xuất là làm chậm tống tháo dạ dày cũng như ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột do một số hợp chất có trong bưởi gây ra.",
+        "xu_tri_dich": "Dựa trên các phát hiện này, nước ép bưởi khó có khả năng ảnh hưởng đến tính an toàn tổng thể của scopolamine, nhưng có thể làm chậm khởi phát tác dụng sau khi uống. Do đó, chúng tôi khuyến nghị dùng scopolamine cách ít nhất 1-2 giờ sau khi uống nước ép bưởi."
+      },
+      {
+        "san_pham": [
+          "Ariel Tdds"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Ariel Tdds khi dùng cùng rượu có thể làm giảm đủ mức độ tập trung khiến việc lái xe hay vận hành máy móc trở nên nguy hiểm hơn. Ngoài ra, việc kết hợp này còn có thể làm tăng nguy cơ lạm dụng thuốc. Cơ chế của tương tác này chưa được xác định rõ, nhưng có thể liên quan đến việc hai thứ cùng gây ức chế hệ thần kinh trung ương và cộng dồn tác dụng lên nhau.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Linnoila M \"Drug effects on psychomotor skills related to driving: interaction of atropine, glycopyrrhonium and alcohol.\" Eur J Clin Pharmacol 6 (1973):  107-12",
+        "mo_ta_dich": "Sử dụng thuốc kháng cholinergic cùng với rượu có thể dẫn đến suy giảm đủ mức độ chú ý khiến việc lái xe và vận hành máy móc trở nên nguy hiểm hơn. Ngoài ra, khả năng lạm dụng có thể tăng lên khi dùng phối hợp. Cơ chế tương tác chưa được xác lập nhưng có thể liên quan đến tác dụng ức chế cộng gộp trên hệ thần kinh trung ương.",
+        "xu_tri_dich": "Nói chung nên tránh rượu trong khi điều trị bằng thuốc kháng cholinergic. Cần tư vấn cho bệnh nhân tránh các hoạt động đòi hỏi sự tỉnh táo tinh thần cho đến khi họ biết các thuốc này ảnh hưởng đến họ như thế nào."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu, thức ăn.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

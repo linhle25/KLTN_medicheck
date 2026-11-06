@@ -14,7 +14,7 @@ Bộ công cụ đánh giá phần LLM sinh giải thích tương tác thuốc. 
 | 1 | `run_eval.py` (cold / warm / consistency / latency) | ✅ |
 | 2 | `metrics_auto.py` — metric 3, 7, 8, 9, 10 | ✅ **đã chạy** (cold+warm) |
 | 2 | run cold / warm / consistency | ✅ (3 thư mục trong `../results/runs/`) |
-| 3 | `judge.py` + `rubrics/*.md` — metric 1, 4, 5, 6 | ✅ đã chấm bằng 24 phiên Claude độc lập (bỏ DeepSeek-reasoner vì tự thiên vị) |
+| 3 | `judge.py` + `rubrics/*.md` — metric 1, 4, 5, 6 | ✅ chấm bằng 2 giám khảo LLM độc lập: DeepSeek-reasoner và gpt-4o |
 | 4 | `human_sheet.py` — phiếu an toàn + calibration CSV | ✅ đã chạy soát tay 31 case (1 người, không tính κ) |
 | 5 | `../../docs/evaluation.md` — báo cáo chính thức (Deliverable #10) | ✅ 01/09: 135 case tối ưu + 40 case held-out |
 

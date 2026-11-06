@@ -1,0 +1,145 @@
+{
+  "case_id": "edge-cpl-003",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.396,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Alendronic acid",
+      "Glimepiride"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Alendronic acid",
+        "ten_chuan": "Alendronic acid",
+        "medication_id": "DDInter42",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Glimepiride",
+        "ten_chuan": "Glimepiride",
+        "medication_id": "DDInter825",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Alendronic acid",
+        "thuoc_b": "Glimepiride",
+        "medication_a_id": "DDInter42",
+        "medication_b_id": "DDInter825",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M05B, Tiludronic acid, Vosoritide, Etidronic acid, Denosumab, Ibandronate, Cholecalciferol, Burosumab, Romosozumab, Pamidronic acid",
+        "thay_the_b": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aderonat (hoạt chất: Alendronic acid)",
+        "thuoc_b": "Agludril (hoạt chất: Glimepiride)",
+        "medication_a_id": "DDInter42",
+        "medication_b_id": "DDInter825",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M05B, Tiludronic acid, Vosoritide, Etidronic acid, Denosumab, Ibandronate, Cholecalciferol, Burosumab, Romosozumab, Pamidronic acid",
+        "thay_the_b": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Alendronic acid",
+        "hoat_chat_b": "Glimepiride",
+        "san_pham_a": [
+          "Aderonat"
+        ],
+        "san_pham_b": [
+          "Agludril"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aderonat (hoạt chất: Alendronic acid)",
+        "thuoc_b": "Agludril (hoạt chất: Glimepiride)",
+        "medication_a_id": "DDInter42",
+        "medication_b_id": "DDInter825",
+        "xu_tri": "-",
+        "thay_the_a": "M05B, Tiludronic acid, Vosoritide, Etidronic acid, Denosumab, Ibandronate, Cholecalciferol, Burosumab, Romosozumab, Pamidronic acid",
+        "thay_the_b": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Alendronic acid",
+        "hoat_chat_b": "Glimepiride",
+        "san_pham_a": [
+          "Aderonat"
+        ],
+        "san_pham_b": [
+          "Agludril"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Aderonat",
+        "thuoc_b": "Agludril",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Aderonat và Agludril có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, hiện ở mức chưa phân loại. Cặp đáng chú ý nhất trong đơn là Aderonat và Agludril. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Aderonat và Agludril",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Aderonat",
+      "Agludril"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Aderonat",
+          "Agludril"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

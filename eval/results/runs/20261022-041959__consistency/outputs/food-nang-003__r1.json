@@ -1,0 +1,85 @@
+{
+  "case_id": "food-nang-003",
+  "phase": "consistency",
+  "rep": 1,
+  "audience": "patient",
+  "wall_s": 2.5299,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Lemborexant"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Lemborexant",
+        "ten_chuan": "Lemborexant",
+        "medication_id": "DDInter1034",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Dayvigo 10mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Dayvigo 10mg"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Dayvigo 10mg"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nang",
+        "giai_thich": "Dayvigo 10mg có thể bị ảnh hưởng rõ rệt khi dùng chung với rượu: rượu làm tăng nồng độ thuốc trong máu, với nồng độ đỉnh tăng khoảng 35% và mức phơi nhiễm toàn cơ thể tăng khoảng 70%, dù cơ chế của tương tác này đến nay vẫn chưa được làm rõ. Chính vì vậy, dùng chung có thể khiến tác dụng lên hệ thần kinh trung ương của Dayvigo 10mg bị cộng dồn, làm suy giảm thêm khả năng phán đoán, suy nghĩ và phối hợp vận động.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Cerner Multum, Inc. \"Australian Product Information.\" O 0|\"Product Information. Dayvigo (lemborexant).\" Eisai Inc  (2020):",
+        "mo_ta_dich": "Rượu có thể làm tăng nồng độ trong huyết tương và tăng cường một số tác dụng dược lý của lemborexant, một thuốc tác động lên hệ thần kinh trung ương (CNS). Dùng đồng thời với rượu làm tăng nồng độ đỉnh trong huyết tương (Cmax) và mức phơi nhiễm toàn thân (AUC) của lemborexant lần lượt là 35% và 70%; tuy nhiên, cơ chế của tương tác chưa được xác định. Sử dụng kết hợp có thể dẫn đến ức chế CNS cộng gộp và/hoặc suy giảm khả năng phán đoán, tư duy và kỹ năng tâm vận.",
+        "xu_tri_dich": "Theo nhà sản xuất, do các tác dụng có khả năng cộng gộp, nên tránh dùng đồng thời lemborexant với rượu. Bệnh nhân nên được khuyên tránh uống rượu. Bệnh nhân ngoại trú nên được tư vấn không lái xe, vận hành máy móc hoặc tham gia các hoạt động có khả năng nguy hiểm đòi hỏi sự tỉnh táo tinh thần và phối hợp vận động cho đến khi họ biết các thuốc này ảnh hưởng đến họ như thế nào, và thông báo cho bác sĩ nếu họ gặp các tác dụng CNS quá mức hoặc kéo dài gây trở ngại cho các hoạt động bình thường của họ."
+      },
+      {
+        "san_pham": [
+          "Dayvigo 10mg"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "nang",
+        "giai_thich": "Nước ép bưởi có thể làm tăng nồng độ Dayvigo 10mg trong máu, vì thuốc này chủ yếu được cơ thể phân hủy nhờ một loại enzyme gọi là CYP450 3A4. Một số chất trong bưởi ức chế hoạt động của enzyme này ở thành ruột, khiến thuốc ít bị phân hủy ngay từ lần đầu đi qua gan và ruột, nên lượng thuốc vào máu nhiều hơn; việc ức chế enzyme này ở gan cũng có thể góp phần vào tác động đó. Tương tác này chưa được nghiên cứu riêng với nước ép bưởi mà mới được ghi nhận với các chất khác cũng ức chế enzyme CYP450 3A4.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Dayvigo (lemborexant).\" Eisai Inc  (2020):",
+        "mo_ta_dich": "Nước ép bưởi có thể làm tăng nồng độ lemborexant trong huyết tương, thuốc này chủ yếu được chuyển hóa bởi CYP450 3A4. Cơ chế được đề xuất là do một số hợp chất có trong bưởi ức chế chuyển hóa lần đầu qua thành ruột do CYP450 3A4 trung gian. Ức chế CYP450 3A4 ở gan cũng có thể góp phần. Tương tác này chưa được nghiên cứu với nước ép bưởi nhưng đã được báo cáo với các chất ức chế CYP450 3A4 khác.",
+        "xu_tri_dich": "Nhà sản xuất không đưa ra khuyến nghị nào về việc dùng thuốc cùng thức ăn; tuy nhiên, thời gian khởi phát giấc ngủ có thể bị trì hoãn nếu dùng thuốc cùng hoặc ngay sau bữa ăn. Bệnh nhân nên tránh tiêu thụ bưởi, nước ép bưởi hoặc thực phẩm bổ sung có chứa bưởi trong quá trình điều trị bằng lemborexant."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: nước ép bưởi, rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

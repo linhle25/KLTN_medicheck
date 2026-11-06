@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-trung_binh-030",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.8615,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Dextromethorphan",
+      "Fluphenazine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Dextromethorphan",
+        "ten_chuan": "Dextromethorphan",
+        "medication_id": "DDInter527",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Fluphenazine",
+        "ten_chuan": "Fluphenazine",
+        "medication_id": "DDInter760",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Dextromethorphan",
+        "thuoc_b": "Fluphenazine",
+        "medication_a_id": "DDInter527",
+        "medication_b_id": "DDInter760",
+        "mo_ta": "Coadministration with CYP450 2D6 inhibitors may increase the plasma concentrations of dextromethorphan in patients who are extensive metabolizers of this isoenzyme (approximately 93% of Caucasians and more than 98% of Asians and individuals of African descent). The proposed mechanism is inhibition of the CYP450 2D6-mediated O-demethylation of dextromethorphan. Increased plasma concentrations increase the risk of dextromethorphan-related adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Farydak (panobinostat).\" Novartis Pharmaceuticals, East Hanover, NJ., [4] Funck-Brentano C, Jacqz-Aigrain E, Leenhardt A, Roux A, Poirier JM, Jaillon P \"Influence of amiodarone on genetically determined drug metabolism in humans.\" Clin Pharmacol Ther 50 (1991): 259-66, [5] \"Product Information. Zytiga (abiraterone).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Ticlid (ticlopidine).\" Syntex Laboratories Inc, Palo Alto, CA.",
+        "xu_tri": "Caution should be exercised if these drugs must be used together. Patients should be monitored for signs of dextromethorphan adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome, and advised to notify their health care professional if these adverse effects develop or worsen. Dose reduction of dextromethorphan may also be required.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R05D, Benzonatate, N07X, Inotersen, Riluzole, Tafamidis",
+        "thay_the_b": "N05A, Amisulpride, Pimavanserin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Acough (hoạt chất: Dextromethorphan)",
+        "thuoc_b": "Fluphenazine decanoate injection USP 25mg/ml (hoạt chất: Fluphenazine)",
+        "medication_a_id": "DDInter527",
+        "medication_b_id": "DDInter760",
+        "mo_ta": "Coadministration with CYP450 2D6 inhibitors may increase the plasma concentrations of dextromethorphan in patients who are extensive metabolizers of this isoenzyme (approximately 93% of Caucasians and more than 98% of Asians and individuals of African descent). The proposed mechanism is inhibition of the CYP450 2D6-mediated O-demethylation of dextromethorphan. Increased plasma concentrations increase the risk of dextromethorphan-related adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Farydak (panobinostat).\" Novartis Pharmaceuticals, East Hanover, NJ., [4] Funck-Brentano C, Jacqz-Aigrain E, Leenhardt A, Roux A, Poirier JM, Jaillon P \"Influence of amiodarone on genetically determined drug metabolism in humans.\" Clin Pharmacol Ther 50 (1991): 259-66, [5] \"Product Information. Zytiga (abiraterone).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Ticlid (ticlopidine).\" Syntex Laboratories Inc, Palo Alto, CA.",
+        "xu_tri": "Caution should be exercised if these drugs must be used together. Patients should be monitored for signs of dextromethorphan adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome, and advised to notify their health care professional if these adverse effects develop or worsen. Dose reduction of dextromethorphan may also be required.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R05D, Benzonatate, N07X, Inotersen, Riluzole, Tafamidis",
+        "thay_the_b": "N05A, Amisulpride, Pimavanserin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Dextromethorphan",
+        "hoat_chat_b": "Fluphenazine",
+        "san_pham_a": [
+          "Acough"
+        ],
+        "san_pham_b": [
+          "Fluphenazine decanoate injection USP 25mg/ml"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Acough (hoạt chất: Dextromethorphan)",
+        "thuoc_b": "Fluphenazine decanoate injection USP 25mg/ml (hoạt chất: Fluphenazine)",
+        "medication_a_id": "DDInter527",
+        "medication_b_id": "DDInter760",
+        "xu_tri": "Caution should be exercised if these drugs must be used together. Patients should be monitored for signs of dextromethorphan adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome, and advised to notify their health care professional if these adverse effects develop or worsen. Dose reduction of dextromethorphan may also be required.",
+        "thay_the_a": "R05D, Benzonatate, N07X, Inotersen, Riluzole, Tafamidis",
+        "thay_the_b": "N05A, Amisulpride, Pimavanserin",
+        "mo_ta": "Coadministration with CYP450 2D6 inhibitors may increase the plasma concentrations of dextromethorphan in patients who are extensive metabolizers of this isoenzyme (approximately 93% of Caucasians and more than 98% of Asians and individuals of African descent). The proposed mechanism is inhibition of the CYP450 2D6-mediated O-demethylation of dextromethorphan. Increased plasma concentrations increase the risk of dextromethorphan-related adverse effects (e.g., agitation, confusion, tremor, insomnia, diarrhea, and respiratory depression) and serotonin syndrome.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] \"Product Information. Farydak (panobinostat).\" Novartis Pharmaceuticals, East Hanover, NJ., [4] Funck-Brentano C, Jacqz-Aigrain E, Leenhardt A, Roux A, Poirier JM, Jaillon P \"Influence of amiodarone on genetically determined drug metabolism in humans.\" Clin Pharmacol Ther 50 (1991): 259-66, [5] \"Product Information. Zytiga (abiraterone).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Ticlid (ticlopidine).\" Syntex Laboratories Inc, Palo Alto, CA.",
+        "hoat_chat_a": "Dextromethorphan",
+        "hoat_chat_b": "Fluphenazine",
+        "san_pham_a": [
+          "Acough"
+        ],
+        "san_pham_b": [
+          "Fluphenazine decanoate injection USP 25mg/ml"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Acough",
+        "thuoc_b": "Fluphenazine decanoate injection USP 25mg/ml",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Acough với Fluphenazine decanoate injection USP 25mg/ml có thể làm tăng nồng độ Acough trong huyết tương ở những người chuyển hóa mạnh qua CYP450 2D6, do Fluphenazine ức chế con đường chuyển hóa này. Nồng độ tăng cao làm tăng nguy cơ các tác dụng không mong muốn của Acough và hội chứng serotonin.",
+        "giai_thich_duoc_si": "Dùng chung Acough với Fluphenazine decanoate injection USP 25mg/ml có thể làm tăng nồng độ Acough trong huyết tương ở những người chuyển hóa mạnh qua CYP450 2D6, do Fluphenazine ức chế con đường chuyển hóa này. Nồng độ tăng cao làm tăng nguy cơ các tác dụng không mong muốn của Acough và hội chứng serotonin.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời với các thuốc ức chế CYP450 2D6 có thể làm tăng nồng độ dextromethorphan trong huyết tương ở những bệnh nhân chuyển hóa mạnh isoenzyme này (khoảng 93% người da trắng và hơn 98% người châu Á và người gốc Phi). Cơ chế được đề xuất là ức chế quá trình O-demethyl hóa dextromethorphan qua trung gian CYP450 2D6. Nồng độ huyết tương tăng làm tăng nguy cơ các tác dụng không mong muốn liên quan đến dextromethorphan (ví dụ: kích động, lú lẫn, run, mất ngủ, tiêu chảy và ức chế hô hấp) và hội chứng serotonin.",
+        "xu_tri_dich": "Cần thận trọng nếu phải dùng đồng thời các thuốc này. Cần theo dõi bệnh nhân về các dấu hiệu tác dụng không mong muốn của dextromethorphan (ví dụ: kích động, lú lẫn, run, mất ngủ, tiêu chảy và ức chế hô hấp) và hội chứng serotonin, đồng thời khuyên họ thông báo cho nhân viên y tế nếu các tác dụng không mong muốn này xuất hiện hoặc nặng lên. Có thể cần giảm liều dextromethorphan."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận 1 cặp thuốc-thuốc có tương tác, toàn bộ ở mức trung bình. Cặp đáng chú ý là Acough và Fluphenazine decanoate injection USP 25mg/ml. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Acough và Fluphenazine decanoate injection USP 25mg/ml",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Acough",
+      "Fluphenazine decanoate injection USP 25mg/ml"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Acough",
+          "Fluphenazine decanoate injection USP 25mg/ml"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

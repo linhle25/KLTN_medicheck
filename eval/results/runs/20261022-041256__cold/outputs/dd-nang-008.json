@@ -1,0 +1,148 @@
+{
+  "case_id": "dd-nang-008",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.4842,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Quinine",
+      "Bedaquiline"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Quinine",
+        "ten_chuan": "Quinine",
+        "medication_id": "DDInter1557",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Bedaquiline",
+        "ten_chuan": "Bedaquiline",
+        "medication_id": "DDInter170",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Quinine",
+        "thuoc_b": "Bedaquiline",
+        "medication_a_id": "DDInter1557",
+        "medication_b_id": "DDInter170",
+        "mo_ta": "Bedaquiline can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "xu_tri": "Caution is recommended if bedaquiline is used in combination with other drugs that can prolong the QT interval. ECG and serum electrolytes, including potassium, magnesium and calcium, should be monitored before starting bedaquiline therapy and periodically during treatment in accordance with the product labeling. Hypokalemia, hypomagnesemia, and hypocalcemia must be corrected prior to bedaquiline administration.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M09A, Risdiplam, Collagenase clostridium histolyticum, Hyaluronic acid, P01B, Artesunate, Artemether, Pyrimethamine, Tafenoquine, Proguanil",
+        "thay_the_b": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Streptomycin, Trimethoprim, Cycloserine, Isoniazid, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Mekoquinin (hoạt chất: Quinine)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1557",
+        "medication_b_id": "DDInter170",
+        "mo_ta": "Bedaquiline can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "xu_tri": "Caution is recommended if bedaquiline is used in combination with other drugs that can prolong the QT interval. ECG and serum electrolytes, including potassium, magnesium and calcium, should be monitored before starting bedaquiline therapy and periodically during treatment in accordance with the product labeling. Hypokalemia, hypomagnesemia, and hypocalcemia must be corrected prior to bedaquiline administration.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "M09A, Risdiplam, Collagenase clostridium histolyticum, Hyaluronic acid, P01B, Artesunate, Artemether, Pyrimethamine, Tafenoquine, Proguanil",
+        "thay_the_b": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Streptomycin, Trimethoprim, Cycloserine, Isoniazid, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Quinine",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Mekoquinin"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Mekoquinin (hoạt chất: Quinine)",
+        "thuoc_b": "Sirturo (hoạt chất: Bedaquiline)",
+        "medication_a_id": "DDInter1557",
+        "medication_b_id": "DDInter170",
+        "xu_tri": "Caution is recommended if bedaquiline is used in combination with other drugs that can prolong the QT interval. ECG and serum electrolytes, including potassium, magnesium and calcium, should be monitored before starting bedaquiline therapy and periodically during treatment in accordance with the product labeling. Hypokalemia, hypomagnesemia, and hypocalcemia must be corrected prior to bedaquiline administration.",
+        "thay_the_a": "M09A, Risdiplam, Collagenase clostridium histolyticum, Hyaluronic acid, P01B, Artesunate, Artemether, Pyrimethamine, Tafenoquine, Proguanil",
+        "thay_the_b": "J04A, Capreomycin, Pyrazinamide, Rifamycin, Streptomycin, Trimethoprim, Cycloserine, Isoniazid, Ethambutol, Pyridoxine, Ethionamide, Pretomanid, Aminosalicylic acid",
+        "mo_ta": "Bedaquiline can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ., [2] \"Product Information. Sirturo (bedaquiline).\" Janssen Pharmaceuticals, Titusville, NJ.",
+        "hoat_chat_a": "Quinine",
+        "hoat_chat_b": "Bedaquiline",
+        "san_pham_a": [
+          "Mekoquinin"
+        ],
+        "san_pham_b": [
+          "Sirturo"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Mekoquinin",
+        "thuoc_b": "Sirturo",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Mekoquinin và Sirturo có thể làm tăng thêm tác động kéo dài khoảng QT trên điện tâm đồ, từ đó làm tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử. Nguy cơ này mang tính lý thuyết, dựa trên khả năng gây kéo dài QT phụ thuộc liều của Sirturo khi phối hợp với các thuốc khác cũng có tác dụng tương tự.",
+        "giai_thich_duoc_si": "Dùng chung Mekoquinin và Sirturo có thể làm tăng thêm tác động kéo dài khoảng QT trên điện tâm đồ, từ đó làm tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử. Nguy cơ này mang tính lý thuyết, dựa trên khả năng gây kéo dài QT phụ thuộc liều của Sirturo khi phối hợp với các thuốc khác cũng có tác dụng tương tự.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Bedaquiline có thể gây kéo dài khoảng QT liên quan đến liều. Về mặt lý thuyết, việc dùng đồng thời với các thuốc khác có thể kéo dài khoảng QT có thể dẫn đến tác dụng cộng gộp và tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử.",
+        "xu_tri_dich": "Thận trọng được khuyến cáo nếu bedaquiline được dùng phối hợp với các thuốc khác có thể kéo dài khoảng QT. Cần theo dõi điện tâm đồ và điện giải huyết thanh, bao gồm kali, magiê và canxi, trước khi bắt đầu điều trị bằng bedaquiline và định kỳ trong quá trình điều trị theo đúng nhãn sản phẩm. Phải điều chỉnh tình trạng hạ kali máu, hạ magiê máu và hạ canxi máu trước khi dùng bedaquiline."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh tương tác giữa hai đơn thuốc khác nhau, kết quả ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ đều ở mức nghiêm trọng. Cặp đáng chú ý nhất trong danh sách là Mekoquinin và Sirturo. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Mekoquinin và Sirturo",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Mekoquinin",
+      "Sirturo"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Mekoquinin"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Sirturo"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

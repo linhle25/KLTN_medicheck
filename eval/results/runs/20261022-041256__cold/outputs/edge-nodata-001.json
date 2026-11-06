@@ -1,0 +1,59 @@
+{
+  "case_id": "edge-nodata-001",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.1132,
+  "unknown_products": [],
+  "no_interaction_data_products": [
+    "A.T Ichmau"
+  ],
+  "result": {
+    "raw_medications": [
+      "Abacavir"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Abacavir",
+        "ten_chuan": "Abacavir",
+        "medication_id": "DDInter1",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "A.T Ichmau",
+      "Abacavir Tablets USP 300mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Ichmau",
+          "Abacavir Tablets USP 300mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

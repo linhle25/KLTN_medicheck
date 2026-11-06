@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nang-003",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.0896,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Prednisone",
+      "Golimumab"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Prednisone",
+        "ten_chuan": "Prednisone",
+        "medication_id": "DDInter1515",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Golimumab",
+        "ten_chuan": "Golimumab",
+        "medication_id": "DDInter837",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Prednisone",
+        "thuoc_b": "Golimumab",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter837",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "SIMPONI (hoạt chất: Golimumab)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter837",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Golimumab",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "SIMPONI"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg (hoạt chất: Prednisone)",
+        "thuoc_b": "SIMPONI (hoạt chất: Golimumab)",
+        "medication_a_id": "DDInter1515",
+        "medication_b_id": "DDInter837",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "thay_the_a": "A07E, Cromoglicic acid, Olsalazine, Sulfasalazine, Balsalazide, Beclomethasone dipropionate, Mesalazine, H02A",
+        "thay_the_b": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Abatacept, Apremilast, Inebilizumab, Belumosudil, Belimumab, Emapalumab",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "hoat_chat_a": "Prednisone",
+        "hoat_chat_b": "Golimumab",
+        "san_pham_a": [
+          "Brown Burk Prednison 5mg"
+        ],
+        "san_pham_b": [
+          "SIMPONI"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Brown Burk Prednison 5mg",
+        "thuoc_b": "SIMPONI",
+        "muc_do": "nang",
+        "giai_thich": "Việc phối hợp Brown Burk Prednison 5mg với SIMPONI đặt người bệnh vào tình huống tăng nguy cơ nhiễm trùng, do cả hai đều mang tính ức chế miễn dịch và ức chế tủy xương ở các mức khác nhau. Các nhiễm trùng nặng và nhiễm khuẩn huyết, kể cả tử vong, đã được ghi nhận khi dùng thuốc ức chế TNF, đặc biệt ở người đang dùng đồng thời liệu pháp ức chế miễn dịch; bên cạnh đó, dùng chung thuốc ức chế TNF với các thuốc ức chế miễn dịch khác còn có thể làm tăng nguy cơ một loại ung thư tế bào lympho T hiếm gặp và thường gây tử vong. Vì vậy, người dùng Brown Burk Prednison 5mg cùng SIMPONI cần được theo dõi sát các dấu hiệu nhiễm trùng cũng như các biểu hiện gợi ý của loại ung thư này trong suốt quá trình điều trị.",
+        "giai_thich_duoc_si": "Việc phối hợp Brown Burk Prednison 5mg với SIMPONI đặt người bệnh vào tình huống tăng nguy cơ nhiễm trùng, do cả hai đều mang tính ức chế miễn dịch và ức chế tủy xương ở các mức khác nhau. Các nhiễm trùng nặng và nhiễm khuẩn huyết, kể cả tử vong, đã được ghi nhận khi dùng thuốc ức chế TNF, đặc biệt ở người đang dùng đồng thời liệu pháp ức chế miễn dịch; bên cạnh đó, dùng chung thuốc ức chế TNF với các thuốc ức chế miễn dịch khác còn có thể làm tăng nguy cơ một loại ung thư tế bào lympho T hiếm gặp và thường gây tử vong. Vì vậy, người dùng Brown Burk Prednison 5mg cùng SIMPONI cần được theo dõi sát các dấu hiệu nhiễm trùng cũng như các biểu hiện gợi ý của loại ung thư này trong suốt quá trình điều trị.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Việc dùng thuốc ức chế yếu tố hoại tử khối u (TNF) cùng các thuốc ức chế miễn dịch hoặc ức chế tủy xương khác có thể làm tăng nguy cơ nhiễm trùng. Nhiễm trùng nặng và nhiễm khuẩn huyết, kể cả tử vong, đã được báo cáo khi dùng thuốc ức chế TNF, đặc biệt ở bệnh nhân đang điều trị ức chế miễn dịch đồng thời. Các thuốc có thể gây ức chế tủy hoặc ức chế miễn dịch đáng kể bao gồm thuốc chống ung thư, xạ trị, zidovudine, linezolid, một số thuốc chống thấp khớp, corticosteroid liều cao hoặc các thuốc adrenocorticotropic, và corticosteroid dùng tại chỗ hoặc dạng hít dài ngày. Dùng đồng thời thuốc ức chế TNF với các thuốc ức chế miễn dịch khác như azathioprine hoặc mercaptopurine cũng có thể làm tăng nguy cơ một loại ung thư tế bào bạch cầu hiếm gặp và thường gây tử vong được gọi là u lympho tế bào T ở gan-lách (HSTCL).",
+        "xu_tri_dich": "Bệnh nhân dùng thuốc ức chế TNF đơn độc hoặc cùng các thuốc ức chế miễn dịch hay ức chế tủy xương khác cần được theo dõi sát sự xuất hiện của nhiễm trùng. Cần ngừng liệu pháp ức chế TNF nếu xảy ra nhiễm trùng nặng hoặc nhiễm khuẩn huyết. Theo dõi sát các dấu hiệu và triệu chứng của HSTCL (ví dụ lách to, gan to, đau bụng, sốt dai dẳng, đổ mồ hôi đêm, sụt cân) cũng được khuyến nghị trong quá trình dùng thuốc ức chế TNF, đặc biệt khi phối hợp với các thuốc ức chế miễn dịch khác như azathioprine và mercaptopurine."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc hiện tại ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Brown Burk Prednison 5mg và SIMPONI. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Brown Burk Prednison 5mg và SIMPONI",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Brown Burk Prednison 5mg",
+      "SIMPONI"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Brown Burk Prednison 5mg",
+          "SIMPONI"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

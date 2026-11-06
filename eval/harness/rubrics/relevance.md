@@ -16,6 +16,16 @@ Chấm:
 - Liệt kê mọi tên thuốc/hoạt chất được nhắc trong đoạn mà KHÔNG có trong "DANH SÁCH
   THUỐC TRONG YÊU CẦU" và cũng không phải 1 trong 2 đối tượng của cặp → "entity_leak".
 
+LƯU Ý VỀ TÊN BIỆT DƯỢC: CẶP ĐANG XÉT được ghi bằng tên HOẠT CHẤT, còn đoạn giải thích
+thường gọi thuốc bằng TÊN BIỆT DƯỢC có trong "DANH SÁCH THUỐC TRONG YÊU CẦU" (vd cặp
+"Sibutramine × Tramadol" nhưng đoạn viết "Diatramine Capsule 11.30mg" và "Aronol").
+Đó là cách gọi hợp lệ và vẫn là ĐÚNG cặp - mỗi biệt dược trong danh sách chứa ít nhất
+một hoạt chất của cặp. Vì vậy:
+- KHÔNG tính tên có trong "DANH SÁCH THUỐC TRONG YÊU CẦU" là entity_leak.
+- KHÔNG hạ điểm hay đặt addresses_this_pair=false chỉ vì đoạn dùng tên biệt dược thay
+  tên hoạt chất.
+
+
 CHỈ trả về JSON:
 {
   "score": <1-5>,

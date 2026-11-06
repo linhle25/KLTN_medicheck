@@ -1,0 +1,148 @@
+{
+  "case_id": "ov-multirx-001",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.2136,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cyclosporine",
+      "Methylphenidate"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cyclosporine",
+        "ten_chuan": "Cyclosporine",
+        "medication_id": "DDInter458",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Methylphenidate",
+        "ten_chuan": "Methylphenidate",
+        "medication_id": "DDInter1189",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Methylphenidate",
+        "thuoc_b": "Cyclosporine",
+        "medication_a_id": "DDInter1189",
+        "medication_b_id": "DDInter458",
+        "mo_ta": "case report suggests that methylphenidate may increase the blood concentrations of cyclosporine. The mechanism of interaction and a causal relationship have not been established. Although a drug interaction was suspected by the investigators, patient noncompliance before addition of methylphenidate could not be ruled out.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Lewis BR, Aoun SL, Bernstein GA, Crow SJ \"Pharmacokinetic interactions between cyclosporine and bupropion or methylphenidate.\" J Child Adolesc Psychopharmacol 11 (2001): 193-8, [2] Hollander AAMJ, Vanrooij J, Lentjes EGWM, Arbouw F, Vanbree JB, Schoemaker RC, Vanes LA, Vanderwoude FJ, Cohen AF \"The effect of grapefruit juice on cyclosporine and prednisone metabolism in transplant patients.\" Clin Pharmacol Ther 57 (1995): 318-24, [3] Ducharme MP, Warbasse LH, Edwards DJ \"Disposition of intravenous and oral cyclosporine after administration with grapefruit juice.\" Clin Pharmacol Ther 57 (1995): 485-91, [4] Min DI, Ku YM, Perry PJ, Ukah FO, Ashton K, Martin MF, Hunsicker LG \"Effect of grapefruit juice on cyclosporine pharmacokinetics in renal transplant patients.\" Transplantation 62 (1996): 123-5, [5] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [6] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [7] Ducharme MP, Provenzano R, Dehoornesmith M, Edwards DJ \"Trough concentrations of cyclosporine in blood following administration with grapefruit juice.\" Br J Clin Pharmacol 36 (1993): 457-9, [8] Honcharik N, Yatscoff RW, Jeffery JR, Rush DN \"The effect of meal composition on cyclosporine absorption.\" Transplantation 52 (1991): 1087-9, [9] Tsunoda SM, Harris RZ, Christians U, et al. \"Red wine decreases cyclosporine bioavailability.\" Clin Pharmacol Ther 70 (2001): 462-7, [10] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [11] Yee GC, Stanley DL, Pessa LJ, et al. \"Effect of grrapefruit juice on blood cyclosporin concentration.\" Lancet 345 (1995): 955-6, [12] Oliveira-Freitas VL, Dalla Costa T, Manfro RC, Cruz LB, Schwartsmann G \"Influence of purple grape juice in cyclosporine availability.\" J Ren Nutr 20 (2010): 309-13, [13] Tan KKC, Trull AK, Uttridge JA, Metcalfe S, Heyes CS, Facey S, Evans DB \"Effect of dietary fat on the pharmacokinetics and pharmacodynamics of cyclosporine in kidney transplant recipients.\" Clin Pharmacol Ther 57 (1995): 425-33, [14] Ioannidesdemos LL, Christophidis N, Ryan P, Angelis P, Liolios L, Mclean AJ \"Dosing implications of a clinical interaction between grapefruit juice and cyclosporine and metabolite concentrations in patients with autoimmune diseases.\" J Rheumatol 24 (1997): 49-54, [15] \"Product Information. Ritalin LA (methylphenidate).\" Quality Care Products/Lake Erie Medical , Temperance, MI., [16] \"Product Information. Concerta (methylphenidate).\" Alza, Palo Alto, CA., [17] \"Product Information. Metadate CD Capsules (methylphenidate)\" Celltech Pharmaceuticals, Inc, Applegate, WI.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N06B, Amphetamine, Pemoline, Atomoxetine, Metamfetamine, Lisdexamfetamine, Solriamfetol, Caffeine, Dexmethylphenidate, Dextroamphetamine, Citicoline",
+        "thay_the_b": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Mycophenolic acid, Abatacept",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Concerta (hoạt chất: Methylphenidate)",
+        "thuoc_b": "Arpimune ME 100mg (hoạt chất: Cyclosporine)",
+        "medication_a_id": "DDInter1189",
+        "medication_b_id": "DDInter458",
+        "mo_ta": "case report suggests that methylphenidate may increase the blood concentrations of cyclosporine. The mechanism of interaction and a causal relationship have not been established. Although a drug interaction was suspected by the investigators, patient noncompliance before addition of methylphenidate could not be ruled out.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Lewis BR, Aoun SL, Bernstein GA, Crow SJ \"Pharmacokinetic interactions between cyclosporine and bupropion or methylphenidate.\" J Child Adolesc Psychopharmacol 11 (2001): 193-8, [2] Hollander AAMJ, Vanrooij J, Lentjes EGWM, Arbouw F, Vanbree JB, Schoemaker RC, Vanes LA, Vanderwoude FJ, Cohen AF \"The effect of grapefruit juice on cyclosporine and prednisone metabolism in transplant patients.\" Clin Pharmacol Ther 57 (1995): 318-24, [3] Ducharme MP, Warbasse LH, Edwards DJ \"Disposition of intravenous and oral cyclosporine after administration with grapefruit juice.\" Clin Pharmacol Ther 57 (1995): 485-91, [4] Min DI, Ku YM, Perry PJ, Ukah FO, Ashton K, Martin MF, Hunsicker LG \"Effect of grapefruit juice on cyclosporine pharmacokinetics in renal transplant patients.\" Transplantation 62 (1996): 123-5, [5] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [6] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [7] Ducharme MP, Provenzano R, Dehoornesmith M, Edwards DJ \"Trough concentrations of cyclosporine in blood following administration with grapefruit juice.\" Br J Clin Pharmacol 36 (1993): 457-9, [8] Honcharik N, Yatscoff RW, Jeffery JR, Rush DN \"The effect of meal composition on cyclosporine absorption.\" Transplantation 52 (1991): 1087-9, [9] Tsunoda SM, Harris RZ, Christians U, et al. \"Red wine decreases cyclosporine bioavailability.\" Clin Pharmacol Ther 70 (2001): 462-7, [10] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [11] Yee GC, Stanley DL, Pessa LJ, et al. \"Effect of grrapefruit juice on blood cyclosporin concentration.\" Lancet 345 (1995): 955-6, [12] Oliveira-Freitas VL, Dalla Costa T, Manfro RC, Cruz LB, Schwartsmann G \"Influence of purple grape juice in cyclosporine availability.\" J Ren Nutr 20 (2010): 309-13, [13] Tan KKC, Trull AK, Uttridge JA, Metcalfe S, Heyes CS, Facey S, Evans DB \"Effect of dietary fat on the pharmacokinetics and pharmacodynamics of cyclosporine in kidney transplant recipients.\" Clin Pharmacol Ther 57 (1995): 425-33, [14] Ioannidesdemos LL, Christophidis N, Ryan P, Angelis P, Liolios L, Mclean AJ \"Dosing implications of a clinical interaction between grapefruit juice and cyclosporine and metabolite concentrations in patients with autoimmune diseases.\" J Rheumatol 24 (1997): 49-54, [15] \"Product Information. Ritalin LA (methylphenidate).\" Quality Care Products/Lake Erie Medical , Temperance, MI., [16] \"Product Information. Concerta (methylphenidate).\" Alza, Palo Alto, CA., [17] \"Product Information. Metadate CD Capsules (methylphenidate)\" Celltech Pharmaceuticals, Inc, Applegate, WI.",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N06B, Amphetamine, Pemoline, Atomoxetine, Metamfetamine, Lisdexamfetamine, Solriamfetol, Caffeine, Dexmethylphenidate, Dextroamphetamine, Citicoline",
+        "thay_the_b": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Mycophenolic acid, Abatacept",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Methylphenidate",
+        "hoat_chat_b": "Cyclosporine",
+        "san_pham_a": [
+          "Concerta"
+        ],
+        "san_pham_b": [
+          "Arpimune ME 100mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Concerta (hoạt chất: Methylphenidate)",
+        "thuoc_b": "Arpimune ME 100mg (hoạt chất: Cyclosporine)",
+        "medication_a_id": "DDInter1189",
+        "medication_b_id": "DDInter458",
+        "xu_tri": "-",
+        "thay_the_a": "N06B, Amphetamine, Pemoline, Atomoxetine, Metamfetamine, Lisdexamfetamine, Solriamfetol, Caffeine, Dexmethylphenidate, Dextroamphetamine, Citicoline",
+        "thay_the_b": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Mycophenolic acid, Abatacept",
+        "mo_ta": "case report suggests that methylphenidate may increase the blood concentrations of cyclosporine. The mechanism of interaction and a causal relationship have not been established. Although a drug interaction was suspected by the investigators, patient noncompliance before addition of methylphenidate could not be ruled out.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Lewis BR, Aoun SL, Bernstein GA, Crow SJ \"Pharmacokinetic interactions between cyclosporine and bupropion or methylphenidate.\" J Child Adolesc Psychopharmacol 11 (2001): 193-8, [2] Hollander AAMJ, Vanrooij J, Lentjes EGWM, Arbouw F, Vanbree JB, Schoemaker RC, Vanes LA, Vanderwoude FJ, Cohen AF \"The effect of grapefruit juice on cyclosporine and prednisone metabolism in transplant patients.\" Clin Pharmacol Ther 57 (1995): 318-24, [3] Ducharme MP, Warbasse LH, Edwards DJ \"Disposition of intravenous and oral cyclosporine after administration with grapefruit juice.\" Clin Pharmacol Ther 57 (1995): 485-91, [4] Min DI, Ku YM, Perry PJ, Ukah FO, Ashton K, Martin MF, Hunsicker LG \"Effect of grapefruit juice on cyclosporine pharmacokinetics in renal transplant patients.\" Transplantation 62 (1996): 123-5, [5] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [6] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [7] Ducharme MP, Provenzano R, Dehoornesmith M, Edwards DJ \"Trough concentrations of cyclosporine in blood following administration with grapefruit juice.\" Br J Clin Pharmacol 36 (1993): 457-9, [8] Honcharik N, Yatscoff RW, Jeffery JR, Rush DN \"The effect of meal composition on cyclosporine absorption.\" Transplantation 52 (1991): 1087-9, [9] Tsunoda SM, Harris RZ, Christians U, et al. \"Red wine decreases cyclosporine bioavailability.\" Clin Pharmacol Ther 70 (2001): 462-7, [10] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [11] Yee GC, Stanley DL, Pessa LJ, et al. \"Effect of grrapefruit juice on blood cyclosporin concentration.\" Lancet 345 (1995): 955-6, [12] Oliveira-Freitas VL, Dalla Costa T, Manfro RC, Cruz LB, Schwartsmann G \"Influence of purple grape juice in cyclosporine availability.\" J Ren Nutr 20 (2010): 309-13, [13] Tan KKC, Trull AK, Uttridge JA, Metcalfe S, Heyes CS, Facey S, Evans DB \"Effect of dietary fat on the pharmacokinetics and pharmacodynamics of cyclosporine in kidney transplant recipients.\" Clin Pharmacol Ther 57 (1995): 425-33, [14] Ioannidesdemos LL, Christophidis N, Ryan P, Angelis P, Liolios L, Mclean AJ \"Dosing implications of a clinical interaction between grapefruit juice and cyclosporine and metabolite concentrations in patients with autoimmune diseases.\" J Rheumatol 24 (1997): 49-54, [15] \"Product Information. Ritalin LA (methylphenidate).\" Quality Care Products/Lake Erie Medical , Temperance, MI., [16] \"Product Information. Concerta (methylphenidate).\" Alza, Palo Alto, CA., [17] \"Product Information. Metadate CD Capsules (methylphenidate)\" Celltech Pharmaceuticals, Inc, Applegate, WI.",
+        "hoat_chat_a": "Methylphenidate",
+        "hoat_chat_b": "Cyclosporine",
+        "san_pham_a": [
+          "Concerta"
+        ],
+        "san_pham_b": [
+          "Arpimune ME 100mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Concerta",
+        "thuoc_b": "Arpimune ME 100mg",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Concerta và Arpimune ME 100mg, có một báo cáo ca bệnh cho thấy Concerta có thể làm tăng nồng độ Arpimune ME 100mg trong máu. Tuy nhiên cơ chế gây ra tương tác này và việc hai thuốc có thực sự liên quan nhân quả với nhau hay không thì chưa được xác lập. Dù các nhà điều tra nghi ngờ có tương tác thuốc, vẫn không loại trừ được khả năng bệnh nhân không tuân thủ dùng thuốc trước khi thêm Concerta.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Báo cáo ca bệnh cho thấy methylphenidate có thể làm tăng nồng độ cyclosporine trong máu. Cơ chế của tương tác và mối quan hệ nhân quả chưa được xác lập. Mặc dù các nhà điều tra nghi ngờ có tương tác thuốc, không thể loại trừ việc bệnh nhân không tuân thủ dùng thuốc trước khi thêm methylphenidate.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc của bạn, mình thấy có tổng cộng 1 cặp thuốc-thuốc có tương tác, và cả 1 cặp này đều ở mức nhẹ. Cặp đáng chú ý là Concerta + Arpimune ME 100mg. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Concerta + Arpimune ME 100mg",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Arpimune ME 100mg",
+      "Concerta"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Arpimune ME 100mg"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Concerta"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

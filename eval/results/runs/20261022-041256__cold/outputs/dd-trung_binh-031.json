@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-trung_binh-031",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 3.0209,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Meningococcal polysaccharide vaccine group C",
+      "Pemetrexed"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Meningococcal polysaccharide vaccine group C",
+        "ten_chuan": "Meningococcal polysaccharide vaccine group C",
+        "medication_id": "DDInter1147",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Pemetrexed",
+        "ten_chuan": "Pemetrexed",
+        "medication_id": "DDInter1414",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Meningococcal polysaccharide vaccine group C",
+        "thuoc_b": "Pemetrexed",
+        "medication_a_id": "DDInter1147",
+        "medication_b_id": "DDInter1414",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y) (hoạt chất: Meningococcal polysaccharide vaccine group C)",
+        "thuoc_b": "Alimta 500mg (hoạt chất: Pemetrexed)",
+        "medication_a_id": "DDInter1147",
+        "medication_b_id": "DDInter1414",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Meningococcal polysaccharide vaccine group C",
+        "hoat_chat_b": "Pemetrexed",
+        "san_pham_a": [
+          "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y)"
+        ],
+        "san_pham_b": [
+          "Alimta 500mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y) (hoạt chất: Meningococcal polysaccharide vaccine group C)",
+        "thuoc_b": "Alimta 500mg (hoạt chất: Pemetrexed)",
+        "medication_a_id": "DDInter1147",
+        "medication_b_id": "DDInter1414",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "hoat_chat_a": "Meningococcal polysaccharide vaccine group C",
+        "hoat_chat_b": "Pemetrexed",
+        "san_pham_a": [
+          "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y)"
+        ],
+        "san_pham_b": [
+          "Alimta 500mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y)",
+        "thuoc_b": "Alimta 500mg",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi tiêm Nimenrix cho người đang dùng Alimta 500mg, nhìn chung việc tiêm loại vắc-xin bất hoạt (không chứa mầm bệnh sống) như Nimenrix vẫn an toàn, nhưng khả năng tạo miễn dịch của cơ thể có thể bị giảm hoặc không đạt mức tối ưu. Nguyên nhân là do Alimta 500mg có thể ức chế miễn dịch, làm giảm khả năng sản sinh kháng thể chống lại vắc-xin. Tình trạng này có thể gặp ở những người vừa mới dùng hoặc đang dùng các thuốc ức chế miễn dịch, globulin kháng lympho, thuốc alkyl hóa, thuốc chống chuyển hóa, xạ trị, một số thuốc chống thấp khớp, corticosteroid liều cao hoặc các chất giống adrenocorticotropin, hoặc corticosteroid dùng tại chỗ/dạng hít kéo dài.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Việc tiêm vắc-xin bất hoạt, đã chết hoặc không còn khả năng lây nhiễm cho bệnh nhân bị ức chế miễn dịch nhìn chung là an toàn nhưng có thể liên quan đến đáp ứng miễn dịch giảm hoặc dưới mức tối ưu do ức chế kháng thể. Những bệnh nhân này có thể bao gồm những người vừa mới dùng hoặc đang dùng các thuốc ức chế miễn dịch, globulin kháng lympho, thuốc alkyl hóa, thuốc chống chuyển hóa, xạ trị, một số thuốc chống thấp khớp, corticosteroid liều cao hoặc các chất adrenocorticotropin, hoặc corticosteroid dùng tại chỗ hoặc dạng hít kéo dài.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác ở mức trung bình. Cặp đáng chú ý là Nimenrix và Alimta 500mg. Bạn xem chi tiết từng cặp ở phần bên dưới để nắm rõ hơn nhé.",
+      "nhan_manh": [
+        {
+          "text": "Nimenrix và Alimta 500mg",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y)",
+      "Alimta 500mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Nimenrix (Phòng bệnh: bệnh não mô cầu xâm lấn do Neisseria meningitidis nhóm A, C, W-135 và Y)",
+          "Alimta 500mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

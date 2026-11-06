@@ -1,0 +1,71 @@
+{
+  "case_id": "food-trung_binh-011",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.0485,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Semaglutide"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Semaglutide",
+        "ten_chuan": "Semaglutide",
+        "medication_id": "DDInter1660",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Ozempic"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Ozempic"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Ozempic"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Rượu có thể gây hạ đường huyết hoặc tăng đường huyết ở người bệnh đái tháo đường đang dùng Ozempic, trong đó hạ đường huyết thường gặp nhất khi uống rượu cấp tính. Ngay cả lượng rượu vừa phải cũng có thể làm giảm đường huyết đáng kể, đặc biệt khi uống lúc bụng đói hoặc sau khi vận động. Cơ chế liên quan đến việc ức chế cả quá trình tạo glucose mới lẫn phản ứng điều hòa ngược chống hạ đường huyết.",
+        "giai_thich_duoc_si": "Rượu có thể gây hạ đường huyết hoặc tăng đường huyết ở người bệnh đái tháo đường đang dùng Ozempic, trong đó hạ đường huyết thường gặp nhất khi uống rượu cấp tính. Ngay cả lượng rượu vừa phải cũng có thể làm giảm đường huyết đáng kể, đặc biệt khi uống lúc bụng đói hoặc sau khi vận động. Cơ chế liên quan đến việc ức chế cả quá trình tạo glucose mới lẫn phản ứng điều hòa ngược chống hạ đường huyết.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981):  33-6|Jerntorp P, Almer LO, Holin H, et al. \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983):  237-42|Barnett AH, Spiliopoulos AJ, Pyke DA, et al. \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983):  213-5|Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987):  683-6|\"Product Information. Diabinese (chlorpropamide).\" Pfizer U.S. Pharmaceuticals  (2002):|\"Product Information. Glucotrol (glipizide).\" Pfizer U.S. Pharmaceuticals  (2002):|\"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO.|Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981):  361-72|\"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002):  S50-S60",
+        "mo_ta_dich": "Rượu có thể gây hạ đường huyết hoặc tăng đường huyết ở bệnh nhân đái tháo đường. Hạ đường huyết thường xảy ra nhất khi uống rượu cấp tính. Ngay cả một lượng nhỏ cũng có thể làm giảm đường huyết đáng kể, đặc biệt khi uống rượu lúc bụng đói hoặc sau khi tập thể dục. Cơ chế liên quan đến việc ức chế cả tân tạo glucose lẫn đáp ứng đối kháng với hạ đường huyết.",
+        "xu_tri_dich": "Bệnh nhân đái tháo đường nên tránh uống rượu nếu đường huyết không được kiểm soát tốt, hoặc nếu họ có tăng triglycerid máu, bệnh thần kinh, hoặc viêm tụy. Bệnh nhân đái tháo đường được kiểm soát tốt nên hạn chế lượng rượu uống vào ở mức một ly mỗi ngày đối với nữ và hai ly mỗi ngày đối với nam (1 ly = 5 oz rượu vang, 12 oz bia, hoặc 1,5 oz rượu chưng cất) kết hợp với chế độ ăn bình thường của họ. Không nên uống rượu lúc bụng đói hoặc sau khi tập thể dục."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: rượu."
+    ]
+  }
+}

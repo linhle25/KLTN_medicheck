@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nhe-033",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.967,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Canagliflozin",
+      "Diflorasone (topical)"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Canagliflozin",
+        "ten_chuan": "Canagliflozin",
+        "medication_id": "DDInter280",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Diflorasone (topical)",
+        "ten_chuan": "Diflorasone (topical)",
+        "medication_id": "DDInter550",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Canagliflozin",
+        "thuoc_b": "Diflorasone (topical)",
+        "medication_a_id": "DDInter280",
+        "medication_b_id": "DDInter550",
+        "mo_ta": "The efficacy of insulin and other antidiabetic agents may be diminished by topical corticosteroids, particularly during prolonged or indiscriminate use. Corticosteroids can raise blood glucose level by antagonizing the action and suppressing the secretion of insulin, which results in inhibition of peripheral glucose uptake and increased gluconeogenesis. The duration of administration Close clinical monitoring of glycemic control is recommended if topical corticosteroids are administered chronically and/or to large areas in diabetic patients.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Pace WE \"Topical corticosteroids.\" Can Med Assoc J 108 (1973): 11 passim, [2] Seale JP, Compton MR \"Side-effects of corticosteroid agents.\" Med J Aust 144 (1986): 139-42, [3] \"Product Information. Psorcon (diflorasone topical).\" Rhone-Poulenc Rorer, Collegeville, PA., [4] \"Product Information. Temovate (clobetasol).\" Glaxo Wellcome, Research Triangle Park, NC., [5] \"Product Information. Ultravate (halobetasol).\" Bristol-Myers Squibb, Princeton, NJ., [6] Carruthers JA, Staughton RC, August PJ \"Penetration of topical steroid preparations.\" Arch Dermatol 113 (1977): 522, [7] Ludvik B, Clodi M, Kautzky-Willer A, Capek M, Hartter E, Pacini G, Prager R \"Effect of dexamethasone on insulin sensitivity, islet amyloid polypeptide and insulin secretion in humans.\" Diabetologia 36 (1993): 84-7, [8] \"Product Information. Diprolene (betamethasone topical).\" Schering Laboratories, Kenilworth, NJ., [9] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [10] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [14] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [15] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [16] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [17] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [18] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Simvastatin, Guar gum, Rosuvastatin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Canaflin 100 (hoạt chất: Canagliflozin)",
+        "thuoc_b": "Menzag (hoạt chất: Diflorasone (topical))",
+        "medication_a_id": "DDInter280",
+        "medication_b_id": "DDInter550",
+        "mo_ta": "The efficacy of insulin and other antidiabetic agents may be diminished by topical corticosteroids, particularly during prolonged or indiscriminate use. Corticosteroids can raise blood glucose level by antagonizing the action and suppressing the secretion of insulin, which results in inhibition of peripheral glucose uptake and increased gluconeogenesis. The duration of administration Close clinical monitoring of glycemic control is recommended if topical corticosteroids are administered chronically and/or to large areas in diabetic patients.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Pace WE \"Topical corticosteroids.\" Can Med Assoc J 108 (1973): 11 passim, [2] Seale JP, Compton MR \"Side-effects of corticosteroid agents.\" Med J Aust 144 (1986): 139-42, [3] \"Product Information. Psorcon (diflorasone topical).\" Rhone-Poulenc Rorer, Collegeville, PA., [4] \"Product Information. Temovate (clobetasol).\" Glaxo Wellcome, Research Triangle Park, NC., [5] \"Product Information. Ultravate (halobetasol).\" Bristol-Myers Squibb, Princeton, NJ., [6] Carruthers JA, Staughton RC, August PJ \"Penetration of topical steroid preparations.\" Arch Dermatol 113 (1977): 522, [7] Ludvik B, Clodi M, Kautzky-Willer A, Capek M, Hartter E, Pacini G, Prager R \"Effect of dexamethasone on insulin sensitivity, islet amyloid polypeptide and insulin secretion in humans.\" Diabetologia 36 (1993): 84-7, [8] \"Product Information. Diprolene (betamethasone topical).\" Schering Laboratories, Kenilworth, NJ., [9] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [10] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [14] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [15] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [16] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [17] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [18] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Simvastatin, Guar gum, Rosuvastatin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Canagliflozin",
+        "hoat_chat_b": "Diflorasone (topical)",
+        "san_pham_a": [
+          "Canaflin 100"
+        ],
+        "san_pham_b": [
+          "Menzag"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Canaflin 100 (hoạt chất: Canagliflozin)",
+        "thuoc_b": "Menzag (hoạt chất: Diflorasone (topical))",
+        "medication_a_id": "DDInter280",
+        "medication_b_id": "DDInter550",
+        "xu_tri": "-",
+        "thay_the_a": "A10B, Simvastatin, Guar gum, Rosuvastatin",
+        "thay_the_b": "-",
+        "mo_ta": "The efficacy of insulin and other antidiabetic agents may be diminished by topical corticosteroids, particularly during prolonged or indiscriminate use. Corticosteroids can raise blood glucose level by antagonizing the action and suppressing the secretion of insulin, which results in inhibition of peripheral glucose uptake and increased gluconeogenesis. The duration of administration Close clinical monitoring of glycemic control is recommended if topical corticosteroids are administered chronically and/or to large areas in diabetic patients.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Pace WE \"Topical corticosteroids.\" Can Med Assoc J 108 (1973): 11 passim, [2] Seale JP, Compton MR \"Side-effects of corticosteroid agents.\" Med J Aust 144 (1986): 139-42, [3] \"Product Information. Psorcon (diflorasone topical).\" Rhone-Poulenc Rorer, Collegeville, PA., [4] \"Product Information. Temovate (clobetasol).\" Glaxo Wellcome, Research Triangle Park, NC., [5] \"Product Information. Ultravate (halobetasol).\" Bristol-Myers Squibb, Princeton, NJ., [6] Carruthers JA, Staughton RC, August PJ \"Penetration of topical steroid preparations.\" Arch Dermatol 113 (1977): 522, [7] Ludvik B, Clodi M, Kautzky-Willer A, Capek M, Hartter E, Pacini G, Prager R \"Effect of dexamethasone on insulin sensitivity, islet amyloid polypeptide and insulin secretion in humans.\" Diabetologia 36 (1993): 84-7, [8] \"Product Information. Diprolene (betamethasone topical).\" Schering Laboratories, Kenilworth, NJ., [9] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [10] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [11] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [12] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [13] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [14] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [15] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [16] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [17] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [18] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "hoat_chat_a": "Canagliflozin",
+        "hoat_chat_b": "Diflorasone (topical)",
+        "san_pham_a": [
+          "Canaflin 100"
+        ],
+        "san_pham_b": [
+          "Menzag"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Canaflin 100",
+        "thuoc_b": "Menzag",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng Canaflin 100 chung với Menzag có thể làm giảm phần nào hiệu quả kiểm soát đường huyết của Canaflin 100, đặc biệt khi Menzag được dùng kéo dài hoặc dùng không có kiểm soát. Lý do là corticosteroid trong Menzag có thể làm tăng đường huyết bằng cách chống lại tác dụng và ức chế việc tiết insulin, từ đó làm giảm hấp thu đường ở mô ngoại vi và tăng tạo đường mới từ gan. Vì vậy, khi bệnh nhân đái tháo đường dùng Menzag lâu dài và/hoặc bôi trên vùng da rộng, cần theo dõi sát việc kiểm soát đường huyết.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Hiệu quả của insulin và các thuốc chống đái tháo đường khác có thể bị giảm bởi corticosteroid dùng tại chỗ, đặc biệt khi dùng kéo dài hoặc dùng không có kiểm soát. Corticosteroid có thể làm tăng đường huyết bằng cách chống lại tác dụng và ức chế tiết insulin, dẫn đến ức chế hấp thu glucose ở ngoại vi và tăng tạo glucose mới. Thời gian dùng thuốc: Khuyến nghị theo dõi lâm sàng sát sao việc kiểm soát đường huyết nếu corticosteroid dùng tại chỗ được dùng mạn tính và/hoặc trên vùng da rộng ở bệnh nhân đái tháo đường.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong cùng đơn thuốc của bạn và thấy có 1 cặp tương tác, ở mức nhẹ. Cặp đáng chú ý là Canaflin 100 + Menzag. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Canaflin 100 + Menzag",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Canaflin 100",
+      "Menzag"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Canaflin 100",
+          "Menzag"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

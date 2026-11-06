@@ -1,0 +1,82 @@
+{
+  "case_id": "dis-trung_binh-010",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.6428,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Sitagliptin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Sitagliptin",
+        "ten_chuan": "Sitagliptin",
+        "medication_id": "DDInter1679",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "A.T Sitagliptin 100 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Sitagliptin 100 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "A.T Sitagliptin 100 mg"
+        ],
+        "ten_benh": "Viêm tụy",
+        "muc_do": "nang",
+        "giai_thich": "A.T Sitagliptin 100 mg đã có báo cáo hậu mại cáo về viêm tụy cấp ở người dùng thuốc ức chế DPP-4, nên cần thận trọng khi dùng cho người có tiền sử viêm tụy hoặc bệnh lý tụy, dù chưa rõ liệu nhóm người này có tăng nguy cơ hay không. Trong quá trình điều trị, người bệnh cần được theo dõi các dấu hiệu và triệu chứng của viêm tụy.",
+        "giai_thich_duoc_si": "A.T Sitagliptin 100 mg đã có báo cáo hậu mại cáo về viêm tụy cấp ở người dùng thuốc ức chế DPP-4, nên cần thận trọng khi dùng cho người có tiền sử viêm tụy hoặc bệnh lý tụy, dù chưa rõ liệu nhóm người này có tăng nguy cơ hay không. Trong quá trình điều trị, người bệnh cần được theo dõi các dấu hiệu và triệu chứng của viêm tụy.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Januvia (sitagliptin).\" Merck & Co., Inc  (2006):|\"Product Information. Onglyza (saxagliptin).\" Bristol-Myers Squibb  (2009):|\"Product Information. Tradjenta (linagliptin).\" Boehringer Ingelheim  (2011):|\"Product Information. Nesina (alogliptin).\" Takeda Pharmaceuticals America  (2013):",
+        "mo_ta_dich": "Đã có báo cáo hậu tiếp thị về viêm tụy cấp ở bệnh nhân dùng thuốc ức chế DPP-4. Các thuốc này nên được sử dụng thận trọng ở bệnh nhân có tiền sử viêm tụy hoặc bệnh tụy, mặc dù chưa rõ liệu họ có tăng nguy cơ hay không. Bệnh nhân nên được theo dõi các dấu hiệu và triệu chứng của viêm tụy trong quá trình điều trị. Nếu nghi ngờ viêm tụy, nên ngừng điều trị ngay lập tức và khởi đầu xử trí thích hợp."
+      },
+      {
+        "san_pham": [
+          "A.T Sitagliptin 100 mg"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng A.T Sitagliptin 100 mg ở người có bệnh thận, cần đánh giá chức năng thận trước khi bắt đầu điều trị. Dữ liệu hậu mại ghi nhận tình trạng chức năng thận xấu đi ở một số bệnh nhân suy thận dùng thuốc với liều không phù hợp. Tuy vậy, ở liều phù hợp, thuốc chưa được chứng minh gây độc cho thận trong các nghiên cứu tiền lâm sàng và thử nghiệm lâm sàng.",
+        "giai_thich_duoc_si": "Khi dùng A.T Sitagliptin 100 mg ở người có bệnh thận, cần đánh giá chức năng thận trước khi bắt đầu điều trị. Dữ liệu hậu mại ghi nhận tình trạng chức năng thận xấu đi ở một số bệnh nhân suy thận dùng thuốc với liều không phù hợp. Tuy vậy, ở liều phù hợp, thuốc chưa được chứng minh gây độc cho thận trong các nghiên cứu tiền lâm sàng và thử nghiệm lâm sàng.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Januvia (sitagliptin).\" Merck & Co., Inc  (2006):|\"Product Information. Onglyza (saxagliptin).\" Bristol-Myers Squibb  (2009):|\"Product Information. Tradjenta (linagliptin).\" Boehringer Ingelheim  (2011):|\"Product Information. Nesina (alogliptin).\" Takeda Pharmaceuticals America  (2013):",
+        "mo_ta_dich": "Khuyến cáo đánh giá chức năng thận trước khi bắt đầu điều trị bằng thuốc ức chế DPP-4. Bệnh nhân suy thận mức độ trung bình đến nặng và suy thận giai đoạn cuối sẽ cần điều chỉnh liều. Theo thông tin của nhà sản xuất, linagliptin sẽ không cần điều chỉnh liều. Ngoài ra, đã có các báo cáo hậu tiếp thị về tình trạng chức năng thận xấu đi ở một số bệnh nhân suy thận dùng sitagliptin với liều không phù hợp. Tuy nhiên, sitagliptin không được phát hiện là gây độc thận trong các nghiên cứu tiền lâm sàng hoặc thử nghiệm lâm sàng ở liều phù hợp."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh thận, Viêm tụy."
+    ]
+  }
+}

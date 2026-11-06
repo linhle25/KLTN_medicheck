@@ -1,0 +1,1154 @@
+{
+  "metric": "completeness",
+  "n": 85,
+  "n_parsed": 85,
+  "rows": [
+    {
+      "case_id": "dd-nang-001",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ketoconazole × Loperamide",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-002",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Saquinavir × Triamcinolone",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nang-003",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Prednisone × Golimumab",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-004",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Infliximab × Irinotecan",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-005",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Palonosetron × Venlafaxine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-006",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Nalidixic acid × Warfarin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nang-007",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Baricitinib",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-008",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Quinine × Bedaquiline",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nang-009",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Sibutramine × Tramadol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-010",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Apalutamide × Nimodipine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-011",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Venlafaxine × Dextromethorphan",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-012",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Posaconazole × Vincristine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nang-013",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ziprasidone × Ceritinib",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-014",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Norfloxacin × Dexamethasone",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu đầy đủ hậu quả lâm sàng nhưng không có cơ chế vì cơ chế chưa được biết."
+      }
+    },
+    {
+      "case_id": "dd-nang-015",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Regorafenib × Fondaparinux",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nang-016",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Clarithromycin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nhe-033",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Canagliflozin × Diflorasone (topical)",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nhe-034",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Magaldrate × Prednisolone",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-035",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Hyaluronidase × Hydroxyzine",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": false,
+        "key_qualifier_dropped": [],
+        "score": 0.0,
+        "rationale": "Đoạn không nêu cơ chế hoặc hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-036",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Omeprazole × Phenobarbital",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-037",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ciprofloxacin × Dacarbazine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-nhe-038",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Lomefloxacin × Mercaptopurine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-039",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Tamsulosin × Warfarin",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích không nêu cơ chế tương tác nhưng đã đề cập đầy đủ hậu quả lâm sàng."
+      }
+    },
+    {
+      "case_id": "dd-nhe-040",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ruxolitinib × Imatinib",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-041",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ofloxacin × Irinotecan",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-042",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Nizatidine × Aluminum hydroxide",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-043",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Liraglutide × Acetaminophen",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-044",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Potassium chloride × Insulin human (regular)",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu rõ hậu quả lâm sàng nhưng không có cơ chế tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-045",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Mefenamic acid × Cimetidine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-nhe-046",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Piperacillin × Erythromycin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-017",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Erlotinib × Famotidine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-018",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Lamotrigine × Doxylamine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-019",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Paclitaxel × Typhoid vaccine (inactivated)",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "bệnh nhân suy giảm miễn dịch"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu hậu quả lâm sàng nhưng không đề cập cơ chế và bỏ mất điều kiện quan trọng về bệnh nhân suy giảm miễn dịch."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-020",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Kaolin × Morphine",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": "n/a",
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Không có dữ liệu nguồn để đánh giá cơ chế hoặc hậu quả."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-021",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Mycophenolic acid × Ceftriaxone",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-022",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Belladonna × Cyproheptadine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-023",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Sulfasalazine × Ceritinib",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "chỉ ở các thuốc dùng đường uống là cơ chất của P-gp và/hoặc BCRP"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cơ chế và hậu quả lâm sàng, nhưng bỏ mất điều kiện quan trọng về loại thuốc bị ảnh hưởng."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-024",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Escitalopram × Glycerin",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-025",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Promethazine × Tuberculin purified protein derivative",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-026",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Meclizine × Citalopram",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-027",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Linagliptin × Insulin glulisine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-028",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Quinapril × Deflazacort",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-029",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Codeine × Alfentanil",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu rõ hậu quả lâm sàng nhưng không đề cập đến cơ chế tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-030",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Dextromethorphan × Fluphenazine",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "ở những bệnh nhân chuyển hóa mạnh isoenzyme này (khoảng 93% người da trắng và hơn 98% người châu Á và người gốc Phi)"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng, nhưng bỏ qua điều kiện quan trọng về đối tượng chuyển hóa mạnh."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-031",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Meningococcal polysaccharide vaccine group C × Pemetrexed",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-032",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Nimodipine × Calcium gluconate",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu cả cơ chế đối kháng và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dis-nang-001",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Benazepril × Diseases requiring hemodialysis",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "bệnh nhân thẩm phân máu"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu rõ hậu quả lâm sàng nhưng không có cơ chế và bỏ mất điều kiện quan trọng về bệnh nhân thẩm phân máu."
+      }
+    },
+    {
+      "case_id": "dis-nang-002",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Daunorubicin × Bone Marrow Failure Disorders",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích không nêu cơ chế ức chế tủy xương của daunorubicin hydrochloride."
+      }
+    },
+    {
+      "case_id": "dis-nang-003",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Lactic acid × Acidosis, Lactic",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "không nên dùng liệu pháp natri lactate trong các tình trạng mà nồng độ lactate tăng (ví dụ: sốc, suy tim sung huyết, nhiễm kiềm hô hấp) hoặc trong các tình trạng mà việc sử dụng lactate bị giảm (ví dụ: thiếu oxy, beriberi)"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng, nhưng bỏ qua một số điều kiện quan trọng."
+      }
+    },
+    {
+      "case_id": "dis-nang-004",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cyanocobalamin × Optic Atrophy, Hereditary, Leber",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ hậu quả lâm sàng của việc sử dụng cyanocobalamin ở bệnh nhân mắc bệnh Leber."
+      }
+    },
+    {
+      "case_id": "dis-nang-005",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cladribine × Bone Marrow Failure Disorders",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dis-nang-006",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Stavudine × Liver Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "chống chỉ định ở bệnh nhân suy gan trung bình đến nặng"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu đủ hậu quả lâm sàng nhưng bỏ mất điều kiện quan trọng về chống chỉ định ở bệnh nhân suy gan trung bình đến nặng."
+      }
+    },
+    {
+      "case_id": "dis-nang-007",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Isosorbide dinitrate × Myocardial Infarction",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "suy tim sung huyết"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu rõ hậu quả lâm sàng nhưng bỏ qua điều kiện quan trọng là suy tim sung huyết."
+      }
+    },
+    {
+      "case_id": "dis-nang-008",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Vinorelbine × Infections",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "dis-nhe-019",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cromoglicic acid × Liver Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": false,
+        "key_qualifier_dropped": [
+          "bệnh nhân suy giảm chức năng thận"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích có nêu cơ chế thải trừ nhưng không đề cập đến hậu quả lâm sàng hoặc rủi ro liên quan đến chức năng thận."
+      }
+    },
+    {
+      "case_id": "dis-nhe-020",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Cetuximab × Kidney Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ hậu quả lâm sàng là suy thận xảy ra ở 1% bệnh nhân."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-010",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Sitagliptin × Kidney Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "ở bệnh nhân suy thận mức độ trung bình đến nặng và suy thận giai đoạn cuối"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu hậu quả lâm sàng và không có cơ chế cần thiết phải nêu."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-011",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Esomeprazole × Liver Diseases",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế chuyển hóa qua gan và hậu quả tăng nồng độ thuốc ở bệnh nhân suy gan nặng."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-012",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Cefditoren × Diseases requiring dialysis",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ cơ chế loại bỏ kháng sinh qua thẩm phân máu và hậu quả lâm sàng liên quan đến nồng độ thuốc trong máu."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-013",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Ampicillin × Diseases requiring hemodialysis",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ cơ chế loại bỏ thuốc qua thẩm phân máu và hậu quả là giảm lượng thuốc trong cơ thể."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-014",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Diflorasone (topical) × Infections",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế hấp thu và hậu quả lâm sàng của corticosteroid dùng tại chỗ."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-015",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Valproic acid × Thrombocytopenia",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-016",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Nalidixic acid × Crystalluria",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "Nên tránh tình trạng kiềm hóa nước tiểu"
+        ],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu hậu quả lâm sàng nhưng không đề cập cơ chế và bỏ mất điều kiện quan trọng về kiềm hóa nước tiểu."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-017",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cefoxitin × Liver Diseases",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ hậu quả lâm sàng và không bỏ sót điều kiện quan trọng nào."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-018",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Itraconazole × Cystic Fibrosis",
+      "verdict": {
+        "mechanism_present": "n/a",
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu rõ hậu quả lâm sàng là nồng độ thuốc không ổn định và không đạt mức điều trị ở bệnh nhân xơ nang."
+      }
+    },
+    {
+      "case_id": "food-nang-001",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Hydromorphone × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nang-002",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Amiodarone × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nang-003",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Lemborexant × alcohol",
+      "verdict": {
+        "mechanism_present": false,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích nêu rõ hậu quả lâm sàng nhưng không có cơ chế tương tác vì nguồn cũng không xác định cơ chế."
+      }
+    },
+    {
+      "case_id": "food-nang-004",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Cycloserine × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nang-005",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Dextropropoxyphene × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nang-006",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Simvastatin × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nang-007",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Lovastatin × green tea",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "nước ép bưởi"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng, nhưng có sự nhầm lẫn về tác nhân tương tác (trà xanh thay vì nước ép bưởi)."
+      }
+    },
+    {
+      "case_id": "food-nang-008",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Selumetinib × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đầy đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nhe-017",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Doxycycline × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nhe-018",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Abacavir × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": false,
+        "key_qualifier_dropped": [],
+        "score": 0.5,
+        "rationale": "Đoạn giải thích có nêu cơ chế tương tác nhưng không đề cập đến hậu quả lâm sàng hoặc rủi ro."
+      }
+    },
+    {
+      "case_id": "food-nhe-019",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Scopolamine × food",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-nhe-020",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Estradiol × grapefruit juice",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-009",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Fluvastatin × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-010",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Pregabalin × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đầy đủ cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-011",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Semaglutide × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-012",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Olmesartan × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu cả cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-013",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Nicardipine × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cơ chế và hậu quả lâm sàng của tương tác thuốc."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-014",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Calcium citrate × bran",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [
+          "rau chân vịt hoặc đại hoàng"
+        ],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu cả cơ chế và hậu quả lâm sàng, nhưng bỏ mất điều kiện về rau chân vịt hoặc đại hoàng."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-015",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Vigabatrin × alcohol",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-016",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Benazepril × Food High in Potassium",
+      "verdict": {
+        "mechanism_present": true,
+        "consequence_present": true,
+        "key_qualifier_dropped": [],
+        "score": 1.0,
+        "rationale": "Đoạn giải thích đã nêu đủ cả cơ chế và hậu quả lâm sàng của tương tác."
+      }
+    }
+  ],
+  "mean_score": 0.912,
+  "missing_mechanism": [
+    "dd-nang-014",
+    "dd-nhe-035",
+    "dd-nhe-039",
+    "dd-nhe-044",
+    "dd-trung_binh-019",
+    "dd-trung_binh-029",
+    "dis-nang-001",
+    "dis-nang-002",
+    "dis-trung_binh-016",
+    "food-nang-003"
+  ],
+  "missing_consequence": [
+    "dd-nhe-035",
+    "dis-nhe-019",
+    "food-nhe-018"
+  ]
+}

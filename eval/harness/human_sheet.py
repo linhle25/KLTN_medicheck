@@ -56,12 +56,12 @@ def _source_for_item(nhom: str, med_id: str | None, item_name: str | None) -> tu
         from sqlalchemy import func, or_
 
         from src.db.models import DiseaseInteraction, FoodInteraction
-        from src.db.session import SessionLocalFacts
+        from src.db.session import SessionLocal
 
         model = DiseaseInteraction if nhom == "disease" else FoodInteraction
         name_col = model.ten_benh if nhom == "disease" else model.thuc_pham
         name_vi_col = model.ten_benh_vi if nhom == "disease" else model.thuc_pham_vi
-        with SessionLocalFacts() as s:
+        with SessionLocal() as s:
             row = (
                 s.query(model)
                 .filter(

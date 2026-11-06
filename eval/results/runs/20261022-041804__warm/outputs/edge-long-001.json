@@ -1,0 +1,4411 @@
+{
+  "case_id": "edge-long-001",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.7036,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Abacavir",
+      "Ixazomib",
+      "Kanamycin",
+      "Aluminum hydroxide",
+      "Kaolin",
+      "Ketamine",
+      "Ketoconazole",
+      "Ketoprofen",
+      "Anti-inhibitor coagulant complex",
+      "Ketorolac",
+      "Ketotifen",
+      "Lacosamide",
+      "Salicylic acid (topical)",
+      "Lactic acid"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Abacavir",
+        "ten_chuan": "Abacavir",
+        "medication_id": "DDInter1",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ixazomib",
+        "ten_chuan": "Ixazomib",
+        "medication_id": "DDInter1002",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Kanamycin",
+        "ten_chuan": "Kanamycin",
+        "medication_id": "DDInter1004",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Aluminum hydroxide",
+        "ten_chuan": "Aluminum hydroxide",
+        "medication_id": "DDInter58",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Kaolin",
+        "ten_chuan": "Kaolin",
+        "medication_id": "DDInter1005",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ketamine",
+        "ten_chuan": "Ketamine",
+        "medication_id": "DDInter1007",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ketoconazole",
+        "ten_chuan": "Ketoconazole",
+        "medication_id": "DDInter1008",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ketoprofen",
+        "ten_chuan": "Ketoprofen",
+        "medication_id": "DDInter1009",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Anti-inhibitor coagulant complex",
+        "ten_chuan": "Anti-inhibitor coagulant complex",
+        "medication_id": "DDInter101",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ketorolac",
+        "ten_chuan": "Ketorolac",
+        "medication_id": "DDInter1010",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ketotifen",
+        "ten_chuan": "Ketotifen",
+        "medication_id": "DDInter1012",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Lacosamide",
+        "ten_chuan": "Lacosamide",
+        "medication_id": "DDInter1014",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Salicylic acid (topical)",
+        "ten_chuan": "Salicylic acid (topical)",
+        "medication_id": "DDInter1634",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Lactic acid",
+        "ten_chuan": "Lactic acid",
+        "medication_id": "DDInter1015",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ixazomib",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1002",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Kanamycin",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1004",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Kaolin",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ketamine",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ketoconazole",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1012",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Amprenavir, Simeprevir, Cabotegravir, Lenacapavir, Telaprevir, Velpatasvir, Rilpivirine",
+        "thay_the_b": "S01G, Olopatadine, Nedocromil, Phenylephrine, Azelastine, Brimonidine, R06A, Mepyramine, Levocetirizine, Chlorcyclizine, Acrivastine, Triprolidine, Tripelennamine",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Abacavir",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Kanamycin",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1004",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Kaolin",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Ketamine",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Ketoconazole",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ixazomib",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Kaolin",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Ketamine",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Ketoconazole",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1009",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Tetracycline, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, M02A, Tolazoline, Dimethyl sulfoxide",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1010",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol, Sulfisoxazole",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, S01F, Homatropine, Atropine, Scopolamine, Methscopolamine, Ephedrine, Tropicamide, Phenylephrine, S01B, Fluocinolone acetonide",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kanamycin",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter58",
+        "mo_ta": "INTERVAL: The dissolution of oral ketoconazole requires an acidic environment. Medications that decrease the acidity of the stomach, such as omeprazole or H2 antagonists can reduce the bioavailability of ketoconazole by 75% to 80%. Antacids are also expected to impair ketoconazole absorption.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Chin TWF, Loeb M, Fong IW \"Effects of an acidic beverage (coca-cola) on absorption of ketoconazole.\" Antimicrob Agents Chemother 39 (1995): 1671-5, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Van der Meer JW, Keuning JJ \"The influence of gastric acidity on the bio-availability of ketoconazole.\" J Antimicrob Chemother 6 (1980): 552-4, [4] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [5] \"Product Information. Ketoconazole (ketoconazole).\" Mylan Pharmaceuticals Inc, Morgantown, WV., [6] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [7] Brass C, Galgiani JN, Blaschke TF, et al \"Disposition of ketoconazole, an oral antifungal, in humans.\" Antimicrob Agents Chemother 21 (1982): 151-8, [8] Carlson JA, Mann HJ, Canafax DM \"Effect of pH on disintegration and dissolution of ketoconazole tablets.\" Am J Hosp Pharm 40 (1983): 1334-6",
+        "xu_tri": "It is recommended to administer antacids at least 1 hour before or 2 hours after ketoconazole. Patients should be monitored for altered antifungal effects and the ketoconazole dosage adjusted if necessary.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Amphotericin B",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketorolac",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketotifen",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lacosamide",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Salicylic acid (topical)",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1634",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lactic acid",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Ketamine",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Ketoconazole",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Kaolin",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Ketoconazole",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketamine",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Ketoprofen",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1014",
+        "mo_ta": "Coadministration of strong inhibitors of CYP450 3A4 and/or CYP450 2C9 in patients with renal or hepatic impairment may significantly increase lacosamide plasma concentrations and increase the risk of lacosamide toxicity. The presumed mechanism is additive reduction in lacosamide clearance.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] \"Product Information. Vimpat (lacosamide).\" UCB Pharma Inc, Smyrna, GA., [3] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [4] \"Product Information. Zokinvy (lonafarnib).\" Eiger BioPharmaceuticals, Palo Alto, CA.",
+        "xu_tri": "For patients with renal and/or hepatic impairment concomitantly receiving a strong CYP450 3A4 and/or CYP450 2C9 inhibitor, lacosamide dose reductions in addition to those recommended for renal and/or hepatic impairment may be necessary. Manufacturer labeling should be consulted for dose recommendations in renal and/or hepatic impairment. Patients should be advised to notify their physician if they experience dizziness, lightheadedness, fainting, or irregular heartbeat. Lacosamide dose adjustments may be necessary whenever a strong CYP450 3A4 and/or 2C9 inhibitor is added to or withdrawn from therapy in patients with renal and/or hepatic impairment.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Rosuvastatin, Sulfadiazine, Lactic acid, Mitapivat",
+        "thay_the_b": "N03A, Tiagabine, Rufinamide, Topiramate, Paramethadione, Methsuximide, Fenfluramine, Eslicarbazepine, Phensuximide, Lamotrigine, Methylphenobarbital, Phenacemide",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Anti-inhibitor coagulant complex",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketoprofen",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Ketorolac",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Anti-inhibitor coagulant complex",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketorolac",
+        "thuoc_b": "Ketotifen",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketorolac",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketorolac",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketorolac",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketotifen",
+        "thuoc_b": "Lacosamide",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketotifen",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Ketotifen",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lacosamide",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lacosamide",
+        "thuoc_b": "Lactic acid",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Lactic acid",
+        "thuoc_b": "Salicylic acid (topical)",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1009",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Tetracycline, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, M02A, Tolazoline, Dimethyl sulfoxide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1010",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol, Sulfisoxazole",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, S01F, Homatropine, Atropine, Scopolamine, Methscopolamine, Ephedrine, Tropicamide, Phenylephrine, S01B, Fluocinolone acetonide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter58",
+        "mo_ta": "INTERVAL: The dissolution of oral ketoconazole requires an acidic environment. Medications that decrease the acidity of the stomach, such as omeprazole or H2 antagonists can reduce the bioavailability of ketoconazole by 75% to 80%. Antacids are also expected to impair ketoconazole absorption.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Chin TWF, Loeb M, Fong IW \"Effects of an acidic beverage (coca-cola) on absorption of ketoconazole.\" Antimicrob Agents Chemother 39 (1995): 1671-5, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Van der Meer JW, Keuning JJ \"The influence of gastric acidity on the bio-availability of ketoconazole.\" J Antimicrob Chemother 6 (1980): 552-4, [4] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [5] \"Product Information. Ketoconazole (ketoconazole).\" Mylan Pharmaceuticals Inc, Morgantown, WV., [6] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [7] Brass C, Galgiani JN, Blaschke TF, et al \"Disposition of ketoconazole, an oral antifungal, in humans.\" Antimicrob Agents Chemother 21 (1982): 151-8, [8] Carlson JA, Mann HJ, Canafax DM \"Effect of pH on disintegration and dissolution of ketoconazole tablets.\" Am J Hosp Pharm 40 (1983): 1334-6",
+        "xu_tri": "It is recommended to administer antacids at least 1 hour before or 2 hours after ketoconazole. Patients should be monitored for altered antifungal effects and the ketoconazole dosage adjusted if necessary.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Amphotericin B",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1014",
+        "mo_ta": "Coadministration of strong inhibitors of CYP450 3A4 and/or CYP450 2C9 in patients with renal or hepatic impairment may significantly increase lacosamide plasma concentrations and increase the risk of lacosamide toxicity. The presumed mechanism is additive reduction in lacosamide clearance.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] \"Product Information. Vimpat (lacosamide).\" UCB Pharma Inc, Smyrna, GA., [3] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [4] \"Product Information. Zokinvy (lonafarnib).\" Eiger BioPharmaceuticals, Palo Alto, CA.",
+        "xu_tri": "For patients with renal and/or hepatic impairment concomitantly receiving a strong CYP450 3A4 and/or CYP450 2C9 inhibitor, lacosamide dose reductions in addition to those recommended for renal and/or hepatic impairment may be necessary. Manufacturer labeling should be consulted for dose recommendations in renal and/or hepatic impairment. Patients should be advised to notify their physician if they experience dizziness, lightheadedness, fainting, or irregular heartbeat. Lacosamide dose adjustments may be necessary whenever a strong CYP450 3A4 and/or 2C9 inhibitor is added to or withdrawn from therapy in patients with renal and/or hepatic impairment.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Rosuvastatin, Sulfadiazine, Lactic acid, Mitapivat",
+        "thay_the_b": "N03A, Tiagabine, Rufinamide, Topiramate, Paramethadione, Methsuximide, Fenfluramine, Eslicarbazepine, Phensuximide, Lamotrigine, Methylphenobarbital, Phenacemide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1002",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ixazomib",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Ninlaro 2.3mg"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Aradine (hoạt chất: Kanamycin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1004",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Kanamycin",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Aradine"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1012",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Amprenavir, Simeprevir, Cabotegravir, Lenacapavir, Telaprevir, Velpatasvir, Rilpivirine",
+        "thay_the_b": "S01G, Olopatadine, Nedocromil, Phenylephrine, Azelastine, Brimonidine, R06A, Mepyramine, Levocetirizine, Chlorcyclizine, Acrivastine, Triprolidine, Tripelennamine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Aradine (hoạt chất: Kanamycin)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1004",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Kanamycin",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Aradine"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1005",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1634",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Salicylic acid (topical)",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter58",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1007",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1008",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1009",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter101",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1010",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1012",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1014",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1015",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "thay_the_a": "S01A, Tetracycline, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, M02A, Tolazoline, Dimethyl sulfoxide",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": "Whenever feasible, NSAID use should preferably be discontinued prior to initiating IV aminoglycoside therapy. If concomitant administration is necessary, hydration status as well as renal and vestibular functions should be closely monitored.",
+        "thay_the_a": "S01A, Ganciclovir, Rifamycin, Oxytetracycline, Polymyxin B, Famciclovir, Sulfamethizole, Trifluridine, Benzylpenicillin, Ampicillin, Chloramphenicol, Sulfisoxazole",
+        "thay_the_b": "M01A, Misoprostol, Chondroitin sulfate, Glucosamine, S01F, Homatropine, Atropine, Scopolamine, Methscopolamine, Ephedrine, Tropicamide, Phenylephrine, S01B, Fluocinolone acetonide",
+        "mo_ta": "The nephrotoxic effect of aminoglycosides may be potentiated by nonsteroidal anti-inflammatory drugs (NSAIDs), particularly if the latter had been given in high dosages for prolonged periods. Animal models suggest that renal prostaglandins may play a role in maintaining normal renal blood flow and glomerular filtration rate during the development of aminoglycoside nephrotoxicity, thus inhibition of their production by NSAIDs may worsen the renal damage. In premature infants, NSAIDs may increase the plasma concentrations of aminoglycosides. The proposed mechanism is decreased aminoglycoside clearance due to NSAID reduction of glomerular filtration rate.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Gagliardi L \"Possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 107 (1985): 991-2, [2] Farag MM, Mikhail MR, Abdel-Meguid E, Abdel-Tawab S \"Assessment of gentamicin-induced nephrotoxicity in rats treated with low doses of ibuprofen and diclofenac sodium.\" Clin Sci 91 (1996): 187-91, [3] Scott CS, RetschBogart GZ, Henry MM \"Renal failure and vestibular toxicity in an adolescent with cystic fibrosis receiving gentamicin and standard-dose ibuprofen.\" Pediat Pulm 31 (2001): 314-6, [4] Kovesi TA, Swartz R, MacDonald N \"Transient renal failure due to simultaneous ibuprofen and aminoglycoside therapy in children with cystic fibrosis.\" N Engl J Med 338 (1998): 65-6, [5] Assael BM, Chiabrando C, Gagliardi L, Noseda A, Bamonte F, Salmona M \"Prostaglandins and aminoglycoside nephrotoxicity.\" Toxicol Appl Pharmacol 78 (1985): 386-94, [6] Zarfin Y, Koren G, Maresky D, et al \"Clinical and laboratory observations: possible indomethacin-aminoglycoside interaction in preterm infants.\" J Pediatr 106 (1985): 511-3",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter58",
+        "xu_tri": "It is recommended to administer antacids at least 1 hour before or 2 hours after ketoconazole. Patients should be monitored for altered antifungal effects and the ketoconazole dosage adjusted if necessary.",
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Amphotericin B",
+        "thay_the_b": "-",
+        "mo_ta": "INTERVAL: The dissolution of oral ketoconazole requires an acidic environment. Medications that decrease the acidity of the stomach, such as omeprazole or H2 antagonists can reduce the bioavailability of ketoconazole by 75% to 80%. Antacids are also expected to impair ketoconazole absorption.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Chin TWF, Loeb M, Fong IW \"Effects of an acidic beverage (coca-cola) on absorption of ketoconazole.\" Antimicrob Agents Chemother 39 (1995): 1671-5, [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Van der Meer JW, Keuning JJ \"The influence of gastric acidity on the bio-availability of ketoconazole.\" J Antimicrob Chemother 6 (1980): 552-4, [4] Cerner Multum, Inc \"ANVISA Bulário Eletrônico. Available from: URL: http://www.anvisa.gov.br/datavisa/fila_bula/index.asp.\" O 0 (2015):, [5] \"Product Information. Ketoconazole (ketoconazole).\" Mylan Pharmaceuticals Inc, Morgantown, WV., [6] Cerner Multum, Inc. \"Canadian Product Information.\" O 0 (2015):, [7] Brass C, Galgiani JN, Blaschke TF, et al \"Disposition of ketoconazole, an oral antifungal, in humans.\" Antimicrob Agents Chemother 21 (1982): 151-8, [8] Carlson JA, Mann HJ, Canafax DM \"Effect of pH on disintegration and dissolution of ketoconazole tablets.\" Am J Hosp Pharm 40 (1983): 1334-6",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": "For patients with renal and/or hepatic impairment concomitantly receiving a strong CYP450 3A4 and/or CYP450 2C9 inhibitor, lacosamide dose reductions in addition to those recommended for renal and/or hepatic impairment may be necessary. Manufacturer labeling should be consulted for dose recommendations in renal and/or hepatic impairment. Patients should be advised to notify their physician if they experience dizziness, lightheadedness, fainting, or irregular heartbeat. Lacosamide dose adjustments may be necessary whenever a strong CYP450 3A4 and/or 2C9 inhibitor is added to or withdrawn from therapy in patients with renal and/or hepatic impairment.",
+        "thay_the_a": "G01A, Tamsulosin, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Metronidazole, Simeprevir, Rosuvastatin, Sulfadiazine, Lactic acid, Mitapivat",
+        "thay_the_b": "N03A, Tiagabine, Rufinamide, Topiramate, Paramethadione, Methsuximide, Fenfluramine, Eslicarbazepine, Phensuximide, Lamotrigine, Methylphenobarbital, Phenacemide",
+        "mo_ta": "Coadministration of strong inhibitors of CYP450 3A4 and/or CYP450 2C9 in patients with renal or hepatic impairment may significantly increase lacosamide plasma concentrations and increase the risk of lacosamide toxicity. The presumed mechanism is additive reduction in lacosamide clearance.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [2] \"Product Information. Vimpat (lacosamide).\" UCB Pharma Inc, Smyrna, GA., [3] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [4] \"Product Information. Zokinvy (lonafarnib).\" Eiger BioPharmaceuticals, Palo Alto, CA.",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1002",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ixazomib",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Ninlaro 2.3mg"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Aradine (hoạt chất: Kanamycin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1004",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Kanamycin",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Aradine"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1005",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1007",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1008",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": "-",
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Amprenavir, Simeprevir, Cabotegravir, Lenacapavir, Telaprevir, Velpatasvir, Rilpivirine",
+        "thay_the_b": "S01G, Olopatadine, Nedocromil, Phenylephrine, Azelastine, Brimonidine, R06A, Mepyramine, Levocetirizine, Chlorcyclizine, Acrivastine, Triprolidine, Tripelennamine",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg (hoạt chất: Abacavir)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Abacavir",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Aradine (hoạt chất: Kanamycin)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1004",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Kanamycin",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Aradine"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1005",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1007",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1008",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ninlaro 2.3mg (hoạt chất: Ixazomib)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1002",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ixazomib",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Ninlaro 2.3mg"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Antacil (hoạt chất: Kaolin)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1005",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Kaolin",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1007",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1008",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Aradine (hoạt chất: Kanamycin)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1004",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kanamycin",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Aradine"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1634",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Salicylic acid (topical)",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Antacil (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter58",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Antacil"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1007",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketamine",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Ketamin Inresa Injection solution 10ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1008",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Antacil (hoạt chất: Kaolin)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1005",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Kaolin",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Antacil"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1008",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketoconazole",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "A.T Ketoconazole 2%"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Ketamin Inresa Injection solution 10ml (hoạt chất: Ketamine)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1007",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketamine",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Ketamin Inresa Injection solution 10ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1009",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketoprofen",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter101",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Anti-inhibitor coagulant complex",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Feiba 25 E./ml"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "A.T Ketoprofen 100 mg/2 ml (hoạt chất: Ketoprofen)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1009",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketoprofen",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "A.T Ketoprofen 100 mg/2 ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Acular (hoạt chất: Ketorolac)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1010",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Ketorolac",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Acular"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Feiba 25 E./ml (hoạt chất: Anti-inhibitor coagulant complex)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter101",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Anti-inhibitor coagulant complex",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Feiba 25 E./ml"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "ASTHFEN (hoạt chất: Ketotifen)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1012",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Ketotifen",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "ASTHFEN"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Acular (hoạt chất: Ketorolac)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1010",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketorolac",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Acular"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1014",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Lacosamide",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Lacosam 100"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "ASTHFEN (hoạt chất: Ketotifen)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1012",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Ketotifen",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "ASTHFEN"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Lacosam 100 (hoạt chất: Lacosamide)",
+        "thuoc_b": "Duofilm (hoạt chất: Lactic acid)",
+        "medication_a_id": "DDInter1014",
+        "medication_b_id": "DDInter1015",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lacosamide",
+        "hoat_chat_b": "Lactic acid",
+        "san_pham_a": [
+          "Lacosam 100"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      },
+      {
+        "thuoc_a": "Duofilm (hoạt chất: Lactic acid)",
+        "thuoc_b": "Duofilm (hoạt chất: Salicylic acid (topical))",
+        "medication_a_id": "DDInter1015",
+        "medication_b_id": "DDInter1634",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Lactic acid",
+        "hoat_chat_b": "Salicylic acid (topical)",
+        "san_pham_a": [
+          "Duofilm"
+        ],
+        "san_pham_b": [
+          "Duofilm"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Aradine",
+        "thuoc_b": "A.T Ketoprofen 100 mg/2 ml",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Aradine và A.T Ketoprofen 100 mg/2 ml có thể làm tăng nguy cơ tổn thương thận, đặc biệt khi A.T Ketoprofen 100 mg/2 ml được dùng với liều cao trong thời gian dài. Lý do là A.T Ketoprofen 100 mg/2 ml ức chế sản xuất prostaglandin ở thận - nhóm chất giúp duy trì lưu lượng máu và mức lọc cầu thận bình thường - nên khi thận đang chịu ảnh hưởng từ Aradine thì việc giảm prostaglandin này có thể làm tổn thương thận nặng hơn. Ở trẻ sinh non, A.T Ketoprofen 100 mg/2 ml còn có thể làm tăng nồng độ Aradine trong máu do làm giảm mức lọc cầu thận khiến Aradine thải trừ chậm hơn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Tác dụng độc thận của aminoglycosid có thể bị tăng cường bởi thuốc chống viêm không steroid (NSAID), đặc biệt nếu thuốc sau được dùng với liều cao trong thời gian dài. Các mô hình động vật gợi ý rằng prostaglandin ở thận có thể đóng vai trò duy trì lưu lượng máu thận và mức lọc cầu thận bình thường trong quá trình phát triển độc tính thận của aminoglycosid, do đó việc ức chế sản xuất prostaglandin bởi NSAID có thể làm tổn thương thận nặng hơn. Ở trẻ sinh non, NSAID có thể làm tăng nồng độ aminoglycosid trong huyết tương. Cơ chế được đề xuất là giảm độ thanh thải aminoglycosid do NSAID làm giảm mức lọc cầu thận.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Aradine",
+        "thuoc_b": "Acular",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Aradine và Acular có thể làm tăng nguy cơ tổn thương thận, vì Acular (một thuốc kháng viêm không steroid) có thể làm nặng thêm tác dụng gây độc cho thận của Aradine, đặc biệt khi Acular được dùng với liều cao trong thời gian dài. Ở động vật, việc giảm sản xuất prostaglandin ở thận do thuốc kháng viêm không steroid gây ra có thể làm giảm lưu lượng máu và mức lọc cầu thận - vốn là những yếu tố giúp duy trì chức năng thận bình thường khi thận đang chịu ảnh hưởng của Aradine - nên tổn thương thận có thể trầm trọng hơn. Ở trẻ sinh non, Acular còn có thể làm tăng nồng độ Aradine trong máu do làm giảm độ thanh thải của thuốc này thông qua việc giảm mức lọc cầu thận. [ẢN_DỊCH]\nmô tả: Tác dụng gây độc cho thận của aminoglycosid có thể bị tăng cường bởi thuốc kháng viêm không steroid (NSAID), đặc biệt nếu thuốc sau được dùng với liều cao trong thời gian dài. Các mô hình động vật cho thấy prostaglandin ở thận có thể đóng vai trò duy trì lưu lượng máu thận và mức lọc cầu thận bình thường trong quá trình phát triển độc tính thận của aminoglycosid, do đó việc ức chế sản xuất prostaglandin bởi NSAID có thể làm tổn thương thận nặng hơn. Ở trẻ sinh non, NSAID có thể làm tăng nồng độ aminoglycosid trong huyết tương. Cơ chế được đề xuất là giảm độ thanh thải aminoglycosid do NSAID làm giảm mức lọc cầu thận. xử trí:",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2%",
+        "thuoc_b": "Antacil",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung A.T Ketoconazole 2% với Antacil có thể làm giảm hấp thu của A.T Ketoconazole 2%, vì thuốc này chỉ tan và hấp thu tốt trong môi trường axit của dạ dày, trong khi Antacil làm giảm độ axit dạ dày. Các thuốc làm giảm độ axit dạ dày khác cũng được ghi nhận làm giảm sinh khả dụng của ketoconazole tới 75% đến 80%, và thuốc kháng axit nói chung cũng được dự đoán gây ảnh hưởng tương tự đến việc hấp thu ketoconazole.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "KHOẢNG CÁCH: Sự hòa tan của ketoconazole đường uống cần môi trường axit. Các thuốc làm giảm độ axit của dạ dày, như omeprazole hoặc các thuốc đối kháng H2, có thể làm giảm sinh khả dụng của ketoconazole từ 75% đến 80%. Thuốc kháng axit cũng được dự đoán làm suy giảm hấp thu ketoconazole.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "A.T Ketoconazole 2%",
+        "thuoc_b": "Lacosam 100",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung A.T Ketoconazole 2% và Lacosam 100 cần lưu ý vì A.T Ketoconazole 2% là một chất ức chế mạnh hệ enzyme CYP450 3A4 và/hoặc CYP450 2C9 (nhóm enzyme trong cơ thể chịu trách nhiệm phân hủy nhiều loại thuốc). Ở những người có chức năng thận hoặc gan bị suy giảm, việc dùng đồng thời hai thuốc này có thể làm nồng độ lacosamide trong máu tăng lên đáng kể và làm tăng nguy cơ ngộ độc lacosamide. Cơ chế được cho là do cả hai cùng làm giảm khả năng thải trừ lacosamide khỏi cơ thể, khiến thuốc tích tụ lại. [ẢNH_GIẢ_LẬP]\nKhi bạn dùng chung A.T Ketoconazole 2% và Lacosam 100, thuốc bôi A.T Ketoconazole 2% có thể làm chậm quá trình cơ thể đào thải Lacosam 100 ra ngoài. Điều này đặc biệt đáng lưu tâm nếu bạn có vấn đề về thận hoặc gan, vì khi đó Lacosam 100 có thể tích tụ nhiều trong máu hơn bình thường và gây ngộ độc. Vì vậy, hãy cho bác sĩ hoặc dược sĩ biết bạn đang dùng cả hai thuốc này, nhất là khi bạn có bệnh về thận hay gan, để được theo dõi phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời các chất ức chế mạnh CYP450 3A4 và/hoặc CYP450 2C9 ở bệnh nhân suy thận hoặc suy gan có thể làm tăng đáng kể nồng độ lacosamide trong huyết tương và làm tăng nguy cơ ngộ độc lacosamide. Cơ chế được cho là do sự giảm cộng gộp trong thanh thải lacosamide.",
+        "xu_tri_dich": null
+      },
+      {
+        "thuoc_a": "Abacavir Tablets USP 300mg",
+        "thuoc_b": "ASTHFEN",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Abacavir Tablets USP 300mg và ASTHFEN có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong cùng đơn thuốc của bạn và thấy có 5 cặp tương tác, trong đó 4 cặp ở mức trung bình và 1 cặp chưa phân loại. Đáng chú ý nhất có thể kể đến Aradine và A.T Ketoprofen 100 mg/2 ml, Aradine và Acular, cùng A.T Ketoconazole 2% và Antacil. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Aradine và A.T Ketoprofen 100 mg/2 ml",
+          "muc_do": "trung_binh"
+        },
+        {
+          "text": "Aradine và Acular",
+          "muc_do": "trung_binh"
+        },
+        {
+          "text": "A.T Ketoconazole 2% và Antacil",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 4,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 5
+    },
+    "checked_products": [
+      "Abacavir Tablets USP 300mg",
+      "Ninlaro 2.3mg",
+      "Aradine",
+      "Antacil",
+      "Ketamin Inresa Injection solution 10ml",
+      "A.T Ketoconazole 2%",
+      "A.T Ketoprofen 100 mg/2 ml",
+      "Feiba 25 E./ml",
+      "Acular",
+      "ASTHFEN",
+      "Lacosam 100",
+      "Duofilm"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Abacavir Tablets USP 300mg",
+          "Ninlaro 2.3mg",
+          "Aradine",
+          "Antacil",
+          "Ketamin Inresa Injection solution 10ml",
+          "A.T Ketoconazole 2%",
+          "A.T Ketoprofen 100 mg/2 ml",
+          "Feiba 25 E./ml",
+          "Acular",
+          "ASTHFEN",
+          "Lacosam 100",
+          "Duofilm"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

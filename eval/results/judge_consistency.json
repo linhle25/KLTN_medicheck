@@ -1,0 +1,217 @@
+{
+  "metric": "consistency",
+  "n": 20,
+  "n_parsed": 20,
+  "rows": [
+    {
+      "case_id": "dd-nang-001",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (ức chế CYP450 3A4/2C8 và tăng hấp thu) dẫn đến tăng nồng độ loperamide và nhiều tác dụng phụ hơn; chỉ khác là bản 1 có lời khuyên báo bác sĩ/dược sĩ còn bản 2 và 3 thì không."
+      }
+    },
+    {
+      "case_id": "dd-nang-005",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản đều nêu cùng hai rủi ro chính là hội chứng serotonin và kéo dài QT với mức độ nghiêm trọng tương đương; bản 3 chỉ bổ sung lời khuyên báo bác sĩ nên làm thay đổi yếu tố an toàn nhưng không tạo mâu thuẫn lâm sàng."
+      }
+    },
+    {
+      "case_id": "dd-nang-009",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đều truyền đạt cùng một ý: tăng nguy cơ hội chứng serotonin (hiếm nhưng nghiêm trọng/đe dọa tính mạng) do cộng gộp hoạt tính serotonergic của Diatramine và Aronol qua kích thích quá mức thụ thể 5-HT1A/2A; khác biệt chỉ là 'thân não' vs 'não' (không mâu thuẫn), lời khuyên hỏi bác sĩ/dược sĩ (bản 1–2) so với việc liệt kê thêm các thuốc serotonergic khác (bản 3) — không làm thay đổi kết luận an toàn."
+      }
+    },
+    {
+      "case_id": "dd-nang-013",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (kéo dài QT cộng gộp), cùng hướng rủi ro (rối loạn nhịp thất, xoắn đỉnh, đột tử) và cùng kết luận chống chỉ định; bản 2 chỉ bổ sung thêm tác dụng phụ kháng cholinergic mà không làm thay đổi kết luận hay đưa ra lời khuyên xử trí mới."
+      }
+    },
+    {
+      "case_id": "dd-nhe-033",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (corticosteroid trong Menzag làm tăng đường huyết, chống lại tác dụng và ức chế tiết insulin, giảm hấp thu glucose ngoại vi, tăng tạo glucose mới) và cùng khuyến cáo theo dõi đường huyết khi dùng kéo dài/bôi diện tích lớn; khác biệt chỉ là văn phong."
+      }
+    },
+    {
+      "case_id": "dd-nhe-037",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (hóa trị làm giảm hấp thu quinolone do thay đổi niêm mạc ruột) và cùng hướng rủi ro (giảm nồng độ huyết tương); các khác biệt chỉ là bổ sung nhận định (cần lưu tâm / mức nhẹ, không có hướng xử trí) chứ không đảo ngược kết luận hay đưa ra lời khuyên xử trí."
+      }
+    },
+    {
+      "case_id": "dd-nhe-041",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng ý lâm sàng cốt lõi: dữ liệu hạn chế, hóa trị có thể làm giảm hấp thu/nồng độ quinolone đường uống do tổn thương niêm mạc ruột, không có mâu thuẫn hay thay đổi về xử trí/chẩn đoán."
+      }
+    },
+    {
+      "case_id": "dd-nhe-045",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (chuyển hóa, độ axit dạ dày, thải trừ qua nước tiểu), cùng hướng thay đổi nồng độ (tăng hoặc giảm), cùng kết luận thay đổi nhỏ và ít ảnh hưởng lâm sàng, cùng khuyến nghị theo dõi đáp ứng và dung nạp."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-017",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản giống hệt nhau, cùng mô tả cơ chế tăng pH dạ dày → giảm hòa tan → giảm hấp thu erlotinib, không có mâu thuẫn hay khác biệt về lời khuyên xử trí."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-021",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (Abitrax làm thay đổi hệ vi khuẩn đường tiêu hóa → giảm enzym thủy phân của vi khuẩn → ảnh hưởng chu trình gan-ruột → giảm sinh khả dụng Ecophelic 180) và cùng khuyến cáo theo dõi lâm sàng/xét nghiệm để phát hiện suy giảm tác dụng ức chế miễn dịch."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-025",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng một tương tác (promethazine làm giảm đáp ứng kháng nguyên PPD, gây kết quả không đáng kể hoặc âm tính giả) và cùng khuyến nghị cân nhắc thời điểm/việc thực hiện test da, chỉ khác văn phong."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-029",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản đều nêu cùng cơ chế và rủi ro cộng gộp ức chế tim/hô hấp khi dùng chung Acefalgan Codein và Alfentanil-hameln, nhưng V1/V2 có lời khuyên theo dõi sát còn V3 không."
+      }
+    },
+    {
+      "case_id": "dis-nang-003",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đều nêu cùng cơ chế (chuyển hóa thành bicarbonate, suy giảm ở người nhiễm toan lactic, đặc biệt khi gan yếu/giảm tưới máu mô) và cùng kết luận là không dùng Duofilm để xử lý nhiễm toan lactic; bản 3 chỉ lược bớt cụm từ khuyến cáo 'cần hết sức thận trọng' nhưng không làm đổi ý lâm sàng cốt lõi hay hướng an toàn."
+      }
+    },
+    {
+      "case_id": "dis-nang-007",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản đều truyền đạt cùng một ý lâm sàng cốt lõi (lợi ích chưa xác lập, không khuyến cáo dùng, cần theo dõi huyết động để tránh tụt huyết áp/nhịp nhanh làm nặng thiếu máu cơ tim, và thận trọng ở nhồi máu thành dưới/thất phải do phụ thuộc tiền tải), không có mâu thuẫn thực sự; tuy nhiên VERSION 2 bổ sung lời khuyên xử trí cụ thể (tránh nitrate tác dụng nhanh ở nhồi máu cấp kèm nhịp chậm/nhanh rõ rệt) mà VERSION 1 và 3 không có."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-011",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế chuyển hóa tại gan, cùng cảnh báo tích lũy ở suy gan nặng (Child Pugh C) và cùng khuyến cáo liều tối đa 20 mg/ngày; bản 2 chỉ lược bớt phần nhẹ–trung bình nhưng không mâu thuẫn hay đổi kết luận an toàn."
+      }
+    },
+    {
+      "case_id": "food-nang-003",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (rượu làm tăng nồng độ Dayvigo: đỉnh +35%, phơi nhiễm toàn cơ thể +70%, cơ chế chưa rõ) và cùng hệ quả là ức chế thần kinh trung ương cộng gộp kèm suy giảm phán đoán, suy nghĩ và phối hợp vận động; bản 3 chỉ bổ sung diễn giải 'phản ứng chậm/thiếu chính xác' mà không đổi kết luận."
+      }
+    },
+    {
+      "case_id": "food-nang-007",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba phiên bản đều nêu cùng cơ chế (ức chế CYP450 3A4 tại thành ruột) và cùng hướng rủi ro (tăng nồng độ Basaterol trong huyết tương); bản 1 chỉ bổ sung chi tiết về chất chuyển hóa acid hoạt động mà không mâu thuẫn, và không bản nào đưa ra lời khuyên xử trí."
+      }
+    },
+    {
+      "case_id": "food-nhe-019",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Cả ba bản đều mô tả cùng cơ chế (chậm tống thức ăn khỏi dạ dày + ức chế CYP450 3A4 ở thành ruột), cùng hướng hệ quả (hấp thu chậm hơn nhưng lượng thuốc vào cơ thể tăng), không có lời khuyên xử trí khác nhau."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-011",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản đều nêu cùng cơ chế (rượu ức chế tạo glucose mới và phản ứng đối kháng hạ đường huyết), cùng hướng rủi ro (hạ đường huyết là chính, có thể tăng đường huyết) và cùng khuyến cáo tránh rượu khi kiểm soát kém/viêm tụy/tăng triglycerid/bệnh thần kinh; chỉ bản 3 bổ sung thêm lời khuyên xử trí cho trường hợp đường huyết đã ổn định (giới hạn lượng, không uống lúc đói/sau vận động) mà bản 1 và 2 không có, tuy không mâu thuẫn với nội dung trước đó."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-015",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "Cả ba bản đều nêu cùng cơ chế ức chế thần kinh trung ương cộng dồn và cùng hướng rủi ro (buồn ngủ, giảm phán đoán/phối hợp), nhưng chỉ bản 1 và 3 đưa ra lời khuyên thận trọng khi lái xe/cần tỉnh táo còn bản 2 thì không."
+      }
+    }
+  ],
+  "clinically_equivalent_rate": 1.0,
+  "with_claim_flips": [],
+  "safety_property_changed": [
+    "dd-nang-001",
+    "dd-nang-005",
+    "dd-trung_binh-029",
+    "dis-nang-007",
+    "food-trung_binh-011",
+    "food-trung_binh-015"
+  ]
+}

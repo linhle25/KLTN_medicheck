@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-trung_binh-026",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.4005,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Meclizine",
+      "Citalopram"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Meclizine",
+        "ten_chuan": "Meclizine",
+        "medication_id": "DDInter1134",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Citalopram",
+        "ten_chuan": "Citalopram",
+        "medication_id": "DDInter388",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Meclizine",
+        "thuoc_b": "Citalopram",
+        "medication_a_id": "DDInter1134",
+        "medication_b_id": "DDInter388",
+        "mo_ta": "Central nervous system- and/or respiratory-depressant effects may be additively or synergistically increased in patients taking multiple drugs that cause these effects, especially in elderly or debilitated patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Belsomra (suvorexant).\" Merck & Company Inc, Whitehouse Station, NJ., [2] Divoll M, Greenblatt DJ, Lacasse Y, Shader RI \"Benzodiazepine overdosage: plasma concentrations and clinical outcome.\" Psychopharmacology (Berl) 73 (1981): 381-3, [3] Grabowski BS, Cady WJ, Young WW, Emery JF \"Effects of acute alcohol administration on propranolol absorption.\" Int J Clin Pharmacol Ther Toxicol 18 (1980): 317-9, [4] Lemberger L, Rowe H, Bosomworth JC, Tenbarge JB, Bergstrom RF \"The effect of fluoxetine on the pharmacokinetics and psychomotor responses of diazepam.\" Clin Pharmacol Ther 43 (1988): 412-9, [5] Driessen JJ, Vree TB, Booij LH, van der Pol FM, Crul JF \"Effect of some benzodiazepines on peripheral neuromuscular function in the rat in-vitro hemidiaphragm preparation.\" J Pharm Pharmacol 36 (1984): 244-7, [6] Plushner SL \"Valerian: valeriana officinalis.\" Am J Health Syst Pharm 57 (2000): 328-35, [7] Miller LG \"Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions.\" Arch Intern Med 158 (1998): 2200-11, [8] MacLeod SM, Giles HG, Patzalek G, Thiessen JJ, Sellers EM \"Diazepam actions and plasma concentrations following ethanol ingestion.\" Eur J Clin Pharmacol 11 (1977): 345-9, [9] Hamilton MJ, Bush M, Smith P, Peck AW \"The effects of bupropion, a new antidepressant drug, and diazepam, and their interaction in man.\" Br J Clin Pharmacol 14 (1982): 791-7, [10] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [11] Markowitz JS, Wells BG, Carson WH \"Interactions between antipsychotic and antihypertensive drugs.\" Ann Pharmacother 29 (1995): 603-9, [12] Ferslew KE, Hagardorn AN, McCormick WF \"A fatal interaction of methocarbamol and ethanol in an accidental poisoning.\" J Forensic Sci 35 (1990): 477-82, [13] \"Product Information. Seroquel (quetiapine).\" Zeneca Pharmaceuticals, Wilmington, DE., [14] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [15] \"Product Information. Iopidine (apraclonidine).\" Alcon Laboratories Inc, Fort Worth, TX., [16] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [17] Naylor GJ, McHarg A \"Profound hypothermia on combined lithium carbonate and diazepam treatment.\" Br Med J 2 (1977): 22, [18] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [19] Greiff JMC, Rowbotham D \"Pharmacokinetic drug interactions with gastrointestinal motility modifying agents.\" Clin Pharmacokinet 27 (1994): 447-61, [20] Tverskoy M, Fleyshman G, Ezry J, Bradley EL, Jr Kissin I \"Midazolam-morphine sedative interaction in patients.\" Anesth Analg 68 (1989): 282-5, [21] Stovner J, Endresen R \"Intravenous anaesthesia with diazepam.\" Acta Anaesthesiol Scand 24 (1965): 223-7, [22] Desager JP, Hulhoven R, Harvengt C, Hermann P, Guillet P, Thiercelin JF \"Possible interactions between zolpidem, a new sleep inducer and chlorpromazine, a phenothiazine neuroleptic.\" Psychopharmacology (Berl) 96 (1988): 63-6, [23] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [24] \"Product Information. Trileptal (oxcarbazepine)\" Novartis Pharmaceuticals, East Hanover, NJ., [25] \"Product Information. Ultram (tramadol).\" McNeil Pharmaceutical, Raritan, NJ., [26] Ochs HR, Greenblatt DJ, Verburg-Ochs B \"Propranolol interactions with diazepam, lorazepam and alprazolam.\" Clin Pharmacol Ther 36 (1984): 451-5, [27] Feldman SA, Crawley BE \"Interaction of diazepam with the muscle-relaxant drugs.\" Br Med J 1 (1970): 336-8, [28] \"Product Information. Precedex (dexmedetomidine)\" Abbott Pharmaceutical, Abbott Park, IL., [29] \"Product Information. Xatral (alfuzosin).\" Sanofi-Synthelabo Canada Inc, Markham, ON., [30] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [31] Sotaniemi EA, Anttila M, Rautio A, et al \"Propranolol and sotalol metabolism after a drinking party.\" Clin Pharmacol Ther 29 (1981): 705-10, [32] \"Product Information. Tasmar (tolcapone).\" Valeant Pharmaceuticals, Costa Mesa, CA., [33] \"Product Information. Lexapro (escitalopram).\" Forest Pharmaceuticals, St. Louis, MO., [34] Greb WH, Buscher G, Dierdorf HD, Koster FE, Wolf D, Mellows G \"The effect of liver enzyme inhibition by cimetidine and enzyme induction by phenobarbitone on the pharmacokinetics of paroxetine.\" Acta Psychiatr Scand 80 Suppl (1989): 95-8, [35] \"Product Information. Ultiva (remifentanil).\" Mylan Institutional (formally Bioniche Pharma USA Inc), Canonsburg, PA., [36] Stambaugh JE, Lane C \"Analgesic efficacy and pharmacokinetic evaluation of meperidine and hydroxyzine, alone and in combination.\" Cancer Invest 1 (1983): 111-7, [37] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [38] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [39] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [40] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [41] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [42] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [43] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [44] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "During concomitant use of these drugs, patients should be monitored for potentially excessive or prolonged CNS and respiratory depression. Cautious dosage titration may be required, particularly at treatment initiation. Ambulatory patients should be counseled to avoid hazardous activities requiring mental alertness and motor coordination.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R06A, Azelastine, Ketotifen",
+        "thay_the_b": "N06A, Vilazodone, Sertraline, Paroxetine, St. John's Wort, Nefazodone, Oxitriptan, Mirtazapine, Viloxazine, Milnacipran, Vortioxetine, Tryptophan",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Agyrax (hoạt chất: Meclizine)",
+        "thuoc_b": "Bagocit 20 (hoạt chất: Citalopram)",
+        "medication_a_id": "DDInter1134",
+        "medication_b_id": "DDInter388",
+        "mo_ta": "Central nervous system- and/or respiratory-depressant effects may be additively or synergistically increased in patients taking multiple drugs that cause these effects, especially in elderly or debilitated patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Belsomra (suvorexant).\" Merck & Company Inc, Whitehouse Station, NJ., [2] Divoll M, Greenblatt DJ, Lacasse Y, Shader RI \"Benzodiazepine overdosage: plasma concentrations and clinical outcome.\" Psychopharmacology (Berl) 73 (1981): 381-3, [3] Grabowski BS, Cady WJ, Young WW, Emery JF \"Effects of acute alcohol administration on propranolol absorption.\" Int J Clin Pharmacol Ther Toxicol 18 (1980): 317-9, [4] Lemberger L, Rowe H, Bosomworth JC, Tenbarge JB, Bergstrom RF \"The effect of fluoxetine on the pharmacokinetics and psychomotor responses of diazepam.\" Clin Pharmacol Ther 43 (1988): 412-9, [5] Driessen JJ, Vree TB, Booij LH, van der Pol FM, Crul JF \"Effect of some benzodiazepines on peripheral neuromuscular function in the rat in-vitro hemidiaphragm preparation.\" J Pharm Pharmacol 36 (1984): 244-7, [6] Plushner SL \"Valerian: valeriana officinalis.\" Am J Health Syst Pharm 57 (2000): 328-35, [7] Miller LG \"Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions.\" Arch Intern Med 158 (1998): 2200-11, [8] MacLeod SM, Giles HG, Patzalek G, Thiessen JJ, Sellers EM \"Diazepam actions and plasma concentrations following ethanol ingestion.\" Eur J Clin Pharmacol 11 (1977): 345-9, [9] Hamilton MJ, Bush M, Smith P, Peck AW \"The effects of bupropion, a new antidepressant drug, and diazepam, and their interaction in man.\" Br J Clin Pharmacol 14 (1982): 791-7, [10] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [11] Markowitz JS, Wells BG, Carson WH \"Interactions between antipsychotic and antihypertensive drugs.\" Ann Pharmacother 29 (1995): 603-9, [12] Ferslew KE, Hagardorn AN, McCormick WF \"A fatal interaction of methocarbamol and ethanol in an accidental poisoning.\" J Forensic Sci 35 (1990): 477-82, [13] \"Product Information. Seroquel (quetiapine).\" Zeneca Pharmaceuticals, Wilmington, DE., [14] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [15] \"Product Information. Iopidine (apraclonidine).\" Alcon Laboratories Inc, Fort Worth, TX., [16] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [17] Naylor GJ, McHarg A \"Profound hypothermia on combined lithium carbonate and diazepam treatment.\" Br Med J 2 (1977): 22, [18] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [19] Greiff JMC, Rowbotham D \"Pharmacokinetic drug interactions with gastrointestinal motility modifying agents.\" Clin Pharmacokinet 27 (1994): 447-61, [20] Tverskoy M, Fleyshman G, Ezry J, Bradley EL, Jr Kissin I \"Midazolam-morphine sedative interaction in patients.\" Anesth Analg 68 (1989): 282-5, [21] Stovner J, Endresen R \"Intravenous anaesthesia with diazepam.\" Acta Anaesthesiol Scand 24 (1965): 223-7, [22] Desager JP, Hulhoven R, Harvengt C, Hermann P, Guillet P, Thiercelin JF \"Possible interactions between zolpidem, a new sleep inducer and chlorpromazine, a phenothiazine neuroleptic.\" Psychopharmacology (Berl) 96 (1988): 63-6, [23] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [24] \"Product Information. Trileptal (oxcarbazepine)\" Novartis Pharmaceuticals, East Hanover, NJ., [25] \"Product Information. Ultram (tramadol).\" McNeil Pharmaceutical, Raritan, NJ., [26] Ochs HR, Greenblatt DJ, Verburg-Ochs B \"Propranolol interactions with diazepam, lorazepam and alprazolam.\" Clin Pharmacol Ther 36 (1984): 451-5, [27] Feldman SA, Crawley BE \"Interaction of diazepam with the muscle-relaxant drugs.\" Br Med J 1 (1970): 336-8, [28] \"Product Information. Precedex (dexmedetomidine)\" Abbott Pharmaceutical, Abbott Park, IL., [29] \"Product Information. Xatral (alfuzosin).\" Sanofi-Synthelabo Canada Inc, Markham, ON., [30] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [31] Sotaniemi EA, Anttila M, Rautio A, et al \"Propranolol and sotalol metabolism after a drinking party.\" Clin Pharmacol Ther 29 (1981): 705-10, [32] \"Product Information. Tasmar (tolcapone).\" Valeant Pharmaceuticals, Costa Mesa, CA., [33] \"Product Information. Lexapro (escitalopram).\" Forest Pharmaceuticals, St. Louis, MO., [34] Greb WH, Buscher G, Dierdorf HD, Koster FE, Wolf D, Mellows G \"The effect of liver enzyme inhibition by cimetidine and enzyme induction by phenobarbitone on the pharmacokinetics of paroxetine.\" Acta Psychiatr Scand 80 Suppl (1989): 95-8, [35] \"Product Information. Ultiva (remifentanil).\" Mylan Institutional (formally Bioniche Pharma USA Inc), Canonsburg, PA., [36] Stambaugh JE, Lane C \"Analgesic efficacy and pharmacokinetic evaluation of meperidine and hydroxyzine, alone and in combination.\" Cancer Invest 1 (1983): 111-7, [37] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [38] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [39] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [40] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [41] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [42] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [43] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [44] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "During concomitant use of these drugs, patients should be monitored for potentially excessive or prolonged CNS and respiratory depression. Cautious dosage titration may be required, particularly at treatment initiation. Ambulatory patients should be counseled to avoid hazardous activities requiring mental alertness and motor coordination.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R06A, Azelastine, Ketotifen",
+        "thay_the_b": "N06A, Vilazodone, Sertraline, Paroxetine, St. John's Wort, Nefazodone, Oxitriptan, Mirtazapine, Viloxazine, Milnacipran, Vortioxetine, Tryptophan",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Meclizine",
+        "hoat_chat_b": "Citalopram",
+        "san_pham_a": [
+          "Agyrax"
+        ],
+        "san_pham_b": [
+          "Bagocit 20"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Agyrax (hoạt chất: Meclizine)",
+        "thuoc_b": "Bagocit 20 (hoạt chất: Citalopram)",
+        "medication_a_id": "DDInter1134",
+        "medication_b_id": "DDInter388",
+        "xu_tri": "During concomitant use of these drugs, patients should be monitored for potentially excessive or prolonged CNS and respiratory depression. Cautious dosage titration may be required, particularly at treatment initiation. Ambulatory patients should be counseled to avoid hazardous activities requiring mental alertness and motor coordination.",
+        "thay_the_a": "R06A, Azelastine, Ketotifen",
+        "thay_the_b": "N06A, Vilazodone, Sertraline, Paroxetine, St. John's Wort, Nefazodone, Oxitriptan, Mirtazapine, Viloxazine, Milnacipran, Vortioxetine, Tryptophan",
+        "mo_ta": "Central nervous system- and/or respiratory-depressant effects may be additively or synergistically increased in patients taking multiple drugs that cause these effects, especially in elderly or debilitated patients.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Belsomra (suvorexant).\" Merck & Company Inc, Whitehouse Station, NJ., [2] Divoll M, Greenblatt DJ, Lacasse Y, Shader RI \"Benzodiazepine overdosage: plasma concentrations and clinical outcome.\" Psychopharmacology (Berl) 73 (1981): 381-3, [3] Grabowski BS, Cady WJ, Young WW, Emery JF \"Effects of acute alcohol administration on propranolol absorption.\" Int J Clin Pharmacol Ther Toxicol 18 (1980): 317-9, [4] Lemberger L, Rowe H, Bosomworth JC, Tenbarge JB, Bergstrom RF \"The effect of fluoxetine on the pharmacokinetics and psychomotor responses of diazepam.\" Clin Pharmacol Ther 43 (1988): 412-9, [5] Driessen JJ, Vree TB, Booij LH, van der Pol FM, Crul JF \"Effect of some benzodiazepines on peripheral neuromuscular function in the rat in-vitro hemidiaphragm preparation.\" J Pharm Pharmacol 36 (1984): 244-7, [6] Plushner SL \"Valerian: valeriana officinalis.\" Am J Health Syst Pharm 57 (2000): 328-35, [7] Miller LG \"Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions.\" Arch Intern Med 158 (1998): 2200-11, [8] MacLeod SM, Giles HG, Patzalek G, Thiessen JJ, Sellers EM \"Diazepam actions and plasma concentrations following ethanol ingestion.\" Eur J Clin Pharmacol 11 (1977): 345-9, [9] Hamilton MJ, Bush M, Smith P, Peck AW \"The effects of bupropion, a new antidepressant drug, and diazepam, and their interaction in man.\" Br J Clin Pharmacol 14 (1982): 791-7, [10] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [11] Markowitz JS, Wells BG, Carson WH \"Interactions between antipsychotic and antihypertensive drugs.\" Ann Pharmacother 29 (1995): 603-9, [12] Ferslew KE, Hagardorn AN, McCormick WF \"A fatal interaction of methocarbamol and ethanol in an accidental poisoning.\" J Forensic Sci 35 (1990): 477-82, [13] \"Product Information. Seroquel (quetiapine).\" Zeneca Pharmaceuticals, Wilmington, DE., [14] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [15] \"Product Information. Iopidine (apraclonidine).\" Alcon Laboratories Inc, Fort Worth, TX., [16] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [17] Naylor GJ, McHarg A \"Profound hypothermia on combined lithium carbonate and diazepam treatment.\" Br Med J 2 (1977): 22, [18] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [19] Greiff JMC, Rowbotham D \"Pharmacokinetic drug interactions with gastrointestinal motility modifying agents.\" Clin Pharmacokinet 27 (1994): 447-61, [20] Tverskoy M, Fleyshman G, Ezry J, Bradley EL, Jr Kissin I \"Midazolam-morphine sedative interaction in patients.\" Anesth Analg 68 (1989): 282-5, [21] Stovner J, Endresen R \"Intravenous anaesthesia with diazepam.\" Acta Anaesthesiol Scand 24 (1965): 223-7, [22] Desager JP, Hulhoven R, Harvengt C, Hermann P, Guillet P, Thiercelin JF \"Possible interactions between zolpidem, a new sleep inducer and chlorpromazine, a phenothiazine neuroleptic.\" Psychopharmacology (Berl) 96 (1988): 63-6, [23] \"Product Information. Artane (trihexyphenidyl).\" Lederle Laboratories, Wayne, NJ., [24] \"Product Information. Trileptal (oxcarbazepine)\" Novartis Pharmaceuticals, East Hanover, NJ., [25] \"Product Information. Ultram (tramadol).\" McNeil Pharmaceutical, Raritan, NJ., [26] Ochs HR, Greenblatt DJ, Verburg-Ochs B \"Propranolol interactions with diazepam, lorazepam and alprazolam.\" Clin Pharmacol Ther 36 (1984): 451-5, [27] Feldman SA, Crawley BE \"Interaction of diazepam with the muscle-relaxant drugs.\" Br Med J 1 (1970): 336-8, [28] \"Product Information. Precedex (dexmedetomidine)\" Abbott Pharmaceutical, Abbott Park, IL., [29] \"Product Information. Xatral (alfuzosin).\" Sanofi-Synthelabo Canada Inc, Markham, ON., [30] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [31] Sotaniemi EA, Anttila M, Rautio A, et al \"Propranolol and sotalol metabolism after a drinking party.\" Clin Pharmacol Ther 29 (1981): 705-10, [32] \"Product Information. Tasmar (tolcapone).\" Valeant Pharmaceuticals, Costa Mesa, CA., [33] \"Product Information. Lexapro (escitalopram).\" Forest Pharmaceuticals, St. Louis, MO., [34] Greb WH, Buscher G, Dierdorf HD, Koster FE, Wolf D, Mellows G \"The effect of liver enzyme inhibition by cimetidine and enzyme induction by phenobarbitone on the pharmacokinetics of paroxetine.\" Acta Psychiatr Scand 80 Suppl (1989): 95-8, [35] \"Product Information. Ultiva (remifentanil).\" Mylan Institutional (formally Bioniche Pharma USA Inc), Canonsburg, PA., [36] Stambaugh JE, Lane C \"Analgesic efficacy and pharmacokinetic evaluation of meperidine and hydroxyzine, alone and in combination.\" Cancer Invest 1 (1983): 111-7, [37] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [38] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [39] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [40] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [41] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [42] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [43] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [44] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "hoat_chat_a": "Meclizine",
+        "hoat_chat_b": "Citalopram",
+        "san_pham_a": [
+          "Agyrax"
+        ],
+        "san_pham_b": [
+          "Bagocit 20"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Agyrax",
+        "thuoc_b": "Bagocit 20",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng chung Agyrax và Bagocit 20, tác dụng ức chế thần kinh trung ương và/hoặc hô hấp có thể tăng lên theo kiểu cộng gộp hoặc hiệp lực, đặc biệt ở người cao tuổi hoặc người suy nhược. Vì vậy cần theo dõi các biểu hiện ức chế thần kinh trung ương và hô hấp quá mức hoặc kéo dài, đồng thời lưu ý người bệnh đang điều trị ngoại trú tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo và phối hợp vận động.",
+        "giai_thich_duoc_si": "Khi dùng chung Agyrax và Bagocit 20, tác dụng ức chế thần kinh trung ương và/hoặc hô hấp có thể tăng lên theo kiểu cộng gộp hoặc hiệp lực, đặc biệt ở người cao tuổi hoặc người suy nhược. Vì vậy cần theo dõi các biểu hiện ức chế thần kinh trung ương và hô hấp quá mức hoặc kéo dài, đồng thời lưu ý người bệnh đang điều trị ngoại trú tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo và phối hợp vận động.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Các tác dụng ức chế thần kinh trung ương và/hoặc hô hấp có thể tăng lên theo kiểu cộng gộp hoặc hiệp lực ở những bệnh nhân dùng nhiều thuốc gây ra các tác dụng này, đặc biệt ở người cao tuổi hoặc người suy nhược.",
+        "xu_tri_dich": "Trong thời gian dùng đồng thời các thuốc này, cần theo dõi bệnh nhân về tình trạng ức chế thần kinh trung ương và hô hấp quá mức hoặc kéo dài. Có thể cần chuẩn liều thận trọng, đặc biệt khi bắt đầu điều trị. Bệnh nhân ngoại trú nên được tư vấn tránh các hoạt động nguy hiểm đòi hỏi sự tỉnh táo tinh thần và phối hợp vận động."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ ở mức trung bình. Cặp đáng chú ý là Agyrax và Bagocit 20. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Agyrax và Bagocit 20",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Agyrax",
+      "Bagocit 20"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Agyrax",
+          "Bagocit 20"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

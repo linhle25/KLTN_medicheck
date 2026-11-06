@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-057",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.0966,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Spironolactone",
+      "Capecitabine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Spironolactone",
+        "ten_chuan": "Spironolactone",
+        "medication_id": "DDInter1707",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Capecitabine",
+        "ten_chuan": "Capecitabine",
+        "medication_id": "DDInter285",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Spironolactone",
+        "thuoc_b": "Capecitabine",
+        "medication_a_id": "DDInter1707",
+        "medication_b_id": "DDInter285",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C03D, Eplerenone, Amiloride, Triamterene, Finerenone",
+        "thay_the_b": "L01B, Pemetrexed, Cladribine, Clofarabine, Trifluridine, Floxuridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, Tioguanine",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aldactone (hoạt chất: Spironolactone)",
+        "thuoc_b": "Amxerein (hoạt chất: Capecitabine)",
+        "medication_a_id": "DDInter1707",
+        "medication_b_id": "DDInter285",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C03D, Eplerenone, Amiloride, Triamterene, Finerenone",
+        "thay_the_b": "L01B, Pemetrexed, Cladribine, Clofarabine, Trifluridine, Floxuridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, Tioguanine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Spironolactone",
+        "hoat_chat_b": "Capecitabine",
+        "san_pham_a": [
+          "Aldactone"
+        ],
+        "san_pham_b": [
+          "Amxerein"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aldactone (hoạt chất: Spironolactone)",
+        "thuoc_b": "Amxerein (hoạt chất: Capecitabine)",
+        "medication_a_id": "DDInter1707",
+        "medication_b_id": "DDInter285",
+        "xu_tri": "-",
+        "thay_the_a": "C03D, Eplerenone, Amiloride, Triamterene, Finerenone",
+        "thay_the_b": "L01B, Pemetrexed, Cladribine, Clofarabine, Trifluridine, Floxuridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, Tioguanine",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Spironolactone",
+        "hoat_chat_b": "Capecitabine",
+        "san_pham_a": [
+          "Aldactone"
+        ],
+        "san_pham_b": [
+          "Amxerein"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Aldactone",
+        "thuoc_b": "Amxerein",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Aldactone và Amxerein có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác thuốc-thuốc, hiện ở mức chưa phân loại. Cặp đáng chú ý nhất là Aldactone và Amxerein. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Aldactone và Amxerein",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Aldactone",
+      "Amxerein"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Aldactone",
+          "Amxerein"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "case_id": "food-trung_binh-016",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0412,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Benazepril"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Benazepril",
+        "ten_chuan": "Benazepril",
+        "medication_id": "DDInter177",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Bena-5A 5mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Bena-5A 5mg"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Bena-5A 5mg"
+        ],
+        "thuc_pham": "thực phẩm giàu kali",
+        "muc_do": "trung_binh",
+        "giai_thich": "Bena-5A 5mg là thuốc thuộc nhóm ức chế men chuyển (ACE), và nhóm này có thể làm tăng kali trong máu vì nó kìm hãm hệ thống renin-aldosterone-angiotensin, một hệ thống vốn giúp cơ thể đào thải kali. Vì vậy, nếu bạn ăn nhiều thực phẩm giàu kali hoặc dùng các loại muối thay thế giàu kali, lượng kali trong máu có thể tăng lên quá mức ở một số người đang dùng Bena-5A 5mg. Tình trạng kali máu cao này không phải ai cũng gặp, nhưng đây chính là lý do cần để ý đến lượng thực phẩm giàu kali khi đang dùng thuốc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Vasotec (enalapril).\" Merck & Co., Inc  (2002):|Good CB, McDermott L \"Diet and serum potassium in patients on ACE inhibitors.\" JAMA 274 (1995):  538|Ray K, Dorman S, Watson R \"Severe hyperkalaemia due to the concomitant use of salt substitutes and ACE inhibitors in hypertension: a potentially life threatening interaction.\" J Hum Hypertens 13 (1999):  717-20",
+        "mo_ta_dich": "Việc hấp thu kali qua chế độ ăn ở mức trung bình đến cao có thể gây tăng kali máu ở một số bệnh nhân đang sử dụng thuốc ức chế men chuyển angiotensin (ACE). Trong một số trường hợp, bệnh nhân bị ảnh hưởng đang sử dụng chất thay thế muối giàu kali. Thuốc ức chế ACE có thể thúc đẩy tăng kali máu thông qua ức chế hệ thống renin-aldosterone-angiotensin (RAA).",
+        "xu_tri_dich": "Khuyến cáo rằng bệnh nhân đang dùng thuốc ức chế ACE nên được tư vấn tránh hấp thu kali qua chế độ ăn ở mức trung bình cao hoặc cao. Cần đặc biệt chú ý đến hàm lượng kali trong các chất thay thế muối."
+      },
+      {
+        "san_pham": [
+          "Bena-5A 5mg"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Bena-5A 5mg là thuốc hạ huyết áp, còn rượu lại có tác dụng làm giảm huyết áp, nên khi dùng chung hai thứ này thì huyết áp có thể tụt xuống thấp hơn mức bình thường. Tình trạng này dễ xảy ra nhất vào lúc mới bắt đầu dùng thuốc hoặc khi tăng liều, và cũng dễ gặp hơn khi dùng kèm các thuốc hạ huyết áp khác, đặc biệt là nhóm làm giãn mạch và nhóm chẹn alpha. Hậu quả có thể là huyết áp tụt cộng dồn và cảm giác chóng mặt, choáng váng khi đứng lên (hạ huyết áp tư thế).",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Sternbach H \"Fluoxetine-associated potentiation of calcium-channel blockers.\" J Clin Psychopharmacol 11 (1991):  390-1|Shook TL, Kirshenbaum JM, Hundley RF, Shorey JM, Lamas GA \"Ethanol intoxication complicating intravenous nitroglycerin therapy.\" Ann Intern Med 101 (1984):  498-9|Feder R \"Bradycardia and syncope induced by fluoxetine.\" J Clin Psychiatry 52 (1991):  139|Ellison JM, Milofsky JE, Ely E \"Fluoxetine-induced bradycardia and syncope in two patients.\" J Clin Psychiatry 51 (1990):  385-6|Rodriguez de la Torre B, Dreher J, Malevany I, et al. \"Serum levels and cardiovascular effects of tricyclic antidepressants and selective serotonin reuptake inhibitors in depressed patients.\" Ther Drug Monit 23 (2001):  435-40|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Pacher P, Kecskemeti V \"Cardiovascular side effects of new antidepressants and antipsychotics: new drugs, old concerns?\" Curr Pharm Des 10 (2004):  2463-75|Andrews C, Pinner G \"Postural hypotension induced by paroxetine.\" BMJ 316 (1998):  595",
+        "mo_ta_dich": "Nhiều tác nhân tâm lý trị liệu và tác nhân hoạt động trên hệ thần kinh trung ương (ví dụ: thuốc giải lo âu, thuốc an thần, thuốc gây ngủ, thuốc chống trầm cảm, thuốc chống loạn thần, opioid, rượu, thuốc giãn cơ) thể hiện tác dụng hạ huyết áp, đặc biệt trong giai đoạn khởi đầu điều trị và tăng liều. Dùng đồng thời với thuốc hạ huyết áp và các tác nhân hạ huyết áp khác, đặc biệt là thuốc giãn mạch và thuốc chẹn alpha, có thể dẫn đến tác dụng cộng gộp trên huyết áp và hạ huyết áp tư thế.",
+        "xu_tri_dich": null
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu, thực phẩm giàu kali.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-059",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.2768,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Bupropion",
+      "Ibuprofen"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Bupropion",
+        "ten_chuan": "Bupropion",
+        "medication_id": "DDInter252",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ibuprofen",
+        "ten_chuan": "Ibuprofen",
+        "medication_id": "DDInter900",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Bupropion",
+        "thuoc_b": "Ibuprofen",
+        "medication_a_id": "DDInter252",
+        "medication_b_id": "DDInter900",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A08A, Ephedrine, Lorcaserin, Diethylpropion, Mazindol, N06A, Phenelzine, Desipramine, Tranylcypromine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan",
+        "thay_the_b": "G02C, Bremelanotide, C01E, Ubidecarenone, Adenosine, Regadenoson, Ivabradine, M01A, Fenoprofen, Phenylbutazone, Chondroitin sulfate, Glucosamine, Esomeprazole, Tolmetin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Breakin (hoạt chất: Bupropion)",
+        "thuoc_b": "A.T Ibuprofen Syrup (hoạt chất: Ibuprofen)",
+        "medication_a_id": "DDInter252",
+        "medication_b_id": "DDInter900",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A08A, Ephedrine, Lorcaserin, Diethylpropion, Mazindol, N06A, Phenelzine, Desipramine, Tranylcypromine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan",
+        "thay_the_b": "G02C, Bremelanotide, C01E, Ubidecarenone, Adenosine, Regadenoson, Ivabradine, M01A, Fenoprofen, Phenylbutazone, Chondroitin sulfate, Glucosamine, Esomeprazole, Tolmetin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Bupropion",
+        "hoat_chat_b": "Ibuprofen",
+        "san_pham_a": [
+          "Breakin"
+        ],
+        "san_pham_b": [
+          "A.T Ibuprofen Syrup"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Breakin (hoạt chất: Bupropion)",
+        "thuoc_b": "A.T Ibuprofen Syrup (hoạt chất: Ibuprofen)",
+        "medication_a_id": "DDInter252",
+        "medication_b_id": "DDInter900",
+        "xu_tri": "-",
+        "thay_the_a": "A08A, Ephedrine, Lorcaserin, Diethylpropion, Mazindol, N06A, Phenelzine, Desipramine, Tranylcypromine, Maprotiline, St. John's Wort, Isocarboxazid, Oxitriptan",
+        "thay_the_b": "G02C, Bremelanotide, C01E, Ubidecarenone, Adenosine, Regadenoson, Ivabradine, M01A, Fenoprofen, Phenylbutazone, Chondroitin sulfate, Glucosamine, Esomeprazole, Tolmetin",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Bupropion",
+        "hoat_chat_b": "Ibuprofen",
+        "san_pham_a": [
+          "Breakin"
+        ],
+        "san_pham_b": [
+          "A.T Ibuprofen Syrup"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Breakin",
+        "thuoc_b": "A.T Ibuprofen Syrup",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Breakin và A.T Ibuprofen Syrup có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": "Giữa Breakin và A.T Ibuprofen Syrup có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ thuộc mức chưa phân loại. Cặp đáng chú ý trong danh sách là Breakin và A.T Ibuprofen Syrup. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Breakin và A.T Ibuprofen Syrup",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Breakin",
+      "A.T Ibuprofen Syrup"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Breakin",
+          "A.T Ibuprofen Syrup"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

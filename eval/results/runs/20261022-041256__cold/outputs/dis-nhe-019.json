@@ -1,0 +1,70 @@
+{
+  "case_id": "dis-nhe-019",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.4554,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cromoglicic acid"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cromoglicic acid",
+        "ten_chuan": "Cromoglicic acid",
+        "medication_id": "DDInter449",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Allercrom eye drops"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Allercrom eye drops"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Allercrom eye drops"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "nhe",
+        "giai_thich": "Allercrom eye drops chứa cromoglicic acid, và phần hoạt chất được hấp thu vào toàn thân được thải trừ gần như tương đương qua đường thận và đường mật. Do đó, khi dùng Allercrom eye drops ở người có tiền sử hoặc đang mắc bệnh gan, đường thải trừ qua mật có thể bị ảnh hưởng, tuy mức độ tương tác được ghi nhận ở mức nhẹ.",
+        "giai_thich_duoc_si": "Allercrom eye drops chứa cromoglicic acid, và phần hoạt chất được hấp thu vào toàn thân được thải trừ gần như tương đương qua đường thận và đường mật. Do đó, khi dùng Allercrom eye drops ở người có tiền sử hoặc đang mắc bệnh gan, đường thải trừ qua mật có thể bị ảnh hưởng, tuy mức độ tương tác được ghi nhận ở mức nhẹ.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Richards R, Dickson CR, Renwick AG, Lewis RA, Holgate ST \"Absorption and disposition kinetics of cromolyn sodium and the influence of inhalation technique.\" J Pharmacol Exp Ther 241 (1987):  1028-32|Rosenberg JL, Edlow D, Sneider R \"Liver disease and vasculitis in a patient taking cromolyn.\" Arch Intern Med 138 (1978):  989-91|Neale MG, Brown K, Hodder RW, Auty RM \"The pharmacokinetics of sodium cromoglycate in man after intravenous and inhalation administration.\" Br J Clin Pharmacol 22 (1986):  373-82|Fuller RW, Collier JG \"The pharmacokinetic assessment of sodium cromoglycate.\" J Pharm Pharmacol 35 (1983):  289-92|Walker SR, Evans ME, Richards AJ, Paterson JW \"The fate of [14C]disodium cromoglycate in man.\" J Pharm Pharmacol 24 (1972):  525-31|\"Product Information. Intal (cromolyn).\" Rhone Poulenc Rorer  (2001):|\"Product Information. Gastrocrom (cromolyn).\" Rhone Poulenc Rorer  (2001):",
+        "mo_ta_dich": "Cromolyn được hấp thu toàn thân và thải trừ gần như tương đương qua đường thận và đường mật. Mặc dù sinh khả dụng toàn thân dưới 1% đối với liều uống và khoảng 8% đối với liều hít qua đường miệng, các nhà sản xuất khuyến nghị nên cân nhắc giảm liều ở bệnh nhân suy giảm chức năng thận hoặc gan."
+      }
+    ],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh gan."
+    ]
+  }
+}

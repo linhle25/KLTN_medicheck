@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-047",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.1491,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Acarbose",
+      "Rabeprazole"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Acarbose",
+        "ten_chuan": "Acarbose",
+        "medication_id": "DDInter11",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Rabeprazole",
+        "ten_chuan": "Rabeprazole",
+        "medication_id": "DDInter1559",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Acarbose",
+        "thuoc_b": "Rabeprazole",
+        "medication_a_id": "DDInter11",
+        "medication_b_id": "DDInter1559",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Abrose-50 (hoạt chất: Acarbose)",
+        "thuoc_b": "Acilesol 10mg (hoạt chất: Rabeprazole)",
+        "medication_a_id": "DDInter11",
+        "medication_b_id": "DDInter1559",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Acarbose",
+        "hoat_chat_b": "Rabeprazole",
+        "san_pham_a": [
+          "Abrose-50"
+        ],
+        "san_pham_b": [
+          "Acilesol 10mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Abrose-50 (hoạt chất: Acarbose)",
+        "thuoc_b": "Acilesol 10mg (hoạt chất: Rabeprazole)",
+        "medication_a_id": "DDInter11",
+        "medication_b_id": "DDInter1559",
+        "xu_tri": "-",
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Tolbutamide, Miglitol, Albiglutide",
+        "thay_the_b": "A02B, Tinidazole, Tetracycline, Dexlansoprazole, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Cimetidine, Esomeprazole, Nizatidine, Vonoprazan",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Acarbose",
+        "hoat_chat_b": "Rabeprazole",
+        "san_pham_a": [
+          "Abrose-50"
+        ],
+        "san_pham_b": [
+          "Acilesol 10mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Abrose-50",
+        "thuoc_b": "Acilesol 10mg",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Abrose-50 và Acilesol 10mg có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, hiện ở mức chưa phân loại. Cặp đáng chú ý là Abrose-50 và Acilesol 10mg. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Abrose-50 và Acilesol 10mg",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Abrose-50",
+      "Acilesol 10mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Abrose-50",
+          "Acilesol 10mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

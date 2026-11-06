@@ -1,0 +1,72 @@
+{
+  "case_id": "food-nang-002",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0336,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Amiodarone"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Amiodarone",
+        "ten_chuan": "Amiodarone",
+        "medication_id": "DDInter76",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Adatot-200"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Adatot-200"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Adatot-200"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "nang",
+        "giai_thich": "Uống Adatot-200 chung với nước ép bưởi có thể làm nồng độ thuốc trong máu tăng lên đáng kể. Lý do là một số chất có trong bưởi ức chế men CYP450 3A4 ở thành ruột, men này vốn giúp phân hủy thuốc ngay từ lần đầu thuốc đi qua gan và ruột trước khi vào máu. Khi men này bị ức chế, lượng thuốc được hấp thu vào cơ thể nhiều hơn bình thường, nên nồng độ thuốc trong máu có thể cao hơn dự kiến.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Cordarone (amiodarone).\" Wyeth-Ayerst Laboratories  (2002):|Libersa CC, Brique SA, Motte KB, et al. \"Dramatic inhibition of amiodarone metabolism induced by grapefruit juice.\" Br J Clin Pharmacol 49 (2000):  373-8|Meng X, Mojaverian P, Doedee M, Lin E, Weinryb I, Chiang ST, Kowey PR \"Bioavailability of Amiodarone tablets administered with and without food in healthy subjects.\" Am J Cardiol 87 (2001):  432-5",
+        "mo_ta_dich": "Nước ép bưởi có thể làm tăng đáng kể nồng độ amiodarone trong huyết tương khi dùng đường uống. Cơ chế được đề xuất là do một số hợp chất có trong bưởi ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột.",
+        "xu_tri_dich": "Bệnh nhân điều trị bằng amiodarone đường uống nên tránh tiêu thụ bưởi và nước ép bưởi. Ngoài ra, amiodarone đường uống nên được dùng một cách nhất quán liên quan đến bữa ăn."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: nước ép bưởi.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

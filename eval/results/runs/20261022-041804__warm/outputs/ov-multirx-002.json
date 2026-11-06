@@ -1,0 +1,149 @@
+{
+  "case_id": "ov-multirx-002",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.0746,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Methotrexate",
+      "Oxacillin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Methotrexate",
+        "ten_chuan": "Methotrexate",
+        "medication_id": "DDInter1174",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Oxacillin",
+        "ten_chuan": "Oxacillin",
+        "medication_id": "DDInter1354",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Methotrexate",
+        "thuoc_b": "Oxacillin",
+        "medication_a_id": "DDInter1174",
+        "medication_b_id": "DDInter1354",
+        "mo_ta": "Concomitant use of large doses of penicillins may elevate serum methotrexate concentrations. The mechanism may involve competitive inhibition of renal tubular secretion of methotrexate.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Dean R, Nachman J, Lorenzana AN \"Possible methotrexate-mezlocillin interaction.\" Am J Pediatr Hematol Oncol 14 (1992): 88-92, [2] \"Product Information. Methotrexate (methotrexate).\" Lederle Laboratories, Wayne, NJ., [3] Yamamoto K, Sawada Y, Matsushita Y, Moriwaki K, Bessho F, Iga T \"Delayed elimination of methotrexate associated with piperacillin administration.\" Ann Pharmacother 31 (1997): 1261-2, [4] \"Product Information. Methotrexate and Methotrexate LPF (methotrexate).\" Lederle Laboratories, Wayne, NJ., [5] Nierenberg DW, Mamelok RD \"Toxic reaction to methotrexate in a patient receiving penicillin and furosemide: a possible interaction.\" Arch Dermatol 119 (1983): 449-50, [6] Bloom EJ, Ignoffo RJ, Reis CA, Cadman E \"Delayed clearance (CL) of methotrexate (MTX) associated with antibiotics and antiinflammatory agents.\" Clin Res 34 (1986): a560, [7] Mayall B, Poggi G, Parkin JD \"Neutropenia due to low-dose methotrexate therapy for psoriasis and rheumatoid arthritis may be fatal.\" Med J Aust 155 (1991): 480-4, [8] Ronchera CL, Hernandez T, Peris JE, Torres F, et al. \"Pharmacokinetic interaction between high-dose methotrexate and amoxycillin.\" Ther Drug Monit 15 (1993): 375-9, [9] \"Product Information. Zosyn (piperacillin-tazobactam).\" Lederle Laboratories, Wayne, NJ., [10] Titier K, Lagrange F, Pehourcq F, Moore N, Molimard M \"Pharmacokinetic interaction between high-dose methotrexate and oxacillin.\" Ther Drug Monit 24 (2002): 570-2, [11] Nesher G, Mates M, Zevin S \"Effect of caffeine consumption on efficacy of methotrexate in rheumatoid arthritis.\" Arthritis Rheum 48 (2003): 571-572",
+        "xu_tri": "If a penicillin must be used concurrently, close monitoring of methotrexate serum concentrations and of the patient for evidence of serious methotrexate toxicity are recommended. Leucovorin rescue should be available. Methotrexate dose reductions may be necessary. If broad-spectrum antibiotic coverage is needed during high-dose methotrexate therapy, use of other antimicrobials may be preferable. Patients should be advised to promptly report symptoms including fever, chills, sore throat, bruising, bleeding, stomatitis, or malaise to their physician.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Golimumab, Cyclosporine, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept",
+        "thay_the_b": "J01C, Tazobactam, Sulbactam",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Alltrex (hoạt chất: Methotrexate)",
+        "thuoc_b": "Asubacin (hoạt chất: Oxacillin)",
+        "medication_a_id": "DDInter1174",
+        "medication_b_id": "DDInter1354",
+        "mo_ta": "Concomitant use of large doses of penicillins may elevate serum methotrexate concentrations. The mechanism may involve competitive inhibition of renal tubular secretion of methotrexate.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Dean R, Nachman J, Lorenzana AN \"Possible methotrexate-mezlocillin interaction.\" Am J Pediatr Hematol Oncol 14 (1992): 88-92, [2] \"Product Information. Methotrexate (methotrexate).\" Lederle Laboratories, Wayne, NJ., [3] Yamamoto K, Sawada Y, Matsushita Y, Moriwaki K, Bessho F, Iga T \"Delayed elimination of methotrexate associated with piperacillin administration.\" Ann Pharmacother 31 (1997): 1261-2, [4] \"Product Information. Methotrexate and Methotrexate LPF (methotrexate).\" Lederle Laboratories, Wayne, NJ., [5] Nierenberg DW, Mamelok RD \"Toxic reaction to methotrexate in a patient receiving penicillin and furosemide: a possible interaction.\" Arch Dermatol 119 (1983): 449-50, [6] Bloom EJ, Ignoffo RJ, Reis CA, Cadman E \"Delayed clearance (CL) of methotrexate (MTX) associated with antibiotics and antiinflammatory agents.\" Clin Res 34 (1986): a560, [7] Mayall B, Poggi G, Parkin JD \"Neutropenia due to low-dose methotrexate therapy for psoriasis and rheumatoid arthritis may be fatal.\" Med J Aust 155 (1991): 480-4, [8] Ronchera CL, Hernandez T, Peris JE, Torres F, et al. \"Pharmacokinetic interaction between high-dose methotrexate and amoxycillin.\" Ther Drug Monit 15 (1993): 375-9, [9] \"Product Information. Zosyn (piperacillin-tazobactam).\" Lederle Laboratories, Wayne, NJ., [10] Titier K, Lagrange F, Pehourcq F, Moore N, Molimard M \"Pharmacokinetic interaction between high-dose methotrexate and oxacillin.\" Ther Drug Monit 24 (2002): 570-2, [11] Nesher G, Mates M, Zevin S \"Effect of caffeine consumption on efficacy of methotrexate in rheumatoid arthritis.\" Arthritis Rheum 48 (2003): 571-572",
+        "xu_tri": "If a penicillin must be used concurrently, close monitoring of methotrexate serum concentrations and of the patient for evidence of serious methotrexate toxicity are recommended. Leucovorin rescue should be available. Methotrexate dose reductions may be necessary. If broad-spectrum antibiotic coverage is needed during high-dose methotrexate therapy, use of other antimicrobials may be preferable. Patients should be advised to promptly report symptoms including fever, chills, sore throat, bruising, bleeding, stomatitis, or malaise to their physician.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Golimumab, Cyclosporine, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept",
+        "thay_the_b": "J01C, Tazobactam, Sulbactam",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Methotrexate",
+        "hoat_chat_b": "Oxacillin",
+        "san_pham_a": [
+          "Alltrex"
+        ],
+        "san_pham_b": [
+          "Asubacin"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Alltrex (hoạt chất: Methotrexate)",
+        "thuoc_b": "Asubacin (hoạt chất: Oxacillin)",
+        "medication_a_id": "DDInter1174",
+        "medication_b_id": "DDInter1354",
+        "xu_tri": "If a penicillin must be used concurrently, close monitoring of methotrexate serum concentrations and of the patient for evidence of serious methotrexate toxicity are recommended. Leucovorin rescue should be available. Methotrexate dose reductions may be necessary. If broad-spectrum antibiotic coverage is needed during high-dose methotrexate therapy, use of other antimicrobials may be preferable. Patients should be advised to promptly report symptoms including fever, chills, sore throat, bruising, bleeding, stomatitis, or malaise to their physician.",
+        "thay_the_a": "L04A, Golimumab, Cyclosporine, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept",
+        "thay_the_b": "J01C, Tazobactam, Sulbactam",
+        "mo_ta": "Concomitant use of large doses of penicillins may elevate serum methotrexate concentrations. The mechanism may involve competitive inhibition of renal tubular secretion of methotrexate.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Dean R, Nachman J, Lorenzana AN \"Possible methotrexate-mezlocillin interaction.\" Am J Pediatr Hematol Oncol 14 (1992): 88-92, [2] \"Product Information. Methotrexate (methotrexate).\" Lederle Laboratories, Wayne, NJ., [3] Yamamoto K, Sawada Y, Matsushita Y, Moriwaki K, Bessho F, Iga T \"Delayed elimination of methotrexate associated with piperacillin administration.\" Ann Pharmacother 31 (1997): 1261-2, [4] \"Product Information. Methotrexate and Methotrexate LPF (methotrexate).\" Lederle Laboratories, Wayne, NJ., [5] Nierenberg DW, Mamelok RD \"Toxic reaction to methotrexate in a patient receiving penicillin and furosemide: a possible interaction.\" Arch Dermatol 119 (1983): 449-50, [6] Bloom EJ, Ignoffo RJ, Reis CA, Cadman E \"Delayed clearance (CL) of methotrexate (MTX) associated with antibiotics and antiinflammatory agents.\" Clin Res 34 (1986): a560, [7] Mayall B, Poggi G, Parkin JD \"Neutropenia due to low-dose methotrexate therapy for psoriasis and rheumatoid arthritis may be fatal.\" Med J Aust 155 (1991): 480-4, [8] Ronchera CL, Hernandez T, Peris JE, Torres F, et al. \"Pharmacokinetic interaction between high-dose methotrexate and amoxycillin.\" Ther Drug Monit 15 (1993): 375-9, [9] \"Product Information. Zosyn (piperacillin-tazobactam).\" Lederle Laboratories, Wayne, NJ., [10] Titier K, Lagrange F, Pehourcq F, Moore N, Molimard M \"Pharmacokinetic interaction between high-dose methotrexate and oxacillin.\" Ther Drug Monit 24 (2002): 570-2, [11] Nesher G, Mates M, Zevin S \"Effect of caffeine consumption on efficacy of methotrexate in rheumatoid arthritis.\" Arthritis Rheum 48 (2003): 571-572",
+        "hoat_chat_a": "Methotrexate",
+        "hoat_chat_b": "Oxacillin",
+        "san_pham_a": [
+          "Alltrex"
+        ],
+        "san_pham_b": [
+          "Asubacin"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Alltrex",
+        "thuoc_b": "Asubacin",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Alltrex và Asubacin có thể làm nồng độ Alltrex trong máu tăng lên, do thành phần kháng sinh trong Asubacin ở liều cao cạnh tranh với Alltrex ở đường thải qua thận, khiến Alltrex bị giữ lại nhiều hơn trong cơ thể thay vì được đào thải ra ngoài. [ẢNH] Bạn đang dùng Alltrex cùng Asubacin, và việc này có thể khiến lượng Alltrex trong máu tăng cao hơn bình thường. Lý do là thành phần kháng sinh trong Asubacin khi dùng với liều lớn sẽ \"giành chỗ\" với Alltrex ở con đường đào thải qua thận, làm Alltrex khó được tống ra ngoài hơn và bị tích lại trong cơ thể. Vì vậy bạn nên cho bác sĩ hoặc dược sĩ biết mình đang dùng cả hai thuốc này để được theo dõi phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời liều cao penicillin có thể làm tăng nồng độ methotrexate trong huyết thanh. Cơ chế có thể liên quan đến ức chế cạnh tranh bài tiết methotrexate qua ống thận.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau của bạn, mình thấy có tổng cộng 1 cặp thuốc-thuốc có tương tác, và cả 1 cặp này đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Alltrex + Asubacin ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Alltrex + Asubacin",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Alltrex",
+      "Asubacin"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Alltrex"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Asubacin"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

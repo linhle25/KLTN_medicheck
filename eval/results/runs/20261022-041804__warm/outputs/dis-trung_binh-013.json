@@ -1,0 +1,119 @@
+{
+  "case_id": "dis-trung_binh-013",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0475,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ampicillin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ampicillin",
+        "ten_chuan": "Ampicillin",
+        "medication_id": "DDInter89",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Amfibays 1000 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Amfibays 1000 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Amfibays 1000 mg"
+        ],
+        "ten_benh": "Suy tim",
+        "muc_do": "trung_binh",
+        "giai_thich": "Amfibays 1000 mg có chứa thành phần mà khi vào cơ thể sẽ mang theo một lượng natri đáng kể, nên nếu bạn có tiền sử hoặc đang mắc suy tim thì cần lưu ý điều này. Lý do là suy tim thường đi kèm với tình trạng giữ nước, và những người bị suy tim, tăng huyết áp hay ứ dịch đều thuộc nhóm cần hạn chế natri trong khẩu phần. Vì vậy, lượng natri có trong thuốc là yếu tố nên được tính đến khi dùng cho người có bệnh nền như vậy.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Omnipen (ampicillin).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Unasyn (ampicillin-sulbactam).\" Roerig Division  (2002):",
+        "mo_ta_dich": "Ampicillin natri dùng đường tiêm chứa khoảng 67 đến 71 mg (2,9 đến 3,1 mEq) natri trên mỗi gam hoạt lực ampicillin. Phối hợp ampicillin-sulbactam chứa khoảng 115 mg (5 mEq) natri trên 1,5 gam tổng lượng thuốc. Cần xem xét hàm lượng natri khi sử dụng các sản phẩm này ở bệnh nhân có các tình trạng có thể cần hạn chế natri, như suy tim sung huyết, tăng huyết áp và giữ nước."
+      },
+      {
+        "san_pham": [
+          "Amfibays 1000 mg"
+        ],
+        "ten_benh": "Tăng bạch cầu đơn nhân nhiễm trùng",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc bệnh tăng bạch cầu đơn nhân nhiễm trùng mà dùng Amfibays 1000 mg, cơ thể có thể phản ứng bằng một loại phát ban da dạng sần đỏ kèm ngứa. Phát ban này thường tự lặn dần và hết trong vài ngày sau khi ngừng thuốc gây ra nó. Người ta cho rằng nguyên nhân nằm ở việc thuốc bị chuyển hóa khác đi trong cơ thể, hoặc do một phản ứng miễn dịch không liên quan đến dị ứng thuốc thông thường.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Polycillin-PRB (ampicillin-probenecid).\" Apothecon Inc|\"Product Information. Spectrobid (bacampicillin).\" Roerig Division  (2002):|\"Product Information. Amoxil (amoxicillin).\" SmithKline Beecham  (2001):",
+        "mo_ta_dich": "Bệnh nhân mắc bệnh tăng bạch cầu đơn nhân nhiễm trùng được điều trị bằng kháng sinh aminopenicillin có thể phát triển phát ban da dát sẩn đỏ ngứa. Phát ban thường tự giới hạn và hết trong vòng vài ngày sau khi ngừng thuốc gây ra. Cơ chế tiềm ẩn được đề xuất là chuyển hóa thuốc bị thay đổi hoặc một quá trình qua trung gian miễn dịch không liên quan đến quá mẫn cảm với thuốc. Không nên dùng liệu pháp kháng sinh aminopenicillin ở bệnh nhân mắc bệnh tăng bạch cầu đơn nhân nhiễm trùng."
+      },
+      {
+        "san_pham": [
+          "Amfibays 1000 mg"
+        ],
+        "ten_benh": "Bệnh cần lọc máu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Amfibays 1000 mg có chứa kháng sinh thuộc nhóm penicillin, và nhóm này (trừ các loại kháng được men penicillinase) bị loại bỏ khỏi cơ thể qua quá trình lọc máu. Vì vậy, nếu bạn đang chạy thận nhân tạo/lọc máu, lượng thuốc trong cơ thể có thể bị giảm đi trong mỗi lần lọc, nên việc dùng Amfibays 1000 mg ở người có bệnh cần lọc máu cần được bác sĩ cân nhắc kỹ.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Giron JA, Meyers BR, Hirschman SZ, Srulevitch E \"Pharmacokinetics of piperacillin in patients with moderate renal failure and in patients undergoing hemodialysis.\" Antimicrob Agents Chemother 19 (1981):  279-83|Heim KL \"The effect of hemodialysis on piperacillin pharmacokinetics.\" Drug Intell Clin Pharm 19 (1985):  455|Francke EL, Appel GB, Neu HC \"Kinetics of intravenous amoxicillin in patients on long-term dialysis.\" Clin Pharmacol Ther 26 (1979):  31-5|Slaughter RL, Kohli R, Brass C \"Effects of hemodialysis on the pharmacokinetics of amoxicillin/clavulanic acid combination.\" Ther Drug Monit 6 (1984):  424-7|Janicke DM, Mangione A, Schultz RW, Jusko WJ \"Mezlocillin disposition in chronic hemodialysis patients.\" Antimicrob Agents Chemother 20 (1981):  590-4|Kampf D, Schurig R, Weihermuller K, Forster D \"Effects of impaired renal function hemodialysis and peritoneal dialysis on the pharmacokinetics of mezlocillin.\" Antimicrob Agents Chemother 18 (1980):  81-7|Davies BE, Boon R, Horton R, Reubi FC, Descoeudres CE \"Pharmacokinetics of amoxycillin and clavulanic acid in haemodialysis patients following intravenous administration of augmentin.\" Br J Clin Pharmacol 26 (1988):  385-90|Francke E, Mehta S, Neu HC, Appel GB \"Kinetics of intravenous mezlocillin in chronic hemodialysis patients.\" Clin Pharmacol Ther 26 (1979):  228-31|Thorsteinsson SB, Steingrimsson O, Asmundsson P, Bergan T \"Pharmacokinetics of mezlocillin during haemodialysis.\" Scand J Infect Dis 29 (1981):  59-63|Wise R, Reeves DS, Parker AS \"Administration of ticarcillin, a new antipseudomonal antibiotic, in patients undergoing dialysis.\" Antimicrob Agents Chemother 5 (1974):  119-20|Brogard JM, Comte F, Spach MO, Lavillaureix J \"Pharmacokinetics of mezlocillin in patients with kidney impairment: special reference to hemodialysis and dosage adjustments in relation to renal function.\" Chemotherapy 28 (1982):  318-26|Oe PL, Simonian S, Verhoef J \"Pharmacokinetics of the new penicillins.\" Chemotherapy 19 (1973):  279-88|Reitberg DP, Marble DA, Schultz RW, Whall TJ, Schentag JJ \"Pharmacokinetics of cefoperazone (2.0 g) and sulbactam (1.0 g) coadministered to subjects with normal renal function, patients with decreased renal function, and patients with end-stage renal disease on hemodialysis.\" Antimicrob Agents Chemother 32 (1988):  503-9|Blum RA, Kohli RK, Harrison NJ, Schentag JJ \"Pharmacokinetics of ampicillin (2.0 grams) and sulbactam (1.0 gram) coadministered to subjects with normal and abnormal renal function and with end-stage renal disease on hemodialysis.\" Antimicrob Agents Chemother 33 (1989):  1470-6|Rho JP, Jones A, Wood M, et al. \"Single-dose pharmacokinetics of intravenous ampicillin plus sulbactam in healthy elderly and young adult subjects.\" J Antimicrob Chemother 24 (1989):  573-80|\"Product Information. Polycillin-PRB (ampicillin-probenecid).\" Apothecon Inc|\"Product Information. Spectrobid (bacampicillin).\" Roerig Division  (2002):|\"Product Information. Geocillin (carbenicillin).\" Roerig Division  (2002):|\"Product Information. Mezlin (mezlocillin).\" Bayer  (2002):|\"Product Information. Pfizerpen (penicillin).\" Roerig Division  (2001):|\"Product Information. Pipracil (piperacillin).\" Lederle Laboratories  (2001):|\"Product Information. Ticar (ticarcillin).\" SmithKline Beecham  (2001):",
+        "mo_ta_dich": "Kháng sinh penicillin (trừ các thuốc thuộc nhóm kháng penicillinase) bị loại bỏ bởi thẩm phân máu. Liều dùng nên được sắp xếp để dùng sau thẩm phân hoặc bổ sung liều sau thẩm phân."
+      },
+      {
+        "san_pham": [
+          "Amfibays 1000 mg"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh thận, dùng Amfibays 1000 mg cần được cân nhắc kỹ vì phần lớn kháng sinh nhóm beta-lactam (nhóm mà thuốc này thuộc vào) được thải ra ngoài qua thận dưới dạng còn nguyên vẹn, đôi khi cả dưới dạng chất chuyển hóa. Khi chức năng thận suy giảm, nồng độ thuốc và chất chuyển hóa trong máu có thể tăng lên và thời gian lưu lại trong cơ thể kéo dài hơn. Điều này có thể dẫn tới các phản ứng độc với thần kinh như bệnh não, run giật cơ (asterixis), co giật cơ (myoclonus), co giật toàn thân hoặc hôn mê, đã được ghi nhận ở những bệnh nhân như vậy khi dùng các thuốc này qua đường tiêm truyền. Ngoài ra, dùng thuốc kéo dài hoặc liều cao đôi khi có liên quan đến độc tính trên thận và thay đổi chức năng thận, nên cần kiểm tra chức năng thận định kỳ trong thời gian điều trị.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Omnipen (ampicillin).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Ancef (cefazolin).\" SmithKline Beecham  (2002):|\"Product Information. Zefazone (cefmetazole).\" Pharmacia and Upjohn  (2002):|\"Product Information. Monocid (cefonicid).\" SmithKline Beecham  (2002):|\"Product Information. Claforan (cefotaxime).\" Hoechst Marion Roussel  (2002):|\"Product Information. Cefotan (cefotetan).\" Stuart Pharmaceuticals  (2002):|\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):|\"Product Information. Fortaz (ceftazidime).\" Glaxo Wellcome  (2002):|\"Product Information. Tazicef (ceftazidime).\" SmithKline Beecham  (2002):|\"Product Information. Cefizox (ceftizoxime).\" Fujisawa  (2002):|\"Product Information. Ceftin (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Zinacef (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Keflin (cephalothin).\" Lilly, Eli and Company  (2002):|\"Product Information. Cefadyl (cephapirin).\" Apothecon Inc  (2002):|\"Product Information. Staphcillin (methicillin).\" Apothecon Inc  (2002):|\"Product Information. Pfizerpen (penicillin).\" Roerig Division  (2001):|\"Product Information. Pipracil (piperacillin).\" Lederle Laboratories  (2001):|\"Product Information. Ticar (ticarcillin).\" SmithKline Beecham  (2001):|\"Product Information. Mandol (cefamandole).\" Lilly, Eli and Company  (2001):|\"Product Information. Maxipime (cefepime).\" Bristol-Myers Squibb  (2001):|\"Product Information. Fetroja (cefiderocol).\" Shionogi USA Inc  (2019):",
+        "mo_ta_dich": "Hầu hết kháng sinh beta-lactam được thải trừ qua thận dưới dạng thuốc không đổi và, trong một số trường hợp, cũng dưới dạng chất chuyển hóa. Nồng độ huyết thanh của kháng sinh beta-lactam và các chất chuyển hóa của chúng có thể tăng lên, và thời gian bán thải kéo dài, ở bệnh nhân suy giảm chức năng thận. Các phản ứng độc thần kinh (ví dụ: bệnh não, rung giật cơ (asterixis), giật cơ (myoclonus), co giật, hôn mê) đã được báo cáo ở những bệnh nhân này khi điều trị đường tiêm với các thuốc này. Có thể cần điều chỉnh liều, và việc điều chỉnh nên dựa trên mức độ suy giảm chức năng thận cũng như mức độ nghiêm trọng của nhiễm trùng theo nhãn bao bì của từng sản phẩm. Nên thực hiện xét nghiệm chức năng thận định kỳ trong quá trình điều trị kéo dài và/hoặc liều cao vì độc tính trên thận và những thay đổi chức năng thận đã occ... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Amfibays 1000 mg"
+        ],
+        "ten_benh": "Viêm đại tràng",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang bị viêm đại tràng mà dùng Amfibays 1000 mg, cần lưu ý rằng thuốc kháng khuẩn nói chung có thể làm thay đổi hệ vi khuẩn bình thường trong ruột già, tạo điều kiện cho vi khuẩn Clostridioides difficile phát triển quá mức và gây tiêu chảy liên quan đến C. difficile (trước đây gọi là viêm đại tràng giả mạc). Tình trạng này có thể từ tiêu chảy nhẹ đến viêm đại tràng nguy hiểm, và các chủng vi khuẩn sản sinh độc tố mạnh có thể làm tăng nguy cơ bệnh nặng, thậm chí kháng với điều trị kháng khuẩn và có thể phải phẫu thuật cắt đại tràng. Đáng chú ý là tình trạng này có thể xuất hiện hơn 2 tháng sau khi dùng kháng khuẩn, nên khi đi khám bạn nên cho bác sĩ biết mình đã từng dùng thuốc kháng khuẩn trước đó. Nếu nghi ngờ hoặc xác nhận có tiêu chảy do C. difficile, bác sĩ có thể cân nhắc dừng các kháng khuẩn không nhắm trực tiếp vào vi khuẩn này, đồng thời bù nước và điện giải, bổ sung đạm, điều trị kháng khuẩn cho C. difficile và đánh giá phẫu thuật khi cần.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Omnipen (ampicillin).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Ceftin (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Zinacef (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Cleocin (clindamycin).\" Pharmacia and Upjohn  (2002):|\"Product Information. Macrobid (nitrofurantoin).\" Procter and Gamble Pharmaceuticals  (2002):|\"Product Information. Macrodantin (nitrofurantoin).\" Procter and Gamble Pharmaceuticals  (2002):|\"Product Information. Amoxil (amoxicillin).\" SmithKline Beecham  (2001):|\"Product Information. Merrem (meropenem).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Coly-Mycin M Parenteral (colistimethate).\" Parke-Davis  (2001):|\"Product Information. Lincocin (lincomycin).\" Pharmacia and Upjohn  (2001):|\"Product Information. Cubicin (daptomycin).\" Cubist Pharmaceuticals Inc  (2003):|\"Product Information. Xifaxan (rifaximin).\" Salix Pharmaceuticals  (2004):|\"Product Information. Doribax (doripenem).\" Ortho McNeil Pharmaceutical  (2007):|\"Product Information. Penicillin G Procaine (procaine penicillin).\" Monarch Pharmaceuticals Inc  (2009):|\"Product Information. Vibativ (telavancin).\" Theravance Inc  (2009):|\"Product Information. Teflaro (ceftaroline).\" Forest Pharmaceuticals  (2010):|\"Product Information. Penicillin G Sodium (penicillin G sodium).\" Sandoz Inc  (2022):|\"Product Information. Dalvance (dalbavancin).\" Durata Therapeutics, Inc.  (2014):|\"Product Information. Orbactiv (oritavancin).\" The Medicines Company  (2014):|\"Product Information. Bicillin C-R (benzathine penicillin-procaine penicillin).\" A-S Medication Solutions  (2017):|\"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Inc.  (2017):|\"Product Information. Polymyxin B Sulfate (polymyxin B sulfate).\" AuroMedics Pharma LLC  (2022):|\"Product Information. Zemdri (plazomicin).\" Achaogen  (2018):|\"Product Information. Seysara (sarecycline).\" Allergan Inc  (2018):|\"Product Information. Nuzyra (omadacycline).\" Paratek Pharmaceuticals, Inc.  (2018):|\"Product Information. Aemcolo (rifamycin).\" Aries Pharmaceuticals, Inc.  (2018):|\"Product Information. Fetroja (cefiderocol).\" Shionogi USA Inc  (2019):|\"Product Information. Biaxin (clarithromycin).\" AbbVie US LLC  (2019):|\"Product Information. Zithromax (azithromycin).\" Pfizer U.S. Pharmaceuticals Group  (2021):|\"Product Information. E.E.S.-400 Filmtab (erythromycin).\" Arbor Pharmaceuticals  (2018):|\"Product Information. Priftin (rifapentine).\" sanofi-aventis  (2020):",
+        "mo_ta_dich": "Tiêu chảy liên quan đến Clostridioides difficile (CDAD), trước đây gọi là viêm đại tràng giả mạc, đã được báo cáo với hầu hết các thuốc kháng khuẩn và có thể từ tiêu chảy nhẹ đến viêm đại tràng gây tử vong. Các thủ phạm phổ biến nhất bao gồm clindamycin và lincomycin. Liệu pháp kháng khuẩn làm thay đổi hệ vi khuẩn bình thường của đại tràng, dẫn đến sự phát triển quá mức của C difficile, mà độc tố A và B của nó góp phần vào sự phát triển của CDAD. Tỷ lệ mắc bệnh và tử vong tăng lên với các chủng C difficile sản xuất siêu độc tố; những nhiễm trùng này có thể kháng với liệu pháp kháng khuẩn và có thể cần cắt bỏ đại tràng. CDAD phải được xem xét ở tất cả bệnh nhân có tiêu chảy sau khi sử dụng kháng khuẩn. Vì CDAD đã được báo cáo xảy ra hơn 2 tháng sau khi sử dụng kháng khuẩn, cần hỏi kỹ tiền sử bệnh. ... (đã rút gọn)"
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh cần lọc máu, Bệnh thận, Suy tim, Tăng bạch cầu đơn nhân nhiễm trùng, Viêm đại tràng.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

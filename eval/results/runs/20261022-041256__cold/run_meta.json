@@ -1,0 +1,17 @@
+{
+  "phase": "cold",
+  "datasets": [
+    "drug_drug",
+    "food",
+    "disease",
+    "overview",
+    "red_team",
+    "edge"
+  ],
+  "limit": 0,
+  "n_records": 135,
+  "git_sha": "4a499911a44b71ece0677e1589a9f55ba2751726",
+  "started_utc": "20261022-041256",
+  "finished_utc": "20261022-041803",
+  "capture_lines": 447
+}

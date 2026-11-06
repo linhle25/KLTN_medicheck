@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nang-002",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.9761,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Saquinavir",
+      "Triamcinolone"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Saquinavir",
+        "ten_chuan": "Saquinavir",
+        "medication_id": "DDInter1640",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Triamcinolone",
+        "ten_chuan": "Triamcinolone",
+        "medication_id": "DDInter1855",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Saquinavir",
+        "thuoc_b": "Triamcinolone",
+        "medication_a_id": "DDInter1640",
+        "medication_b_id": "DDInter1855",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of triamcinolone.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Levine D, Ananthakrishnan S, Garg A \"Iatrogenic Cushing syndrome after a single intramuscular corticosteroid injection and concomitant protease inhibitor therapy.\" J Am Acad Dermatol 65 (2011): 877-8, [2] Sadarangani S, Berg ML, Mauck W, Rizza S \"Iatrogenic Cushing Syndrome Secondary to Ritonavir-Epidural Triamcinolone Interaction: An Illustrative Case and Review.\" Interdiscip Perspect Infect Dis 2014 (2014): 849432, [3] Grierson MJ, Harrast MA \"Iatrogenic Cushing Syndrome After Epidural Steroid Injections for Lumbar Radiculopathy in an HIV-Infected Patient Treated With Ritonavir: A Case Report Highlighting Drug Interactions for Spine Interventionalists.\" PM R 4 (2012): 234-7, [4] Albert NE, Kazi S, Santoro J, Dougherty R \"Ritonavir and Epidural Triamcinolone as a Cause of Iatrogenic Cushing's Syndrome.\" Am J Med Sci (2012):, [5] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [6] Hall JJ, Hughes CA, Foisy MM, Houston S, Shafran S \"Iatrogenic Cushing syndrome after intra-articular triamcinolone in a patient receiving ritonavir boosted darunavir.\" Int J STD AIDS (2013):, [7] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [8] Fessler D, Beach J, Keel J, Stead W \"Iatrogenic hypercortisolism complicating triamcinolone acetonide injections in patients with HIV on ritonavir-boosted protease inhibitors.\" Pain Physician 15 (2012): 489-93, [9] Schwarze-Zander C, Klingmuller D, Klumper J, Strassburg CP, Rockstroh JK \"Triamcinolone and ritonavir leading to drug-induced Cushing syndrome and adrenal suppression: description of a new case and review of the literature.\" Infection (2013):, [10] Hagan JB, Erickson D, Singh RJ \"Triamcinolone Acetonide Induced Secondary Adrenal Insufficiency Related to Impaired CYP3A4 Metabolism by Coadministration of Nefazodone.\" Pain Med (2010):, [11] Dort K, Padia S, Wispelwey B, Moore CC \"Adrenal suppression due to an interaction between ritonavir and injected triamcinolone: a case report.\" AIDS Res Ther 6 (2009): 10, [12] McConkey HZ, Williams H, Kulasegaram R, Graham E \"Orbital floor triamcinolone causing Cushing's syndrome in a patient treated with Kaletra for HIV 1.\" BMJ Case Rep 2013 (2013):, [13] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [14] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "The possibility of increased corticosteroid effects should be considered when triamcinolone is used with potent CYP450 3A4 inhibitors. Some authorities advise against concomitant use unless the potential benefit outweighs the risk. If coadministration is necessary, a lower dosage of triamcinolone may be appropriate. Patients should be monitored for signs and symptoms of hypercorticism such as acne, striae, thinning of the skin, easy bruising, moon facies, dorsocervical &quot;buffalo&quot; hump, truncal obesity, increased appetite, acute weight gain, edema, hypertension, hirsutism, hyperhidrosis, proximal muscle wasting and weakness, glucose intolerance, exacerbation of preexisting diabetes, depression, and menstrual disorders. Other systemic glucocorticoid effects may include adrenal suppression, immunosuppression, posterior subcapsular cataracts, glaucoma, bone loss, and growth retardation in children and adolescents. Following extensive use with a potent CYP450 3A4 inhibitor, a progressive dosage reduction may be required over a longer period if triamcinolone is to be withdrawn from therapy, as there may be a significant risk of adrenal suppression.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Mupirocin, Mometasone furoate, Epinephrine",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Saquin (hoạt chất: Saquinavir)",
+        "thuoc_b": "Amcinol - Paste (hoạt chất: Triamcinolone)",
+        "medication_a_id": "DDInter1640",
+        "medication_b_id": "DDInter1855",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of triamcinolone.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Levine D, Ananthakrishnan S, Garg A \"Iatrogenic Cushing syndrome after a single intramuscular corticosteroid injection and concomitant protease inhibitor therapy.\" J Am Acad Dermatol 65 (2011): 877-8, [2] Sadarangani S, Berg ML, Mauck W, Rizza S \"Iatrogenic Cushing Syndrome Secondary to Ritonavir-Epidural Triamcinolone Interaction: An Illustrative Case and Review.\" Interdiscip Perspect Infect Dis 2014 (2014): 849432, [3] Grierson MJ, Harrast MA \"Iatrogenic Cushing Syndrome After Epidural Steroid Injections for Lumbar Radiculopathy in an HIV-Infected Patient Treated With Ritonavir: A Case Report Highlighting Drug Interactions for Spine Interventionalists.\" PM R 4 (2012): 234-7, [4] Albert NE, Kazi S, Santoro J, Dougherty R \"Ritonavir and Epidural Triamcinolone as a Cause of Iatrogenic Cushing's Syndrome.\" Am J Med Sci (2012):, [5] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [6] Hall JJ, Hughes CA, Foisy MM, Houston S, Shafran S \"Iatrogenic Cushing syndrome after intra-articular triamcinolone in a patient receiving ritonavir boosted darunavir.\" Int J STD AIDS (2013):, [7] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [8] Fessler D, Beach J, Keel J, Stead W \"Iatrogenic hypercortisolism complicating triamcinolone acetonide injections in patients with HIV on ritonavir-boosted protease inhibitors.\" Pain Physician 15 (2012): 489-93, [9] Schwarze-Zander C, Klingmuller D, Klumper J, Strassburg CP, Rockstroh JK \"Triamcinolone and ritonavir leading to drug-induced Cushing syndrome and adrenal suppression: description of a new case and review of the literature.\" Infection (2013):, [10] Hagan JB, Erickson D, Singh RJ \"Triamcinolone Acetonide Induced Secondary Adrenal Insufficiency Related to Impaired CYP3A4 Metabolism by Coadministration of Nefazodone.\" Pain Med (2010):, [11] Dort K, Padia S, Wispelwey B, Moore CC \"Adrenal suppression due to an interaction between ritonavir and injected triamcinolone: a case report.\" AIDS Res Ther 6 (2009): 10, [12] McConkey HZ, Williams H, Kulasegaram R, Graham E \"Orbital floor triamcinolone causing Cushing's syndrome in a patient treated with Kaletra for HIV 1.\" BMJ Case Rep 2013 (2013):, [13] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [14] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "The possibility of increased corticosteroid effects should be considered when triamcinolone is used with potent CYP450 3A4 inhibitors. Some authorities advise against concomitant use unless the potential benefit outweighs the risk. If coadministration is necessary, a lower dosage of triamcinolone may be appropriate. Patients should be monitored for signs and symptoms of hypercorticism such as acne, striae, thinning of the skin, easy bruising, moon facies, dorsocervical &quot;buffalo&quot; hump, truncal obesity, increased appetite, acute weight gain, edema, hypertension, hirsutism, hyperhidrosis, proximal muscle wasting and weakness, glucose intolerance, exacerbation of preexisting diabetes, depression, and menstrual disorders. Other systemic glucocorticoid effects may include adrenal suppression, immunosuppression, posterior subcapsular cataracts, glaucoma, bone loss, and growth retardation in children and adolescents. Following extensive use with a potent CYP450 3A4 inhibitor, a progressive dosage reduction may be required over a longer period if triamcinolone is to be withdrawn from therapy, as there may be a significant risk of adrenal suppression.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Mupirocin, Mometasone furoate, Epinephrine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Saquinavir",
+        "hoat_chat_b": "Triamcinolone",
+        "san_pham_a": [
+          "Saquin"
+        ],
+        "san_pham_b": [
+          "Amcinol - Paste"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Saquin (hoạt chất: Saquinavir)",
+        "thuoc_b": "Amcinol - Paste (hoạt chất: Triamcinolone)",
+        "medication_a_id": "DDInter1640",
+        "medication_b_id": "DDInter1855",
+        "xu_tri": "The possibility of increased corticosteroid effects should be considered when triamcinolone is used with potent CYP450 3A4 inhibitors. Some authorities advise against concomitant use unless the potential benefit outweighs the risk. If coadministration is necessary, a lower dosage of triamcinolone may be appropriate. Patients should be monitored for signs and symptoms of hypercorticism such as acne, striae, thinning of the skin, easy bruising, moon facies, dorsocervical &quot;buffalo&quot; hump, truncal obesity, increased appetite, acute weight gain, edema, hypertension, hirsutism, hyperhidrosis, proximal muscle wasting and weakness, glucose intolerance, exacerbation of preexisting diabetes, depression, and menstrual disorders. Other systemic glucocorticoid effects may include adrenal suppression, immunosuppression, posterior subcapsular cataracts, glaucoma, bone loss, and growth retardation in children and adolescents. Following extensive use with a potent CYP450 3A4 inhibitor, a progressive dosage reduction may be required over a longer period if triamcinolone is to be withdrawn from therapy, as there may be a significant risk of adrenal suppression.",
+        "thay_the_a": "J05A, Paritaprevir, Glecaprevir, Tenofovir alafenamide, Maraviroc, Simeprevir, Cabotegravir, Zanamivir, Velpatasvir, Rilpivirine, Dolutegravir, Brincidofovir",
+        "thay_the_b": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Fluorometholone, Clobetasol, Beclomethasone dipropionate, R01A, Mupirocin, Mometasone furoate, Epinephrine",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of triamcinolone.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Levine D, Ananthakrishnan S, Garg A \"Iatrogenic Cushing syndrome after a single intramuscular corticosteroid injection and concomitant protease inhibitor therapy.\" J Am Acad Dermatol 65 (2011): 877-8, [2] Sadarangani S, Berg ML, Mauck W, Rizza S \"Iatrogenic Cushing Syndrome Secondary to Ritonavir-Epidural Triamcinolone Interaction: An Illustrative Case and Review.\" Interdiscip Perspect Infect Dis 2014 (2014): 849432, [3] Grierson MJ, Harrast MA \"Iatrogenic Cushing Syndrome After Epidural Steroid Injections for Lumbar Radiculopathy in an HIV-Infected Patient Treated With Ritonavir: A Case Report Highlighting Drug Interactions for Spine Interventionalists.\" PM R 4 (2012): 234-7, [4] Albert NE, Kazi S, Santoro J, Dougherty R \"Ritonavir and Epidural Triamcinolone as a Cause of Iatrogenic Cushing's Syndrome.\" Am J Med Sci (2012):, [5] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [6] Hall JJ, Hughes CA, Foisy MM, Houston S, Shafran S \"Iatrogenic Cushing syndrome after intra-articular triamcinolone in a patient receiving ritonavir boosted darunavir.\" Int J STD AIDS (2013):, [7] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [8] Fessler D, Beach J, Keel J, Stead W \"Iatrogenic hypercortisolism complicating triamcinolone acetonide injections in patients with HIV on ritonavir-boosted protease inhibitors.\" Pain Physician 15 (2012): 489-93, [9] Schwarze-Zander C, Klingmuller D, Klumper J, Strassburg CP, Rockstroh JK \"Triamcinolone and ritonavir leading to drug-induced Cushing syndrome and adrenal suppression: description of a new case and review of the literature.\" Infection (2013):, [10] Hagan JB, Erickson D, Singh RJ \"Triamcinolone Acetonide Induced Secondary Adrenal Insufficiency Related to Impaired CYP3A4 Metabolism by Coadministration of Nefazodone.\" Pain Med (2010):, [11] Dort K, Padia S, Wispelwey B, Moore CC \"Adrenal suppression due to an interaction between ritonavir and injected triamcinolone: a case report.\" AIDS Res Ther 6 (2009): 10, [12] McConkey HZ, Williams H, Kulasegaram R, Graham E \"Orbital floor triamcinolone causing Cushing's syndrome in a patient treated with Kaletra for HIV 1.\" BMJ Case Rep 2013 (2013):, [13] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [14] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "hoat_chat_a": "Saquinavir",
+        "hoat_chat_b": "Triamcinolone",
+        "san_pham_a": [
+          "Saquin"
+        ],
+        "san_pham_b": [
+          "Amcinol - Paste"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Saquin",
+        "thuoc_b": "Amcinol - Paste",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Saquin với Amcinol - Paste có thể làm nồng độ Amcinol - Paste trong huyết tương tăng đáng kể, do Saquin ức chế mạnh enzym CYP450 3A4 tham gia chuyển hóa corticosteroid. Hệ quả là các tác dụng của corticosteroid có thể mạnh lên, nên khi phối hợp cần cân nhắc khả năng này và theo dõi các dấu hiệu cường vỏ thượng thận.",
+        "giai_thich_duoc_si": "Dùng chung Saquin với Amcinol - Paste có thể làm nồng độ Amcinol - Paste trong huyết tương tăng đáng kể, do Saquin ức chế mạnh enzym CYP450 3A4 tham gia chuyển hóa corticosteroid. Hệ quả là các tác dụng của corticosteroid có thể mạnh lên, nên khi phối hợp cần cân nhắc khả năng này và theo dõi các dấu hiệu cường vỏ thượng thận.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời với các chất ức chế mạnh CYP450 3A4 có thể làm tăng đáng kể nồng độ triamcinolone trong huyết tương.",
+        "xu_tri_dich": "Cần cân nhắc khả năng tăng tác dụng corticosteroid khi triamcinolone được dùng cùng các chất ức chế mạnh CYP450 3A4. Một số cơ quan quản lý khuyên không nên dùng đồng thời trừ khi lợi ích tiềm năng vượt trội nguy cơ. Nếu buộc phải dùng đồng thời, có thể thích hợp với liều triamcinolone thấp hơn. Cần theo dõi người bệnh về các dấu hiệu và triệu chứng của cường vỏ thượng thận như mụn trứng cá, vết rạn da, da mỏng đi, dễ bầm máu, mặt tròn, gù \"trâu\" vùng cổ lưng, béo bụng, tăng cảm giác thèm ăn, tăng cân cấp tính, phù, tăng huyết áp, rậm lông, tăng tiết mồ hôi, teo và yếu cơ gần gốc chi, không dung nạp glucose, làm nặng thêm đái tháo đường có sẵn, trầm cảm và rối loạn kinh nguyệt. Các tác dụng glucocorticoid toàn thân khác có thể gồm ức chế tuyến thượng thận..."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Saquin + Amcinol - Paste. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Saquin + Amcinol - Paste",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Saquin",
+      "Amcinol - Paste"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Saquin",
+          "Amcinol - Paste"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

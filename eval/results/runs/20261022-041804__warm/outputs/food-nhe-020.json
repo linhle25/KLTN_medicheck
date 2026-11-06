@@ -1,0 +1,72 @@
+{
+  "case_id": "food-nhe-020",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0339,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Estradiol"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Estradiol",
+        "ten_chuan": "Estradiol",
+        "medication_id": "DDInter679",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Etradio"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Etradio"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Etradio"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "nhe",
+        "giai_thich": "Uống Etradio chung với nước ép bưởi có thể làm tăng lượng thuốc được cơ thể hấp thu vào máu. Lý do là một số chất có trong bưởi ức chế CYP450 3A4, một loại enzyme trong thành ruột thường phân hủy bớt thuốc trước khi nó vào được tuần hoàn, nên khi enzyme này bị ức chế thì lượng thuốc còn lại để hấp thu sẽ nhiều hơn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Weber A, Jager R, Borner A, et al. \"Can grapefruit juice influence ethinyl estradiol bioavailability?\" Contraception 53 (1996):  41-7|Schubert W, Eriksson U, Edgar B, Cullberg G, Hedner T \"Flavonoids in grapefruit juice inhibit the in vitro hepatic metabolism of 17B-estradiol.\" Eur J Drug Metab Pharmacokinet 20 (1995):  219-24",
+        "mo_ta_dich": "Dùng đồng thời với nước ép bưởi có thể làm tăng sinh khả dụng của estrogen đường uống. Cơ chế được đề xuất là ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột do một số hợp chất có trong bưởi gây ra.",
+        "xu_tri_dich": "Dùng đồng thời với nước ép bưởi có thể làm tăng sinh khả dụng của estrogen đường uống. Cơ chế được đề xuất là ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột do một số hợp chất có trong bưởi gây ra. Trong một nghiên cứu nhỏ, ngẫu nhiên, chéo, dùng ethinyl estradiol cùng nước ép bưởi (so với trà thảo mộc) làm tăng nồng độ đỉnh trong huyết tương (Cmax) 37% và diện tích dưới đường cong nồng độ-thời gian (AUC) 28%. Dựa trên các phát hiện này, nước ép bưởi khó có khả năng ảnh hưởng đến tính an toàn tổng thể của ethinyl estradiol. Tuy nhiên, như với các tương tác thuốc khác liên quan đến nước ép bưởi, các thay đổi dược động học có thể dao động rất lớn giữa các bệnh nhân. Ngoài ra, ảnh hưởng trên các estrogen khác vẫn ... (đã rút gọn)"
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: nước ép bưởi.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

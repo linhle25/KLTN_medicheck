@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nhe-046",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.4392,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Piperacillin",
+      "Erythromycin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Piperacillin",
+        "ten_chuan": "Piperacillin",
+        "medication_id": "DDInter1474",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Erythromycin",
+        "ten_chuan": "Erythromycin",
+        "medication_id": "DDInter670",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Piperacillin",
+        "thuoc_b": "Erythromycin",
+        "medication_a_id": "DDInter1474",
+        "medication_b_id": "DDInter670",
+        "mo_ta": "Although some in vitro data indicate synergism between macrolide antibiotics and penicillins, other in vitro data indicate antagonism. When these drugs are given together, neither has predictable therapeutic efficacy. Data are available for erythromycin, although theoretically this interaction could occur with any macrolide. Except for monitoring of the effectiveness of antibiotic therapy, no special precautions appear to be necessary.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Strom J \"Penicillin and erythromycin singly and in combination in scarlatina therapy and the interference between them.\" Antibiot Chemother 11 (1961): 694-7, [2] Cohn JR, Jungkind DL, Baker JS \"In vitro antagonism by erythromycin of the bactericidal action of antimicrobial agents against common respiratory pathogens.\" Antimicrob Agents Chemother 18 (1980): 872-6, [3] Penn RL, Ward TT, Steigbigel RT \"Effects of erythromycin in combination with penicillin, ampicillin, or gentamicin on the growth of listeria monocytogenes.\" Antimicrob Agents Chemother 22 (1982): 289-94",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01C, Tazobactam, Sulbactam",
+        "thay_the_b": "J01F, Telithromycin, Lincomycin, D10A, Vitamin A, Isotretinoin, Fluorometholone, Tretinoin, Dapsone, Azelaic acid, Adapalene, S01A, Gatifloxacin, Ganciclovir",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Pidisai Inj. 1g (hoạt chất: Piperacillin)",
+        "thuoc_b": "Acneegel (hoạt chất: Erythromycin)",
+        "medication_a_id": "DDInter1474",
+        "medication_b_id": "DDInter670",
+        "mo_ta": "Although some in vitro data indicate synergism between macrolide antibiotics and penicillins, other in vitro data indicate antagonism. When these drugs are given together, neither has predictable therapeutic efficacy. Data are available for erythromycin, although theoretically this interaction could occur with any macrolide. Except for monitoring of the effectiveness of antibiotic therapy, no special precautions appear to be necessary.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Strom J \"Penicillin and erythromycin singly and in combination in scarlatina therapy and the interference between them.\" Antibiot Chemother 11 (1961): 694-7, [2] Cohn JR, Jungkind DL, Baker JS \"In vitro antagonism by erythromycin of the bactericidal action of antimicrobial agents against common respiratory pathogens.\" Antimicrob Agents Chemother 18 (1980): 872-6, [3] Penn RL, Ward TT, Steigbigel RT \"Effects of erythromycin in combination with penicillin, ampicillin, or gentamicin on the growth of listeria monocytogenes.\" Antimicrob Agents Chemother 22 (1982): 289-94",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01C, Tazobactam, Sulbactam",
+        "thay_the_b": "J01F, Telithromycin, Lincomycin, D10A, Vitamin A, Isotretinoin, Fluorometholone, Tretinoin, Dapsone, Azelaic acid, Adapalene, S01A, Gatifloxacin, Ganciclovir",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Piperacillin",
+        "hoat_chat_b": "Erythromycin",
+        "san_pham_a": [
+          "Pidisai Inj. 1g"
+        ],
+        "san_pham_b": [
+          "Acneegel"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Pidisai Inj. 1g (hoạt chất: Piperacillin)",
+        "thuoc_b": "Acneegel (hoạt chất: Erythromycin)",
+        "medication_a_id": "DDInter1474",
+        "medication_b_id": "DDInter670",
+        "xu_tri": "-",
+        "thay_the_a": "J01C, Tazobactam, Sulbactam",
+        "thay_the_b": "J01F, Telithromycin, Lincomycin, D10A, Vitamin A, Isotretinoin, Fluorometholone, Tretinoin, Dapsone, Azelaic acid, Adapalene, S01A, Gatifloxacin, Ganciclovir",
+        "mo_ta": "Although some in vitro data indicate synergism between macrolide antibiotics and penicillins, other in vitro data indicate antagonism. When these drugs are given together, neither has predictable therapeutic efficacy. Data are available for erythromycin, although theoretically this interaction could occur with any macrolide. Except for monitoring of the effectiveness of antibiotic therapy, no special precautions appear to be necessary.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Strom J \"Penicillin and erythromycin singly and in combination in scarlatina therapy and the interference between them.\" Antibiot Chemother 11 (1961): 694-7, [2] Cohn JR, Jungkind DL, Baker JS \"In vitro antagonism by erythromycin of the bactericidal action of antimicrobial agents against common respiratory pathogens.\" Antimicrob Agents Chemother 18 (1980): 872-6, [3] Penn RL, Ward TT, Steigbigel RT \"Effects of erythromycin in combination with penicillin, ampicillin, or gentamicin on the growth of listeria monocytogenes.\" Antimicrob Agents Chemother 22 (1982): 289-94",
+        "hoat_chat_a": "Piperacillin",
+        "hoat_chat_b": "Erythromycin",
+        "san_pham_a": [
+          "Pidisai Inj. 1g"
+        ],
+        "san_pham_b": [
+          "Acneegel"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Pidisai Inj. 1g",
+        "thuoc_b": "Acneegel",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Pidisai Inj. 1g và Acneegel có thể khiến hiệu quả điều trị của cả hai không còn ổn định như khi dùng riêng, vì dữ liệu thử nghiệm trong phòng thí nghiệm cho kết quả trái ngược nhau: có dữ liệu cho thấy hai loại kháng sinh này hỗ trợ nhau, nhưng dữ liệu khác lại cho thấy chúng chống lại tác dụng của nhau. Khi đó, không thể đoán trước được hiệu quả điều trị của từng thuốc. Dữ liệu hiện có ghi nhận cụ thể với erythromycin, và về mặt lý thuyết tương tác này có thể xảy ra với bất kỳ kháng sinh nhóm macrolide nào. Ngoài việc theo dõi xem liệu pháp kháng sinh có còn hiệu quả hay không, dường như không cần biện pháp phòng ngừa đặc biệt nào khác.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Mặc dù một số dữ liệu in vitro cho thấy có tác dụng hiệp lực giữa kháng sinh nhóm macrolide và penicillin, dữ liệu in vitro khác lại cho thấy có tác dụng đối kháng. Khi các thuốc này được dùng cùng nhau, không thuốc nào có hiệu quả điều trị có thể dự đoán trước. Dữ liệu có sẵn đối với erythromycin, mặc dù về mặt lý thuyết tương tác này có thể xảy ra với bất kỳ macrolide nào. Ngoại trừ việc theo dõi hiệu quả của liệu pháp kháng sinh, dường như không cần biện pháp phòng ngừa đặc biệt nào.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp tương tác thuốc-thuốc, ở mức nhẹ. Cặp đáng chú ý là Pidisai Inj. 1g và Acneegel. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Pidisai Inj. 1g và Acneegel",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Pidisai Inj. 1g",
+      "Acneegel"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Pidisai Inj. 1g",
+          "Acneegel"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

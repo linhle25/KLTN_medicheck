@@ -1,0 +1,144 @@
+{
+  "case_id": "rt-sokieu-007",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.1267,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Naltrexone",
+      "Alectinib"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Naltrexone",
+        "ten_chuan": "Naltrexone",
+        "medication_id": "DDInter1263",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Alectinib",
+        "ten_chuan": "Alectinib",
+        "medication_id": "DDInter39",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Naltrexone",
+        "thuoc_b": "Alectinib",
+        "medication_a_id": "DDInter1263",
+        "medication_b_id": "DDInter39",
+        "mo_ta": "Coadministration of naltrexone with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Naltrexone, especially in larger than recommended doses (more than 50 mg/day), has been associated with hepatocellular injury, hepatitis, and elevations in liver transaminases and bilirubin. Other potential causative or contributory etiologies identified include preexisting alcoholic liver disease, hepatitis B and/or C infection, and concomitant usage of other hepatotoxic drugs.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. ReVia (naltrexone).\" DuPont Pharmaceuticals, Wilmington, DE.",
+        "xu_tri": "The use of naltrexone with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; antituberculous agents; azole antifungal agents; ACE inhibitors; cyclosporine (high dosages); disulfiram; endothelin receptor antagonists; interferons; ketolide and macrolide antibiotics; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice). Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Periodic monitoring of hepatic function is advisable.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02A, Oxymorphone, Oxycodone, Methadone, Pentazocine, Buprenorphine, Oliceridine, Morphine, Butorphanol, Fentanyl, Ibuprofen, Codeine",
+        "thay_the_b": "L01E, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Pacritinib, Avapritinib, Selumetinib, Vandetanib, Ibrutinib, Tivozanib, Zanubrutinib",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Abernil 50mg (hoạt chất: Naltrexone)",
+        "thuoc_b": "Alecensa (hoạt chất: Alectinib)",
+        "medication_a_id": "DDInter1263",
+        "medication_b_id": "DDInter39",
+        "mo_ta": "Coadministration of naltrexone with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Naltrexone, especially in larger than recommended doses (more than 50 mg/day), has been associated with hepatocellular injury, hepatitis, and elevations in liver transaminases and bilirubin. Other potential causative or contributory etiologies identified include preexisting alcoholic liver disease, hepatitis B and/or C infection, and concomitant usage of other hepatotoxic drugs.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. ReVia (naltrexone).\" DuPont Pharmaceuticals, Wilmington, DE.",
+        "xu_tri": "The use of naltrexone with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; antituberculous agents; azole antifungal agents; ACE inhibitors; cyclosporine (high dosages); disulfiram; endothelin receptor antagonists; interferons; ketolide and macrolide antibiotics; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice). Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Periodic monitoring of hepatic function is advisable.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02A, Oxymorphone, Oxycodone, Methadone, Pentazocine, Buprenorphine, Oliceridine, Morphine, Butorphanol, Fentanyl, Ibuprofen, Codeine",
+        "thay_the_b": "L01E, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Pacritinib, Avapritinib, Selumetinib, Vandetanib, Ibrutinib, Tivozanib, Zanubrutinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Naltrexone",
+        "hoat_chat_b": "Alectinib",
+        "san_pham_a": [
+          "Abernil 50mg"
+        ],
+        "san_pham_b": [
+          "Alecensa"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Abernil 50mg (hoạt chất: Naltrexone)",
+        "thuoc_b": "Alecensa (hoạt chất: Alectinib)",
+        "medication_a_id": "DDInter1263",
+        "medication_b_id": "DDInter39",
+        "xu_tri": "The use of naltrexone with other potentially hepatotoxic agents should be avoided whenever possible (e.g., acetaminophen; alcohol; androgens and anabolic steroids; antituberculous agents; azole antifungal agents; ACE inhibitors; cyclosporine (high dosages); disulfiram; endothelin receptor antagonists; interferons; ketolide and macrolide antibiotics; kinase inhibitors; minocycline; nonsteroidal anti-inflammatory agents; nucleoside reverse transcriptase inhibitors; proteasome inhibitors; retinoids; sulfonamides; tamoxifen; thiazolidinediones; tolvaptan; vincristine; zileuton; anticonvulsants such as carbamazepine, hydantoins, felbamate, and valproic acid; lipid-lowering medications such as fenofibrate, lomitapide, mipomersen, niacin, and statins; herbals and nutritional supplements such as black cohosh, chaparral, comfrey, DHEA, kava, pennyroyal oil, and red yeast rice). Patients should be advised to seek medical attention if they experience potential signs and symptoms of hepatotoxicity such as fever, rash, itching, anorexia, nausea, vomiting, fatigue, malaise, right upper quadrant pain, dark urine, pale stools, and jaundice. Periodic monitoring of hepatic function is advisable.",
+        "thay_the_a": "N02A, Oxymorphone, Oxycodone, Methadone, Pentazocine, Buprenorphine, Oliceridine, Morphine, Butorphanol, Fentanyl, Ibuprofen, Codeine",
+        "thay_the_b": "L01E, Dabrafenib, Asciminib, Acalabrutinib, Dacomitinib, Pacritinib, Avapritinib, Selumetinib, Vandetanib, Ibrutinib, Tivozanib, Zanubrutinib",
+        "mo_ta": "Coadministration of naltrexone with other agents known to induce hepatotoxicity may potentiate the risk of liver injury. Naltrexone, especially in larger than recommended doses (more than 50 mg/day), has been associated with hepatocellular injury, hepatitis, and elevations in liver transaminases and bilirubin. Other potential causative or contributory etiologies identified include preexisting alcoholic liver disease, hepatitis B and/or C infection, and concomitant usage of other hepatotoxic drugs.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. ReVia (naltrexone).\" DuPont Pharmaceuticals, Wilmington, DE.",
+        "hoat_chat_a": "Naltrexone",
+        "hoat_chat_b": "Alectinib",
+        "san_pham_a": [
+          "Abernil 50mg"
+        ],
+        "san_pham_b": [
+          "Alecensa"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Abernil 50mg",
+        "thuoc_b": "Alecensa",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Abernil 50mg và Alecensa có thể làm tăng nguy cơ tổn thương gan, vì cả hai đều là những thuốc có khả năng gây độc cho gan. Bản thân Abernil 50mg, nhất là khi dùng với liều cao hơn khuyến cáo, đã từng liên quan đến tổn thương tế bào gan, viêm gan và tăng men gan, tăng bilirubin. Nguy cơ này còn cao hơn khi người bệnh có sẵn bệnh gan do rượu, nhiễm viêm gan B và/hoặc C, hoặc đang dùng kèm các thuốc khác cũng gây độc cho gan. [ẢNH] Người bệnh cần biết rằng Abernil 50mg và Alecensa khi dùng cùng nhau có thể khiến gan bị ảnh hưởng nhiều hơn. Lý do là Abernil 50mg vốn đã có thể gây tổn thương gan, viêm gan và làm tăng men gan, tăng bilirubin, nhất là khi dùng với liều cao hơn khuyến cáo. Nguy cơ này càng tăng nếu người bệnh có bệnh gan do rượu từ trước, đang nhiễm viêm gan B và/hoặc C, hoặc đang dùng thêm thuốc khác cũng gây hại cho gan. Vì vậy, hãy báo cho bác sĩ biết nếu bạn có các tình trạng trên, và để bác sĩ theo dõi men gan cho bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời naltrexone với các thuốc khác đã biết có khả năng gây độc cho gan có thể làm tăng nguy cơ tổn thương gan. Naltrexone, đặc biệt ở liều cao hơn khuyến cáo (trên 50 mg/ngày), có liên quan đến tổn thương tế bào gan, viêm gan và tăng men gan, tăng bilirubin. Các nguyên nhân tiềm tàng hoặc góp phần khác được xác định bao gồm bệnh gan do rượu có từ trước, nhiễm viêm gan B và/hoặc C, và việc dùng đồng thời các thuốc gây độc cho gan khác.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp tương tác thuốc-thuốc, ở mức trung bình. Cặp đáng chú ý nhất là Abernil 50mg và Alecensa. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Abernil 50mg và Alecensa",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Abernil 50mg",
+      "Alecensa"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Abernil 50mg",
+          "Alecensa"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

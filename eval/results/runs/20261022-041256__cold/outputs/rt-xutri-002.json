@@ -1,0 +1,143 @@
+{
+  "case_id": "rt-xutri-002",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 3.1565,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cefoxitin",
+      "Chloramphenicol"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cefoxitin",
+        "ten_chuan": "Cefoxitin",
+        "medication_id": "DDInter325",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Chloramphenicol",
+        "ten_chuan": "Chloramphenicol",
+        "medication_id": "DDInter351",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Cefoxitin",
+        "thuoc_b": "Chloramphenicol",
+        "medication_a_id": "DDInter325",
+        "medication_b_id": "DDInter351",
+        "mo_ta": "Limited, primarily in vitro, data suggest that chloramphenicol may antagonize the bactericidal activity of cephalosporins against certain clinical isolates of gram-negative rods, group B streptococci, and Staphylococcus aureus. This antagonism appears to occur against strains for which chloramphenicol is bacteriostatic, and has been demonstrated with cefoperazone, cefotaxime, and ceftriaxone. The proposed mechanism is inhibition of protein synthesis by chloramphenicol, resulting in less protein substrate for cephalosporins to act on as inhibitors of bacterial cell wall synthesis.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Brown TH, Alford RH \"Antagonism by chloramphenicol of broad-spectrum beta-lactam antibiotics against Klebsiella pneumoniae.\" Antimicrob Agents Chemother 25 (1984): 405-7, [2] Asmar BI, Prainito M, Dajani AS \"Antagonistic effect of chloramphenicol in combination with cefotaxime or ceftriaxone.\" Antimicrob Agents Chemother 32 (1988): 1375-8, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Brown TH, Alford RH \"Failure of chloramphenicol and cefotaxime therapy in Klebsiella meningitis: possible role of antibiotic antagonism.\" South Med J 78 (1985): 869-71, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [7] French GL, Ling TK, Davies DP, Leung DT \"Antagonism of ceftazidime by chloramphenicol in vitro and in vivo during treatment of gram negative meningitis.\" Br Med J (Clin Res Ed) 291 (1985): 636-7, [8] \"Product Information. Lorabid (loracarbef).\" Lilly, Eli and Company, Indianapolis, IN.",
+        "xu_tri": "The manufacturers recommend to avoid concomitant use . However, if concurrent administration cannot be avoided, the possibility of antagonism should be considered, and patients should be monitored for altered therapeutic effect.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01D, Imipenem, Aztreonam, Meropenem, Ertapenem, Doripenem",
+        "thay_the_b": "D06A, Tetracycline, Mupirocin, Rifamycin, Oxytetracycline, Demeclocycline, Rifaximin, S02A, Tetracycline, Rifamycin, Miconazole, Chlorhexidine, Ofloxacin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Bifotin 1g (hoạt chất: Cefoxitin)",
+        "thuoc_b": "Agicloram (hoạt chất: Chloramphenicol)",
+        "medication_a_id": "DDInter325",
+        "medication_b_id": "DDInter351",
+        "mo_ta": "Limited, primarily in vitro, data suggest that chloramphenicol may antagonize the bactericidal activity of cephalosporins against certain clinical isolates of gram-negative rods, group B streptococci, and Staphylococcus aureus. This antagonism appears to occur against strains for which chloramphenicol is bacteriostatic, and has been demonstrated with cefoperazone, cefotaxime, and ceftriaxone. The proposed mechanism is inhibition of protein synthesis by chloramphenicol, resulting in less protein substrate for cephalosporins to act on as inhibitors of bacterial cell wall synthesis.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Brown TH, Alford RH \"Antagonism by chloramphenicol of broad-spectrum beta-lactam antibiotics against Klebsiella pneumoniae.\" Antimicrob Agents Chemother 25 (1984): 405-7, [2] Asmar BI, Prainito M, Dajani AS \"Antagonistic effect of chloramphenicol in combination with cefotaxime or ceftriaxone.\" Antimicrob Agents Chemother 32 (1988): 1375-8, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Brown TH, Alford RH \"Failure of chloramphenicol and cefotaxime therapy in Klebsiella meningitis: possible role of antibiotic antagonism.\" South Med J 78 (1985): 869-71, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [7] French GL, Ling TK, Davies DP, Leung DT \"Antagonism of ceftazidime by chloramphenicol in vitro and in vivo during treatment of gram negative meningitis.\" Br Med J (Clin Res Ed) 291 (1985): 636-7, [8] \"Product Information. Lorabid (loracarbef).\" Lilly, Eli and Company, Indianapolis, IN.",
+        "xu_tri": "The manufacturers recommend to avoid concomitant use . However, if concurrent administration cannot be avoided, the possibility of antagonism should be considered, and patients should be monitored for altered therapeutic effect.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "J01D, Imipenem, Aztreonam, Meropenem, Ertapenem, Doripenem",
+        "thay_the_b": "D06A, Tetracycline, Mupirocin, Rifamycin, Oxytetracycline, Demeclocycline, Rifaximin, S02A, Tetracycline, Rifamycin, Miconazole, Chlorhexidine, Ofloxacin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Cefoxitin",
+        "hoat_chat_b": "Chloramphenicol",
+        "san_pham_a": [
+          "Bifotin 1g"
+        ],
+        "san_pham_b": [
+          "Agicloram"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Bifotin 1g (hoạt chất: Cefoxitin)",
+        "thuoc_b": "Agicloram (hoạt chất: Chloramphenicol)",
+        "medication_a_id": "DDInter325",
+        "medication_b_id": "DDInter351",
+        "xu_tri": "The manufacturers recommend to avoid concomitant use . However, if concurrent administration cannot be avoided, the possibility of antagonism should be considered, and patients should be monitored for altered therapeutic effect.",
+        "thay_the_a": "J01D, Imipenem, Aztreonam, Meropenem, Ertapenem, Doripenem",
+        "thay_the_b": "D06A, Tetracycline, Mupirocin, Rifamycin, Oxytetracycline, Demeclocycline, Rifaximin, S02A, Tetracycline, Rifamycin, Miconazole, Chlorhexidine, Ofloxacin",
+        "mo_ta": "Limited, primarily in vitro, data suggest that chloramphenicol may antagonize the bactericidal activity of cephalosporins against certain clinical isolates of gram-negative rods, group B streptococci, and Staphylococcus aureus. This antagonism appears to occur against strains for which chloramphenicol is bacteriostatic, and has been demonstrated with cefoperazone, cefotaxime, and ceftriaxone. The proposed mechanism is inhibition of protein synthesis by chloramphenicol, resulting in less protein substrate for cephalosporins to act on as inhibitors of bacterial cell wall synthesis.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Brown TH, Alford RH \"Antagonism by chloramphenicol of broad-spectrum beta-lactam antibiotics against Klebsiella pneumoniae.\" Antimicrob Agents Chemother 25 (1984): 405-7, [2] Asmar BI, Prainito M, Dajani AS \"Antagonistic effect of chloramphenicol in combination with cefotaxime or ceftriaxone.\" Antimicrob Agents Chemother 32 (1988): 1375-8, [3] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):, [4] Brown TH, Alford RH \"Failure of chloramphenicol and cefotaxime therapy in Klebsiella meningitis: possible role of antibiotic antagonism.\" South Med J 78 (1985): 869-71, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [7] French GL, Ling TK, Davies DP, Leung DT \"Antagonism of ceftazidime by chloramphenicol in vitro and in vivo during treatment of gram negative meningitis.\" Br Med J (Clin Res Ed) 291 (1985): 636-7, [8] \"Product Information. Lorabid (loracarbef).\" Lilly, Eli and Company, Indianapolis, IN.",
+        "hoat_chat_a": "Cefoxitin",
+        "hoat_chat_b": "Chloramphenicol",
+        "san_pham_a": [
+          "Bifotin 1g"
+        ],
+        "san_pham_b": [
+          "Agicloram"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Bifotin 1g",
+        "thuoc_b": "Agicloram",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Bifotin 1g và Agicloram có thể làm giảm hiệu quả diệt khuẩn của Bifotin 1g. Dữ liệu chủ yếu từ thử nghiệm trong phòng thí nghiệm cho thấy Agicloram có thể đối kháng với hoạt tính diệt khuẩn của nhóm cephalosporin (như Bifotin 1g) trên một số chủng vi khuẩn gram âm, liên cầu nhóm B và tụ cầu vàng. Sự đối kháng này dường như xảy ra với những chủng mà Agicloram chỉ kìm khuẩn, và đã được ghi nhận với một số kháng sinh cephalosporin khác. Cơ chế được đề xuất là Agicloram ức chế tổng hợp protein của vi khuẩn, khiến cho cephalosporin có ít cơ chất protein để tác động hơn trong việc ức chế tổng hợp thành tế bào vi khuẩn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dữ liệu hạn chế, chủ yếu từ in vitro, cho thấy chloramphenicol có thể đối kháng với hoạt tính diệt khuẩn của cephalosporin trên một số chủng phân lập lâm sàng của trực khuẩn gram âm, liên cầu nhóm B và Staphylococcus aureus. Sự đối kháng này dường như xảy ra với các chủng mà chloramphenicol có tác dụng kìm khuẩn, và đã được chứng minh với cefoperazone, cefotaxime và ceftriaxone. Cơ chế được đề xuất là ức chế tổng hợp protein của chloramphenicol, dẫn đến ít cơ chất protein hơn để cephalosporin tác động với vai trò chất ức chế tổng hợp thành tế bào vi khuẩn.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức trung bình. Cặp đáng chú ý nhất là Bifotin 1g và Agicloram. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Bifotin 1g và Agicloram",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Bifotin 1g",
+      "Agicloram"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Bifotin 1g",
+          "Agicloram"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nang-010",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.2656,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Apalutamide",
+      "Nimodipine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Apalutamide",
+        "ten_chuan": "Apalutamide",
+        "medication_id": "DDInter107",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Nimodipine",
+        "ten_chuan": "Nimodipine",
+        "medication_id": "DDInter1295",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Apalutamide",
+        "thuoc_b": "Nimodipine",
+        "medication_a_id": "DDInter107",
+        "medication_b_id": "DDInter1295",
+        "mo_ta": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "xu_tri": "Concomitant use of oral nimodipine with potent CYP450 3A4 inducers is considered contraindicated by some authorities.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L02B, Darolutamide, Tamoxifen, Anastrozole, Letrozole, Toremifene, Fulvestrant, Abarelix, Flutamide, Relugolix, Bicalutamide, Degarelix",
+        "thay_the_b": "C08C, Clevidipine, Mibefradil",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Erleada (hoạt chất: Apalutamide)",
+        "thuoc_b": "Celenal (hoạt chất: Nimodipine)",
+        "medication_a_id": "DDInter107",
+        "medication_b_id": "DDInter1295",
+        "mo_ta": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "xu_tri": "Concomitant use of oral nimodipine with potent CYP450 3A4 inducers is considered contraindicated by some authorities.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L02B, Darolutamide, Tamoxifen, Anastrozole, Letrozole, Toremifene, Fulvestrant, Abarelix, Flutamide, Relugolix, Bicalutamide, Degarelix",
+        "thay_the_b": "C08C, Clevidipine, Mibefradil",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Apalutamide",
+        "hoat_chat_b": "Nimodipine",
+        "san_pham_a": [
+          "Erleada"
+        ],
+        "san_pham_b": [
+          "Celenal"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Erleada (hoạt chất: Apalutamide)",
+        "thuoc_b": "Celenal (hoạt chất: Nimodipine)",
+        "medication_a_id": "DDInter107",
+        "medication_b_id": "DDInter1295",
+        "xu_tri": "Concomitant use of oral nimodipine with potent CYP450 3A4 inducers is considered contraindicated by some authorities.",
+        "thay_the_a": "L02B, Darolutamide, Tamoxifen, Anastrozole, Letrozole, Toremifene, Fulvestrant, Abarelix, Flutamide, Relugolix, Bicalutamide, Degarelix",
+        "thay_the_b": "C08C, Clevidipine, Mibefradil",
+        "mo_ta": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Nimotop (nimodipine).\" Bayer, West Haven, CT., [2] Bahls FH, Ozuna J, Ritchie DE \"Interactions between calcium channel blockers and the anticonvulsants carbamazepine and phenytoin.\" Neurology 41 (1991): 740-2, [3] \"Grapefruit juice interactions with drugs.\" Med Lett Drugs Ther 37 (1995): 73-4, [4] Bailey DG, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit juice felodipine interaction: Effect of naringin and 6',7'-dihydroxybergamottin in humans.\" Clin Pharmacol Ther 64 (1998): 248-56, [5] Bailey DG, Dresser GR, Kreeft JH, Munoz C, Freeman DJ, Bend JR \"Grapefruit-felodipine interaction: Effect of unprocessed fruit and probable active ingredients.\" Clin Pharmacol Ther 68 (2000): 468-77, [6] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10, [7] \"Product Information. Procardia (nifedipine).\" Pfizer US Pharmaceuticals, New York, NY., [8] Takanaga H, Ohnishi A, Maatsuo H, et al. \"Pharmacokinetic analysis of felodipine-grapefruit juice interaction based on an irreversible enzyme inhibition model.\" Br J Clin Pharmacol 49 (2000): 49-58, [9] Yamreudeewong W, Henann NE, Fazio A, Lower DL, Cassidy TG \"Drug-food interactions in clinical practice.\" J Fam Pract 40 (1995): 376-84, [10] Edgar B, Bailey D, Bergstrand R, Johnsson G, Regardh CG \"Acute effects of drinking grapefruit juice on the pharmacokinetics and dynamics of felodipine--and its potential clinical relevance.\" Eur J Clin Pharmacol 42 (1992): 313-7, [11] Bailey DG, Arnold JMO, Spence JD \"Grapefruit juice and drugs - how significant is the interaction.\" Clin Pharmacokinet 26 (1994): 91-8, [12] Josefsson M, Zackrisson AL, Ahlner J \"Effect of grapefruit juice on the pharmacokinetics of amlodipine in healthy volunteers.\" Eur J Clin Pharmacol 51 (1996): 189-93, [13] Fuhr U, Muller-Peltzer H, Kern R, et al. \"Effects of grapefruit juice and smoking on verapamil concentrations in steady state.\" Eur J Clin Pharmacol 58 (2002): 45-53, [14] Gunston GD, Mehta U \"Potentially serious drug interactions with grapefruit juice.\" S Afr Med J 90 (2000): 41, [15] Fuhr U, Maier-Bruggemann A, Blume H, et al. \"Grapefruit juice increases oral nimodipine bioavailability.\" Int J Clin Pharmacol Ther 36 (1998): 126-32, [16] \"Product Information. Sular (nisoldipine).\" Zeneca Pharmaceuticals, Wilmington, DE., [17] Ho PC, Ghose K, Saville D, Wanwimolruk S \"Effect of grapefruit juice on pharmacokinetics and pharmacodynamics of verapamil enantiomers in healthy volunteers.\" Eur J Clin Pharmacol 56 (2000): 693-8, [18] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [19] Bailey DG, Arnold JM, Strong HA, Munoz C, Spence JD \"Effect of grapefruit juice and naringin on nisoldipine pharmacokinetics.\" Clin Pharmacol Ther 54 (1993): 589-94, [20] Bailey DG, Arnold JM, Munoz C, Spence JD \"Grapefruit juice--felodipine interaction: mechanism, predictability, and effect of naringin.\" Clin Pharmacol Ther 53 (1993): 637-42, [21] \"Product Information. Plendil (felodipine).\" Merck & Co, Inc, West Point, PA.",
+        "hoat_chat_a": "Apalutamide",
+        "hoat_chat_b": "Nimodipine",
+        "san_pham_a": [
+          "Erleada"
+        ],
+        "san_pham_b": [
+          "Celenal"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Erleada",
+        "thuoc_b": "Celenal",
+        "muc_do": "nang",
+        "giai_thich": "Erleada khi dùng chung với Celenal có thể làm giảm đáng kể nồng độ của Celenal trong cơ thể, do Erleada là một chất cảm ứng mạnh enzym CYP450 3A4. Một số cơ quan quản lý dược phẩm xem việc phối hợp Celenal đường uống với các chất cảm ứng mạnh CYP450 3A4 là chống chỉ định, vì vậy cần đặc biệt thận trọng khi hai thuốc này được kê cùng lúc.",
+        "giai_thich_duoc_si": "Erleada khi dùng chung với Celenal có thể làm giảm đáng kể nồng độ của Celenal trong cơ thể, do Erleada là một chất cảm ứng mạnh enzym CYP450 3A4. Một số cơ quan quản lý dược phẩm xem việc phối hợp Celenal đường uống với các chất cảm ứng mạnh CYP450 3A4 là chống chỉ định, vì vậy cần đặc biệt thận trọng khi hai thuốc này được kê cùng lúc.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng đồng thời nimodipine đường uống với các chất cảm ứng mạnh CYP450 3A4 (như apalutamide) có thể làm giảm nồng độ nimodipine; một số cơ quan quản lý dược phẩm xem việc phối hợp này là chống chỉ định.",
+        "xu_tri_dich": "Một số cơ quan quản lý dược phẩm xem việc dùng đồng thời nimodipine đường uống với các chất cảm ứng mạnh CYP450 3A4 là chống chỉ định."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Erleada và Celenal. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Erleada và Celenal",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Erleada",
+      "Celenal"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Erleada",
+          "Celenal"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "case_id": "food-nhe-018",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0421,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Abacavir"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Abacavir",
+        "ten_chuan": "Abacavir",
+        "medication_id": "DDInter1",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Abacavir Tablets USP 300mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Abacavir Tablets USP 300mg"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Abacavir Tablets USP 300mg"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "nhe",
+        "giai_thich": "Khi dùng Abacavir Tablets USP 300mg mà có uống rượu, rượu sẽ làm chậm quá trình đào thải thuốc ra khỏi cơ thể. Lý do là rượu ức chế alcohol dehydrogenase, một loại enzyme đảm nhận việc phân hủy và thải trừ thuốc, nên thuốc bị giữ lại lâu hơn trong cơ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Ziagen (abacavir).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Việc tiêu thụ ethanol trong quá trình điều trị bằng abacavir dẫn đến giảm thải trừ abacavir do ức chế alcohol dehydrogenase.",
+        "xu_tri_dich": "Việc tiêu thụ ethanol trong quá trình điều trị bằng abacavir dẫn đến giảm thải trừ abacavir do ức chế alcohol dehydrogenase. Dùng đồng thời rượu 0,7 g/kg (tương đương 5 ly) và abacavir dẫn đến tăng 41% diện tích dưới đường cong nồng độ theo thời gian và tăng 26% thời gian bán thải. Ý nghĩa lâm sàng của tương tác này chưa được biết."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

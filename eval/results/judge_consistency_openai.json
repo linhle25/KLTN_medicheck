@@ -1,0 +1,227 @@
+{
+  "metric": "consistency",
+  "n": 20,
+  "n_parsed": 20,
+  "rows": [
+    {
+      "case_id": "dd-nang-001",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "All versions agree on the mechanism and risk of increased A.T Loperamid 2 mg levels due to A.T Ketoconazole 2%, but Version 1 provides additional advice on consulting a healthcare professional."
+      }
+    },
+    {
+      "case_id": "dd-nang-005",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "All versions convey the same clinical risks of serotonin syndrome and QT prolongation, but Version 3 includes additional advice for patient management."
+      }
+    },
+    {
+      "case_id": "dd-nang-009",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions consistently describe the risk of serotonin syndrome when combining Diatramine Capsule 11.30mg and Aronol, with no contradictions or changes in safety advice."
+      }
+    },
+    {
+      "case_id": "dd-nang-013",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": false,
+        "claim_flips": [
+          "Version 2 đề cập đến các tác dụng phụ kiểu ức chế phó giao cảm quá mức mà các phiên bản khác không đề cập."
+        ],
+        "safety_property_changed": false,
+        "rationale": "Mặc dù tất cả các phiên bản đều đồng ý rằng việc phối hợp Calswin 80 và Spexib 150mg là chống chỉ định do nguy cơ kéo dài khoảng QT, phiên bản 2 bổ sung thêm thông tin về các tác dụng phụ kiểu ức chế phó giao cảm quá mức, tạo ra sự khác biệt về nội dung lâm sàng."
+      }
+    },
+    {
+      "case_id": "dd-nhe-033",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions convey the same clinical message about the interaction between Canaflin 100 and Menzag, including the mechanism and the need for monitoring blood glucose levels."
+      }
+    },
+    {
+      "case_id": "dd-nhe-037",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Tất cả các phiên bản đều truyền đạt cùng một ý lâm sàng về việc hóa trị có thể làm giảm nồng độ quinolone do thay đổi niêm mạc ruột, và không có phiên bản nào đưa ra lời khuyên xử trí cụ thể."
+      }
+    },
+    {
+      "case_id": "dd-nhe-041",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "All versions convey the same clinical concept of reduced absorption of quinolones due to chemotherapy, but Version 2 provides additional advice on monitoring the effectiveness of the antibiotic, indicating a change in safety property."
+      }
+    },
+    {
+      "case_id": "dd-nhe-045",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions convey the same clinical message about the interaction between Aginamic and Acitidine, including the potential for changes in blood concentration, the mechanisms involved, and the recommendation to monitor patient response and tolerance."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-017",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Tất cả các phiên bản đều truyền đạt cùng một ý lâm sàng về việc giảm nồng độ APO-Erlotinib do Antifacid 20mg làm tăng pH dạ dày."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-021",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions consistently describe the interaction between Ecophelic 180 and Abitrax, highlighting the potential reduction in oral bioavailability of Ecophelic 180 due to changes in gut microbiota and the enterohepatic circulation, with a recommendation for clinical monitoring."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-025",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Tất cả các phiên bản đều truyền đạt cùng một ý lâm sàng về việc Axcel Promethazine-5 Syrup có thể làm giảm đáp ứng với PPD Tuberculin Mammalian, dẫn đến kết quả test da không đáng kể hoặc âm tính giả, và cần cân nhắc thời điểm thực hiện test da."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-029",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": true,
+        "rationale": "All versions convey the same clinical risk of combined use of Acefalgan Codein and Alfentanil-hameln leading to increased cardiac and respiratory depression. However, Versions 1 and 2 provide additional safety advice on monitoring, which is absent in Version 3."
+      }
+    },
+    {
+      "case_id": "dis-nang-003",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions convey the same clinical message about the limitations and precautions of using Duofilm in patients with lactic acidosis."
+      }
+    },
+    {
+      "case_id": "dis-nang-007",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": false,
+        "claim_flips": [
+          "Version 1 does not mention avoiding rapid-onset nitrates in cases of suspected acute myocardial infarction with marked bradycardia or tachycardia, while Version 2 does.",
+          "Version 1 does not explicitly mention the need for caution in cases of suspected acute myocardial infarction with marked bradycardia or tachycardia, while Versions 2 and 3 do."
+        ],
+        "safety_property_changed": false,
+        "rationale": "There are differences in the clinical scenarios and recommendations mentioned across the versions, leading to non-equivalence."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-011",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Tất cả các phiên bản đều truyền đạt cùng một ý lâm sàng về việc chuyển hóa và liều dùng của AMEPRAZEC 20 ở bệnh nhân suy gan nặng."
+      }
+    },
+    {
+      "case_id": "food-nang-003",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions consistently describe the interaction between Dayvigo 10mg and alcohol, highlighting increased blood concentration and enhanced CNS effects, with no discrepancies in clinical interpretation or management advice."
+      }
+    },
+    {
+      "case_id": "food-nang-007",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "Tất cả các phiên bản đều truyền đạt cùng một ý lâm sàng về việc trà xanh làm tăng nồng độ Basaterol do ức chế CYP450 3A4 ở thành ruột."
+      }
+    },
+    {
+      "case_id": "food-nhe-019",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions convey the same clinical concept: grapefruit juice affects Ariel Tdds by slowing gastric emptying and inhibiting CYP450 3A4, leading to increased drug absorption."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-011",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": false,
+        "claim_flips": [
+          "Version 3 thêm khuyến cáo về việc giới hạn lượng rượu và không uống lúc bụng đói hay sau vận động khi đường huyết đã ổn định, điều này không có trong Version 1 và 2."
+        ],
+        "safety_property_changed": true,
+        "rationale": "Version 3 đưa ra lời khuyên xử trí bổ sung mà các phiên bản khác không có."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-015",
+      "n_versions": 3,
+      "verdict": {
+        "clinically_equivalent": true,
+        "claim_flips": [],
+        "safety_property_changed": false,
+        "rationale": "All versions convey the same clinical message about the increased CNS depression risk when Raxiz is combined with alcohol, affecting judgment, thinking, and coordination."
+      }
+    }
+  ],
+  "clinically_equivalent_rate": 0.85,
+  "with_claim_flips": [
+    "dd-nang-013",
+    "dis-nang-007",
+    "food-trung_binh-011"
+  ],
+  "safety_property_changed": [
+    "dd-nang-001",
+    "dd-nang-005",
+    "dd-nhe-041",
+    "dd-trung_binh-029",
+    "food-trung_binh-011"
+  ]
+}

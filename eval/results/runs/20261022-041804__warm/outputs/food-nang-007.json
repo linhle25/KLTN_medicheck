@@ -1,0 +1,97 @@
+{
+  "case_id": "food-nang-007",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.0792,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Lovastatin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Lovastatin",
+        "ten_chuan": "Lovastatin",
+        "medication_id": "DDInter1098",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Basaterol"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Basaterol"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Basaterol"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng Basaterol cùng với lượng lớn rượu có thể làm tăng nguy cơ tổn thương gan, đặc biệt ở người có tiền sử bệnh gan. Tình trạng tăng transaminase huyết thanh thoáng qua đã được ghi nhận khi dùng thuốc nhóm statin, thường tự hồi phục khi tiếp tục điều trị hoặc tạm ngừng ngắn, nhưng hiếm gặp vẫn có báo cáo sau lưu hành về suy gan tử vong và không tử vong. Bệnh gan hoạt động hoặc tăng transaminase không rõ nguyên nhân là chống chỉ định với Basaterol, và người uống nhiều rượu hoặc có bệnh gan nền cần được lưu ý về nguy cơ độc gan tăng lên khi kết hợp hai yếu tố này.",
+        "giai_thich_duoc_si": "Dùng Basaterol cùng với lượng lớn rượu có thể làm tăng nguy cơ tổn thương gan, đặc biệt ở người có tiền sử bệnh gan. Tình trạng tăng transaminase huyết thanh thoáng qua đã được ghi nhận khi dùng thuốc nhóm statin, thường tự hồi phục khi tiếp tục điều trị hoặc tạm ngừng ngắn, nhưng hiếm gặp vẫn có báo cáo sau lưu hành về suy gan tử vong và không tử vong. Bệnh gan hoạt động hoặc tăng transaminase không rõ nguyên nhân là chống chỉ định với Basaterol, và người uống nhiều rượu hoặc có bệnh gan nền cần được lưu ý về nguy cơ độc gan tăng lên khi kết hợp hai yếu tố này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Pravachol (pravastatin).\" Bristol-Myers Squibb  (2001):|\"Product Information. Zocor (simvastatin).\" Merck & Co., Inc  (2001):|\"Product Information. Lescol (fluvastatin).\" Novartis Pharmaceuticals  (2001):|\"Product Information. Lipitor (atorvastatin).\" Parke-Davis  (2001):|\"Product Information. Altocor (lovastatin).\" Andrx Pharmaceuticals  (2002):|\"Product Information. Crestor (rosuvastatin).\" AstraZeneca Pharma Inc  (2003):|Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0|Cerner Multum, Inc. \"Australian Product Information.\" O 0|\"Product Information. Livalo (pitavastatin).\" Kowa Pharmaceuticals America (formerly ProEthic)  (2010):",
+        "mo_ta_dich": "Sử dụng đồng thời thuốc statin với một lượng lớn rượu có thể làm tăng nguy cơ tổn thương gan. Đã có báo cáo về tình trạng tăng transaminase huyết thanh thoáng qua khi dùng statin, và mặc dù những tăng này thường tự hết hoặc cải thiện khi tiếp tục điều trị hoặc tạm ngừng điều trị ngắn, đã có các báo cáo hậu mại hiếm gặp về suy gan tử vong và không tử vong ở bệnh nhân dùng statin. Bệnh nhân tiêu thụ một lượng lớn rượu và/hoặc có tiền sử bệnh gan có thể có nguy cơ tổn thương gan tăng lên. Bệnh gan hoạt động hoặc tăng transaminase không rõ nguyên nhân là chống chỉ định dùng statin.",
+        "xu_tri_dich": "Bệnh nhân nên được tư vấn tránh sử dụng một lượng lớn rượu kết hợp với thuốc statin và bác sĩ lâm sàng nên nhận thức được nguy cơ tăng độc tính gan ở những bệnh nhân này."
+      },
+      {
+        "san_pham": [
+          "Basaterol"
+        ],
+        "thuc_pham": "trà xanh",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Basaterol cùng trà xanh có thể làm tăng đáng kể nồng độ lovastatin trong huyết tương và các chất chuyển hóa acid hoạt động của nó, do một số hợp chất trong trà xanh ức chế chuyển hóa lần đầu qua CYP450 3A4 tại thành ruột.",
+        "giai_thich_duoc_si": "Dùng Basaterol cùng trà xanh có thể làm tăng đáng kể nồng độ lovastatin trong huyết tương và các chất chuyển hóa acid hoạt động của nó, do một số hợp chất trong trà xanh ức chế chuyển hóa lần đầu qua CYP450 3A4 tại thành ruột.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Richter WO, Jacob BG, Schwandt P \"Interaction between fibre and lovastatin.\" Lancet 338 (1991):  706|\"Product Information. Mevacor (lovastatin).\" Merck & Co., Inc  (2002):|\"Product Information. Zocor (simvastatin).\" Merck & Co., Inc  (2001):|Kantola T, Kivisto KT, Neuvonen PJ \"Grapefruit juice greatly increases serum concentrations of lovastatin and lovastatin acid.\" Clin Pharmacol Ther 63 (1998):  397-402|Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998):  101-10|Lilja JJ, Kivisto KT, Neuvonen PJ \"Grapefruit juice-simvastatin interaction: Effect on serum concentrations of simvastatin, simvastatin acid, and HMG-CoA reductase inhibitors.\" Clin Pharmacol Ther 64 (1998):  477-83|Thompson PD, Clarkson P, Karas RH \"Statin-associated myopathy.\" JAMA 289 (2003):  1681-90|Neuvonen PJ, Backman JT, Niemi M \"Pharmacokinetic comparison of the potential over-the-counter statins simvastatin, lovastatin, fluvastatin and pravastatin.\" Clin Pharmacokinet 47 (2008):  463-74|Werba JP, Giroli M, Cavalca V, Nava MC, Tremoli E, Dal Bo L \"The effect of green tea on simvastatin tolerability.\" Ann Intern Med 149 (2008):  286-7|Werba JP, Misaka S, Giroli MG, et al. \"Overview of Green Tea Interaction with Cardiovascular Drugs.\" Curr Pharm Des  (2014):|Roth M, Timmermann BN, Hagenbuch B \"Interactions of green tea catechins with organic anion-transporting polypeptides.\" Drug Metab Dispos 39 (2011):  920-6|Knop J, Misaka S, Singer K, et al. \"Inhibitory effects of green tea and (-)-epigallocatechin gallate on transport by OATP1B1, OATP1B3, OCT1, OCT2, MATE1, MATE2-K and P-glycoprotein.\" PLoS One 10 (2015):  e0139370",
+        "mo_ta_dich": "Dùng đồng thời với nước ép bưởi có thể làm tăng đáng kể nồng độ trong huyết tương của lovastatin và simvastatin cùng các chất chuyển hóa acid có hoạt tính của chúng. Cơ chế được đề xuất là do một số hợp chất có trong bưởi ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột.",
+        "xu_tri_dich": "Có thể nên thận trọng khi dùng đồng thời với trà xanh hoặc chiết xuất trà xanh. Có thể cần giảm liều statin và/hoặc hạn chế tiêu thụ trà xanh và các sản phẩm từ trà xanh nếu nghi ngờ có tương tác."
+      },
+      {
+        "san_pham": [
+          "Basaterol"
+        ],
+        "thuc_pham": "nước ép bưởi",
+        "muc_do": "nang",
+        "giai_thich": "Dùng Basaterol cùng nước ép bưởi có thể làm tăng đáng kể nồng độ thuốc trong huyết tương và các chất chuyển hóa acid hoạt động của nó, do một số hợp chất trong bưởi ức chế chuyển hóa qua CYP450 3A4 ở thành ruột. Vì vậy, người đang dùng Basaterol nên tránh tiêu thụ bưởi và nước ép bưởi, đồng thời báo ngay cho bác sĩ nếu xuất hiện đau, nhức hoặc yếu cơ không rõ nguyên nhân, đặc biệt khi kèm sốt, mệt mỏi và/hoặc nước tiểu sẫm màu.",
+        "giai_thich_duoc_si": "Dùng Basaterol cùng nước ép bưởi có thể làm tăng đáng kể nồng độ thuốc trong huyết tương và các chất chuyển hóa acid hoạt động của nó, do một số hợp chất trong bưởi ức chế chuyển hóa qua CYP450 3A4 ở thành ruột. Vì vậy, người đang dùng Basaterol nên tránh tiêu thụ bưởi và nước ép bưởi, đồng thời báo ngay cho bác sĩ nếu xuất hiện đau, nhức hoặc yếu cơ không rõ nguyên nhân, đặc biệt khi kèm sốt, mệt mỏi và/hoặc nước tiểu sẫm màu.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Richter WO, Jacob BG, Schwandt P \"Interaction between fibre and lovastatin.\" Lancet 338 (1991):  706|\"Product Information. Mevacor (lovastatin).\" Merck & Co., Inc  (2002):|\"Product Information. Zocor (simvastatin).\" Merck & Co., Inc  (2001):|Kantola T, Kivisto KT, Neuvonen PJ \"Grapefruit juice greatly increases serum concentrations of lovastatin and lovastatin acid.\" Clin Pharmacol Ther 63 (1998):  397-402|Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998):  101-10|Lilja JJ, Kivisto KT, Neuvonen PJ \"Grapefruit juice-simvastatin interaction: Effect on serum concentrations of simvastatin, simvastatin acid, and HMG-CoA reductase inhibitors.\" Clin Pharmacol Ther 64 (1998):  477-83|Thompson PD, Clarkson P, Karas RH \"Statin-associated myopathy.\" JAMA 289 (2003):  1681-90|Neuvonen PJ, Backman JT, Niemi M \"Pharmacokinetic comparison of the potential over-the-counter statins simvastatin, lovastatin, fluvastatin and pravastatin.\" Clin Pharmacokinet 47 (2008):  463-74|Werba JP, Giroli M, Cavalca V, Nava MC, Tremoli E, Dal Bo L \"The effect of green tea on simvastatin tolerability.\" Ann Intern Med 149 (2008):  286-7|Werba JP, Misaka S, Giroli MG, et al. \"Overview of Green Tea Interaction with Cardiovascular Drugs.\" Curr Pharm Des  (2014):|Roth M, Timmermann BN, Hagenbuch B \"Interactions of green tea catechins with organic anion-transporting polypeptides.\" Drug Metab Dispos 39 (2011):  920-6|Knop J, Misaka S, Singer K, et al. \"Inhibitory effects of green tea and (-)-epigallocatechin gallate on transport by OATP1B1, OATP1B3, OCT1, OCT2, MATE1, MATE2-K and P-glycoprotein.\" PLoS One 10 (2015):  e0139370",
+        "mo_ta_dich": "Dùng đồng thời với nước ép bưởi có thể làm tăng đáng kể nồng độ trong huyết tương của lovastatin và simvastatin cùng các chất chuyển hóa acid có hoạt tính của chúng. Cơ chế được đề xuất là do một số hợp chất có trong bưởi ức chế chuyển hóa lần đầu qua trung gian CYP450 3A4 tại thành ruột.",
+        "xu_tri_dich": "Bệnh nhân đang điều trị bằng lovastatin, simvastatin hoặc gạo men đỏ (có chứa lovastatin) nên được khuyên tránh tiêu thụ bưởi và nước ép bưởi. Fluvastatin, pravastatin, pitavastatin và rosuvastatin được chuyển hóa bởi các enzym khác và có thể là lựa chọn thay thế phù hợp ở một số cá nhân. Tất cả bệnh nhân đang điều trị statin nên được khuyên báo cáo ngay mọi cơn đau cơ, đau khi ấn hoặc yếu cơ không giải thích được, đặc biệt nếu kèm theo sốt, khó chịu và/hoặc nước tiểu sẫm màu. Nên ngừng điều trị nếu creatine kinase tăng rõ rệt khi không có vận động gắng sức hoặc nếu nghi ngờ hay chẩn đoán bệnh cơ theo cách khác. Ngoài ra, bệnh nhân nên tránh dùng cám yến mạch và pectin, hoặc tách thời điểm dùng thuốc..."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần khuyến cáo bệnh nhân tránh dùng chung với: nước ép bưởi, rượu, trà xanh."
+    ]
+  }
+}

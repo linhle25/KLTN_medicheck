@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nhe-042",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.1632,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Nizatidine",
+      "Aluminum hydroxide"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Nizatidine",
+        "ten_chuan": "Nizatidine",
+        "medication_id": "DDInter1309",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Aluminum hydroxide",
+        "ten_chuan": "Aluminum hydroxide",
+        "medication_id": "DDInter58",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Nizatidine",
+        "thuoc_b": "Aluminum hydroxide",
+        "medication_a_id": "DDInter1309",
+        "medication_b_id": "DDInter58",
+        "mo_ta": "Antacids and some aluminum, calcium, and magnesium salts may decrease the plasma concentrations of H2-receptor antagonists during oral coadministration. The mechanism of interaction is unknown, but may involve reduced oral absorption due to increased gastric pH. The clinical significance has not been established. As a precaution, patients may consider taking H2-receptor antagonists one to two hours before antacids.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Barzaghi N, Gatti G, Crema F, Perucca E \"Impaired bioavailability of famotidine given concurrently with a potent antacid.\" J Clin Pharmacol 29 (1989): 670-2, [2] Albin H, Vincon G, Begaud B, Bistue C, Perez P \"Effect of aluminum phosphate on the bioavailability of ranitidine.\" Eur J Clin Pharmacol 32 (1987): 97-9, [3] Covington TR, Lawson LC, Young LL, eds. \"Handbook of Nonprescription Drugs. 10th ed.\" Washington, DC: American Pharmaceutical Association (1993):, [4] Donn KH, Eshelman FN, Plachetka JR, et al \"The effects of antacid and propantheline on the absorption of oral ranitidine.\" Pharmacotherapy 4 (1984): 89-92, [5] Bachmann KA, Sullivan TJ, Jauregui L, Reese J, Miller K, Levine L \"Drug interactions of h-2-receptor antagonists.\" Scand J Gastroenterol 29 (1994): 14-9, [6] Bodemar G, Norlander B, Walan A \"Diminished absorption of cimetidine caused by antacids.\" Lancet 02/24/79 (1979): 444-5, [7] Russell WL, Lopez LM, Normann SA, et al \"Effect of antacids on predicted steady-state cimetidine concentrations.\" Dig Dis Sci 29 (1984): 385-9, [8] Shelly DW, Doering PL, Russell WL, Guild RT, Lopez LM, Perrin J \"Effect of concomitant antacid administration on plasma cimetidine concentrations during repetitive dosing.\" Drug Intell Clin Pharm 20 (1986): 792-5, [9] Steinberg WM, Lewis JH, Katz DM \"Antacids inhibit absorption of cimetidine.\" N Engl J Med 307 (1982): 400-4, [10] Lin JH, Chremos AN, Kanovsky SM, Schwartz S, Yeh KC, Kann J \"Effects of antacids and food on absorption of famotidine.\" Br J Clin Pharmacol 24 (1987): 551-3, [11] Mihaly GW, Marino AT, Webster LK, Jones DB, Louis WJ, Smallwood RA \"High dose of antacid (Mylanta II) reduces bioavailability of ranitidine.\" Br Med J 285 (1982): 998-9, [12] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Esomeprazole, Clarithromycin, Vonoprazan, Amoxicillin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Adige Nizatidine 150 mg (hoạt chất: Nizatidine)",
+        "thuoc_b": "Algelstad (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1309",
+        "medication_b_id": "DDInter58",
+        "mo_ta": "Antacids and some aluminum, calcium, and magnesium salts may decrease the plasma concentrations of H2-receptor antagonists during oral coadministration. The mechanism of interaction is unknown, but may involve reduced oral absorption due to increased gastric pH. The clinical significance has not been established. As a precaution, patients may consider taking H2-receptor antagonists one to two hours before antacids.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Barzaghi N, Gatti G, Crema F, Perucca E \"Impaired bioavailability of famotidine given concurrently with a potent antacid.\" J Clin Pharmacol 29 (1989): 670-2, [2] Albin H, Vincon G, Begaud B, Bistue C, Perez P \"Effect of aluminum phosphate on the bioavailability of ranitidine.\" Eur J Clin Pharmacol 32 (1987): 97-9, [3] Covington TR, Lawson LC, Young LL, eds. \"Handbook of Nonprescription Drugs. 10th ed.\" Washington, DC: American Pharmaceutical Association (1993):, [4] Donn KH, Eshelman FN, Plachetka JR, et al \"The effects of antacid and propantheline on the absorption of oral ranitidine.\" Pharmacotherapy 4 (1984): 89-92, [5] Bachmann KA, Sullivan TJ, Jauregui L, Reese J, Miller K, Levine L \"Drug interactions of h-2-receptor antagonists.\" Scand J Gastroenterol 29 (1994): 14-9, [6] Bodemar G, Norlander B, Walan A \"Diminished absorption of cimetidine caused by antacids.\" Lancet 02/24/79 (1979): 444-5, [7] Russell WL, Lopez LM, Normann SA, et al \"Effect of antacids on predicted steady-state cimetidine concentrations.\" Dig Dis Sci 29 (1984): 385-9, [8] Shelly DW, Doering PL, Russell WL, Guild RT, Lopez LM, Perrin J \"Effect of concomitant antacid administration on plasma cimetidine concentrations during repetitive dosing.\" Drug Intell Clin Pharm 20 (1986): 792-5, [9] Steinberg WM, Lewis JH, Katz DM \"Antacids inhibit absorption of cimetidine.\" N Engl J Med 307 (1982): 400-4, [10] Lin JH, Chremos AN, Kanovsky SM, Schwartz S, Yeh KC, Kann J \"Effects of antacids and food on absorption of famotidine.\" Br J Clin Pharmacol 24 (1987): 551-3, [11] Mihaly GW, Marino AT, Webster LK, Jones DB, Louis WJ, Smallwood RA \"High dose of antacid (Mylanta II) reduces bioavailability of ranitidine.\" Br Med J 285 (1982): 998-9, [12] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Esomeprazole, Clarithromycin, Vonoprazan, Amoxicillin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Nizatidine",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Adige Nizatidine 150 mg"
+        ],
+        "san_pham_b": [
+          "Algelstad"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Adige Nizatidine 150 mg (hoạt chất: Nizatidine)",
+        "thuoc_b": "Algelstad (hoạt chất: Aluminum hydroxide)",
+        "medication_a_id": "DDInter1309",
+        "medication_b_id": "DDInter58",
+        "xu_tri": "-",
+        "thay_the_a": "A02B, Tinidazole, Pantoprazole, Dexlansoprazole, Rabeprazole, Bismuth subcitrate potassium, Metronidazole, Rifabutin, Esomeprazole, Clarithromycin, Vonoprazan, Amoxicillin",
+        "thay_the_b": "-",
+        "mo_ta": "Antacids and some aluminum, calcium, and magnesium salts may decrease the plasma concentrations of H2-receptor antagonists during oral coadministration. The mechanism of interaction is unknown, but may involve reduced oral absorption due to increased gastric pH. The clinical significance has not been established. As a precaution, patients may consider taking H2-receptor antagonists one to two hours before antacids.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Barzaghi N, Gatti G, Crema F, Perucca E \"Impaired bioavailability of famotidine given concurrently with a potent antacid.\" J Clin Pharmacol 29 (1989): 670-2, [2] Albin H, Vincon G, Begaud B, Bistue C, Perez P \"Effect of aluminum phosphate on the bioavailability of ranitidine.\" Eur J Clin Pharmacol 32 (1987): 97-9, [3] Covington TR, Lawson LC, Young LL, eds. \"Handbook of Nonprescription Drugs. 10th ed.\" Washington, DC: American Pharmaceutical Association (1993):, [4] Donn KH, Eshelman FN, Plachetka JR, et al \"The effects of antacid and propantheline on the absorption of oral ranitidine.\" Pharmacotherapy 4 (1984): 89-92, [5] Bachmann KA, Sullivan TJ, Jauregui L, Reese J, Miller K, Levine L \"Drug interactions of h-2-receptor antagonists.\" Scand J Gastroenterol 29 (1994): 14-9, [6] Bodemar G, Norlander B, Walan A \"Diminished absorption of cimetidine caused by antacids.\" Lancet 02/24/79 (1979): 444-5, [7] Russell WL, Lopez LM, Normann SA, et al \"Effect of antacids on predicted steady-state cimetidine concentrations.\" Dig Dis Sci 29 (1984): 385-9, [8] Shelly DW, Doering PL, Russell WL, Guild RT, Lopez LM, Perrin J \"Effect of concomitant antacid administration on plasma cimetidine concentrations during repetitive dosing.\" Drug Intell Clin Pharm 20 (1986): 792-5, [9] Steinberg WM, Lewis JH, Katz DM \"Antacids inhibit absorption of cimetidine.\" N Engl J Med 307 (1982): 400-4, [10] Lin JH, Chremos AN, Kanovsky SM, Schwartz S, Yeh KC, Kann J \"Effects of antacids and food on absorption of famotidine.\" Br J Clin Pharmacol 24 (1987): 551-3, [11] Mihaly GW, Marino AT, Webster LK, Jones DB, Louis WJ, Smallwood RA \"High dose of antacid (Mylanta II) reduces bioavailability of ranitidine.\" Br Med J 285 (1982): 998-9, [12] Albin H, Vincon G, Demotes-Mainard F, et al \"Effect of aluminium phosphate on the bioavailability of cimetidine and prednisolone.\" Eur J Clin Pharmacol 26 (1984): 271-3",
+        "hoat_chat_a": "Nizatidine",
+        "hoat_chat_b": "Aluminum hydroxide",
+        "san_pham_a": [
+          "Adige Nizatidine 150 mg"
+        ],
+        "san_pham_b": [
+          "Algelstad"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Adige Nizatidine 150 mg",
+        "thuoc_b": "Algelstad",
+        "muc_do": "nhe",
+        "giai_thich": "Dùng chung Adige Nizatidine 150 mg với Algelstad có thể làm giảm nồng độ Adige Nizatidine 150 mg trong huyết tương khi uống đồng thời, do thành phần kháng acid trong Algelstad ảnh hưởng đến hấp thu của thuốc; cơ chế chưa được xác định rõ và ý nghĩa lâm sàng của tương tác này cũng chưa được khẳng định.",
+        "giai_thich_duoc_si": "Dùng chung Adige Nizatidine 150 mg với Algelstad có thể làm giảm nồng độ Adige Nizatidine 150 mg trong huyết tương khi uống đồng thời, do thành phần kháng acid trong Algelstad ảnh hưởng đến hấp thu của thuốc; cơ chế chưa được xác định rõ và ý nghĩa lâm sàng của tương tác này cũng chưa được khẳng định.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Thuốc kháng acid và một số muối nhôm, calci và magnesi có thể làm giảm nồng độ trong huyết tương của các thuốc đối kháng thụ thể H2 khi dùng đồng thời qua đường uống. Cơ chế tương tác chưa được biết rõ, nhưng có thể liên quan đến giảm hấp thu qua đường uống do tăng pH dạ dày. Ý nghĩa lâm sàng chưa được xác lập. Để thận trọng, bệnh nhân có thể cân nhắc dùng thuốc đối kháng thụ thể H2 trước thuốc kháng acid từ một đến hai giờ.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức nhẹ. Cặp đáng chú ý là Adige Nizatidine 150 mg và Algelstad. Chi tiết từng cặp được trình bày ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Adige Nizatidine 150 mg và Algelstad",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Adige Nizatidine 150 mg",
+      "Algelstad"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Adige Nizatidine 150 mg",
+          "Algelstad"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

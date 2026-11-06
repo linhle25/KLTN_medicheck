@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nang-001",
+  "phase": "consistency",
+  "rep": 3,
+  "audience": "patient",
+  "wall_s": 1.7604,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ketoconazole",
+      "Loperamide"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ketoconazole",
+        "ten_chuan": "Ketoconazole",
+        "medication_id": "DDInter1008",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Loperamide",
+        "ten_chuan": "Loperamide",
+        "medication_id": "DDInter1088",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ketoconazole",
+        "thuoc_b": "Loperamide",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1088",
+        "mo_ta": "Coadministration with drugs that enhance the gastrointestinal absorption or inhibit the metabolism of loperamide (e.g., potent CYP450 3A4 or 2C8 inhibitors) may increase the plasma concentrations and adverse effects of loperamide.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Tayrouz Y, Ganssmann B, Ding R, et al. \"Ritonavir increases loperamide plasma concentrations without evidence for P-glycoprotein involvement.\" Clin Pharmacol Ther 70 (2001): 405-14, [2] \"Product Information. Imodium (loperamide).\" Janssen Pharmaceutica, Titusville, NJ., [3] Eggleston W, Clark KH, Marraffa JM \"Loperamide abuse associated with cardiac dysrhythmia and death.\" Ann Emerg Med 69 (2017): 83-6, [4] Kim KA, Chung J, Jung DH, Park JY \"Identification of cytochrome P450 isoforms involved in the metabolism of loperamide in human liver microsomes.\" Eur J Clin Pharmacol 60 (2004): 575-81, [5] US Food and Drug Administration \"FDA warns about serious heart problems with high doses of the antidiarrheal medicine loperamide (Imodium), including from abuse and misuse. Available from: URL: http://www.fda.gov/downloads/Drugs/DrugSafety/UCM505108.pdf.\" ([2016, Jun 7]):, [6] Niemi M, Tornio A, Pasanen MK, Fredrikson H, Neuvonen PJ, Backman JT \"Itraconazole, gemfibrozil and their combination markedly raise the plasma concentrations of loperamide.\" Eur J Clin Pharmacol 62 (2006): 463-72, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [10] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [11] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [12] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "Caution is recommended if loperamide is used with drugs that enhance its gastrointestinal absorption or inhibit its metabolism. Particular caution is advised when drugs that inhibit CYP450 3A4 (e.g., azole antifungal agents, clarithromycin, cobicistat, conivaptan, delavirdine, erythromycin, idelalisib, nefazodone, protease inhibitors, telithromycin) and CYP450 2C8 (e.g., gemfibrozil, clopidogrel) are used together with loperamide, or when one or more of these drugs are combined with inhibitors of P-glycoprotein transport (e.g., amiodarone, cyclosporine, diltiazem, dronedarone, quinidine, verapamil), since they may act synergistically to increase loperamide concentrations. Patients should be counseled to not exceed the recommended dosage and frequency or duration of use of loperamide, and to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope. If loperamide-induced cardiotoxicity is suspected, promptly discontinue loperamide and initiate therapy to manage and prevent cardiac arrhythmias and adverse outcomes. Electrical pacing or cardioversion may be necessary if torsade de pointes persists despite pharmacotherapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "A07D, Opium, Diphenoxylate, Difenoxin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "A.T Loperamid 2 mg (hoạt chất: Loperamide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1088",
+        "mo_ta": "Coadministration with drugs that enhance the gastrointestinal absorption or inhibit the metabolism of loperamide (e.g., potent CYP450 3A4 or 2C8 inhibitors) may increase the plasma concentrations and adverse effects of loperamide.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Tayrouz Y, Ganssmann B, Ding R, et al. \"Ritonavir increases loperamide plasma concentrations without evidence for P-glycoprotein involvement.\" Clin Pharmacol Ther 70 (2001): 405-14, [2] \"Product Information. Imodium (loperamide).\" Janssen Pharmaceutica, Titusville, NJ., [3] Eggleston W, Clark KH, Marraffa JM \"Loperamide abuse associated with cardiac dysrhythmia and death.\" Ann Emerg Med 69 (2017): 83-6, [4] Kim KA, Chung J, Jung DH, Park JY \"Identification of cytochrome P450 isoforms involved in the metabolism of loperamide in human liver microsomes.\" Eur J Clin Pharmacol 60 (2004): 575-81, [5] US Food and Drug Administration \"FDA warns about serious heart problems with high doses of the antidiarrheal medicine loperamide (Imodium), including from abuse and misuse. Available from: URL: http://www.fda.gov/downloads/Drugs/DrugSafety/UCM505108.pdf.\" ([2016, Jun 7]):, [6] Niemi M, Tornio A, Pasanen MK, Fredrikson H, Neuvonen PJ, Backman JT \"Itraconazole, gemfibrozil and their combination markedly raise the plasma concentrations of loperamide.\" Eur J Clin Pharmacol 62 (2006): 463-72, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [10] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [11] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [12] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "xu_tri": "Caution is recommended if loperamide is used with drugs that enhance its gastrointestinal absorption or inhibit its metabolism. Particular caution is advised when drugs that inhibit CYP450 3A4 (e.g., azole antifungal agents, clarithromycin, cobicistat, conivaptan, delavirdine, erythromycin, idelalisib, nefazodone, protease inhibitors, telithromycin) and CYP450 2C8 (e.g., gemfibrozil, clopidogrel) are used together with loperamide, or when one or more of these drugs are combined with inhibitors of P-glycoprotein transport (e.g., amiodarone, cyclosporine, diltiazem, dronedarone, quinidine, verapamil), since they may act synergistically to increase loperamide concentrations. Patients should be counseled to not exceed the recommended dosage and frequency or duration of use of loperamide, and to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope. If loperamide-induced cardiotoxicity is suspected, promptly discontinue loperamide and initiate therapy to manage and prevent cardiac arrhythmias and adverse outcomes. Electrical pacing or cardioversion may be necessary if torsade de pointes persists despite pharmacotherapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "A07D, Opium, Diphenoxylate, Difenoxin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Loperamide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "A.T Loperamid 2 mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T Ketoconazole 2% (hoạt chất: Ketoconazole)",
+        "thuoc_b": "A.T Loperamid 2 mg (hoạt chất: Loperamide)",
+        "medication_a_id": "DDInter1008",
+        "medication_b_id": "DDInter1088",
+        "xu_tri": "Caution is recommended if loperamide is used with drugs that enhance its gastrointestinal absorption or inhibit its metabolism. Particular caution is advised when drugs that inhibit CYP450 3A4 (e.g., azole antifungal agents, clarithromycin, cobicistat, conivaptan, delavirdine, erythromycin, idelalisib, nefazodone, protease inhibitors, telithromycin) and CYP450 2C8 (e.g., gemfibrozil, clopidogrel) are used together with loperamide, or when one or more of these drugs are combined with inhibitors of P-glycoprotein transport (e.g., amiodarone, cyclosporine, diltiazem, dronedarone, quinidine, verapamil), since they may act synergistically to increase loperamide concentrations. Patients should be counseled to not exceed the recommended dosage and frequency or duration of use of loperamide, and to seek prompt medical attention if they experience symptoms that could indicate the occurrence of torsade de pointes such as dizziness, lightheadedness, fainting, palpitation, irregular heart rhythm, shortness of breath, or syncope. If loperamide-induced cardiotoxicity is suspected, promptly discontinue loperamide and initiate therapy to manage and prevent cardiac arrhythmias and adverse outcomes. Electrical pacing or cardioversion may be necessary if torsade de pointes persists despite pharmacotherapy.",
+        "thay_the_a": "G01A, Tinidazole, Ascorbic acid, Hydroflumethiazide, Chlorothiazide, Simeprevir, Sulfadiazine, Lactic acid, Mitapivat, Methazolamide, Trichlormethiazide, Ciclopirox",
+        "thay_the_b": "A07D, Opium, Diphenoxylate, Difenoxin",
+        "mo_ta": "Coadministration with drugs that enhance the gastrointestinal absorption or inhibit the metabolism of loperamide (e.g., potent CYP450 3A4 or 2C8 inhibitors) may increase the plasma concentrations and adverse effects of loperamide.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Tayrouz Y, Ganssmann B, Ding R, et al. \"Ritonavir increases loperamide plasma concentrations without evidence for P-glycoprotein involvement.\" Clin Pharmacol Ther 70 (2001): 405-14, [2] \"Product Information. Imodium (loperamide).\" Janssen Pharmaceutica, Titusville, NJ., [3] Eggleston W, Clark KH, Marraffa JM \"Loperamide abuse associated with cardiac dysrhythmia and death.\" Ann Emerg Med 69 (2017): 83-6, [4] Kim KA, Chung J, Jung DH, Park JY \"Identification of cytochrome P450 isoforms involved in the metabolism of loperamide in human liver microsomes.\" Eur J Clin Pharmacol 60 (2004): 575-81, [5] US Food and Drug Administration \"FDA warns about serious heart problems with high doses of the antidiarrheal medicine loperamide (Imodium), including from abuse and misuse. Available from: URL: http://www.fda.gov/downloads/Drugs/DrugSafety/UCM505108.pdf.\" ([2016, Jun 7]):, [6] Niemi M, Tornio A, Pasanen MK, Fredrikson H, Neuvonen PJ, Backman JT \"Itraconazole, gemfibrozil and their combination markedly raise the plasma concentrations of loperamide.\" Eur J Clin Pharmacol 62 (2006): 463-72, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [10] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [11] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [12] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY.",
+        "hoat_chat_a": "Ketoconazole",
+        "hoat_chat_b": "Loperamide",
+        "san_pham_a": [
+          "A.T Ketoconazole 2%"
+        ],
+        "san_pham_b": [
+          "A.T Loperamid 2 mg"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T Ketoconazole 2%",
+        "thuoc_b": "A.T Loperamid 2 mg",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung A.T Ketoconazole 2% với A.T Loperamid 2 mg có thể làm tăng nồng độ của A.T Loperamid 2 mg trong máu và làm tăng các tác dụng không mong muốn của thuốc này, do A.T Ketoconazole 2% có khả năng ức chế các enzym trong gan (cytochrome P450 3A4 hoặc 2C8) tham gia phân hủy A.T Loperamid 2 mg, đồng thời làm tăng hấp thu thuốc qua đường tiêu hóa.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời với các thuốc làm tăng hấp thu qua đường tiêu hóa hoặc ức chế chuyển hóa loperamide (ví dụ các chất ức chế mạnh CYP450 3A4 hoặc 2C8) có thể làm tăng nồng độ trong huyết tương và tác dụng không mong muốn của loperamide.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là A.T Ketoconazole 2% + A.T Loperamid 2 mg. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "A.T Ketoconazole 2% + A.T Loperamid 2 mg",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "A.T Ketoconazole 2%",
+      "A.T Loperamid 2 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Ketoconazole 2%",
+          "A.T Loperamid 2 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "case_id": "dis-nang-002",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.1785,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Daunorubicin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Daunorubicin",
+        "ten_chuan": "Daunorubicin",
+        "medication_id": "DDInter485",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Daunocin"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Daunocin"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Daunocin"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với Daunocin, nếu bạn có tiền sử hoặc đang mắc bệnh thận thì cần hết sức lưu tâm, vì khoảng 25% thuốc được thải ra ngoài qua nước tiểu ở dạng vẫn còn hoạt tính. Khi thận hoạt động kém, lượng thuốc này thoát ra chậm hơn, nên nguy cơ gặp tác dụng phụ độc hại có thể tăng lên ngay ở mức liều thường dùng. Chính vì vậy, việc đánh giá chức năng thận trước mỗi đợt điều trị là điều được khuyến cáo để bác sĩ cân nhắc cho phù hợp với tình trạng của bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Burke JF Jr, Laucius JF, Brodovsky HS, Soriano RZ \"Doxorubicin hydrochloride-associated renal failure.\" Arch Intern Med 137 (1977):  385-8|Thomson M, de Arriba G, Ordi J, Oliva H, Hernando L \"Acute myelogenous leukemia treated with daunomycin associated with nephrotic syndrome.\" Nephron 51 (1989):  261-4|Morino N, Nojima Y, Mimura T, Hamasai K, Nakamoto T, Hirai H, Arai M, Matsuya S, Yazaki Y \"Nephrotic syndrome developed in a patient with acute promyelocytic leukemia treated with daunomycin.\" Nephron 70 (1995):  374-5|\"Product Information. Cerubidine (daunorubicin).\" Wyeth-Ayerst Laboratories  (2001):",
+        "mo_ta_dich": "Khoảng 25% daunorubicin được thải trừ ở dạng hoạt động qua nước tiểu. Bệnh nhân suy thận có nguy cơ độc tính cao hơn ở liều daunorubicin được khuyến nghị. Liệu pháp daunorubicin nên được dùng thận trọng và với liều giảm ở bệnh nhân suy giảm chức năng thận đáng kể. Khuyến nghị đánh giá lâm sàng chức năng thận trước mỗi đợt điều trị."
+      },
+      {
+        "san_pham": [
+          "Daunocin"
+        ],
+        "ten_benh": "Suy tủy xương",
+        "muc_do": "nang",
+        "giai_thich": "Daunocin có tác dụng ức chế tủy xương rất mạnh, và tình trạng này xảy ra ở tất cả mọi người dùng thuốc ở liều điều trị. Vì vậy, nếu bạn đã có tiền sử suy tủy xương (giảm khả năng tạo máu của tủy), việc dùng Daunocin có thể khiến tình trạng này nặng thêm, và chỉ nên bắt đầu điều trị khi lợi ích mang lại thực sự lớn hơn nguy cơ. Khi tủy bị ức chế kéo dài và nặng, cơ thể dễ bị nhiễm trùng chồng lên hoặc bị chảy máu. Bạn nên báo ngay cho bác sĩ nếu thấy các dấu hiệu như sốt, đau họng, nhiễm trùng tại chỗ hay chảy máu, đồng thời cần được theo dõi sát chức năng tạo máu trong suốt quá trình dùng thuốc.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Cerubidine (daunorubicin).\" Wyeth-Ayerst Laboratories  (2001):|\"Product Information. Daunoxome (daunorubicin liposomal).\" Nexstar Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Daunorubicin hydrochloride là một thuốc ức chế tủy xương mạnh. Tình trạng ức chế sẽ xảy ra ở tất cả bệnh nhân được dùng liều điều trị của thuốc. Không nên bắt đầu điều trị bằng daunorubicin hydrochloride ở bệnh nhân có tình trạng ức chế tủy xương do thuốc từ trước, trừ khi lợi ích từ việc điều trị đó đáng để chấp nhận rủi ro. Tình trạng ức chế tủy xương kéo dài, nặng có thể dẫn đến bội nhiễm hoặc xuất huyết. Bệnh nhân cần được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý ức chế tủy xương như sốt, đau họng, nhiễm trùng tại chỗ hoặc chảy máu. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Daunocin"
+        ],
+        "ten_benh": "Suy tim",
+        "muc_do": "nang",
+        "giai_thich": "Daunocin có thể gây độc cho cơ tim, dẫn đến suy tim sung huyết. Nếu bạn đã có bệnh tim từ trước hoặc từng dùng hóa trị nhóm anthracycline, nguy cơ bị suy tim sung huyết sẽ cao hơn. Vì vậy, lợi ích và rủi ro của việc dùng Daunocin ở những người này cần được cân nhắc kỹ trước khi bắt đầu điều trị. Ở người lớn, tỷ lệ suy tim sung huyết do thuốc gây ra tăng lên khi tổng liều tích lũy của Daunocin vượt quá 550 mg/m2. Bác sĩ cũng có thể chỉ định đo điện tâm đồ và/hoặc xác định phân suất tống máu tâm thu trước mỗi đợt điều trị.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Mhatre R, Herman E, Huidobro A, Waravdekar V \"The possible relationship between metabolism and cardiac toxicity of duanomycin and related compounds.\" J Pharmacol Exp Ther 178 (1971):  216-22|Von Hoff DD, Rozencweig M, Layard M, Slavik M, Muggia FM \"Daunomycin-induced cardiotoxicity in children and adults. A review of 110 cases.\" Am J Med 62 (1977):  200-8|Harrison DT, Sanders LA \"Letter: Pericarditis in a case of early daunorubicin cardiomyopathy.\" Ann Intern Med 85 (1976):  339-41|Al-Ismail SA, Parry DH, Whittaker JA \"Anthracycline cardiotoxicity and acute myelogenous leukaemia.\" Br Med J 1 (1977):  815|Buja LM, Ferrans VJ, Mayer RJ, Roberts WC, Henderson ES \"Cardiac ultrastructural changes induced by daunorubicin therapy.\" Cancer 32 (1973):  771-88|Malhotra OP, Talwar KK, Chopra P, Kumar R \"Erythroleukaemia and daunorubicin-induced cardiotoxicity in a young boy.\" Br J Clin Pract 44 (1990):  633-4|Von Hoff DD, Layard M \"Risk factors for development of daunorubicin cardiotoxicity.\" Cancer Treat Rep 65 Suppl 4 (1981):  19-23|Ferrans VJ \"Overview of cardiac pathology in relation to anthracycline cardiotoxicity.\" Cancer Treat Rep 62 (1978):  955-61|Ainger LE, Bushore J, Johnson WW, Ito J \"Daunomycin: a cardiotoxic agent.\" J Natl Med Assoc 63 (1971):  261-7|Kajihara H, Yokozaki H, Yamahara M, Kadomoto Y, Tahara E \"Anthracycline induced myocardial damage. An analysis of 16 autopsy cases.\" Pathol Res Pract 181 (1986):  434-41|\"Daunorubicin and the heart.\" Br Med J 4 (1974):  431-2|\"Product Information. Daunoxome (daunorubicin liposomal).\" Nexstar Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Daunorubicin có thể gây độc tính cơ tim dẫn đến suy tim sung huyết. Bệnh nhân có bệnh tim từ trước hoặc đã điều trị anthracycline trước đó có nguy cơ suy tim sung huyết tăng lên. Cần cân nhắc tỷ lệ lợi ích-trên-nguy cơ của liệu pháp daunorubicin ở những bệnh nhân này trước khi bắt đầu điều trị. Tỷ lệ suy tim sung huyết do thuốc gây ra ở người lớn tăng lên khi tổng liều tích lũy của daunorubicin vượt quá 550 mg/m2. Khuyến cáo thực hiện điện tâm đồ và/hoặc xác định phân suất tống máu tâm thu trước mỗi đợt điều trị."
+      },
+      {
+        "san_pham": [
+          "Daunocin"
+        ],
+        "ten_benh": "Nhiễm trùng",
+        "muc_do": "nang",
+        "giai_thich": "Daunocin có thể gây ức chế tủy xương nặng ở liều điều trị, làm giảm khả năng chống đỡ của cơ thể trước các tác nhân gây bệnh. Vì vậy, nếu bạn đang mắc hoặc có tiền sử nhiễm trùng, việc dùng Daunocin có thể được xem là chống chỉ định, nên hãy báo ngay cho bác sĩ biết tình trạng này trước khi dùng thuốc. Trong thời gian dùng Daunocin, bạn cần báo ngay cho bác sĩ nếu thấy các dấu hiệu gợi ý nhiễm trùng như sốt, đau họng hay nhiễm trùng tại chỗ. Bác sĩ cũng sẽ theo dõi sát chức năng tạo máu của bạn trong suốt quá trình điều trị.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Cerubidine (daunorubicin).\" Wyeth-Ayerst Laboratories  (2001):|\"Product Information. Daunoxome (daunorubicin liposomal).\" Nexstar Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Daunorubicin có thể gây ức chế tủy xương nghiêm trọng ở liều điều trị. Việc sử dụng daunorubicin có thể bị chống chỉ định ở bệnh nhân mắc các bệnh nhiễm trùng đã biết. Tất cả bệnh nhân cần được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý nhiễm trùng như sốt, đau họng hoặc nhiễm trùng tại chỗ trong khi điều trị bằng daunorubicin. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Daunocin"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh gan, dùng Daunocin cần được cân nhắc kỹ vì thuốc được chuyển hóa mạnh trong tế bào máu và có khoảng 40% được thải ra ngoài qua đường mật dưới dạng còn hoạt tính. Khi gan yếu, việc thải thuốc qua mật bị ảnh hưởng nên nguy cơ gặp độc tính của Daunocin có thể tăng lên. Vì vậy, trước mỗi đợt điều trị bằng Daunocin, việc đánh giá chức năng gan trên lâm sàng là điều được khuyến cáo để bác sĩ có căn cứ theo dõi và xử trí phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Cerubidine (daunorubicin).\" Wyeth-Ayerst Laboratories  (2001):",
+        "mo_ta_dich": "Daunorubicin được chuyển hóa rộng rãi thành dạng có hoạt tính sinh học trong hồng cầu và bạch cầu bình thường. Đã chứng minh được sự chuyển hóa tiếp theo qua khử và liên hợp. Khoảng 40% daunorubicin được thải trừ ở dạng có hoạt tính qua bài tiết mật. Bệnh nhân suy gan có thể tăng nguy cơ độc tính. Nên thận trọng khi dùng daunorubicin và giảm liều ở bệnh nhân suy giảm chức năng gan. Khuyến cáo đánh giá lâm sàng chức năng gan trước mỗi đợt điều trị bằng daunorubicin."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh gan, Bệnh thận, Nhiễm trùng, Suy tim, Suy tủy xương.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

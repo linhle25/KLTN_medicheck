@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-052",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.3352,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Doxazosin",
+      "Folic acid"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Doxazosin",
+        "ten_chuan": "Doxazosin",
+        "medication_id": "DDInter592",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Folic acid",
+        "ten_chuan": "Folic acid",
+        "medication_id": "DDInter771",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Doxazosin",
+        "thuoc_b": "Folic acid",
+        "medication_a_id": "DDInter592",
+        "medication_b_id": "DDInter771",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C02C, Prazosin, Guanethidine",
+        "thay_the_b": "B03A, Iron protein succinylate, Iron, Ferrous gluconate, Ferric maltol, Iron sucrose, Ferrous fumarate, V04C, Methacholine, Hexaminolevulinate, Secretin human, Methylene blue, Sermorelin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Atzosin 1 mg (hoạt chất: Doxazosin)",
+        "thuoc_b": "Acid Folic 5 mg (hoạt chất: Folic acid)",
+        "medication_a_id": "DDInter592",
+        "medication_b_id": "DDInter771",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "C02C, Prazosin, Guanethidine",
+        "thay_the_b": "B03A, Iron protein succinylate, Iron, Ferrous gluconate, Ferric maltol, Iron sucrose, Ferrous fumarate, V04C, Methacholine, Hexaminolevulinate, Secretin human, Methylene blue, Sermorelin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Doxazosin",
+        "hoat_chat_b": "Folic acid",
+        "san_pham_a": [
+          "Atzosin 1 mg"
+        ],
+        "san_pham_b": [
+          "Acid Folic 5 mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Atzosin 1 mg (hoạt chất: Doxazosin)",
+        "thuoc_b": "Acid Folic 5 mg (hoạt chất: Folic acid)",
+        "medication_a_id": "DDInter592",
+        "medication_b_id": "DDInter771",
+        "xu_tri": "-",
+        "thay_the_a": "C02C, Prazosin, Guanethidine",
+        "thay_the_b": "B03A, Iron protein succinylate, Iron, Ferrous gluconate, Ferric maltol, Iron sucrose, Ferrous fumarate, V04C, Methacholine, Hexaminolevulinate, Secretin human, Methylene blue, Sermorelin",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Doxazosin",
+        "hoat_chat_b": "Folic acid",
+        "san_pham_a": [
+          "Atzosin 1 mg"
+        ],
+        "san_pham_b": [
+          "Acid Folic 5 mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Atzosin 1 mg",
+        "thuoc_b": "Acid Folic 5 mg",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Atzosin 1 mg và Acid Folic 5 mg có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": "Giữa Atzosin 1 mg và Acid Folic 5 mg có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc hiện tại ghi nhận 1 cặp thuốc-thuốc có tương tác, toàn bộ thuộc mức chưa phân loại. Cặp đáng chú ý trong danh sách là Atzosin 1 mg và Acid Folic 5 mg. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Atzosin 1 mg và Acid Folic 5 mg",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Atzosin 1 mg",
+      "Acid Folic 5 mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Atzosin 1 mg",
+          "Acid Folic 5 mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

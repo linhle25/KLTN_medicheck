@@ -1,0 +1,149 @@
+{
+  "case_id": "dd-nang-004",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.129,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Infliximab",
+      "Irinotecan"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Infliximab",
+        "ten_chuan": "Infliximab",
+        "medication_id": "DDInter923",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Irinotecan",
+        "ten_chuan": "Irinotecan",
+        "medication_id": "DDInter973",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Infliximab",
+        "thuoc_b": "Irinotecan",
+        "medication_a_id": "DDInter923",
+        "medication_b_id": "DDInter973",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Methotrexate, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "REMICADE (hoạt chất: Infliximab)",
+        "thuoc_b": "Campto (hoạt chất: Irinotecan)",
+        "medication_a_id": "DDInter923",
+        "medication_b_id": "DDInter973",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Methotrexate, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Infliximab",
+        "hoat_chat_b": "Irinotecan",
+        "san_pham_a": [
+          "REMICADE"
+        ],
+        "san_pham_b": [
+          "Campto"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "REMICADE (hoạt chất: Infliximab)",
+        "thuoc_b": "Campto (hoạt chất: Irinotecan)",
+        "medication_a_id": "DDInter923",
+        "medication_b_id": "DDInter973",
+        "xu_tri": "Patients receiving a TNF blocker alone or with other immunosuppressive or myelosuppressive agents should be monitored closely for the development of infections. TNF blocker therapy should be discontinued if a serious infection or sepsis occurs. Close monitoring for signs and symptoms of HSTCL (e.g., splenomegaly, hepatomegaly, abdominal pain, persistent fever, night sweats, weight loss) is also recommended during use of TNF blockers, particularly in combination with other immunosuppressants such as azathioprine and mercaptopurine.",
+        "thay_the_a": "L04A, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Anifrolumab, Ravulizumab, Mycophenolic acid, Methotrexate, Abatacept, Apremilast, Inebilizumab, Belumosudil",
+        "thay_the_b": "-",
+        "mo_ta": "The use of tumor necrosis factor (TNF) blockers with other immunosuppressive or myelosuppressive agents may increase the risk of infections. Serious infections and sepsis, including fatalities, have been reported with the use of TNF blockers, particularly in patients on concomitant immunosuppressive therapy. Agents that may be significantly myelo- or immunosuppressive include antineoplastic agents, radiation, zidovudine, linezolid, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, and long-term topical or inhaled corticosteroids. Concomitant use of TNF blockers with other immunosuppressants such as azathioprine or mercaptopurine may also increase the risk of a rare and often fatal cancer of white blood cells known as hepatosplenic T-Cell lymphoma (HSTCL).",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] FDA. U.S. Food and Drug Administration \"FDA Drug Safety Communication: Drug labels for the Tumor Necrosis Factor-alpha (TNFa) blockers now include warnings about infection with Legionella and Listeria bacteria. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/ucm270849.htm.\" ([2011 Sept 7]):, [2] \"Product Information. Cimzia (certolizumab).\" UCB Pharma Inc, Smyrna, GA., [3] \"Product Information. Simponi (golimumab).\" Centocor Inc, Malvern, PA., [4] \"Product Information. Enbrel (etanercept).\" Wyeth-Ayerst Laboratories, Philadelphia, PA., [5] \"Product Information. Remicade (infliximab).\" Centocor Inc, Malvern, PA., [6] \"Product Information. Humira (adalimumab).\" Abbott Pharmaceutical, Abbott Park, IL.",
+        "hoat_chat_a": "Infliximab",
+        "hoat_chat_b": "Irinotecan",
+        "san_pham_a": [
+          "REMICADE"
+        ],
+        "san_pham_b": [
+          "Campto"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "REMICADE",
+        "thuoc_b": "Campto",
+        "muc_do": "nang",
+        "giai_thich": "Dùng REMICADE chung với Campto có thể làm tăng nguy cơ nhiễm trùng, vì cả hai đều tác động lên hệ miễn dịch và tủy xương. Campto thuộc nhóm thuốc chống ung thư, có thể ức chế mạnh tủy xương và hệ miễn dịch, nên khi kết hợp với REMICADE - một thuốc chẹn yếu tố hoại tử khối u (TNF) - nguy cơ nhiễm trùng nặng và nhiễm khuẩn huyết càng cao hơn, thậm chí đã có báo cáo tử vong. Ngoài ra, việc phối hợp thuốc chẹn TNF với các thuốc ức chế miễn dịch khác còn có thể làm tăng nguy cơ một loại ung thư tế bào bạch cầu hiếm gặp và thường gây tử vong. [ẢN_DỊCH]\nmô tả: Việc sử dụng thuốc chẹn yếu tố hoại tử khối u (TNF) cùng với các thuốc ức chế miễn dịch hoặc ức chế tủy xương khác có thể làm tăng nguy cơ nhiễm trùng. Nhiễm trùng nặng và nhiễm khuẩn huyết, bao gồm tử vong, đã được báo cáo khi dùng thuốc chẹn TNF, đặc biệt ở bệnh nhân đang điều trị ức chế miễn dịch đồng thời. Các thuốc có thể ức chế tủy hoặc ức chế miễn dịch đáng kể bao gồm thuốc chống ung thư, xạ trị, zidovudine, linezolid, một số thuốc chống thấp khớp, liều cao corticosteroid hoặc thuốc adrenocorticotropic, và corticosteroid dùng tại chỗ hoặc dạng hít dài ngày. Dùng đồng thời thuốc chẹn TNF với các thuốc ức chế miễn dịch khác như azathioprine hoặc mercaptopurine cũng có thể làm tăng nguy cơ một loại ung thư tế bào bạch cầu hiếm gặp và thường gây tử vong được gọi là u lympho tế bào T gan lách (HS...). xử trí:",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau của bạn, mình thấy có 1 cặp thuốc có tương tác, và cặp này ở mức nghiêm trọng. Đáng chú ý nhất là REMICADE và Campto ở mức nghiêm trọng. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "REMICADE và Campto",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "REMICADE",
+      "Campto"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "REMICADE"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Campto"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

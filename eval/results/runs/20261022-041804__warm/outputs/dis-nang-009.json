@@ -1,0 +1,478 @@
+{
+  "case_id": "dis-nang-009",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.0949,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Dextrose, unspecified form",
+      "Calcium chloride",
+      "Potassium chloride",
+      "Sodium acetate"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Dextrose, unspecified form",
+        "ten_chuan": "Dextrose, unspecified form",
+        "medication_id": "DDInter529",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Calcium chloride",
+        "ten_chuan": "Calcium chloride",
+        "medication_id": "DDInter272",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Potassium chloride",
+        "ten_chuan": "Potassium chloride",
+        "medication_id": "DDInter1497",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Sodium acetate",
+        "ten_chuan": "Sodium acetate",
+        "medication_id": "DDInter1681",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Calcium chloride",
+        "thuoc_b": "Dextrose, unspecified form",
+        "medication_a_id": "DDInter272",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Potassium chloride",
+        "thuoc_b": "Dextrose, unspecified form",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Sodium acetate",
+        "thuoc_b": "Dextrose, unspecified form",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Potassium chloride",
+        "thuoc_b": "Calcium chloride",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter272",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A12B, Potassium citrate, Potassium bicarbonate, Potassium gluconate, B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine",
+        "thay_the_b": "A12A, Calcium glucoheptonate, Calcium lactate, Calcium gluconate, Calcium glubionate anhydrous, Calcium citrate, Calcium carbonate, Calcium Phosphate, A11G, Ascorbic acid, Calcium citrate, Calcium carbonate, Calcium acetate",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Sodium acetate",
+        "thuoc_b": "Calcium chloride",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter272",
+        "khong_du_du_lieu": true
+      },
+      {
+        "thuoc_a": "Potassium chloride",
+        "thuoc_b": "Sodium acetate",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter1681",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter272",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Calcium chloride",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter529",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Sodium acetate",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter272",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A12B, Potassium citrate, Potassium bicarbonate, Potassium gluconate, B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine",
+        "thay_the_b": "A12A, Calcium glucoheptonate, Calcium lactate, Calcium gluconate, Calcium glubionate anhydrous, Calcium citrate, Calcium carbonate, Calcium Phosphate, A11G, Ascorbic acid, Calcium citrate, Calcium carbonate, Calcium acetate",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Calcium chloride",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter272",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Sodium acetate",
+        "hoat_chat_b": "Calcium chloride",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter1681",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Sodium acetate",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter272",
+        "medication_b_id": "DDInter529",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Calcium chloride",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter529",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Dextrose, unspecified form)",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter529",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Sodium acetate",
+        "hoat_chat_b": "Dextrose, unspecified form",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter272",
+        "xu_tri": "-",
+        "thay_the_a": "A12B, Potassium citrate, Potassium bicarbonate, Potassium gluconate, B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine",
+        "thay_the_b": "A12A, Calcium glucoheptonate, Calcium lactate, Calcium gluconate, Calcium glubionate anhydrous, Calcium citrate, Calcium carbonate, Calcium Phosphate, A11G, Ascorbic acid, Calcium citrate, Calcium carbonate, Calcium acetate",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Calcium chloride",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Calcium chloride)",
+        "medication_a_id": "DDInter1681",
+        "medication_b_id": "DDInter272",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Sodium acetate",
+        "hoat_chat_b": "Calcium chloride",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      },
+      {
+        "thuoc_a": "Aminomix Peripheral (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Aminomix Peripheral (hoạt chất: Sodium acetate)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter1681",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Sodium acetate",
+        "san_pham_a": [
+          "Aminomix Peripheral"
+        ],
+        "san_pham_b": [
+          "Aminomix Peripheral"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Aminomix Peripheral"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Aminomix Peripheral"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Nhiễm toan",
+        "muc_do": "trung_binh",
+        "giai_thich": "Với người đang bị nhiễm toan (tình trạng máu bị dư axit), dùng Aminomix Peripheral cần được bác sĩ theo dõi kỹ. Lý do là thuốc có chứa kali clorua, mà khi bị nhiễm toan kèm thiếu kali thì người ta thường chuộng loại muối kali có tính kiềm hơn, vì chất kiềm giúp đưa kali vào trong tế bào dễ hơn. Vì vậy, nếu đang dùng Aminomix Peripheral trong bối cảnh này, bác sĩ sẽ theo dõi sát cân bằng axit-bazơ trong máu, các chất điện giải, điện tâm đồ và tình trạng sức khỏe thực tế của bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Leiter LA, Josse RG, West ML, Halperin ML \"Severe metabolic acidosis induced in a patient during fasting by KCl administration.\" Clin Invest Med 11 (1988):  266-70|\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):|Braunwald E, Hauser SL, Kasper DL, Fauci AS, Isselbacher KJ, Longo DL, Martin JB, eds., Wilson JD \"Harrison's Principles of Internal Medicine.\" New York, NY: McGraw-Hill Health Professionals Division  (1998):",
+        "mo_ta_dich": "Hạ kali máu ở bệnh nhân nhiễm toan chuyển hóa nên được điều trị bằng muối kali có tính kiềm hóa (tức là acetate, bicarbonate, citrate hoặc gluconate) thay vì kali clorua, vì liệu pháp kiềm giúp thúc đẩy hấp thu kali vào tế bào. Khuyến cáo theo dõi sát cân bằng acid-base, điện giải huyết thanh, điện tâm đồ và tình trạng lâm sàng."
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Mất nước",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn đang bị mất nước nặng mà dùng Aminomix Peripheral, cần lưu ý vì thuốc có chứa kali và việc bổ sung kali trong tình trạng này có thể làm tăng nguy cơ suy giảm chức năng thận. Khi đó, lượng kali trong máu có thể tăng lên rất nhanh và đôi khi không có triệu chứng gì rõ ràng, chỉ phát hiện qua xét nghiệm thấy kali cao (khoảng 6,5 đến 8 mEq/L) cùng những thay đổi đặc trưng trên điện tâm đồ như đỉnh sóng T cao, mất sóng P, đoạn ST hạ xuống và khoảng QT kéo dài. Về sau, tình trạng này có thể biểu hiện thành yếu liệt cơ và trụy tim mạch do tim ngừng đập khi kali lên tới 9 đến 12 mEq/L. Vì vậy, việc theo dõi sát nồng độ kali trong máu là điều được khuyến cáo, và ở một số người có thể cần theo dõi điện tâm đồ liên tục hoặc nhiều lần trong quá trình điều trị, đặc biệt nếu thuốc được truyền qua đường tĩnh mạch.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):|\"Product Information. Potassium Acetate (potassium acetate).\" Abbott Pharmaceutical  (2002):|\"Product Information. K-Lyte (potassium bicarbonate-potassium citrate).\" Bristol-Myers Squibb  (2002):|\"Product Information. Kaon (potassium gluconate).\" Savage Laboratories  (2002):",
+        "mo_ta_dich": "Dùng muối kali ở bệnh nhân mất nước nặng có thể dẫn đến suy giảm chức năng thận. Liệu pháp muối kali nên được dùng thận trọng ở bệnh nhân mất nước cấp (ví dụ do tiêu chảy nặng hoặc kéo dài hoặc do stress nhiệt). Khuyến cáo theo dõi sát nồng độ kali huyết thanh, vì tăng kali máu có thể gây tử vong có thể phát triển nhanh chóng và thường không có triệu chứng, chỉ biểu hiện bằng nồng độ kali tăng (6,5 đến 8 mEq/L) và các thay đổi điện tâm đồ đặc trưng (đỉnh sóng T, mất sóng P, giảm đoạn ST, kéo dài khoảng QT). Các biểu hiện muộn bao gồm liệt cơ và trụy tim mạch do ngừng tim (9 đến 12 mEq/L). Điện tâm đồ liên tục hoặc theo chuỗi có thể phù hợp ở một số bệnh nhân ... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Rối loạn cân bằng acid-base",
+        "muc_do": "trung_binh",
+        "giai_thich": "Aminomix Peripheral có chứa thành phần hoạt động như chất nhận proton hoặc phân ly để tạo ra ion bicarbonate, giúp trung hòa acid trong cơ thể. Nếu bạn đang có tiền sử hoặc đang mắc rối loạn cân bằng acid-base, việc dùng thuốc này cần được theo dõi vì khi chức năng thận suy giảm, việc đào thải bicarbonate bị chậm lại và có thể dẫn đến tình trạng kiềm chuyển hóa. Tình trạng này có thể biểu hiện bằng các dấu hiệu như dễ kích thích hoặc co giật cơ (tetany), loạn nhịp tim, và/hoặc co giật, do pH thay đổi làm ảnh hưởng đến canxi trong máu, hoặc có thể gây nhiễm toan lactic do việc giải phóng oxy bị suy giảm. Vì vậy, khi dùng Aminomix Peripheral ở người có bệnh nền này, việc theo dõi chức năng thận, cân bằng acid-base và các chất điện giải được khuyến nghị để đảm bảo an toàn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Urocit-K (potassium citrate).\" Mission Pharmacal Company|\"Product Information. Tham (tromethamine).\" Abbott Pharmaceutical  (2001):|\"Product Information. Sodium Lactate (sodium lactate).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Các tác nhân kiềm hóa hoạt động như chất nhận proton và/hoặc phân ly để cung cấp ion bicarbonate. Việc thải trừ bicarbonate bị giảm ở bệnh nhân suy thận và có thể dẫn đến nhiễm kiềm chuyển hóa. Các triệu chứng của nhiễm kiềm chuyển hóa bao gồm tăng kích thích hoặc co giật cơ (tetany), loạn nhịp tim, và/hoặc co giật (pH thay đổi = canxi thay đổi), hoặc nhiễm toan lactic do suy giảm giải phóng oxy. Liệu pháp với các tác nhân kiềm hóa nên được thực hiện với sự thận trọng tối đa ở bệnh nhân suy giảm chức năng thận. Khuyến nghị theo dõi lâm sàng chức năng thận, cân bằng acid/base và điện giải."
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Tiêu chảy",
+        "muc_do": "nang",
+        "giai_thich": "Với Aminomix Peripheral, nếu bạn đang bị tiêu chảy nặng hoặc kéo dài, hoặc đang bị mất nước, thì việc dùng thuốc này thường không được khuyến khích. Lý do là thuốc có chứa thành phần làm mềm phân, nên có thể khiến phân lỏng hơn một chút, dù phần lớn người dùng vẫn dung nạp tốt. Hiếm khi thuốc gây tiêu chảy hoặc đau quặn bụng, và những triệu chứng này có thể làm tình trạng mất nước nặng thêm nếu bạn đang sẵn bị tiêu chảy.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):",
+        "mo_ta_dich": "Hỗn dịch lỏng kali clorid chứa chất làm mềm phân docusat natri như một tác nhân phân tán. Các nghiên cứu lâm sàng với hỗn dịch lỏng kali clorid chỉ ra rằng những thay đổi nhỏ về độ đặc của phân có thể thường gặp mặc dù thường được dung nạp tốt. Tuy nhiên, bệnh nhân hiếm khi có thể gặp tiêu chảy hoặc đau bụng co thắt. Bệnh nhân bị tiêu chảy nặng hoặc mạn tính hoặc bị mất nước thông thường không nên được kê đơn hỗn dịch lỏng kali clorid."
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Rối loạn nước – điện giải",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn đang có tiền sử hoặc đang bị rối loạn nước – điện giải, dùng Aminomix Peripheral cần được cân nhắc kỹ vì thành phần sodium acetate trong thuốc có thể gây giữ nước và giữ muối, dẫn tới tăng natri máu, hạ kali máu, tăng độ đậm đặc của máu (hyperosmolality), phù và làm nặng thêm tình trạng suy tim sung huyết. Những rối loạn này xảy ra vì thuốc có tính kiềm hóa chứa natri, nên khi cơ thể vốn đã mất cân bằng nước và điện giải thì việc bổ sung thêm natri dễ làm mất cân bằng trầm trọng hơn. Chính vì vậy, việc theo dõi cân bằng axit/bazơ và các chất điện giải trước, trong và sau khi dùng thuốc là điều được khuyến cáo để phát hiện sớm các thay đổi này.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Sodium Bicarbonate (sodium bicarbonate).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Sodium Lactate (sodium lactate).\" Abbott Pharmaceutical  (2001):",
+        "mo_ta_dich": "Các tác nhân kiềm hóa chứa natri có thể gây giữ natri và nước và dẫn đến tăng natri huyết, hạ kali huyết, tăng áp lực thẩm thấu, phù và làm nặng thêm suy tim sung huyết. Không nên sử dụng liệu pháp với các tác nhân kiềm hóa chứa natri ở bệnh nhân tăng natri huyết hoặc giữ nước. Khuyến nghị theo dõi lâm sàng cân bằng acid/base và điện giải trước, trong và sau khi hoàn thành liệu pháp với các tác nhân kiềm hóa."
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Liệt chu kỳ gia đình",
+        "muc_do": "nang",
+        "giai_thich": "Aminomix Peripheral có chứa kali clorua, và nếu bạn có tiền sử hoặc đang mắc bệnh liệt chu kỳ gia đình thì việc dùng thuốc này có thể khởi phát cơn liệt, cụ thể là trong thể tăng kali máu của bệnh hoặc trong tình trạng paramyotonia congenita (một rối loạn cơ đi kèm). Lý do là muối kali đưa vào cơ thể có thể trở thành yếu tố kích hoạt cơn ở những người mắc các bệnh này. Vì vậy, nếu bạn thuộc nhóm có bệnh nền như trên, hãy báo cho bác sĩ hoặc dược sĩ biết trước khi dùng Aminomix Peripheral để được cân nhắc phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Braunwald E, Hauser SL, Kasper DL, Fauci AS, Isselbacher KJ, Longo DL, Martin JB, eds., Wilson JD \"Harrison's Principles of Internal Medicine.\" New York, NY: McGraw-Hill Health Professionals Division  (1998):",
+        "mo_ta_dich": "Việc dùng muối kali có thể gây khởi phát cơn ở bệnh liệt chu kỳ tăng kali máu mang tính gia đình hoặc bệnh paramyotonia congenita. Liệu pháp chế phẩm kali nên được dùng thận trọng ở bệnh nhân mắc các tình trạng này."
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Tăng kali máu",
+        "muc_do": "nang",
+        "giai_thich": "Với người đã có tiền sử hoặc đang bị tăng kali máu, dùng Aminomix Peripheral cần được theo dõi sát nồng độ kali trong máu, vì thuốc có chứa potassium chloride – một chất có thể làm kali tăng lên nhanh chóng và nguy hiểm đến tính mạng. Điều đáng lưu ý là tình trạng này thường không có triệu chứng rõ ràng, chỉ thể hiện qua việc tăng nồng độ kali (khoảng 6,5 đến 8 mEq/L) và những thay đổi đặc trưng trên điện tâm đồ như đỉnh sóng T cao, mất sóng P, hạ đoạn ST và kéo dài khoảng QT. Về sau mới có thể xuất hiện liệt cơ và suy sụp tim mạch do ngừng tim (khi kali lên 9 đến 12 mEq/L). Vì vậy, ở một số người, bác sĩ có thể thấy cần theo dõi điện tâm đồ liên tục hoặc nhiều lần trong quá trình dùng thuốc, đặc biệt nếu thuốc được truyền qua đường tĩnh mạch.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Kopman EA, Ramirez-Inawat RC \"Persistent electromechanical cardiac arrest following administration of cardioplegic and glucose-insulin-potassium solutions.\" Anesth Analg 59 (1980):  69-71|Chakko SC, Frutchey J, Gheorghiade M \"Life-threatening hyperkalemia in severe heart failure.\" Am Heart J 117 (1989):  1083-91|Lankton JW, Siler JN, Neigh JL \"Letter: Hyperkalemia after administration of potassium from nonrigid parenteral-fluid containers.\" Anesthesiology 39 (1973):  660-1|Illingworth RN, Proudfoot AT \"Rapid poisoning with slow-release potassium.\" Br Med J 281 (1980):  485-6|Wetli CV, Davis JH \"Fatal hyperkalemia from accidental overdose of potassium chloride.\" JAMA 240 (1978):  1339|Kallen RJ, Rieger CH, Cohen HS, Sutter MA, Ong RT \"Near-fatal hyperkalemia due to ingestion of salt substitute by an infant.\" JAMA 235 (1976):  2125-6|Saxena K \"Death from potassium chloride overdose.\" Postgrad Med 84 (1988):  97-8,101-2|Lawson DH \"Adverse reactions to potassium chloride.\" Q J Med 43 (1974):  433-40|Lawson DH \"Clinical use of potassium supplements.\" Am J Hosp Pharm 32 (1975):  708-11|Perez GO, Oster JR, Pelleya R, Caralis PV, Kem DC \"Hyperkalemia from single small oral doses of potassium chloride.\" Nephron 36 (1984):  270-1|Cox J, Starbuck M \"Hyperkalemic cardiac arrest during an infusion of potassium chloride following an overdose of propranolol.\" Resuscitation 14 (1986):  255-6|Ceuppens H, Hitchcock JF, Damen J, Jambroes G, Ae Dion R \"Severe hypotension due to potassium-induced pericardial injury.\" Thorax 37 (1982):  546-7|\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):|Schrier RW, Regal EM \"Influence of aldosterone on sodium, water and potassium metabolism in chronic renal disease.\" Kidney Int 1 (1972):  156-68|\"Product Information. Urocit-K (potassium citrate).\" Mission Pharmacal Company|\"Product Information. K-Phos Neutral (potassium phosphate).\" Beach Pharmaceuticals  (2001):|Braunwald E, Hauser SL, Kasper DL, Fauci AS, Isselbacher KJ, Longo DL, Martin JB, eds., Wilson JD \"Harrison's Principles of Internal Medicine.\" New York, NY: McGraw-Hill Health Professionals Division  (1998):|\"Product Information. Potassium Acetate (potassium acetate).\" Abbott Pharmaceutical  (2002):|\"Product Information. K-Lyte (potassium bicarbonate-potassium citrate).\" Bristol-Myers Squibb  (2002):|\"Product Information. Kaon (potassium gluconate).\" Savage Laboratories  (2002):",
+        "mo_ta_dich": "Việc sử dụng các muối kali là chống chỉ định ở bệnh nhân tăng kali máu, vì sự gia tăng thêm nồng độ kali huyết thanh ở những bệnh nhân này có thể dẫn đến loạn nhịp tim hoặc ngừng tim. Liệu pháp kali nên được dùng thận trọng ở bệnh nhân có các tình trạng dễ dẫn đến tăng kali máu, như suy thận mạn, nhiễm toan toàn thân, mất nước cấp, giảm aldosteron (ví dụ do suy thượng thận nguyên phát hoặc thiếu hụt enzym thượng thận bẩm sinh), đái tháo đường không kiểm soát, và phân hủy mô lan rộng (ví dụ do bỏng nặng, tan máu trong lòng mạch, hội chứng ly giải khối u, hoặc tiêu cơ vân). Khuyến nghị theo dõi sát nồng độ kali huyết thanh, vì tăng kali máu có thể gây tử vong có thể phát triển nhanh chóng và thường không có triệu chứng, chỉ biểu hiện... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Bệnh tiêu hóa",
+        "muc_do": "nang",
+        "giai_thich": "Với người đang có bệnh về tiêu hóa, dùng Aminomix Peripheral cần lưu ý vì thành phần kali clorua trong thuốc gây kích ứng niêm mạc dạ dày – ruột, và khi tiếp xúc lâu có thể dẫn tới loét hoặc hẹp lòng ruột. Các báo cáo phản ứng có hại tự phát cho thấy tỷ lệ tổn thương ruột non gặp ở dạng viên bao tan trong ruột là 40–50 trên 100.000 người-năm, còn với dạng phóng thích có kiểm soát kiểu nền sáp thì dưới 1 trên 100.000 người-năm. Loét thực quản cũng đã được ghi nhận khi dùng dạng phóng thích có kiểm soát ở bệnh nhân tim mạch bị chèn ép thực quản do nhĩ trái to. Vì vậy, nếu đang có bệnh tiêu hóa, bạn nên cho bác sĩ hoặc dược sĩ biết tình trạng của mình để được cân nhắc phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Mason SJ, O'Meara TF \"Drug-induced esophagitis.\" J Clin Gastroenterol 3 (1981):  115-20|Bronson DL, Gamelli RL \"Jejunal ulceration and stricture due to wax-matrix potassium chloride tablets and amitriptyline.\" J Clin Pharmacol 27 (1987):  788-9|Teplick JG, Teplick SK, Ominsky SH, Haskin ME \"Esophagitis caused by oral medication.\" Radiology 134 (1980):  23-5|Dietz MW \"Iatrogenic jejunal ulcer.\" Am J Roentgenol Radium Ther Nucl Med 99 (1967):  136-8|Reinus FZ, Weinberger HA, Fischer WW \"Medication-induced ulceration of the small bowel.\" Am J Surg 112 (1966):  97-101|Wagner W, Longerbeam JK, Smith LL, Feikes HL \"Drug-induced ulcers of the small bowel causing intestinal obstruction or perforation.\" Am Surg 33 (1967):  7-11|Campbell JR, Knapp RW \"Small bowel ulceration associated with thiazide and potassium therapy: review of 13 cases.\" Ann Surg 163 (1966):  291-6|Berg EH, Schuster F, Segal GA \"Thiazides with potassium producing intestinal stenosis.\" Arch Surg 91 (1965):  998-1001|Naiken VS, Rachman R \"Giant ulcers of the transverse colon.\" JAMA 217 (1971):  344|Ball JR \"Letter: Potassium strictures of the upper alimentary tract.\" Lancet 1 (1976):  495-6|Holland GW \"Stenosing ulcers of the small bowel associated with thiazide and potassium therapy.\" N Z Med J 64 (1965):  383-5|Watts CD, Curry C, Randolph RP \"Intestinal complications found from potassium chloride. Case report.\" J Natl Med Assoc 57 (1965):  492-3|Jacobs E, Pringot J \"Gastric ulcers due to the intake of potassium chloride.\" Am J Dig Dis 18 (1973):  289-94|Eng J, Sabanathan S \"Drug-induced esophagitis.\" Am J Gastroenterol 86 (1991):  1127-33|Lambert JR, Newman A \"Ulceration and stricture of the esophagus due to oral potassium chloride (slow release tablet) therapy.\" Am J Gastroenterol 73 (1980):  508-11|Lewis JH \"Gastrointestinal injury due to medicinal agents.\" Am J Gastroenterol 81 (1986):  819-34|Barloon TJ, Moore SA, Mitros FA \"A case of stenotic obstruction of the jejunum secondary to slow- release potassium.\" Am J Gastroenterol 81 (1986):  192-4|Watson MR, Mark JB \"Ulceration of the small intestine. Relation to enteric-coated potassium.\" Am J Surg 112 (1966):  421-5|Billig DM, Jordan GL Jr \"Nonspecific ulcers of the small intestine.\" Am J Surg 110 (1965):  745-9|Barkin JS, Harary AM, Shamblen CE, Lasseter KC \"Potassium chloride and gastrointestinal injury.\" Ann Intern Med 98 (1983):  261-2|Antonescu CG, Barritt AS 3d \"Potassium chloride and gastric outlet obstruction.\" Ann Intern Med 111 (1989):  855-6|Strom BL, Carson JL, Schinnar R, Sim E, Maislin G, Soper K, Morse ML \"Upper gastrointestinal tract bleeding from oral potassium chloride. Comparative risk from microencapsulated vs wax-matrix formulations.\" Arch Intern Med 147 (1987):  954-7|Peters JL \"Benign oesophageal stricture following oral potassium chloride therapy.\" Br J Surg 63 (1976):  698-9|Davies DR, Brightmore T \"Idiopathic and drug-induced ulceration of the small intestine.\" Br J Surg 57 (1970):  134-9|Ward C, Hamid S, Dow J \"Gastric complication of massive Slow-K overdose.\" Br J Surg 74 (1987):  490|Collins FJ, Matthews HR, Baker SE, Strakova JM \"Drug-induced oesophageal injury.\" Br Med J 1 (1979):  1673-6|Tresadern J, Rickwood AM, Spitz L \"Multiple small bowel strictures in a child and accidental potassium chloride ingestion.\" Br Med J 2 (1977):  1124-5|Moorhouse RA \"Letter: Ulceration of small intestine and slow-release potassium tablets.\" Br Med J 3 (1975):  542|Farquharson-Roberts MA, Giddings AE, Nunn AJ \"Perforation of small bowel due to slow release potassium chloride (slow-K).\" Br Med J 3 (1975):  206|Ashby WB, Humphreys J, Smith SJ \"Small-bowel ulceration induced by potassium chloride.\" Br Med J 5475 (1965):  1409-12|Wynn V \"Potassium chloride and bowel ulceration.\" Br Med J 5477 (1965):  1546|Rosenthal T, Adar R, Militianu J, Deutsch V \"Esophageal ulceration and oral potassium chloride ingestion.\" Chest 65 (1974):  463-5|McMahon FG, Ryan JR, Akdamar K, Ertan A \"Effect of potassium chloride supplements on upper gastrointestinal mucosa.\" Clin Pharmacol Ther 35 (1984):  852-5|Brower RA \"Jejunal perforation possibly induced by slow-release potassium in a patient with Crohn's disease.\" Dig Dis Sci 31 (1986):  1387-90|Shuster F, Berg EH \"Enteric-coated potassium and bowel obstruction.\" JAMA 194 (1965):  570|McMahon FG, Ryan JR, Akdamar K, Ertan A \"Upper gastrointestinal lesions after potassium chloride supplements: a controlled clinical trial.\" Lancet 2 (1982):  1059-61|Learmonth I, Weaver PC \"Letter: Potassium stricture of the upper alimentary tract.\" Lancet 1 (1976):  251-2|Moorhouse RA \"Letter: Potassium-induced stricture of the small bowel.\" Lancet 1 (1976):  365|Roberts HJ \"Potassium chloride and intestinal ulceration.\" Lancet 2 (1965):  1127|Lakhani M, Stewart WK \"Hazards of potassium chloride solution.\" Lancet 2 (1985):  453|Leijonmarck CE, Raf L \"Gastrointestinal lesions and potassium chloride supplements.\" Lancet 1 (1985):  56-7|Hasker W, McCaffrey J \"Ulceration of a Meckel's diverticulum due to a potassium chloride tablet.\" Med J Aust 2 (1972):  261-2|Lubbe WF, Cadogan ES, Kannemeyer AH \"Oesophageal ulceration due to slow-release potassium in the presence of left atrial enlargement.\" N Z Med J 90 (1979):  377-9|Lawson DH \"Adverse reactions to potassium chloride.\" Q J Med 43 (1974):  433-40|Lofgren RP, Rothe PR, Carlson GJ \"Jejunal perforation associated with slow-release potassium chloride therapy.\" South Med J 75 (1982):  1154-5|Delaney T, Hoxworth PI \"Enteric-coated potassium chloride enteropathy.\" Surg Gynecol Obstet 127 (1968):  76-80|Hartman SW, Greaney EM Jr, Rottapel D \"Small-bowel ulceration due to enteric-coated potassium ingestion in a two-year-old child.\" Surgery 61 (1967):  814-5|Riker J, Swanson M, Schweigert B \"Esophageal ulceration caused by wax-matrix potassium chloride.\" West J Med 128 (1978):  542-3|Leijonmarck CE, Fenyo G, Raf L \"Nontraumatic perforation of the small intestine.\" Acta Chir Scand 150 (1984):  405-11|Leijonmarck CE, Raf L \"Ulceration of the small intestine due to slow-release potassium chloride tablets.\" Acta Chir Scand 151 (1985):  273-8|Raf LE \"Enteric-coated potassium chloride tablets and ulcer of the small intestine.\" Acta Chir Scand Suppl 374 (1967):  32-50,73-74,76-77|Phillips BL \"Potassium-induced bowel ulceration.\" Br J Clin Pract 28 (1974):  143-4|Trewby PN \"Drug-induced peptic ulcer and upper gastrointestinal bleeding.\" Br J Hosp Med 23 (1980):  185-8,190|Sinar DR, Bozymski EM, Blackshear JL \"Effects of oral potassium supplements on upper gastrointestinal mucosa: multicenter clinical comparison of three formulations and placebo.\" Clin Ther 8 (1986):  157-63|Moore JG, Alsop WR, Freston JW, Tolman KG \"The effect of oral potassium chloride on upper gastrointestinal mucosa in healthy subjects: healing of lesions despite continuing treatment.\" Gastrointest Endosc 32 (1986):  210-2|Lech Y, Hey H, Jorgensen F, Matzen P, Ostergaard O \"Evaluation of the ulcerogenic effect of potassium chloride by endoscopy and fecal blood loss.\" J Clin Pharmacol 27 (1987):  206-9|Folk FS, Spellman MW, Hoffler OW \"Stenosing small bowl ulceration. Apparently secondary to enteric- coated potassium chloride.\" J Natl Med Assoc 61 (1969):  p315-8assim|Sandor F \"Complications of \"slow-K\" therapy.\" J R Coll Gen Pract 26 (1976):  595-8|Emerson DN \"Potassium therapy and gastrointestinal lesions.\" Nebr State Med J 55 (1970):  518-23|Henry JG, Shinner JJ, Martino JH, Cimino LE \"Fatal esophageal and bronchial artery ulceration caused by solid potassium chloride.\" Pediatr Cardiol 4 (1983):  251-2|Skoutakis VA, Acchiardo SR, Wojciechowski NJ, Carter CA \"Liquid and solid potassium chloride: bioavailability and safety.\" Pharmacotherapy 4 (1984):  392-7|Javett S \"Slow k ulcer.\" S Afr J Surg 13 (1975):  64|Strahan J, Sweeney PJ \"A case of small bowel perforation.\" Ulster Med J 34 (1965):  22|Graham DY, Smith JL, Bouvet AA \"What happens to tablets and capsules in the stomach: endoscopic comparison of disintegration and dispersion characteristics of two microencapsulated potassium formulations.\" J Pharm Sci 79 (1990):  420-4|Trechot P, Moore N, Bresler L, Castot A, Gay G, Netter P, Royer R \"Potassium chloride tablets and small bowel stenoses and perforations: two studies in the french pharmacovigilance system.\" Am J Gastroenterol 89 (1994):  1268|\"Potassium chloride and bowel ulceration.\" Br Med J 5475 (1965):  1383-4|McLoughlin JC \"Gastrointestinal lesions and potassium chloride supplements.\" Lancet 1 (1985):  581-2|\"Small-intestine ulceration and enteric-coated potassium chloride.\" Med Lett Drugs Ther 7 (1965):  57-8|Weiss SM, Rutenberg HL, Paskin DL, Zaren HA \"Gut lesions due to slow-release KCI tablets.\" N Engl J Med 296 (1977):  111-2|\"Potassium and gastrointestinal lesions. I.\" Nutr Rev 24 (1966):  138-41|\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):|\"Product Information. Urocit-K (potassium citrate).\" Mission Pharmacal Company|\"Product Information. Kaon (potassium gluconate).\" Savage Laboratories  (2002):",
+        "mo_ta_dich": "Việc sử dụng tất cả các dạng bào chế rắn đường uống của kali là chống chỉ định ở bệnh nhân có tình trạng vận chuyển qua đường tiêu hóa (GI) bị ngừng trệ hoặc chậm lại, dù do nguyên nhân cấu trúc, bệnh lý hay dược lý. Kali gây kích ứng niêm mạc GI và có thể gây tổn thương loét và/hoặc hẹp trong quá trình tiếp xúc vật lý kéo dài. Dựa trên các báo cáo phản ứng có hại tự phát, tần suất tổn thương ruột non liên quan đến các chế phẩm kali clorid bao tan trong ruột là 40 đến 50 trên 100.000 bệnh nhân-năm, trong khi đối với các công thức giải phóng có kiểm soát dạng nền sáp là dưới một trên 100.000 bệnh nhân-năm. Loét thực quản cũng đã được báo cáo sau khi dùng các công thức giải phóng có kiểm soát của kali clorid ở bệnh nhân tim mạch có chèn ép thực quản... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Aminomix Peripheral"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "nang",
+        "giai_thich": "Với người có tiền sử hoặc đang mắc bệnh thận, dùng Aminomix Peripheral cần hết sức lưu tâm vì thuốc có chứa potassium chloride, mà kali lại được thải ra ngoài qua thận. Khi chức năng thận không tốt, kali từ thuốc có thể tích tụ lại trong cơ thể gây tăng kali máu, nhất là khi dùng đường truyền tĩnh mạch, và có thể dẫn tới loạn nhịp tim hoặc ngừng tim. Tình trạng tăng kali máu này có thể diễn tiến nhanh, đôi khi chẳng có triệu chứng gì rõ ràng mà chỉ lộ ra qua xét nghiệm thấy kali tăng cao (khoảng 6,5 đến 8 mEq/L) cùng những thay đổi đặc trưng trên điện tâm đồ như đỉnh sóng T cao, mất sóng P, hạ đoạn ST, kéo dài khoảng QT. Về sau mới có thể thấy yếu liệt cơ và trụy tim mạch do tim ngừng đập (kali khoảng 9 đến 12 mEq/L), nên việc theo dõi sát nồng độ kali trong máu, thậm chí theo dõi điện tâm đồ liên tục khi truyền tĩnh mạch, là điều được khuyến cáo.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. K-Dur (potassium chloride).\" Schering Corporation  (2001):|\"Product Information. Urocit-K (potassium citrate).\" Mission Pharmacal Company|\"Product Information. Potassium Acetate (potassium acetate).\" Abbott Pharmaceutical  (2002):|\"Product Information. K-Lyte (potassium bicarbonate-potassium citrate).\" Bristol-Myers Squibb  (2002):|\"Product Information. Kaon (potassium gluconate).\" Savage Laboratories  (2002):",
+        "mo_ta_dich": "Việc sử dụng muối kali chống chỉ định ở bệnh nhân suy thận nặng đặc trưng bởi thiểu niệu, vô niệu hoặc tăng nitơ huyết. Vì kali được thải trừ qua thận, việc dùng muối kali ở những bệnh nhân này, đặc biệt qua đường tĩnh mạch, có thể gây tăng kali máu và loạn nhịp tim hoặc ngừng tim. Liệu pháp muối kali nên được dùng thận trọng ở bệnh nhân suy giảm chức năng thận hoặc các tình trạng khác làm giảm thải trừ kali (ví dụ: suy thượng thận). Khuyến cáo theo dõi sát nồng độ kali huyết thanh, vì tăng kali máu có thể gây tử vong có thể phát triển nhanh chóng và thường không có triệu chứng, chỉ biểu hiện bằng nồng độ kali tăng (6,5 đến 8 mEq/L) và những thay đổi điện tâm đồ đặc trưng (đỉnh sóng T... (đã rút gọn)"
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh thận, Bệnh tiêu hóa, Liệt chu kỳ gia đình, Mất nước, Nhiễm toan, Rối loạn cân bằng acid-base, Rối loạn nước – điện giải, Tiêu chảy, Tăng kali máu.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

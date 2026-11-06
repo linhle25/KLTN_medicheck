@@ -1,0 +1,149 @@
+{
+  "case_id": "dd-nhe-044",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.1974,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Potassium chloride",
+      "Insulin human (regular)"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Potassium chloride",
+        "ten_chuan": "Potassium chloride",
+        "medication_id": "DDInter1497",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Insulin human (regular)",
+        "ten_chuan": "Insulin human (regular)",
+        "medication_id": "DDInter937",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Potassium chloride",
+        "thuoc_b": "Insulin human (regular)",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter937",
+        "mo_ta": "Limited data suggest that potassium repletion may partially or completely reverse glucose intolerance in some patients with liver cirrhosis. The effect of insulin may be potentiated, and the risk of hypoglycemia increased. The mechanism by which potassium improves glucose tolerance has not been established, but it apparently does not involve a further increase in the already excessive insulin secretion associated with cirrhosis. The implications for glucose intolerance in patients without liver cirrhosis are not known.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Hiatt N, Davidson MB, Bonorris G \"The effect of potassium chloride infusion on insulin secretion in vivo.\" Horm Metab Res 4 (1972): 64-8, [2] Conn HO \"Cirrhosis and diabetes. IV. Effect of potassium chloride administration on glucose and insulin metabolism.\" Am J Med Sci 259 (1970): 394-404, [3] DeFronzo RA, Cooke CR, Andres R, Faloona GR, Davis PJ \"The effect of insulin on renal handling of sodium, potassium, calcium, and phosphate in man.\" J Clin Invest 55 (1975): 845-55, [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [6] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [7] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [8] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [11] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [12] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [13] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine, Sodium phosphate, monobasic, Sodium bicarbonate, Sodium chloride",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Kaldyum (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Actrapid Penfill 100IU/ml (hoạt chất: Insulin human (regular))",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter937",
+        "mo_ta": "Limited data suggest that potassium repletion may partially or completely reverse glucose intolerance in some patients with liver cirrhosis. The effect of insulin may be potentiated, and the risk of hypoglycemia increased. The mechanism by which potassium improves glucose tolerance has not been established, but it apparently does not involve a further increase in the already excessive insulin secretion associated with cirrhosis. The implications for glucose intolerance in patients without liver cirrhosis are not known.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Hiatt N, Davidson MB, Bonorris G \"The effect of potassium chloride infusion on insulin secretion in vivo.\" Horm Metab Res 4 (1972): 64-8, [2] Conn HO \"Cirrhosis and diabetes. IV. Effect of potassium chloride administration on glucose and insulin metabolism.\" Am J Med Sci 259 (1970): 394-404, [3] DeFronzo RA, Cooke CR, Andres R, Faloona GR, Davis PJ \"The effect of insulin on renal handling of sodium, potassium, calcium, and phosphate in man.\" J Clin Invest 55 (1975): 845-55, [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [6] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [7] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [8] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [11] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [12] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [13] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine, Sodium phosphate, monobasic, Sodium bicarbonate, Sodium chloride",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Insulin human (regular)",
+        "san_pham_a": [
+          "Kaldyum"
+        ],
+        "san_pham_b": [
+          "Actrapid Penfill 100IU/ml"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Kaldyum (hoạt chất: Potassium chloride)",
+        "thuoc_b": "Actrapid Penfill 100IU/ml (hoạt chất: Insulin human (regular))",
+        "medication_a_id": "DDInter1497",
+        "medication_b_id": "DDInter937",
+        "xu_tri": "-",
+        "thay_the_a": "B05X, Calcium chloride, Zinc sulfate, Magnesium sulfate, Sodium acetate, Arginine, Sodium glycerophosphate, Zinc chloride, Tromethamine, Sodium phosphate, monobasic, Sodium bicarbonate, Sodium chloride",
+        "thay_the_b": "A10A, Liraglutide, Lixisenatide",
+        "mo_ta": "Limited data suggest that potassium repletion may partially or completely reverse glucose intolerance in some patients with liver cirrhosis. The effect of insulin may be potentiated, and the risk of hypoglycemia increased. The mechanism by which potassium improves glucose tolerance has not been established, but it apparently does not involve a further increase in the already excessive insulin secretion associated with cirrhosis. The implications for glucose intolerance in patients without liver cirrhosis are not known.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Hiatt N, Davidson MB, Bonorris G \"The effect of potassium chloride infusion on insulin secretion in vivo.\" Horm Metab Res 4 (1972): 64-8, [2] Conn HO \"Cirrhosis and diabetes. IV. Effect of potassium chloride administration on glucose and insulin metabolism.\" Am J Med Sci 259 (1970): 394-404, [3] DeFronzo RA, Cooke CR, Andres R, Faloona GR, Davis PJ \"The effect of insulin on renal handling of sodium, potassium, calcium, and phosphate in man.\" J Clin Invest 55 (1975): 845-55, [4] Skillman TG, Feldman JM \"The pharmacology of sulfonylureas.\" Am J Med 70 (1981): 361-72, [5] \"Product Information. Diabinese (chlorpropamide).\" Pfizer US Pharmaceuticals, New York, NY., [6] \"Product Information. Diabeta (glyburide).\" Hoechst Marion-Roussel Inc, Kansas City, MO., [7] Jerntorp P, Almer LO, Holin H, et al \"Plasma chlorpropamide: a critical factor in chlorpropamide-alcohol flush.\" Eur J Clin Pharmacol 24 (1983): 237-42, [8] Barnett AH, Spiliopoulos AJ, Pyke DA, et al \"Metabolic studies in chlorpropamide-alcohol flush positive and negative type 2 (non-insulin dependent) diabetic patients with and without retinopathy.\" Diabetologia 24 (1983): 213-5, [9] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [10] Jerntorp P, Almer LO \"Chlorpropamide-alcohol flushing in relation to macroangiopathy and peripheral neuropathy in non-insulin dependent diabetes.\" Acta Med Scand 656 (1981): 33-6, [11] \"Product Information. Glucotrol (glipizide).\" Pfizer US Pharmaceuticals, New York, NY., [12] \"Position Statement: evidence-based nutrition principles and recommendations for the treatment and prevention of diabetes related complications. American Diabetes Association.\" Diabetes Care 25(Suppl 1) (2002): S50-S60, [13] Hartling SG, Faber OK, Wegmann ML, Wahlin-Boll E, Melander A \"Interaction of ethanol and glipizide in humans.\" Diabetes Care 10 (1987): 683-6",
+        "hoat_chat_a": "Potassium chloride",
+        "hoat_chat_b": "Insulin human (regular)",
+        "san_pham_a": [
+          "Kaldyum"
+        ],
+        "san_pham_b": [
+          "Actrapid Penfill 100IU/ml"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Kaldyum",
+        "thuoc_b": "Actrapid Penfill 100IU/ml",
+        "muc_do": "nhe",
+        "giai_thich": "Dữ liệu về việc dùng chung Kaldyum và Actrapid Penfill 100IU/ml còn hạn chế, song có gợi ý rằng việc bù đủ kali có thể cải thiện một phần hoặc hoàn toàn tình trạng rối loạn dung nạp glucose ở một số bệnh nhân xơ gan. Đi kèm với đó, tác dụng của insulin có thể bị tăng cường và nguy cơ hạ đường huyết tăng lên; cơ chế giúp cải thiện dung nạp glucose chưa được xác lập và dường như không liên quan đến việc làm tăng thêm tình trạng tiết insulin vốn đã quá mức ở người xơ gan, trong khi hệ quả trên người không bị xơ gan thì chưa được biết.",
+        "giai_thich_duoc_si": "Dữ liệu về việc dùng chung Kaldyum và Actrapid Penfill 100IU/ml còn hạn chế, song có gợi ý rằng việc bù đủ kali có thể cải thiện một phần hoặc hoàn toàn tình trạng rối loạn dung nạp glucose ở một số bệnh nhân xơ gan. Đi kèm với đó, tác dụng của insulin có thể bị tăng cường và nguy cơ hạ đường huyết tăng lên; cơ chế giúp cải thiện dung nạp glucose chưa được xác lập và dường như không liên quan đến việc làm tăng thêm tình trạng tiết insulin vốn đã quá mức ở người xơ gan, trong khi hệ quả trên người không bị xơ gan thì chưa được biết.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dữ liệu hạn chế gợi ý rằng việc bù đủ kali có thể cải thiện một phần hoặc hoàn toàn tình trạng rối loạn dung nạp glucose ở một số bệnh nhân xơ gan. Tác dụng của insulin có thể bị tăng cường và nguy cơ hạ đường huyết tăng lên. Cơ chế mà kali cải thiện dung nạp glucose chưa được xác lập, nhưng dường như không liên quan đến việc làm tăng thêm tình trạng tiết insulin vốn đã quá mức gắn với xơ gan. Hệ quả đối với rối loạn dung nạp glucose ở người không bị xơ gan thì chưa được biết.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh tương tác giữa hai đơn thuốc khác nhau, kết quả ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ đều ở mức nhẹ. Cặp đáng chú ý trong danh sách là Kaldyum và Actrapid Penfill 100IU/ml. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Kaldyum và Actrapid Penfill 100IU/ml",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Kaldyum",
+      "Actrapid Penfill 100IU/ml"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Kaldyum"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Actrapid Penfill 100IU/ml"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

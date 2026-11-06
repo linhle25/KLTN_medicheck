@@ -1,0 +1,112 @@
+{
+  "case_id": "ov-none-002",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 0.1246,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Infliximab",
+      "Sparfloxacin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Infliximab",
+        "ten_chuan": "Infliximab",
+        "medication_id": "DDInter923",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Sparfloxacin",
+        "ten_chuan": "Sparfloxacin",
+        "medication_id": "DDInter1705",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Sparfloxacin",
+        "thuoc_b": "Infliximab",
+        "medication_a_id": "DDInter1705",
+        "medication_b_id": "DDInter923",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aspax (hoạt chất: Sparfloxacin)",
+        "thuoc_b": "REMICADE (hoạt chất: Infliximab)",
+        "medication_a_id": "DDInter1705",
+        "medication_b_id": "DDInter923",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Sparfloxacin",
+        "hoat_chat_b": "Infliximab",
+        "san_pham_a": [
+          "Aspax"
+        ],
+        "san_pham_b": [
+          "REMICADE"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aspax (hoạt chất: Sparfloxacin)",
+        "thuoc_b": "REMICADE (hoạt chất: Infliximab)",
+        "medication_a_id": "DDInter1705",
+        "medication_b_id": "DDInter923",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Sparfloxacin",
+        "hoat_chat_b": "Infliximab",
+        "san_pham_a": [
+          "Aspax"
+        ],
+        "san_pham_b": [
+          "REMICADE"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "REMICADE",
+      "Aspax"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "REMICADE",
+          "Aspax"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

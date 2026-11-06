@@ -1,0 +1,1329 @@
+{
+  "metric": "relevance",
+  "n": 96,
+  "n_parsed": 96,
+  "rows": [
+    {
+      "case_id": "dd-nang-001",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ketoconazole × Loperamide",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp A.T Ketoconazole 2% × A.T Loperamid 2 mg với cơ chế ức chế CYP450 3A4/2C8 làm tăng nồng độ và tác dụng không mong muốn của loperamide, chỉ có một câu chung về thuốc tăng hấp thu qua tiêu hóa."
+      }
+    },
+    {
+      "case_id": "dd-nang-002",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Saquinavir × Triamcinolone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về cặp Saquin (saquinavir) ức chế CYP3A4 làm tăng nồng độ Amcinol - Paste (triamcinolone) trong máu, kèm cơ chế và hậu quả cường corticosteroid/toàn thân riêng của cặp này."
+      }
+    },
+    {
+      "case_id": "dd-nang-003",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Prednisone × Golimumab",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nêu trực tiếp cặp Brown Burk Prednison 5mg (prednisone) × SIMPONI (golimumab) với cơ chế ức chế miễn dịch cộng gộp và hậu quả riêng (nguy cơ nhiễm trùng nặng, nhiễm khuẩn huyết, ung thư tế bào lympho T) cùng khuyến cáo theo dõi, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "dd-nang-004",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Infliximab × Irinotecan",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "zidovudine",
+          "linezolid",
+          "azathioprine",
+          "mercaptopurine",
+          "corticosteroid",
+          "adrenocorticotropic"
+        ],
+        "generic_filler_ratio": 0.35,
+        "rationale": "Đoạn giải thích nói trực tiếp về Remicade (infliximab) và Campto (irinotecan), nêu cơ chế ức chế miễn dịch/tủy xương và hậu quả nhiễm trùng nặng khi phối hợp, dù phần sau có liệt kê thêm nhiều thuốc ngoài cặp."
+      }
+    },
+    {
+      "case_id": "dd-nang-005",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Palonosetron × Venlafaxine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Đoạn giải thích nói trực tiếp về cặp A.T Palonosetron Inj (palonosetron, đối kháng 5-HT3) và Edxor (venlafaxine, có hoạt tính serotonergic), nêu cơ chế cụ thể gây hội chứng serotonin qua thụ thể 5-HT1A/2A và nguy cơ cộng gộp kéo dài QT/xoắn đỉnh."
+      }
+    },
+    {
+      "case_id": "dd-nang-006",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Nalidixic acid × Warfarin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn nói trực tiếp về tương tác giữa A.T Warfarin 1 mg và kháng sinh nhóm quinolone (nalidixic acid là quinolone duy nhất trong yêu cầu), kèm cơ chế (ức chế chuyển hóa coumarin, giảm vi khuẩn ruột sản xuất vitamin K), hậu quả tăng tác dụng giảm prothrombin và khuyến cáo theo dõi INR/ dấu hiệu chảy máu."
+      }
+    },
+    {
+      "case_id": "dd-nang-007",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Baricitinib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.4,
+        "rationale": "Đoạn nêu trực tiếp Jakavi 10mg (ruxolitinib) dùng cùng Olumiant (baricitinib) và giải thích cơ chế riêng của cặp: cả hai đều ức chế miễn dịch nên tăng nguy cơ nhiễm trùng nặng, nhiễm trùng cơ hội và lymphoma/ác tính; phần lớn nội dung còn lại là danh sách nhiễm trùng của riêng Olumiant nên có độ trùng lặp chung chung nhất định."
+      }
+    },
+    {
+      "case_id": "dd-nang-008",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Quinine × Bedaquiline",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về cặp Mekoquinin (quinine) và Sirturo (bedaquiline), nêu rõ nguy cơ cộng gộp kéo dài QT và loạn nhịp thất/xoắn đỉnh."
+      }
+    },
+    {
+      "case_id": "dd-nang-009",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Sibutramine × Tramadol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "thuốc ức chế monoamine oxidase (MAOI)",
+          "thuốc chống trầm cảm ba vòng",
+          "thuốc chủ vận thụ thể 5-HT1",
+          "alkaloid ergot",
+          "opioid nhóm phenylpiperidine",
+          "bupropion",
+          "dextromethorphan",
+          "linezolid",
+          "lithium",
+          "St. John's wort",
+          "tryptophan"
+        ],
+        "generic_filler_ratio": 0.4,
+        "rationale": "Đoạn giải thích nói trực tiếp về Diatramine Capsule 11.30mg và Aronol với cơ chế hội chứng serotonin, nhưng phần cuối liệt kê nhiều thuốc/hoạt chất ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "dd-nang-010",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Apalutamide × Nimodipine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp Erleada (apalutamide) làm giảm nồng độ Celenal (nimodipine) qua cảm ứng mạnh CYP3A4 và nêu hậu quả/chống chỉ định khi dùng chung."
+      }
+    },
+    {
+      "case_id": "dd-nang-011",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Venlafaxine × Dextromethorphan",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nói trực tiếp về cặp Edxor (dextromethorphan) × Acough (venlafaxine) với cơ chế serotonergic và nguy cơ hội chứng serotonin, dù phần xử trí cuối còn chung chung."
+      }
+    },
+    {
+      "case_id": "dd-nang-012",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Posaconazole × Vincristine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp Noxafil (posaconazole) × V.C.S 1mg/1ml (vincristine), nêu rõ cơ chế ức chế CYP3A4 và P-glycoprotein làm tăng nồng độ vincristine và hậu quả độc tính thần kinh/tủy xương riêng của cặp này."
+      }
+    },
+    {
+      "case_id": "dd-nang-013",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ziprasidone × Ceritinib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn nêu trực tiếp cặp Calswin 80 (ziprasidone) × Spexib 150mg (ceritinib) với cơ chế cộng gộp kéo dài QT và hậu quả riêng (xoắn đỉnh, đột tử), chỉ có một câu cuối về tác dụng phụ kiểu kháng cholinergic là khá chung."
+      }
+    },
+    {
+      "case_id": "dd-nang-014",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Norfloxacin × Dexamethasone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích nói trực tiếp về việc dùng Gyrablock cùng Agiect, nêu hậu quả viêm/đứt gân tăng nguy cơ và cơ chế chưa rõ, đúng với cặp Norfloxacin × Dexamethasone qua tên biệt dược trong danh sách."
+      }
+    },
+    {
+      "case_id": "dd-nang-015",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Regorafenib × Fondaparinux",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp Regorava (regorafenib) × Arixtra (fondaparinux) với cơ chế cộng dồn nguy cơ chảy máu và giảm tiểu cầu, kèm ghi chú về UGT1A9."
+      }
+    },
+    {
+      "case_id": "dd-nang-016",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Ruxolitinib × Clarithromycin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp cặp Jakavi 10mg (ruxolitinib) và Agiclari 125 (clarithromycin), nêu rõ cơ chế ức chế CYP3A4 làm tăng nồng độ ruxolitinib."
+      }
+    },
+    {
+      "case_id": "dd-nhe-033",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Canagliflozin × Diflorasone (topical)",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp cặp Canaflin 100 (canagliflozin) × Menzag (corticosteroid/diflorasone), nêu cơ chế corticosteroid làm tăng đường huyết, giảm tiết insulin, tăng tạo đường gan và khuyến cáo theo dõi đường huyết khi dùng kéo dài/bôi diện rộng."
+      }
+    },
+    {
+      "case_id": "dd-nhe-034",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Magaldrate × Prednisolone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nói trực tiếp về cặp Ampetox (magaldrate) × Adelone (prednisolone), nêu cơ chế giảm hấp thu prednisolone do thuốc trung hòa axit làm thay đổi môi trường dạ dày, kèm lưu ý về dữ liệu mâu thuẫn và ý nghĩa lâm sàng chưa rõ."
+      }
+    },
+    {
+      "case_id": "dd-nhe-035",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Hyaluronidase × Hydroxyzine",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "nước ép bưởi"
+        ],
+        "generic_filler_ratio": 0.6,
+        "rationale": "Đoạn có nhắc đúng cặp qua tên biệt dược Bicea-Q Injection và Atarax nhưng phần giải thích lại lạc sang tương tác với nước ép bưởi và chỉ nói chung rằng không có cơ chế trực tiếp, không nêu cơ chế/hậu quả riêng của hyaluronidase–hydroxyzine."
+      }
+    },
+    {
+      "case_id": "dd-nhe-036",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Omeprazole × Phenobarbital",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Đoạn giải thích nói trực tiếp về tương tác giữa AG-Ome (omeprazole) và FENOBITAL (phenobarbital), nêu cơ chế ức chế CYP2C19 làm tăng nồng độ phenobarbital."
+      }
+    },
+    {
+      "case_id": "dd-nhe-037",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ciprofloxacin × Dacarbazine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nêu trực tiếp Agicipro và Dacamela 100, giải thích cơ chế giảm hấp thu quinolone do hóa trị làm thay đổi niêm mạc ruột, đúng với cặp Ciprofloxacin × Dacarbazine."
+      }
+    },
+    {
+      "case_id": "dd-nhe-038",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Lomefloxacin × Mercaptopurine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn nêu trực tiếp Euoxacin và 6-MP Hera, đồng thời giải thích cơ chế/hậu quả dự kiến là giảm hấp thu quinolone do hóa trị làm biến đổi niêm mạc ruột."
+      }
+    },
+    {
+      "case_id": "dd-nhe-039",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Tamsulosin × Warfarin",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.35,
+        "rationale": "Đoạn nêu trực tiếp Contiflo OD (tamsulosin) cùng A.T Warfarin, nói tương tác chưa rõ ràng và khuyến cáo theo dõi INR/PT cùng các dấu hiệu chảy máu đặc thù của warfarin, tuy còn vài câu chung chung về thận trọng."
+      }
+    },
+    {
+      "case_id": "dd-nhe-040",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ruxolitinib × Imatinib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp Jakavi 10mg (ruxolitinib) × Alvotinib 100mg (imatinib) với cơ chế riêng là ức chế CYP3A4 làm tăng nồng độ ruxolitinib, kèm khuyến cáo liều cụ thể cho cặp này."
+      }
+    },
+    {
+      "case_id": "dd-nhe-041",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Ofloxacin × Irinotecan",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nêu trực tiếp A.T Ofloxacin với Campto, mô tả hậu quả giảm nồng độ quinolone và cơ chế giảm hấp thu do niêm mạc ruột bị biến đổi bởi hóa trị, kèm mức độ tương tác nhẹ."
+      }
+    },
+    {
+      "case_id": "dd-nhe-042",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Nizatidine × Aluminum hydroxide",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về tương tác giữa Adige Nizatidine (nizatidine) và Algelstad (aluminum hydroxide), nêu hậu quả giảm hấp thu/nồng độ nizatidine do thành phần kháng acid."
+      }
+    },
+    {
+      "case_id": "dd-nhe-043",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Liraglutide × Acetaminophen",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp cặp VICTOZA (liraglutide) và A.T Paracetamol inj, nêu cơ chế liraglutide làm chậm rỗng dạ dày và lưu ý paracetamol dạng tiêm nên hấp thu qua tiêu hóa không phải yếu tố chính."
+      }
+    },
+    {
+      "case_id": "dd-nhe-044",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Potassium chloride × Insulin human (regular)",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích nói trực tiếp về cặp Kaldyum (potassium chloride) và Actrapid (insulin human regular), nêu hậu quả tăng tác dụng insulin/nguy cơ hạ đường huyết và bối cảnh cải thiện dung nạp glucose, không nhắc thuốc ngoài phạm vi."
+      }
+    },
+    {
+      "case_id": "dd-nhe-045",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Mefenamic acid × Cimetidine",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn dùng tên biệt dược Aginamic (mefenamic acid) và Acitidine (cimetidine), nêu cơ chế riêng của cặp (ức chế chuyển hóa, thay đổi pH dạ dày, giảm thải qua nước tiểu), chỉ có phần cuối là khuyến cáo chung chung."
+      }
+    },
+    {
+      "case_id": "dd-nhe-046",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Piperacillin × Erythromycin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích trực tiếp nói về tương tác giữa Pidisai Inj. 1g và Acneegel, có nhắc erythromycin/macrolide và mô tả hậu quả/hướng theo dõi riêng của cặp kháng sinh này."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-017",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Erlotinib × Famotidine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "cimetidine"
+        ],
+        "generic_filler_ratio": 0.25,
+        "rationale": "Đoạn nói trực tiếp về cặp APO-Erlotinib (erlotinib) và Antifacid 20mg (famotidine) với cơ chế riêng: antifacid làm tăng pH dạ dày >5, giảm độ hòa tan và hấp thu erlotinib, kèm khuyến cáo liều H2RA thấp nhất; chỉ có cimetidine là hoạt chất ngoài danh sách/phạm vi cặp."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-018",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Lamotrigine × Doxylamine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.25,
+        "rationale": "Đoạn giải thích nói trực tiếp về cặp Dotrigitin 100mg (lamotrigine) và Stressno Tablet (doxylamine), với cơ chế/hậu quả tăng tác dụng ức chế thần kinh trung ương và hô hấp khi phối hợp."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-019",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Paclitaxel × Typhoid vaccine (inactivated)",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "corticotropin"
+        ],
+        "generic_filler_ratio": 0.5,
+        "rationale": "Đoạn nêu trực tiếp Typhim Vi (vắc-xin thương hàn bất hoạt) dùng ở người đang dùng Antilex (paclitaxel) với kết luận riêng (an toàn nhưng đáp ứng miễn dịch có thể yếu hơn), tuy nhiên phần lớn nội dung sau đó là liệt kê chung các nhóm ức chế miễn dịch áp dụng cho bất kỳ trường hợp suy giảm miễn dịch nào."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-020",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Kaolin × Morphine",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.35,
+        "rationale": "Đoạn nói trực tiếp về Antacil (kaolin) × MS Contin (morphine) với hậu quả cộng gộp CNS/GI, táo bón nặng và liệt ruột, tuy phần 'mô tả' lặp lại khá chung chung và không nêu cơ chế hấp phụ đặc thù của kaolin."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-021",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Mycophenolic acid × Ceftriaxone",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp cơ chế tương tác giữa mycophenolic acid (Ecphelic 180) và ceftriaxone (Abitrax) qua thay đổi vi khuẩn đường ruột và giảm tuần hoàn gan-ruột, kèm hậu quả lâm sàng cụ thể."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-022",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Belladonna × Cyproheptadine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp Bình vị Medifiz (chứa Belladonna) × Ciplactin (cyproheptadine), nêu cơ chế cộng dồn kháng cholinergic và các hậu quả cụ thể (liệt ruột, tăng thân nhiệt, hội chứng ngộ độc kháng cholinergic) đúng riêng cho cặp này."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-023",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Sulfasalazine × Ceritinib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về cặp Dicsep (sulfasalazine) × Spexib 150mg (ceritinib) với cơ chế riêng: ức chế P-gp/BCRP làm giảm thải trừ và tăng nồng độ sulfasalazine trong huyết tương."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-024",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Escitalopram × Glycerin",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nêu trực tiếp Ciramplex 10 (escitalopram) cùng Babysky gel (glycerin) và giải thích cơ chế mất điện giải do nhuận tràng làm tăng nguy cơ xoắn đỉnh trên nền kéo dài QT."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-025",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Promethazine × Tuberculin purified protein derivative",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp rằng Axcel Promethazine-5 Syrup có thể làm giảm đáp ứng với PPD Tuberculin Mammalian trong test da, gây âm tính giả."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-026",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Meclizine × Citalopram",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.7,
+        "rationale": "Đoạn có nhắc đúng cặp qua biệt dược Agyrax và Bagocit 20, nhưng nội dung chủ yếu là câu chung chung về tăng ức chế thần kinh trung ương/hô hấp do cộng gộp hoặc hiệp lực, có thể áp cho nhiều cặp thuốc an thần khác, thiếu cơ chế riêng của meclizine–citalopram."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-027",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Linagliptin × Insulin glulisine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn nêu trực tiếp cặp A.T Linagliptin 5 mg (ức chế DPP-4) và Apidra (insulin glulisine), giải thích cơ chế cộng gộp tác dụng hạ đường huyết và khuyến cáo theo dõi đường huyết — nội dung riêng cho đúng cặp này."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-028",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Quinapril × Deflazacort",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "thuốc chẹn kênh calci"
+        ],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nêu trực tiếp cặp Accupril (quinapril) × Aticosta 6 mg (deflazacort) với cơ chế giữ natri/dịch của corticosteroid làm giảm hiệu quả hạ huyết áp, nhưng có thêm một câu chung chung về nhóm chẹn kênh calci không thuộc phạm vi cặp."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-029",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Codeine × Alfentanil",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích trực tiếp về cặp Codeine (Acefalgan Codein) × Alfentanil (Alfentanil-hameln), nêu cơ chế cộng gộp ức chế opioid lên tim và hô hấp khi dùng chung trong gây mê/an thần, kèm khuyến cáo theo dõi cụ thể."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-030",
+      "nhom": "drug_drug",
+      "audience": "pharmacist",
+      "pair": "Dextromethorphan × Fluphenazine",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về cặp Acough (dextromethorphan) × Fluphenazine với cơ chế ức chế CYP2D6 làm tăng nồng độ dextromethorphan và hậu quả là tăng tác dụng phụ cùng nguy cơ hội chứng serotonin, rất riêng cho cặp này."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-031",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Meningococcal polysaccharide vaccine group C × Pemetrexed",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "globulin kháng lympho",
+          "thuốc alkyl hóa",
+          "thuốc chống chuyển hóa",
+          "corticosteroid",
+          "adrenocorticotropin"
+        ],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nói trực tiếp về Nimenrix (vắc-xin não mô cầu nhóm C) và Alimta 500mg (pemetrexed), giải thích cơ chế ức chế miễn dịch làm giảm đáp ứng kháng thể với vắc-xin, tuy có câu cuối liệt kê chung các nhóm thuốc ức chế miễn dịch khác."
+      }
+    },
+    {
+      "case_id": "dd-trung_binh-032",
+      "nhom": "drug_drug",
+      "audience": "patient",
+      "pair": "Nimodipine × Calcium gluconate",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.25,
+        "rationale": "Đoạn nêu trực tiếp cặp Celenal (nimodipine) × BFS-Calci Gluconat 10% với cơ chế riêng: canxi tiêm truyền làm giảm tác dụng hạ huyết áp của thuốc chẹn kênh canxi và được dùng để đảo ngược tụt huyết áp do CCB, kèm khuyến cáo theo dõi."
+      }
+    },
+    {
+      "case_id": "dis-nang-001",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Benazepril × Diseases requiring hemodialysis",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về nguy cơ phản ứng phản vệ khi dùng Bena-5A (benazepril) ở người bệnh đang lọc máu, đặc biệt với màng polyacrylonitril, và nêu rõ cơ chế/tần suất chưa xác lập."
+      }
+    },
+    {
+      "case_id": "dis-nang-002",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Daunorubicin × Bone Marrow Failure Disorders",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích nói trực tiếp rằng Daunocin ức chế tủy xương và có thể làm nặng thêm tình trạng suy tủy xương có sẵn, kèm hậu quả nhiễm trùng/chảy máu và khuyến cáo theo dõi — đúng cặp đang xét."
+      }
+    },
+    {
+      "case_id": "dis-nang-003",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Lactic acid × Acidosis, Lactic",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích trực tiếp về Duofilm (chứa lactic acid) và tình trạng nhiễm toan lactic, có nêu cơ chế chuyển hóa thành bicarbonate và khuyến cáo thận trọng, chỉ có một phần câu cuối là khuyên chung."
+      }
+    },
+    {
+      "case_id": "dis-nang-004",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cyanocobalamin × Optic Atrophy, Hereditary, Leber",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nêu trực tiếp việc dùng B12 Ankermann (cyanocobalamin) ở bệnh nhân teo thị giác di truyền Leber gây teo dây thần kinh thị giác nặng, tiến triển nhanh, kèm khuyến cáo thận trọng — đúng cặp đang xét, chỉ có phần khuyến cáo chung ở cuối."
+      }
+    },
+    {
+      "case_id": "dis-nang-005",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cladribine × Bone Marrow Failure Disorders",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về Mavenclad (cladribine) gây ức chế tủy xương và khuyến cáo theo dõi ở bệnh nhân có tiền sử/đang suy tủy xương, đúng cặp đang xét."
+      }
+    },
+    {
+      "case_id": "dis-nang-006",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Stavudine × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nêu trực tiếp Stag-15 chứa stavudine và giải thích cụ thể nguy cơ độc tính gan, các biểu hiện gan nặng, cùng khuyến cáo thận trọng ở người có bệnh gan."
+      }
+    },
+    {
+      "case_id": "dis-nang-007",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Isosorbide dinitrate × Myocardial Infarction",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về việc dùng Biresort 10 (isosorbide dinitrate) ở bệnh nhân nhồi máu cơ tim, nêu rõ lợi ích chưa xác lập, không khuyến cáo và các nguy cơ huyết động đặc thù (tụt huyết áp, nhịp nhanh, phụ thuộc tiền tải ở nhồi máu thất phải/thành dưới)."
+      }
+    },
+    {
+      "case_id": "dis-nang-008",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Vinorelbine × Infections",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nêu trực tiếp Navelbine gây giảm bạch cầu trung tính và do đó cần thận trọng/theo dõi khi có nhiễm trùng, đúng cơ chế và hậu quả riêng của cặp Vinorelbine × Infections."
+      }
+    },
+    {
+      "case_id": "dis-nhe-019",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cromoglicic acid × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về cromoglicic acid trong Allercrom eye drops và nguy cơ ảnh hưởng thải trừ qua mật ở người bệnh gan, đúng cặp đang xét."
+      }
+    },
+    {
+      "case_id": "dis-nhe-020",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Cetuximab × Kidney Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nêu trực tiếp ERBITUX (cetuximab) ở bệnh nhân có bệnh thận, kèm dữ liệu cụ thể (suy thận 1% trong nghiên cứu lâm sàng) và khuyến nghị theo dõi chức năng thận — đúng cặp đang xét, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-010",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Sitagliptin × Kidney Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về việc dùng sitagliptin ở người có bệnh thận, gồm khuyến cáo đánh giá chức năng thận, nguy cơ khi liều không phù hợp và dữ liệu không gây độc thận ở liều phù hợp."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-011",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Esomeprazole × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về AMEPRAZEC 20 (esomeprazole) chuyển hóa tại gan và khuyến cáo liều theo mức độ bệnh gan (Child-Pugh A/B/C), rất cụ thể cho đúng cặp thuốc–bệnh nền này."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-012",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Cefditoren × Diseases requiring dialysis",
+      "verdict": {
+        "score": 3,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "cefonicid",
+          "cefixime",
+          "ceftriaxone"
+        ],
+        "generic_filler_ratio": 0.5,
+        "rationale": "Đoạn có nhắc Abmien (cefditoren) ở bệnh nhân lọc máu nhưng cơ chế/hậu quả nêu ra chủ yếu ở mức chung cho cả nhóm cephalosporin và còn liệt kê các kháng sinh ngoài phạm vi (cefonicid, cefixime, ceftriaxone)."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-013",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Ampicillin × Diseases requiring hemodialysis",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn nêu trực tiếp Amfibays 1000 mg (ampicillin) bị loại bỏ qua lọc máu và khuyến cáo cân nhắc liều ở người chạy thận nhân tạo, đúng cặp đang xét với cơ chế/hậu quả riêng."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-014",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Diflorasone (topical) × Infections",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích nói trực tiếp về Menzag (diflorasone bôi) và nguy cơ nhiễm trùng, gồm cơ chế hấp thu toàn thân, ức chế miễn dịch và làm nặng thêm nhiễm trùng."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-015",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Valproic acid × Thrombocytopenia",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích nói trực tiếp Alpovic 250mg (chứa valproic acid) có thể gây giảm tiểu cầu theo liều, kèm cơ chế và biểu hiện xuất huyết cụ thể, đúng với cặp Valproic acid × Thrombocytopenia."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-016",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Nalidixic acid × Crystalluria",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về Acid Nalidixic và tình trạng kết tinh trong nước tiểu, nêu cơ chế/nguy cơ (mất nước làm tăng nguy cơ) và khuyến cáo bù nước, xét nghiệm chức năng thận — đặc thù cho đúng cặp này."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-017",
+      "nhom": "disease",
+      "audience": "pharmacist",
+      "pair": "Cefoxitin × Liver Diseases",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích nói trực tiếp về việc dùng Bifotin 1g (cefoxitin) ở người bệnh gan và nêu hậu quả viêm gan/tăng enzym gan liên quan đến cephalosporin."
+      }
+    },
+    {
+      "case_id": "dis-trung_binh-018",
+      "nhom": "disease",
+      "audience": "patient",
+      "pair": "Itraconazole × Cystic Fibrosis",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về Apicozol 100 (itraconazole) ở bệnh nhân xơ nang, dẫn nghiên cứu cho thấy nồng độ thuốc trong máu thất thường và có thể không đạt mức điều trị — cơ chế/hậu quả riêng của đúng cặp này."
+      }
+    },
+    {
+      "case_id": "food-nang-001",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Hydromorphone × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Đoạn giải thích trực tiếp nói về tương tác giữa Jurnista (hydromorphone) và rượu, mô tả cơ chế cộng dồn ức chế thần kinh trung ương và các hậu quả cụ thể."
+      }
+    },
+    {
+      "case_id": "food-nang-002",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Amiodarone × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về tương tác giữa Adatot-200 (amiodarone) và nước ép bưởi, nêu cơ chế ức chế CYP3A4 ở ruột và hậu quả tăng nồng độ thuốc trong máu."
+      }
+    },
+    {
+      "case_id": "food-nang-003",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Lemborexant × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về Dayvigo (lemborexant) dùng chung với rượu, kèm số liệu cụ thể (tăng nồng độ đỉnh ~35%, phơi nhiễm toàn cơ thể ~70%) và hậu quả ức chế thần kinh trung ương cộng gộp, đúng cặp đang xét."
+      }
+    },
+    {
+      "case_id": "food-nang-004",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Cycloserine × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về việc dùng Boyata (chứa cycloserine) cùng rượu, liệt kê cụ thể các tác dụng phụ thần kinh trung ương và cơ chế khuếch đại CNS, đúng cặp đang xét."
+      }
+    },
+    {
+      "case_id": "food-nang-005",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Dextropropoxyphene × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "acetaminophen"
+        ],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích nói trực tiếp về dextropropoxyphen trong Sotraphar Notalzin khi dùng cùng rượu, gây cộng gộp ức chế thần kinh trung ương/hô hấp, nhưng có nhắc thêm acetaminophen không nằm trong danh sách yêu cầu."
+      }
+    },
+    {
+      "case_id": "food-nang-006",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Simvastatin × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Đoạn nói trực tiếp về Simvastatin dùng với nước ép bưởi, giải thích cơ chế ức chế CYP3A4 làm tăng nồng độ thuốc và chất chuyển hóa có hoạt tính."
+      }
+    },
+    {
+      "case_id": "food-nang-007",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Lovastatin × green tea",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.0,
+        "rationale": "Đoạn giải thích trực tiếp rằng trà xanh làm tăng nồng độ lovastatin qua ức chế CYP450 3A4 tại thành ruột, đúng cặp Lovastatin × green tea và nêu cơ chế riêng."
+      }
+    },
+    {
+      "case_id": "food-nang-008",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Selumetinib × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về cặp Selumetinib (Koselugo) × nước ép bưởi, nêu cơ chế ức chế CYP3A4 tại ruột/gan làm tăng nồng độ thuốc và khuyến cáo tránh bưởi."
+      }
+    },
+    {
+      "case_id": "food-nhe-017",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Doxycycline × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.05,
+        "rationale": "Đoạn giải thích trực tiếp về tương tác giữa Asbidox-200 (doxycycline) và rượu, nêu cơ chế cảm ứng enzyme gan làm tăng đào thải và giảm hiệu quả thuốc."
+      }
+    },
+    {
+      "case_id": "food-nhe-018",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Abacavir × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn nói trực tiếp về việc uống rượu cùng Abacavir 300mg, nêu cơ chế riêng (rượu ức chế alcohol dehydrogenase làm chậm đào thải thuốc) và hậu quả thuốc lưu lâu trong cơ thể, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "food-nhe-019",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Scopolamine × food",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích nói trực tiếp về Ariel Tdds (Scopolamine) dùng cùng nước ép bưởi, một loại thực phẩm/đồ uống, kèm cơ chế CYP3A4 và hậu quả tăng nồng độ thuốc."
+      }
+    },
+    {
+      "case_id": "food-nhe-020",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Estradiol × grapefruit juice",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về việc uống Etradio (estradiol) cùng nước ép bưởi, giải thích cơ chế ức chế CYP3A4 ở thành ruột làm tăng hấp thu thuốc — đúng và riêng cho cặp này."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-009",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Fluvastatin × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn nói trực tiếp về việc dùng Autifan 20 (fluvastatin) chung với rượu, nêu cơ chế và hậu quả riêng (tăng men gan, nguy cơ tổn thương gan/suy gan), chỉ có một số câu mang tính giải thích chung về transaminase."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-010",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Pregabalin × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích nói trực tiếp về tương tác ANTIVIC 150 (pregabalin) với rượu, mô tả cơ chế ức chế thần kinh trung ương cộng gộp và hậu quả cụ thể (suy giảm phán đoán, kỹ năng tâm thần vận động) đúng với cặp đang xét."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-011",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Semaglutide × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về tương tác giữa rượu và Ozempic (semaglutide), nêu hậu quả hạ/tăng đường huyết và cơ chế ức chế tạo glucose mới cùng phản ứng điều hòa ngược, không nhắc thuốc ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-012",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Olmesartan × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích trực tiếp cặp Olmesartan (dưới tên biệt dược Torsartan H) × rượu, nêu cơ chế cộng gộp hạ huyết áp và hậu quả hạ huyết áp tư thế, chóng mặt choáng váng, kèm khuyến cáo trao đổi với bác sĩ/dược sĩ."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-013",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Nicardipine × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp về tương tác giữa A.T Nicardipine và rượu, nêu rõ tác dụng cộng dồn gây hạ huyết áp, an thần và hạ huyết áp tư thế."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-014",
+      "nhom": "food",
+      "audience": "pharmacist",
+      "pair": "Calcium citrate × bran",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích trực tiếp rằng cám chứa acid phytic làm giảm hấp thu canxi của thuốc Alvethicone, đúng cơ chế và hậu quả riêng của cặp Calcium citrate × bran."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-015",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Vigabatrin × alcohol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.25,
+        "rationale": "Đoạn nói trực tiếp về Raxiz (vigabatrin) dùng cùng rượu, nêu cơ chế ức chế thần kinh trung ương cộng gộp và hậu quả cụ thể (suy giảm phán đoán, phối hợp vận động)."
+      }
+    },
+    {
+      "case_id": "food-trung_binh-016",
+      "nhom": "food",
+      "audience": "patient",
+      "pair": "Benazepril × Food High in Potassium",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích nói trực tiếp về Bena-5A (benazepril), cơ chế ACE inhibitor làm tăng kali máu và nguy cơ khi ăn nhiều thực phẩm giàu kali."
+      }
+    },
+    {
+      "case_id": "rt-label-010",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Tacrolimus × Dexlansoprazole",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "omeprazole",
+          "esomeprazole"
+        ],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn giải thích nói trực tiếp về tương tác giữa Acezym XR (tacrolimus) và Dexilant (dexlansoprazole), kèm cơ chế CYP450 và hậu quả tăng nồng độ tacrolimus, nhưng có nhắc thêm một số PPI ngoài phạm vi.",
+        "entity_leak_raw": [
+          "lansoprazole",
+          "omeprazole",
+          "esomeprazole"
+        ]
+      }
+    },
+    {
+      "case_id": "rt-label-011",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Ketorolac × Regorafenib",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích trực tiếp cặp Acular (ketorolac) và Regorava (regorafenib), nêu cơ chế tăng nguy cơ chảy máu do ảnh hưởng tiểu cầu và tình trạng giảm tiểu cầu/chảy máu của regorafenib."
+      }
+    },
+    {
+      "case_id": "rt-label-012",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Olmesartan × Potassium chloride",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn giải thích trực tiếp cặp Torsartan H (chứa olmesartan) và Kaldyum (kali clorid), nêu rõ cơ chế ức chế RAAS giảm aldosterone gây giữ kali, cộng thêm kali bổ sung làm tăng nguy cơ tăng kali máu."
+      }
+    },
+    {
+      "case_id": "rt-sokieu-007",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Naltrexone × Alectinib",
+      "verdict": {
+        "score": 4,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.45,
+        "rationale": "Đoạn nêu trực tiếp Abernil 50mg (naltrexone) dùng cùng Alecensa (alectinib) làm tăng nguy cơ tổn thương gan do cộng gộp độc tính gan, kèm hậu quả cụ thể (viêm gan, tăng men gan, tăng bilirubin), nhưng phần sau lặp lại nhiều câu chung về bệnh gan do rượu/viêm gan B, C và thuốc gây độc gan khác."
+      }
+    },
+    {
+      "case_id": "rt-sokieu-008",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Montelukast × Deferasirox",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "gemfibrozil"
+        ],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp Adkold-new lukast và Arphosbi 125 với cơ chế ức chế CYP2C8/2C9 làm tăng nồng độ Adkold-new lukast, nhưng có nhắc thêm gemfibrozil ngoài danh sách."
+      }
+    },
+    {
+      "case_id": "rt-sokieu-009",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Magnesium oxide × Betaxolol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về tương tác giữa Maravita (chứa magnesium oxide) và Betocom (chứa betaxolol), nêu hậu quả giảm hấp thu và cơ chế khả dĩ liên quan đến gắn kết hoặc tăng pH dạ dày."
+      }
+    },
+    {
+      "case_id": "rt-xutri-001",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Triamcinolone × Etanercept",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [
+          "zidovudine",
+          "linezolid",
+          "adrenocorticotropin"
+        ],
+        "generic_filler_ratio": 0.3,
+        "rationale": "Đoạn giải thích nói trực tiếp về Amcinol - Paste (triamcinolone) và Enbrel (etanercept), nêu cơ chế ức chế miễn dịch kép và nguy cơ nhiễm trùng của đúng cặp này."
+      }
+    },
+    {
+      "case_id": "rt-xutri-002",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Cefoxitin × Chloramphenicol",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.1,
+        "rationale": "Đoạn giải thích nói trực tiếp về tương tác đối kháng giữa Bifotin 1g (cefoxitin, cephalosporin) và Agicloram (chloramphenicol), kèm cơ chế cụ thể (ức chế tổng hợp protein làm giảm cơ chất cho cephalosporin) và hậu quả giảm hiệu quả diệt khuẩn."
+      }
+    },
+    {
+      "case_id": "rt-xutri-003",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Tretinoin × Vitamin A",
+      "verdict": {
+        "score": 1,
+        "addresses_this_pair": false,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.2,
+        "rationale": "Đoạn giải thích nói về tương tác giữa Bio-Ane và Acenocoumarol 1, không đề cập đến cặp Tretinoin × Vitamin A đang xét."
+      }
+    },
+    {
+      "case_id": "rt-xutri-004",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Typhoid vaccine (live) × Everolimus",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.4,
+        "rationale": "Đoạn nêu trực tiếp Vivotif (vắc-xin typhoid sống) cùng Afinitor 10mg (everolimus) và giải thích cơ chế suy giảm miễn dịch làm tăng nguy cơ nhiễm trùng lan tỏa, đáp ứng vắc-xin kém; phần sau có mô tả chung hơn về vắc-xin sống và thuốc ức chế miễn dịch."
+      }
+    },
+    {
+      "case_id": "rt-xutri-006",
+      "nhom": "red_team",
+      "audience": "patient",
+      "pair": "Levodopa × Ferrous gluconate",
+      "verdict": {
+        "score": 5,
+        "addresses_this_pair": true,
+        "entity_leak": [],
+        "generic_filler_ratio": 0.15,
+        "rationale": "Đoạn nói trực tiếp về cặp levodopa (Carbidopa Levodopa 12.5/50 mg) và sắt trong Dactus (ferrous gluconate), với cơ chế tạo phức hợp không tan làm giảm hấp thu và giảm hiệu quả điều trị — đặc thù riêng cho cặp này."
+      }
+    }
+  ],
+  "mean_score": 4.823,
+  "entity_leak": [
+    "dd-nang-004",
+    "dd-nang-009",
+    "dd-nhe-035",
+    "dd-trung_binh-017",
+    "dd-trung_binh-019",
+    "dd-trung_binh-028",
+    "dd-trung_binh-031",
+    "dis-trung_binh-012",
+    "food-nang-005",
+    "rt-label-010",
+    "rt-sokieu-008",
+    "rt-xutri-001"
+  ],
+  "below_4": [
+    "dd-nhe-035",
+    "dd-trung_binh-026",
+    "dis-trung_binh-012",
+    "rt-xutri-003"
+  ]
+}

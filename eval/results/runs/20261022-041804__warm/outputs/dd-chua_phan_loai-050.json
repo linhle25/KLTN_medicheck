@@ -1,0 +1,150 @@
+{
+  "case_id": "dd-chua_phan_loai-050",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.1302,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ondansetron",
+      "Ifosfamide"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ondansetron",
+        "ten_chuan": "Ondansetron",
+        "medication_id": "DDInter1342",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ifosfamide",
+        "ten_chuan": "Ifosfamide",
+        "medication_id": "DDInter906",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ondansetron",
+        "thuoc_b": "Ifosfamide",
+        "medication_a_id": "DDInter1342",
+        "medication_b_id": "DDInter906",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A04A, Rolapitant, Dolasetron, Palonosetron",
+        "thay_the_b": "L01A, Streptozocin, Chlorambucil, Lomustine, Mechlorethamine, Bendamustine, Melphalan flufenamide, Uracil mustard",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Atozone-S (hoạt chất: Ondansetron)",
+        "thuoc_b": "Holoxan (hoạt chất: Ifosfamide)",
+        "medication_a_id": "DDInter1342",
+        "medication_b_id": "DDInter906",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A04A, Rolapitant, Dolasetron, Palonosetron",
+        "thay_the_b": "L01A, Streptozocin, Chlorambucil, Lomustine, Mechlorethamine, Bendamustine, Melphalan flufenamide, Uracil mustard",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ondansetron",
+        "hoat_chat_b": "Ifosfamide",
+        "san_pham_a": [
+          "Atozone-S"
+        ],
+        "san_pham_b": [
+          "Holoxan"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Atozone-S (hoạt chất: Ondansetron)",
+        "thuoc_b": "Holoxan (hoạt chất: Ifosfamide)",
+        "medication_a_id": "DDInter1342",
+        "medication_b_id": "DDInter906",
+        "xu_tri": "-",
+        "thay_the_a": "A04A, Rolapitant, Dolasetron, Palonosetron",
+        "thay_the_b": "L01A, Streptozocin, Chlorambucil, Lomustine, Mechlorethamine, Bendamustine, Melphalan flufenamide, Uracil mustard",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Ondansetron",
+        "hoat_chat_b": "Ifosfamide",
+        "san_pham_a": [
+          "Atozone-S"
+        ],
+        "san_pham_b": [
+          "Holoxan"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Atozone-S",
+        "thuoc_b": "Holoxan",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Atozone-S và Holoxan có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc của bạn, mình thấy có 1 cặp thuốc-thuốc có tương tác, và cặp này hiện ở mức chưa phân loại. Cặp đáng chú ý nhất trong danh sách là Atozone-S và Holoxan. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Atozone-S và Holoxan",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Atozone-S",
+      "Holoxan"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Atozone-S"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Holoxan"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

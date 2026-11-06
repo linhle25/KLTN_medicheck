@@ -1,0 +1,279 @@
+{
+  "case_id": "dd-chua_phan_loai-058",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 0.9902,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Salmeterol",
+      "Fluticasone",
+      "Tegaserod"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Salmeterol",
+        "ten_chuan": "Salmeterol",
+        "medication_id": "DDInter1635",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Fluticasone",
+        "ten_chuan": "Fluticasone",
+        "medication_id": "DDInter766",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Tegaserod",
+        "ten_chuan": "Tegaserod",
+        "medication_id": "DDInter1754",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Salmeterol",
+        "thuoc_b": "Fluticasone",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter766",
+        "mo_ta": "Although they are often combined in clinical practice, the concomitant use of beta-2 adrenergic agonists and corticosteroids may result in additive hypokalemic effects. Since beta-2 agonists can sometimes cause QT interval prolongation, the development of hypokalemia may potentiate the risk of ventricular arrhythmias including torsade de pointes. However, clinical data are limited, and the potential significance is unknown. Patients who are receiving systemic or nebulized formulations of beta-2 agonists, high dosages of inhaled beta-2 agonists, or systemic corticosteroid therapy may be at a greater risk of developing hypokalemia.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Foradil (formoterol)\" Novartis Pharmaceuticals, East Hanover, NJ., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [4] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03A, Mometasone furoate, Umeclidinium, Aclidinium, Mometasone, Glycopyrronium, Fluticasone, Ipratropium, Olodaterol, Beclomethasone dipropionate",
+        "thay_the_b": "R03B, Mometasone furoate, Umeclidinium, Aclidinium, Glycopyrronium, Ipratropium, Revefenacin, Nedocromil, D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Salmeterol",
+        "thuoc_b": "Tegaserod",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter1754",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03A, Mometasone furoate, Terbutaline, Umeclidinium, Aclidinium, Glycopyrronium, Mometasone, Olodaterol, Cromoglicic acid, Ipratropium, Orciprenaline, Pirbuterol",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "khong_du_du_lieu": false
+      },
+      {
+        "thuoc_a": "Tegaserod",
+        "thuoc_b": "Fluticasone",
+        "medication_a_id": "DDInter1754",
+        "medication_b_id": "DDInter766",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "thay_the_b": "R03B, Ciclesonide, Umeclidinium, Mometasone furoate, Aclidinium, Glycopyrronium, Flunisolide, Ipratropium, Cromoglicic acid, Betamethasone, Revefenacin, Nedocromil",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Aeroflu 125 HFA Inhalation (hoạt chất: Salmeterol)",
+        "thuoc_b": "Aeroflu 125 HFA Inhalation (hoạt chất: Fluticasone)",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter766",
+        "mo_ta": "Although they are often combined in clinical practice, the concomitant use of beta-2 adrenergic agonists and corticosteroids may result in additive hypokalemic effects. Since beta-2 agonists can sometimes cause QT interval prolongation, the development of hypokalemia may potentiate the risk of ventricular arrhythmias including torsade de pointes. However, clinical data are limited, and the potential significance is unknown. Patients who are receiving systemic or nebulized formulations of beta-2 agonists, high dosages of inhaled beta-2 agonists, or systemic corticosteroid therapy may be at a greater risk of developing hypokalemia.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Foradil (formoterol)\" Novartis Pharmaceuticals, East Hanover, NJ., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [4] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03A, Mometasone furoate, Umeclidinium, Aclidinium, Mometasone, Glycopyrronium, Fluticasone, Ipratropium, Olodaterol, Beclomethasone dipropionate",
+        "thay_the_b": "R03B, Mometasone furoate, Umeclidinium, Aclidinium, Glycopyrronium, Ipratropium, Revefenacin, Nedocromil, D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Salmeterol",
+        "hoat_chat_b": "Fluticasone",
+        "san_pham_a": [
+          "Aeroflu 125 HFA Inhalation"
+        ],
+        "san_pham_b": [
+          "Aeroflu 125 HFA Inhalation"
+        ]
+      },
+      {
+        "thuoc_a": "Aeroflu 125 HFA Inhalation (hoạt chất: Salmeterol)",
+        "thuoc_b": "Tegibs-6 (hoạt chất: Tegaserod)",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter1754",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03A, Mometasone furoate, Terbutaline, Umeclidinium, Aclidinium, Glycopyrronium, Mometasone, Olodaterol, Cromoglicic acid, Ipratropium, Orciprenaline, Pirbuterol",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Salmeterol",
+        "hoat_chat_b": "Tegaserod",
+        "san_pham_a": [
+          "Aeroflu 125 HFA Inhalation"
+        ],
+        "san_pham_b": [
+          "Tegibs-6"
+        ]
+      },
+      {
+        "thuoc_a": "Tegibs-6 (hoạt chất: Tegaserod)",
+        "thuoc_b": "Aeroflu 125 HFA Inhalation (hoạt chất: Fluticasone)",
+        "medication_a_id": "DDInter1754",
+        "medication_b_id": "DDInter766",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "thay_the_b": "R03B, Ciclesonide, Umeclidinium, Mometasone furoate, Aclidinium, Glycopyrronium, Flunisolide, Ipratropium, Cromoglicic acid, Betamethasone, Revefenacin, Nedocromil",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Tegaserod",
+        "hoat_chat_b": "Fluticasone",
+        "san_pham_a": [
+          "Tegibs-6"
+        ],
+        "san_pham_b": [
+          "Aeroflu 125 HFA Inhalation"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Aeroflu 125 HFA Inhalation (hoạt chất: Salmeterol)",
+        "thuoc_b": "Aeroflu 125 HFA Inhalation (hoạt chất: Fluticasone)",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter766",
+        "xu_tri": "-",
+        "thay_the_a": "R03A, Mometasone furoate, Umeclidinium, Aclidinium, Mometasone, Glycopyrronium, Fluticasone, Ipratropium, Olodaterol, Beclomethasone dipropionate",
+        "thay_the_b": "R03B, Mometasone furoate, Umeclidinium, Aclidinium, Glycopyrronium, Ipratropium, Revefenacin, Nedocromil, D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate",
+        "mo_ta": "Although they are often combined in clinical practice, the concomitant use of beta-2 adrenergic agonists and corticosteroids may result in additive hypokalemic effects. Since beta-2 agonists can sometimes cause QT interval prolongation, the development of hypokalemia may potentiate the risk of ventricular arrhythmias including torsade de pointes. However, clinical data are limited, and the potential significance is unknown. Patients who are receiving systemic or nebulized formulations of beta-2 agonists, high dosages of inhaled beta-2 agonists, or systemic corticosteroid therapy may be at a greater risk of developing hypokalemia.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] \"Product Information. Foradil (formoterol)\" Novartis Pharmaceuticals, East Hanover, NJ., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [4] Agencia Española de Medicamentos y Productos Sanitarios Healthcare \"Centro de información online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+        "hoat_chat_a": "Salmeterol",
+        "hoat_chat_b": "Fluticasone",
+        "san_pham_a": [
+          "Aeroflu 125 HFA Inhalation"
+        ],
+        "san_pham_b": [
+          "Aeroflu 125 HFA Inhalation"
+        ]
+      },
+      {
+        "thuoc_a": "Aeroflu 125 HFA Inhalation (hoạt chất: Salmeterol)",
+        "thuoc_b": "Tegibs-6 (hoạt chất: Tegaserod)",
+        "medication_a_id": "DDInter1635",
+        "medication_b_id": "DDInter1754",
+        "xu_tri": "-",
+        "thay_the_a": "R03A, Mometasone furoate, Terbutaline, Umeclidinium, Aclidinium, Glycopyrronium, Mometasone, Olodaterol, Cromoglicic acid, Ipratropium, Orciprenaline, Pirbuterol",
+        "thay_the_b": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Salmeterol",
+        "hoat_chat_b": "Tegaserod",
+        "san_pham_a": [
+          "Aeroflu 125 HFA Inhalation"
+        ],
+        "san_pham_b": [
+          "Tegibs-6"
+        ]
+      },
+      {
+        "thuoc_a": "Tegibs-6 (hoạt chất: Tegaserod)",
+        "thuoc_b": "Aeroflu 125 HFA Inhalation (hoạt chất: Fluticasone)",
+        "medication_a_id": "DDInter1754",
+        "medication_b_id": "DDInter766",
+        "xu_tri": "-",
+        "thay_the_a": "A06A, Alvimopan, Sorbitol, Naloxegol, Bisacodyl, Naldemedine, Methylnaltrexone, Lactitol, Sodium phosphate, monobasic, Magnesium oxide, Sodium sulfate, Prucalopride",
+        "thay_the_b": "R03B, Ciclesonide, Umeclidinium, Mometasone furoate, Aclidinium, Glycopyrronium, Flunisolide, Ipratropium, Cromoglicic acid, Betamethasone, Revefenacin, Nedocromil",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Tegaserod",
+        "hoat_chat_b": "Fluticasone",
+        "san_pham_a": [
+          "Tegibs-6"
+        ],
+        "san_pham_b": [
+          "Aeroflu 125 HFA Inhalation"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Aeroflu 125 HFA Inhalation",
+        "thuoc_b": "Tegibs-6",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Aeroflu 125 HFA Inhalation và Tegibs-6 có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 2 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc của bạn, mình thấy có tổng cộng 1 cặp thuốc-thuốc có tương tác, và cặp này hiện ở mức chưa phân loại. Cặp đáng chú ý nhất trong danh sách là Aeroflu 125 HFA Inhalation và Tegibs-6. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Aeroflu 125 HFA Inhalation và Tegibs-6",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Aeroflu 125 HFA Inhalation",
+      "Tegibs-6"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Aeroflu 125 HFA Inhalation"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Tegibs-6"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

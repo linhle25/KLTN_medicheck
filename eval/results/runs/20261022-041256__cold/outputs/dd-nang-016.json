@@ -1,0 +1,148 @@
+{
+  "case_id": "dd-nang-016",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.6797,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ruxolitinib",
+      "Clarithromycin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ruxolitinib",
+        "ten_chuan": "Ruxolitinib",
+        "medication_id": "DDInter1628",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Clarithromycin",
+        "ten_chuan": "Clarithromycin",
+        "medication_id": "DDInter393",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ruxolitinib",
+        "thuoc_b": "Clarithromycin",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [3] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY., [4] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "xu_tri": "Indication specific dose modifications should be made when ruxolitinib is coadministered with strong CYP450 3A4 inhibitors. The recommended starting dose for patients with Polycythemia vera (PV) coadministered potent CYP450 3A4 inhibitors is ruxolitinib 5 mg twice a day. For patients with MF or PV who are stabilized on ruxolitinib 10 mg twice a day or greater and starting a potent CYP450 3A4 inhibitor, the ruxolitinib dose should be reduced by 50% (rounded up to the closest available tablet strength). For patients with MF or PV stabilized on a dose of 5 mg twice a day and starting fluconazole (at a dose of 200 mg per day or less), the ruxolitinib dose should be reduced to 5 mg once a day. For patients with MF or PV stabilized on ruxolitinib 5 mg once a day, concomitant use of strong CYP450 3A4 inhibitors should be avoided or ruxolitinib therapy interrupted for the duration of strong CYP450 3A4 inhibitor use. For patients with for acute graft versus host disease (GVHD) coadministered strong CYP450 3A4 inhibitors, the ruxolitinib dose should be reduced to 5 mg once a day with concomitant ketoconazole use; however, no dose adjustments are necessary with other potent CYP450 3A4 inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Alpelisib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "thay_the_b": "A02B, Tinidazole, Pantoprazole, Levofloxacin, Dexlansoprazole, Rabeprazole, Sucralfate, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Famotidine",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter393",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [3] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY., [4] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "xu_tri": "Indication specific dose modifications should be made when ruxolitinib is coadministered with strong CYP450 3A4 inhibitors. The recommended starting dose for patients with Polycythemia vera (PV) coadministered potent CYP450 3A4 inhibitors is ruxolitinib 5 mg twice a day. For patients with MF or PV who are stabilized on ruxolitinib 10 mg twice a day or greater and starting a potent CYP450 3A4 inhibitor, the ruxolitinib dose should be reduced by 50% (rounded up to the closest available tablet strength). For patients with MF or PV stabilized on a dose of 5 mg twice a day and starting fluconazole (at a dose of 200 mg per day or less), the ruxolitinib dose should be reduced to 5 mg once a day. For patients with MF or PV stabilized on ruxolitinib 5 mg once a day, concomitant use of strong CYP450 3A4 inhibitors should be avoided or ruxolitinib therapy interrupted for the duration of strong CYP450 3A4 inhibitor use. For patients with for acute graft versus host disease (GVHD) coadministered strong CYP450 3A4 inhibitors, the ruxolitinib dose should be reduced to 5 mg once a day with concomitant ketoconazole use; however, no dose adjustments are necessary with other potent CYP450 3A4 inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Alpelisib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "thay_the_b": "A02B, Tinidazole, Pantoprazole, Levofloxacin, Dexlansoprazole, Rabeprazole, Sucralfate, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Famotidine",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg (hoạt chất: Ruxolitinib)",
+        "thuoc_b": "Agiclari 125 (hoạt chất: Clarithromycin)",
+        "medication_a_id": "DDInter1628",
+        "medication_b_id": "DDInter393",
+        "xu_tri": "Indication specific dose modifications should be made when ruxolitinib is coadministered with strong CYP450 3A4 inhibitors. The recommended starting dose for patients with Polycythemia vera (PV) coadministered potent CYP450 3A4 inhibitors is ruxolitinib 5 mg twice a day. For patients with MF or PV who are stabilized on ruxolitinib 10 mg twice a day or greater and starting a potent CYP450 3A4 inhibitor, the ruxolitinib dose should be reduced by 50% (rounded up to the closest available tablet strength). For patients with MF or PV stabilized on a dose of 5 mg twice a day and starting fluconazole (at a dose of 200 mg per day or less), the ruxolitinib dose should be reduced to 5 mg once a day. For patients with MF or PV stabilized on ruxolitinib 5 mg once a day, concomitant use of strong CYP450 3A4 inhibitors should be avoided or ruxolitinib therapy interrupted for the duration of strong CYP450 3A4 inhibitor use. For patients with for acute graft versus host disease (GVHD) coadministered strong CYP450 3A4 inhibitors, the ruxolitinib dose should be reduced to 5 mg once a day with concomitant ketoconazole use; however, no dose adjustments are necessary with other potent CYP450 3A4 inhibitors.",
+        "thay_the_a": "L01E, Alpelisib, Trametinib, Dacomitinib, Tivozanib, Alectinib",
+        "thay_the_b": "A02B, Tinidazole, Pantoprazole, Levofloxacin, Dexlansoprazole, Rabeprazole, Sucralfate, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Metronidazole, Famotidine",
+        "mo_ta": "Coadministration with potent inhibitors of CYP450 3A4 may significantly increase the plasma concentrations of ruxolitinib, which is primarily metabolized by the isoenzyme.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE., [2] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67, [3] \"Product Information. VFEND (voriconazole).\" Pfizer U.S. Pharmaceuticals, New York, NY., [4] \"Product Information. Jakafi (ruxolitinib).\" Incyte Corporation, Wilmington, DE.",
+        "hoat_chat_a": "Ruxolitinib",
+        "hoat_chat_b": "Clarithromycin",
+        "san_pham_a": [
+          "Jakavi 10mg"
+        ],
+        "san_pham_b": [
+          "Agiclari 125"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Jakavi 10mg",
+        "thuoc_b": "Agiclari 125",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Jakavi 10mg với Agiclari 125 có thể làm nồng độ Jakavi 10mg trong máu tăng lên đáng kể, vì Agiclari 125 ức chế mạnh enzyme CYP450 3A4 - là enzyme chính chịu trách nhiệm phân hủy Jakavi 10mg trong cơ thể; khi enzyme này bị ức chế, thuốc không được đào thải như bình thường mà tích tụ lại.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời với các chất ức chế mạnh CYP450 3A4 có thể làm tăng đáng kể nồng độ ruxolitinib trong huyết tương, do ruxolitinib chủ yếu được chuyển hóa bởi isoenzyme này.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau của bạn, mình thấy có tổng cộng 1 cặp thuốc có tương tác, và cả 1 cặp này đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Jakavi 10mg và Agiclari 125. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Jakavi 10mg và Agiclari 125",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Jakavi 10mg",
+      "Agiclari 125"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Jakavi 10mg"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "Agiclari 125"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

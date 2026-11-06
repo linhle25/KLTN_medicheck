@@ -1,0 +1,131 @@
+{
+  "case_id": "dis-nang-008",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.2432,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Vinorelbine"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Vinorelbine",
+        "ten_chuan": "Vinorelbine",
+        "medication_id": "DDInter1939",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Navelbine"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Navelbine"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Suy tủy xương",
+        "muc_do": "nang",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang bị suy tủy xương, dùng Navelbine cần hết sức lưu tâm vì thuốc này gây ức chế tủy xương theo mức liều, chủ yếu làm giảm bạch cầu trung tính (loại tế bào chống nhiễm trùng). Chính vì vậy bạn nên báo ngay cho bác sĩ khi thấy các dấu hiệu gợi ý tủy xương bị ức chế như sốt, đau họng, nhiễm trùng tại chỗ hay chảy máu. Khi dùng Navelbine, việc theo dõi sát chức năng tạo máu là điều được khuyến cáo để phát hiện sớm những ảnh hưởng này.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Chống chỉ định sử dụng vinorelbine ở bệnh nhân có số lượng bạch cầu trung tính < 1000/mm3. Vinorelbine gây ức chế tủy xương phụ thuộc liều, chủ yếu là giảm bạch cầu trung tính. Nên thận trọng tối đa khi dùng vinorelbine và cân nhắc điều chỉnh liều ở bệnh nhân có dự trữ tủy xương có thể bị suy giảm do hóa trị hoặc xạ trị trước đó hoặc có chức năng tủy xương đang hồi phục sau điều trị độc tế bào trước đó. Bệnh nhân cần được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý ức chế tủy xương như sốt, đau họng, nhiễm trùng tại chỗ hoặc chảy máu. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Bệnh thần kinh cơ",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang mắc bệnh thần kinh cơ, việc dùng Navelbine cần được theo dõi sát vì thuốc có thể gây ra các vấn đề thần kinh cảm giác và vận động, kể cả những trường hợp nặng. Những dấu hiệu cần chú ý gồm tê rần, tăng cảm giác, giảm phản xạ và yếu cơ. Trong quá trình dùng Navelbine, bác sĩ sẽ theo dõi xem các dấu hiệu thần kinh này có mới xuất hiện hay nặng lên không, và nếu tình trạng thần kinh ở mức độ 2 trở lên theo thang đánh giá CTCAE thì thuốc sẽ được dừng lại.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Bệnh lý thần kinh cảm giác và vận động, bao gồm bệnh lý thần kinh nặng, xảy ra ở bệnh nhân dùng vinorelbine. Theo dõi bệnh nhân về các dấu hiệu và triệu chứng mới hoặc nặng lên của bệnh lý thần kinh, như dị cảm, tăng cảm giác, giảm phản xạ và yếu cơ trong khi dùng vinorelbine. Ngừng vinorelbine đối với bệnh lý thần kinh độ 2 hoặc cao hơn theo CTCAE. Điều trị bằng vinorelbine nên được thực hiện thận trọng ở bệnh nhân có hoặc có khuynh hướng bị bệnh lý thần kinh."
+      },
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "nang",
+        "giai_thich": "Navelbine được gan chuyển hóa rất nhiều, nên khi bạn có tiền sử hoặc đang mắc bệnh gan, cách cơ thể xử lý thuốc có thể bị ảnh hưởng. Tuy vậy, hiện chưa có nghiên cứu đánh giá cụ thể việc thuốc này được hấp thu, phân bố và thải trừ ra sao ở những người bị suy giảm chức năng gan. Vì thế, nếu bạn đang có vấn đề về gan, hãy cho bác sĩ hoặc dược sĩ biết trước khi dùng Navelbine để họ cân nhắc phù hợp cho bạn.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Vinorelbine được chuyển hóa mạnh ở gan. Dược động học của vinorelbine ở bệnh nhân suy gan chưa được đánh giá. Điều trị bằng vinorelbine nên được thực hiện thận trọng và giảm liều ở bệnh nhân suy giảm chức năng gan."
+      },
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Suy hô hấp",
+        "muc_do": "nang",
+        "giai_thich": "Với người có tiền sử suy hô hấp, dùng Navelbine cần hết sức lưu tâm vì đã có ghi nhận các trường hợp khó thở cấp và co thắt phế quản, có ca nặng và đe dọa tính mạng. Những phản ứng này thường gặp nhất khi dùng chung với mitomycin C, xuất hiện trong vòng vài phút đến vài giờ sau khi truyền thuốc hoặc muộn hơn, tới 2 tuần sau liều mitomycin. Khi đó có thể phải xử lý tích cực bằng thở oxy bổ sung, thuốc giãn phế quản và/hoặc corticosteroid. Nếu tình trạng khó thở tiến triển nặng lên và phải điều trị kéo dài, thuốc không nên được dùng lại.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Velban (vinblastine).\" Lilly, Eli and Company  (2001):|\"Product Information. Oncovin (vincristine).\" Lilly, Eli and Company  (2001):|\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Khó thở cấp tính và co thắt phế quản, một số nặng và đe dọa tính mạng, đã được báo cáo khi sử dụng các alkaloid vinca. Những phản ứng này được quan sát thường xuyên nhất trong liệu pháp phối hợp với mitomycin C, xảy ra trong vòng vài phút đến vài giờ sau khi dùng alkaloid vinca hoặc lên đến 2 tuần sau liều mitomycin. Liệu pháp alkaloid vinca nên được dùng thận trọng ở bệnh nhân có rối loạn chức năng phổi từ trước. Có thể cần điều trị tích cực, bao gồm sử dụng oxy bổ sung, thuốc giãn phế quản và/hoặc corticosteroid. Ở bệnh nhân phát triển khó thở tiến triển cần điều trị mạn tính, không nên dùng lại alkaloid vinca."
+      },
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Nhiễm trùng",
+        "muc_do": "nang",
+        "giai_thich": "Navelbine có thể làm giảm khả năng tạo máu của cơ thể, cụ thể là gây giảm bạch cầu trung tính (loại tế bào chống nhiễm trùng), thiếu máu và giảm tiểu cầu. Vì vậy, nếu bạn đang mắc hoặc có tiền sử nhiễm trùng, việc dùng Navelbine có thể không phù hợp và cần được cân nhắc rất kỹ. Khi dùng thuốc, bạn nên báo ngay cho bác sĩ nếu thấy các dấu hiệu gợi ý nhiễm trùng như sốt, đau họng hay nhiễm trùng tại chỗ. Đồng thời, việc theo dõi sát chức năng tạo máu trong quá trình điều trị là điều được khuyến cáo.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Vinorelbine gây ức chế tủy xương biểu hiện bằng giảm bạch cầu trung tính, thiếu máu và giảm tiểu cầu. Việc sử dụng vinorelbine có thể bị chống chỉ định ở bệnh nhân mắc các bệnh nhiễm trùng đã biết. Bệnh nhân cần được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý nhiễm trùng như sốt, đau họng hoặc nhiễm trùng tại chỗ. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Navelbine"
+        ],
+        "ten_benh": "Bệnh tiêu hóa",
+        "muc_do": "trung_binh",
+        "giai_thich": "Nếu bạn có tiền sử hoặc đang gặp các vấn đề về tiêu hóa, dùng Navelbine cần được theo dõi cẩn thận hơn. Thuốc có thể gây liệt ruột, táo bón, tắc ruột, thậm chí hoại tử và thủng ruột, và những biến cố này đã từng xảy ra ở người dùng Navelbine dạng tiêm. Vì vậy, với người có bệnh nền tiêu hóa, việc chăm sóc và theo dõi đường ruột được khuyến cáo chặt chẽ, bao gồm ăn đủ chất xơ, uống đủ nước và dùng thuốc làm mềm phân theo hướng dẫn của bác sĩ để phòng ngừa các vấn đề này.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Navelbine (vinorelbine).\" Glaxo Wellcome  (2001):",
+        "mo_ta_dich": "Tắc ruột liệt, táo bón, tắc ruột, hoại tử và thủng ruột nghiêm trọng và gây tử vong xảy ra ở bệnh nhân dùng vinorelbine tiêm. Thiết lập phác đồ dự phòng cho ruột để giảm thiểu táo bón, tắc ruột và/hoặc tắc ruột liệt tiềm ẩn, xem xét bổ sung đủ chất xơ trong chế độ ăn, đủ nước và sử dụng thường quy thuốc làm mềm phân. Khuyến cáo thận trọng và theo dõi ở bệnh nhân có tiền sử vấn đề tiêu hóa."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần thận trọng nếu có tiền sử/đang mắc: Bệnh gan, Bệnh thần kinh cơ, Bệnh tiêu hóa, Nhiễm trùng, Suy hô hấp, Suy tủy xương.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

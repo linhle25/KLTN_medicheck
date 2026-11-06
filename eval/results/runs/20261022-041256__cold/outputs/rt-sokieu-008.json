@@ -1,0 +1,143 @@
+{
+  "case_id": "rt-sokieu-008",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.1301,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Montelukast",
+      "Deferasirox"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Montelukast",
+        "ten_chuan": "Montelukast",
+        "medication_id": "DDInter1242",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Deferasirox",
+        "ten_chuan": "Deferasirox",
+        "medication_id": "DDInter488",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Montelukast",
+        "thuoc_b": "Deferasirox",
+        "medication_a_id": "DDInter1242",
+        "medication_b_id": "DDInter488",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C8 and/or 2C9 may increase the plasma concentrations of montelukast, which is metabolized by these isoenzymes in addition to CYP450 3A4. When montelukast was administered with the potent CYP450 2C8/2C9 inhibitor gemfibrozil, montelukast systemic exposure (AUC) increased by 4.4-fold.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Karonen T, Filppula A, Laitila J, Niemi M, Neuvonen PJ, Backman JT \"Gemfibrozil Markedly Increases the Plasma Concentrations of Montelukast: A Previously Unrecognized Role for CYP2C8 in the Metabolism of Montelukast.\" Clin Pharmacol Ther (2010):, [2] \"Product Information. Singulair (montelukast).\" Merck & Co, Inc, West Point, PA., [3] \"Product Information. Accolate (zafirlukast).\" Zeneca Pharmaceuticals, Wilmington, DE.",
+        "xu_tri": "According to the product labeling, no dosage adjustment of montelukast is required when used in combination with gemfibrozil. However, it may be advisable to monitor patients for potentially increased adverse effects during coadministration with gemfibrozil or other CYP450 2C8/2C9 inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03D, Omalizumab, Tezepelumab, Mercaptopurine, Benralizumab, Reslizumab, Dyphylline, Mepolizumab, Zafirlukast, Bromotheophylline",
+        "thay_the_b": "V03A, Hydroxocobalamin, Fomepizole, Ipecac, Nitrous acid, Dexrazoxane, Oxygen, Lanthanum carbonate, Difelikefalin, Cobicistat, Deferoxamine, Levoleucovorin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Adkold-new lukast (hoạt chất: Montelukast)",
+        "thuoc_b": "Arphosbi 125 (hoạt chất: Deferasirox)",
+        "medication_a_id": "DDInter1242",
+        "medication_b_id": "DDInter488",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C8 and/or 2C9 may increase the plasma concentrations of montelukast, which is metabolized by these isoenzymes in addition to CYP450 3A4. When montelukast was administered with the potent CYP450 2C8/2C9 inhibitor gemfibrozil, montelukast systemic exposure (AUC) increased by 4.4-fold.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Karonen T, Filppula A, Laitila J, Niemi M, Neuvonen PJ, Backman JT \"Gemfibrozil Markedly Increases the Plasma Concentrations of Montelukast: A Previously Unrecognized Role for CYP2C8 in the Metabolism of Montelukast.\" Clin Pharmacol Ther (2010):, [2] \"Product Information. Singulair (montelukast).\" Merck & Co, Inc, West Point, PA., [3] \"Product Information. Accolate (zafirlukast).\" Zeneca Pharmaceuticals, Wilmington, DE.",
+        "xu_tri": "According to the product labeling, no dosage adjustment of montelukast is required when used in combination with gemfibrozil. However, it may be advisable to monitor patients for potentially increased adverse effects during coadministration with gemfibrozil or other CYP450 2C8/2C9 inhibitors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R03D, Omalizumab, Tezepelumab, Mercaptopurine, Benralizumab, Reslizumab, Dyphylline, Mepolizumab, Zafirlukast, Bromotheophylline",
+        "thay_the_b": "V03A, Hydroxocobalamin, Fomepizole, Ipecac, Nitrous acid, Dexrazoxane, Oxygen, Lanthanum carbonate, Difelikefalin, Cobicistat, Deferoxamine, Levoleucovorin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Montelukast",
+        "hoat_chat_b": "Deferasirox",
+        "san_pham_a": [
+          "Adkold-new lukast"
+        ],
+        "san_pham_b": [
+          "Arphosbi 125"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Adkold-new lukast (hoạt chất: Montelukast)",
+        "thuoc_b": "Arphosbi 125 (hoạt chất: Deferasirox)",
+        "medication_a_id": "DDInter1242",
+        "medication_b_id": "DDInter488",
+        "xu_tri": "According to the product labeling, no dosage adjustment of montelukast is required when used in combination with gemfibrozil. However, it may be advisable to monitor patients for potentially increased adverse effects during coadministration with gemfibrozil or other CYP450 2C8/2C9 inhibitors.",
+        "thay_the_a": "R03D, Omalizumab, Tezepelumab, Mercaptopurine, Benralizumab, Reslizumab, Dyphylline, Mepolizumab, Zafirlukast, Bromotheophylline",
+        "thay_the_b": "V03A, Hydroxocobalamin, Fomepizole, Ipecac, Nitrous acid, Dexrazoxane, Oxygen, Lanthanum carbonate, Difelikefalin, Cobicistat, Deferoxamine, Levoleucovorin",
+        "mo_ta": "Coadministration with inhibitors of CYP450 2C8 and/or 2C9 may increase the plasma concentrations of montelukast, which is metabolized by these isoenzymes in addition to CYP450 3A4. When montelukast was administered with the potent CYP450 2C8/2C9 inhibitor gemfibrozil, montelukast systemic exposure (AUC) increased by 4.4-fold.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Karonen T, Filppula A, Laitila J, Niemi M, Neuvonen PJ, Backman JT \"Gemfibrozil Markedly Increases the Plasma Concentrations of Montelukast: A Previously Unrecognized Role for CYP2C8 in the Metabolism of Montelukast.\" Clin Pharmacol Ther (2010):, [2] \"Product Information. Singulair (montelukast).\" Merck & Co, Inc, West Point, PA., [3] \"Product Information. Accolate (zafirlukast).\" Zeneca Pharmaceuticals, Wilmington, DE.",
+        "hoat_chat_a": "Montelukast",
+        "hoat_chat_b": "Deferasirox",
+        "san_pham_a": [
+          "Adkold-new lukast"
+        ],
+        "san_pham_b": [
+          "Arphosbi 125"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Adkold-new lukast",
+        "thuoc_b": "Arphosbi 125",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Adkold-new lukast và Arphosbi 125 có thể làm nồng độ Adkold-new lukast trong máu tăng lên, vì Arphosbi 125 ức chế các enzyme CYP450 2C8 và/hoặc 2C9 - nhóm enzyme tham gia phân hủy Adkold-new lukast bên cạnh CYP450 3A4. Khi Adkold-new lukast được dùng cùng gemfibrozil, một chất ức chế mạnh CYP450 2C8/2C9, mức phơi nhiễm toàn thân (AUC) của Adkold-new lukast đã tăng 4,4 lần.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời với các chất ức chế CYP450 2C8 và/hoặc 2C9 có thể làm tăng nồng độ montelukast trong huyết tương, do montelukast được chuyển hóa bởi các isoenzyme này ngoài CYP450 3A4. Khi montelukast được dùng cùng gemfibrozil, một chất ức chế mạnh CYP450 2C8/2C9, mức phơi nhiễm toàn thân (AUC) của montelukast tăng 4,4 lần.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức trung bình. Cặp đáng chú ý là Adkold-new lukast và Arphosbi 125. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Adkold-new lukast và Arphosbi 125",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Adkold-new lukast",
+      "Arphosbi 125"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Adkold-new lukast",
+          "Arphosbi 125"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

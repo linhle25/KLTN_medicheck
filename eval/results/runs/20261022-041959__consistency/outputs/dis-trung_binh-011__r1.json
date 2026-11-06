@@ -1,0 +1,106 @@
+{
+  "case_id": "dis-trung_binh-011",
+  "phase": "consistency",
+  "rep": 1,
+  "audience": "pharmacist",
+  "wall_s": 1.9899,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Esomeprazole"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Esomeprazole",
+        "ten_chuan": "Esomeprazole",
+        "medication_id": "DDInter676",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "AMEPRAZEC 20"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "AMEPRAZEC 20"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "AMEPRAZEC 20"
+        ],
+        "ten_benh": "Gãy xương",
+        "muc_do": "trung_binh",
+        "giai_thich": "AMEPRAZEC 20 có thể liên quan đến nguy cơ gia tăng gãy xương do loãng xương ở vùng hông, cổ tay hoặc cột sống, theo các nghiên cứu quan sát đã công bố. Nguy cơ này tăng lên ở những người dùng liều cao (nhiều lần mỗi ngày) và điều trị dài hạn (từ một năm trở lên). Với người có tiền sử hoặc đang mắc tình trạng gãy xương, cần thận trọng khi dùng AMEPRAZEC 20 và việc xử trí nên theo các hướng dẫn điều trị đã được thiết lập.",
+        "giai_thich_duoc_si": "AMEPRAZEC 20 có thể liên quan đến nguy cơ gia tăng gãy xương do loãng xương ở vùng hông, cổ tay hoặc cột sống, theo các nghiên cứu quan sát đã công bố. Nguy cơ này tăng lên ở những người dùng liều cao (nhiều lần mỗi ngày) và điều trị dài hạn (từ một năm trở lên). Với người có tiền sử hoặc đang mắc tình trạng gãy xương, cần thận trọng khi dùng AMEPRAZEC 20 và việc xử trí nên theo các hướng dẫn điều trị đã được thiết lập.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Prevacid (lansoprazole).\" TAP Pharmaceuticals Inc  (2001):|\"Product Information. Aciphex (rabeprazole).\" Janssen Pharmaceuticals  (2001):|\"Product Information. Protonix (pantoprazole).\" Wyeth-Ayerst Laboratories  (2001):|\"Product Information. Nexium (esomeprazole).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Omeprazole (omeprazole).\" Mylan Pharmaceuticals Inc  (2003):|\"Product Information. Kapidex (dexlansoprazole).\" Takeda Pharmaceuticals America  (2009):",
+        "mo_ta_dich": "Nhiều nghiên cứu quan sát đã công bố báo cáo rằng liệu pháp PPI có thể liên quan đến tăng nguy cơ gãy xương liên quan đến loãng xương ở hông, cổ tay hoặc cột sống. Nguy cơ tăng ở bệnh nhân dùng liều cao (nhiều liều mỗi ngày) và điều trị dài hạn (một năm hoặc lâu hơn). Bệnh nhân nên dùng liều thấp nhất và thời gian ngắn nhất của liệu pháp PPI phù hợp với tình trạng đang được điều trị. Cần thận trọng ở bệnh nhân có nguy cơ gãy xương liên quan đến loãng xương và nên được quản lý theo hướng dẫn điều trị đã được thiết lập."
+      },
+      {
+        "san_pham": [
+          "AMEPRAZEC 20"
+        ],
+        "ten_benh": "Nhiễm khuẩn Clostridium",
+        "muc_do": "nang",
+        "giai_thich": "AMEPRAZEC 20 có thể liên quan đến tăng nguy cơ tiêu chảy do Clostridium difficile, đặc biệt ở bệnh nhân đang nằm viện, theo các nghiên cứu quan sát đã công bố. Trên bệnh nhân có tiêu chảy không cải thiện, cần cân nhắc chẩn đoán này và theo dõi sát, nhất là khi đang dùng đồng thời kháng sinh, do kháng sinh làm thay đổi hệ vi khuẩn chí đại tràng tạo điều kiện cho C. difficile phát triển quá mức và sinh độc tố A, B gây bệnh. Khi có chỉ định trên lâm sàng, việc xử trí gồm bù nước và điện giải, bổ sung protein, điều trị kháng sinh nhắm C. difficile và đánh giá ngoại khoa.",
+        "giai_thich_duoc_si": "AMEPRAZEC 20 có thể liên quan đến tăng nguy cơ tiêu chảy do Clostridium difficile, đặc biệt ở bệnh nhân đang nằm viện, theo các nghiên cứu quan sát đã công bố. Trên bệnh nhân có tiêu chảy không cải thiện, cần cân nhắc chẩn đoán này và theo dõi sát, nhất là khi đang dùng đồng thời kháng sinh, do kháng sinh làm thay đổi hệ vi khuẩn chí đại tràng tạo điều kiện cho C. difficile phát triển quá mức và sinh độc tố A, B gây bệnh. Khi có chỉ định trên lâm sàng, việc xử trí gồm bù nước và điện giải, bổ sung protein, điều trị kháng sinh nhắm C. difficile và đánh giá ngoại khoa.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. PriLOSEC (omeprazole).\" Merck & Co., Inc  (2022):|\"Product Information. Prevacid (lansoprazole).\" TAP Pharmaceuticals Inc  (2001):|\"Product Information. Aciphex (rabeprazole).\" Janssen Pharmaceuticals  (2001):|\"Product Information. Protonix (pantoprazole).\" Wyeth-Ayerst Laboratories  (2001):|\"Product Information. Protonix IV (pantoprazole).\" Wyeth-Ayerst Laboratories|\"Product Information. Kapidex (dexlansoprazole).\" Takeda Pharmaceuticals America  (2009):|\"Product Information. NexIUM I.V. (esomeprazole).\" Astra-Zeneca Pharmaceuticals  (2014):|\"Product Information. Esomeprazole Strontium (esomeprazole).\" Amneal Pharmaceuticals  (2014):",
+        "mo_ta_dich": "Các nghiên cứu quan sát đã công bố cho thấy việc sử dụng thuốc ức chế bơm proton (PPI) có thể liên quan đến tăng nguy cơ tiêu chảy liên quan đến Clostridium difficile (CDAD), đặc biệt ở bệnh nhân nhập viện. Chẩn đoán này cần được xem xét đối với tiêu chảy không cải thiện. Khuyến cáo bệnh nhân nên sử dụng liều thấp nhất và thời gian ngắn nhất của liệu pháp PPI phù hợp với tình trạng đang được điều trị. Khuyến cáo theo dõi chặt chẽ ở bệnh nhân tiêu chảy và ở những người đang dùng thuốc kháng khuẩn vì CDAD đã được báo cáo với việc sử dụng gần như tất cả các thuốc này. Điều trị bằng thuốc kháng khuẩn làm thay đổi hệ vi khuẩn bình thường của đại tràng, dẫn đến sự phát triển quá mức của C. difficile. C. difficile sinh độc tố A và B, góp phần vào sự phát triển của CDAD."
+      },
+      {
+        "san_pham": [
+          "AMEPRAZEC 20"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "trung_binh",
+        "giai_thich": "AMEPRAZEC 20 được chuyển hóa chủ yếu tại gan, nên khi dùng ở người có bệnh gan mức độ nhẹ đến trung bình (Child Pugh A và B), nồng độ thuốc trong máu ít bị tích lũy khi dùng một lần mỗi ngày lặp lại nhiều ngày. Tuy nhiên ở người suy gan nặng (Child Pugh C), nồng độ thuốc trong huyết tương tăng đáng kể, và nhà sản xuất khuyến cáo liều tối đa 20 mg một lần mỗi ngày cho nhóm bệnh nhân bệnh gan nặng này.",
+        "giai_thich_duoc_si": "AMEPRAZEC 20 được chuyển hóa chủ yếu tại gan, nên khi dùng ở người có bệnh gan mức độ nhẹ đến trung bình (Child Pugh A và B), nồng độ thuốc trong máu ít bị tích lũy khi dùng một lần mỗi ngày lặp lại nhiều ngày. Tuy nhiên ở người suy gan nặng (Child Pugh C), nồng độ thuốc trong huyết tương tăng đáng kể, và nhà sản xuất khuyến cáo liều tối đa 20 mg một lần mỗi ngày cho nhóm bệnh nhân bệnh gan nặng này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Nexium (esomeprazole).\" Astra-Zeneca Pharmaceuticals  (2001):",
+        "mo_ta_dich": "Esomeprazole chủ yếu được chuyển hóa qua gan. Ở bệnh nhân suy gan nhẹ đến trung bình (Child Pugh loại A và B), ít quan sát thấy tích lũy thuốc sau khi dùng liều lặp lại một lần mỗi ngày. Không cần điều chỉnh liều ở những bệnh nhân này. Tuy nhiên, ở suy gan nặng (Child Pugh loại C), đã chứng minh có sự gia tăng đáng kể nồng độ thuốc trong huyết tương. Nhà sản xuất khuyến nghị liều tối đa 20 mg một lần mỗi ngày ở bệnh nhân bệnh gan nặng."
+      },
+      {
+        "san_pham": [
+          "AMEPRAZEC 20"
+        ],
+        "ten_benh": "Hạ magnesi máu do ruột týp 1",
+        "muc_do": "trung_binh",
+        "giai_thich": "AMEPRAZEC 20 có thể làm nặng thêm tình trạng hạ magnesi máu do ruột týp 1, vì hạ magnesi máu có triệu chứng hoặc không triệu chứng đã được ghi nhận hiếm gặp ở người dùng thuốc ức chế bơm proton từ 3 tháng trở lên, phần lớn sau một năm điều trị. Các biến cố bất lợi nghiêm trọng có thể gồm tetany, co giật và loạn nhịp tim. Do đó cần thận trọng khi dùng AMEPRAZEC 20 ở người dễ mất cân bằng magnesi, chẳng hạn người đang dùng thuốc khác có thể gây hạ magnesi máu như lợi tiểu, và cần theo dõi magnesi máu định kỳ.",
+        "giai_thich_duoc_si": "AMEPRAZEC 20 có thể làm nặng thêm tình trạng hạ magnesi máu do ruột týp 1, vì hạ magnesi máu có triệu chứng hoặc không triệu chứng đã được ghi nhận hiếm gặp ở người dùng thuốc ức chế bơm proton từ 3 tháng trở lên, phần lớn sau một năm điều trị. Các biến cố bất lợi nghiêm trọng có thể gồm tetany, co giật và loạn nhịp tim. Do đó cần thận trọng khi dùng AMEPRAZEC 20 ở người dễ mất cân bằng magnesi, chẳng hạn người đang dùng thuốc khác có thể gây hạ magnesi máu như lợi tiểu, và cần theo dõi magnesi máu định kỳ.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Prevacid (lansoprazole).\" TAP Pharmaceuticals Inc  (2001):|\"Product Information. Aciphex (rabeprazole).\" Janssen Pharmaceuticals  (2001):|\"Product Information. Protonix (pantoprazole).\" Wyeth-Ayerst Laboratories  (2001):|\"Product Information. Nexium (esomeprazole).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Omeprazole (omeprazole).\" Mylan Pharmaceuticals Inc  (2003):|\"Product Information. Kapidex (dexlansoprazole).\" Takeda Pharmaceuticals America  (2009):",
+        "mo_ta_dich": "Hạ magie máu có triệu chứng và không triệu chứng đã được báo cáo hiếm gặp ở bệnh nhân điều trị bằng PPI ít nhất 3 tháng, trong hầu hết các trường hợp sau một năm điều trị. Các biến cố bất lợi nghiêm trọng có thể bao gồm tetany, co giật và loạn nhịp tim. Cần thận trọng ở bệnh nhân dễ bị mất cân bằng magie như bệnh nhân dùng các thuốc khác có thể gây hạ magie máu (ví dụ, thuốc lợi tiểu). Khuyến nghị theo dõi thường xuyên."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh gan, Gãy xương, Hạ magnesi máu do ruột týp 1, Nhiễm khuẩn Clostridium."
+    ]
+  }
+}

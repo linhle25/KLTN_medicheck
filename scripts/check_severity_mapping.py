@@ -1,130 +1,136 @@
 #!/usr/bin/env python3
-"""Đối chiếu interactions.muc_do (CSDL dự án) vs Level gốc DDInter (data/raw/*.db).
+"""Kiểm tra tính nhất quán của dữ liệu tương tác ngay trên PostgreSQL đang dùng.
 
-Đây KHÔNG phải đánh giá LLM — là kiểm ETL, xác nhận bước import_ddinter.py ánh xạ
-mức độ nghiêm trọng đúng (Major->nang, Moderate->trung_binh, Minor->nhe,
-Unknown/khác->chua_phan_loai). Dùng làm "sidebar" cho phần factual correctness
-trong eval/PLAN.md.
+Đây KHÔNG phải đánh giá LLM - là kiểm dữ liệu sau ETL (import_ddinter.py). Script đọc
+trực tiếp các bảng interactions / food_interactions / disease_interactions qua đúng
+session mà ứng dụng dùng (SessionLocal), không cần file SQLite gốc trong data/raw.
+
+Lưu ý giới hạn: CSDL chỉ lưu mức độ ĐÃ ánh xạ (muc_do), không lưu trường Level gốc của
+DDInter, nên script không thể tự chứng minh Major -> nang, Moderate -> trung_binh...
+Thay vào đó nó kiểm các ràng buộc mà dữ liệu đúng bắt buộc phải thỏa:
+
+  1. muc_do chỉ nhận 4 giá trị hợp lệ, không NULL.
+  2. "chưa phân loại" <=> mô tả gốc rỗng/N/A (DDInter không có mô tả cho cặp Unknown);
+     cặp đã phân loại luôn có mô tả.
+  3. Quy ước medication_a_id < medication_b_id, không có cặp tự thân, không trùng cặp.
+  4. Mọi medication_id tham chiếu đều tồn tại trong bảng medications.
+  Cảnh báo (không làm fail): mô tả của cặp đã phân loại trùng y hệt cột trích dẫn
+  (lỗi nguồn DDInter đã biết, xem eval/harness/build_dataset.py::is_real_description).
 
 Chạy:
     python scripts/check_severity_mapping.py
 
-Đọc bảng interactions qua SessionLocalFacts (đúng DB mà app dùng - CockroachDB nếu
-DATABASE_URL_FACTS được set, ngược lại là DB chính). Chỉ SELECT, không đụng schema.
-
-Exit code 1 nếu có bất kỳ cặp nào LỆCH mức độ (không tính cặp "thiếu trong CSDL" -
-đó chỉ nghĩa là file raw tương ứng chưa được nạp / không có mặt ở data/raw/).
+Chỉ SELECT, không đụng schema. Exit code 1 nếu có vi phạm ràng buộc (1-4).
 """
-import sqlite3
 import sys
-from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.db.models import Interaction
-from src.db.session import SessionLocalFacts
+from sqlalchemy import func, or_  # noqa: E402
 
-RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
-RAW_DBS = sorted(RAW_DIR.glob("vmec12_ddinter_*.db"))
+from src.db.models import DiseaseInteraction, FoodInteraction, Interaction, Medication  # noqa: E402
+from src.db.session import SessionLocal  # noqa: E402
 
-# Giữ khớp đúng import_ddinter.py::LEVEL_MAP + default.
-LEVEL_MAP = {
-    "Major": "nang",
-    "Moderate": "trung_binh",
-    "Minor": "nhe",
-    "Unknown": "chua_phan_loai",
-}
-DEFAULT_MUC_DO = "chua_phan_loai"
-
-MISMATCH_EXAMPLE_LIMIT = 50
+VALID_LEVELS = ("nang", "trung_binh", "nhe", "chua_phan_loai")
+_EMPTY = ("", "n/a", "-", "none", "null", "na")
 
 
-def load_app_pairs() -> dict[tuple[str, str], str]:
-    """(medication_a_id, medication_b_id) -> muc_do. Quy ước a_id < b_id đã đảm bảo
-    lúc import nên không cần chuẩn hoá lại ở đây."""
-    db = SessionLocalFacts()
-    try:
-        rows = db.query(
-            Interaction.medication_a_id,
-            Interaction.medication_b_id,
-            Interaction.muc_do,
-        ).all()
-    finally:
-        db.close()
-    return {(a, b): muc_do for a, b, muc_do in rows}
-
-
-def iter_raw_rows():
-    """Sinh (tên file, (id_a, id_b) đã sort, Level) cho từng dòng interactions raw."""
-    for db_path in RAW_DBS:
-        conn = sqlite3.connect(str(db_path))
-        conn.row_factory = sqlite3.Row
-        try:
-            for row in conn.execute("SELECT Drug_ID_A, Drug_ID_B, Level FROM interactions"):
-                a, b = row["Drug_ID_A"], row["Drug_ID_B"]
-                if a > b:
-                    a, b = b, a
-                yield db_path.name, (a, b), row["Level"]
-        finally:
-            conn.close()
+def _is_empty(col):
+    """Ô mô tả rỗng theo quy ước DDInter ('N/A', '-') hoặc NULL."""
+    return or_(col.is_(None), func.lower(func.trim(col)).in_(_EMPTY))
 
 
 def main() -> None:
-    if not RAW_DBS:
-        print("Không tìm thấy data/raw/vmec12_ddinter_*.db — không có gì để đối chiếu.")
-        sys.exit(0)
+    facts = SessionLocal()
+    main_db = SessionLocal()
+    failures: list[str] = []
+    warnings: list[str] = []
 
-    app_pairs = load_app_pairs()
-    print(f"CSDL dự án (facts): {len(app_pairs)} cặp tương tác")
-    print(f"File raw có mặt:   {', '.join(p.name for p in RAW_DBS)}\n")
+    try:
+        med_ids = {r[0] for r in main_db.query(Medication.id).all()}
+        total = facts.query(func.count(Interaction.id)).scalar() or 0
+        print(f"CSDL PostgreSQL: {total} cặp thuốc–thuốc, {len(med_ids)} hoạt chất\n")
 
-    matched = mismatched = missing_in_app = 0
-    seen_raw: set[tuple[str, str]] = set()
-    unknown_levels: Counter[str] = Counter()
-    examples: list[str] = []
+        print("=== Phân bố mức độ ===")
+        for model, label in ((Interaction, "thuốc–thuốc"), (FoodInteraction, "thuốc–thực phẩm"), (DiseaseInteraction, "thuốc–bệnh nền")):
+            rows = dict(facts.query(model.muc_do, func.count(model.id)).group_by(model.muc_do).all())
+            print(f"  {label:18s} " + ", ".join(f"{k}={rows.get(k, 0)}" for k in VALID_LEVELS))
+            bad = sum(v for k, v in rows.items() if k not in VALID_LEVELS)
+            if bad:
+                failures.append(f"{label}: {bad} dòng có muc_do ngoài 4 giá trị hợp lệ hoặc NULL")
 
-    for fname, pair, level in iter_raw_rows():
-        if pair in seen_raw:
-            continue
-        seen_raw.add(pair)
+        print("\n=== Ràng buộc mô tả <-> mức độ (thuốc–thuốc) ===")
+        unclassified_with_desc = (
+            facts.query(func.count(Interaction.id))
+            .filter(Interaction.muc_do == "chua_phan_loai", ~_is_empty(Interaction.mo_ta))
+            .scalar()
+        )
+        classified_no_desc = (
+            facts.query(func.count(Interaction.id))
+            .filter(Interaction.muc_do.in_(("nang", "trung_binh", "nhe")), _is_empty(Interaction.mo_ta))
+            .scalar()
+        )
+        print(f"  chưa phân loại nhưng có mô tả:      {unclassified_with_desc}")
+        print(f"  đã phân loại nhưng thiếu mô tả:     {classified_no_desc}")
+        if unclassified_with_desc:
+            failures.append(f"{unclassified_with_desc} cặp 'chưa phân loại' lại có mô tả")
+        if classified_no_desc:
+            failures.append(f"{classified_no_desc} cặp đã phân loại nhưng thiếu mô tả")
 
-        if level not in LEVEL_MAP:
-            unknown_levels[str(level)] += 1
-        expected = LEVEL_MAP.get(level, DEFAULT_MUC_DO)
-        actual = app_pairs.get(pair)
+        dup_desc = (
+            facts.query(func.count(Interaction.id))
+            .filter(
+                Interaction.muc_do.in_(("nang", "trung_binh", "nhe")),
+                Interaction.mo_ta == Interaction.nguon_trich_dan,
+            )
+            .scalar()
+        )
+        print(f"  mô tả trùng cột trích dẫn (lỗi nguồn): {dup_desc}")
+        if dup_desc:
+            warnings.append(f"{dup_desc} cặp đã phân loại có mô tả trùng y hệt cột trích dẫn (lỗi nguồn DDInter)")
 
-        if actual is None:
-            missing_in_app += 1
-        elif actual == expected:
-            matched += 1
-        else:
-            mismatched += 1
-            if len(examples) < MISMATCH_EXAMPLE_LIMIT:
-                examples.append(
-                    f"  {pair[0]} + {pair[1]}: raw Level={level!r} -> kỳ vọng {expected!r}, "
-                    f"CSDL có {actual!r}   ({fname})"
-                )
+        print("\n=== Quy ước cặp ===")
+        wrong_order = facts.query(func.count(Interaction.id)).filter(Interaction.medication_a_id >= Interaction.medication_b_id).scalar()
+        dups = (
+            facts.query(func.count())
+            .select_from(
+                facts.query(Interaction.medication_a_id, Interaction.medication_b_id)
+                .group_by(Interaction.medication_a_id, Interaction.medication_b_id)
+                .having(func.count(Interaction.id) > 1)
+                .subquery()
+            )
+            .scalar()
+        )
+        print(f"  vi phạm a_id < b_id (gồm tự thân):  {wrong_order}")
+        print(f"  cặp bị trùng:                       {dups}")
+        if wrong_order:
+            failures.append(f"{wrong_order} cặp vi phạm quy ước medication_a_id < medication_b_id")
+        if dups:
+            failures.append(f"{dups} cặp bị trùng")
 
-    extra_in_app = len(app_pairs) - (matched + mismatched)
-
-    print("=== KẾT QUẢ ===")
-    print(f"  Khớp mức độ:                         {matched}")
-    print(f"  LỆCH mức độ:                         {mismatched}")
-    print(f"  Có trong raw, thiếu ở CSDL:          {missing_in_app}")
-    print(f"  Có ở CSDL, không có trong file raw này: {extra_in_app}")
-    if unknown_levels:
-        print(f"  Level lạ trong raw (ánh xạ -> {DEFAULT_MUC_DO!r}): {dict(unknown_levels)}")
-
-    if examples:
-        print(f"\n=== VÍ DỤ LỆCH (tối đa {MISMATCH_EXAMPLE_LIMIT}) ===")
-        print("\n".join(examples))
+        print("\n=== Tham chiếu hoạt chất ===")
+        used = {r[0] for r in facts.query(Interaction.medication_a_id).distinct().all()}
+        used |= {r[0] for r in facts.query(Interaction.medication_b_id).distinct().all()}
+        used |= {r[0] for r in facts.query(FoodInteraction.medication_id).distinct().all()}
+        used |= {r[0] for r in facts.query(DiseaseInteraction.medication_id).distinct().all()}
+        orphan = used - med_ids
+        print(f"  medication_id không có trong medications: {len(orphan)}")
+        if orphan:
+            failures.append(f"{len(orphan)} medication_id tham chiếu không tồn tại (ví dụ {sorted(orphan)[:3]})")
+    finally:
+        facts.close()
+        main_db.close()
 
     print()
-    if mismatched:
-        print(f"❌ FAIL — {mismatched} cặp lệch mức độ so với DDInter gốc.")
+    for w in warnings:
+        print(f"⚠️  CẢNH BÁO: {w}")
+    if failures:
+        for f in failures:
+            print(f"❌ {f}")
+        print(f"\n❌ FAIL — {len(failures)} vi phạm ràng buộc.")
         sys.exit(1)
-    print("✅ PASS — không có cặp nào lệch mức độ.")
+    print("✅ PASS — dữ liệu tương tác thỏa mọi ràng buộc kiểm tra.")
     sys.exit(0)
 
 

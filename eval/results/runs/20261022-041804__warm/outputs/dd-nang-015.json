@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nang-015",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.2336,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Regorafenib",
+      "Fondaparinux"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Regorafenib",
+        "ten_chuan": "Regorafenib",
+        "medication_id": "DDInter1576",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Fondaparinux",
+        "ten_chuan": "Fondaparinux",
+        "medication_id": "DDInter775",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Regorafenib",
+        "thuoc_b": "Fondaparinux",
+        "medication_a_id": "DDInter1576",
+        "medication_b_id": "DDInter775",
+        "mo_ta": "Coadministration of regorafenib and drugs that interfere with platelet function or coagulation may potentiate the risk of bleeding complications. Treatment with regorafenib is associated with a high frequency of hemorrhage and thrombocytopenia. Coadministration of regorafenib with strong UGT1A9 inhibitors such as mefenamic acid or diflunisal may theoretically increase systemic exposure to regorafenib.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [4] \"Product Information. Brukinsa (zanubrutinib).\" BeiGene USA, Inc, San Mateo, CA., [5] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT.",
+        "xu_tri": "Concomitant use of other medications that interfere with platelet function or coagulation should be considered cautiously in patients treated with regorafenib. Close clinical and laboratory observation for bleeding complications is recommended during therapy. The INR should be monitored more frequently during coadministration of warfarin.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Entrectinib, Imatinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Larotrectinib, Bosutinib",
+        "thay_the_b": "B01A, Protein C, Acenocoumarol, Selexipag",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Regorava (hoạt chất: Regorafenib)",
+        "thuoc_b": "Arixtra (hoạt chất: Fondaparinux)",
+        "medication_a_id": "DDInter1576",
+        "medication_b_id": "DDInter775",
+        "mo_ta": "Coadministration of regorafenib and drugs that interfere with platelet function or coagulation may potentiate the risk of bleeding complications. Treatment with regorafenib is associated with a high frequency of hemorrhage and thrombocytopenia. Coadministration of regorafenib with strong UGT1A9 inhibitors such as mefenamic acid or diflunisal may theoretically increase systemic exposure to regorafenib.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [4] \"Product Information. Brukinsa (zanubrutinib).\" BeiGene USA, Inc, San Mateo, CA., [5] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT.",
+        "xu_tri": "Concomitant use of other medications that interfere with platelet function or coagulation should be considered cautiously in patients treated with regorafenib. Close clinical and laboratory observation for bleeding complications is recommended during therapy. The INR should be monitored more frequently during coadministration of warfarin.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Entrectinib, Imatinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Larotrectinib, Bosutinib",
+        "thay_the_b": "B01A, Protein C, Acenocoumarol, Selexipag",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Regorafenib",
+        "hoat_chat_b": "Fondaparinux",
+        "san_pham_a": [
+          "Regorava"
+        ],
+        "san_pham_b": [
+          "Arixtra"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Regorava (hoạt chất: Regorafenib)",
+        "thuoc_b": "Arixtra (hoạt chất: Fondaparinux)",
+        "medication_a_id": "DDInter1576",
+        "medication_b_id": "DDInter775",
+        "xu_tri": "Concomitant use of other medications that interfere with platelet function or coagulation should be considered cautiously in patients treated with regorafenib. Close clinical and laboratory observation for bleeding complications is recommended during therapy. The INR should be monitored more frequently during coadministration of warfarin.",
+        "thay_the_a": "L01E, Entrectinib, Imatinib, Pralsetinib, Dabrafenib, Asciminib, Dacomitinib, Pexidartinib, Pacritinib, Tepotinib, Larotrectinib, Bosutinib",
+        "thay_the_b": "B01A, Protein C, Acenocoumarol, Selexipag",
+        "mo_ta": "Coadministration of regorafenib and drugs that interfere with platelet function or coagulation may potentiate the risk of bleeding complications. Treatment with regorafenib is associated with a high frequency of hemorrhage and thrombocytopenia. Coadministration of regorafenib with strong UGT1A9 inhibitors such as mefenamic acid or diflunisal may theoretically increase systemic exposure to regorafenib.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT., [2] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [3] EMEA. European Medicines Agency \"EPARs. European Union Public Assessment Reports. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/includes/medicines/medicines_landingpage.jsp&mid.\", [4] \"Product Information. Brukinsa (zanubrutinib).\" BeiGene USA, Inc, San Mateo, CA., [5] \"Product Information. Stivarga (regorafenib).\" Bayer Pharmaceutical Inc, West Haven, CT.",
+        "hoat_chat_a": "Regorafenib",
+        "hoat_chat_b": "Fondaparinux",
+        "san_pham_a": [
+          "Regorava"
+        ],
+        "san_pham_b": [
+          "Arixtra"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Regorava",
+        "thuoc_b": "Arixtra",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Regorava và Arixtra có thể làm tăng nguy cơ chảy máu, vì Regorava vốn đã liên quan đến tần suất chảy máu và giảm tiểu cầu cao, còn Arixtra là thuốc tác động lên quá trình đông máu nên khi kết hợp sẽ cộng dồn rủi ro này. Ngoài ra, Regorava có thể làm tăng nồng độ thuốc trong máu khi dùng cùng các chất ức chế mạnh enzyme UGT1A9 (enzyme tham gia chuyển hóa thuốc trong cơ thể), điều này trên lý thuyết cũng góp phần làm tăng nguy cơ chảy máu.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dùng chung regorafenib với các thuốc ảnh hưởng đến chức năng tiểu cầu hoặc quá trình đông máu có thể làm tăng nguy cơ biến chứng chảy máu. Điều trị bằng regorafenib có liên quan đến tần suất xuất huyết và giảm tiểu cầu cao. Dùng chung regorafenib với các chất ức chế mạnh UGT1A9 như axit mefenamic hoặc diflunisal về mặt lý thuyết có thể làm tăng phơi nhiễm toàn thân với regorafenib.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các cặp thuốc trong đơn thuốc của bạn và thấy có 1 cặp tương tác, tất cả đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Regorava + Arixtra. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Regorava + Arixtra",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Regorava",
+      "Arixtra"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Regorava",
+          "Arixtra"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

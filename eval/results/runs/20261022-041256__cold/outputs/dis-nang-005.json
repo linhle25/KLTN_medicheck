@@ -1,0 +1,118 @@
+{
+  "case_id": "dis-nang-005",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.9819,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cladribine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cladribine",
+        "ten_chuan": "Cladribine",
+        "medication_id": "DDInter392",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Mavenclad"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Mavenclad"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Mavenclad"
+        ],
+        "ten_benh": "Bệnh hệ thần kinh",
+        "muc_do": "nang",
+        "giai_thich": "Ở người có tiền sử hoặc đang mắc bệnh hệ thần kinh, dùng Mavenclad cần được cân nhắc thận trọng vì đã ghi nhận hiếm gặp tình trạng độc tính thần kinh không đặc hiệu ở mức độ nặng khi dùng thuốc ở liều điều trị. Các độc tính thần kinh nghiêm trọng như liệt nửa người không hồi phục và liệt tứ chi đã được báo cáo ở bệnh nhân dùng thuốc với liều gấp bốn đến chín lần liều khuyến cáo cho bệnh bạch cầu tế bào lông.",
+        "giai_thich_duoc_si": "Ở người có tiền sử hoặc đang mắc bệnh hệ thần kinh, dùng Mavenclad cần được cân nhắc thận trọng vì đã ghi nhận hiếm gặp tình trạng độc tính thần kinh không đặc hiệu ở mức độ nặng khi dùng thuốc ở liều điều trị. Các độc tính thần kinh nghiêm trọng như liệt nửa người không hồi phục và liệt tứ chi đã được báo cáo ở bệnh nhân dùng thuốc với liều gấp bốn đến chín lần liều khuyến cáo cho bệnh bạch cầu tế bào lông.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Leustatin (cladribine).\" Ortho Biotech Inc  (2001):",
+        "mo_ta_dich": "Độc tính thần kinh nặng không xác định đã được báo cáo hiếm gặp trong khi điều trị bằng cladribine ở liều điều trị. Độc tính thần kinh nghiêm trọng như liệt nhẹ hai chi không hồi phục và liệt tứ chi đã được báo cáo ở bệnh nhân dùng cladribine với liều gấp bốn đến chín lần liều khuyến cáo cho bệnh bạch cầu tế bào lông. Điều trị bằng cladribine nên được thực hiện thận trọng ở bệnh nhân bị suy giảm thần kinh hoặc có khuynh hướng suy giảm thần kinh."
+      },
+      {
+        "san_pham": [
+          "Mavenclad"
+        ],
+        "ten_benh": "Nhiễm trùng",
+        "muc_do": "nang",
+        "giai_thich": "Mavenclad có thể gây ức chế tủy xương ở các mức độ khác nhau do tác động độc tế bào lên các mô tăng sinh nhanh, nên việc dùng thuốc này có thể chống chỉ định ở người đang mắc bệnh nhiễm trùng. Trong quá trình điều trị bằng Mavenclad, người bệnh cần được hướng dẫn báo ngay các dấu hiệu hoặc triệu chứng gợi ý nhiễm trùng như sốt, đau họng hoặc nhiễm trùng tại chỗ. Đồng thời, cần theo dõi sát chức năng tạo máu trên lâm sàng.",
+        "giai_thich_duoc_si": "Mavenclad có thể gây ức chế tủy xương ở các mức độ khác nhau do tác động độc tế bào lên các mô tăng sinh nhanh, nên việc dùng thuốc này có thể chống chỉ định ở người đang mắc bệnh nhiễm trùng. Trong quá trình điều trị bằng Mavenclad, người bệnh cần được hướng dẫn báo ngay các dấu hiệu hoặc triệu chứng gợi ý nhiễm trùng như sốt, đau họng hoặc nhiễm trùng tại chỗ. Đồng thời, cần theo dõi sát chức năng tạo máu trên lâm sàng.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Sanders C, Perez EA, Lawrence HJ \"Opportunistic infections in patients with chronic lymphocytic leukemia following treatment with fludarabine.\" Am J Hematol 39 (1992):  314-5|\"Product Information. Methotrexate (methotrexate).\" Lederle Laboratories  (2002):|\"Product Information. Platinol (cisplatin).\" Bristol-Myers Squibb  (2001):|\"Product Information. Vepesid (etoposide).\" Bristol-Myers Squibb  (2001):|\"Product Information. Novantrone (mitoxantrone).\" Immunex Corporation  (2001):|\"Product Information. Mutamycin (mitomycin).\" Bristol-Myers Squibb  (2001):|\"Product Information. Ifex (ifosfamide).\" Bristol-Myers Squibb  (2001):|\"Product Information. Thiotepa (thiotepa).\" Hikma USA (formerly West-Ward Pharmaceutical Corporation)  (2001):|Girmenia C, Mauro FR, Rahimi S \"Late listeriosis after fludarabine plus prednisone treatment.\" Br J Haematol 87 (1994):  407-8|Schilling PJ, Vadhan-Raj S \"Concurrent cytomegalovirus and pneumocystis pneumonia after fludarabine therapy for chronic lymphocytic leukemia.\" N Engl J Med 323 (1990):  833-4|Frame JN, Dahut WL, Crowley S \"Fludarabine and acute tumor lysis in chronic lymphocytic leukemia.\" N Engl J Med 327 (1992):  1396-7|Bastion Y, Coiffier B, Tigaud JD, Espinouse D, Bryon PA \"Pneumocystis pneumonia in a patient treated with fludarabine for chronic lymphocytic leukemia.\" Eur J Cancer 27 (1991):  671|\"Product Information. Fludara (fludarabine).\" Berlex Laboratories  (2001):|\"Product Information. Idamycin (idarubicin).\" Pharmacia and Upjohn  (2001):|\"Product Information. Matulane (procarbazine).\" Roche Laboratories  (2001):|\"Product Information. DTIC-Dome (dacarbazine).\" Bayer  (2001):|\"Product Information. Adriamycin PFS (doxorubicin).\" Pharmacia and Upjohn  (2001):|\"Product Information. Leustatin (cladribine).\" Ortho Biotech Inc  (2001):|\"Product Information. Gemzar (gemcitabine).\" Lilly, Eli and Company  (2001):|\"Product Information. Hycamtin (topotecan).\" SmithKline Beecham  (2001):|\"Product Information. Taxotere (docetaxel).\" Rhone Poulenc Rorer  (2001):|\"Product Information. Taxol (paclitaxel).\" Bristol-Myers Squibb  (2001):|\"Product Information. Nipent (pentostatin).\" Hospira Inc  (2001):|\"Product Information. Tabloid (thioguanine).\" Prasco Laboratories  (2001):|\"Product Information. Xeloda (capecitabine).\" Roche Laboratories  (2001):|\"Product Information. Alkeran (melphalan).\" Glaxo Wellcome  (2022):|\"Product Information. Purinethol (mercaptopurine).\" Glaxo Wellcome  (2001):|\"Product Information. Leukeran Tablets (chlorambucil).\" Glaxo Welcome, Research Triangle Pk, NC.|\"Product Information. Doxil (doxorubicin liposomal).\" Sequus Pharmaceuticals Inc  (2001):|\"Product Information. Cytosar-U (cytarabine).\" Pharmacia and Upjohn  (2001):|\"Product Information. Uracil Mustard (uracil mustard).\" Roberts Pharmaceutical Corporation  (2001):|\"Product Information. Jevtana (cabazitaxel).\" sanofi-aventis  (2010):|\"Product Information. Halaven (eribulin).\" Eisai Inc  (2010):|\"Product Information. Keytruda (pembrolizumab).\" Merck & Co., Inc  (2014):|\"Product Information. Blincyto (blinatumomab).\" Amgen USA  (2014):|\"Product Information. Opdivo (nivolumab).\" Bristol-Myers Squibb  (2014):|\"Product Information. Unituxin (dinutuximab).\" United Therapeutics Corporation  (2015):|\"Product Information. Empliciti (elotuzumab).\" Bristol-Myers Squibb  (2015):|\"Product Information. Pepaxto (melphalan flufenamide).\" Oncopeptides Inc.  (2021):",
+        "mo_ta_dich": "Do tác dụng gây độc tế bào trên các mô tăng sinh nhanh, các thuốc chống ung thư thường có thể gây ức chế tủy xương ở các mức độ khác nhau. Việc sử dụng các thuốc này có thể bị chống chỉ định ở bệnh nhân mắc bệnh nhiễm trùng đã biết. Tất cả bệnh nhân cần được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý nhiễm trùng như sốt, đau họng hoặc nhiễm trùng tại chỗ trong khi điều trị chống ung thư. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Mavenclad"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dược động học của Mavenclad chưa được đánh giá đầy đủ, và ảnh hưởng của tình trạng suy giảm chức năng gan lên quá trình thải trừ thuốc vẫn chưa được xác định rõ. Do đó, khi dùng Mavenclad ở người có tiền sử hoặc đang mắc bệnh gan, việc theo dõi chức năng gan trên lâm sàng được khuyến nghị.",
+        "giai_thich_duoc_si": "Dược động học của Mavenclad chưa được đánh giá đầy đủ, và ảnh hưởng của tình trạng suy giảm chức năng gan lên quá trình thải trừ thuốc vẫn chưa được xác định rõ. Do đó, khi dùng Mavenclad ở người có tiền sử hoặc đang mắc bệnh gan, việc theo dõi chức năng gan trên lâm sàng được khuyến nghị.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Bryson HM, Sorkin EM \"Cladribine. A review of its pharmacodynamic and pharmacokinetic properties and therapeutic potential in haematological malignancies.\" Drugs 46 (1993):  872-94|\"Product Information. Leustatin (cladribine).\" Ortho Biotech Inc  (2001):",
+        "mo_ta_dich": "Dược động học của cladribine chưa được đánh giá đầy đủ. Ảnh hưởng của suy gan đối với sự thải trừ cladribine chưa được biết. Liệu pháp cladribine nên được sử dụng thận trọng ở bệnh nhân có chức năng gan bị suy giảm hiện có hoặc có khuynh hướng suy giảm. Khuyến nghị theo dõi lâm sàng chức năng gan."
+      },
+      {
+        "san_pham": [
+          "Mavenclad"
+        ],
+        "ten_benh": "Suy tủy xương",
+        "muc_do": "nang",
+        "giai_thich": "Mavenclad gây ức chế tủy xương, chủ yếu tác động lên tế bào lympho và bạch cầu đơn nhân, nhưng tình trạng giảm bạch cầu trung tính, thiếu máu và giảm tiểu cầu cũng đã được ghi nhận trong quá trình điều trị. Tác dụng ức chế tủy xương rõ rệt nhất trong tháng đầu sau điều trị và có thể cần truyền hồng cầu và/hoặc tiểu cầu. Do đó, nếu có tiền sử hoặc đang mắc suy tủy xương, cần theo dõi sát chức năng tạo máu và lưu ý báo ngay các dấu hiệu gợi ý ức chế tủy xương như sốt, đau họng, nhiễm trùng tại chỗ hoặc chảy máu.",
+        "giai_thich_duoc_si": "Mavenclad gây ức chế tủy xương, chủ yếu tác động lên tế bào lympho và bạch cầu đơn nhân, nhưng tình trạng giảm bạch cầu trung tính, thiếu máu và giảm tiểu cầu cũng đã được ghi nhận trong quá trình điều trị. Tác dụng ức chế tủy xương rõ rệt nhất trong tháng đầu sau điều trị và có thể cần truyền hồng cầu và/hoặc tiểu cầu. Do đó, nếu có tiền sử hoặc đang mắc suy tủy xương, cần theo dõi sát chức năng tạo máu và lưu ý báo ngay các dấu hiệu gợi ý ức chế tủy xương như sốt, đau họng, nhiễm trùng tại chỗ hoặc chảy máu.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Betticher DC, Fey MF, Rabaglio M, Cerny T, Hess U, Meier V, Stalder M, Zulian G \"Cladribine and severe myelotoxicity.\" Lancet 342 (1993):  1369|Fleischman RA, Croy D \"Acute onset of severe autoimmune hemolytic anemia after treatment with 2-chlorodeoxyadenosine for chronic lymphocytic leukemia.\" Am J Hematol 48 (1995):  293|Bryson HM, Sorkin EM \"Cladribine. A review of its pharmacodynamic and pharmacokinetic properties and therapeutic potential in haematological malignancies.\" Drugs 46 (1993):  872-94|Juliusson G, Liliemark J \"Rapid recovery from cytopenia in hairy cell leukemia after treatment with 2-chloro-2'-deoxyadenosine (CdA): relation to opportunistic infections.\" Blood 79 (1992):  888-94|\"Product Information. Leustatin (cladribine).\" Ortho Biotech Inc  (2001):",
+        "mo_ta_dich": "Cladribine gây ức chế tủy xương, chủ yếu ảnh hưởng đến tế bào lympho và bạch cầu đơn nhân, tuy nhiên giảm bạch cầu trung tính, thiếu máu và giảm tiểu cầu đã được báo cáo trong quá trình điều trị bằng cladribine. Tác dụng ức chế tủy xương rõ rệt nhất trong tháng đầu tiên sau điều trị và có thể cần truyền hồng cầu và/hoặc tiểu cầu. Điều trị bằng cladribine nên được thực hiện thận trọng ở bệnh nhân có dự trữ tủy xương có thể bị suy giảm nghiêm trọng do hóa trị trước đó hoặc có chức năng tủy xương đang hồi phục sau điều trị độc tế bào trước đó. Bệnh nhân nên được hướng dẫn báo cáo ngay bất kỳ dấu hiệu hoặc triệu chứng nào gợi ý ức chế tủy xương như sốt, đau họng, nhiễm trùng tại chỗ hoặc chảy máu. Khuyến cáo theo dõi lâm sàng chặt chẽ chức năng tạo máu."
+      },
+      {
+        "san_pham": [
+          "Mavenclad"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Ảnh hưởng của suy thận lên quá trình thải trừ hoạt chất trong Mavenclad chưa được đánh giá trên người. Độc tính trên thận như nhiễm toan, vô niệu và tăng creatinine huyết thanh đã được ghi nhận ở các liều cao gấp bốn đến chín lần liều khuyến cáo dùng cho bệnh bạch cầu tế bào lông. Vì vậy, khi dùng Mavenclad ở người có bệnh thận, cần theo dõi chức năng thận trên lâm sàng.",
+        "giai_thich_duoc_si": "Ảnh hưởng của suy thận lên quá trình thải trừ hoạt chất trong Mavenclad chưa được đánh giá trên người. Độc tính trên thận như nhiễm toan, vô niệu và tăng creatinine huyết thanh đã được ghi nhận ở các liều cao gấp bốn đến chín lần liều khuyến cáo dùng cho bệnh bạch cầu tế bào lông. Vì vậy, khi dùng Mavenclad ở người có bệnh thận, cần theo dõi chức năng thận trên lâm sàng.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Leustatin (cladribine).\" Ortho Biotech Inc  (2001):",
+        "mo_ta_dich": "Ảnh hưởng của suy thận đối với việc thải trừ cladribine chưa được đánh giá ở người. Độc tính trên thận như nhiễm toan, vô niệu, tăng creatinine huyết thanh đã được báo cáo với các liều gấp bốn đến chín lần liều khuyến cáo của cladribine cho bệnh bạch cầu tế bào lông. Điều trị bằng cladribine nên được thực hiện thận trọng ở bệnh nhân suy giảm chức năng thận. Khuyến cáo theo dõi lâm sàng chức năng thận."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh gan, Bệnh hệ thần kinh, Bệnh thận, Nhiễm trùng, Suy tủy xương."
+    ]
+  }
+}

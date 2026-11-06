@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-trung_binh-017",
+  "phase": "consistency",
+  "rep": 2,
+  "audience": "pharmacist",
+  "wall_s": 2.5954,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Erlotinib",
+      "Famotidine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Erlotinib",
+        "ten_chuan": "Erlotinib",
+        "medication_id": "DDInter667",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Famotidine",
+        "ten_chuan": "Famotidine",
+        "medication_id": "DDInter712",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Erlotinib",
+        "thuoc_b": "Famotidine",
+        "medication_a_id": "DDInter667",
+        "medication_b_id": "DDInter712",
+        "mo_ta": "INTERVAL: Concurrent administration of agents that increase gastric pH such as H2-receptor antagonists may decrease the oral bioavailability of erlotinib and reduce its concentrations in plasma. The solubility of erlotinib decreases when the pH is over 5, resulting in reduced absorption.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] Duong S, Leung M \"Should the concomitant use of erlotinib and acid-reducing agents be avoided? The drug interaction between erlotinib and acid-reducing agents.\" J Oncol Pharm Pract 17 (2011): 448-52, [4] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [5] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [6] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "xu_tri": "In general, the concomitant use of erlotinib with agents that increase gastric pH should be avoided whenever possible. If acid-suppression therapy is required during erlotinib treatment, an H2-receptor antagonist such as ranitidine may be considered. Available pharmacokinetic data suggest that erlotinib should be administered once a day, at least 2 hours before or 10 hours after dosing of the H2-receptor antagonist. Additionally, the lowest effective dosage of the H2-receptor antagonist should be prescribed. It may be appropriate to avoid using cimetidine for long-term acid suppression, as it may inhibit the CYP450 3A4-mediated metabolism of erlotinib and increase the risk of toxicity.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Tepotinib, Larotrectinib, Avapritinib, Fedratinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Duvelisib, Tivozanib",
+        "thay_the_b": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "thuoc_b": "Antifacid 20mg (hoạt chất: Famotidine)",
+        "medication_a_id": "DDInter667",
+        "medication_b_id": "DDInter712",
+        "mo_ta": "INTERVAL: Concurrent administration of agents that increase gastric pH such as H2-receptor antagonists may decrease the oral bioavailability of erlotinib and reduce its concentrations in plasma. The solubility of erlotinib decreases when the pH is over 5, resulting in reduced absorption.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] Duong S, Leung M \"Should the concomitant use of erlotinib and acid-reducing agents be avoided? The drug interaction between erlotinib and acid-reducing agents.\" J Oncol Pharm Pract 17 (2011): 448-52, [4] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [5] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [6] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "xu_tri": "In general, the concomitant use of erlotinib with agents that increase gastric pH should be avoided whenever possible. If acid-suppression therapy is required during erlotinib treatment, an H2-receptor antagonist such as ranitidine may be considered. Available pharmacokinetic data suggest that erlotinib should be administered once a day, at least 2 hours before or 10 hours after dosing of the H2-receptor antagonist. Additionally, the lowest effective dosage of the H2-receptor antagonist should be prescribed. It may be appropriate to avoid using cimetidine for long-term acid suppression, as it may inhibit the CYP450 3A4-mediated metabolism of erlotinib and increase the risk of toxicity.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01E, Tepotinib, Larotrectinib, Avapritinib, Fedratinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Duvelisib, Tivozanib",
+        "thay_the_b": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Erlotinib",
+        "hoat_chat_b": "Famotidine",
+        "san_pham_a": [
+          "APO-Erlotinib"
+        ],
+        "san_pham_b": [
+          "Antifacid 20mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "APO-Erlotinib (hoạt chất: Erlotinib)",
+        "thuoc_b": "Antifacid 20mg (hoạt chất: Famotidine)",
+        "medication_a_id": "DDInter667",
+        "medication_b_id": "DDInter712",
+        "xu_tri": "In general, the concomitant use of erlotinib with agents that increase gastric pH should be avoided whenever possible. If acid-suppression therapy is required during erlotinib treatment, an H2-receptor antagonist such as ranitidine may be considered. Available pharmacokinetic data suggest that erlotinib should be administered once a day, at least 2 hours before or 10 hours after dosing of the H2-receptor antagonist. Additionally, the lowest effective dosage of the H2-receptor antagonist should be prescribed. It may be appropriate to avoid using cimetidine for long-term acid suppression, as it may inhibit the CYP450 3A4-mediated metabolism of erlotinib and increase the risk of toxicity.",
+        "thay_the_a": "L01E, Tepotinib, Larotrectinib, Avapritinib, Fedratinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Duvelisib, Tivozanib",
+        "thay_the_b": "A02B, Tinidazole, Levofloxacin, Tetracycline, Misoprostol, Bismuth subcitrate potassium, Amoxicillin",
+        "mo_ta": "INTERVAL: Concurrent administration of agents that increase gastric pH such as H2-receptor antagonists may decrease the oral bioavailability of erlotinib and reduce its concentrations in plasma. The solubility of erlotinib decreases when the pH is over 5, resulting in reduced absorption.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] Duong S, Leung M \"Should the concomitant use of erlotinib and acid-reducing agents be avoided? The drug interaction between erlotinib and acid-reducing agents.\" J Oncol Pharm Pract 17 (2011): 448-52, [4] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA., [5] Li J, Zhao M, He P, Hidalgo M, Baker SD \"Differential metabolism of gefitinib and erlotinib by human cytochrome p450 enzymes.\" Clin Cancer Res 13 (2007): 3731-7, [6] \"Product Information. Tarceva (erlotinib).\" Genentech, South San Francisco, CA.",
+        "hoat_chat_a": "Erlotinib",
+        "hoat_chat_b": "Famotidine",
+        "san_pham_a": [
+          "APO-Erlotinib"
+        ],
+        "san_pham_b": [
+          "Antifacid 20mg"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "APO-Erlotinib",
+        "thuoc_b": "Antifacid 20mg",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung APO-Erlotinib với Antifacid 20mg có thể làm giảm nồng độ APO-Erlotinib trong huyết tương do Antifacid 20mg làm tăng pH dạ dày, khiến độ hòa tan của APO-Erlotinib giảm khi pH vượt quá 5 và hậu quả là giảm hấp thu thuốc qua đường uống.",
+        "giai_thich_duoc_si": "Dùng chung APO-Erlotinib với Antifacid 20mg có thể làm giảm nồng độ APO-Erlotinib trong huyết tương do Antifacid 20mg làm tăng pH dạ dày, khiến độ hòa tan của APO-Erlotinib giảm khi pH vượt quá 5 và hậu quả là giảm hấp thu thuốc qua đường uống.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "KHOẢNG CÁCH: Việc dùng đồng thời các thuốc làm tăng pH dạ dày như các đối kháng thụ thể H2 có thể làm giảm sinh khả dụng đường uống của erlotinib và làm giảm nồng độ của thuốc này trong huyết tương. Độ hòa tan của erlotinib giảm khi pH trên 5, dẫn đến giảm hấp thu.",
+        "xu_tri_dich": "Nhìn chung, nên tránh dùng đồng thời erlotinib với các thuốc làm tăng pH dạ dày bất cứ khi nào có thể. Nếu cần điều trị ức chế acid trong thời gian dùng erlotinib, có thể cân nhắc một đối kháng thụ thể H2 như ranitidine. Dữ liệu dược động học hiện có gợi ý rằng erlotinib nên được dùng mỗi ngày một lần, ít nhất 2 giờ trước hoặc 10 giờ sau khi dùng đối kháng thụ thể H2. Ngoài ra, nên kê liều thấp nhất có hiệu quả của đối kháng thụ thể H2. Có thể phù hợp để tránh dùng cimetidine cho ức chế acid dài hạn, vì thuốc này có thể ức chế chuyển hóa erlotinib qua trung gian CYP450 3A4 và làm tăng nguy cơ độc tính."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức trung bình. Cặp đáng chú ý là APO-Erlotinib và Antifacid 20mg. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "APO-Erlotinib và Antifacid 20mg",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "APO-Erlotinib",
+      "Antifacid 20mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "APO-Erlotinib",
+          "Antifacid 20mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

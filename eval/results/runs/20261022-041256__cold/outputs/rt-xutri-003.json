@@ -1,0 +1,143 @@
+{
+  "case_id": "rt-xutri-003",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.4326,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Tretinoin",
+      "Vitamin A"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Tretinoin",
+        "ten_chuan": "Tretinoin",
+        "medication_id": "DDInter1853",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Vitamin A",
+        "ten_chuan": "Vitamin A",
+        "medication_id": "DDInter1941",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Tretinoin",
+        "thuoc_b": "Vitamin A",
+        "medication_a_id": "DDInter1853",
+        "medication_b_id": "DDInter1941",
+        "mo_ta": "Concomitant use of a retinoid with vitamin A or other retinoids may result in hypervitaminosis A and additive toxicities. Patients may be at increased risk for potentially serious adverse effects such as vision impairment, pseudotumor cerebri (benign intracranial hypertension), mucositis, esophagitis, hepatitis, hypertriglyceridemia, pancreatitis, ileitis, and colitis.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Accutane (isotretinoin).\" Roche Laboratories, Nutley, NJ., [4] \"Product Information. Soriatane (acitretin).\" Roche Laboratories, Nutley, NJ., [5] \"Product Information. Vesanoid (tretinoin).\" Roche Laboratories, Nutley, NJ.",
+        "xu_tri": "Patients receiving retinoid therapy should avoid concurrent use of other retinoids or vitamin A supplements in excess of the recommended daily allowance. Patients should be made aware of vitamin A sources in vitamin supplements, fortified foods and over-the-counter medications, and be advised to contact their physician if they experience signs of hypervitaminosis A such as inflammation or bleeding of the gums or lips; dry, scaly skin; alopecia; pruritus; erythema; headache; vertigo; and nausea. Patients should discontinue the medication and seek immediate medical attention if they develop signs and symptoms of pseudotumour cerebri or hepatotoxicity.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01X, Pertuzumab, Olaparib, Oxaliplatin, Rucaparib, Tisagenlecleucel, Aminolevulinic acid, Omacetaxine mepesuccinate, Tazemetostat, Altretamine, Tagraxofusp, Pegaspargase",
+        "thay_the_b": "S01X, Alteplase, Ascorbic acid, Sirolimus, Potassium Iodide, Acetylcysteine, Nandrolone, V04C, Sorbitol, Caffeine, Edrophonium, Indocyanine green, Tolbutamide",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Bio-Ane (hoạt chất: Tretinoin)",
+        "thuoc_b": "Acenocoumarol 1 (hoạt chất: Vitamin A)",
+        "medication_a_id": "DDInter1853",
+        "medication_b_id": "DDInter1941",
+        "mo_ta": "Concomitant use of a retinoid with vitamin A or other retinoids may result in hypervitaminosis A and additive toxicities. Patients may be at increased risk for potentially serious adverse effects such as vision impairment, pseudotumor cerebri (benign intracranial hypertension), mucositis, esophagitis, hepatitis, hypertriglyceridemia, pancreatitis, ileitis, and colitis.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Accutane (isotretinoin).\" Roche Laboratories, Nutley, NJ., [4] \"Product Information. Soriatane (acitretin).\" Roche Laboratories, Nutley, NJ., [5] \"Product Information. Vesanoid (tretinoin).\" Roche Laboratories, Nutley, NJ.",
+        "xu_tri": "Patients receiving retinoid therapy should avoid concurrent use of other retinoids or vitamin A supplements in excess of the recommended daily allowance. Patients should be made aware of vitamin A sources in vitamin supplements, fortified foods and over-the-counter medications, and be advised to contact their physician if they experience signs of hypervitaminosis A such as inflammation or bleeding of the gums or lips; dry, scaly skin; alopecia; pruritus; erythema; headache; vertigo; and nausea. Patients should discontinue the medication and seek immediate medical attention if they develop signs and symptoms of pseudotumour cerebri or hepatotoxicity.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L01X, Pertuzumab, Olaparib, Oxaliplatin, Rucaparib, Tisagenlecleucel, Aminolevulinic acid, Omacetaxine mepesuccinate, Tazemetostat, Altretamine, Tagraxofusp, Pegaspargase",
+        "thay_the_b": "S01X, Alteplase, Ascorbic acid, Sirolimus, Potassium Iodide, Acetylcysteine, Nandrolone, V04C, Sorbitol, Caffeine, Edrophonium, Indocyanine green, Tolbutamide",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Tretinoin",
+        "hoat_chat_b": "Vitamin A",
+        "san_pham_a": [
+          "Bio-Ane"
+        ],
+        "san_pham_b": [
+          "Acenocoumarol 1"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Bio-Ane (hoạt chất: Tretinoin)",
+        "thuoc_b": "Acenocoumarol 1 (hoạt chất: Vitamin A)",
+        "medication_a_id": "DDInter1853",
+        "medication_b_id": "DDInter1941",
+        "xu_tri": "Patients receiving retinoid therapy should avoid concurrent use of other retinoids or vitamin A supplements in excess of the recommended daily allowance. Patients should be made aware of vitamin A sources in vitamin supplements, fortified foods and over-the-counter medications, and be advised to contact their physician if they experience signs of hypervitaminosis A such as inflammation or bleeding of the gums or lips; dry, scaly skin; alopecia; pruritus; erythema; headache; vertigo; and nausea. Patients should discontinue the medication and seek immediate medical attention if they develop signs and symptoms of pseudotumour cerebri or hepatotoxicity.",
+        "thay_the_a": "L01X, Pertuzumab, Olaparib, Oxaliplatin, Rucaparib, Tisagenlecleucel, Aminolevulinic acid, Omacetaxine mepesuccinate, Tazemetostat, Altretamine, Tagraxofusp, Pegaspargase",
+        "thay_the_b": "S01X, Alteplase, Ascorbic acid, Sirolimus, Potassium Iodide, Acetylcysteine, Nandrolone, V04C, Sorbitol, Caffeine, Edrophonium, Indocyanine green, Tolbutamide",
+        "mo_ta": "Concomitant use of a retinoid with vitamin A or other retinoids may result in hypervitaminosis A and additive toxicities. Patients may be at increased risk for potentially serious adverse effects such as vision impairment, pseudotumor cerebri (benign intracranial hypertension), mucositis, esophagitis, hepatitis, hypertriglyceridemia, pancreatitis, ileitis, and colitis.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Accutane (isotretinoin).\" Roche Laboratories, Nutley, NJ., [4] \"Product Information. Soriatane (acitretin).\" Roche Laboratories, Nutley, NJ., [5] \"Product Information. Vesanoid (tretinoin).\" Roche Laboratories, Nutley, NJ.",
+        "hoat_chat_a": "Tretinoin",
+        "hoat_chat_b": "Vitamin A",
+        "san_pham_a": [
+          "Bio-Ane"
+        ],
+        "san_pham_b": [
+          "Acenocoumarol 1"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Bio-Ane",
+        "thuoc_b": "Acenocoumarol 1",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Bio-Ane với Acenocoumarol 1 có thể dẫn đến tình trạng thừa vitamin A và làm cộng gộp độc tính của hai thuốc. Khi đó người bệnh có thể đối mặt với nguy cơ cao hơn các tác dụng phụ nghiêm trọng như suy giảm thị lực, tăng áp lực nội sọ lành tính (pseudotumor cerebri), viêm niêm mạc, viêm thực quản, viêm gan, tăng triglycerid máu, viêm tụy, viêm hồi tràng và viêm đại tràng.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời một retinoid với vitamin A hoặc các retinoid khác có thể dẫn đến thừa vitamin A và các độc tính cộng gộp. Người bệnh có thể có nguy cơ cao hơn đối với các tác dụng phụ nghiêm trọng tiềm tàng như suy giảm thị lực, pseudotumor cerebri (tăng áp lực nội sọ lành tính), viêm niêm mạc, viêm thực quản, viêm gan, tăng triglycerid máu, viêm tụy, viêm hồi tràng và viêm đại tràng.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, trong đó 1 cặp ở mức nghiêm trọng. Cặp đáng chú ý nhất là Bio-Ane + Acenocoumarol 1. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Bio-Ane + Acenocoumarol 1",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Bio-Ane",
+      "Acenocoumarol 1"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Bio-Ane",
+          "Acenocoumarol 1"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

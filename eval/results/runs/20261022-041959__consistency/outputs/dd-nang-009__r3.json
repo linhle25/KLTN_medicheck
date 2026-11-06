@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nang-009",
+  "phase": "consistency",
+  "rep": 3,
+  "audience": "patient",
+  "wall_s": 3.3266,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Sibutramine",
+      "Tramadol"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Sibutramine",
+        "ten_chuan": "Sibutramine",
+        "medication_id": "DDInter1665",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Tramadol",
+        "ten_chuan": "Tramadol",
+        "medication_id": "DDInter1841",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Sibutramine",
+        "thuoc_b": "Tramadol",
+        "medication_a_id": "DDInter1665",
+        "medication_b_id": "DDInter1841",
+        "mo_ta": "Concomitant use of sibutramine with other serotonin reuptake inhibitors or other agents that possess or enhance serotonergic activity such as monoamine oxidase inhibitors (MAOIs), tricyclic antidepressants, 5-HT1 receptor agonists, ergot alkaloids, phenylpiperidine opioids, bupropion, dextromethorphan, linezolid, lithium, St. John&#x27;s wort, tramadol, and tryptophan may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Giese SY, Neborsky R \"Serotonin syndrome: potential consequences of Meridia combined with Demerol or fentanyl.\" Plast Reconstr Surg 107 (2001): 293-4, [2] Martin TG \"Serotonin syndrome.\" Ann Emerg Med 28 (1996): 520-6, [3] Nierenberg DW, Semprebon M \"The central nervous system serotonin syndrome.\" Clin Pharmacol Ther 53 (1993): 84-8, [4] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [5] Insel TR, Roy BF, Cohen RM, Murphy DL \"Possible development of the serotonin syndrome in man.\" Am J Psychiatry 139 (1982): 954-5, [6] Sternbach H \"The serotonin syndrome.\" Am J Psychiatry 148 (1991): 705-13, [7] Mills KC \"Serotonin syndrome: A clinical update.\" Crit Care Clin 13 (1997): 763, [8] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [9] Chan BSH, Graudins A, Whyte IM, Dawson AH, Braitberg G, Duggin GG \"Serotonin syndrome resulting from drug interactions.\" Med J Aust 169 (1998): 523-5, [10] Mendelson J, Jones RT, Upton R, Jacob P 3rd \"Methamphetamine and ethanol interactions in humans.\" Clin Pharmacol Ther 57 (1995): 559-68, [11] \"Product Information. Didrex (benzphetamine)\" Pharmacia and Upjohn, Kalamazoo, MI., [12] \"Product Information. Suprenza (phentermine).\" Akrimax Pharmaceuticals, Cranford, NJ.",
+        "xu_tri": "In general, the concomitant use of sibutramine with other agents that affect the serotonergic neurotransmitter system should be avoided if possible, or otherwise approached with caution if potential benefit is deemed to outweigh the risk. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is advised when initiating or increasing the dosages of these agents. The potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. For example, a 5-week washout period is recommended following use of fluoxetine and 3 weeks following use of vortioxetine before administering another serotonergic agent such as sibutramine. At least 14 days should elapse between discontinuation of other serotonergic agents and initiation of treatment with sibutramine. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "N02A, Naloxone, Naltrexone",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Diatramine Capsule 11.30mg (hoạt chất: Sibutramine)",
+        "thuoc_b": "Aronol (hoạt chất: Tramadol)",
+        "medication_a_id": "DDInter1665",
+        "medication_b_id": "DDInter1841",
+        "mo_ta": "Concomitant use of sibutramine with other serotonin reuptake inhibitors or other agents that possess or enhance serotonergic activity such as monoamine oxidase inhibitors (MAOIs), tricyclic antidepressants, 5-HT1 receptor agonists, ergot alkaloids, phenylpiperidine opioids, bupropion, dextromethorphan, linezolid, lithium, St. John&#x27;s wort, tramadol, and tryptophan may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Giese SY, Neborsky R \"Serotonin syndrome: potential consequences of Meridia combined with Demerol or fentanyl.\" Plast Reconstr Surg 107 (2001): 293-4, [2] Martin TG \"Serotonin syndrome.\" Ann Emerg Med 28 (1996): 520-6, [3] Nierenberg DW, Semprebon M \"The central nervous system serotonin syndrome.\" Clin Pharmacol Ther 53 (1993): 84-8, [4] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [5] Insel TR, Roy BF, Cohen RM, Murphy DL \"Possible development of the serotonin syndrome in man.\" Am J Psychiatry 139 (1982): 954-5, [6] Sternbach H \"The serotonin syndrome.\" Am J Psychiatry 148 (1991): 705-13, [7] Mills KC \"Serotonin syndrome: A clinical update.\" Crit Care Clin 13 (1997): 763, [8] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [9] Chan BSH, Graudins A, Whyte IM, Dawson AH, Braitberg G, Duggin GG \"Serotonin syndrome resulting from drug interactions.\" Med J Aust 169 (1998): 523-5, [10] Mendelson J, Jones RT, Upton R, Jacob P 3rd \"Methamphetamine and ethanol interactions in humans.\" Clin Pharmacol Ther 57 (1995): 559-68, [11] \"Product Information. Didrex (benzphetamine)\" Pharmacia and Upjohn, Kalamazoo, MI., [12] \"Product Information. Suprenza (phentermine).\" Akrimax Pharmaceuticals, Cranford, NJ.",
+        "xu_tri": "In general, the concomitant use of sibutramine with other agents that affect the serotonergic neurotransmitter system should be avoided if possible, or otherwise approached with caution if potential benefit is deemed to outweigh the risk. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is advised when initiating or increasing the dosages of these agents. The potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. For example, a 5-week washout period is recommended following use of fluoxetine and 3 weeks following use of vortioxetine before administering another serotonergic agent such as sibutramine. At least 14 days should elapse between discontinuation of other serotonergic agents and initiation of treatment with sibutramine. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "N02A, Naloxone, Naltrexone",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Sibutramine",
+        "hoat_chat_b": "Tramadol",
+        "san_pham_a": [
+          "Diatramine Capsule 11.30mg"
+        ],
+        "san_pham_b": [
+          "Aronol"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Diatramine Capsule 11.30mg (hoạt chất: Sibutramine)",
+        "thuoc_b": "Aronol (hoạt chất: Tramadol)",
+        "medication_a_id": "DDInter1665",
+        "medication_b_id": "DDInter1841",
+        "xu_tri": "In general, the concomitant use of sibutramine with other agents that affect the serotonergic neurotransmitter system should be avoided if possible, or otherwise approached with caution if potential benefit is deemed to outweigh the risk. Patients should be closely monitored for symptoms of the serotonin syndrome during treatment. Particular caution is advised when initiating or increasing the dosages of these agents. The potential risk for serotonin syndrome should be considered even when administering serotonergic agents sequentially, as some agents may demonstrate a prolonged elimination half-life. For example, a 5-week washout period is recommended following use of fluoxetine and 3 weeks following use of vortioxetine before administering another serotonergic agent such as sibutramine. At least 14 days should elapse between discontinuation of other serotonergic agents and initiation of treatment with sibutramine. If serotonin syndrome develops or is suspected during the course of therapy, all serotonergic agents should be discontinued immediately and supportive care rendered as necessary. Moderately ill patients may also benefit from the administration of a serotonin antagonist (e.g., cyproheptadine, chlorpromazine). Severe cases should be managed under consultation with a toxicologist and may require sedation, neuromuscular paralysis, intubation, and mechanical ventilation in addition to the other measures.",
+        "thay_the_a": "-",
+        "thay_the_b": "N02A, Naloxone, Naltrexone",
+        "mo_ta": "Concomitant use of sibutramine with other serotonin reuptake inhibitors or other agents that possess or enhance serotonergic activity such as monoamine oxidase inhibitors (MAOIs), tricyclic antidepressants, 5-HT1 receptor agonists, ergot alkaloids, phenylpiperidine opioids, bupropion, dextromethorphan, linezolid, lithium, St. John&#x27;s wort, tramadol, and tryptophan may potentiate the risk of serotonin syndrome, which is a rare but serious and potentially fatal condition thought to result from hyperstimulation of brainstem 5-HT1A and 2A receptors.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Giese SY, Neborsky R \"Serotonin syndrome: potential consequences of Meridia combined with Demerol or fentanyl.\" Plast Reconstr Surg 107 (2001): 293-4, [2] Martin TG \"Serotonin syndrome.\" Ann Emerg Med 28 (1996): 520-6, [3] Nierenberg DW, Semprebon M \"The central nervous system serotonin syndrome.\" Clin Pharmacol Ther 53 (1993): 84-8, [4] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [5] Insel TR, Roy BF, Cohen RM, Murphy DL \"Possible development of the serotonin syndrome in man.\" Am J Psychiatry 139 (1982): 954-5, [6] Sternbach H \"The serotonin syndrome.\" Am J Psychiatry 148 (1991): 705-13, [7] Mills KC \"Serotonin syndrome: A clinical update.\" Crit Care Clin 13 (1997): 763, [8] \"Product Information. Meridia (sibutramine).\" Knoll Pharmaceutical Company, Whippany, NJ., [9] Chan BSH, Graudins A, Whyte IM, Dawson AH, Braitberg G, Duggin GG \"Serotonin syndrome resulting from drug interactions.\" Med J Aust 169 (1998): 523-5, [10] Mendelson J, Jones RT, Upton R, Jacob P 3rd \"Methamphetamine and ethanol interactions in humans.\" Clin Pharmacol Ther 57 (1995): 559-68, [11] \"Product Information. Didrex (benzphetamine)\" Pharmacia and Upjohn, Kalamazoo, MI., [12] \"Product Information. Suprenza (phentermine).\" Akrimax Pharmaceuticals, Cranford, NJ.",
+        "hoat_chat_a": "Sibutramine",
+        "hoat_chat_b": "Tramadol",
+        "san_pham_a": [
+          "Diatramine Capsule 11.30mg"
+        ],
+        "san_pham_b": [
+          "Aronol"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Diatramine Capsule 11.30mg",
+        "thuoc_b": "Aronol",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Diatramine Capsule 11.30mg với Aronol có thể làm tăng nguy cơ mắc hội chứng serotonin - một tình trạng hiếm gặp nhưng nghiêm trọng và có thể đe dọa tính mạng, được cho là do kích thích quá mức các thụ thể 5-HT1A và 2A ở não. Nguy cơ này xuất hiện vì Aronol có hoạt tính serotonergic, và khi kết hợp với Diatramine Capsule 11.30mg - vốn cũng làm tăng hoạt tính serotonin - thì tác động cộng gộp lại. Cơ chế gây ra hội chứng serotonin được ghi nhận tương tự như khi dùng chung với các thuốc ức chế tái hấp thu serotonin khác, các thuốc ức chế monoamine oxidase (MAOIs), thuốc chống trầm cảm ba vòng, thuốc đồng vận thụ thể 5-HT1, alkaloid ergot, opioid nhóm phenylpiperidine, bupropion, dextromethorphan, linezolid, lithium, St. John's wort và tryptophan.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Dùng đồng thời sibutramine với các thuốc ức chế tái hấp thu serotonin khác hoặc các thuốc khác có hoạt tính serotonergic hoặc làm tăng hoạt tính serotonergic như thuốc ức chế monoamine oxidase (MAOI), thuốc chống trầm cảm ba vòng, thuốc đồng vận thụ thể 5-HT1, alkaloid ergot, opioid nhóm phenylpiperidine, bupropion, dextromethorphan, linezolid, lithium, St. John's wort, tramadol và tryptophan có thể làm tăng nguy cơ hội chứng serotonin, một tình trạng hiếm gặp nhưng nghiêm trọng và có thể gây tử vong, được cho là do kích thích quá mức các thụ thể 5-HT1A và 2A ở thân não.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp tương tác thuốc-thuốc, tất cả đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Diatramine Capsule 11.30mg và Aronol. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Diatramine Capsule 11.30mg và Aronol",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Diatramine Capsule 11.30mg",
+      "Aronol"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Diatramine Capsule 11.30mg",
+          "Aronol"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

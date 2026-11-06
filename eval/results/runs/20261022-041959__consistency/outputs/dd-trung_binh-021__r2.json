@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-trung_binh-021",
+  "phase": "consistency",
+  "rep": 2,
+  "audience": "pharmacist",
+  "wall_s": 2.9192,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Mycophenolic acid",
+      "Ceftriaxone"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Mycophenolic acid",
+        "ten_chuan": "Mycophenolic acid",
+        "medication_id": "DDInter1252",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ceftriaxone",
+        "ten_chuan": "Ceftriaxone",
+        "medication_id": "DDInter334",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Mycophenolic acid",
+        "thuoc_b": "Ceftriaxone",
+        "medication_a_id": "DDInter1252",
+        "medication_b_id": "DDInter334",
+        "mo_ta": "Theoretically, drugs that alter the gastrointestinal flora (e.g., antibiotics) may reduce the oral bioavailability of mycophenolic acid products. Some investigators believe that antimicrobials may interfere with the enterohepatic recirculation of mycophenolic acid by decreasing bacterial hydrolytic enzymes in the gastrointestinal tract that are responsible for regenerating mycophenolic acid from its glucuronide metabolite following first-pass metabolism.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. CellCept (mycophenolate mofetil).\" Roche Laboratories, Nutley, NJ., [2] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ., [3] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "xu_tri": "Close clinical and laboratory monitoring for evidence of diminished immunosuppressive effect of mycophenolic acid is recommended during concomitant therapy with anti-infective agents.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept, Upadacitinib",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Ecophelic 180 (hoạt chất: Mycophenolic acid)",
+        "thuoc_b": "Abitrax (hoạt chất: Ceftriaxone)",
+        "medication_a_id": "DDInter1252",
+        "medication_b_id": "DDInter334",
+        "mo_ta": "Theoretically, drugs that alter the gastrointestinal flora (e.g., antibiotics) may reduce the oral bioavailability of mycophenolic acid products. Some investigators believe that antimicrobials may interfere with the enterohepatic recirculation of mycophenolic acid by decreasing bacterial hydrolytic enzymes in the gastrointestinal tract that are responsible for regenerating mycophenolic acid from its glucuronide metabolite following first-pass metabolism.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. CellCept (mycophenolate mofetil).\" Roche Laboratories, Nutley, NJ., [2] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ., [3] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "xu_tri": "Close clinical and laboratory monitoring for evidence of diminished immunosuppressive effect of mycophenolic acid is recommended during concomitant therapy with anti-infective agents.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept, Upadacitinib",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Mycophenolic acid",
+        "hoat_chat_b": "Ceftriaxone",
+        "san_pham_a": [
+          "Ecophelic 180"
+        ],
+        "san_pham_b": [
+          "Abitrax"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Ecophelic 180 (hoạt chất: Mycophenolic acid)",
+        "thuoc_b": "Abitrax (hoạt chất: Ceftriaxone)",
+        "medication_a_id": "DDInter1252",
+        "medication_b_id": "DDInter334",
+        "xu_tri": "Close clinical and laboratory monitoring for evidence of diminished immunosuppressive effect of mycophenolic acid is recommended during concomitant therapy with anti-infective agents.",
+        "thay_the_a": "L04A, Golimumab, Ustekinumab, Antithymocyte immunoglobulin (rabbit), Tocilizumab, Secukinumab, Canakinumab, Anifrolumab, Ravulizumab, Diroximel fumarate, Abatacept, Upadacitinib",
+        "thay_the_b": "-",
+        "mo_ta": "Theoretically, drugs that alter the gastrointestinal flora (e.g., antibiotics) may reduce the oral bioavailability of mycophenolic acid products. Some investigators believe that antimicrobials may interfere with the enterohepatic recirculation of mycophenolic acid by decreasing bacterial hydrolytic enzymes in the gastrointestinal tract that are responsible for regenerating mycophenolic acid from its glucuronide metabolite following first-pass metabolism.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. CellCept (mycophenolate mofetil).\" Roche Laboratories, Nutley, NJ., [2] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ., [3] \"Product Information. Myfortic (mycophenolic acid).\" Novartis Pharmaceuticals, East Hanover, NJ.",
+        "hoat_chat_a": "Mycophenolic acid",
+        "hoat_chat_b": "Ceftriaxone",
+        "san_pham_a": [
+          "Ecophelic 180"
+        ],
+        "san_pham_b": [
+          "Abitrax"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Ecophelic 180",
+        "thuoc_b": "Abitrax",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Ecophelic 180 với Abitrax có thể làm giảm sinh khả dụng đường uống của Ecophelic 180, theo giả thuyết do kháng sinh làm thay đổi hệ vi khuẩn đường tiêu hóa. Cụ thể, Abitrax có thể ảnh hưởng đến chu trình tuần hoàn gan-ruột của Ecophelic 180 bằng cách giảm các enzyme thủy phân của vi khuẩn trong đường tiêu hóa, vốn chịu trách nhiệm tái tạo lại hoạt chất này từ chất chuyển hóa glucuronide sau chuyển hóa lần đầu qua gan. Vì vậy, khi phối hợp cần theo dõi sát trên lâm sàng và xét nghiệm để phát hiện dấu hiệu suy giảm tác dụng ức chế miễn dịch của Ecophelic 180.",
+        "giai_thich_duoc_si": "Dùng chung Ecophelic 180 với Abitrax có thể làm giảm sinh khả dụng đường uống của Ecophelic 180, theo giả thuyết do kháng sinh làm thay đổi hệ vi khuẩn đường tiêu hóa. Cụ thể, Abitrax có thể ảnh hưởng đến chu trình tuần hoàn gan-ruột của Ecophelic 180 bằng cách giảm các enzyme thủy phân của vi khuẩn trong đường tiêu hóa, vốn chịu trách nhiệm tái tạo lại hoạt chất này từ chất chuyển hóa glucuronide sau chuyển hóa lần đầu qua gan. Vì vậy, khi phối hợp cần theo dõi sát trên lâm sàng và xét nghiệm để phát hiện dấu hiệu suy giảm tác dụng ức chế miễn dịch của Ecophelic 180.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Về mặt lý thuyết, các thuốc làm thay đổi hệ vi khuẩn đường tiêu hóa (ví dụ kháng sinh) có thể làm giảm sinh khả dụng đường uống của các sản phẩm chứa mycophenolic acid. Một số nhà nghiên cứu cho rằng thuốc kháng khuẩn có thể can thiệp vào chu trình tuần hoàn gan-ruột của mycophenolic acid bằng cách làm giảm các enzyme thủy phân của vi khuẩn trong đường tiêu hóa, vốn chịu trách nhiệm tái tạo mycophenolic acid từ chất chuyển hóa glucuronide của nó sau chuyển hóa lần đầu qua gan.",
+        "xu_tri_dich": "Khuyến cáo theo dõi sát trên lâm sàng và xét nghiệm để phát hiện dấu hiệu suy giảm tác dụng ức chế miễn dịch của mycophenolic acid trong khi điều trị đồng thời với các thuốc kháng nhiễm."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp thuốc-thuốc có tương tác, toàn bộ ở mức trung bình. Cặp đáng chú ý nhất là Ecophelic 180 và Abitrax. Chi tiết từng cặp được trình bày ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Ecophelic 180 và Abitrax",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Ecophelic 180",
+      "Abitrax"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Ecophelic 180",
+          "Abitrax"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

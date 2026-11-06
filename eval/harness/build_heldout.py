@@ -28,7 +28,7 @@ from eval.harness.build_dataset import (
     _rx,
 )
 from src.db.models import DiseaseInteraction, FoodInteraction, Interaction
-from src.db.session import SessionLocal, SessionLocalFacts
+from src.db.session import SessionLocal
 
 SEED = 20260902  # KHÁC seed gold set (20260828)
 OUT = DATASET_DIR / "heldout_20260901.jsonl"
@@ -76,7 +76,7 @@ def main() -> None:
     used = load_existing_pairs()
     print(f"Loại trừ: {len(used['dd'])} cặp thuốc-thuốc, {len(used['food'])} cặp thực phẩm, {len(used['dis'])} cặp bệnh nền")
 
-    with SessionLocal() as m, SessionLocalFacts() as f:
+    with SessionLocal() as m, SessionLocal() as f:
         prods = load_medication_products(m)
         names = med_names(m)
         covered = set(prods)

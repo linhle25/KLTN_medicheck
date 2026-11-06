@@ -1,0 +1,130 @@
+{
+  "case_id": "dis-trung_binh-017",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.7426,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Cefoxitin"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Cefoxitin",
+        "ten_chuan": "Cefoxitin",
+        "medication_id": "DDInter325",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [],
+    "ranked_results": [],
+    "explanations": [],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Không ghi nhận tương tác nào giữa các thuốc đã chọn trong cơ sở dữ liệu DDInter 2.0 ở lần phân tích này. Khi danh mục thuốc thay đổi, khuyến nghị thực hiện tra cứu lại để đảm bảo dữ liệu được cập nhật đầy đủ.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Bifotin 1g"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Bifotin 1g"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Viêm đại tràng",
+        "muc_do": "nang",
+        "giai_thich": "Khi dùng Bifotin 1g ở người có tiền sử hoặc đang mắc viêm đại tràng, cần lưu ý rằng tiêu chảy liên quan đến Clostridioides difficile (trước đây gọi là viêm đại tràng giả mạc) đã được báo cáo với gần như tất cả các thuốc kháng khuẩn, mức độ từ tiêu chảy nhẹ đến viêm đại tràng gây tử vong. Việc dùng kháng khuẩn làm thay đổi hệ vi khuẩn chí bình thường của đại tràng, dẫn đến sự phát triển quá mức của C. difficile với độc tố A và B góp phần gây bệnh, và tỷ lệ mắc bệnh cũng như tử vong tăng lên với các chủng C. difficile sinh độc tố mạnh. Tình trạng này cần được nghĩ đến ở mọi bệnh nhân xuất hiện tiêu chảy sau khi dùng kháng khuẩn, kể cả khi xảy ra hơn 2 tháng sau đó, và các thuốc kháng khuẩn không nhắm vào C. difficile có thể cần được xem xét dừng lại nếu nghi ngờ hoặc xác nhận bệnh.",
+        "giai_thich_duoc_si": "Khi dùng Bifotin 1g ở người có tiền sử hoặc đang mắc viêm đại tràng, cần lưu ý rằng tiêu chảy liên quan đến Clostridioides difficile (trước đây gọi là viêm đại tràng giả mạc) đã được báo cáo với gần như tất cả các thuốc kháng khuẩn, mức độ từ tiêu chảy nhẹ đến viêm đại tràng gây tử vong. Việc dùng kháng khuẩn làm thay đổi hệ vi khuẩn chí bình thường của đại tràng, dẫn đến sự phát triển quá mức của C. difficile với độc tố A và B góp phần gây bệnh, và tỷ lệ mắc bệnh cũng như tử vong tăng lên với các chủng C. difficile sinh độc tố mạnh. Tình trạng này cần được nghĩ đến ở mọi bệnh nhân xuất hiện tiêu chảy sau khi dùng kháng khuẩn, kể cả khi xảy ra hơn 2 tháng sau đó, và các thuốc kháng khuẩn không nhắm vào C. difficile có thể cần được xem xét dừng lại nếu nghi ngờ hoặc xác nhận bệnh.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Omnipen (ampicillin).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Ceftin (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Zinacef (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Cleocin (clindamycin).\" Pharmacia and Upjohn  (2002):|\"Product Information. Macrobid (nitrofurantoin).\" Procter and Gamble Pharmaceuticals  (2002):|\"Product Information. Macrodantin (nitrofurantoin).\" Procter and Gamble Pharmaceuticals  (2002):|\"Product Information. Amoxil (amoxicillin).\" SmithKline Beecham  (2001):|\"Product Information. Merrem (meropenem).\" Astra-Zeneca Pharmaceuticals  (2001):|\"Product Information. Coly-Mycin M Parenteral (colistimethate).\" Parke-Davis  (2001):|\"Product Information. Lincocin (lincomycin).\" Pharmacia and Upjohn  (2001):|\"Product Information. Cubicin (daptomycin).\" Cubist Pharmaceuticals Inc  (2003):|\"Product Information. Xifaxan (rifaximin).\" Salix Pharmaceuticals  (2004):|\"Product Information. Doribax (doripenem).\" Ortho McNeil Pharmaceutical  (2007):|\"Product Information. Penicillin G Procaine (procaine penicillin).\" Monarch Pharmaceuticals Inc  (2009):|\"Product Information. Vibativ (telavancin).\" Theravance Inc  (2009):|\"Product Information. Teflaro (ceftaroline).\" Forest Pharmaceuticals  (2010):|\"Product Information. Penicillin G Sodium (penicillin G sodium).\" Sandoz Inc  (2022):|\"Product Information. Dalvance (dalbavancin).\" Durata Therapeutics, Inc.  (2014):|\"Product Information. Orbactiv (oritavancin).\" The Medicines Company  (2014):|\"Product Information. Bicillin C-R (benzathine penicillin-procaine penicillin).\" A-S Medication Solutions  (2017):|\"Product Information. Baxdela (delafloxacin).\" Melinta Therapeutics, Inc.  (2017):|\"Product Information. Polymyxin B Sulfate (polymyxin B sulfate).\" AuroMedics Pharma LLC  (2022):|\"Product Information. Zemdri (plazomicin).\" Achaogen  (2018):|\"Product Information. Seysara (sarecycline).\" Allergan Inc  (2018):|\"Product Information. Nuzyra (omadacycline).\" Paratek Pharmaceuticals, Inc.  (2018):|\"Product Information. Aemcolo (rifamycin).\" Aries Pharmaceuticals, Inc.  (2018):|\"Product Information. Fetroja (cefiderocol).\" Shionogi USA Inc  (2019):|\"Product Information. Biaxin (clarithromycin).\" AbbVie US LLC  (2019):|\"Product Information. Zithromax (azithromycin).\" Pfizer U.S. Pharmaceuticals Group  (2021):|\"Product Information. E.E.S.-400 Filmtab (erythromycin).\" Arbor Pharmaceuticals  (2018):|\"Product Information. Priftin (rifapentine).\" sanofi-aventis  (2020):",
+        "mo_ta_dich": "Tiêu chảy liên quan đến Clostridioides difficile (CDAD), trước đây gọi là viêm đại tràng giả mạc, đã được báo cáo với hầu hết các thuốc kháng khuẩn và có thể từ tiêu chảy nhẹ đến viêm đại tràng gây tử vong. Các thủ phạm phổ biến nhất bao gồm clindamycin và lincomycin. Liệu pháp kháng khuẩn làm thay đổi hệ vi khuẩn bình thường của đại tràng, dẫn đến sự phát triển quá mức của C difficile, mà độc tố A và B của nó góp phần vào sự phát triển của CDAD. Tỷ lệ mắc bệnh và tử vong tăng lên với các chủng C difficile sản xuất siêu độc tố; những nhiễm trùng này có thể đề kháng với liệu pháp kháng khuẩn và có thể cần cắt bỏ đại tràng. CDAD phải được xem xét ở tất cả bệnh nhân có tiêu chảy sau khi sử dụng kháng khuẩn. Vì CDAD đã được báo cáo xảy ra hơn 2 tháng sau khi sử dụng kháng khuẩn, cần hỏi kỹ bệnh sử."
+      },
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Bệnh cần lọc máu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Phần lớn kháng sinh cephalosporin, trong đó có hoạt chất chứa trong Bifotin 1g, bị loại bỏ qua thủ thuật lọc máu ở người bệnh đang chạy thận nhân tạo. Điều này khiến nồng độ thuốc trong cơ thể có thể bị giảm đi trong quá trình lọc máu, nên việc dùng Bifotin 1g ở người có bệnh nền cần lọc máu cần được bác sĩ cân nhắc trên cơ sở đặc điểm thải trừ này.",
+        "giai_thich_duoc_si": "Phần lớn kháng sinh cephalosporin, trong đó có hoạt chất chứa trong Bifotin 1g, bị loại bỏ qua thủ thuật lọc máu ở người bệnh đang chạy thận nhân tạo. Điều này khiến nồng độ thuốc trong cơ thể có thể bị giảm đi trong quá trình lọc máu, nên việc dùng Bifotin 1g ở người có bệnh nền cần lọc máu cần được bác sĩ cân nhắc trên cơ sở đặc điểm thải trừ này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Ceclor (cefaclor).\" Lilly, Eli and Company  (2002):|\"Product Information. Duricef (cefadroxil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Ancef (cefazolin).\" SmithKline Beecham  (2002):|\"Product Information. Suprax (cefixime).\" Lupin Pharmaceuticals Inc  (2002):|\"Product Information. Monocid (cefonicid).\" SmithKline Beecham  (2002):|\"Product Information. Cefobid (cefoperazone).\" Roerig Division  (2002):|\"Product Information. Claforan (cefotaxime).\" Hoechst Marion Roussel  (2002):|\"Product Information. Cefotan (cefotetan).\" Stuart Pharmaceuticals  (2002):|\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):|\"Product Information. Vantin (cefpodoxime).\" Pharmacia and Upjohn  (2002):|\"Product Information. Cefzil (cefprozil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Tazicef (ceftazidime).\" SmithKline Beecham  (2002):|\"Product Information. Cefizox (ceftizoxime).\" Fujisawa  (2002):|\"Product Information. Rocephin (ceftriaxone).\" Roche Laboratories  (2002):|\"Product Information. Keflex (cephalexin).\" Dista Products Company  (2002):|\"Product Information. Velosef (cephradine).\" Apothecon Inc  (2002):|\"Product Information. Keflin (cephalothin).\" Lilly, Eli and Company  (2002):|\"Product Information. Cefadyl (cephapirin).\" Apothecon Inc  (2002):|\"Product Information. Lorabid (loracarbef).\" Lilly, Eli and Company  (2002):|\"Product Information. Mandol (cefamandole).\" Lilly, Eli and Company  (2001):|\"Product Information. Cedax (ceftibuten).\" Schering-Plough  (2001):|\"Product Information. Maxipime (cefepime).\" Bristol-Myers Squibb  (2001):|\"Product Information. Omnicef (cefdinir).\" Parke-Davis  (2001):|\"Product Information. Spectracef (cefditoren).\" TAP Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Hầu hết kháng sinh cephalosporin được loại bỏ bằng thẩm phân máu. Liều dùng nên được sắp xếp để dùng sau thẩm phân hoặc dùng liều bổ sung sau thẩm phân. Cefonicid, cefixime và ceftriaxone không bị loại bỏ đáng kể bằng thẩm phân máu."
+      },
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Suy tim",
+        "muc_do": "trung_binh",
+        "giai_thich": "Bifotin 1g chứa hàm lượng natri đáng kể (khoảng 53 mg, tương đương 2,3 mEq natri trên mỗi gam hoạt chất kháng sinh), nên cần cân nhắc khi dùng ở người có tiền sử hoặc đang mắc suy tim sung huyết. Hàm lượng natri này cũng đặc biệt lưu ý ở những trường hợp kèm tăng huyết áp và ứ dịch, do đây đều là các tình trạng có thể cần hạn chế natri.",
+        "giai_thich_duoc_si": "Bifotin 1g chứa hàm lượng natri đáng kể (khoảng 53 mg, tương đương 2,3 mEq natri trên mỗi gam hoạt chất kháng sinh), nên cần cân nhắc khi dùng ở người có tiền sử hoặc đang mắc suy tim sung huyết. Hàm lượng natri này cũng đặc biệt lưu ý ở những trường hợp kèm tăng huyết áp và ứ dịch, do đây đều là các tình trạng có thể cần hạn chế natri.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):",
+        "mo_ta_dich": "Cefoxitin natri dùng đường tiêm chứa khoảng 53 mg (2,3 mEq) natri cho mỗi gam hoạt tính cefoxitin. Cần xem xét hàm lượng natri ở bệnh nhân có các tình trạng có thể cần hạn chế natri, như suy tim sung huyết, tăng huyết áp và ứ dịch."
+      },
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Động kinh",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng Bifotin 1g ở người có tiền sử động kinh, cần lưu ý nhóm cephalosporin đã được ghi nhận có thể khởi phát cơn co giật. Ở những bệnh nhân có tiền sử động kinh và/hoặc khi vượt quá liều khuyến cáo do suy thận, đã có báo cáo về trạng thái động kinh không co giật, bệnh não, hôn mê, run vỗ cánh, tăng kích thích thần kinh cơ và giật cơ. Vì vậy, liều dùng cần được điều chỉnh theo độ thanh thải creatinin, và liệu pháp chống co giật cần được tiếp tục ở người đã biết có rối loạn co giật.",
+        "giai_thich_duoc_si": "Khi dùng Bifotin 1g ở người có tiền sử động kinh, cần lưu ý nhóm cephalosporin đã được ghi nhận có thể khởi phát cơn co giật. Ở những bệnh nhân có tiền sử động kinh và/hoặc khi vượt quá liều khuyến cáo do suy thận, đã có báo cáo về trạng thái động kinh không co giật, bệnh não, hôn mê, run vỗ cánh, tăng kích thích thần kinh cơ và giật cơ. Vì vậy, liều dùng cần được điều chỉnh theo độ thanh thải creatinin, và liệu pháp chống co giật cần được tiếp tục ở người đã biết có rối loạn co giật.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Vantin (cefpodoxime).\" Pharmacia and Upjohn|\"Product Information. Ceclor (cefaclor).\" Lilly, Eli and Company  (2002):|\"Product Information. Duricef (cefadroxil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Ancef (cefazolin).\" SmithKline Beecham  (2002):|\"Product Information. Kefzol (cefazolin).\" Lilly, Eli and Company  (2002):|\"Product Information. Suprax (cefixime).\" Lupin Pharmaceuticals Inc  (2002):|\"Product Information. Claforan (cefotaxime).\" Hoechst Marion Roussel  (2002):|\"Product Information. Cefotan (cefotetan).\" Stuart Pharmaceuticals  (2002):|\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):|\"Product Information. Cefzil (cefprozil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Fortaz (ceftazidime).\" Glaxo Wellcome  (2002):|\"Product Information. Cefizox (ceftizoxime).\" Fujisawa  (2002):|\"Product Information. Keflex (cephalexin).\" Dista Products Company  (2002):|\"Product Information. Cedax (ceftibuten).\" Schering-Plough  (2001):|\"Product Information. Maxipime (cefepime).\" Bristol-Myers Squibb  (2001):|\"Product Information. Omnicef (cefdinir).\" Parke-Davis  (2001):|\"Product Information. Ceclor CD (cefaclor).\" Dura Pharmaceuticals  (2001):|\"Product Information. Spectracef (cefditoren).\" TAP Pharmaceuticals Inc  (2001):|\"Product Information. Fetroja (cefiderocol).\" Shionogi USA Inc  (2019):",
+        "mo_ta_dich": "Cephalosporin được cho là có liên quan đến việc khởi phát cơn co giật. Trạng thái động kinh không co giật (NCSE), bệnh não, hôn mê, rung giật cơ (asterixis), tăng kích thích thần kinh cơ và rung giật cơ (myoclonia) đã được báo cáo với cephalosporin, đặc biệt ở bệnh nhân có tiền sử động kinh và/hoặc khi vượt quá liều khuyến cáo của cephalosporin do suy thận. Điều chỉnh liều dựa trên độ thanh thải creatinine. Tiếp tục liệu pháp chống co giật ở bệnh nhân có rối loạn co giật đã biết. Nếu xảy ra phản ứng bất lợi trên thần kinh trung ương bao gồm co giật, bệnh nhân nên được đánh giá thần kinh để xác định xem có nên ngừng điều trị hay không."
+      },
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Bệnh thận",
+        "muc_do": "trung_binh",
+        "giai_thich": "Bifotin 1g được thải trừ chủ yếu qua thận dưới dạng không đổi và một phần dưới dạng chất chuyển hóa, nên ở người có bệnh thận, nồng độ thuốc và chất chuyển hóa trong huyết thanh có thể tăng lên cùng thời gian bán thải kéo dài. Tình trạng này có thể dẫn tới các phản ứng độc thần kinh như bệnh não, rung giật cơ (asterixis, myoclonus), co giật và hôn mê khi dùng đường tiêm. Bên cạnh đó, độc tính trên thận và những thay đổi chức năng thận đôi khi cũng gắn với việc dùng thuốc, nên cần theo dõi chức năng thận định kỳ khi điều trị kéo dài hoặc dùng liều cao.",
+        "giai_thich_duoc_si": "Bifotin 1g được thải trừ chủ yếu qua thận dưới dạng không đổi và một phần dưới dạng chất chuyển hóa, nên ở người có bệnh thận, nồng độ thuốc và chất chuyển hóa trong huyết thanh có thể tăng lên cùng thời gian bán thải kéo dài. Tình trạng này có thể dẫn tới các phản ứng độc thần kinh như bệnh não, rung giật cơ (asterixis, myoclonus), co giật và hôn mê khi dùng đường tiêm. Bên cạnh đó, độc tính trên thận và những thay đổi chức năng thận đôi khi cũng gắn với việc dùng thuốc, nên cần theo dõi chức năng thận định kỳ khi điều trị kéo dài hoặc dùng liều cao.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Omnipen (ampicillin).\" Wyeth-Ayerst Laboratories  (2002):|\"Product Information. Ancef (cefazolin).\" SmithKline Beecham  (2002):|\"Product Information. Zefazone (cefmetazole).\" Pharmacia and Upjohn  (2002):|\"Product Information. Monocid (cefonicid).\" SmithKline Beecham  (2002):|\"Product Information. Claforan (cefotaxime).\" Hoechst Marion Roussel  (2002):|\"Product Information. Cefotan (cefotetan).\" Stuart Pharmaceuticals  (2002):|\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):|\"Product Information. Fortaz (ceftazidime).\" Glaxo Wellcome  (2002):|\"Product Information. Tazicef (ceftazidime).\" SmithKline Beecham  (2002):|\"Product Information. Cefizox (ceftizoxime).\" Fujisawa  (2002):|\"Product Information. Ceftin (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Zinacef (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Keflin (cephalothin).\" Lilly, Eli and Company  (2002):|\"Product Information. Cefadyl (cephapirin).\" Apothecon Inc  (2002):|\"Product Information. Staphcillin (methicillin).\" Apothecon Inc  (2002):|\"Product Information. Pfizerpen (penicillin).\" Roerig Division  (2001):|\"Product Information. Pipracil (piperacillin).\" Lederle Laboratories  (2001):|\"Product Information. Ticar (ticarcillin).\" SmithKline Beecham  (2001):|\"Product Information. Mandol (cefamandole).\" Lilly, Eli and Company  (2001):|\"Product Information. Maxipime (cefepime).\" Bristol-Myers Squibb  (2001):|\"Product Information. Fetroja (cefiderocol).\" Shionogi USA Inc  (2019):",
+        "mo_ta_dich": "Hầu hết kháng sinh beta-lactam được thải trừ qua thận dưới dạng thuốc không đổi và, trong một số trường hợp, cũng dưới dạng chất chuyển hóa. Nồng độ huyết thanh của kháng sinh beta-lactam và các chất chuyển hóa của chúng có thể tăng lên, và thời gian bán thải kéo dài, ở bệnh nhân suy giảm chức năng thận. Các phản ứng độc thần kinh (ví dụ: bệnh não, rung giật cơ (asterixis), giật cơ (myoclonus), co giật, hôn mê) đã được báo cáo ở những bệnh nhân này khi điều trị đường tiêm với các thuốc này. Có thể cần điều chỉnh liều, và việc điều chỉnh nên dựa trên mức độ suy giảm chức năng thận cũng như mức độ nặng của nhiễm trùng theo nhãn bao bì của từng sản phẩm. Nên thực hiện xét nghiệm chức năng thận định kỳ trong quá trình điều trị kéo dài và/hoặc liều cao vì độc tính trên thận và những thay đổi chức năng thận đã occ... (đã rút gọn)"
+      },
+      {
+        "san_pham": [
+          "Bifotin 1g"
+        ],
+        "ten_benh": "Bệnh gan",
+        "muc_do": "trung_binh",
+        "giai_thich": "Khi dùng Bifotin 1g ở người có tiền sử hoặc đang mắc bệnh gan, cần lưu ý rằng đã có báo cáo về viêm gan liên quan đến việc sử dụng một số cephalosporin, cùng với hiện tượng tăng thoáng qua AST, ALT và phosphatase kiềm.",
+        "giai_thich_duoc_si": "Khi dùng Bifotin 1g ở người có tiền sử hoặc đang mắc bệnh gan, cần lưu ý rằng đã có báo cáo về viêm gan liên quan đến việc sử dụng một số cephalosporin, cùng với hiện tượng tăng thoáng qua AST, ALT và phosphatase kiềm.",
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Vantin (cefpodoxime).\" Pharmacia and Upjohn|\"Product Information. Ceclor (cefaclor).\" Lilly, Eli and Company  (2002):|\"Product Information. Duricef (cefadroxil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Ancef (cefazolin).\" SmithKline Beecham  (2002):|\"Product Information. Kefzol (cefazolin).\" Lilly, Eli and Company  (2002):|\"Product Information. Suprax (cefixime).\" Lupin Pharmaceuticals Inc  (2002):|\"Product Information. Claforan (cefotaxime).\" Hoechst Marion Roussel  (2002):|\"Product Information. Cefotan (cefotetan).\" Stuart Pharmaceuticals  (2002):|\"Product Information. Mefoxin (cefoxitin).\" Merck & Co., Inc  (2002):|\"Product Information. Cefzil (cefprozil).\" Bristol-Myers Squibb  (2002):|\"Product Information. Fortaz (ceftazidime).\" Glaxo Wellcome  (2002):|\"Product Information. Cefizox (ceftizoxime).\" Fujisawa  (2002):|\"Product Information. Ceftin (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Zinacef (cefuroxime).\" Glaxo Wellcome  (2002):|\"Product Information. Keflex (cephalexin).\" Dista Products Company  (2002):|\"Product Information. Cedax (ceftibuten).\" Schering-Plough  (2001):|\"Product Information. Maxipime (cefepime).\" Bristol-Myers Squibb  (2001):|\"Product Information. Omnicef (cefdinir).\" Parke-Davis  (2001):|\"Product Information. Ceclor CD (cefaclor).\" Dura Pharmaceuticals  (2001):|\"Product Information. Spectracef (cefditoren).\" TAP Pharmaceuticals Inc  (2001):",
+        "mo_ta_dich": "Đã có báo cáo về các ca viêm gan khi sử dụng một số cephalosporin nhất định. Cũng đã quan sát thấy tình trạng tăng thoáng qua nồng độ AST, ALT và phosphatase kiềm. Khuyến cáo thận trọng và theo dõi khi kê các thuốc này cho bệnh nhân có rối loạn gan."
+      }
+    ],
+    "has_severe_disease_interaction": true,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Cũng cần thận trọng nếu bệnh nhân có tiền sử/đang mắc: Bệnh cần lọc máu, Bệnh gan, Bệnh thận, Suy tim, Viêm đại tràng, Động kinh."
+    ]
+  }
+}

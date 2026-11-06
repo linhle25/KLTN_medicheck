@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-trung_binh-025",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.35,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Promethazine",
+      "Tuberculin purified protein derivative"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Promethazine",
+        "ten_chuan": "Promethazine",
+        "medication_id": "DDInter1533",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Tuberculin purified protein derivative",
+        "ten_chuan": "Tuberculin purified protein derivative",
+        "medication_id": "DDInter1889",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Promethazine",
+        "thuoc_b": "Tuberculin purified protein derivative",
+        "medication_a_id": "DDInter1533",
+        "medication_b_id": "DDInter1889",
+        "mo_ta": "INTERVAL: Antihistamines may diminish the response to diagnostic skin test antigens. Falsely insignificant or false-negative results may occur in such patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Multum Information Services, Inc. Expert Review Panel\", [2] NLM. National Library of Medicine. NIH. National Institutes of Health \"Trichophyton for intradermal skin testing (trichophyton mentagrophytes and trichophyton rubrum) injection [Allermed Laboratories, Inc.] Available from: URL: http://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaeffe62-b538-43ca-a3b9-47e28b765d89\" ([cited 2014]):, [3] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [4] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [5] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [6] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "Antihistamines should be discontinued approximately 2 to 4 days prior to skin testing procedures.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R06A, Ketotifen, Dimenhydrinate, Meclizine, Thiethylperazine, Trimethobenzamide, Doxylamine, Azelastine, Cyclizine, D04A, Lidocaine, Tetracaine, Doxepin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Axcel Promethazine-5 Syrup (hoạt chất: Promethazine)",
+        "thuoc_b": "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao) (hoạt chất: Tuberculin purified protein derivative)",
+        "medication_a_id": "DDInter1533",
+        "medication_b_id": "DDInter1889",
+        "mo_ta": "INTERVAL: Antihistamines may diminish the response to diagnostic skin test antigens. Falsely insignificant or false-negative results may occur in such patients.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Multum Information Services, Inc. Expert Review Panel\", [2] NLM. National Library of Medicine. NIH. National Institutes of Health \"Trichophyton for intradermal skin testing (trichophyton mentagrophytes and trichophyton rubrum) injection [Allermed Laboratories, Inc.] Available from: URL: http://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaeffe62-b538-43ca-a3b9-47e28b765d89\" ([cited 2014]):, [3] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [4] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [5] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [6] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "xu_tri": "Antihistamines should be discontinued approximately 2 to 4 days prior to skin testing procedures.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "R06A, Ketotifen, Dimenhydrinate, Meclizine, Thiethylperazine, Trimethobenzamide, Doxylamine, Azelastine, Cyclizine, D04A, Lidocaine, Tetracaine, Doxepin",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Promethazine",
+        "hoat_chat_b": "Tuberculin purified protein derivative",
+        "san_pham_a": [
+          "Axcel Promethazine-5 Syrup"
+        ],
+        "san_pham_b": [
+          "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Axcel Promethazine-5 Syrup (hoạt chất: Promethazine)",
+        "thuoc_b": "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao) (hoạt chất: Tuberculin purified protein derivative)",
+        "medication_a_id": "DDInter1533",
+        "medication_b_id": "DDInter1889",
+        "xu_tri": "Antihistamines should be discontinued approximately 2 to 4 days prior to skin testing procedures.",
+        "thay_the_a": "R06A, Ketotifen, Dimenhydrinate, Meclizine, Thiethylperazine, Trimethobenzamide, Doxylamine, Azelastine, Cyclizine, D04A, Lidocaine, Tetracaine, Doxepin",
+        "thay_the_b": "-",
+        "mo_ta": "INTERVAL: Antihistamines may diminish the response to diagnostic skin test antigens. Falsely insignificant or false-negative results may occur in such patients.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Multum Information Services, Inc. Expert Review Panel\", [2] NLM. National Library of Medicine. NIH. National Institutes of Health \"Trichophyton for intradermal skin testing (trichophyton mentagrophytes and trichophyton rubrum) injection [Allermed Laboratories, Inc.] Available from: URL: http://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaeffe62-b538-43ca-a3b9-47e28b765d89\" ([cited 2014]):, [3] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [4] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD., [5] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [6] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+        "hoat_chat_a": "Promethazine",
+        "hoat_chat_b": "Tuberculin purified protein derivative",
+        "san_pham_a": [
+          "Axcel Promethazine-5 Syrup"
+        ],
+        "san_pham_b": [
+          "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Axcel Promethazine-5 Syrup",
+        "thuoc_b": "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)",
+        "muc_do": "trung_binh",
+        "giai_thich": "Dùng chung Axcel Promethazine-5 Syrup với PPD Tuberculin Mammalian có thể làm giảm đáp ứng với kháng nguyên dùng trong test da chẩn đoán, khiến kết quả trở nên không đáng kể hoặc âm tính giả ở những người đang dùng thuốc. Điều này có nghĩa kết quả test da có thể không phản ánh đúng thực tế.",
+        "giai_thich_duoc_si": "Dùng chung Axcel Promethazine-5 Syrup với PPD Tuberculin Mammalian có thể làm giảm đáp ứng với kháng nguyên dùng trong test da chẩn đoán, khiến kết quả trở nên không đáng kể hoặc âm tính giả ở những người đang dùng thuốc. Điều này có nghĩa kết quả test da có thể không phản ánh đúng thực tế.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "KHOẢNG CÁCH: Thuốc kháng histamin có thể làm giảm đáp ứng với kháng nguyên dùng trong test da chẩn đoán. Ở những bệnh nhân này có thể xảy ra kết quả không đáng kể giả tạo hoặc âm tính giả.",
+        "xu_tri_dich": "Nên ngừng thuốc kháng histamin khoảng 2 đến 4 ngày trước khi tiến hành test da."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận 1 cặp thuốc-thuốc có tương tác, toàn bộ ở mức trung bình. Cặp đáng chú ý là Axcel Promethazine-5 Syrup và PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao). Chi tiết từng cặp được trình bày ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Axcel Promethazine-5 Syrup và PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Axcel Promethazine-5 Syrup",
+      "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Axcel Promethazine-5 Syrup",
+          "PPD Tuberculin Mammalian (sinh phẩm chẩn đoán lao)"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

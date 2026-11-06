@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-049",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.1633,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Prednisolone",
+      "Azithromycin"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Prednisolone",
+        "ten_chuan": "Prednisolone",
+        "medication_id": "DDInter1513",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Azithromycin",
+        "ten_chuan": "Azithromycin",
+        "medication_id": "DDInter157",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Prednisolone",
+        "thuoc_b": "Azithromycin",
+        "medication_a_id": "DDInter1513",
+        "medication_b_id": "DDInter157",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Betamethasone, Fluorometholone, Beclomethasone dipropionate, S01C, Fluocinolone acetonide, Fludrocortisone, Betamethasone",
+        "thay_the_b": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Adelone (hoạt chất: Prednisolone)",
+        "thuoc_b": "AZIZI (hoạt chất: Azithromycin)",
+        "medication_a_id": "DDInter1513",
+        "medication_b_id": "DDInter157",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Betamethasone, Fluorometholone, Beclomethasone dipropionate, S01C, Fluocinolone acetonide, Fludrocortisone, Betamethasone",
+        "thay_the_b": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Prednisolone",
+        "hoat_chat_b": "Azithromycin",
+        "san_pham_a": [
+          "Adelone"
+        ],
+        "san_pham_b": [
+          "AZIZI"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Adelone (hoạt chất: Prednisolone)",
+        "thuoc_b": "AZIZI (hoạt chất: Azithromycin)",
+        "medication_a_id": "DDInter1513",
+        "medication_b_id": "DDInter157",
+        "xu_tri": "-",
+        "thay_the_a": "D07A, Mometasone furoate, Amcinonide, Fluocinolone acetonide, Hydrocortisone butyrate, Fluocinonide, Betamethasone, Fluorometholone, Beclomethasone dipropionate, S01C, Fluocinolone acetonide, Fludrocortisone, Betamethasone",
+        "thay_the_b": "J01R, Tinidazole, Cefixime, Secnidazole, S01A, Rifamycin, Kanamycin, Netilmicin, Polymyxin B, Sulfamethizole, Trifluridine, Benzylpenicillin, Sulfisoxazole",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Prednisolone",
+        "hoat_chat_b": "Azithromycin",
+        "san_pham_a": [
+          "Adelone"
+        ],
+        "san_pham_b": [
+          "AZIZI"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Adelone",
+        "thuoc_b": "AZIZI",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Adelone và AZIZI có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong cùng một đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, hiện ở mức chưa phân loại. Cặp đáng chú ý nhất trong danh sách là Adelone và AZIZI. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Adelone và AZIZI",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Adelone",
+      "AZIZI"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Adelone",
+          "AZIZI"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

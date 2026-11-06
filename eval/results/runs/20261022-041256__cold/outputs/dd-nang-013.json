@@ -1,0 +1,143 @@
+{
+  "case_id": "dd-nang-013",
+  "phase": "cold",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 2.8128,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Ziprasidone",
+      "Ceritinib"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Ziprasidone",
+        "ten_chuan": "Ziprasidone",
+        "medication_id": "DDInter1967",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ceritinib",
+        "ten_chuan": "Ceritinib",
+        "medication_id": "DDInter340",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Ziprasidone",
+        "thuoc_b": "Ceritinib",
+        "medication_a_id": "DDInter1967",
+        "medication_b_id": "DDInter340",
+        "mo_ta": "Ziprasidone can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. Excessive parasympatholytic effects may include paralytic ileus, hyperthermia, mydriasis, blurred vision, tachycardia, urinary retention, psychosis, and seizures.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Geodon (ziprasidone).\" Pfizer US Pharmaceuticals, New York, NY., [4] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [10] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "xu_tri": "Coadministration of ziprasidone with other drugs that can prolong the QT interval is considered contraindicated.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N05A, Loxapine, Molindone, Thiothixene",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Tivozanib, Zanubrutinib",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Calswin 80 (hoạt chất: Ziprasidone)",
+        "thuoc_b": "Spexib 150mg (hoạt chất: Ceritinib)",
+        "medication_a_id": "DDInter1967",
+        "medication_b_id": "DDInter340",
+        "mo_ta": "Ziprasidone can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. Excessive parasympatholytic effects may include paralytic ileus, hyperthermia, mydriasis, blurred vision, tachycardia, urinary retention, psychosis, and seizures.",
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Geodon (ziprasidone).\" Pfizer US Pharmaceuticals, New York, NY., [4] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [10] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "xu_tri": "Coadministration of ziprasidone with other drugs that can prolong the QT interval is considered contraindicated.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N05A, Loxapine, Molindone, Thiothixene",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Tivozanib, Zanubrutinib",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Ziprasidone",
+        "hoat_chat_b": "Ceritinib",
+        "san_pham_a": [
+          "Calswin 80"
+        ],
+        "san_pham_b": [
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Calswin 80 (hoạt chất: Ziprasidone)",
+        "thuoc_b": "Spexib 150mg (hoạt chất: Ceritinib)",
+        "medication_a_id": "DDInter1967",
+        "medication_b_id": "DDInter340",
+        "xu_tri": "Coadministration of ziprasidone with other drugs that can prolong the QT interval is considered contraindicated.",
+        "thay_the_a": "N05A, Loxapine, Molindone, Thiothixene",
+        "thay_the_b": "L01E, Acalabrutinib, Dacomitinib, Tepotinib, Avapritinib, Selumetinib, Cobimetinib, Capmatinib, Ibrutinib, Afatinib, Tivozanib, Zanubrutinib",
+        "mo_ta": "Ziprasidone can cause dose-related prolongation of the QT interval. Theoretically, coadministration with other agents that can prolong the QT interval may result in additive effects and increased risk of ventricular arrhythmias including torsade de pointes and sudden death. Excessive parasympatholytic effects may include paralytic ileus, hyperthermia, mydriasis, blurred vision, tachycardia, urinary retention, psychosis, and seizures.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nang",
+        "nguon_trich_dan": "[1] Canadian Pharmacists Association \"e-CPS. Available from: URL: http://www.pharmacists.ca/function/Subscriptions/ecps.cfm?link=eCPS_quikLink.\", [2] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [3] \"Product Information. Geodon (ziprasidone).\" Pfizer US Pharmaceuticals, New York, NY., [4] EMA. European Medicines Agency. European Union \"EMA - List of medicines under additional monitoring. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=pages/regulation/document_listing/document_listing_000366.jsp&mid=WC0b01ac058067c852\" ([2013 - ]):, [5] Cerner Multum, Inc. \"UK Summary of Product Characteristics.\" O 0, [6] Glassman AH, Bigger JT Jr \"Antipsychotic drugs: prolonged QTc interval, torsade de pointes, and sudden death.\" Am J Psychiatry 158 (2001): 1774-82, [7] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7, [8] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ., [9] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman's the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):, [10] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+        "hoat_chat_a": "Ziprasidone",
+        "hoat_chat_b": "Ceritinib",
+        "san_pham_a": [
+          "Calswin 80"
+        ],
+        "san_pham_b": [
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "has_severe": true,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Calswin 80",
+        "thuoc_b": "Spexib 150mg",
+        "muc_do": "nang",
+        "giai_thich": "Dùng chung Calswin 80 và Spexib 150mg là tình huống được xem là chống chỉ định, vì cả hai đều có khả năng làm kéo dài khoảng QT trên điện tâm đồ. Khi phối hợp, tác dụng này có thể cộng gộp, làm tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử. Bên cạnh đó, các tác dụng phụ kiểu ức chế phó giao cảm quá mức cũng có thể xuất hiện, gồm liệt ruột, tăng thân nhiệt, giãn đồng tử, nhìn mờ, nhịp tim nhanh, bí tiểu, rối loạn tâm thần và co giật.",
+        "giai_thich_duoc_si": "Dùng chung Calswin 80 và Spexib 150mg là tình huống được xem là chống chỉ định, vì cả hai đều có khả năng làm kéo dài khoảng QT trên điện tâm đồ. Khi phối hợp, tác dụng này có thể cộng gộp, làm tăng nguy cơ loạn nhịp thất, bao gồm xoắn đỉnh và đột tử. Bên cạnh đó, các tác dụng phụ kiểu ức chế phó giao cảm quá mức cũng có thể xuất hiện, gồm liệt ruột, tăng thân nhiệt, giãn đồng tử, nhìn mờ, nhịp tim nhanh, bí tiểu, rối loạn tâm thần và co giật.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": "Ziprasidone có thể gây kéo dài khoảng QT trên điện tâm đồ theo mức liều. Về mặt lý thuyết, việc dùng đồng thời với các thuốc khác có thể làm kéo dài khoảng QT có thể dẫn đến tác dụng cộng gộp và tăng nguy cơ loạn nhịp thất bao gồm xoắn đỉnh và đột tử. Các tác dụng ức chế phó giao cảm quá mức có thể bao gồm liệt ruột, tăng thân nhiệt, giãn đồng tử, nhìn mờ, nhịp tim nhanh, bí tiểu, rối loạn tâm thần và co giật.",
+        "xu_tri_dich": "Dùng đồng thời ziprasidone với các thuốc khác có thể làm kéo dài khoảng QT được xem là chống chỉ định."
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ đều ở mức nghiêm trọng. Cặp đáng chú ý nhất là Calswin 80 và Spexib 150mg. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Calswin 80 và Spexib 150mg",
+          "muc_do": "nang"
+        }
+      ],
+      "so_cap_nang": 1,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Calswin 80",
+      "Spexib 150mg"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Calswin 80",
+          "Spexib 150mg"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

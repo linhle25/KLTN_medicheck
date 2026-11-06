@@ -1,0 +1,145 @@
+{
+  "case_id": "dd-chua_phan_loai-048",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.0082,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Rosiglitazone",
+      "Ezetimibe"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Rosiglitazone",
+        "ten_chuan": "Rosiglitazone",
+        "medication_id": "DDInter1621",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Ezetimibe",
+        "ten_chuan": "Ezetimibe",
+        "medication_id": "DDInter707",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Rosiglitazone",
+        "thuoc_b": "Ezetimibe",
+        "medication_a_id": "DDInter1621",
+        "medication_b_id": "DDInter707",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Miglitol, Albiglutide, Ertugliflozin",
+        "thay_the_b": "C10B, Bempedoic acid, C10A, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Colestipol, Bempedoic acid",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Diabetab 4 (hoạt chất: Rosiglitazone)",
+        "thuoc_b": "Atizet (hoạt chất: Ezetimibe)",
+        "medication_a_id": "DDInter1621",
+        "medication_b_id": "DDInter707",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Miglitol, Albiglutide, Ertugliflozin",
+        "thay_the_b": "C10B, Bempedoic acid, C10A, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Colestipol, Bempedoic acid",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Rosiglitazone",
+        "hoat_chat_b": "Ezetimibe",
+        "san_pham_a": [
+          "Diabetab 4"
+        ],
+        "san_pham_b": [
+          "Atizet"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Diabetab 4 (hoạt chất: Rosiglitazone)",
+        "thuoc_b": "Atizet (hoạt chất: Ezetimibe)",
+        "medication_a_id": "DDInter1621",
+        "medication_b_id": "DDInter707",
+        "xu_tri": "-",
+        "thay_the_a": "A10B, Acetohexamide, Guar gum, Pramlintide, Alogliptin, Tolazamide, Empagliflozin, Dulaglutide, Exenatide, Miglitol, Albiglutide, Ertugliflozin",
+        "thay_the_b": "C10B, Bempedoic acid, C10A, Fenofibric acid, Pitavastatin, Evinacumab, Evolocumab, Probucol, Dextrothyroxine, Cholestyramine, Clofibrate, Colestipol, Bempedoic acid",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Rosiglitazone",
+        "hoat_chat_b": "Ezetimibe",
+        "san_pham_a": [
+          "Diabetab 4"
+        ],
+        "san_pham_b": [
+          "Atizet"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "Diabetab 4",
+        "thuoc_b": "Atizet",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa Diabetab 4 và Atizet có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn của bạn và thấy có 1 cặp thuốc-thuốc có tương tác, hiện ở mức chưa phân loại. Cặp đáng chú ý là Diabetab 4 và Atizet. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Diabetab 4 và Atizet",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Diabetab 4",
+      "Atizet"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Diabetab 4",
+          "Atizet"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

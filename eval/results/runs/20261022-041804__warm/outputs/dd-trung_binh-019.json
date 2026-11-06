@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-trung_binh-019",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.0102,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Paclitaxel",
+      "Typhoid vaccine (inactivated)"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Paclitaxel",
+        "ten_chuan": "Paclitaxel",
+        "medication_id": "DDInter1377",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Typhoid vaccine (inactivated)",
+        "ten_chuan": "Typhoid vaccine (inactivated)",
+        "medication_id": "DDInter1893",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Paclitaxel",
+        "thuoc_b": "Typhoid vaccine (inactivated)",
+        "medication_a_id": "DDInter1377",
+        "medication_b_id": "DDInter1893",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Antilex (hoạt chất: Paclitaxel)",
+        "thuoc_b": "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn)) (hoạt chất: Typhoid vaccine (inactivated))",
+        "medication_a_id": "DDInter1377",
+        "medication_b_id": "DDInter1893",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Paclitaxel",
+        "hoat_chat_b": "Typhoid vaccine (inactivated)",
+        "san_pham_a": [
+          "Antilex"
+        ],
+        "san_pham_b": [
+          "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn))"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Antilex (hoạt chất: Paclitaxel)",
+        "thuoc_b": "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn)) (hoạt chất: Typhoid vaccine (inactivated))",
+        "medication_a_id": "DDInter1377",
+        "medication_b_id": "DDInter1893",
+        "xu_tri": "In general, the US Department of Public Health Advisory Committee on Immunization Practices (ACIP) recommends that inactivated or killed vaccines be administered to non-HIV immunosuppressed patients according to the same guidelines as for healthy patients. For Haemophilus influenzae b vaccine, some experts recommend that it be administered at least 2 weeks before starting or 3 months after discontinuing chemotherapy when used in patients with Hodgkin&#x27;s disease. For rabies vaccine, some authorities suggest that immunosuppressive agents should generally be avoided during postexposure therapy except when absolutely necessary for the treatment of other conditions.",
+        "thay_the_a": "-",
+        "thay_the_b": "-",
+        "mo_ta": "The administration of inactivated, killed, or otherwise noninfectious vaccines to immunosuppressed patients is generally safe but may be associated with a diminished or suboptimal immunologic response due to antibody inhibition. Such patients may include those who have recently received or are receiving immunosuppressive agents, antilymphocyte globulins, alkylating agents, antimetabolites, radiation, some antirheumatic agents, high dosages of corticosteroids or adrenocorticotropic agents, or long-term topical or inhaled corticosteroids.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "trung_binh",
+        "nguon_trich_dan": "[1] \"Product Information. Imovax Rabies (rabies vaccine).\" sanofi pasteur, Swiftwater, PA., [2] Department of Health. National Health Service \"Immunisation Against Infectious Disease - \"The Green Book\". Chapter 6: Contraindications and special considerations. Available from: URL: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chap\" ([2017 Aug]):, [3] CDC. Centers for Disease Control and Prevention/ \"Recommendations of the advisory committtee on immunization practices (ACIP): use of vaccines and immune globulins in persons with altered immunocompetence.\" MMWR Morb Mortal Wkly Rep 42(RR-04) (1993): 1-18, [4] \"Product Information. Havrix (hepatitis A vaccine).\" SmithKline Beecham, Philadelphia, PA., [5] \"Product Information. Fluzone Influenza Vaccine (influenza virus vaccine).\" Connaught, Swiftwater, PA., [6] CDC Centers for Disease Control and Prevention \"General Best Practice Guidelines for Immunization: Altered Immunocompetence. Available from: URL: https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/immunocompetence.pdf.\" ([2017, Apr 17]):, [7] \"Product Information. Biothrax (anthrax vaccine adsorbed).\" Emergent BioSolutions Inc., Lansing, MI., [8] \"Product Information. Omnihib (haemophilus b conjugate vaccine).\" SmithKline Beecham, Philadelphia, PA., [9] Cerner Multum, Inc. \"Australian Product Information.\" O 0, [10] \"Product Information. Influenza Virus Vaccine, H5N1, Inactivated (influenza virus vaccine, H5N1, inactivated).\" GlaxoSmithKline, Research Triangle Park, NC.",
+        "hoat_chat_a": "Paclitaxel",
+        "hoat_chat_b": "Typhoid vaccine (inactivated)",
+        "san_pham_a": [
+          "Antilex"
+        ],
+        "san_pham_b": [
+          "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn))"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Antilex",
+        "thuoc_b": "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn))",
+        "muc_do": "trung_binh",
+        "giai_thich": "Việc tiêm vắc-xin phòng thương hàn (Typhim Vi) ở người đang dùng Antilex nhìn chung vẫn an toàn, nhưng có thể cho đáp ứng miễn dịch yếu hơn hoặc không đầy đủ do kháng thể bị ức chế. Điều này liên quan đến những người đang hoặc vừa mới dùng các thuốc ức chế miễn dịch, globulin kháng lympho, thuốc alkyl hóa, thuốc chống chuyển hóa, xạ trị, một số thuốc chống thấp khớp, liều cao corticosteroid hoặc corticotropin, hoặc dùng corticosteroid dạng bôi ngoài da/hít lâu dài.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Việc dùng vắc-xin bất hoạt, đã chết hoặc không còn khả năng gây nhiễm cho bệnh nhân suy giảm miễn dịch nhìn chung là an toàn nhưng có thể liên quan đến đáp ứng miễn dịch giảm hoặc dưới mức tối ưu do ức chế kháng thể. Những bệnh nhân như vậy có thể bao gồm những người vừa mới dùng hoặc đang dùng các thuốc ức chế miễn dịch, globulin kháng lympho, thuốc alkyl hóa, thuốc chống chuyển hóa, xạ trị, một số thuốc chống thấp khớp, liều cao corticosteroid hoặc corticotropin, hoặc corticosteroid dạng bôi ngoài da hoặc hít lâu dài.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Mình vừa kiểm tra các thuốc trong đơn thuốc này và thấy có 1 cặp thuốc-thuốc có tương tác, ở mức trung bình. Cặp đáng chú ý là Antilex và Typhim Vi. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "Antilex và Typhim Vi",
+          "muc_do": "trung_binh"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 1,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Antilex",
+      "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn))"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Antilex",
+          "Typhim Vi (Phòng bệnh: nhiễm khuẩn do Salmonella (thương hàn))"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

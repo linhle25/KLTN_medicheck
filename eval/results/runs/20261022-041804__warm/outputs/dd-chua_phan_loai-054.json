@@ -1,0 +1,150 @@
+{
+  "case_id": "dd-chua_phan_loai-054",
+  "phase": "warm",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 1.0157,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Acetaminophen",
+      "Etoposide"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Acetaminophen",
+        "ten_chuan": "Acetaminophen",
+        "medication_id": "DDInter14",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Etoposide",
+        "ten_chuan": "Etoposide",
+        "medication_id": "DDInter702",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Acetaminophen",
+        "thuoc_b": "Etoposide",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter702",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, N02A, Oliceridine, Naltrexone, Oxymorphone, Tapentadol, Butorphanol",
+        "thay_the_b": "L01C, Topotecan, Teniposide, Cabazitaxel",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "A.T Paracetamol inj 1 g/6,67 ml (hoạt chất: Acetaminophen)",
+        "thuoc_b": "A.T Etoposide inj (hoạt chất: Etoposide)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter702",
+        "mo_ta": "N/A",
+        "muc_do": "chua_phan_loai",
+        "nguon_trich_dan": "-",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, N02A, Oliceridine, Naltrexone, Oxymorphone, Tapentadol, Butorphanol",
+        "thay_the_b": "L01C, Topotecan, Teniposide, Cabazitaxel",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Etoposide",
+        "san_pham_a": [
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ],
+        "san_pham_b": [
+          "A.T Etoposide inj"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "A.T Paracetamol inj 1 g/6,67 ml (hoạt chất: Acetaminophen)",
+        "thuoc_b": "A.T Etoposide inj (hoạt chất: Etoposide)",
+        "medication_a_id": "DDInter14",
+        "medication_b_id": "DDInter702",
+        "xu_tri": "-",
+        "thay_the_a": "N02B, Salicylic acid, Choline salicylate, Ziconotide, Diflunisal, Methoxyflurane, Salsalate, N02A, Oliceridine, Naltrexone, Oxymorphone, Tapentadol, Butorphanol",
+        "thay_the_b": "L01C, Topotecan, Teniposide, Cabazitaxel",
+        "mo_ta": "N/A",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "DDInter chưa phân loại mức độ nghiêm trọng cho cặp thuốc này — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi tiếp tục dùng đồng thời.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "-",
+        "hoat_chat_a": "Acetaminophen",
+        "hoat_chat_b": "Etoposide",
+        "san_pham_a": [
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ],
+        "san_pham_b": [
+          "A.T Etoposide inj"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": true,
+    "product_explanations": [
+      {
+        "thuoc_a": "A.T Paracetamol inj 1 g/6,67 ml",
+        "thuoc_b": "A.T Etoposide inj",
+        "muc_do": "chua_phan_loai",
+        "giai_thich": "Giữa A.T Paracetamol inj 1 g/6,67 ml và A.T Etoposide inj có tương tác hoạt chất mà DDInter chưa phân loại mức độ nghiêm trọng — cần thận trọng, hãy hỏi dược sĩ/bác sĩ trước khi dùng chung.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Khi so sánh giữa 2 đơn thuốc khác nhau, mình thấy có 1 cặp thuốc có tương tác, và cặp này hiện ở mức chưa phân loại. Cặp đáng chú ý là A.T Paracetamol inj 1 g/6,67 ml và A.T Etoposide inj. Bạn xem chi tiết từng cặp ở phần bên dưới nhé.",
+      "nhan_manh": [
+        {
+          "text": "A.T Paracetamol inj 1 g/6,67 ml và A.T Etoposide inj",
+          "muc_do": "chua_phan_loai"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 1,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "A.T Paracetamol inj 1 g/6,67 ml",
+      "A.T Etoposide inj"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "A.T Paracetamol inj 1 g/6,67 ml"
+        ]
+      },
+      {
+        "label": "Đơn 2",
+        "products": [
+          "A.T Etoposide inj"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}

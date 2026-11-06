@@ -1,0 +1,140 @@
+{
+  "case_id": "food-trung_binh-012",
+  "phase": "cold",
+  "rep": null,
+  "audience": "patient",
+  "wall_s": 2.5003,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Olmesartan",
+      "Hydrochlorothiazide"
+    ],
+    "audience": "patient",
+    "normalized_medications": [
+      {
+        "ten_goc": "Olmesartan",
+        "ten_chuan": "Olmesartan",
+        "medication_id": "DDInter1330",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Hydrochlorothiazide",
+        "ten_chuan": "Hydrochlorothiazide",
+        "medication_id": "DDInter883",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Olmesartan",
+        "thuoc_b": "Hydrochlorothiazide",
+        "medication_a_id": "DDInter1330",
+        "medication_b_id": "DDInter883",
+        "khong_du_du_lieu": true
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Torsartan H (hoạt chất: Olmesartan)",
+        "thuoc_b": "Torsartan H (hoạt chất: Hydrochlorothiazide)",
+        "medication_a_id": "DDInter1330",
+        "medication_b_id": "DDInter883",
+        "khong_du_du_lieu": true,
+        "hoat_chat_a": "Olmesartan",
+        "hoat_chat_b": "Hydrochlorothiazide",
+        "san_pham_a": [
+          "Torsartan H"
+        ],
+        "san_pham_b": [
+          "Torsartan H"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Torsartan H (hoạt chất: Olmesartan)",
+        "thuoc_b": "Torsartan H (hoạt chất: Hydrochlorothiazide)",
+        "medication_a_id": "DDInter1330",
+        "medication_b_id": "DDInter883",
+        "xu_tri": null,
+        "thay_the_a": null,
+        "thay_the_b": null,
+        "mo_ta": null,
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "giai_thich": "Chưa có dữ liệu trong CSDL DDInter 2.0 để đánh giá tương tác giữa hai thuốc này. Vui lòng hỏi dược sĩ/bác sĩ để được tư vấn cụ thể.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Không tìm thấy trong CSDL DDInter 2.0",
+        "hoat_chat_a": "Olmesartan",
+        "hoat_chat_b": "Hydrochlorothiazide",
+        "san_pham_a": [
+          "Torsartan H"
+        ],
+        "san_pham_b": [
+          "Torsartan H"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [],
+    "overview": {
+      "giai_thich": "Mình không tìm thấy tương tác nào giữa các thuốc bạn đã chọn trong CSDL DDInter 2.0 lần này. Nếu có thêm thuốc mới hoặc thay đổi liều, hãy kiểm tra lại hoặc hỏi dược sĩ/bác sĩ để chắc chắn nhé.",
+      "nhan_manh": [],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 0,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 0
+    },
+    "checked_products": [
+      "Torsartan H"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Torsartan H"
+        ]
+      }
+    ],
+    "food_interactions": [
+      {
+        "san_pham": [
+          "Torsartan H"
+        ],
+        "thuc_pham": "rượu",
+        "muc_do": "trung_binh",
+        "giai_thich": "Torsartan H là thuốc hạ huyết áp, còn rượu lại có tác dụng làm giảm huyết áp, nên khi dùng chung hai thứ này, huyết áp của bạn có thể bị tụt xuống thấp hơn mức bình thường, đặc biệt là lúc mới bắt đầu dùng thuốc hoặc khi tăng liều. Tình trạng tụt huyết áp cộng dồn này còn dễ dẫn đến chóng mặt, choáng váng khi đứng lên, hay còn gọi là hạ huyết áp tư thế. Vì vậy, nếu bạn có ý định uống rượu trong thời gian dùng Torsartan H, hãy trao đổi trước với bác sĩ hoặc dược sĩ để được hướng dẫn phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 2 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "Sternbach H \"Fluoxetine-associated potentiation of calcium-channel blockers.\" J Clin Psychopharmacol 11 (1991):  390-1|Shook TL, Kirshenbaum JM, Hundley RF, Shorey JM, Lamas GA \"Ethanol intoxication complicating intravenous nitroglycerin therapy.\" Ann Intern Med 101 (1984):  498-9|Feder R \"Bradycardia and syncope induced by fluoxetine.\" J Clin Psychiatry 52 (1991):  139|Ellison JM, Milofsky JE, Ely E \"Fluoxetine-induced bradycardia and syncope in two patients.\" J Clin Psychiatry 51 (1990):  385-6|Rodriguez de la Torre B, Dreher J, Malevany I, et al. \"Serum levels and cardiovascular effects of tricyclic antidepressants and selective serotonin reuptake inhibitors in depressed patients.\" Ther Drug Monit 23 (2001):  435-40|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Pacher P, Kecskemeti V \"Cardiovascular side effects of new antidepressants and antipsychotics: new drugs, old concerns?\" Curr Pharm Des 10 (2004):  2463-75|Andrews C, Pinner G \"Postural hypotension induced by paroxetine.\" BMJ 316 (1998):  595|Sternbach H \"Fluoxetine-associated potentiation of calcium-channel blockers.\" J Clin Psychopharmacol 11 (1991):  390-1|Shook TL, Kirshenbaum JM, Hundley RF, Shorey JM, Lamas GA \"Ethanol intoxication complicating intravenous nitroglycerin therapy.\" Ann Intern Med 101 (1984):  498-9|Feder R \"Bradycardia and syncope induced by fluoxetine.\" J Clin Psychiatry 52 (1991):  139|Ellison JM, Milofsky JE, Ely E \"Fluoxetine-induced bradycardia and syncope in two patients.\" J Clin Psychiatry 51 (1990):  385-6|Rodriguez de la Torre B, Dreher J, Malevany I, et al. \"Serum levels and cardiovascular effects of tricyclic antidepressants and selective serotonin reuptake inhibitors in depressed patients.\" Ther Drug Monit 23 (2001):  435-40|Cerner Multum, Inc. \"Australian Product Information.\" O 0|Pacher P, Kecskemeti V \"Cardiovascular side effects of new antidepressants and antipsychotics: new drugs, old concerns?\" Curr Pharm Des 10 (2004):  2463-75|Andrews C, Pinner G \"Postural hypotension induced by paroxetine.\" BMJ 316 (1998):  595",
+        "mo_ta_dich": "Nhiều tác nhân tâm trị liệu và tác nhân hoạt động trên hệ thần kinh trung ương (ví dụ: thuốc giải lo âu, thuốc an thần, thuốc gây ngủ, thuốc chống trầm cảm, thuốc chống loạn thần, opioid, rượu, thuốc giãn cơ) thể hiện tác dụng hạ huyết áp, đặc biệt trong giai đoạn khởi đầu điều trị và tăng liều. Dùng đồng thời với thuốc hạ huyết áp và các tác nhân hạ huyết áp khác, đặc biệt là thuốc giãn mạch và thuốc chẹn alpha, có thể dẫn đến tác dụng cộng gộp trên huyết áp và tình trạng hạ huyết áp thế đứng.",
+        "xu_tri_dich": "Khuyến cáo thận trọng và theo dõi chặt chẽ sự xuất hiện của hạ huyết áp trong khi dùng đồng thời các tác nhân này. Một số cơ quan chức trách khuyến cáo tránh rượu ở bệnh nhân đang dùng thuốc hạ huyết áp giãn mạch. Bệnh nhân nên được khuyên tránh đứng dậy đột ngột từ tư thế ngồi hoặc nằm và thông báo cho bác sĩ nếu họ gặp chóng mặt, choáng váng, ngất, hạ huyết áp thế đứng hoặc nhịp tim nhanh."
+      },
+      {
+        "san_pham": [
+          "Torsartan H"
+        ],
+        "thuc_pham": "thực phẩm giàu kali",
+        "muc_do": "trung_binh",
+        "giai_thich": "Torsartan H có chứa hoạt chất thuộc nhóm chẹn thụ thể angiotensin II, và nhóm thuốc này có thể làm tăng nguy cơ tăng kali máu ở một số người bệnh. Nguy cơ đó cao hơn khi chế độ ăn có lượng kali cao, đặc biệt là các loại muối thay thế muối ăn vì chúng thường chứa nhiều kali. Vì vậy, nếu bạn đang dùng Torsartan H và thường xuyên ăn nhiều thực phẩm giàu kali, nên để bác sĩ hoặc dược sĩ biết để được theo dõi phù hợp.",
+        "giai_thich_duoc_si": null,
+        "nguon_trich_dan": "Tổng hợp từ 1 hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": "\"Product Information. Cozaar (losartan).\" Merck & Co., Inc  (2001):|\"Product Information. Diovan (valsartan).\" Novartis Pharmaceuticals  (2001):",
+        "mo_ta_dich": "Việc hấp thu kali qua chế độ ăn ở mức trung bình đến cao, đặc biệt là các chất thay thế muối, có thể làm tăng nguy cơ tăng kali máu ở một số bệnh nhân đang sử dụng thuốc chẹn thụ thể angiotensin II (ARB).",
+        "xu_tri_dich": "Bệnh nhân nên được tư vấn về chế độ ăn và được khuyên không sử dụng các chất thay thế muối có chứa kali hoặc các sản phẩm bổ sung kali không kê đơn mà không tham khảo ý kiến bác sĩ. Nếu sử dụng đồng thời các chất thay thế muối, nên theo dõi thường xuyên nồng độ kali huyết thanh. Bệnh nhân cũng nên được khuyên tìm kiếm sự chăm sóc y tế nếu họ gặp các triệu chứng của tăng kali máu như yếu cơ, nhịp tim không đều, lú lẫn, tê rần ở các chi, hoặc cảm giác nặng ở chân."
+      }
+    ],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": [
+      "Ngoài ra, cần lưu ý tránh dùng chung với: rượu, thực phẩm giàu kali.",
+      "Hãy trao đổi với dược sĩ/bác sĩ nếu bạn thuộc trường hợp này."
+    ]
+  }
+}

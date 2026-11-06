@@ -1,0 +1,144 @@
+{
+  "case_id": "dd-nhe-038",
+  "phase": "warm",
+  "rep": null,
+  "audience": "pharmacist",
+  "wall_s": 1.1764,
+  "unknown_products": [],
+  "no_interaction_data_products": [],
+  "result": {
+    "raw_medications": [
+      "Lomefloxacin",
+      "Mercaptopurine"
+    ],
+    "audience": "pharmacist",
+    "normalized_medications": [
+      {
+        "ten_goc": "Lomefloxacin",
+        "ten_chuan": "Lomefloxacin",
+        "medication_id": "DDInter1084",
+        "khong_du_du_lieu": false
+      },
+      {
+        "ten_goc": "Mercaptopurine",
+        "ten_chuan": "Mercaptopurine",
+        "medication_id": "DDInter1156",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "interaction_results": [
+      {
+        "thuoc_a": "Lomefloxacin",
+        "thuoc_b": "Mercaptopurine",
+        "medication_a_id": "DDInter1084",
+        "medication_b_id": "DDInter1156",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin, Netilmicin, Polymyxin B, Famciclovir, Trifluridine, Tobramycin, Benzylpenicillin, Gentamicin",
+        "thay_the_b": "L01B, Cladribine, Trifluridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, R03D, Theophylline, Omalizumab, Tezepelumab, Aminophylline, Benralizumab",
+        "khong_du_du_lieu": false
+      }
+    ],
+    "ranked_results": [
+      {
+        "thuoc_a": "Euoxacin (hoạt chất: Lomefloxacin)",
+        "thuoc_b": "6-MP Hera (hoạt chất: Mercaptopurine)",
+        "medication_a_id": "DDInter1084",
+        "medication_b_id": "DDInter1156",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "xu_tri": "-",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "thay_the_a": "S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin, Netilmicin, Polymyxin B, Famciclovir, Trifluridine, Tobramycin, Benzylpenicillin, Gentamicin",
+        "thay_the_b": "L01B, Cladribine, Trifluridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, R03D, Theophylline, Omalizumab, Tezepelumab, Aminophylline, Benralizumab",
+        "khong_du_du_lieu": false,
+        "hoat_chat_a": "Lomefloxacin",
+        "hoat_chat_b": "Mercaptopurine",
+        "san_pham_a": [
+          "Euoxacin"
+        ],
+        "san_pham_b": [
+          "6-MP Hera"
+        ]
+      }
+    ],
+    "explanations": [
+      {
+        "thuoc_a": "Euoxacin (hoạt chất: Lomefloxacin)",
+        "thuoc_b": "6-MP Hera (hoạt chất: Mercaptopurine)",
+        "medication_a_id": "DDInter1084",
+        "medication_b_id": "DDInter1156",
+        "xu_tri": "-",
+        "thay_the_a": "S01A, Rifamycin, Kanamycin, Ampicillin, Azithromycin, Netilmicin, Polymyxin B, Famciclovir, Trifluridine, Tobramycin, Benzylpenicillin, Gentamicin",
+        "thay_the_b": "L01B, Cladribine, Trifluridine, Nelarabine, Pralatrexate, Decitabine, Azacitidine, R03D, Theophylline, Omalizumab, Tezepelumab, Aminophylline, Benralizumab",
+        "mo_ta": "Limited data suggest that chemotherapy with antineoplastic agents may reduce the plasma concentrations of oral quinolone antibiotics. The proposed mechanism is decreased quinolone absorption secondary to alteration of intestinal mucosa by cancer chemotherapy.",
+        "mo_ta_dich": null,
+        "xu_tri_dich": null,
+        "muc_do": "nhe",
+        "nguon_trich_dan": "[1] Johnson EJ, MacGowan AP, Potter MN, et al \"Reduced absorption of oral ciprofloxacin after chemotherapy for haematological malignancy.\" J Antimicrob Chemother 25 (1990): 837-42",
+        "hoat_chat_a": "Lomefloxacin",
+        "hoat_chat_b": "Mercaptopurine",
+        "san_pham_a": [
+          "Euoxacin"
+        ],
+        "san_pham_b": [
+          "6-MP Hera"
+        ]
+      }
+    ],
+    "has_severe": false,
+    "has_unclassified": false,
+    "product_explanations": [
+      {
+        "thuoc_a": "Euoxacin",
+        "thuoc_b": "6-MP Hera",
+        "muc_do": "nhe",
+        "giai_thich": "Dữ liệu hiện có về việc dùng chung Euoxacin với 6-MP Hera còn hạn chế, song gợi ý rằng hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống. Cơ chế được đề xuất là giảm hấp thu quinolone do niêm mạc ruột bị biến đổi bởi hóa trị ung thư. Đây là thông tin mang tính gợi ý, chưa được xác nhận chắc chắn riêng cho cặp thuốc này.",
+        "giai_thich_duoc_si": "Dữ liệu hiện có về việc dùng chung Euoxacin với 6-MP Hera còn hạn chế, song gợi ý rằng hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống. Cơ chế được đề xuất là giảm hấp thu quinolone do niêm mạc ruột bị biến đổi bởi hóa trị ung thư. Đây là thông tin mang tính gợi ý, chưa được xác nhận chắc chắn riêng cho cặp thuốc này.",
+        "nguon_trich_dan": "Tổng hợp từ 1 cặp hoạt chất tương tác trong CSDL DDInter 2.0.",
+        "nguon_trich_dan_chi_tiet": null,
+        "mo_ta_dich": "Dữ liệu hạn chế gợi ý rằng hóa trị bằng các thuốc chống ung thư có thể làm giảm nồng độ trong huyết tương của kháng sinh quinolone đường uống. Cơ chế được đề xuất là giảm hấp thu quinolone thứ phát sau biến đổi niêm mạc ruột do hóa trị ung thư.",
+        "xu_tri_dich": null
+      }
+    ],
+    "overview": {
+      "giai_thich": "Phân tích tương tác thuốc trong đơn thuốc này ghi nhận tổng cộng 1 cặp tương tác thuốc-thuốc, toàn bộ ở mức nhẹ. Cặp đáng chú ý trong danh sách là Euoxacin và 6-MP Hera. Đề nghị xem chi tiết từng cặp ở phần bên dưới để có đầy đủ căn cứ trước khi ra quyết định lâm sàng.",
+      "nhan_manh": [
+        {
+          "text": "Euoxacin và 6-MP Hera",
+          "muc_do": "nhe"
+        }
+      ],
+      "so_cap_nang": 0,
+      "so_cap_trung_binh": 0,
+      "so_cap_nhe": 1,
+      "so_cap_chua_phan_loai": 0,
+      "tong_so_cap": 1
+    },
+    "checked_products": [
+      "Euoxacin",
+      "6-MP Hera"
+    ],
+    "prescriptions": [
+      {
+        "label": "Đơn 1",
+        "products": [
+          "Euoxacin",
+          "6-MP Hera"
+        ]
+      }
+    ],
+    "food_interactions": [],
+    "disease_interactions": [],
+    "has_severe_disease_interaction": false,
+    "disease_interaction_scope": "general",
+    "patient_conditions_snapshot": [],
+    "canh_bao_thuc_pham_benh_nen": null
+  }
+}
