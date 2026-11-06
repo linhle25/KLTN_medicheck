@@ -76,3 +76,5 @@ out/
 
 .vercel
 .env*
+
+!.env.example
