@@ -52,9 +52,8 @@ _BANNED_PATTERNS = [
     # điểm dùng erlotinib CÁCH XA liều của thuốc kháng H2" - "cách xa" đứng MỘT
     # MÌNH, không có "nhau" và không có số + đơn vị thời gian đi kèm - né cả pattern
     # "cách/ra xa nhau + số" lẫn "tách thời điểm/...". Ghi chú: đây là cuộc rượt
-    # đuổi liên tục giữa cách diễn đạt của LLM và regex hậu kiểm (temperature=0.7
-    # sinh ra vô số cách paraphrase) - nêu trong eval/results/report.md như một hạn
-    # chế cấu trúc, không kỳ vọng vá hết mọi biến thể bằng regex. Neo bằng "thời
+    # đuổi liên tục giữa cách diễn đạt của LLM và regex hậu kiểm (temperature>0
+    # sinh ra vô số cách paraphrase) - đây là một hạn chế cấu trúc, không kỳ vọng vá hết mọi biến thể bằng regex. Neo bằng "thời
     # điểm dùng ... cách xa" (không cần "nhau"/số) vì cụm "thời điểm dùng X" đứng
     # trước gần như chỉ xuất hiện khi đang nói về giãn cách liều dùng thuốc.
     r"thời điểm dùng\b(?:(?!\.).){0,40}?\bcách\s*xa",

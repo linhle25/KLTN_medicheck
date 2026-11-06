@@ -18,8 +18,8 @@ NodeFn = Callable[[MedCheckState], Awaitable[dict]]
 
 def _timed_node(name: str, node_fn: NodeFn) -> NodeFn:
     """Bọc 1 node LangGraph để đo + log thời gian chạy - không đổi hành vi/kết quả
-    của node, chỉ thêm quan sát. explain là node duy nhất gọi LLM (các node còn lại
-    chỉ SQL/regex) nên thời gian của nó gần như quyết định thời gian chạy cả agent."""
+    của node, chỉ thêm quan sát. cả 5 node đều tất định (SQL/regex, không gọi LLM); LLM chỉ được gọi
+    ở tầng service sau khi agent chạy xong."""
 
     async def wrapper(state: MedCheckState) -> dict:
         start = time.perf_counter()

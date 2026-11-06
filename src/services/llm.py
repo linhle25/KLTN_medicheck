@@ -23,7 +23,7 @@ def get_llm(temperature: float | None = None) -> ChatOpenAI:
     TCP+TLS lai tu dau voi DeepSeek). An toan khi nhieu coroutine cung goi ainvoke()
     dong thoi qua asyncio.gather - do chinh la muc dich cua connection pooling.
 
-    temperature=None (mac dinh) -> dung settings.llm_temperature (0.7, van uu tien
+    temperature=None (mac dinh) -> dung settings.llm_temperature (0.3, van uu tien
     da dang cach dien dat cho van tong hop giai_thich). Nhung noi can dich bam sat
     nghia goc (khong duoc sang tao/dien giai lai) nen truyen temperature=0 rieng -
     xem ainvoke_llm + literal_merge_translate (rollup_explain.py)."""
@@ -46,8 +46,7 @@ async def ainvoke_llm(messages: list[dict], *, temperature: float | None = None)
     temperature: None (mac dinh) -> dung nhiet do sinh van tong hop chung
     (settings.llm_temperature). Truyen 0 cho cac lenh goi dich bam sat nghia goc
     (khong can da dang cach dien dat, chi can on dinh/nhat quan giua cac lan sinh -
-    xem eval/PLAN.md gia thuyet "temperature=0.7 ap cho ca phan dich" va
-    eval/results/report.md muc consistency).
+    xem eval/PLAN.md muc consistency).
 
     Khi EVAL_CAPTURE_PATH duoc set (che do danh gia - xem eval/PLAN.md): do thoi gian
     va ghi lai prompt/output/token ra JSONL. Khong set -> khong import gi them, hanh
