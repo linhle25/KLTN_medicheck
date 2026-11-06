@@ -63,17 +63,33 @@ function CheckResultContent() {
     {error && <p className="error-text" role="alert">{error}</p>}
     {!loading && result && <>
       {(result.ghi_chu_duoc_si || result.cau_tra_loi_duoc_si) && (
-        <section className="pharmacist-note-box">
-          <MaterialIcon name="local_pharmacy" size={22} />
-          <div>
-            <p className="eyebrow">GHI CHÚ TỪ DƯỢC SĨ{result.ten_duoc_si_xac_nhan ? ` — ${result.ten_duoc_si_xac_nhan}` : ""}</p>
+        <section className="pharmacist-verdict" aria-label="Xác nhận từ dược sĩ">
+          <header className="pharmacist-verdict__header">
+            <span className="pharmacist-verdict__badge" aria-hidden="true"><MaterialIcon name="verified" size={24} /></span>
+            <div>
+              <p className="pharmacist-verdict__label">Đã được dược sĩ xác nhận</p>
+              <h2 className="pharmacist-verdict__name">{result.ten_duoc_si_xac_nhan || "Dược sĩ MediCheck"}</h2>
+            </div>
+          </header>
+          <div className="pharmacist-verdict__body">
             {result.cau_hoi_benh_nhan && (
-              <>
-                <p><strong>Câu hỏi của bạn:</strong> {result.cau_hoi_benh_nhan}</p>
-                <p><strong>Trả lời:</strong> {result.cau_tra_loi_duoc_si || "Dược sĩ chưa trả lời câu hỏi này."}</p>
-              </>
+              <div className="pharmacist-verdict__item pharmacist-verdict__item--question">
+                <span className="pharmacist-verdict__tag"><MaterialIcon name="help" size={16} />Câu hỏi của bạn</span>
+                <p>{result.cau_hoi_benh_nhan}</p>
+              </div>
             )}
-            {result.ghi_chu_duoc_si && <p>{result.ghi_chu_duoc_si}</p>}
+            {result.cau_hoi_benh_nhan && (
+              <div className="pharmacist-verdict__item pharmacist-verdict__item--answer">
+                <span className="pharmacist-verdict__tag"><MaterialIcon name="chat" size={16} />Dược sĩ trả lời</span>
+                <p>{result.cau_tra_loi_duoc_si || "Dược sĩ chưa trả lời câu hỏi này."}</p>
+              </div>
+            )}
+            {result.ghi_chu_duoc_si && (
+              <div className="pharmacist-verdict__item pharmacist-verdict__item--note">
+                <span className="pharmacist-verdict__tag"><MaterialIcon name="edit_note" size={16} />Ghi chú của dược sĩ</span>
+                <p>{result.ghi_chu_duoc_si}</p>
+              </div>
+            )}
           </div>
         </section>
       )}

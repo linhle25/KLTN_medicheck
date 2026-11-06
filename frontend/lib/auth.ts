@@ -14,6 +14,9 @@ const SESSION_UPDATED_EVENT = "medguard_session_updated";
 
 export function saveSession(session: Session): void {
   if (typeof window === "undefined") return;
+  // accessToken luôn là "cookie" (marker tương thích ngược, không phải credential
+  // thật) - loại khỏi bản lưu localStorage chứ không đọc giá trị.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { accessToken: _compatibilityMarker, ...safeProfile } = session;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(safeProfile));
   // Layout (header) doc session 1 lan luc mount va giu trong state rieng, khong

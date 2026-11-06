@@ -143,7 +143,6 @@ export default function PatientPrescriptionPanel({
             <li
               key={item.id}
               className={prescription.medications.some((medication) => medication.ten_thuoc.toLowerCase() === item.ten_thuoc.toLowerCase()) ? "interaction-suggestion--selected" : undefined}
-              aria-disabled={prescription.medications.some((medication) => medication.ten_thuoc.toLowerCase() === item.ten_thuoc.toLowerCase())}
               onClick={() => {
                 if (!prescription.medications.some((medication) => medication.ten_thuoc.toLowerCase() === item.ten_thuoc.toLowerCase())) void add(item.ten_thuoc);
               }}

@@ -443,9 +443,15 @@ export default function InteractionOverview({ result, prescriptions, session, au
           >
             <div className="interaction-result__header">
               <div>
-                <p className="eyebrow">BẢN ĐỒ TƯƠNG TÁC</p>
-                <h2 className="section-heading-icon"><MaterialIcon name="hub" size={21} />{title}</h2>
-                <p className="interaction-result__subtitle">Chọn mức độ hoặc bấm vào đường nối để xem cảnh báo tương ứng.</p>
+                <h2 className="interaction-pane-title interaction-pane-title--map">
+                  <span className="interaction-pane-title__icon" aria-hidden="true"><MaterialIcon name="hub" size={24} /></span>
+                  Bản đồ tương tác
+                </h2>
+                <p className="interaction-result__subtitle">
+                  {boardMode && showDrugLevel
+                    ? "Tương tác giữa từng thuốc của các đơn khác nhau. Chọn mức độ hoặc bấm vào đường nối để xem cảnh báo."
+                    : "Chọn mức độ hoặc bấm vào đường nối để xem cảnh báo tương ứng."}
+                </p>
               </div>
               {boardMode && (
                 <button type="button" className="interaction-pairs__toggle interaction-graph-level-toggle" onClick={() => setShowDrugLevel((v) => !v)}>
@@ -507,8 +513,10 @@ export default function InteractionOverview({ result, prescriptions, session, au
           >
             <div className="interaction-result__header interaction-result__header--analysis">
               <div>
-                <p className="eyebrow">PHÂN TÍCH KẾT QUẢ</p>
-                <h2 className="section-heading-icon"><MaterialIcon name="clinical_notes" size={21} />Vì sao hệ thống cảnh báo?</h2>
+                <h2 className="interaction-pane-title interaction-pane-title--analysis">
+                  <span className="interaction-pane-title__icon" aria-hidden="true"><MaterialIcon name="clinical_notes" size={24} /></span>
+                  Phân tích kết quả
+                </h2>
                 <p className="interaction-result__subtitle">
                   {audience === "pharmacist"
                     ? "Đối chiếu diễn giải chuyên môn và nguồn dữ liệu cho từng tương tác."

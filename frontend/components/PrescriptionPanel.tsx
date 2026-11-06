@@ -147,7 +147,6 @@ export default function PrescriptionPanel({ label, drugs, search, onAdd, onRemov
             <li
               key={item.id}
               className={drugs.some((drug) => drug.name.toLowerCase() === item.ten_thuoc.toLowerCase()) ? "interaction-suggestion--selected" : undefined}
-              aria-disabled={drugs.some((drug) => drug.name.toLowerCase() === item.ten_thuoc.toLowerCase())}
               onClick={() => {
                 if (!drugs.some((drug) => drug.name.toLowerCase() === item.ten_thuoc.toLowerCase())) add(item.ten_thuoc);
               }}
@@ -159,7 +158,7 @@ export default function PrescriptionPanel({ label, drugs, search, onAdd, onRemov
         </ul>
       ) : query.trim().length >= 2 && (
         <button type="button" className="interaction-unknown" onClick={() => add(query.trim(), false)}>
-          <div><strong>Không tìm thấy "{query.trim()}"</strong><small>Thêm thuốc chưa cập nhật trong cơ sở dữ liệu</small></div>
+          <div><strong>Không tìm thấy &quot;{query.trim()}&quot;</strong><small>Thêm thuốc chưa cập nhật trong cơ sở dữ liệu</small></div>
           <MaterialIcon name="add_circle_outline" size={19} />
         </button>
       )}

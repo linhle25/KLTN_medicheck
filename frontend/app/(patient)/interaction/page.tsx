@@ -39,7 +39,9 @@ const RESULT_KEY = "medguard_interaction_result";
 // drugOrigins trong lib/prescription.ts), khớp với dữ liệu lúc chạy check.
 const RESULT_PRESCRIPTIONS_KEY = "medguard_interaction_result_prescriptions";
 
-function renumberDefaultPrescriptions(prescriptions: Prescription[]): Prescription[] {
+function renumberDefaultPrescriptions(
+  prescriptions: Prescription[],
+): Prescription[] {
   return prescriptions.map((prescription, index) => ({
     ...prescription,
     label: /^Đơn thuốc \d+$/.test(prescription.label)
@@ -141,7 +143,7 @@ function InteractionPageContent() {
     listPatientPrescriptions(session.userId, session.accessToken)
       .then((saved) => {
         setSavedPrescriptions(saved);
-        // Chỉ điều hướng tới đây kèm ?import=profile (VD từ nút "Kiểm tra tương tác"
+        // Chỉ điều hướng tới đây kèm ?import=(VD từ nút "Kiểm tra tương tác"
         // ở tab Đơn thuốc của tôi) mới tự nạp đơn đã lưu thành các panel tương ứng -
         // bấm thẳng vào tab Tương tác không tự ý ghi đè bàn cân. Gộp theo nhãn đơn
         // (mergeSavedIntoPrescriptions) thay vì thay thế toàn bộ, để import nhiều
@@ -235,7 +237,16 @@ function InteractionPageContent() {
   }
 
   async function resetAll() {
-    if (!(await confirm({ title: "Làm mới tra cứu?", message: "Xóa toàn bộ đơn thuốc, thuốc đã nhập và kết quả tra cứu hiện tại?", confirmLabel: "Làm mới", tone: "danger" }))) return;
+    if (
+      !(await confirm({
+        title: "Làm mới tra cứu?",
+        message:
+          "Xóa toàn bộ đơn thuốc, thuốc đã nhập và kết quả tra cứu hiện tại?",
+        confirmLabel: "Làm mới",
+        tone: "danger",
+      }))
+    )
+      return;
     setPrescriptions([createPrescription(1)]);
     setResult(null);
     setResultPrescriptions(null);
@@ -292,7 +303,10 @@ function InteractionPageContent() {
       <section className="page-intro page-intro--with-action">
         <div>
           <p className="eyebrow">PHÂN TÍCH AN TOÀN</p>
-          <h1 className="page-title-icon"><MaterialIcon name="hub" size={26} />Kiểm Tra Tương Tác Thuốc</h1>
+          <h1 className="page-title-icon">
+            <MaterialIcon name="hub" size={26} />
+            Kiểm Tra Tương Tác Thuốc
+          </h1>
         </div>
         {(result || boardMode || primary.drugs.length > 0) && (
           <button
@@ -309,7 +323,10 @@ function InteractionPageContent() {
         <MediFox variant="search" className="interaction-guide__fox" />
         <div>
           <span className="interaction-guide__eyebrow">CÁO MEDI GỢI Ý</span>
-          <h2 className="section-heading-icon"><MaterialIcon name="search" size={21} />Chọn thuốc để bắt đầu tra cứu</h2>
+          <h2 className="section-heading-icon">
+            <MaterialIcon name="search" size={21} />
+            Chọn thuốc để bắt đầu tra cứu
+          </h2>
           <p>
             Thêm ít nhất 2 thuốc vào đơn, hoặc nhập đơn đã lưu từ hồ sơ để so
             sánh tương tác với các thuốc khác.
