@@ -311,7 +311,7 @@ class InteractionCheck(Base):
     # SELECT cột ket_qua_json chỉ để lấy vài tên thuốc hiển thị. ket_qua_json thực
     # đo trung bình ~260KB/dòng (chứa explanations, overview, disease_interactions...)
     # - tải cả cột đó cho MỖI dòng trong danh sách là nguyên nhân chính khiến trang
-    # Lịch sử/Trang chủ chậm trên Neon, nặng hơn cả N+1 query đã sửa trước đó.
+    # Lịch sử/Trang chủ chậm trên Supabase, nặng hơn cả N+1 query đã sửa trước đó.
     thuoc_da_kiem_tra = Column(JSON, nullable=True)
     thoi_gian_kiem_tra = Column(DateTime, default=datetime.utcnow)
 

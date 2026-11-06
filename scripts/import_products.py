@@ -36,8 +36,7 @@ RAW_CSV = Path(__file__).resolve().parent.parent / "data" / "raw" / "thuoc_final
 
 # ~41k dong: lam tung dong 1 (SELECT + INSERT/UPDATE + DELETE + INSERT rieng le) tung
 # do mat hang chuc phut vi moi dong la vai round-trip mang toi Supabase (~150k+ tong
-# cong). Batch lai theo dung bai hoc rut ra tu migrate_to_cockroach.py (xem
-# docs/database-split.md) - it round-trip hon nhieu, cung 1 ket qua cuoi.
+# cong). Batch lai de giam round-trip - cung 1 ket qua cuoi.
 _SQL_BATCH = 1000
 
 

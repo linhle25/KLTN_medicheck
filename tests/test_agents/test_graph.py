@@ -98,8 +98,7 @@ async def test_lookup_node_finds_severe_interaction():
 # TC-N04: lookup_node không bịa tương tác khi 2 thuốc thật không có cặp trong CSDL.
 # Da 2 lan phai doi cap "thuc" dung de test (Ethanol+Acetaminophen roi
 # Amoxicillin+Acetaminophen) vi moi lan nap them du lieu that (mo rong ATC, roi
-# migrate_to_cockroach.py gop merged_ddinter.db tu 70.424 len 160.227 cap - xem
-# docs/database-split.md) lai vo tinh lam cap dang dung "co du lieu that". Dung
+# gop them du lieu DDInter tu 70.424 len 160.227 cap) lai vo tinh lam cap dang dung "co du lieu that". Dung
 # 1 medication_id gia (khong ton tai) thay vi 1 cap thuoc that de test nay khong con
 # phu thuoc vao tinh trang du lieu con thieu tai 1 thoi diem - se luon dung du DB co
 # mo rong bao nhieu di nua.

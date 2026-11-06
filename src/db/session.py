@@ -7,29 +7,17 @@ from src.db.models import Base
 
 settings = get_settings()
 
-# pool_pre_ping: kiểm tra connection còn sống trước khi dùng - bắt buộc với Neon vì
-# nó tự ngắt connection khi idle (auto-suspend), nếu không sẽ lấy phải connection
+# pool_pre_ping: kiểm tra connection còn sống trước khi dùng - bắt buộc với Supabase (pooler)
+# vì nó tự ngắt connection khi idle, nếu không sẽ lấy phải connection
 # chết từ pool và phải đợi timeout mới phát hiện ra.
-# pool_recycle: chủ động bỏ connection cũ trước khi hạ tầng Neon tự cắt ngầm.
+# pool_recycle: chủ động bỏ connection cũ trước khi pooler tự cắt ngầm.
 engine = create_engine(settings.database_url, pool_pre_ping=True, pool_recycle=300)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-# DB "facts" (interactions/food_interactions/disease_interactions) - tuỳ chọn tách
-# sang 1 DB Postgres-compatible riêng khi deploy, xem docs/database-split.md. Khi
-# database_url_facts để trống (mặc định, kể cả dev/test lẫn 1 Postgres local duy
-# nhất), dùng lại engine chính thay vì mở thêm 1 connection pool trỏ tới cùng 1 DB.
-FACTS_TABLE_NAMES = {"interactions", "food_interactions", "disease_interactions"}
-if settings.database_url_facts:
-    engine_facts = create_engine(settings.database_url_facts, pool_pre_ping=True, pool_recycle=300)
-    SessionLocalFacts = sessionmaker(autocommit=False, autoflush=False, bind=engine_facts)
-else:
-    engine_facts = engine
-    SessionLocalFacts = SessionLocal
 
 
 def _ensure_column_any_dialect(table: str, column: str, ddl_type: str, *, engine=engine) -> None:
     """create_all() KHÔNG BAO GIỜ ALTER bảng đã tồn tại sẵn - cần tự thêm cột mới 1
-    lần, idempotent, cho bảng cũ đã có data từ trước (như Neon hiện tại) khi model
+    lần, idempotent, cho bảng cũ đã có data từ trước (như Supabase hiện tại) khi model
     có thêm cột sau khi bảng đó đã được tạo. Postgres hỗ trợ sẵn ADD COLUMN IF NOT
     EXISTS nên không cần tự kiểm tra tồn tại trước."""
     with engine.connect() as conn:
@@ -41,7 +29,7 @@ def _ensure_index(table: str, column: str, index_name: str, *, engine=engine) ->
     """Giống _ensure_column_any_dialect nhưng cho index - create_all() KHÔNG
     retroactively thêm index vào bảng đã tồn tại sẵn, nên phải tự chạy CREATE INDEX
     IF NOT EXISTS 1 lần cho bảng cũ. Thiếu các index này từng khiến các query lọc
-    theo patient_id/user_id chạy chậm hẳn trên Neon (seq scan)."""
+    theo patient_id/user_id chạy chậm hẳn trên Supabase (seq scan)."""
     with engine.connect() as conn:
         conn.execute(text(f"CREATE INDEX IF NOT EXISTS {index_name} ON {table} ({column})"))
         conn.commit()
@@ -64,13 +52,9 @@ def _purge_stale_food_disease_cache(*, engine=engine) -> None:
 def init_db() -> None:
     """Tạo bảng nếu chưa tồn tại — gọi 1 lần khi setup (Sprint 0).
 
-    interactions/food_interactions/disease_interactions tạo trên engine_facts - cùng
-    engine chính (mặc định) trừ khi database_url_facts trỏ sang 1 DB riêng. Xem
-    docs/database-split.md."""
-    main_tables = [t for name, t in Base.metadata.tables.items() if name not in FACTS_TABLE_NAMES]
-    facts_tables = [Base.metadata.tables[name] for name in FACTS_TABLE_NAMES]
-    Base.metadata.create_all(bind=engine, tables=main_tables)
-    Base.metadata.create_all(bind=engine_facts, tables=facts_tables)
+    Toàn bộ bảng (kể cả interactions/food_interactions/disease_interactions) nằm
+    trong 1 DB PostgreSQL duy nhất (Supabase)."""
+    Base.metadata.create_all(bind=engine)
 
     _ensure_column_any_dialect("interaction_checks", "thuoc_da_kiem_tra", "JSON")
     _ensure_column_any_dialect("food_disease_explanation_cache", "nguon_trich_dan_chi_tiet", "TEXT")
@@ -116,14 +100,3 @@ def get_db() -> Session:
     finally:
         db.close()
 
-
-def get_db_facts() -> Session:
-    """Dependency cho FastAPI route: `db_facts: Session = Depends(get_db_facts)`.
-
-    Trỏ tới DB facts (interactions/food_interactions/disease_interactions) - cùng
-    engine chính khi database_url_facts trống. Xem docs/database-split.md."""
-    db = SessionLocalFacts()
-    try:
-        yield db
-    finally:
-        db.close()

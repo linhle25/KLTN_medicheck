@@ -9,22 +9,23 @@ from tests.conftest import isolated_postgres_engine
 def test_lookup_disease_interactions_filters_by_disease_ids_and_keeps_fallback(monkeypatch):
     with isolated_postgres_engine() as engine:
         Base.metadata.create_all(bind=engine)
-        # DiseaseInteraction sống trên "facts DB" riêng (CockroachDB) kể từ khi tách DB -
-        # trỏ SessionLocalFacts về cùng engine test để hàm đọc đúng dữ liệu vừa seed,
-        # thay vì gõ vào facts DB thật (xem docs/database-split.md).
+        # Trỏ SessionLocal về engine test để hàm đọc đúng dữ liệu vừa seed,
+        # thay vì gõ vào DB thật.
         monkeypatch.setattr(
-            food_disease_lookup, "SessionLocalFacts", sessionmaker(autocommit=False, autoflush=False, bind=engine)
+            food_disease_lookup, "SessionLocal", sessionmaker(autocommit=False, autoflush=False, bind=engine)
         )
 
         with Session(engine) as db:
             medication = Medication(id="med-1", ten_chuan_hoa="Example drug")
             hypertension = Disease(id=1, ten_benh="Hypertension", ten_benh_vi="Tăng huyết áp")
             diabetes = Disease(id=2, ten_benh="Diabetes", ten_benh_vi="Đái tháo đường")
+            # Flush bảng cha (thuốc, bệnh) trước khi thêm DiseaseInteraction: Postgres kiểm tra
+            # khóa ngoại ngay lúc INSERT, mà SQLAlchemy không đảm bảo thứ tự chèn giữa các
+            # model không khai báo relationship.
+            db.add_all([medication, hypertension, diabetes])
+            db.flush()
             db.add_all(
                 [
-                    medication,
-                    hypertension,
-                    diabetes,
                     DiseaseInteraction(
                         id="di-hypertension",
                         medication_id=medication.id,

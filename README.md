@@ -35,7 +35,7 @@ Xem cách cài đặt và khởi động hệ thống tại [Hướng dẫn ch�
 | Agent | LangGraph, 5 node tất định (chuẩn hóa → tra cứu → xếp hạng → gắn dữ liệu → guardrail) — không node nào gọi LLM, nên mọi cặp tương tác luôn đến từ CSDL |
 | LLM | DeepSeek-chat (`langchain-openai` trỏ base_url DeepSeek), chạy **sau** agent ở tầng service: giải thích cấp thuốc, tổng quan, thực phẩm & bệnh nền |
 | Backend | FastAPI + Uvicorn + SQLAlchemy |
-| Database | Postgres (DB chính); tuỳ chọn tách 3 bảng tra cứu sang 1 DB Postgres-compatible riêng khi cần, xem [`docs/database-split.md`](docs/database-split.md) |
+| Database | PostgreSQL (Supabase) |
 | Dữ liệu tương tác | DDInter 2.0 thật (thuốc–thuốc, thuốc–thực phẩm, thuốc–bệnh nền), không phải mô phỏng |
 | Frontend | Next.js 14 (App Router) + TypeScript, 3 vai trò (bệnh nhân / dược sĩ / admin) |
 | Testing | pytest + pytest-asyncio + httpx (65 test) |
@@ -68,8 +68,7 @@ cd MediCheck
 ### 2. Chuẩn bị dữ liệu
 
 CSDL không nằm trong git — cần 1 Postgres đã có dữ liệu (local hoặc hosted). Điền
-`DATABASE_URL` và, nếu dùng cơ sở dữ liệu facts riêng, `DATABASE_URL_FACTS` ở bước 3.
-Lý do tách 2 DB: [`docs/database-split.md`](docs/database-split.md).
+`DATABASE_URL` ở bước 3.
 
 Không có dữ liệu, backend vẫn khởi động được nhưng mọi tra cứu thuốc sẽ trả "không có dữ liệu".
 
@@ -116,9 +115,8 @@ Chỉ liệt kê tên biến — giá trị thật nằm trong `.env` (không co
 | `DEEPSEEK_API_KEY` | ✅ | API key DeepSeek (free tại [platform.deepseek.com](https://platform.deepseek.com)). Không có key này, các cặp thuốc mức nhẹ/trung bình/nặng sẽ không sinh được giải thích (agent cần gọi LLM thật). |
 | `DEEPSEEK_BASE_URL` | — | Mặc định `https://api.deepseek.com`, không cần đổi. |
 | `MODEL_NAME` | — | Mặc định `deepseek-chat`. |
-| `DATABASE_URL` | ✅ | DB chính (users, products, lịch sử kiểm tra…) - Postgres, không có giá trị mặc định. |
-| `DATABASE_URL_FACTS` | — | DB tra cứu (`interactions`, `food_interactions`, `disease_interactions`), tuỳ chọn tách riêng. Để trống → dùng chung `DATABASE_URL` (mặc định, đúng cho 1 Postgres local duy nhất). Xem [`docs/database-split.md`](docs/database-split.md). |
-| `SECRET_KEY` | ✅ (khi deploy thật) | Secret ký JWT (`src/services/auth.py`). Có giá trị dev mặc định, **phải đổi trước khi deploy public**. |
+| `DATABASE_URL` | ✅ | PostgreSQL (Supabase hoặc local) - users, products, tương tác, lịch sử kiểm tra… Không có giá trị mặc định. |
+| `SECRET_KEY` | ✅ (khi deploy thật) | Secret ký token HMAC tự làm (`src/services/auth.py`). Có giá trị dev mặc định, **phải đổi trước khi deploy public**. |
 | `APP_ENV` | — | `development` / `production` / `test`. |
 | `APP_PORT`, `APP_HOST` | — | Mặc định `8000` / `0.0.0.0`. |
 | `CORS_ORIGINS` | — | Domain frontend được phép gọi API. |
@@ -129,14 +127,14 @@ Chỉ liệt kê tên biến — giá trị thật nằm trong `.env` (không co
 | `SMTP_TIMEOUT_SECONDS`, `SMTP_MAX_RETRIES`, `SMTP_RETRY_DELAY_SECONDS` | — | Timeout và retry gửi email; mặc định 15 giây, 3 lần, delay 1 giây. |
 | `COOKIE_SECURE`, `COOKIE_SAMESITE`, `COOKIE_DOMAIN` | ✅ production | Chính sách cookie phiên; dùng `Secure=true`, và `SameSite=none` nếu frontend/API khác site. |
 | `ENABLE_DEMO_ACCOUNTS` | — | Hai nút demo luôn hiển thị; đặt `true` để backend cho phép đăng nhập các tài khoản demo. |
-| `GMAIL_OAUTH_CLIENT_ID`, `GMAIL_OAUTH_CLIENT_SECRET`, `GMAIL_OAUTH_REFRESH_TOKEN` | ✅ trên Render | Gửi email qua Gmail API thay SMTP (Render chặn SMTP ra ngoài). Cách lấy: [`docs/gmail-api-setup.md`](docs/gmail-api-setup.md). Có refresh token thì các biến `SMTP_*` không cần nữa. |
+| `GMAIL_OAUTH_CLIENT_ID`, `GMAIL_OAUTH_CLIENT_SECRET`, `GMAIL_OAUTH_REFRESH_TOKEN` | ✅ trên Render | Gửi email qua Gmail API thay SMTP (Render chặn SMTP ra ngoài). Cách lấy: [`docs/04_KyThuat/gmail-api-setup.md`](docs/gmail-api-setup.md). Có refresh token thì các biến `SMTP_*` không cần nữa. |
 | `LLM_TEMPERATURE` | — | Mặc định `0.3`. |
 | `LOG_LEVEL` | — | `DEBUG` / `INFO` / `WARNING` / `ERROR`. |
 
 ### Thiết lập xác thực production
 
 1. Tạo OAuth Client loại **Web application** trong Google Cloud, cấu hình consent screen và thêm `http://localhost:3000` cùng domain production vào **Authorized JavaScript origins**.
-2. Điền Google Client ID và cấu hình email trong `.env` — SMTP cho local, Gmail API cho production vì Render chặn SMTP ([`docs/gmail-api-setup.md`](docs/gmail-api-setup.md)). Không cần Google Client Secret cho luồng Sign in with Google bằng ID token.
+2. Điền Google Client ID và cấu hình email trong `.env` — SMTP cho local, Gmail API cho production vì Render chặn SMTP ([`docs/04_KyThuat/gmail-api-setup.md`](docs/gmail-api-setup.md)). Không cần Google Client Secret cho luồng Sign in with Google bằng ID token.
 3. Sao lưu database (hoặc tạo bản sao/nhánh riêng) rồi chạy `python scripts/migrate_auth.py`. Migration chuẩn hóa email, giữ nguyên dữ liệu liên quan và khóa tài khoản cũ không phải demo.
 4. Tạo quản trị viên đầu tiên bằng `python scripts/create_admin.py --email admin@example.com --name "Admin"`.
 5. Production phải chạy HTTPS, dùng `SECRET_KEY` ngẫu nhiên mạnh, `COOKIE_SECURE=true`, và CORS chỉ chứa domain frontend chính xác.
@@ -212,7 +210,7 @@ src/
 │   └── deps.py                   # auth dependency (get_current_user, require_role)
 ├── db/
 │   ├── models.py                 # SQLAlchemy: users, medications, interactions, ...
-│   └── session.py                # 2 engine: DB chính + facts DB (tuỳ chọn tách riêng)
+│   └── session.py                # 1 engine PostgreSQL + init_db()
 ├── models/schemas.py              # Pydantic request/response
 ├── services/
 │   ├── auth.py, email.py          # phiên đăng nhập, email xác minh (SMTP / Gmail API)
@@ -224,7 +222,7 @@ src/
 scripts/                           # ETL DDInter, migrate DB, seed demo
 frontend/                          # Next.js App Router: (patient)/(pharmacist)/admin
 tests/                             # pytest — agent core, API, services
-docs/                              # tài liệu kiến trúc, cấu hình và ảnh giao diện
+docs/                              # 01_BaoCao_KhoaLuan · 02_BaoVe_ThuyetTrinh · 03_KiemThu_Demo · 04_KyThuat · screenshots
 ```
 
 ## API chính (`/api/v1`)

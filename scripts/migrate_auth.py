@@ -2,7 +2,7 @@
 
 The migration never deletes user rows. Existing non-demo accounts are locked;
 the two known demo accounts remain active for explicitly enabled demo setups.
-Run against a Neon branch/backup before production.
+Run against a Supabase backup before production.
 """
 import sys
 from pathlib import Path

@@ -25,7 +25,7 @@ from src.db.models import (
     RefreshSession,
     User,
 )
-from src.db.session import SessionLocal, SessionLocalFacts, init_db
+from src.db.session import SessionLocal, init_db
 from src.main import app
 
 
@@ -88,17 +88,17 @@ def _get_or_create_product(db, ten_thuoc: str) -> Product:
     return product
 
 
-def _get_or_create_severe_interaction(db_facts, medication_a_id: str, medication_b_id: str) -> None:
+def _get_or_create_severe_interaction(db, medication_a_id: str, medication_b_id: str) -> None:
     # Quy uoc medication_a_id < medication_b_id (so sanh chuoi) - xem Interaction
     # model trong src/db/models.py.
     a_id, b_id = sorted([medication_a_id, medication_b_id])
     existing = (
-        db_facts.query(Interaction)
+        db.query(Interaction)
         .filter(Interaction.medication_a_id == a_id, Interaction.medication_b_id == b_id)
         .first()
     )
     if existing is None:
-        db_facts.add(
+        db.add(
             Interaction(
                 medication_a_id=a_id,
                 medication_b_id=b_id,
@@ -137,9 +137,9 @@ def _seed_fixture_medications(_ensure_test_db_schema):
         db.commit()
         warfarin_id, aspirin_id = warfarin.id, aspirin.id
 
-    with SessionLocalFacts() as db_facts:
-        _get_or_create_severe_interaction(db_facts, warfarin_id, aspirin_id)
-        db_facts.commit()
+    with SessionLocal() as db:
+        _get_or_create_severe_interaction(db, warfarin_id, aspirin_id)
+        db.commit()
 
 
 @pytest.fixture(autouse=True)

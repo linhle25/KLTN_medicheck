@@ -16,10 +16,6 @@ langgraph>=0.2.0
 sqlalchemy>=2.0.0
 # alembic>=1.14.0        # bật khi cần migration chính thức
 psycopg2-binary>=2.9.0   # Postgres - dùng cho mọi môi trường (dev/test/prod)
-# sqlalchemy-cockroachdb>=2.0.0   # chỉ cần nếu DATABASE_URL_FACTS trỏ sang CockroachDB, xem docs/database-split.md
-
-# Vector Store
-chromadb>=0.5.0
 
 # Dev tools
 ruff>=0.8.0

@@ -1,6 +1,6 @@
 """Đồng bộ schema bệnh nền chuẩn hóa trên PostgreSQL theo cách idempotent.
 
-Migration này lưu lại trong source control phần schema hiện đã có trên Neon:
+Migration này lưu lại trong source control phần schema hiện đã có trên Supabase:
 ``diseases``, ``patient_conditions`` và ``disease_interactions.disease_id``.
 Script không xóa dữ liệu và chỉ backfill các dòng tương tác chưa có ``disease_id``.
 

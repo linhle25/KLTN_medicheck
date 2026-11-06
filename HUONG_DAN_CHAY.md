@@ -24,7 +24,6 @@ Tối thiểu, đặt `DEEPSEEK_API_KEY` và `DATABASE_URL` trong `.env`:
 
 ```env
 DATABASE_URL=postgresql+psycopg2://USER:PASSWORD@HOST:5432/medicheck
-DATABASE_URL_FACTS=
 ```
 
 ## Chạy toàn bộ bằng Docker

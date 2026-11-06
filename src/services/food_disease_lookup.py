@@ -6,30 +6,28 @@ vì đây là tra cứu đơn giản theo 1 hoạt chất (không cần rank/gua
 ingredient_to_products (map hoạt chất -> tên biệt dược) vốn chỉ có ở tầng request,
 giống hệt cách product_explanations/overview được tính ở rollup_explain.py.
 
-FoodInteraction/DiseaseInteraction nằm trên CockroachDB (facts DB), Medication nằm
-trên Supabase (DB chính) - 2 DB vật lý khác nhau nên không JOIN được trong 1 câu SQL
-nữa (xem docs/database-split.md). Tra riêng từng DB rồi ghép tên bằng dict
-trong Python - giữ nguyên ngữ nghĩa INNER JOIN cũ (bỏ dòng nào không khớp được
-medication_id, phòng dữ liệu facts tham chiếu tới medication_id đã xoá/đổi)."""
+Tra riêng bảng tương tác rồi ghép tên thuốc bằng dict trong Python - giữ ngữ nghĩa
+INNER JOIN (bỏ dòng nào không khớp được medication_id, phòng dữ liệu tương tác
+tham chiếu tới medication_id đã xoá/đổi)."""
 
 from sqlalchemy.orm import Session
 
 from src.db.models import DiseaseInteraction, FoodInteraction, Medication
-from src.db.session import SessionLocalFacts
+from src.db.session import SessionLocal
 
 
 def lookup_food_interactions(medication_ids: list[str], db: Session) -> list[dict]:
     if not medication_ids:
         return []
-    db_facts = SessionLocalFacts()
+    facts_db = SessionLocal()
     try:
         food_rows = (
-            db_facts.query(FoodInteraction)
+            facts_db.query(FoodInteraction)
             .filter(FoodInteraction.medication_id.in_(medication_ids))
             .all()
         )
     finally:
-        db_facts.close()
+        facts_db.close()
     if not food_rows:
         return []
     names = dict(
@@ -67,16 +65,16 @@ def lookup_disease_interactions(
     """
     if not medication_ids or disease_ids == []:
         return []
-    db_facts = SessionLocalFacts()
+    facts_db = SessionLocal()
     try:
-        query = db_facts.query(DiseaseInteraction).filter(
+        query = facts_db.query(DiseaseInteraction).filter(
             DiseaseInteraction.medication_id.in_(medication_ids)
         )
         if disease_ids is not None:
             query = query.filter(DiseaseInteraction.disease_id.in_(disease_ids))
         disease_rows = query.all()
     finally:
-        db_facts.close()
+        facts_db.close()
     if not disease_rows:
         return []
     names = dict(
