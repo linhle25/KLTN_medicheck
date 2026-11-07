@@ -15,6 +15,13 @@ async def test_health(client):
 
 
 @pytest.mark.asyncio
+async def test_health_db(client):
+    response = await client.get("/health/db")
+    assert response.status_code == 200
+    assert response.json() == {"status": "ok", "db": "ok"}
+
+
+@pytest.mark.asyncio
 async def test_chat_empty_message(client):
     response = await client.post("/api/v1/chat", json={"message": ""})
     assert response.status_code == 422  # Validation error

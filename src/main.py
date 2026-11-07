@@ -4,12 +4,13 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from sqlalchemy import text
 
 from src.api.auth_routes import admin_router
 from src.api.auth_routes import router as auth_router
 from src.api.routes import router
 from src.config import get_settings, validate_production_auth_settings
-from src.db.session import assert_auth_schema_ready, init_db
+from src.db.session import assert_auth_schema_ready, engine, init_db
 
 # log_level trong Settings trước đây khai báo nhưng chưa từng gọi basicConfig để áp
 # dụng thật - logger.info() ở bất kỳ đâu trong app đều bị nuốt im lặng (root logger
@@ -91,3 +92,16 @@ app.include_router(router, prefix="/api/v1")
 @app.get("/health")
 async def health():
     return {"status": "ok", "env": settings.app_env}
+
+
+@app.get("/health/db")
+def health_db():
+    """Có chạy 1 truy vấn thật tới DB - dùng cho cron keep-alive để Supabase free
+    không bị pause vì không hoạt động. Trả 503 nếu DB không truy cập được."""
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("SELECT 1"))
+    except Exception:
+        logger.exception("Health check DB that bai")
+        return JSONResponse(status_code=503, content={"status": "error", "db": "unreachable"})
+    return {"status": "ok", "db": "ok"}
