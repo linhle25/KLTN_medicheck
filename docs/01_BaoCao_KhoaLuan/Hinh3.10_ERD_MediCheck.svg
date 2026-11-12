@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1830" height="1066" viewBox="0 0 1830 1066" font-family="'Times New Roman', Times, serif" font-size="13">
+<rect width="1830" height="1066" fill="#fff"/>
+<path d="M 560 246 L 560 330" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="566" y="292" text-anchor="start" font-weight="normal">có</text>
+<text x="566" y="265" text-anchor="start" font-weight="normal">0..*</text>
+<text x="566" y="315" text-anchor="start" font-weight="normal">1</text>
+<path d="M 690 70 L 800 70" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="745" y="63" text-anchor="middle" font-weight="normal">có</text>
+<text x="695" y="85" text-anchor="start" font-weight="normal">1</text>
+<text x="795" y="85" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 1060 70 L 1170 70" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1115" y="63" text-anchor="middle" font-weight="normal">thuộc</text>
+<text x="1065" y="85" text-anchor="start" font-weight="normal">0..*</text>
+<text x="1165" y="85" text-anchor="end" font-weight="normal">1</text>
+<path d="M 1430 70 L 1540 70" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1485" y="63" text-anchor="middle" font-weight="normal">thuộc</text>
+<text x="1435" y="85" text-anchor="start" font-weight="normal">0..1</text>
+<text x="1535" y="85" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 430 370 L 290 370" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="360" y="363" text-anchor="middle" font-weight="normal">thực hiện</text>
+<text x="425" y="385" text-anchor="end" font-weight="normal">1</text>
+<text x="295" y="385" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 430 630 L 290 630" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="360" y="623" text-anchor="middle" font-weight="normal">xác nhận (dược sĩ)</text>
+<text x="425" y="645" text-anchor="end" font-weight="normal">1</text>
+<text x="295" y="645" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 160 506 L 160 590" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="166" y="552" text-anchor="start" font-weight="normal">được xác nhận</text>
+<text x="166" y="525" text-anchor="start" font-weight="normal">1</text>
+<text x="166" y="575" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 560 646 L 560 730" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="566" y="692" text-anchor="start" font-weight="normal">nhận</text>
+<text x="566" y="665" text-anchor="start" font-weight="normal">1</text>
+<text x="566" y="715" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 290 810 L 430 810" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="360" y="803" text-anchor="middle" font-weight="normal">sinh ra</text>
+<text x="295" y="825" text-anchor="start" font-weight="normal">0..1</text>
+<text x="425" y="825" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 690 370 L 800 370" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="745" y="363" text-anchor="middle" font-weight="normal">sở hữu</text>
+<text x="695" y="385" text-anchor="start" font-weight="normal">1</text>
+<text x="795" y="385" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 930 446 L 930 540" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="936" y="497" text-anchor="start" font-weight="normal">gồm</text>
+<text x="936" y="465" text-anchor="start" font-weight="normal">1</text>
+<text x="936" y="525" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 690 600 L 800 600" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="745" y="593" text-anchor="middle" font-weight="normal">dùng</text>
+<text x="695" y="615" text-anchor="start" font-weight="normal">1</text>
+<text x="795" y="615" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 930 716 L 930 800" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="936" y="762" text-anchor="start" font-weight="normal">được dùng</text>
+<text x="936" y="735" text-anchor="start" font-weight="normal">0..*</text>
+<text x="936" y="785" text-anchor="start" font-weight="normal">0..1</text>
+<path d="M 1060 600 L 1170 600" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1115" y="593" text-anchor="middle" font-weight="normal">được dùng</text>
+<text x="1065" y="615" text-anchor="start" font-weight="normal">0..*</text>
+<text x="1165" y="615" text-anchor="end" font-weight="normal">0..1</text>
+<path d="M 1060 860 L 1170 860" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1115" y="853" text-anchor="middle" font-weight="normal">gồm</text>
+<text x="1065" y="875" text-anchor="start" font-weight="normal">1</text>
+<text x="1165" y="875" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 1300 626 L 1300 800" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1306" y="717" text-anchor="start" font-weight="normal">ánh xạ</text>
+<text x="1306" y="645" text-anchor="start" font-weight="normal">0..1</text>
+<text x="1306" y="785" text-anchor="start" font-weight="normal">0..*</text>
+<path d="M 1300 346 L 1300 470" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1306" y="412" text-anchor="start" font-weight="normal">có alias</text>
+<text x="1306" y="365" text-anchor="start" font-weight="normal">0..*</text>
+<text x="1306" y="455" text-anchor="start" font-weight="normal">1</text>
+<path d="M 1430 484 L 1490 484 L 1490 200 L 1540 200" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1496" y="346" text-anchor="start" font-weight="normal">có</text>
+<text x="1435" y="499" text-anchor="start" font-weight="normal">1</text>
+<text x="1535" y="215" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 1430 512 L 1540 512" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1485" y="505" text-anchor="middle" font-weight="normal">thuốc A</text>
+<text x="1435" y="527" text-anchor="start" font-weight="normal">1</text>
+<text x="1535" y="527" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 1430 556 L 1540 556" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1485" y="549" text-anchor="middle" font-weight="normal">thuốc B</text>
+<text x="1435" y="571" text-anchor="start" font-weight="normal">1</text>
+<text x="1535" y="571" text-anchor="end" font-weight="normal">0..*</text>
+<path d="M 1430 604 L 1490 604 L 1490 860 L 1540 860" fill="none" stroke="#000" stroke-width="1.2"/>
+<text x="1496" y="736" text-anchor="start" font-weight="normal">có</text>
+<text x="1435" y="619" text-anchor="start" font-weight="normal">1</text>
+<text x="1535" y="875" text-anchor="end" font-weight="normal">0..*</text>
+<rect x="430" y="30" width="260" height="216" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="430" y="30" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="560" y="50" text-anchor="middle" font-weight="bold">patient_profiles</text>
+<text x="438" y="75" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="438" y="95" text-anchor="start" font-weight="normal">+ user_id: VARCHAR (FK)</text>
+<text x="438" y="115" text-anchor="start" font-weight="normal">+ ngay_sinh: DATE</text>
+<text x="438" y="135" text-anchor="start" font-weight="normal">+ gioi_tinh: VARCHAR(20)</text>
+<text x="438" y="155" text-anchor="start" font-weight="normal">+ can_nang: FLOAT</text>
+<text x="438" y="175" text-anchor="start" font-weight="normal">+ chieu_cao: FLOAT</text>
+<text x="438" y="195" text-anchor="start" font-weight="normal">+ benh_nen_ghi_chu: TEXT</text>
+<text x="438" y="215" text-anchor="start" font-weight="normal">+ di_ung_thuoc: TEXT</text>
+<text x="438" y="235" text-anchor="start" font-weight="normal">+ tinh_trang_khac: TEXT</text>
+<rect x="800" y="30" width="260" height="96" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="800" y="30" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="930" y="50" text-anchor="middle" font-weight="bold">patient_conditions</text>
+<text x="808" y="75" text-anchor="start" font-weight="normal">+ id: INTEGER (PK)</text>
+<text x="808" y="95" text-anchor="start" font-weight="normal">+ patient_profile_id: VARCHAR (FK)</text>
+<text x="808" y="115" text-anchor="start" font-weight="normal">+ disease_id: INTEGER (FK)</text>
+<rect x="1170" y="30" width="260" height="96" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1170" y="30" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1300" y="50" text-anchor="middle" font-weight="bold">diseases</text>
+<text x="1178" y="75" text-anchor="start" font-weight="normal">+ id: INTEGER (PK)</text>
+<text x="1178" y="95" text-anchor="start" font-weight="normal">+ ten_benh: VARCHAR(255) (UQ)</text>
+<text x="1178" y="115" text-anchor="start" font-weight="normal">+ ten_benh_vi: VARCHAR(255)</text>
+<rect x="1540" y="30" width="260" height="216" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1540" y="30" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1670" y="50" text-anchor="middle" font-weight="bold">disease_interactions</text>
+<text x="1548" y="75" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1548" y="95" text-anchor="start" font-weight="normal">+ medication_id: VARCHAR (FK)</text>
+<text x="1548" y="115" text-anchor="start" font-weight="normal">+ disease_id: INTEGER (FK)</text>
+<text x="1548" y="135" text-anchor="start" font-weight="normal">+ ten_benh: VARCHAR(255)</text>
+<text x="1548" y="155" text-anchor="start" font-weight="normal">+ ten_benh_vi: VARCHAR(255)</text>
+<text x="1548" y="175" text-anchor="start" font-weight="normal">+ muc_do: VARCHAR(20)</text>
+<text x="1548" y="195" text-anchor="start" font-weight="normal">+ mo_ta: TEXT</text>
+<text x="1548" y="215" text-anchor="start" font-weight="normal">+ mo_ta_dich: TEXT</text>
+<text x="1548" y="235" text-anchor="start" font-weight="normal">+ nguon_trich_dan: TEXT</text>
+<rect x="1170" y="250" width="260" height="96" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1170" y="250" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1300" y="270" text-anchor="middle" font-weight="bold">medication_aliases</text>
+<text x="1178" y="295" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1178" y="315" text-anchor="start" font-weight="normal">+ alias: VARCHAR(255) (UQ)</text>
+<text x="1178" y="335" text-anchor="start" font-weight="normal">+ medication_id: VARCHAR (FK)</text>
+<rect x="30" y="330" width="260" height="176" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="30" y="330" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="160" y="350" text-anchor="middle" font-weight="bold">interaction_checks</text>
+<text x="38" y="375" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="38" y="395" text-anchor="start" font-weight="normal">+ patient_id: VARCHAR (FK)</text>
+<text x="38" y="415" text-anchor="start" font-weight="normal">+ ket_qua_json: JSON</text>
+<text x="38" y="435" text-anchor="start" font-weight="normal">+ co_canh_bao_nang: BOOLEAN</text>
+<text x="38" y="455" text-anchor="start" font-weight="normal">+ co_chua_phan_loai: BOOLEAN</text>
+<text x="38" y="475" text-anchor="start" font-weight="normal">+ thuoc_da_kiem_tra: JSON</text>
+<text x="38" y="495" text-anchor="start" font-weight="normal">+ thoi_gian_kiem_tra: TIMESTAMP</text>
+<rect x="430" y="330" width="260" height="316" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="430" y="330" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="560" y="350" text-anchor="middle" font-weight="bold">users</text>
+<text x="438" y="375" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="438" y="395" text-anchor="start" font-weight="normal">+ ho_ten: VARCHAR(255)</text>
+<text x="438" y="415" text-anchor="start" font-weight="normal">+ email: VARCHAR(255) (UQ)</text>
+<text x="438" y="435" text-anchor="start" font-weight="normal">+ email_normalized: VARCHAR(255)</text>
+<text x="438" y="455" text-anchor="start" font-weight="normal">+ email_verified_at: TIMESTAMP</text>
+<text x="438" y="475" text-anchor="start" font-weight="normal">+ mat_khau_hash: VARCHAR(255)</text>
+<text x="438" y="495" text-anchor="start" font-weight="normal">+ vai_tro: VARCHAR(20)</text>
+<text x="438" y="515" text-anchor="start" font-weight="normal">+ account_status: VARCHAR(30)</text>
+<text x="438" y="535" text-anchor="start" font-weight="normal">+ lock_source: VARCHAR(30)</text>
+<text x="438" y="555" text-anchor="start" font-weight="normal">+ so_chung_chi_hanh_nghe: VARCHAR(100)</text>
+<text x="438" y="575" text-anchor="start" font-weight="normal">+ ly_do_tu_choi: TEXT</text>
+<text x="438" y="595" text-anchor="start" font-weight="normal">+ noi_cong_tac: VARCHAR(255)</text>
+<text x="438" y="615" text-anchor="start" font-weight="normal">+ mo_ta_ngan: TEXT</text>
+<text x="438" y="635" text-anchor="start" font-weight="normal">+ ngay_tao: TIMESTAMP</text>
+<rect x="800" y="330" width="260" height="116" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="800" y="330" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="930" y="350" text-anchor="middle" font-weight="bold">patient_prescriptions</text>
+<text x="808" y="375" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="808" y="395" text-anchor="start" font-weight="normal">+ patient_id: VARCHAR (FK)</text>
+<text x="808" y="415" text-anchor="start" font-weight="normal">+ label: VARCHAR(100)</text>
+<text x="808" y="435" text-anchor="start" font-weight="normal">+ ngay_tao: TIMESTAMP</text>
+<rect x="1540" y="450" width="260" height="256" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1540" y="450" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1670" y="470" text-anchor="middle" font-weight="bold">interactions</text>
+<text x="1548" y="495" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1548" y="515" text-anchor="start" font-weight="normal">+ medication_a_id: VARCHAR (FK)</text>
+<text x="1548" y="535" text-anchor="start" font-weight="normal">+ medication_b_id: VARCHAR (FK)</text>
+<text x="1548" y="555" text-anchor="start" font-weight="normal">+ muc_do: VARCHAR(20)</text>
+<text x="1548" y="575" text-anchor="start" font-weight="normal">+ mo_ta: TEXT</text>
+<text x="1548" y="595" text-anchor="start" font-weight="normal">+ xu_tri: TEXT</text>
+<text x="1548" y="615" text-anchor="start" font-weight="normal">+ mo_ta_dich: TEXT</text>
+<text x="1548" y="635" text-anchor="start" font-weight="normal">+ xu_tri_dich: TEXT</text>
+<text x="1548" y="655" text-anchor="start" font-weight="normal">+ nguon_trich_dan: TEXT</text>
+<text x="1548" y="675" text-anchor="start" font-weight="normal">+ thay_the_a: TEXT</text>
+<text x="1548" y="695" text-anchor="start" font-weight="normal">+ thay_the_b: TEXT</text>
+<rect x="1170" y="470" width="260" height="156" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1170" y="470" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1300" y="490" text-anchor="middle" font-weight="bold">medications</text>
+<text x="1178" y="515" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1178" y="535" text-anchor="start" font-weight="normal">+ ten_chuan_hoa: VARCHAR(255)</text>
+<text x="1178" y="555" text-anchor="start" font-weight="normal">+ ten_biet_duoc: VARCHAR(255)</text>
+<text x="1178" y="575" text-anchor="start" font-weight="normal">+ hoat_chat: VARCHAR(255)</text>
+<text x="1178" y="595" text-anchor="start" font-weight="normal">+ nguon_du_lieu: VARCHAR(100)</text>
+<text x="1178" y="615" text-anchor="start" font-weight="normal">+ mo_ta: TEXT</text>
+<rect x="800" y="540" width="260" height="176" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="800" y="540" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="930" y="560" text-anchor="middle" font-weight="bold">patient_medications</text>
+<text x="808" y="585" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="808" y="605" text-anchor="start" font-weight="normal">+ patient_id: VARCHAR (FK)</text>
+<text x="808" y="625" text-anchor="start" font-weight="normal">+ prescription_id: VARCHAR (FK)</text>
+<text x="808" y="645" text-anchor="start" font-weight="normal">+ medication_id: VARCHAR (FK)</text>
+<text x="808" y="665" text-anchor="start" font-weight="normal">+ product_id: VARCHAR (FK)</text>
+<text x="808" y="685" text-anchor="start" font-weight="normal">+ ngay_bat_dau: DATE</text>
+<text x="808" y="705" text-anchor="start" font-weight="normal">+ ngay_ket_thuc: DATE</text>
+<rect x="30" y="590" width="260" height="276" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="30" y="590" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="160" y="610" text-anchor="middle" font-weight="bold">pharmacist_reviews</text>
+<text x="38" y="635" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="38" y="655" text-anchor="start" font-weight="normal">+ interaction_check_id: VARCHAR (FK)</text>
+<text x="38" y="675" text-anchor="start" font-weight="normal">+ pharmacist_id: VARCHAR (FK)</text>
+<text x="38" y="695" text-anchor="start" font-weight="normal">+ ghi_chu: TEXT</text>
+<text x="38" y="715" text-anchor="start" font-weight="normal">+ trang_thai_xac_nhan: VARCHAR(20)</text>
+<text x="38" y="735" text-anchor="start" font-weight="normal">+ gui_kem_ho_so: BOOLEAN</text>
+<text x="38" y="755" text-anchor="start" font-weight="normal">+ ten_nguoi_duoc_kiem_tra: VARCHAR(255)</text>
+<text x="38" y="775" text-anchor="start" font-weight="normal">+ ngay_sinh_nhap_tay: DATE</text>
+<text x="38" y="795" text-anchor="start" font-weight="normal">+ ghi_chu_nhap_tay: TEXT</text>
+<text x="38" y="815" text-anchor="start" font-weight="normal">+ cau_hoi: TEXT</text>
+<text x="38" y="835" text-anchor="start" font-weight="normal">+ cau_tra_loi: TEXT</text>
+<text x="38" y="855" text-anchor="start" font-weight="normal">+ thoi_gian_xac_nhan: TIMESTAMP</text>
+<rect x="430" y="730" width="260" height="156" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="430" y="730" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="560" y="750" text-anchor="middle" font-weight="bold">notifications</text>
+<text x="438" y="775" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="438" y="795" text-anchor="start" font-weight="normal">+ patient_id: VARCHAR (FK)</text>
+<text x="438" y="815" text-anchor="start" font-weight="normal">+ pharmacist_review_id: VARCHAR (FK)</text>
+<text x="438" y="835" text-anchor="start" font-weight="normal">+ noi_dung: TEXT</text>
+<text x="438" y="855" text-anchor="start" font-weight="normal">+ da_doc: BOOLEAN</text>
+<text x="438" y="875" text-anchor="start" font-weight="normal">+ thoi_gian_tao: TIMESTAMP</text>
+<rect x="800" y="800" width="260" height="136" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="800" y="800" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="930" y="820" text-anchor="middle" font-weight="bold">products</text>
+<text x="808" y="845" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="808" y="865" text-anchor="start" font-weight="normal">+ ten_thuoc: VARCHAR(500)</text>
+<text x="808" y="885" text-anchor="start" font-weight="normal">+ loai: VARCHAR(50)</text>
+<text x="808" y="905" text-anchor="start" font-weight="normal">+ is_duoc_lieu: BOOLEAN</text>
+<text x="808" y="925" text-anchor="start" font-weight="normal">+ nguon_du_lieu: VARCHAR(100)</text>
+<rect x="1170" y="800" width="260" height="136" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1170" y="800" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1300" y="820" text-anchor="middle" font-weight="bold">product_ingredients</text>
+<text x="1178" y="845" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1178" y="865" text-anchor="start" font-weight="normal">+ product_id: VARCHAR (FK)</text>
+<text x="1178" y="885" text-anchor="start" font-weight="normal">+ ten_hoat_chat_raw: TEXT</text>
+<text x="1178" y="905" text-anchor="start" font-weight="normal">+ ten_hoat_chat_clean: VARCHAR(500)</text>
+<text x="1178" y="925" text-anchor="start" font-weight="normal">+ medication_id: VARCHAR (FK)</text>
+<rect x="1540" y="800" width="260" height="236" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<rect x="1540" y="800" width="260" height="30" fill="#eceff3" stroke="#000" stroke-width="1.5"/>
+<text x="1670" y="820" text-anchor="middle" font-weight="bold">food_interactions</text>
+<text x="1548" y="845" text-anchor="start" font-weight="normal">+ id: VARCHAR (PK)</text>
+<text x="1548" y="865" text-anchor="start" font-weight="normal">+ medication_id: VARCHAR (FK)</text>
+<text x="1548" y="885" text-anchor="start" font-weight="normal">+ thuc_pham: VARCHAR(255)</text>
+<text x="1548" y="905" text-anchor="start" font-weight="normal">+ thuc_pham_vi: VARCHAR(255)</text>
+<text x="1548" y="925" text-anchor="start" font-weight="normal">+ muc_do: VARCHAR(20)</text>
+<text x="1548" y="945" text-anchor="start" font-weight="normal">+ mo_ta: TEXT</text>
+<text x="1548" y="965" text-anchor="start" font-weight="normal">+ xu_tri: TEXT</text>
+<text x="1548" y="985" text-anchor="start" font-weight="normal">+ mo_ta_dich: TEXT</text>
+<text x="1548" y="1005" text-anchor="start" font-weight="normal">+ xu_tri_dich: TEXT</text>
+<text x="1548" y="1025" text-anchor="start" font-weight="normal">+ nguon_trich_dan: TEXT</text>
+</svg>

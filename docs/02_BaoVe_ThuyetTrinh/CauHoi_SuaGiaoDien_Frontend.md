@@ -18,7 +18,94 @@ Hội đồng hoặc người hướng dẫn thường thử người làm ra s�
 | Thanh điều hướng | [components/Sidebar.tsx](../../frontend/components/Sidebar.tsx) |
 | Kết quả tương tác | [components/graph/](../../frontend/components/graph/) |
 
-**Mục lục:** 1 Tên hiển thị · 2 Đổi nhãn chữ · 3 Màu sắc · 4 Giới hạn của khách · 5 Điều hướng · 6 Thông báo miễn trừ · 7 Hành vi hiển thị · 8 Câu hỏi chung về quy trình
+**Mục lục:** 0 Cách tìm và sửa khi bị hỏi · 1 Tên hiển thị · 2 Đổi nhãn chữ · 3 Màu sắc · 4 Giới hạn của khách · 5 Điều hướng · 6 Thông báo miễn trừ · 7 Hành vi hiển thị · 8 Câu hỏi chung về quy trình
+
+---
+
+## 0. Cách tìm và sửa khi bị hỏi (làm theo đúng thứ tự)
+
+Mục đích của phần này: dù gặp một yêu cầu **không có trong bộ câu hỏi**, em vẫn tự tìm ra chỗ cần sửa trong vài phút. Cách làm không đổi, chỉ khác nội dung cần tìm.
+
+### 0.1 Quy trình sáu bước
+
+**Bước 1. Xác định màn hình, rồi suy ra file.** Hỏi lại hội đồng "chỗ này ở màn hình nào" nếu chưa rõ. Địa chỉ trên trình duyệt cho biết file, vì thư mục tên trong ngoặc như `(patient)` chỉ dùng để nhóm và **không xuất hiện trên địa chỉ**.
+
+| Địa chỉ trên trình duyệt | File cần mở |
+| --- | --- |
+| `/` (trang chủ công khai, khách) | [app/page.tsx](../../frontend/app/page.tsx) |
+| `/auth` (đăng nhập, đăng ký) | [app/auth/page.tsx](../../frontend/app/auth/page.tsx) |
+| `/dashboard` (trang chủ bệnh nhân) | [app/(patient)/dashboard/page.tsx](../../frontend/app/(patient)/dashboard/page.tsx) |
+| `/interaction`, `/check-result` | `app/(patient)/interaction/page.tsx`, `app/(patient)/check-result/page.tsx` |
+| `/history`, `/profile` | `app/(patient)/history/page.tsx`, `app/(patient)/profile/page.tsx` |
+| `/pharmacist-dashboard`, `/review` | `app/(pharmacist)/pharmacist-dashboard/page.tsx`, `app/(pharmacist)/review/page.tsx` |
+| `/admin`, `/admin/users`, `/admin/drugs`, `/admin/pharmacists` | `app/admin/page.tsx` và các thư mục con tương ứng |
+| Thanh trên, thanh bên (xuất hiện ở **mọi** trang của một vai trò) | file `layout.tsx` của vai trò đó và [components/Sidebar.tsx](../../frontend/components/Sidebar.tsx) |
+
+Quy tắc nhanh: **chữ hoặc khung chỉ thấy ở một trang** thì nằm trong `page.tsx` của trang đó; **chữ hoặc khung lặp ở mọi trang** thì nằm trong `layout.tsx` hoặc `components/`.
+
+**Bước 2. Tìm bằng chữ đang hiển thị.** Trong VS Code bấm `Ctrl+Shift+F`, dán đúng chữ trên màn hình, đặt "files to include" là `frontend`. Mẹo:
+
+1. Chỉ dán **một đoạn ngắn, không có dấu `{}`** (ví dụ `Cần xử lý gấp` chứ không dán cả câu có biến).
+2. Chữ dài có thể bị **ngắt thành nhiều dòng** trong mã; nếu không thấy, thử tìm nửa đầu hoặc nửa sau.
+3. Bấm nút phân biệt hoa thường (`Aa`) và thử cả có dấu và không dấu.
+4. Số kết quả cho biết **số chỗ phải sửa**. Hội đồng thường hỏi "đã sửa hết chưa", nên đếm kết quả trước khi sửa và đối chiếu sau khi sửa.
+5. Không thấy chữ trong `frontend/`: chữ do **backend sinh ra** (phần tóm tắt, lời nhắc cố định), hoặc nằm trong [design-system.json](../../frontend/design-system.json), hoặc được ghép từ biến. Khi đó tìm thêm trong `src/` và file JSON.
+
+**Bước 3. Tìm bằng giao diện (khi cần sửa màu, khoảng cách, kích thước).** Mở trang trên trình duyệt, bấm `F12`, bấm biểu tượng chọn phần tử (hoặc `Ctrl+Shift+C`) rồi bấm vào phần tử cần sửa. Ở khung **Styles** xem:
+
+1. Tên lớp CSS của phần tử (ví dụ `patient-header__name`).
+2. Quy tắc nào **đang thắng** (quy tắc không bị gạch ngang), và nó nằm ở dòng nào của `globals.css`.
+3. Sửa thử ngay trong khung Styles để xem kết quả, **chưa lưu vào mã**. Khi ưng ý mới chép vào `globals.css`.
+
+Tìm tên lớp đó trong `globals.css` bằng `Ctrl+F`. Nhớ file này có **nhiều chỗ khai báo cùng một lớp**, nên chọn chỗ đang thắng chứ không phải chỗ đầu tiên tìm thấy.
+
+**Bước 4. Truy dữ liệu nếu thứ cần đổi là dữ liệu chứ không phải chữ.** Thấy biến như `session.hoTen`, `session.email` thì bấm `F12` (Go to Definition) vào biến để nhảy tới [lib/auth.ts](../../frontend/lib/auth.ts). Thấy dữ liệu lấy từ API thì mở tab **Network** của trình duyệt, tải lại trang, bấm vào yêu cầu tương ứng, xem tab **Response** để biết **backend đã trả những trường nào**. Nếu trường cần dùng đã có thì chỉ sửa giao diện; nếu chưa có thì phải sửa cả backend, và em nói rõ điều này.
+
+**Bước 5. Xác định phạm vi ảnh hưởng trước khi sửa.** Đây là bước hội đồng chấm điểm. Hỏi bản thân bốn câu:
+
+1. Chữ hoặc đoạn mã này còn xuất hiện ở đâu nữa? (kết quả của bước 2; trong VS Code bấm `Shift+F12` trên tên hàm hoặc biến để xem mọi nơi dùng.)
+2. Có **ba vai trò** (bệnh nhân, dược sĩ, quản trị viên) cùng dùng không? Ba layout lặp mã nên thường phải sửa cả ba.
+3. Có **hai bản hiển thị** (máy tính và điện thoại) không? Ví dụ trang chủ bệnh nhân có hai dòng chữ riêng.
+4. Có ảnh hưởng **chế độ tối** hoặc **chữ liên quan an toàn** (lưu ý miễn trừ, nhãn mức độ) không?
+
+**Bước 6. Sửa, kiểm tra và nói với hội đồng.**
+
+1. Chạy `npm run dev` từ trước buổi trình bày để mỗi lần lưu file là trang tự nạp lại; chỉ cần `Ctrl+S` rồi nhìn trình duyệt.
+2. Nếu không đổi: thử `Ctrl+F5` (xóa bộ nhớ đệm), kiểm tra có sửa nhầm quy tắc bị quy tắc khác đè (bước 3), hoặc đang xem trang khác với file em sửa (bước 1).
+3. Thử cả ba vai trò và **thu nhỏ cửa sổ** để xem bản điện thoại.
+4. Chạy `npm run lint` rồi `npm run build` để chắc không gây lỗi.
+5. Trước khi sửa trước mặt hội đồng, tạo nhánh riêng để dễ quay lại: `git switch -c demo-sua`. Sau khi trình diễn muốn bỏ thay đổi thì `Ctrl+Z` trong VS Code hoặc quay về nhánh `main`; đừng dùng lệnh xóa thay đổi hàng loạt mà không xem lại, vì có thể mất phần chưa lưu.
+6. Nói theo khung ba ý: "Em sửa ở **file** nào; việc này ảnh hưởng **những màn hình** nào; em **kiểm tra** bằng cách nào."
+
+### 0.2 Ví dụ chạy thử đầy đủ: "đổi tên trên thanh trên thành email"
+
+| Bước | Em làm | Kết quả |
+| --- | --- | --- |
+| 1 | Thanh trên xuất hiện ở mọi trang bệnh nhân, nên nằm ở layout | mở `app/(patient)/layout.tsx` |
+| 2 | `Ctrl+Shift+F` tìm `hoTen` hoặc `fullName` trong `frontend` | thấy cả ba layout lặp cùng đoạn, nên phải sửa 3 file |
+| 3 | `F12`, bấm vào tên trên thanh trên | thấy lớp `patient-header__name`, nếu email dài tràn thì thêm CSS cắt chữ |
+| 4 | Bấm Go to Definition ở `session.email` | tới `lib/auth.ts`, thấy giá trị có thể rỗng (`?? ""`), nên cần phương án dự phòng |
+| 5 | Hỏi bốn câu ở bước 5 | cả ba vai trò, có chữ avatar, có tooltip; không có bản điện thoại riêng |
+| 6 | Sửa, đăng nhập lần lượt ba vai trò, thu nhỏ cửa sổ | đạt; nói ba ý với hội đồng |
+
+### 0.3 Bảng tình huống thường gặp khi đang sửa
+
+| Tình huống | Hướng xử lý |
+| --- | --- |
+| Sửa xong trang không đổi | Kiểm tra trang đang chạy đúng cổng và đúng thư mục `frontend`; `Ctrl+F5`; xem lớp CSS có bị lớp khác đè không (bước 3); xem có lỗi đỏ ở cửa sổ chạy `npm run dev` không. |
+| Chữ đổi ở máy tính nhưng điện thoại còn chữ cũ | Có hai dòng chữ riêng (máy tính, điện thoại); tìm lại bằng chữ cũ. |
+| Đổi ở bệnh nhân nhưng dược sĩ vẫn như cũ | Layout lặp mã; tìm chữ cũ trong toàn `frontend` và sửa các file còn lại. |
+| Không tìm ra chữ trong `frontend` | Chữ do backend sinh, hoặc nằm trong file JSON, hoặc ghép từ biến; tìm thêm trong `src/` và `design-system.json`. |
+| Báo lỗi đỏ sau khi lưu | Đọc dòng lỗi đầu tiên (thường nêu file và số dòng); đa số là thiếu đóng thẻ `</...>`, dấu ngoặc, hoặc quên dấu `{}` quanh biến. Dùng `Ctrl+Z` để quay lại bản chạy được. |
+| Yêu cầu cần dữ liệu mới (thêm trường, lọc theo mức độ) | Xem tab Network có trường đó chưa; nếu chưa thì nói rõ cần sửa backend rồi mới sửa giao diện. |
+| Yêu cầu có thể ảnh hưởng an toàn (bỏ lưu ý, bỏ nhãn mức độ, bỏ xác nhận của dược sĩ) | Sẵn sàng đổi cách diễn đạt, không bỏ; giải thích đó là nguyên tắc không thay thế dược sĩ. |
+
+### 0.4 Điều nên chuẩn bị trước buổi bảo vệ
+
+1. Mở sẵn VS Code với thư mục dự án, `npm run dev` đang chạy, và trình duyệt đã đăng nhập sẵn ba vai trò (ba cửa sổ ẩn danh hoặc ba hồ sơ trình duyệt) để chuyển nhanh.
+2. Ghi nhớ ba phím tắt: `Ctrl+Shift+F` (tìm trong dự án), `Ctrl+P` (mở file theo tên), `F12` ở trình duyệt (kiểm tra phần tử).
+3. Ghi nhớ bảng "địa chỉ → file" ở bước 1 và vị trí các biến màu ở đầu `globals.css`.
+4. Tập một lần cả sáu ví dụ ở danh sách cuối tài liệu, mỗi ví dụ không quá năm phút.
 
 ---
 

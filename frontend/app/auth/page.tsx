@@ -1075,7 +1075,7 @@ export default function AuthPage() {
                   onClick={() => demo("demo-patient@medguard.local")}
                   disabled={loading}
                 >
-                  Người dùng
+                  Bệnh nhân
                 </button>
               </div>
             )}
@@ -1110,7 +1110,7 @@ export default function AuthPage() {
                         onClick={() => setRole("patient")}
                       >
                         <MaterialIcon name="person" size={19} />
-                        Người dùng
+                        Bệnh nhân
                       </button>
                       <button
                         type="button"

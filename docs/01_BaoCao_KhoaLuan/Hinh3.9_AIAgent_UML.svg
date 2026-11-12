@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1285" height="495" viewBox="0 0 1285 495" font-family="'Times New Roman', Times, serif" font-size="14">
+<defs><marker id="ar" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1285" height="495" fill="#fff"/>
+<rect x="15" y="248" width="130" height="44" rx="22" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="80" y="275" text-anchor="middle" font-weight="normal">raw_medications</text>
+<path d="M 145 270 H 185" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="185" y="235" width="150" height="70" rx="4" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="260" y="257" text-anchor="middle" font-weight="normal">normalize:</text>
+<text x="260" y="275" text-anchor="middle" font-weight="normal">tên/alias -&gt;</text>
+<text x="260" y="293" text-anchor="middle" font-weight="normal">hoạt chất</text>
+<rect x="375" y="185" width="150" height="70" rx="4" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="450" y="216" text-anchor="middle" font-weight="normal">lookup: tra cặp</text>
+<text x="450" y="234" text-anchor="middle" font-weight="normal">trong DDInter</text>
+<rect x="565" y="135" width="150" height="70" rx="4" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="640" y="157" text-anchor="middle" font-weight="normal">rank:</text>
+<text x="640" y="175" text-anchor="middle" font-weight="normal">nhe/trung_binh/</text>
+<text x="640" y="193" text-anchor="middle" font-weight="normal">nang/chua_phan_loai</text>
+<rect x="755" y="85" width="150" height="70" rx="4" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="830" y="116" text-anchor="middle" font-weight="normal">explain: gắn mô tả</text>
+<text x="830" y="134" text-anchor="middle" font-weight="normal">+ nguồn trích dẫn</text>
+<rect x="945" y="35" width="150" height="70" rx="4" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1020" y="57" text-anchor="middle" font-weight="normal">guardrail: kiểm</text>
+<text x="1020" y="75" text-anchor="middle" font-weight="normal">citation + lọc</text>
+<text x="1020" y="93" text-anchor="middle" font-weight="normal">câu nguy hiểm</text>
+<path d="M 335 270 H 355 V 220 H 375" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M 525 220 H 545 V 170 H 565" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M 715 170 H 735 V 120 H 755" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M 905 120 H 925 V 70 H 945" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="1135" y="48" width="130" height="44" rx="22" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1200" y="75" text-anchor="middle" font-weight="normal">MedCheckState</text>
+<path d="M 1095 70 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="1135" y="312" width="120" height="150" rx="18" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<text x="1195" y="383" text-anchor="middle" font-weight="normal">Dừng sớm - trả</text>
+<text x="1195" y="401" text-anchor="middle" font-weight="normal">về error</text>
+<path d="M 260 305 V 439 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)" stroke-dasharray="2.5,4" stroke-linecap="round"/>
+<rect x="1072" y="429" width="34" height="20" rx="2" fill="#d9d9d9"/>
+<text x="1089" y="444" text-anchor="middle" font-size="14">lỗi</text>
+<path d="M 450 255 V 413 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)" stroke-dasharray="2.5,4" stroke-linecap="round"/>
+<rect x="1072" y="403" width="34" height="20" rx="2" fill="#d9d9d9"/>
+<text x="1089" y="418" text-anchor="middle" font-size="14">lỗi</text>
+<path d="M 640 205 V 387 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)" stroke-dasharray="2.5,4" stroke-linecap="round"/>
+<rect x="1072" y="377" width="34" height="20" rx="2" fill="#d9d9d9"/>
+<text x="1089" y="392" text-anchor="middle" font-size="14">lỗi</text>
+<path d="M 830 155 V 361 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)" stroke-dasharray="2.5,4" stroke-linecap="round"/>
+<rect x="1072" y="351" width="34" height="20" rx="2" fill="#d9d9d9"/>
+<text x="1089" y="366" text-anchor="middle" font-size="14">lỗi</text>
+<path d="M 1020 105 V 335 H 1135" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ar)" stroke-dasharray="2.5,4" stroke-linecap="round"/>
+<rect x="1072" y="325" width="34" height="20" rx="2" fill="#d9d9d9"/>
+<text x="1089" y="340" text-anchor="middle" font-size="14">lỗi</text>
+</svg>
