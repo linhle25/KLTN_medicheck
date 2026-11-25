@@ -264,9 +264,21 @@ export default function InteractionOverview({ result, prescriptions, session, au
     () => (boardMode ? allProductEdges.filter((e) => isCrossPrescription(origins, e.productA, e.productB)) : allProductEdges),
     [boardMode, allProductEdges, origins]
   );
+  // Cạnh giữa 2 đơn lấy mức độ NẶNG NHẤT trong các cặp thuốc bên dưới. Khi đang lọc
+  // theo 1 mức độ, chỉ gộp các cặp thuốc khớp mức đó - nếu không, đơn có cặp "trung
+  // bình" + cặp "nhẹ" sẽ có cạnh "trung bình" và biến mất khi chọn lọc "Nhẹ" dù
+  // bộ đếm vẫn báo có 1 cặp nhẹ.
   const prescriptionEdges = useMemo(
-    () => (boardMode ? buildPrescriptionGraph(productEdges, origins) : []),
-    [boardMode, productEdges, origins]
+    () =>
+      boardMode
+        ? buildPrescriptionGraph(
+            selectedSeverity === "all"
+              ? productEdges
+              : productEdges.filter((e) => (e.muc_do ?? "chua_phan_loai") === selectedSeverity),
+            origins
+          )
+        : [],
+    [boardMode, productEdges, origins, selectedSeverity]
   );
 
   // Khớp cụm nhấn mạnh trong tóm tắt tổng quan với đúng cạnh thuốc-thuốc (ID
@@ -330,8 +342,11 @@ export default function InteractionOverview({ result, prescriptions, session, au
   // (bỏ cạnh "chưa phân loại"), rồi bỏ luôn các node không còn cạnh nào sau khi
   // lọc. Từ 5 node trở xuống vẫn hiển thị đầy đủ như trước (đồ thị đã đủ gọn).
   const filteredGraphEdges = allEdges.filter((edge) => matchesSelectedSeverity(edge.muc_do));
-  const shouldSimplifyGraph = allNodes.length >= 6;
-  const edges = shouldSimplifyGraph ? filteredGraphEdges.filter((e) => e.muc_do !== "chua_phan_loai") : filteredGraphEdges;
+  const classifiedGraphEdges = filteredGraphEdges.filter((e) => e.muc_do !== "chua_phan_loai");
+  // Nếu toàn bộ cạnh đều "chưa phân loại" thì rút gọn sẽ làm đồ thị trống hẳn (và hiện
+  // nhầm placeholder "chưa chọn thuốc") - khi đó giữ nguyên đồ thị đầy đủ.
+  const shouldSimplifyGraph = allNodes.length >= 6 && classifiedGraphEdges.length > 0;
+  const edges = shouldSimplifyGraph ? classifiedGraphEdges : filteredGraphEdges;
   const nodes = shouldSimplifyGraph
     ? (() => {
         const connectedIds = new Set(edges.flatMap((e) => [e.sourceId, e.targetId]));

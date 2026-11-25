@@ -50,7 +50,28 @@ export function getSession(): Session | null {
   }
 }
 
+// Dữ liệu tạm của tab "Tra cứu tương tác" (đơn đang nhập, kết quả, lựa chọn cá nhân hóa) -
+// lưu trong sessionStorage để không mất khi chuyển tab/tải lại, nhưng phải xóa khi kết thúc
+// phiên đăng nhập để lần dùng sau (kể cả người khác trên cùng trình duyệt) bắt đầu từ trạng
+// thái ban đầu.
+export const INTERACTION_STORAGE_KEYS = {
+  draft: "medguard_interaction_draft",
+  result: "medguard_interaction_result",
+  resultPrescriptions: "medguard_interaction_result_prescriptions",
+  personalized: "medicheck_interaction_personalized",
+  lastCheck: "medguard_last_check",
+} as const;
+
 export function clearSession(): void {
   if (typeof window === "undefined") return;
+  // Chỉ reset khi thật sự có phiên đăng nhập đang kết thúc - khách (không có phiên)
+  // gọi hàm này mỗi lần kiểm tra đăng nhập thất bại, không được xóa bản nháp của họ.
+  const hadSession = window.localStorage.getItem(STORAGE_KEY) !== null;
   window.localStorage.removeItem(STORAGE_KEY);
+  if (!hadSession) return;
+  try {
+    for (const key of Object.values(INTERACTION_STORAGE_KEYS)) window.sessionStorage.removeItem(key);
+  } catch {
+    // sessionStorage có thể bị chặn - bỏ qua.
+  }
 }

@@ -339,8 +339,18 @@ class MedicationCheckRequest(BaseModel):
     medications: list[str] = Field(..., min_length=1)
 
 
+class SavedPrescriptionResult(BaseModel):
+    """Kết quả tự lưu 1 đơn sau lần tra cứu cá nhân hóa. created=False nghĩa là
+    đã có đơn cùng tập thuốc trong "Đơn thuốc của tôi" nên không tạo thêm."""
+
+    id: str
+    label: str
+    created: bool
+
+
 class MedicationCheckResponse(BaseModel):
     interaction_check_id: str
+    saved_prescriptions: list[SavedPrescriptionResult] = Field(default_factory=list)
     # Ghi lại ngữ cảnh để giao diện biết đây là hồ sơ của chính người dùng hay một
     # lượt tra cứu chung/tra cứu hộ.
     is_personalized: bool = False

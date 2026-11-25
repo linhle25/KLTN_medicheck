@@ -1,6 +1,7 @@
 import asyncio
 import logging
 import os
+import re
 import time
 from datetime import date, datetime
 
@@ -47,6 +48,7 @@ from src.models.schemas import (
     PharmacistReviewResponse,
     PharmacistSummary,
     PrescriptionInput,
+    SavedPrescriptionResult,
     ProductCheckRequest,
     ProductSearchResult,
     RenamePrescriptionRequest,
@@ -526,8 +528,15 @@ async def check_products(
     db.commit()
     db.refresh(check)
 
+    saved_prescriptions = (
+        _save_checked_prescriptions(current_user.id, request.prescriptions, db)
+        if request.personalized
+        else []
+    )
+
     return MedicationCheckResponse(
         interaction_check_id=check.id,
+        saved_prescriptions=saved_prescriptions,
         is_personalized=request.personalized,
         ranked_results=_strip_pharmacist_fields(result.get("ranked_results", [])),
         explanations=_strip_pharmacist_fields(result.get("explanations", [])),
@@ -546,6 +555,106 @@ async def check_products(
         patient_conditions_snapshot=result.get("patient_conditions_snapshot", []),
         canh_bao_thuc_pham_benh_nen=result.get("canh_bao_thuc_pham_benh_nen"),
     )
+
+
+_DEFAULT_LABEL_RE = re.compile(r"^Đơn thuốc \d+$")
+
+
+def _next_prescription_label(requested: str, used_labels: set[str]) -> str:
+    """Nhãn mặc định "Đơn thuốc N" của bàn cân tra cứu không có nghĩa với danh sách đã
+    lưu (dễ trùng "Đơn thuốc 1") nên đánh lại số kế tiếp; nhãn người dùng tự đặt được
+    giữ nguyên (thêm hậu tố nếu trùng)."""
+    label = requested.strip()
+    if _DEFAULT_LABEL_RE.match(label):
+        numbers = [int(x.rsplit(" ", 1)[1]) for x in used_labels if _DEFAULT_LABEL_RE.match(x)]
+        return f"Đơn thuốc {max(numbers, default=0) + 1}"
+    if label not in used_labels:
+        return label
+    n = 2
+    while f"{label} ({n})" in used_labels:
+        n += 1
+    return f"{label} ({n})"
+
+
+def _save_checked_prescriptions(
+    patient_id: str, prescriptions: list[PrescriptionInput], db: Session
+) -> list[SavedPrescriptionResult]:
+    """Lưu các đơn vừa tra cứu (cá nhân hóa) vào "Đơn thuốc của tôi".
+
+    Nhận biết đơn đã có bằng TẬP product_id (không phụ thuộc nhãn hay thứ tự thuốc):
+    trùng đúng 1 đơn sẵn có thì không tạo mới. Thuốc không có trong CSDL bị bỏ qua;
+    đơn không còn thuốc nào nhận diện được thì không lưu."""
+    existing: dict[frozenset[str], PatientPrescription] = {}
+    rows = (
+        db.query(PatientMedication.prescription_id, PatientMedication.product_id)
+        .filter(
+            PatientMedication.patient_id == patient_id,
+            PatientMedication.prescription_id.isnot(None),
+            PatientMedication.product_id.isnot(None),
+        )
+        .all()
+    )
+    ids_by_rx: dict[str, set[str]] = {}
+    for rx_id, product_id in rows:
+        ids_by_rx.setdefault(rx_id, set()).add(product_id)
+    rx_by_id = {
+        rx.id: rx
+        for rx in db.query(PatientPrescription).filter(PatientPrescription.patient_id == patient_id)
+    }
+    for rx_id, product_ids in ids_by_rx.items():
+        if rx_id in rx_by_id:
+            existing.setdefault(frozenset(product_ids), rx_by_id[rx_id])
+
+    # Đơn đã có nhưng chưa có thuốc (vd đơn mặc định tự tạo) được dùng lại trước khi tạo đơn mới.
+    empty_prescriptions = sorted(
+        (rx for rx_id, rx in rx_by_id.items() if rx_id not in ids_by_rx),
+        key=lambda rx: rx.ngay_tao or datetime.min,
+    )
+    used_labels = {rx.label for rx in rx_by_id.values()}
+
+    saved: list[SavedPrescriptionResult] = []
+    for item in prescriptions:
+        products: dict[str, Product] = {}
+        for name in item.products:
+            product = (
+                db.query(Product)
+                .filter(func.lower(Product.ten_thuoc) == name.strip().lower())
+                .first()
+            )
+            if product is not None:
+                products[product.id] = product
+        if not products:
+            continue
+
+        key = frozenset(products)
+        match = existing.get(key)
+        if match is not None:
+            saved.append(SavedPrescriptionResult(id=match.id, label=match.label, created=False))
+            continue
+
+        prescription = empty_prescriptions.pop(0) if empty_prescriptions else None
+        if prescription is None:
+            prescription = PatientPrescription(
+                patient_id=patient_id, label=_next_prescription_label(item.label, used_labels)
+            )
+            db.add(prescription)
+            db.flush()
+            used_labels.add(prescription.label)
+        for product_id in products:
+            db.add(
+                PatientMedication(
+                    patient_id=patient_id,
+                    prescription_id=prescription.id,
+                    product_id=product_id,
+                    ngay_bat_dau=date.today(),
+                )
+            )
+        existing[key] = prescription  # hai đơn trùng nhau trong cùng request chỉ lưu 1 lần
+        saved.append(
+            SavedPrescriptionResult(id=prescription.id, label=prescription.label, created=True)
+        )
+    db.commit()
+    return saved
 
 
 @router.post("/guest/products/check", response_model=MedicationCheckResponse)
@@ -818,12 +927,7 @@ async def delete_patient_prescription(
     if prescription is None or prescription.patient_id != patient_id:
         raise HTTPException(status_code=404, detail="Không tìm thấy đơn thuốc")
 
-    remaining = (
-        db.query(PatientPrescription).filter(PatientPrescription.patient_id == patient_id).count()
-    )
-    if remaining <= 1:
-        raise HTTPException(status_code=400, detail="Phải giữ lại ít nhất 1 đơn thuốc trong hồ sơ")
-
+    # Được xóa cả đơn cuối cùng: lần list sau tự tạo lại 1 đơn mặc định rỗng.
     db.query(PatientMedication).filter(PatientMedication.prescription_id == prescription_id).delete()
     db.delete(prescription)
     db.commit()

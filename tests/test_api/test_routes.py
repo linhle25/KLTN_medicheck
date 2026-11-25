@@ -227,7 +227,7 @@ async def test_patient_prescriptions_grouping(client):
     assert [m["ten_thuoc"] for m in grouped[default_id]["medications"]] == ["Ibuprofen"]
     assert [m["ten_thuoc"] for m in grouped[second_id]["medications"]] == ["Paracetamol"]
 
-    # Xóa đơn thứ 2 -> kéo theo thuốc của nó; xóa đơn mặc định (đơn cuối cùng còn lại) -> 400.
+    # Xóa đơn thứ 2 -> kéo theo thuốc của nó; xóa luôn đơn cuối cùng -> 204, lần list sau tự tạo lại đơn mặc định rỗng.
     delete_second_resp = await client.delete(
         f"/api/v1/patients/{patient_id}/prescriptions/{second_id}", headers=headers
     )
@@ -236,12 +236,14 @@ async def test_patient_prescriptions_grouping(client):
     delete_last_resp = await client.delete(
         f"/api/v1/patients/{patient_id}/prescriptions/{default_id}", headers=headers
     )
-    assert delete_last_resp.status_code == 400
+    assert delete_last_resp.status_code == 204
 
     after_delete_resp = await client.get(f"/api/v1/patients/{patient_id}/prescriptions", headers=headers)
     remaining = after_delete_resp.json()
     assert len(remaining) == 1
-    assert remaining[0]["id"] == default_id
+    assert remaining[0]["id"] != default_id
+    assert remaining[0]["label"] == "Đơn thuốc 1"
+    assert remaining[0]["medications"] == []
 
 
 # TC-A06: /medications/search phải khớp cả alias (VD "aspirin" -> Acetylsalicylic acid),
@@ -472,3 +474,94 @@ async def test_patient_check_detail_includes_overview_and_product_explanations(c
     detail = detail_resp.json()
     assert detail["overview"] == {"giai_thich": "Tom tat tong quan"}
     assert detail["product_explanations"] == [{"thuoc_a": "A", "thuoc_b": "B", "giai_thich": "..."}]
+
+
+# Tra cứu cá nhân hóa tự lưu đơn vào "Đơn thuốc của tôi"; đơn trùng tập thuốc
+# (bất kể nhãn/thứ tự) không được lưu lần nữa; tra cứu không cá nhân hóa không lưu.
+@pytest.mark.asyncio
+async def test_personalized_check_saves_prescription_without_duplicates(client, monkeypatch):
+    from src.api import routes
+
+    async def fake_run(prescriptions, db, **kwargs):
+        return {"checked_products": []}, [], []
+
+    monkeypatch.setattr(routes, "_run_product_check", fake_run)
+
+    patient = await _register(client, "Benh nhan Luu Don", "patient")
+    headers = _auth_headers(patient["access_token"])
+    patient_id = patient["user_id"]
+
+    async def check(rx, personalized=True):
+        resp = await client.post(
+            "/api/v1/products/check",
+            json={"prescriptions": rx, "personalized": personalized},
+            headers=headers,
+        )
+        assert resp.status_code == 200, resp.text
+        return resp.json()
+
+    async def saved_count():
+        resp = await client.get(f"/api/v1/patients/{patient_id}/prescriptions", headers=headers)
+        return len([p for p in resp.json() if p["medications"]])
+
+    # Không cá nhân hóa -> không lưu gì.
+    data = await check([{"label": "Đơn A", "products": ["ibuprofen"]}], personalized=False)
+    assert data["saved_prescriptions"] == []
+    assert await saved_count() == 0
+
+    # Cá nhân hóa -> lưu mới.
+    data = await check([{"label": "Đơn A", "products": ["ibuprofen"]}])
+    assert [s["created"] for s in data["saved_prescriptions"]] == [True]
+    assert await saved_count() == 1
+
+    # Cùng tập thuốc, khác nhãn -> không lưu lại.
+    data = await check([{"label": "Tên khác", "products": ["IBUPROFEN"]}])
+    assert [s["created"] for s in data["saved_prescriptions"]] == [False]
+    # Đơn đầu điền vào "Đơn thuốc 1" rỗng đã tự tạo khi list, nên giữ tên đó.
+    assert data["saved_prescriptions"][0]["label"] == "Đơn thuốc 1"
+    assert await saved_count() == 1
+
+    # Thuốc không có trong CSDL -> bỏ qua, không tạo đơn rỗng.
+    data = await check([{"label": "Đơn lạ", "products": ["thuoc-khong-ton-tai"]}])
+    assert data["saved_prescriptions"] == []
+    assert await saved_count() == 1
+
+
+# Đơn rỗng sẵn có (vd đơn mặc định tự tạo ở tab Đơn thuốc) được điền trước; hết đơn rỗng
+# thì đánh số "Đơn thuốc N" kế tiếp thay vì lặp lại nhãn của bàn cân tra cứu.
+@pytest.mark.asyncio
+async def test_personalized_check_fills_empty_prescription_then_numbers_next(client, monkeypatch):
+    from src.api import routes
+
+    async def fake_run(prescriptions, db, **kwargs):
+        return {"checked_products": []}, [], []
+
+    monkeypatch.setattr(routes, "_run_product_check", fake_run)
+
+    patient = await _register(client, "Benh nhan Dem Don", "patient")
+    headers = _auth_headers(patient["access_token"])
+    patient_id = patient["user_id"]
+
+    # Mở tab Đơn thuốc -> tự tạo "Đơn thuốc 1" rỗng.
+    listed = await client.get(f"/api/v1/patients/{patient_id}/prescriptions", headers=headers)
+    empty_id = listed.json()[0]["id"]
+
+    resp = await client.post(
+        "/api/v1/products/check",
+        json={
+            "personalized": True,
+            "prescriptions": [
+                {"label": "Đơn thuốc 1", "products": ["ibuprofen"]},
+                {"label": "Đơn thuốc 2", "products": ["paracetamol"]},
+            ],
+        },
+        headers=headers,
+    )
+    assert resp.status_code == 200, resp.text
+    saved = resp.json()["saved_prescriptions"]
+    assert saved[0]["id"] == empty_id and saved[0]["label"] == "Đơn thuốc 1"
+    assert saved[1]["label"] == "Đơn thuốc 2" and saved[1]["created"] is True
+
+    listed = await client.get(f"/api/v1/patients/{patient_id}/prescriptions", headers=headers)
+    assert [p["label"] for p in listed.json()] == ["Đơn thuốc 1", "Đơn thuốc 2"]
+    assert all(p["medications"] for p in listed.json())

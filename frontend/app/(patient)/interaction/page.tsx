@@ -15,10 +15,11 @@ import {
   type MedicationCheckResponse,
   type PatientPrescription,
 } from "@/lib/api";
-import { getSession } from "@/lib/auth";
+import { INTERACTION_STORAGE_KEYS, getSession } from "@/lib/auth";
 import { scrollBelowStickyHeader } from "@/lib/scroll";
 import {
   createPrescription,
+  isDefaultPrescriptionLabel,
   mergeSavedIntoPrescriptions,
   mergedDrugNames,
   nonEmptyPrescriptions,
@@ -31,13 +32,14 @@ import { useMediAlert } from "@/components/MediAlertProvider";
 // Lưu tạm các đơn/thuốc đang nhập dở và kết quả phân tích gần nhất trong phiên
 // trình duyệt, để reload trang hoặc chuyển sang tab khác rồi quay lại Tra cứu
 // tương tác không làm mất dữ liệu/kết quả đã có.
-const DRAFT_KEY = "medguard_interaction_draft";
-const RESULT_KEY = "medguard_interaction_result";
+const DRAFT_KEY = INTERACTION_STORAGE_KEYS.draft;
+const PERSONALIZE_KEY = INTERACTION_STORAGE_KEYS.personalized;
+const RESULT_KEY = INTERACTION_STORAGE_KEYS.result;
 // Ảnh chụp danh sách đơn thuốc (đã lọc rỗng) TẠI THỜI ĐIỂM chạy check tạo ra
 // RESULT_KEY - phải dùng đúng danh sách này (không phải state `prescriptions` đang
 // sống, có thể đã bị sửa tiếp) để dựng lại đúng đồ thị/origins phía client (xem
 // drugOrigins trong lib/prescription.ts), khớp với dữ liệu lúc chạy check.
-const RESULT_PRESCRIPTIONS_KEY = "medguard_interaction_result_prescriptions";
+const RESULT_PRESCRIPTIONS_KEY = INTERACTION_STORAGE_KEYS.resultPrescriptions;
 
 function renumberDefaultPrescriptions(
   prescriptions: Prescription[],
@@ -102,7 +104,7 @@ function parseLandingDrugs(value: string | null): string[] {
 
 function InteractionPageContent() {
   const session = getSession();
-  const { confirm } = useMediAlert();
+  const { confirm, toast } = useMediAlert();
   const searchParams = useSearchParams();
   // Chỉ tự nhập thuốc từ hồ sơ khi được điều hướng tới từ nút "Kiểm tra tương tác"
   // (ví dụ ở trang Hồ sơ, gắn ?import=profile) - không tự ý ghi đè khi người dùng
@@ -134,6 +136,8 @@ function InteractionPageContent() {
   >(() => loadDraftResultPrescriptions());
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // Cá nhân hóa theo hồ sơ: hỏi 1 lần mỗi phiên khi vào tab, đổi lại được bằng công tắc.
+  const [personalized, setPersonalized] = useState(false);
 
   const boardMode = prescriptions.length > 1;
   const primary = prescriptions[0];
@@ -154,6 +158,30 @@ function InteractionPageContent() {
       .catch(() => undefined);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    if (!session) return;
+    const stored = window.sessionStorage.getItem(PERSONALIZE_KEY);
+    if (stored !== null) {
+      setPersonalized(stored === "1");
+      return;
+    }
+    void confirm({
+      title: "Cá nhân hóa theo hồ sơ?",
+      message:
+        "Nếu bật, cảnh báo thuốc - bệnh nền sẽ lọc theo bệnh nền trong hồ sơ của bạn, và đơn thuốc vừa tra sẽ được lưu vào Đơn thuốc của tôi (đơn đã có sẽ không lưu lại).",
+      confirmLabel: "Cá nhân hóa",
+      cancelLabel: "Không, tra cứu chung",
+    }).then((yes) => {
+      setPersonalized(yes);
+      window.sessionStorage.setItem(PERSONALIZE_KEY, yes ? "1" : "0");
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  function togglePersonalized(value: boolean) {
+    if (loading) return;
+    setPersonalized(value);
+    window.sessionStorage.setItem(PERSONALIZE_KEY, value ? "1" : "0");
+  }
   useEffect(() => {
     window.sessionStorage.setItem(DRAFT_KEY, JSON.stringify(prescriptions));
   }, [prescriptions]);
@@ -198,6 +226,7 @@ function InteractionPageContent() {
   }
 
   function addPrescription() {
+    if (loading) return;
     setPrescriptions((prev) => {
       const renumbered = renumberDefaultPrescriptions(prev);
       return [...renumbered, createPrescription(renumbered.length + 1)];
@@ -205,9 +234,11 @@ function InteractionPageContent() {
   }
 
   function removePrescription(id: string) {
+    if (loading) return;
+    // Xóa đơn cuối cùng thì quay về 1 đơn trống mới (bàn cân luôn có ít nhất 1 panel).
     setPrescriptions((prev) =>
       prev.length <= 1
-        ? prev
+        ? [createPrescription(1)]
         : renumberDefaultPrescriptions(
             prev.filter((prescription) => prescription.id !== id),
           ),
@@ -230,7 +261,23 @@ function InteractionPageContent() {
         const toAdd = source.medications
           .filter((item) => !existing.has(item.ten_thuoc.toLowerCase()))
           .map((item) => ({ name: item.ten_thuoc, known: true }));
-        return toAdd.length ? { ...p, drugs: [...p.drugs, ...toAdd] } : p;
+        // Đơn đã lưu có tên tự đặt thì panel lấy luôn tên đó - chỉ khi panel đang rỗng
+        // còn mang nhãn mặc định (không đè tên người dùng vừa đặt/đã có thuốc). Trùng
+        // tên panel khác (vd nhập cùng 1 đơn vào 2 panel) thì thêm hậu tố "(2)", "(3)"...
+        // Đơn tên mặc định "Đơn thuốc N" giữ nguyên số thứ tự.
+        const takeName =
+          p.drugs.length === 0 &&
+          isDefaultPrescriptionLabel(p.label) &&
+          !isDefaultPrescriptionLabel(source.label);
+        let label = p.label;
+        if (takeName) {
+          const taken = new Set(
+            prev.filter((other) => other.id !== p.id).map((other) => other.label),
+          );
+          label = source.label;
+          for (let n = 2; taken.has(label); n++) label = `${source.label} (${n})`;
+        }
+        return toAdd.length ? { ...p, label, drugs: [...p.drugs, ...toAdd] } : p;
       }),
     );
     setResult(null);
@@ -265,12 +312,26 @@ function InteractionPageContent() {
     const payload = toPrescriptionCheckInput(activePrescriptions);
     try {
       const data = session
-        ? await checkProducts(payload, session.accessToken)
+        ? await checkProducts(payload, session.accessToken, { personalized })
         : await checkGuestProducts(payload);
       setResult(data);
+      const saved = data.saved_prescriptions ?? [];
+      const created = saved.filter((s) => s.created);
+      const existed = saved.filter((s) => !s.created);
+      if (created.length || existed.length) {
+        toast({
+          title: created.length
+            ? `Đã lưu ${created.length} đơn vào Đơn thuốc của tôi`
+            : "Đơn đã có trong Đơn thuốc của tôi",
+          message: existed.length
+            ? `Không lưu lại: ${existed.map((s) => s.label).join(", ")}`
+            : undefined,
+          tone: created.length ? "success" : "info",
+        });
+      }
       setResultPrescriptions(activePrescriptions);
       window.sessionStorage.setItem(
-        "medguard_last_check",
+        INTERACTION_STORAGE_KEYS.lastCheck,
         JSON.stringify(data),
       );
       requestAnimationFrame(() => {
@@ -328,7 +389,7 @@ function InteractionPageContent() {
             Chọn thuốc để bắt đầu tra cứu
           </h2>
           <p>
-            Thêm ít nhất 2 thuốc vào đơn, hoặc nhập đơn đã lưu từ hồ sơ để so
+            Thêm ít nhất 2 thuốc vào đơn, hoặc nhập từ Đơn thuốc của tôi để so
             sánh tương tác với các thuốc khác.
           </p>
         </div>
@@ -358,9 +419,7 @@ function InteractionPageContent() {
               search={searchFn}
               onAdd={(name, known) => addDrugTo(p.id, name, known)}
               onRemoveDrug={(name) => removeDrugFrom(p.id, name)}
-              onRemovePanel={
-                boardMode ? () => removePrescription(p.id) : undefined
-              }
+              onRemovePanel={() => removePrescription(p.id)}
               savedPrescriptions={session ? savedPrescriptions : undefined}
               onImportFrom={
                 session
@@ -374,11 +433,38 @@ function InteractionPageContent() {
             type="button"
             className="prescription-board__add"
             onClick={addPrescription}
+            disabled={loading}
           >
             <MaterialIcon name="add_circle" size={26} />
             <span>Thêm đơn thuốc</span>
           </button>
         </div>
+        {session && (
+          <label
+            className={`interaction-personalize ${personalized ? "interaction-personalize--on" : ""} ${loading ? "interaction-personalize--disabled" : ""}`}
+          >
+            <span className="interaction-personalize__icon" aria-hidden="true">
+              <MaterialIcon name="health_and_safety" size={22} filled={personalized} />
+            </span>
+            <span className="interaction-personalize__text">
+              <strong>Cá nhân hóa theo hồ sơ</strong>
+              <small>
+                {personalized
+                  ? "Lọc cảnh báo theo bệnh nền của bạn và lưu đơn vào Đơn thuốc của tôi"
+                  : "Đang tra cứu chung, đơn thuốc sẽ không được lưu"}
+              </small>
+            </span>
+            <input
+              type="checkbox"
+              role="switch"
+              className="interaction-personalize__input"
+              checked={personalized}
+              disabled={loading}
+              onChange={(e) => togglePersonalized(e.target.checked)}
+            />
+            <span className="interaction-personalize__switch" aria-hidden="true" />
+          </label>
+        )}
         <button
           className="interaction-run"
           type="button"

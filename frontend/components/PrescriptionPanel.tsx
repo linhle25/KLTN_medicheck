@@ -103,8 +103,8 @@ export default function PrescriptionPanel({ label, drugs, search, onAdd, onRemov
       {savedPrescriptions && savedPrescriptions.length > 0 && onImportFrom && (
         <div className="prescription-panel__actions">
           <div className="prescription-panel__import" ref={importPickerRef}>
-            <button type="button" className="prescription-panel__tool" onClick={handleImportClick} title="Nhập từ hồ sơ thuốc đang dùng">
-              <MaterialIcon name="download" size={16} /><span>Nhập từ hồ sơ</span>
+            <button type="button" className="prescription-panel__tool" onClick={handleImportClick} title="Nhập từ Đơn thuốc của tôi">
+              <MaterialIcon name="download" size={16} /><span>Nhập từ đơn thuốc của tôi</span>
             </button>
             {importPickerOpen && (
               <ul className="prescription-panel__import-menu">

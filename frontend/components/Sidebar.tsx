@@ -103,17 +103,6 @@ function SidebarContent({
           <MaterialIcon name="person" size={22} filled={isPersonalInfoActive} />
           <span>Hồ sơ</span>
         </Link>
-        <Link
-          href="/profile?tab=prescriptions"
-          className={`bottom-nav__item ${isPrescriptionsActive ? "bottom-nav__item--active" : ""}`}
-        >
-          <MaterialIcon
-            name="medication"
-            size={22}
-            filled={isPrescriptionsActive}
-          />
-          <span>Đơn thuốc của tôi</span>
-        </Link>
         {onCheck ? (
           <button
             type="button"
@@ -141,6 +130,17 @@ function SidebarContent({
             <span>Tra cứu tương tác</span>
           </Link>
         )}
+        <Link
+          href="/profile?tab=prescriptions"
+          className={`bottom-nav__item ${isPrescriptionsActive ? "bottom-nav__item--active" : ""}`}
+        >
+          <MaterialIcon
+            name="medication"
+            size={22}
+            filled={isPrescriptionsActive}
+          />
+          <span>Đơn thuốc của tôi</span>
+        </Link>
         <Link
           href="/history"
           className={`bottom-nav__item ${isActive("/history") ? "bottom-nav__item--active" : ""}`}

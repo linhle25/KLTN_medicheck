@@ -28,7 +28,7 @@ import {
   type PatientPrescription,
 } from "@/lib/api";
 import { getSession, saveSession } from "@/lib/auth";
-import type { Prescription } from "@/lib/prescription";
+import { renumberDuplicateLabels, type Prescription } from "@/lib/prescription";
 import { scrollBelowStickyHeader } from "@/lib/scroll";
 
 type ProfileTab = "personal" | "prescriptions";
@@ -340,12 +340,25 @@ function ProfilePageContent() {
       session.accessToken,
     );
     const remaining = prescriptions.filter((prescription) => prescription.id !== prescriptionId);
-    const renumbered = remaining.map((prescription, index) => {
-      const nextLabel = /^Đơn thuốc \d+$/.test(prescription.label)
-        ? `Đơn thuốc ${index + 1}`
-        : prescription.label;
-      return { ...prescription, label: nextLabel };
-    });
+    if (remaining.length === 0) {
+      // Xóa đơn cuối cùng: backend tự tạo lại 1 đơn mặc định rỗng khi list.
+      setPrescriptions(
+        await listPatientPrescriptions(session.userId, session.accessToken),
+      );
+      setPrescriptionCheck(null);
+      return;
+    }
+    const deletedLabel =
+      prescriptions.find((prescription) => prescription.id === prescriptionId)?.label ?? "";
+    const renumbered = renumberDuplicateLabels(
+      remaining.map((prescription, index) => {
+        const nextLabel = /^Đơn thuốc \d+$/.test(prescription.label)
+          ? `Đơn thuốc ${index + 1}`
+          : prescription.label;
+        return { ...prescription, label: nextLabel };
+      }),
+      deletedLabel,
+    );
     await Promise.all(
       renumbered
         .filter((prescription, index) => prescription.label !== remaining[index].label)
@@ -799,7 +812,7 @@ function ProfilePageContent() {
                 <PatientPrescriptionPanel
                   key={p.id}
                   prescription={p}
-                  canRemove={prescriptions.length > 1}
+                  canRemove
                   search={searchFn}
                   onAddDrug={(name) => handleAddDrug(p.id, name)}
                   onRemoveDrug={(med) => handleRemoveDrug(p.id, med)}

@@ -109,8 +109,16 @@ export type DiseaseInteractionExplanation = {
   mo_ta_dich?: string;
 };
 
+export type SavedPrescriptionResult = {
+  id: string;
+  label: string;
+  // false: đã có đơn cùng tập thuốc trong "Đơn thuốc của tôi" nên không tạo thêm.
+  created: boolean;
+};
+
 export type MedicationCheckResponse = {
   interaction_check_id: string;
+  saved_prescriptions?: SavedPrescriptionResult[];
   // true chỉ với lượt chạy từ "Đơn thuốc của tôi"; false với tra cứu chung/tra cứu hộ.
   is_personalized?: boolean;
   ranked_results: Record<string, unknown>[];

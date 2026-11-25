@@ -4,6 +4,33 @@ export type SelectedDrug = { name: string; known: boolean };
 
 export type Prescription = { id: string; label: string; drugs: SelectedDrug[] };
 
+const DEFAULT_LABEL_RE = /^Đơn thuốc \d+$/;
+
+// Nhãn mặc định "Đơn thuốc N" (tự đánh số) khác với tên người dùng tự đặt.
+export function isDefaultPrescriptionLabel(label: string): boolean {
+  return DEFAULT_LABEL_RE.test(label.trim());
+}
+
+// Bỏ hậu tố " (n)" do hệ thống thêm khi tên đơn trùng nhau ("tiểu đường (2)" -> "tiểu đường").
+export function stripDuplicateSuffix(label: string): string {
+  return label.replace(/ \(\d+\)$/, "");
+}
+
+// Sau khi xóa 1 đơn tên `deletedLabel`: các đơn còn lại cùng tên gốc được đánh số lại liền
+// mạch (đơn đầu không số, sau đó "(2)", "(3)"...) - xóa đơn "tiểu đường" thì
+// "tiểu đường (2)" trở lại thành "tiểu đường". Đơn khác tên gốc giữ nguyên.
+export function renumberDuplicateLabels<T extends { label: string }>(items: T[], deletedLabel: string): T[] {
+  const base = stripDuplicateSuffix(deletedLabel);
+  if (isDefaultPrescriptionLabel(base)) return items;
+  let count = 0;
+  return items.map((item) => {
+    if (stripDuplicateSuffix(item.label) !== base) return item;
+    count += 1;
+    const label = count === 1 ? base : `${base} (${count})`;
+    return label === item.label ? item : { ...item, label };
+  });
+}
+
 export function createPrescription(index: number): Prescription {
   return { id: `rx-${Date.now()}-${index}`, label: `Đơn thuốc ${index}`, drugs: [] };
 }

@@ -12702,3 +12702,144 @@ html[data-theme="dark"] .admin-alert--ok {
   transform: translateY(-1px);
   outline: none;
 }
+
+/* ---- Công tắc "Cá nhân hóa theo hồ sơ" ở trang Tra cứu tương tác ---- */
+.interaction-personalize {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+  padding: 13px 18px;
+  border: 1px solid #d5e2f6;
+  border-radius: 18px;
+  background: linear-gradient(
+    110deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(236, 245, 255, 0.82)
+  );
+  box-shadow: 0 8px 20px rgba(54, 84, 137, 0.06);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+}
+.interaction-personalize:hover {
+  border-color: #b9cdee;
+  box-shadow: 0 10px 24px rgba(54, 84, 137, 0.1);
+}
+.interaction-personalize--on {
+  border-color: #a9c0ec;
+  background: linear-gradient(
+    110deg,
+    rgba(238, 244, 255, 0.95),
+    rgba(224, 236, 255, 0.9)
+  );
+}
+.interaction-personalize__icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  background: #e4ecfb;
+  color: #5c76b7;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.interaction-personalize--on .interaction-personalize__icon {
+  background: linear-gradient(135deg, #6e8ee0, #4263ae);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(66, 99, 174, 0.25);
+}
+.interaction-personalize__text {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+.interaction-personalize__text strong {
+  color: var(--on-surface);
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+.interaction-personalize__text small {
+  color: var(--on-surface-variant);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.interaction-personalize__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.interaction-personalize__switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 28px;
+  border-radius: 999px;
+  background: #c3cfe6;
+  transition: background 0.2s;
+}
+.interaction-personalize__switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(30, 50, 90, 0.28);
+  transition: transform 0.2s;
+}
+.interaction-personalize--on .interaction-personalize__switch {
+  background: linear-gradient(135deg, #6e8ee0, #4263ae);
+}
+.interaction-personalize--on .interaction-personalize__switch::after {
+  transform: translateX(20px);
+}
+.interaction-personalize__input:focus-visible
+  ~ .interaction-personalize__switch {
+  outline: 3px solid rgba(66, 99, 174, 0.35);
+  outline-offset: 2px;
+}
+html[data-theme="dark"] .interaction-personalize {
+  border-color: rgba(120, 150, 210, 0.28);
+  background: rgba(30, 42, 66, 0.7);
+}
+html[data-theme="dark"] .interaction-personalize--on {
+  background: rgba(40, 58, 96, 0.85);
+}
+html[data-theme="dark"] .interaction-personalize__icon {
+  background: rgba(110, 142, 224, 0.18);
+  color: #9db4ee;
+}
+@media (max-width: 520px) {
+  .interaction-personalize {
+    padding: 12px 14px;
+    gap: 11px;
+  }
+  .interaction-personalize__icon {
+    width: 38px;
+    height: 38px;
+  }
+}
+.interaction-personalize--disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+.interaction-personalize--disabled:hover {
+  border-color: #d5e2f6;
+  box-shadow: none;
+}
+.prescription-board__add:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

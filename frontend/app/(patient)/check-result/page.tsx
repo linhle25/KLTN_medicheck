@@ -6,7 +6,7 @@ import Disclaimer from "@/components/Disclaimer";
 import MaterialIcon from "@/components/MaterialIcon";
 import InteractionOverview from "@/components/graph/InteractionOverview";
 import { ApiError, getPatientCheckDetail, type MedicationCheckResponse } from "@/lib/api";
-import { getSession } from "@/lib/auth";
+import { INTERACTION_STORAGE_KEYS, getSession } from "@/lib/auth";
 import { productNamesFromExplanations } from "@/lib/interactionGraph";
 import type { Prescription } from "@/lib/prescription";
 
@@ -27,7 +27,7 @@ function CheckResultContent() {
         .finally(() => setLoading(false));
       return;
     }
-    const raw = window.sessionStorage.getItem("medguard_last_check");
+    const raw = window.sessionStorage.getItem(INTERACTION_STORAGE_KEYS.lastCheck);
     if (raw) setResult(JSON.parse(raw) as MedicationCheckResponse);
     else setError("Không có kết quả kiểm tra để hiển thị.");
     setLoading(false);
